@@ -451,7 +451,7 @@ def main():
     why = make_why(cfg, m, br, today, state)
     exps = sorted(o["expiry"] for o in live.get("options", []) if "expiry" in o)
     ivs = {o["expiry"]: o.get("atm_iv") for o in live.get("options", []) if "expiry" in o}
-    for w in m["weeks"]:
+    for w in m["weeks"] + alt["weeks"]:
         fri = w["friday"]  # Friday weekly that covers a Mon/Tue announcement that week
         e = fri if fri in ivs else next((x for x in exps if w["first_day"] <= x <= fri), None)
         w["expiry"] = fri; w["expiry_listed"] = fri in ivs; w["expiry_iv"] = ivs.get(fri)
@@ -500,6 +500,15 @@ def main():
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,
              "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in m["days"]]}
+    def scen(mm):
+        T = mm["totals"]
+        return {"totals": T, "weeks": mm["weeks"], "best_week": mm["best_week"], "later": mm["later"],
+                "merger_share_of_announcements": (T["A"] / max(T["A"] + T["B"], 1e-9)) if T else None,
+                "why": make_why(cfg, mm, br, today, state),
+                "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in mm["days"]]}
+    on_cfg = cfg["special_meeting_planned"]["on"]
+    if state["state"] == "pre":
+        model["scenarios"] = {("on" if on_cfg else "off"): scen(m), ("off" if on_cfg else "on"): scen(alt), "default": "on" if on_cfg else "off"}
     save("model.json", model)
     print(json.dumps({"totals": m["totals"], "best_week": m["best_week"], "a_share": m["a_share"],
                       "weeks": [(w["monday"], "either", round(w["either"]*100, 1), "A", round(w["A"]*100, 1), "B", round(w["B"]*100, 1), "cum", round(w["cum"]*100, 1), w["expiry"], {k: (round(v["either"]*100, 1), round(v["A"]*100, 1), round(v["B"]*100, 1)) for k, v in w["days"].items()}) for w in m["weeks"]],

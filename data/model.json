@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13 23:07 ET",
+ "generated": "2026-10-13 23:12 ET",
  "today": "2026-10-13",
  "window": {
   "start": "2026-10-14",
@@ -760,7 +760,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-13 23:07 ET",
+  "as_of": "2026-10-13 23:12 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -833,11 +833,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-13 23:07 ET",
+  "as_of": "2026-10-13 23:12 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-13 23:07 ET",
+  "as_of": "2026-10-13 23:12 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -861,7 +861,7 @@
     "question": "Tesla and SpaceX merger officially announced by December 31?",
     "yes": 0.145,
     "closed": false,
-    "volume": 211962.15094399996,
+    "volume": 211962.15094399994,
     "volume_24h": 126.00907099999999,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -870,8 +870,8 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.165,
     "closed": false,
-    "volume": 9752.597061000002,
-    "volume_24h": 384.312354,
+    "volume": 9753.847060999999,
+    "volume_24h": 385.562354,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -879,7 +879,7 @@
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
     "yes": 0.235,
     "closed": false,
-    "volume": 11482.72707,
+    "volume": 11482.727070000003,
     "volume_24h": 34.54,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -888,7 +888,7 @@
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
     "yes": 0.45,
     "closed": false,
-    "volume": 29338.613074999994,
+    "volume": 29338.613074999997,
     "volume_24h": 105.908696,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -2006,5 +2006,3145 @@
    ],
    "events": []
   }
- ]
+ ],
+ "scenarios": {
+  "off": {
+   "totals": {
+    "A": 0.2824295105489735,
+    "B": 0.6675704894510264,
+    "none": 0.050000000000000155
+   },
+   "weeks": [
+    {
+     "monday": "2026-10-12",
+     "friday": "2026-10-16",
+     "first_day": "2026-10-14",
+     "A": 0.010799817616658594,
+     "B": 0.015311877659923988,
+     "days": {
+      "Mon": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Tue": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wed": {
+       "A": 0.006841513422317663,
+       "B": 0.009699832001761803,
+       "date": "2026-10-14",
+       "either": 0.016541345424079465
+      },
+      "Thu": {
+       "A": 0.00175924630859597,
+       "B": 0.0024942425147387484,
+       "date": "2026-10-15",
+       "either": 0.004253488823334719
+      },
+      "Fri": {
+       "A": 0.0017103783555794158,
+       "B": 0.0024249580004404507,
+       "date": "2026-10-16",
+       "either": 0.004135336356019866
+      },
+      "Wknd": {
+       "A": 0.0004886795301655472,
+       "B": 0.0006928451429829858,
+       "date": null,
+       "either": 0.001181524673148533
+      }
+     },
+     "cumA": 0.010799817616658594,
+     "cumB": 0.015311877659923988,
+     "none": 0.9738883047234174,
+     "either": 0.02611169527658258,
+     "cum": 0.02611169527658258,
+     "mon": 0,
+     "tue": 0,
+     "L": 0.0,
+     "expiry": "2026-10-16",
+     "expiry_listed": true,
+     "expiry_iv": 48.2
+    },
+    {
+     "monday": "2026-10-19",
+     "friday": "2026-10-23",
+     "first_day": "2026-10-19",
+     "A": 0.06106588565221413,
+     "B": 0.07485498924788177,
+     "days": {
+      "Mon": {
+       "A": 0.02492265603844291,
+       "B": 0.03533510229213227,
+       "date": "2026-10-19",
+       "either": 0.06025775833057518
+      },
+      "Tue": {
+       "A": 0.01659117178598255,
+       "B": 0.018013973717557627,
+       "date": "2026-10-20",
+       "either": 0.03460514550354018
+      },
+      "Wed": {
+       "A": 0.0042881797846847204,
+       "B": 0.004655919360845663,
+       "date": "2026-10-21",
+       "either": 0.008944099145530383
+      },
+      "Thu": {
+       "A": 0.007351165345173808,
+       "B": 0.007981576047163994,
+       "date": "2026-10-22",
+       "either": 0.015332741392337802
+      },
+      "Fri": {
+       "A": 0.007146966307807868,
+       "B": 0.007759865601409439,
+       "date": "2026-10-23",
+       "either": 0.014906831909217308
+      },
+      "Wknd": {
+       "A": 0.0007657463901222718,
+       "B": 0.0011085522287727773,
+       "date": null,
+       "either": 0.001874298618895049
+      }
+     },
+     "cumA": 0.07186570326887272,
+     "cumB": 0.09016686690780577,
+     "none": 0.8379674298233215,
+     "either": 0.1359208749000959,
+     "cum": 0.1620325701766785,
+     "mon": 0.06025775833057518,
+     "tue": 0.03460514550354018,
+     "L": 0.0,
+     "expiry": "2026-10-23",
+     "expiry_listed": true,
+     "expiry_iv": 54.9
+    },
+    {
+     "monday": "2026-10-26",
+     "friday": "2026-10-30",
+     "first_day": "2026-10-26",
+     "A": 0.04774635058759171,
+     "B": 0.14317194738900052,
+     "days": {
+      "Mon": {
+       "A": 0.0061259711209781745,
+       "B": 0.033256566863183325,
+       "date": "2026-10-26",
+       "either": 0.0393825379841615
+      },
+      "Tue": {
+       "A": 0.009818730081582317,
+       "B": 0.036711720121995334,
+       "date": "2026-10-27",
+       "either": 0.04653045020357765
+      },
+      "Wed": {
+       "A": 0.01315159860134479,
+       "B": 0.030085881899947663,
+       "date": "2026-10-28",
+       "either": 0.043237480501292454
+      },
+      "Thu": {
+       "A": 0.011216575482575224,
+       "B": 0.025844122089961168,
+       "date": "2026-10-29",
+       "either": 0.03706069757253639
+      },
+      "Fri": {
+       "A": 0.0065103690043986,
+       "B": 0.015108371246247627,
+       "date": "2026-10-30",
+       "either": 0.021618740250646227
+      },
+      "Wknd": {
+       "A": 0.0009231062967126012,
+       "B": 0.0021652851676654313,
+       "date": null,
+       "either": 0.0030883914643780328
+      }
+     },
+     "cumA": 0.11961205385646442,
+     "cumB": 0.2333388142968063,
+     "none": 0.6470491318467293,
+     "either": 0.19091829797659224,
+     "cum": 0.3529508681532707,
+     "mon": 0.0393825379841615,
+     "tue": 0.04653045020357765,
+     "L": 0.03397955285488198,
+     "expiry": "2026-10-30",
+     "expiry_listed": true,
+     "expiry_iv": 49.3
+    },
+    {
+     "monday": "2026-11-02",
+     "friday": "2026-11-06",
+     "first_day": "2026-11-02",
+     "A": 0.08149646565459753,
+     "B": 0.19569255060913993,
+     "days": {
+      "Mon": {
+       "A": 0.02748618101766328,
+       "B": 0.0651655629136777,
+       "date": "2026-11-02",
+       "either": 0.09265174393134099
+      },
+      "Tue": {
+       "A": 0.023702547368867455,
+       "B": 0.05659563070496139,
+       "date": "2026-11-03",
+       "either": 0.08029817807382884
+      },
+      "Wed": {
+       "A": 0.012699254841903967,
+       "B": 0.030538225659388487,
+       "date": "2026-11-04",
+       "either": 0.043237480501292454
+      },
+      "Thu": {
+       "A": 0.010830786037836463,
+       "B": 0.026229911534699925,
+       "date": "2026-11-05",
+       "either": 0.03706069757253639
+      },
+      "Fri": {
+       "A": 0.0062864475724826695,
+       "B": 0.015332292678163557,
+       "date": "2026-11-06",
+       "either": 0.021618740250646227
+      },
+      "Wknd": {
+       "A": 0.0004912488158436952,
+       "B": 0.0018309271182489098,
+       "date": null,
+       "either": 0.002322175934092605
+      }
+     },
+     "cumA": 0.20110851951106196,
+     "cumB": 0.42903136490594623,
+     "none": 0.36986011558299176,
+     "either": 0.2771890162637375,
+     "cum": 0.6301398844170082,
+     "mon": 0.09265174393134099,
+     "tue": 0.08029817807382884,
+     "L": 0.07098042487220255,
+     "expiry": "2026-11-06",
+     "expiry_listed": true,
+     "expiry_iv": 46.3
+    },
+    {
+     "monday": "2026-11-09",
+     "friday": "2026-11-13",
+     "first_day": "2026-11-09",
+     "A": 0.05977184470069611,
+     "B": 0.17980952229154015,
+     "days": {
+      "Mon": {
+       "A": 0.007962241578867473,
+       "B": 0.048932777605820224,
+       "date": "2026-11-09",
+       "either": 0.0568950191846877
+      },
+      "Tue": {
+       "A": 0.022887308118479947,
+       "B": 0.0574108699553489,
+       "date": "2026-11-10",
+       "either": 0.08029817807382884
+      },
+      "Wed": {
+       "A": 0.012262469257777594,
+       "B": 0.030975011243514858,
+       "date": "2026-11-11",
+       "either": 0.043237480501292454
+      },
+      "Thu": {
+       "A": 0.01045826566046172,
+       "B": 0.02660243191207467,
+       "date": "2026-11-12",
+       "either": 0.03706069757253639
+      },
+      "Fri": {
+       "A": 0.006070227825008496,
+       "B": 0.01554851242563773,
+       "date": "2026-11-13",
+       "either": 0.021618740250646227
+      },
+      "Wknd": {
+       "A": 0.000131332260100879,
+       "B": 0.0003399191491437656,
+       "date": null,
+       "either": 0.0004712514092446446
+      }
+     },
+     "cumA": 0.26088036421175803,
+     "cumB": 0.6088408871974864,
+     "none": 0.1302787485907555,
+     "either": 0.23958136699223626,
+     "cum": 0.8697212514092445,
+     "mon": 0.0568950191846877,
+     "tue": 0.08029817807382884,
+     "L": 0.05627164716150923,
+     "expiry": "2026-11-13",
+     "expiry_listed": true,
+     "expiry_iv": 44.4
+    },
+    {
+     "monday": "2026-11-16",
+     "friday": "2026-11-20",
+     "first_day": "2026-11-16",
+     "A": 0.011651596464572514,
+     "B": 0.030761030367445492,
+     "days": {
+      "Mon": {
+       "A": 0.003910516359217809,
+       "B": 0.010227025918121527,
+       "date": "2026-11-16",
+       "either": 0.014137542277339337
+      },
+      "Tue": {
+       "A": 0.0033722109005076737,
+       "B": 0.008880325739853085,
+       "date": "2026-11-17",
+       "either": 0.012252536640360759
+      },
+      "Wed": {
+       "A": 0.0018067494999479308,
+       "B": 0.0047907702294770925,
+       "date": "2026-11-18",
+       "either": 0.0065975197294250235
+      },
+      "Thu": {
+       "A": 0.0015409185421914255,
+       "B": 0.0041140983687443095,
+       "date": "2026-11-19",
+       "either": 0.005655016910935735
+      },
+      "Fri": {
+       "A": 0.0008943860210249208,
+       "B": 0.0024043738436875907,
+       "date": "2026-11-20",
+       "either": 0.0032987598647125117
+      },
+      "Wknd": {
+       "A": 0.00012681514168275625,
+       "B": 0.00034443626756188833,
+       "date": null,
+       "either": 0.0004712514092446446
+      }
+     },
+     "cumA": 0.2725319606763305,
+     "cumB": 0.6396019175649319,
+     "none": 0.08786612175873754,
+     "either": 0.042412626832018005,
+     "cum": 0.9121338782412625,
+     "mon": 0.014137542277339337,
+     "tue": 0.012252536640360759,
+     "L": 0.011731459252093755,
+     "expiry": "2026-11-20",
+     "expiry_listed": true,
+     "expiry_iv": 43.3
+    },
+    {
+     "monday": "2026-11-23",
+     "friday": "2026-11-27",
+     "first_day": "2026-11-23",
+     "A": 0.008833256833344977,
+     "B": 0.02436936925115144,
+     "days": {
+      "Mon": {
+       "A": 0.0037760157768245367,
+       "B": 0.010361526500514799,
+       "date": "2026-11-23",
+       "either": 0.014137542277339335
+      },
+      "Tue": {
+       "A": 0.003256225110293016,
+       "B": 0.008996311530067743,
+       "date": "2026-11-24",
+       "either": 0.012252536640360759
+      },
+      "Wed": {
+       "A": 0.0017446071029703716,
+       "B": 0.004852912626454652,
+       "date": "2026-11-25",
+       "either": 0.0065975197294250235
+      },
+      "Thu": {
+       "A": 3.381634750799441e-05,
+       "B": 9.470676410418139e-05,
+       "date": "2026-11-26",
+       "either": 0.0001285231116121758
+      },
+      "Fri": {
+       "A": 1.534155637324828e-05,
+       "B": 4.3258148173251295e-05,
+       "date": "2026-11-27",
+       "either": 5.859970454649958e-05
+      },
+      "Wknd": {
+       "A": 7.2509393758114335e-06,
+       "B": 2.0653681836807416e-05,
+       "date": null,
+       "either": 2.790462121261885e-05
+      }
+     },
+     "cumA": 0.2813652175096754,
+     "cumB": 0.6639712868160833,
+     "none": 0.054663495674241225,
+     "either": 0.033202626084496416,
+     "cum": 0.9453365043257587,
+     "mon": 0.014137542277339335,
+     "tue": 0.012252536640360759,
+     "L": 0.009472113846674185,
+     "expiry": "2026-11-27",
+     "expiry_listed": true,
+     "expiry_iv": 42.3
+    },
+    {
+     "monday": "2026-11-30",
+     "friday": "2026-12-04",
+     "first_day": "2026-11-30",
+     "A": 0.0006432922081074327,
+     "B": 0.0018681237010282634,
+     "days": {
+      "Mon": {
+       "A": 0.00021590214793400486,
+       "B": 0.0006212364884445605,
+       "date": "2026-11-30",
+       "either": 0.0008371386363785654
+      },
+      "Tue": {
+       "A": 0.0001861819539483275,
+       "B": 0.0005393381975797625,
+       "date": "2026-12-01",
+       "either": 0.0007255201515280901
+      },
+      "Wed": {
+       "A": 9.975181331180325e-05,
+       "B": 0.00029091288366486063,
+       "date": "2026-12-02",
+       "either": 0.00039066469697666387
+      },
+      "Thu": {
+       "A": 8.507511348629395e-05,
+       "B": 0.0002497803410651322,
+       "date": "2026-12-03",
+       "either": 0.0003348554545514261
+      },
+      "Fri": {
+       "A": 4.937963309276443e-05,
+       "B": 0.00014595271539556752,
+       "date": "2026-12-04",
+       "either": 0.00019533234848833193
+      },
+      "Wknd": {
+       "A": 7.001546334238779e-06,
+       "B": 2.090307487838007e-05,
+       "date": null,
+       "either": 2.790462121261885e-05
+      }
+     },
+     "cumA": 0.28200850971778285,
+     "cumB": 0.6658394105171117,
+     "none": 0.052152079765105386,
+     "either": 0.002511415909135696,
+     "cum": 0.9478479202348946,
+     "mon": 0.0008371386363785654,
+     "tue": 0.0007255201515280901,
+     "L": 0.0007413090891343094,
+     "expiry": "2026-12-04",
+     "expiry_listed": false,
+     "expiry_iv": null
+    },
+    {
+     "monday": "2026-12-07",
+     "friday": "2026-12-11",
+     "first_day": "2026-12-07",
+     "A": 0.00025995616844018806,
+     "B": 0.0012224126875621773,
+     "days": {
+      "Mon": {
+       "A": 8.339051337068698e-05,
+       "B": 0.00040170688943326645,
+       "date": "2026-12-07",
+       "either": 0.0004850974028039534
+      },
+      "Tue": {
+       "A": 2.8764528502707504e-05,
+       "B": 0.0002956541973186246,
+       "date": "2026-12-08",
+       "either": 0.0003244187258213321
+      },
+      "Wed": {
+       "A": 3.852835648615634e-05,
+       "B": 0.0001878504314890219,
+       "date": "2026-12-09",
+       "either": 0.00022637878797517825
+      },
+      "Thu": {
+       "A": 6.571919229687407e-05,
+       "B": 0.00020216517134426682,
+       "date": "2026-12-10",
+       "either": 0.0002678843636411409
+      },
+      "Fri": {
+       "A": 3.8144992933747755e-05,
+       "B": 0.00011812088585691778,
+       "date": "2026-12-11",
+       "either": 0.00015626587879066553
+      },
+      "Wknd": {
+       "A": 5.408584850015419e-06,
+       "B": 1.6915112120079663e-05,
+       "date": null,
+       "either": 2.232369697009508e-05
+      }
+     },
+     "cumA": 0.282268465886223,
+     "cumB": 0.667061823204674,
+     "none": 0.050669710909102994,
+     "either": 0.0014823688560023653,
+     "cum": 0.949330289090897,
+     "mon": 0.0004850974028039534,
+     "tue": 0.0003244187258213321,
+     "L": 0.000320960998047014,
+     "expiry": "2026-12-11",
+     "expiry_listed": false,
+     "expiry_iv": null
+    },
+    {
+     "monday": "2026-12-14",
+     "friday": "2026-12-18",
+     "first_day": "2026-12-14",
+     "A": 0.0001610446627504688,
+     "B": 0.0005086662463523837,
+     "days": {
+      "Mon": {
+       "A": 0.0001610446627504688,
+       "B": 0.0005086662463523837,
+       "date": "2026-12-14",
+       "either": 0.0006697109091028525
+      },
+      "Tue": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wed": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Thu": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Fri": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wknd": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      }
+     },
+     "cumA": 0.2824295105489735,
+     "cumB": 0.6675704894510264,
+     "none": 0.050000000000000155,
+     "either": 0.0006697109091028525,
+     "cum": 0.9499999999999998,
+     "mon": 0.0006697109091028525,
+     "tue": 0,
+     "L": 0.0002081823498473292,
+     "expiry": "2026-12-18",
+     "expiry_listed": true,
+     "expiry_iv": 42.4
+    }
+   ],
+   "best_week": "2026-11-02",
+   "later": {
+    "on": true,
+    "mc_status": "armed",
+    "mc_shift": 0.0,
+    "mc_projected": 0.030665675423868412,
+    "active_share": 0.5572563395626247,
+    "p": 0.18370565042439035
+   },
+   "merger_share_of_announcements": 0.29729422163049846,
+   "why": [
+    "No 2026 meeting date yet. The clock started Sep 21, and 3 full blank weeks have passed since.",
+    "Most likely reasons for the blank page: ordinary drift or lateness (Tesla's 2025 meeting was Nov 6) 40%; merger process under way (committee or advisers working quietly) 21%; musk asked the board to hold the date; no committee or bankers yet 16%. Merger-related reasons add up to 37%, and non-merger reasons to 63%.",
+    "No committee, bankers or law firms have leaked. That costs the merger share -0.39 log-odds, softened to -0.22, because the quiet-hold path (16%) wouldn't leak.",
+    "Deadlines force some announcement (95% by Dec 14): the e-proxy cutoff is ~Oct 27 and the last Texas 10-day notice is Nov 26. By Dec 14: 28% meeting with a merger, 67% routine, 5% nothing, so 30% of announcements come with a merger.",
+    "Mondays are likeliest, then Tuesdays. Merger news should avoid SpaceX unlock days, Starship launch plus the day after, and the Oct 15-22 Roadster/earnings stretch, Oct 16 included.",
+    "Merger and routine now carry separate deadline pressure. After Oct 26, merger odds keep only the active-process share (56%) and decay daily; the quiet-hold path gets no deadline pressure. That moves 18.4% to 'routine date now, merger letter later (2027 special meeting)'. Missed-card switch: armed."
+   ],
+   "daily": [
+    {
+     "date": "2026-10-14",
+     "cumA": 0.006841513422317663,
+     "cumB": 0.009699832001761803,
+     "none": 0.9834586545759205,
+     "pA": 0.006841513422317663,
+     "pB": 0.009699832001761803,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "cumA": 0.008600759730913633,
+     "cumB": 0.012194074516500552,
+     "none": 0.9792051657525858,
+     "pA": 0.00175924630859597,
+     "pB": 0.0024942425147387484,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0",
+      "Roadster demo (evening) x0.3",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Roadster demo (evening)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-16",
+     "cumA": 0.010311138086493048,
+     "cumB": 0.014619032516941003,
+     "none": 0.975069829396566,
+     "pA": 0.0017103783555794158,
+     "pB": 0.0024249580004404507,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0",
+      "Pre-earnings Friday (clean tape before Oct 21) x0.5",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Pre-earnings Friday (clean tape before Oct 21)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-17",
+     "cumA": 0.010555477851575821,
+     "cumB": 0.014965455088432496,
+     "none": 0.9744790670599917,
+     "pA": 0.0002443397650827736,
+     "pB": 0.0003464225714914929,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-18",
+     "cumA": 0.010799817616658594,
+     "cumB": 0.015311877659923988,
+     "none": 0.9738883047234174,
+     "pA": 0.0002443397650827736,
+     "pB": 0.0003464225714914929,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-19",
+     "cumA": 0.035722473655101505,
+     "cumB": 0.05064697995205626,
+     "none": 0.9136305463928422,
+     "pA": 0.02492265603844291,
+     "pB": 0.03533510229213227,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.0",
+      "Clean-Monday boost (Oct 19) x1.7",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Clean-Monday boost (Oct 19)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "cumA": 0.05231364544108406,
+     "cumB": 0.06866095366961389,
+     "none": 0.879025400889302,
+     "pA": 0.01659117178598255,
+     "pB": 0.018013973717557627,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "cumA": 0.05660182522576878,
+     "cumB": 0.07331687303045956,
+     "none": 0.8700813017437717,
+     "pA": 0.0042881797846847204,
+     "pB": 0.004655919360845663,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.6",
+      "Q3 earnings after the close x0.3",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Q3 earnings after the close",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "cumA": 0.06395299057094259,
+     "cumB": 0.08129844907762356,
+     "none": 0.8547485603514339,
+     "pA": 0.007351165345173808,
+     "pB": 0.007981576047163994,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.6",
+      "Earnings call day after x0.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Earnings call day after",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-23",
+     "cumA": 0.07109995687875045,
+     "cumB": 0.089058314679033,
+     "none": 0.8398417284422165,
+     "pA": 0.007146966307807868,
+     "pB": 0.007759865601409439,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "cumA": 0.0716104544721653,
+     "cumB": 0.08961259079341938,
+     "none": 0.8387769547344153,
+     "pA": 0.0005104975934148479,
+     "pB": 0.0005542761143863886,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-25",
+     "cumA": 0.07186570326887272,
+     "cumB": 0.09016686690780577,
+     "none": 0.8379674298233215,
+     "pA": 0.00025524879670742396,
+     "pB": 0.0005542761143863887,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.6",
+      "merger-only x0.45 (near SPCX unlock; Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "near SPCX unlock",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-26",
+     "cumA": 0.0779916743898509,
+     "cumB": 0.1234234337709891,
+     "none": 0.79858489183916,
+     "pA": 0.0061259711209781745,
+     "pB": 0.033256566863183325,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.6",
+      "merger-only x0.18 (SPCX unlock 328M; Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "SPCX unlock 328M",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-27",
+     "cumA": 0.08781040447143322,
+     "cumB": 0.16013515389298444,
+     "none": 0.7520544416355823,
+     "pA": 0.009818730081582317,
+     "pB": 0.036711720121995334,
+     "pL": 0.00788936217390312,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.6",
+      "merger-only x0.50 (near SPCX unlock)",
+      "post-Oct 26 merger x0.55 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-10-28",
+     "cumA": 0.10096200307277801,
+     "cumB": 0.1902210357929321,
+     "none": 0.7088169611342898,
+     "pA": 0.01315159860134479,
+     "pB": 0.030085881899947663,
+     "pL": 0.010686217896424065,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.55 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-29",
+     "cumA": 0.11217857855535324,
+     "cumB": 0.21606515788289327,
+     "none": 0.6717562635617534,
+     "pA": 0.011216575482575224,
+     "pB": 0.025844122089961168,
+     "pL": 0.00921583865836951,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.55 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-30",
+     "cumA": 0.11868894755975183,
+     "cumB": 0.23117352912914088,
+     "none": 0.6501375233111073,
+     "pA": 0.0065103690043986,
+     "pB": 0.015108371246247627,
+     "pL": 0.005408539244485828,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.55 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-31",
+     "cumA": 0.1191516545885751,
+     "cumB": 0.23225501783250663,
+     "none": 0.6485933275789182,
+     "pA": 0.0004627070288232748,
+     "pB": 0.0010814887033657415,
+     "pL": 0.0003886435603827558,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.54 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-01",
+     "cumA": 0.11961205385646442,
+     "cumB": 0.2333388142968063,
+     "none": 0.6470491318467293,
+     "pA": 0.0004603992678893265,
+     "pB": 0.00108379646429969,
+     "pL": 0.0003909513213167041,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.54 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-02",
+     "cumA": 0.1470982348741277,
+     "cumB": 0.298504377210484,
+     "none": 0.5543973879153883,
+     "pA": 0.02748618101766328,
+     "pB": 0.0651655629136777,
+     "pL": 0.023594854334698552,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.54 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-03",
+     "cumA": 0.17080078224299516,
+     "cumB": 0.3551000079154454,
+     "none": 0.4740992098415595,
+     "pA": 0.023702547368867455,
+     "pB": 0.05659563070496139,
+     "pL": 0.020567683269846135,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.54 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-04",
+     "cumA": 0.18350003708489912,
+     "cumB": 0.38563823357483384,
+     "none": 0.430861729340267,
+     "pA": 0.012699254841903967,
+     "pB": 0.030538225659388487,
+     "pL": 0.011138561655864888,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.53 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-05",
+     "cumA": 0.19433082312273559,
+     "cumB": 0.4118681451095338,
+     "none": 0.39380103176773057,
+     "pA": 0.010830786037836463,
+     "pB": 0.026229911534699925,
+     "pL": 0.009601628103108271,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.53 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-06",
+     "cumA": 0.20061727069521826,
+     "cumB": 0.42720043778769734,
+     "none": 0.3721822915170844,
+     "pA": 0.0062864475724826695,
+     "pB": 0.015332292678163557,
+     "pL": 0.005632460676401758,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.53 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-07",
+     "cumA": 0.20106406310839045,
+     "cumB": 0.42829784110671415,
+     "none": 0.3706380957848954,
+     "pA": 0.00044679241317220007,
+     "pB": 0.0010974033190168163,
+     "pL": 0.00040455817603383054,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.52 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-08",
+     "cumA": 0.20110851951106196,
+     "cumB": 0.42903136490594623,
+     "none": 0.36986011558299176,
+     "pA": 4.4456402671495204e-05,
+     "pB": 0.0007335237992320936,
+     "pL": 4.067865624910787e-05,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.0",
+      "merger-only x0.10 (Starship launch (NET))",
+      "post-Oct 26 merger x0.52 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "Starship launch (NET)"
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "cumA": 0.20907076108992942,
+     "cumB": 0.47796414251176644,
+     "none": 0.31296509639830417,
+     "pA": 0.007962241578867473,
+     "pB": 0.048932777605820224,
+     "pL": 0.007362069026841079,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.0",
+      "merger-only x0.30 (day after Starship launch)",
+      "post-Oct 26 merger x0.52 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "day after Starship launch"
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "cumA": 0.23195806920840936,
+     "cumB": 0.5353750124671154,
+     "none": 0.23266691832447528,
+     "pA": 0.022887308118479947,
+     "pB": 0.0574108699553489,
+     "pL": 0.021382922520233643,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.52 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-11",
+     "cumA": 0.24422053846618696,
+     "cumB": 0.5663500237106303,
+     "none": 0.18942943782318278,
+     "pA": 0.012262469257777594,
+     "pB": 0.030975011243514858,
+     "pL": 0.011575347239991261,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.51 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-12",
+     "cumA": 0.2546788041266487,
+     "cumB": 0.5929524556227049,
+     "none": 0.1523687402506464,
+     "pA": 0.01045826566046172,
+     "pB": 0.02660243191207467,
+     "pL": 0.009974148480483015,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.51 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-13",
+     "cumA": 0.26074903195165716,
+     "cumB": 0.6085009680483426,
+     "none": 0.13075000000000014,
+     "pA": 0.006070227825008496,
+     "pB": 0.01554851242563773,
+     "pL": 0.005848680423875932,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0",
+      "post-Oct 26 merger x0.51 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-14",
+     "cumA": 0.2608148622466907,
+     "cumB": 0.6086707634579314,
+     "none": 0.13051437429537793,
+     "pA": 6.583029503355535e-05,
+     "pB": 0.00016979540958876694,
+     "pL": 6.407557005903505e-05,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.51 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-15",
+     "cumA": 0.26088036421175803,
+     "cumB": 0.6088408871974864,
+     "none": 0.1302787485907555,
+     "pA": 6.550196506732364e-05,
+     "pB": 0.00017012373955499865,
+     "pL": 6.440390002526676e-05,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.50 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-16",
+     "cumA": 0.26479088057097583,
+     "cumB": 0.6190679131156079,
+     "none": 0.11614120631341629,
+     "pA": 0.003910516359217809,
+     "pB": 0.010227025918121527,
+     "pL": 0.0038838355463376144,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.50 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-17",
+     "cumA": 0.2681630914714835,
+     "cumB": 0.627948238855461,
+     "none": 0.10388866967305554,
+     "pA": 0.0033722109005076737,
+     "pB": 0.008880325739853085,
+     "pL": 0.003382894084307027,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.50 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-18",
+     "cumA": 0.2699698409714314,
+     "cumB": 0.6327390090849381,
+     "none": 0.09729114994363053,
+     "pA": 0.0018067494999479308,
+     "pB": 0.0047907702294770925,
+     "pL": 0.0018306147226446001,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.50 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-19",
+     "cumA": 0.2715107595136228,
+     "cumB": 0.6368531074536824,
+     "none": 0.0916361330326948,
+     "pA": 0.0015409185421914255,
+     "pB": 0.0041140983687443095,
+     "pL": 0.0015768222200307444,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.49 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-20",
+     "cumA": 0.27240514553464773,
+     "cumB": 0.63925748129737,
+     "none": 0.08833737316798229,
+     "pA": 0.0008943860210249208,
+     "pB": 0.0024043738436875907,
+     "pL": 0.0009242960902713447,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.49 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-21",
+     "cumA": 0.272468711624086,
+     "cumB": 0.6394295409125541,
+     "none": 0.08810174746335986,
+     "pA": 6.356608943823463e-05,
+     "pB": 0.00017205961518408766,
+     "pL": 6.633977565435577e-05,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.49 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-22",
+     "cumA": 0.2725319606763305,
+     "cumB": 0.6396019175649319,
+     "none": 0.08786612175873754,
+     "pA": 6.324905224452162e-05,
+     "pB": 0.00017237665237780067,
+     "pL": 6.665681284806878e-05,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.49 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-23",
+     "cumA": 0.276307976453155,
+     "cumB": 0.6499634440654467,
+     "none": 0.07372857948139822,
+     "pA": 0.0037760157768245367,
+     "pB": 0.010361526500514799,
+     "pL": 0.004018336128730887,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.48 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-24",
+     "cumA": 0.279564201563448,
+     "cumB": 0.6589597555955145,
+     "none": 0.06147604284103747,
+     "pA": 0.003256225110293016,
+     "pB": 0.008996311530067743,
+     "pL": 0.003498879874521685,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.48 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-25",
+     "cumA": 0.2813088086664184,
+     "cumB": 0.663812668221969,
+     "none": 0.054878523111612565,
+     "pA": 0.0017446071029703716,
+     "pB": 0.004852912626454652,
+     "pL": 0.0018927571196221593,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.2",
+      "post-Oct 26 merger x0.48 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-26",
+     "cumA": 0.2813426250139264,
+     "cumB": 0.6639073749860732,
+     "none": 0.05475000000000041,
+     "pA": 3.381634750799441e-05,
+     "pB": 9.470676410418139e-05,
+     "pL": 3.7041397087964e-05,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0",
+      "Thanksgiving x0.05",
+      "post-Oct 26 merger x0.48 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "Thanksgiving"
+     ]
+    },
+    {
+     "date": "2026-11-27",
+     "cumA": 0.2813579665702996,
+     "cumB": 0.6639506331342465,
+     "none": 0.05469140029545383,
+     "pA": 1.534155637324828e-05,
+     "pB": 4.3258148173251295e-05,
+     "pL": 1.6965807229059036e-05,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0",
+      "Early close 1pm ET (day after Thanksgiving) x0.3",
+      "post-Oct 26 merger x0.47 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "Early close 1pm ET (day after Thanksgiving)"
+     ]
+    },
+    {
+     "date": "2026-11-28",
+     "cumA": 0.28136160110364283,
+     "cumB": 0.6639609509115095,
+     "none": 0.05467744798484764,
+     "pA": 3.634533343242874e-06,
+     "pB": 1.0317777263066551e-05,
+     "pL": 4.057696085877917e-06,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.47 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-29",
+     "cumA": 0.2813652175096754,
+     "cumB": 0.6639712868160833,
+     "none": 0.054663495674241225,
+     "pA": 3.6164060325685595e-06,
+     "pB": 1.0335904573740865e-05,
+     "pL": 4.075823396552231e-06,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.47 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-30",
+     "cumA": 0.2815811196576094,
+     "cumB": 0.6645925233045279,
+     "none": 0.05382635703786265,
+     "pA": 0.00021590214793400486,
+     "pB": 0.0006212364884445605,
+     "pL": 0.0002456316178132425,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.47 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-01",
+     "cumA": 0.2817673016115577,
+     "cumB": 0.6651318615021077,
+     "none": 0.0531008368863346,
+     "pA": 0.0001861819539483275,
+     "pB": 0.0005393381975797625,
+     "pL": 0.00021381397636595356,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.47 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-02",
+     "cumA": 0.2818670534248695,
+     "cumB": 0.6654227743857726,
+     "none": 0.05271017218935792,
+     "pA": 9.975181331180325e-05,
+     "pB": 0.00029091288366486063,
+     "pL": 0.00011563061070357887,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.46 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-03",
+     "cumA": 0.28195212853835583,
+     "cumB": 0.6656725547268377,
+     "none": 0.05237531673480644,
+     "pA": 8.507511348629395e-05,
+     "pB": 0.0002497803410651322,
+     "pL": 9.953839281260502e-05,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.46 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-04",
+     "cumA": 0.2820015081714486,
+     "cumB": 0.6658185074422333,
+     "none": 0.0521799843863181,
+     "pA": 4.937963309276443e-05,
+     "pB": 0.00014595271539556752,
+     "pL": 5.8311578914926635e-05,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.46 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-05",
+     "cumA": 0.2820050176965304,
+     "cumB": 0.6658289502277578,
+     "none": 0.0521660320757118,
+     "pA": 3.50952508180404e-06,
+     "pB": 1.0442785524505385e-05,
+     "pL": 4.182704347316751e-06,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.46 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-06",
+     "cumA": 0.28200850971778285,
+     "cumB": 0.6658394105171117,
+     "none": 0.052152079765105386,
+     "pA": 3.492021252434739e-06,
+     "pB": 1.0460289353874685e-05,
+     "pL": 4.200208176686052e-06,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0",
+      "post-Oct 26 merger x0.45 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-07",
+     "cumA": 0.28209190023115355,
+     "cumB": 0.666241117406545,
+     "none": 0.051666982362301495,
+     "pA": 8.339051337068698e-05,
+     "pB": 0.00040170688943326645,
+     "pL": 0.00010122299292821198,
+     "why": [
+      "Mon x3.0",
+      "urgency x0.8",
+      "merger-only x0.50 (near SPCX unlock)",
+      "post-Oct 26 merger x0.45 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-12-08",
+     "cumA": 0.28212066475965625,
+     "cumB": 0.6665367716038636,
+     "none": 0.051342563636480154,
+     "pA": 2.8764528502707504e-05,
+     "pB": 0.0002956541973186246,
+     "pL": 3.523482034757748e-05,
+     "why": [
+      "Tue x2.6",
+      "urgency x0.8",
+      "merger-only x0.20 (SPCX unlock 784M)",
+      "post-Oct 26 merger x0.45 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "SPCX unlock 784M"
+     ]
+    },
+    {
+     "date": "2026-12-09",
+     "cumA": 0.2821591931161424,
+     "cumB": 0.6667246220353527,
+     "none": 0.051116184848504886,
+     "pA": 3.852835648615634e-05,
+     "pB": 0.0001878504314890219,
+     "pL": 4.76246131199965e-05,
+     "why": [
+      "Wed x1.4",
+      "urgency x0.8",
+      "merger-only x0.50 (near SPCX unlock)",
+      "post-Oct 26 merger x0.45 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-12-10",
+     "cumA": 0.28222491230843927,
+     "cumB": 0.666926787206697,
+     "none": 0.05084830048486377,
+     "pA": 6.571919229687407e-05,
+     "pB": 0.00020216517134426682,
+     "pL": 8.19716127422451e-05,
+     "why": [
+      "Thu x1.2",
+      "urgency x0.8",
+      "post-Oct 26 merger x0.44 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-11",
+     "cumA": 0.282263057301373,
+     "cumB": 0.6670449080925539,
+     "none": 0.05069203460607308,
+     "pA": 3.8144992933747755e-05,
+     "pB": 0.00011812088585691778,
+     "pL": 4.8007976672405084e-05,
+     "why": [
+      "Fri x0.7",
+      "urgency x0.8",
+      "post-Oct 26 merger x0.44 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-12",
+     "cumA": 0.282265768354515,
+     "cumB": 0.667053358887897,
+     "none": 0.050680872757588036,
+     "pA": 2.7110531419854076e-06,
+     "pB": 8.450795343062133e-06,
+     "pL": 3.4427304013112255e-06,
+     "why": [
+      "Sat x0.05",
+      "urgency x0.8",
+      "post-Oct 26 merger x0.44 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-13",
+     "cumA": 0.282268465886223,
+     "cumB": 0.667061823204674,
+     "none": 0.050669710909102994,
+     "pA": 2.6975317080300115e-06,
+     "pB": 8.464316777017529e-06,
+     "pL": 3.4562518352666215e-06,
+     "why": [
+      "Sun x0.05",
+      "urgency x0.8",
+      "post-Oct 26 merger x0.44 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-14",
+     "cumA": 0.2824295105489735,
+     "cumB": 0.6675704894510264,
+     "none": 0.050000000000000155,
+     "pA": 0.0001610446627504688,
+     "pB": 0.0005086662463523837,
+     "pL": 0.0002081823498473292,
+     "why": [
+      "Mon x3.0",
+      "urgency x0.8",
+      "post-Oct 26 merger x0.44 (active-process share 0.56, decay); rest -> routine now + letter later"
+     ],
+     "events": []
+    }
+   ]
+  },
+  "on": {
+   "totals": {
+    "A": 0.2960370604456345,
+    "B": 0.6539629395543655,
+    "none": 0.050000000000000044
+   },
+   "weeks": [
+    {
+     "monday": "2026-10-12",
+     "friday": "2026-10-16",
+     "first_day": "2026-10-14",
+     "A": 0.009587636162747371,
+     "B": 0.016524059113835213,
+     "days": {
+      "Mon": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Tue": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wed": {
+       "A": 0.006073615668708742,
+       "B": 0.010467729755370723,
+       "date": "2026-10-14",
+       "either": 0.016541345424079465
+      },
+      "Thu": {
+       "A": 0.00156178688623939,
+       "B": 0.0026917019370953296,
+       "date": "2026-10-15",
+       "either": 0.0042534888233347196
+      },
+      "Fri": {
+       "A": 0.001518403917177183,
+       "B": 0.0026169324388426833,
+       "date": "2026-10-16",
+       "either": 0.004135336356019866
+      },
+      "Wknd": {
+       "A": 0.00043382969062205623,
+       "B": 0.000747694982526477,
+       "date": null,
+       "either": 0.0011815246731485332
+      }
+     },
+     "cumA": 0.009587636162747371,
+     "cumB": 0.016524059113835213,
+     "none": 0.9738883047234174,
+     "either": 0.026111695276582584,
+     "cum": 0.026111695276582584,
+     "mon": 0,
+     "tue": 0,
+     "L": 0.0,
+     "expiry": "2026-10-16",
+     "expiry_listed": true,
+     "expiry_iv": 48.2
+    },
+    {
+     "monday": "2026-10-19",
+     "friday": "2026-10-23",
+     "first_day": "2026-10-19",
+     "A": 0.04770272569580396,
+     "B": 0.08821814920429195,
+     "days": {
+      "Mon": {
+       "A": 0.022125314221724698,
+       "B": 0.038132444108850486,
+       "date": "2026-10-19",
+       "either": 0.06025775833057519
+      },
+      "Tue": {
+       "A": 0.014728963418074434,
+       "B": 0.019876182085465738,
+       "date": "2026-10-20",
+       "either": 0.03460514550354017
+      },
+      "Wed": {
+       "A": 0.002379294090612022,
+       "B": 0.0065648050549183545,
+       "date": "2026-10-21",
+       "either": 0.008944099145530376
+      },
+      "Thu": {
+       "A": 0.004078789869620597,
+       "B": 0.011253951522717215,
+       "date": "2026-10-22",
+       "either": 0.015332741392337812
+      },
+      "Fri": {
+       "A": 0.003965490151020046,
+       "B": 0.010941341758197276,
+       "date": "2026-10-23",
+       "either": 0.014906831909217322
+      },
+      "Wknd": {
+       "A": 0.00042487394475215767,
+       "B": 0.0014494246741428851,
+       "date": null,
+       "either": 0.0018742986188950428
+      }
+     },
+     "cumA": 0.057290361858551325,
+     "cumB": 0.10474220831812717,
+     "none": 0.8379674298233215,
+     "either": 0.1359208749000959,
+     "cum": 0.1620325701766785,
+     "mon": 0.06025775833057519,
+     "tue": 0.03460514550354017,
+     "L": 0.0,
+     "expiry": "2026-10-23",
+     "expiry_listed": true,
+     "expiry_iv": 54.9
+    },
+    {
+     "monday": "2026-10-26",
+     "friday": "2026-10-30",
+     "first_day": "2026-10-26",
+     "A": 0.03892131974362514,
+     "B": 0.15199697823296712,
+     "days": {
+      "Mon": {
+       "A": 0.003398991558017178,
+       "B": 0.03598354642614432,
+       "date": "2026-10-26",
+       "either": 0.0393825379841615
+      },
+      "Tue": {
+       "A": 0.00982532481729581,
+       "B": 0.036705125386281845,
+       "date": "2026-10-27",
+       "either": 0.046530450203577656
+      },
+      "Wed": {
+       "A": 0.010581119034010877,
+       "B": 0.0326563614672816,
+       "date": "2026-10-28",
+       "either": 0.043237480501292475
+      },
+      "Thu": {
+       "A": 0.009069530600580744,
+       "B": 0.02799116697195564,
+       "date": "2026-10-29",
+       "either": 0.03706069757253638
+      },
+      "Fri": {
+       "A": 0.0052905595170054665,
+       "B": 0.016328180733640785,
+       "date": "2026-10-30",
+       "either": 0.02161874025064625
+      },
+      "Wknd": {
+       "A": 0.0007557942167150666,
+       "B": 0.0023325972476629375,
+       "date": null,
+       "either": 0.003088391464378004
+      }
+     },
+     "cumA": 0.09621168160217647,
+     "cumB": 0.2567391865510943,
+     "none": 0.6470491318467292,
+     "either": 0.19091829797659227,
+     "cum": 0.35295086815327076,
+     "mon": 0.0393825379841615,
+     "tue": 0.046530450203577656,
+     "L": 0.0,
+     "expiry": "2026-10-30",
+     "expiry_listed": true,
+     "expiry_iv": 49.3
+    },
+    {
+     "monday": "2026-11-02",
+     "friday": "2026-11-06",
+     "first_day": "2026-11-02",
+     "A": 0.06768137210683384,
+     "B": 0.2095076441569037,
+     "days": {
+      "Mon": {
+       "A": 0.022673826501451888,
+       "B": 0.06997791742988907,
+       "date": "2026-11-02",
+       "either": 0.09265174393134096
+      },
+      "Tue": {
+       "A": 0.01965064963459162,
+       "B": 0.060647528439237264,
+       "date": "2026-11-03",
+       "either": 0.08029817807382889
+      },
+      "Wed": {
+       "A": 0.010581119034010877,
+       "B": 0.032656361467281625,
+       "date": "2026-11-04",
+       "either": 0.0432374805012925
+      },
+      "Thu": {
+       "A": 0.009069530600580744,
+       "B": 0.02799116697195564,
+       "date": "2026-11-05",
+       "either": 0.03706069757253638
+      },
+      "Fri": {
+       "A": 0.0052905595170054665,
+       "B": 0.016328180733640785,
+       "date": "2026-11-06",
+       "either": 0.02161874025064625
+      },
+      "Wknd": {
+       "A": 0.00041568681919323947,
+       "B": 0.0019064891148993235,
+       "date": null,
+       "either": 0.002322175934092563
+      }
+     },
+     "cumA": 0.1638930537090103,
+     "cumB": 0.466246830707998,
+     "none": 0.3698601155829917,
+     "either": 0.27718901626373754,
+     "cum": 0.6301398844170083,
+     "mon": 0.09265174393134096,
+     "tue": 0.08029817807382889,
+     "L": 0.0,
+     "expiry": "2026-11-06",
+     "expiry_listed": true,
+     "expiry_iv": 46.3
+    },
+    {
+     "monday": "2026-11-09",
+     "friday": "2026-11-13",
+     "first_day": "2026-11-09",
+     "A": 0.05186525814586895,
+     "B": 0.18771610884636747,
+     "days": {
+      "Mon": {
+       "A": 0.006802147950435544,
+       "B": 0.05009287123425221,
+       "date": "2026-11-09",
+       "either": 0.056895019184687756
+      },
+      "Tue": {
+       "A": 0.019650649634591733,
+       "B": 0.06064752843923715,
+       "date": "2026-11-10",
+       "either": 0.08029817807382889
+      },
+      "Wed": {
+       "A": 0.010581119034010822,
+       "B": 0.03265636146728168,
+       "date": "2026-11-11",
+       "either": 0.0432374805012925
+      },
+      "Thu": {
+       "A": 0.0090695306005808,
+       "B": 0.027991166971955583,
+       "date": "2026-11-12",
+       "either": 0.03706069757253638
+      },
+      "Fri": {
+       "A": 0.005290559517005411,
+       "B": 0.01632818073364084,
+       "date": "2026-11-13",
+       "either": 0.02161874025064625
+      },
+      "Wknd": {
+       "A": 0.00047125140924464404,
+       "B": 0.0,
+       "date": null,
+       "either": 0.00047125140924464404
+      }
+     },
+     "cumA": 0.21575831185487926,
+     "cumB": 0.6539629395543655,
+     "none": 0.13027874859075528,
+     "either": 0.23958136699223642,
+     "cum": 0.8697212514092447,
+     "mon": 0.056895019184687756,
+     "tue": 0.08029817807382889,
+     "L": 0.0,
+     "expiry": "2026-11-13",
+     "expiry_listed": true,
+     "expiry_iv": 44.4
+    },
+    {
+     "monday": "2026-11-16",
+     "friday": "2026-11-20",
+     "first_day": "2026-11-16",
+     "A": 0.04241262683201796,
+     "B": 0.0,
+     "days": {
+      "Mon": {
+       "A": 0.014137542277339321,
+       "B": 0.0,
+       "date": "2026-11-16",
+       "either": 0.014137542277339321
+      },
+      "Tue": {
+       "A": 0.012252536640360745,
+       "B": 0.0,
+       "date": "2026-11-17",
+       "either": 0.012252536640360745
+      },
+      "Wed": {
+       "A": 0.0065975197294250165,
+       "B": 0.0,
+       "date": "2026-11-18",
+       "either": 0.0065975197294250165
+      },
+      "Thu": {
+       "A": 0.0056550169109357284,
+       "B": 0.0,
+       "date": "2026-11-19",
+       "either": 0.0056550169109357284
+      },
+      "Fri": {
+       "A": 0.0032987598647125083,
+       "B": 0.0,
+       "date": "2026-11-20",
+       "either": 0.0032987598647125083
+      },
+      "Wknd": {
+       "A": 0.00047125140924464404,
+       "B": 0.0,
+       "date": null,
+       "either": 0.00047125140924464404
+      }
+     },
+     "cumA": 0.2581709386868972,
+     "cumB": 0.6539629395543655,
+     "none": 0.08786612175873731,
+     "either": 0.04241262683201796,
+     "cum": 0.9121338782412627,
+     "mon": 0.014137542277339321,
+     "tue": 0.012252536640360745,
+     "L": 0.0,
+     "expiry": "2026-11-20",
+     "expiry_listed": true,
+     "expiry_iv": 43.3
+    },
+    {
+     "monday": "2026-11-23",
+     "friday": "2026-11-27",
+     "first_day": "2026-11-23",
+     "A": 0.03320262608449631,
+     "B": 0.0,
+     "days": {
+      "Mon": {
+       "A": 0.014137542277339321,
+       "B": 0.0,
+       "date": "2026-11-23",
+       "either": 0.014137542277339321
+      },
+      "Tue": {
+       "A": 0.012252536640360745,
+       "B": 0.0,
+       "date": "2026-11-24",
+       "either": 0.012252536640360745
+      },
+      "Wed": {
+       "A": 0.0065975197294250165,
+       "B": 0.0,
+       "date": "2026-11-25",
+       "either": 0.0065975197294250165
+      },
+      "Thu": {
+       "A": 0.00012852311161215546,
+       "B": 0.0,
+       "date": "2026-11-26",
+       "either": 0.00012852311161215546
+      },
+      "Fri": {
+       "A": 5.8599704546469233e-05,
+       "B": 0.0,
+       "date": "2026-11-27",
+       "either": 5.8599704546469233e-05
+      },
+      "Wknd": {
+       "A": 2.7904621212604397e-05,
+       "B": 0.0,
+       "date": null,
+       "either": 2.7904621212604397e-05
+      }
+     },
+     "cumA": 0.29137356477139353,
+     "cumB": 0.6539629395543655,
+     "none": 0.054663495674241,
+     "either": 0.03320262608449631,
+     "cum": 0.945336504325759,
+     "mon": 0.014137542277339321,
+     "tue": 0.012252536640360745,
+     "L": 0.0,
+     "expiry": "2026-11-27",
+     "expiry_listed": true,
+     "expiry_iv": 42.3
+    },
+    {
+     "monday": "2026-11-30",
+     "friday": "2026-12-04",
+     "first_day": "2026-11-30",
+     "A": 0.002511415909135728,
+     "B": 0.0,
+     "days": {
+      "Mon": {
+       "A": 0.000837138636378576,
+       "B": 0.0,
+       "date": "2026-11-30",
+       "either": 0.000837138636378576
+      },
+      "Tue": {
+       "A": 0.0007255201515280474,
+       "B": 0.0,
+       "date": "2026-12-01",
+       "either": 0.0007255201515280474
+      },
+      "Wed": {
+       "A": 0.0003906646969766836,
+       "B": 0.0,
+       "date": "2026-12-02",
+       "either": 0.0003906646969766836
+      },
+      "Thu": {
+       "A": 0.0003348554545514748,
+       "B": 0.0,
+       "date": "2026-12-03",
+       "either": 0.0003348554545514748
+      },
+      "Fri": {
+       "A": 0.0001953323484883418,
+       "B": 0.0,
+       "date": "2026-12-04",
+       "either": 0.0001953323484883418
+      },
+      "Wknd": {
+       "A": 2.7904621212604397e-05,
+       "B": 0.0,
+       "date": null,
+       "either": 2.7904621212604397e-05
+      }
+     },
+     "cumA": 0.29388498068052926,
+     "cumB": 0.6539629395543655,
+     "none": 0.052152079765105275,
+     "either": 0.002511415909135728,
+     "cum": 0.9478479202348947,
+     "mon": 0.000837138636378576,
+     "tue": 0.0007255201515280474,
+     "L": 0.0,
+     "expiry": "2026-12-04",
+     "expiry_listed": false,
+     "expiry_iv": null
+    },
+    {
+     "monday": "2026-12-07",
+     "friday": "2026-12-11",
+     "first_day": "2026-12-07",
+     "A": 0.0014823688560023918,
+     "B": 0.0,
+     "days": {
+      "Mon": {
+       "A": 0.00048509740280400226,
+       "B": 0.0,
+       "date": "2026-12-07",
+       "either": 0.00048509740280400226
+      },
+      "Tue": {
+       "A": 0.00032441872582134046,
+       "B": 0.0,
+       "date": "2026-12-08",
+       "either": 0.00032441872582134046
+      },
+      "Wed": {
+       "A": 0.00022637878797515665,
+       "B": 0.0,
+       "date": "2026-12-09",
+       "either": 0.00022637878797515665
+      },
+      "Thu": {
+       "A": 0.00026788436364111323,
+       "B": 0.0,
+       "date": "2026-12-10",
+       "either": 0.00026788436364111323
+      },
+      "Fri": {
+       "A": 0.00015626587879069564,
+       "B": 0.0,
+       "date": "2026-12-11",
+       "either": 0.00015626587879069564
+      },
+      "Wknd": {
+       "A": 2.2323696970083517e-05,
+       "B": 0.0,
+       "date": null,
+       "either": 2.2323696970083517e-05
+      }
+     },
+     "cumA": 0.29536734953653165,
+     "cumB": 0.6539629395543655,
+     "none": 0.05066971090910288,
+     "either": 0.0014823688560023918,
+     "cum": 0.9493302890908971,
+     "mon": 0.00048509740280400226,
+     "tue": 0.00032441872582134046,
+     "L": 0.0,
+     "expiry": "2026-12-11",
+     "expiry_listed": false,
+     "expiry_iv": null
+    },
+    {
+     "monday": "2026-12-14",
+     "friday": "2026-12-18",
+     "first_day": "2026-12-14",
+     "A": 0.0006697109091028386,
+     "B": 0.0,
+     "days": {
+      "Mon": {
+       "A": 0.0006697109091028386,
+       "B": 0.0,
+       "date": "2026-12-14",
+       "either": 0.0006697109091028386
+      },
+      "Tue": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wed": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Thu": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Fri": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      },
+      "Wknd": {
+       "A": 0,
+       "B": 0,
+       "date": null,
+       "either": 0
+      }
+     },
+     "cumA": 0.2960370604456345,
+     "cumB": 0.6539629395543655,
+     "none": 0.050000000000000044,
+     "either": 0.0006697109091028386,
+     "cum": 0.95,
+     "mon": 0.0006697109091028386,
+     "tue": 0,
+     "L": 0.0,
+     "expiry": "2026-12-18",
+     "expiry_listed": true,
+     "expiry_iv": 42.4
+    }
+   ],
+   "best_week": "2026-11-02",
+   "later": {
+    "on": false,
+    "mc_status": "off",
+    "mc_shift": 0.0,
+    "mc_projected": 0.0,
+    "p": 0.0
+   },
+   "merger_share_of_announcements": 0.3116179583638258,
+   "why": [
+    "No 2026 meeting date yet. The clock started Sep 21, and 3 full blank weeks have passed since.",
+    "Most likely reasons for the blank page: ordinary drift or lateness (Tesla's 2025 meeting was Nov 6) 40%; merger process under way (committee or advisers working quietly) 21%; musk asked the board to hold the date; no committee or bankers yet 16%. Merger-related reasons add up to 37%, and non-merger reasons to 63%.",
+    "No committee, bankers or law firms have leaked. That costs the merger share -0.39 log-odds, softened to -0.22, because the quiet-hold path (16%) wouldn't leak.",
+    "Deadlines force some announcement (95% by Dec 14): the e-proxy cutoff is ~Oct 27 and the last Texas 10-day notice is Nov 26. By Dec 14: 30% meeting with a merger, 65% routine, 5% nothing, so 31% of announcements come with a merger.",
+    "Mondays are likeliest, then Tuesdays. Merger news should avoid SpaceX unlock days, Starship launch plus the day after, and the Oct 15-22 Roadster/earnings stretch, Oct 16 included."
+   ],
+   "daily": [
+    {
+     "date": "2026-10-14",
+     "cumA": 0.006073615668708742,
+     "cumB": 0.010467729755370723,
+     "none": 0.9834586545759205,
+     "pA": 0.006073615668708742,
+     "pB": 0.010467729755370723,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "cumA": 0.007635402554948132,
+     "cumB": 0.013159431692466052,
+     "none": 0.9792051657525859,
+     "pA": 0.00156178688623939,
+     "pB": 0.0026917019370953296,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0",
+      "Roadster demo (evening) x0.3",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Roadster demo (evening)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-16",
+     "cumA": 0.009153806472125315,
+     "cumB": 0.015776364131308736,
+     "none": 0.975069829396566,
+     "pA": 0.001518403917177183,
+     "pB": 0.0026169324388426833,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0",
+      "Pre-earnings Friday (clean tape before Oct 21) x0.5",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Pre-earnings Friday (clean tape before Oct 21)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-17",
+     "cumA": 0.009370721317436343,
+     "cumB": 0.016150211622571974,
+     "none": 0.9744790670599917,
+     "pA": 0.00021691484531102811,
+     "pB": 0.0003738474912632385,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-18",
+     "cumA": 0.009587636162747371,
+     "cumB": 0.016524059113835213,
+     "none": 0.9738883047234174,
+     "pA": 0.00021691484531102811,
+     "pB": 0.0003738474912632385,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-19",
+     "cumA": 0.03171295038447207,
+     "cumB": 0.0546565032226857,
+     "none": 0.9136305463928422,
+     "pA": 0.022125314221724698,
+     "pB": 0.038132444108850486,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.0",
+      "Clean-Monday boost (Oct 19) x1.7",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.64 (merger)"
+     ],
+     "events": [
+      "Clean-Monday boost (Oct 19)",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "cumA": 0.0464419138025465,
+     "cumB": 0.07453268530815144,
+     "none": 0.8790254008893021,
+     "pA": 0.014728963418074434,
+     "pB": 0.019876182085465738,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.0",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "cumA": 0.048821207893158525,
+     "cumB": 0.08109749036306979,
+     "none": 0.8700813017437717,
+     "pA": 0.002379294090612022,
+     "pB": 0.0065648050549183545,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.6",
+      "Q3 earnings after the close x0.3",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Q3 earnings after the close",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "cumA": 0.05289999776277912,
+     "cumB": 0.092351441885787,
+     "none": 0.8547485603514339,
+     "pA": 0.004078789869620597,
+     "pB": 0.011253951522717215,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.6",
+      "Earnings call day after x0.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Earnings call day after",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-23",
+     "cumA": 0.05686548791379917,
+     "cumB": 0.10329278364398428,
+     "none": 0.8398417284422165,
+     "pA": 0.003965490151020046,
+     "pB": 0.010941341758197276,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-24",
+     "cumA": 0.0571487372103006,
+     "cumB": 0.10407430805528407,
+     "none": 0.8387769547344154,
+     "pA": 0.0002832492965014338,
+     "pB": 0.0007815244112997916,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.6",
+      "merger-only x0.90 (Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-25",
+     "cumA": 0.057290361858551325,
+     "cumB": 0.10474220831812717,
+     "none": 0.8379674298233215,
+     "pA": 0.00014162464825072385,
+     "pB": 0.0006679002628430936,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.6",
+      "merger-only x0.45 (near SPCX unlock; Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "near SPCX unlock",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-26",
+     "cumA": 0.0606893534165685,
+     "cumB": 0.1407257547442715,
+     "none": 0.79858489183916,
+     "pA": 0.003398991558017178,
+     "pB": 0.03598354642614432,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.6",
+      "merger-only x0.18 (SPCX unlock 328M; Grain spectrum deal pending FCC)",
+      "no-leak lead x0.83 (merger)"
+     ],
+     "events": [
+      "SPCX unlock 328M",
+      "Grain spectrum deal pending FCC"
+     ]
+    },
+    {
+     "date": "2026-10-27",
+     "cumA": 0.07051467823386431,
+     "cumB": 0.17743088013055333,
+     "none": 0.7520544416355823,
+     "pA": 0.00982532481729581,
+     "pB": 0.036705125386281845,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.6",
+      "merger-only x0.50 (near SPCX unlock)"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-10-28",
+     "cumA": 0.08109579726787519,
+     "cumB": 0.21008724159783493,
+     "none": 0.7088169611342898,
+     "pA": 0.010581119034010877,
+     "pB": 0.0326563614672816,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-29",
+     "cumA": 0.09016532786845594,
+     "cumB": 0.23807840856979057,
+     "none": 0.6717562635617534,
+     "pA": 0.009069530600580744,
+     "pB": 0.02799116697195564,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-30",
+     "cumA": 0.0954558873854614,
+     "cumB": 0.25440658930343135,
+     "none": 0.6501375233111073,
+     "pA": 0.0052905595170054665,
+     "pB": 0.016328180733640785,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-10-31",
+     "cumA": 0.09583378449381891,
+     "cumB": 0.25557288792726285,
+     "none": 0.6485933275789183,
+     "pA": 0.00037789710835750556,
+     "pB": 0.0011662986238314965,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-01",
+     "cumA": 0.09621168160217647,
+     "cumB": 0.2567391865510943,
+     "none": 0.6470491318467292,
+     "pA": 0.0003778971083575611,
+     "pB": 0.001166298623831441,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-02",
+     "cumA": 0.11888550810362836,
+     "cumB": 0.32671710398098336,
+     "none": 0.5543973879153883,
+     "pA": 0.022673826501451888,
+     "pB": 0.06997791742988907,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-03",
+     "cumA": 0.13853615773821998,
+     "cumB": 0.3873646324202206,
+     "none": 0.47409920984155934,
+     "pA": 0.01965064963459162,
+     "pB": 0.060647528439237264,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-04",
+     "cumA": 0.14911727677223086,
+     "cumB": 0.42002099388750225,
+     "none": 0.4308617293402669,
+     "pA": 0.010581119034010877,
+     "pB": 0.032656361467281625,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-05",
+     "cumA": 0.1581868073728116,
+     "cumB": 0.4480121608594579,
+     "none": 0.39380103176773046,
+     "pA": 0.009069530600580744,
+     "pB": 0.02799116697195564,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-06",
+     "cumA": 0.16347736688981707,
+     "cumB": 0.46434034159309867,
+     "none": 0.37218229151708426,
+     "pA": 0.0052905595170054665,
+     "pB": 0.016328180733640785,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-07",
+     "cumA": 0.16385526399817457,
+     "cumB": 0.46550664021693017,
+     "none": 0.3706380957848953,
+     "pA": 0.00037789710835750556,
+     "pB": 0.0011662986238314965,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-08",
+     "cumA": 0.1638930537090103,
+     "cumB": 0.466246830707998,
+     "none": 0.3698601155829917,
+     "pA": 3.77897108357339e-05,
+     "pB": 0.000740190491067827,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.0",
+      "merger-only x0.10 (Starship launch (NET))"
+     ],
+     "events": [
+      "Starship launch (NET)"
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "cumA": 0.17069520165944585,
+     "cumB": 0.5163397019422502,
+     "none": 0.31296509639830394,
+     "pA": 0.006802147950435544,
+     "pB": 0.05009287123425221,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.0",
+      "merger-only x0.30 (day after Starship launch)"
+     ],
+     "events": [
+      "day after Starship launch"
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "cumA": 0.19034585129403758,
+     "cumB": 0.5769872303814874,
+     "none": 0.23266691832447506,
+     "pA": 0.019650649634591733,
+     "pB": 0.06064752843923715,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-11",
+     "cumA": 0.2009269703280484,
+     "cumB": 0.609643591848769,
+     "none": 0.18942943782318256,
+     "pA": 0.010581119034010822,
+     "pB": 0.03265636146728168,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-12",
+     "cumA": 0.2099965009286292,
+     "cumB": 0.6376347588207246,
+     "none": 0.15236874025064617,
+     "pA": 0.0090695306005808,
+     "pB": 0.027991166971955583,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-13",
+     "cumA": 0.21528706044563461,
+     "cumB": 0.6539629395543655,
+     "none": 0.13074999999999992,
+     "pA": 0.005290559517005411,
+     "pB": 0.01632818073364084,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-14",
+     "cumA": 0.21552268615025694,
+     "cumB": 0.6539629395543655,
+     "none": 0.1305143742953776,
+     "pA": 0.00023562570462232202,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-15",
+     "cumA": 0.21575831185487926,
+     "cumB": 0.6539629395543655,
+     "none": 0.13027874859075528,
+     "pA": 0.00023562570462232202,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-16",
+     "cumA": 0.22989585413221858,
+     "cumB": 0.6539629395543655,
+     "none": 0.11614120631341596,
+     "pA": 0.014137542277339321,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-17",
+     "cumA": 0.24214839077257932,
+     "cumB": 0.6539629395543655,
+     "none": 0.10388866967305521,
+     "pA": 0.012252536640360745,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-18",
+     "cumA": 0.24874591050200434,
+     "cumB": 0.6539629395543655,
+     "none": 0.0972911499436302,
+     "pA": 0.0065975197294250165,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-19",
+     "cumA": 0.25440092741294007,
+     "cumB": 0.6539629395543655,
+     "none": 0.09163613303269447,
+     "pA": 0.0056550169109357284,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-20",
+     "cumA": 0.2576996872776526,
+     "cumB": 0.6539629395543655,
+     "none": 0.08833737316798196,
+     "pA": 0.0032987598647125083,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-21",
+     "cumA": 0.2579353129822749,
+     "cumB": 0.6539629395543655,
+     "none": 0.08810174746335964,
+     "pA": 0.00023562570462232202,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-22",
+     "cumA": 0.2581709386868972,
+     "cumB": 0.6539629395543655,
+     "none": 0.08786612175873731,
+     "pA": 0.00023562570462232202,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-23",
+     "cumA": 0.27230848096423654,
+     "cumB": 0.6539629395543655,
+     "none": 0.073728579481398,
+     "pA": 0.014137542277339321,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-24",
+     "cumA": 0.2845610176045973,
+     "cumB": 0.6539629395543655,
+     "none": 0.06147604284103725,
+     "pA": 0.012252536640360745,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-25",
+     "cumA": 0.2911585373340223,
+     "cumB": 0.6539629395543655,
+     "none": 0.05487852311161223,
+     "pA": 0.0065975197294250165,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x2.2"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-26",
+     "cumA": 0.29128706044563446,
+     "cumB": 0.6539629395543655,
+     "none": 0.054750000000000076,
+     "pA": 0.00012852311161215546,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0",
+      "Thanksgiving x0.05"
+     ],
+     "events": [
+      "Thanksgiving"
+     ]
+    },
+    {
+     "date": "2026-11-27",
+     "cumA": 0.29134566015018093,
+     "cumB": 0.6539629395543655,
+     "none": 0.05469140029545361,
+     "pA": 5.8599704546469233e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0",
+      "Early close 1pm ET (day after Thanksgiving) x0.3"
+     ],
+     "events": [
+      "Early close 1pm ET (day after Thanksgiving)"
+     ]
+    },
+    {
+     "date": "2026-11-28",
+     "cumA": 0.29135961246078723,
+     "cumB": 0.6539629395543655,
+     "none": 0.054677447984847305,
+     "pA": 1.3952310606302198e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-29",
+     "cumA": 0.29137356477139353,
+     "cumB": 0.6539629395543655,
+     "none": 0.054663495674241,
+     "pA": 1.3952310606302198e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-11-30",
+     "cumA": 0.2922107034077721,
+     "cumB": 0.6539629395543655,
+     "none": 0.05382635703786243,
+     "pA": 0.000837138636378576,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-01",
+     "cumA": 0.29293622355930016,
+     "cumB": 0.6539629395543655,
+     "none": 0.05310083688633438,
+     "pA": 0.0007255201515280474,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-02",
+     "cumA": 0.29332688825627684,
+     "cumB": 0.6539629395543655,
+     "none": 0.052710172189357696,
+     "pA": 0.0003906646969766836,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-03",
+     "cumA": 0.2936617437108283,
+     "cumB": 0.6539629395543655,
+     "none": 0.05237531673480622,
+     "pA": 0.0003348554545514748,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-04",
+     "cumA": 0.29385707605931666,
+     "cumB": 0.6539629395543655,
+     "none": 0.05217998438631788,
+     "pA": 0.0001953323484883418,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-05",
+     "cumA": 0.29387102836992296,
+     "cumB": 0.6539629395543655,
+     "none": 0.05216603207571158,
+     "pA": 1.3952310606302198e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-06",
+     "cumA": 0.29388498068052926,
+     "cumB": 0.6539629395543655,
+     "none": 0.052152079765105275,
+     "pA": 1.3952310606302198e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x1.0"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-07",
+     "cumA": 0.29437007808333326,
+     "cumB": 0.6539629395543655,
+     "none": 0.05166698236230127,
+     "pA": 0.00048509740280400226,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x0.8",
+      "merger-only x0.50 (near SPCX unlock)"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-12-08",
+     "cumA": 0.2946944968091546,
+     "cumB": 0.6539629395543655,
+     "none": 0.05134256363647993,
+     "pA": 0.00032441872582134046,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Tue x2.6",
+      "urgency x0.8",
+      "merger-only x0.20 (SPCX unlock 784M)"
+     ],
+     "events": [
+      "SPCX unlock 784M"
+     ]
+    },
+    {
+     "date": "2026-12-09",
+     "cumA": 0.29492087559712976,
+     "cumB": 0.6539629395543655,
+     "none": 0.051116184848504775,
+     "pA": 0.00022637878797515665,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Wed x1.4",
+      "urgency x0.8",
+      "merger-only x0.50 (near SPCX unlock)"
+     ],
+     "events": [
+      "near SPCX unlock"
+     ]
+    },
+    {
+     "date": "2026-12-10",
+     "cumA": 0.2951887599607709,
+     "cumB": 0.6539629395543655,
+     "none": 0.05084830048486366,
+     "pA": 0.00026788436364111323,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Thu x1.2",
+      "urgency x0.8"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-11",
+     "cumA": 0.29534502583956157,
+     "cumB": 0.6539629395543655,
+     "none": 0.050692034606072967,
+     "pA": 0.00015626587879069564,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Fri x0.7",
+      "urgency x0.8"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-12",
+     "cumA": 0.2953561876880466,
+     "cumB": 0.6539629395543655,
+     "none": 0.050680872757587925,
+     "pA": 1.1161848485041759e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sat x0.05",
+      "urgency x0.8"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-13",
+     "cumA": 0.29536734953653165,
+     "cumB": 0.6539629395543655,
+     "none": 0.05066971090910288,
+     "pA": 1.1161848485041759e-05,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Sun x0.05",
+      "urgency x0.8"
+     ],
+     "events": []
+    },
+    {
+     "date": "2026-12-14",
+     "cumA": 0.2960370604456345,
+     "cumB": 0.6539629395543655,
+     "none": 0.050000000000000044,
+     "pA": 0.0006697109091028386,
+     "pB": 0.0,
+     "pL": 0.0,
+     "why": [
+      "Mon x3.0",
+      "urgency x0.8"
+     ],
+     "events": []
+    }
+   ]
+  },
+  "default": "off"
+ }
 }
