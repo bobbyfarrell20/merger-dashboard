@@ -5,8 +5,8 @@
    "checked": "EDGAR SPCX 8-Ks since Oct 1 + Google News"
   },
   "ok": true,
-  "as_of": "2026-10-13 23:33 ET",
-  "last_ok": "2026-10-13 23:33 ET",
+  "as_of": "2026-10-14 11:45 ET",
+  "last_ok": "2026-10-14 11:45 ET",
   "error": null
  },
  "starship": {
@@ -21,8 +21,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-13 23:33 ET",
-  "last_ok": "2026-10-13 23:33 ET",
+  "as_of": "2026-10-14 11:45 ET",
+  "last_ok": "2026-10-14 11:45 ET",
   "error": null
  },
  "grain": {
@@ -47,27 +47,28 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-13 23:33 ET",
-  "last_ok": "2026-10-13 23:33 ET",
+  "as_of": "2026-10-14 11:45 ET",
+  "last_ok": "2026-10-14 11:45 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 375.23,
-    "prev_close": 378.03,
-    "as_of": "2026-10-13 16:00 ET"
+    "price": 366.8,
+    "prev_close": 375.23,
+    "as_of": "2026-10-14 11:45 ET"
    },
    "SPCX": {
-    "price": 156.54,
-    "prev_close": 163.42,
-    "as_of": "2026-10-13 16:00 ET"
+    "price": 153.539,
+    "prev_close": 156.54,
+    "as_of": "2026-10-14 11:45 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-13 23:33 ET",
-  "last_ok": "2026-10-13 23:33 ET",
+  "as_of": "2026-10-14 11:45 ET",
+  "last_ok": "2026-10-14 11:45 ET",
   "error": null
  },
- "log": []
+ "log": [],
+ "prices_written": "2026-10-14T11:45-04:00"
 }
