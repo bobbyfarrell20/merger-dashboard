@@ -502,7 +502,9 @@ def main():
              "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in m["days"]]}
     def scen(mm):
         T = mm["totals"]
-        return {"totals": T, "weeks": mm["weeks"], "best_week": mm["best_week"], "later": mm["later"],
+        Lp = mm["later"]["p"] if mm["later"].get("on") else 0.0
+        hl = {"X": T["A"] + Lp, "A": T["A"], "B": Lp, "C": T["B"] - Lp, "D": T["none"]}
+        return {"headline": hl, "totals": T, "weeks": mm["weeks"], "best_week": mm["best_week"], "later": mm["later"],
                 "merger_share_of_announcements": (T["A"] / max(T["A"] + T["B"], 1e-9)) if T else None,
                 "why": make_why(cfg, mm, br, today, state),
                 "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in mm["days"]]}
