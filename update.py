@@ -106,12 +106,12 @@ def logit(p): return math.log(p / (1 - p))
 def sig(x): return 1 / (1 + math.exp(-x))
 
 def inputs_of(cfg, jud):
-    keys = ["window", "p_any_by_end", "a_share", "signals", "urgency", "weekday_mult", "blackouts", "post_event_boost"]
+    keys = ["window", "p_any_by_end", "a_share", "signals", "urgency", "weekday_mult", "blackouts", "post_event_boost", "timing_anchors"]
     return {k: cfg[k] for k in keys}
 
 def compute(cfg, today):
-    """Competing-risks daily model. Returns dict with days, weeks, totals (all measured from `today`)."""
-    start = max(P(cfg["window"]["start"]), today); end = P(cfg["window"]["end"])
+    """Anchor-calibrated daily model. Cumulative 'either' hits timing_anchors; each day's mass splits A/B by a_share."""
+    start0 = P(cfg["window"]["start"]); start = max(start0, today); end = P(cfg["window"]["end"])
     lp, la = logit(cfg["p_any_by_end"]["base"]), logit(cfg["a_share"]["base"])
     for s in cfg["signals"]:
         if s["active"]:
@@ -119,47 +119,61 @@ def compute(cfg, today):
             else: la += s["logodds"]
     p_end, a_sh = sig(lp), sig(la)
     days = []
-    d = start
+    d = start0
     while d <= end:
         w = cfg["weekday_mult"][WD[d.weekday()]]; why = [f"{WD[d.weekday()]} x{w}"]
         for u in cfg["urgency"]:
             if P(u["from"]) <= d <= P(u["to"]): w *= u["mult"]; why.append(f"urgency x{u['mult']}")
         wa = wb = w; ev = []
-        for b in cfg["blackouts"] + cfg["post_event_boost"]:
-            if b["date"] == str(d):
-                ev.append(b["label"])
-                if b["applies"] in ("A", "both"): wa *= b["mult"]
-                if b["applies"] in ("B", "both"): wb *= b["mult"]
-                why.append(f"{b['label']} x{b['mult']}" + ("" if b["applies"] == "both" else f" ({b['applies']} only)"))
+        for bl in cfg["blackouts"] + cfg["post_event_boost"]:
+            if bl["date"] == str(d):
+                ev.append(bl["label"])
+                if bl["applies"] in ("A", "both"): wa *= bl["mult"]
+                if bl["applies"] in ("B", "both"): wb *= bl["mult"]
+                why.append(f"{bl['label']} x{bl['mult']}" + ("" if bl["applies"] == "both" else f" ({bl['applies']} only)"))
         days.append({"date": str(d), "wa": wa, "wb": wb, "why": why, "events": ev})
         d += dt.timedelta(days=1)
-    tA, tB = p_end * a_sh, p_end * (1 - a_sh)
-    def run(kA, kB):
-        S = 1.0; cA = cB = 0.0
-        for x in days:
-            hA, hB = min(kA * x["wa"], .95), min(kB * x["wb"], .95)
-            if hA + hB > .98: hA, hB = hA * .98 / (hA + hB), hB * .98 / (hA + hB)
-            x["pA"], x["pB"] = S * hA, S * hB; cA += x["pA"]; cB += x["pB"]; S *= 1 - hA - hB
-            x["cumA"], x["cumB"], x["none"] = cA, cB, S
-        return cA, cB
-    kA = kB = 0.01
-    for _ in range(200):  # alternating calibration of the two hazards
-        cA, cB = run(kA, kB)
-        kA *= (tA / cA) ** 0.7 if cA > 0 else 2; kB *= (tB / cB) ** 0.7 if cB > 0 else 2
-    run(kA, kB)
-    # weeks: Mon-Sun (Sunday folded into next Monday already by weight 0)
+    # cumulative anchors (absolute) from the window start
+    anchors = [(P(x["date"]), x["share_of_total"] * p_end) for x in cfg["timing_anchors"]]
+    def mix(x, ae): return ae * x["wa"] + (1 - ae) * x["wb"]
+    def build(ae):
+        prev_d, prev_c = start0 - dt.timedelta(days=1), 0.0
+        for ad, ac in anchors:
+            seg = [x for x in days if prev_d < P(x["date"]) <= ad]
+            tot = sum(mix(x, ae) for x in seg) or 1
+            for x in seg:
+                m = (ac - prev_c) * mix(x, ae) / tot
+                fa = ae * x["wa"] / (mix(x, ae) or 1)
+                x["pA"], x["pB"] = m * fa, m * (1 - fa)
+            prev_d, prev_c = ad, ac
+        return sum(x["pA"] for x in days) / max(sum(x["pA"] + x["pB"] for x in days), 1e-9)
+    lo, hi = 0.01, 0.99
+    for _ in range(60):  # effective split so overall A share == a_sh despite A-only blackouts
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if build(mid) < a_sh else (lo, mid)
+    build((lo + hi) / 2)
+    # condition on no announcement before `today` (window start is past): rescale remaining days
+    past = [x for x in days if P(x["date"]) < start]; days = [x for x in days if P(x["date"]) >= start]
+    gone = sum(x["pA"] + x["pB"] for x in past)
+    if gone > 0:
+        for x in days: x["pA"] /= (1 - gone); x["pB"] /= (1 - gone)
+    cA = cB = 0
+    for x in days:
+        cA += x["pA"]; cB += x["pB"]; x["cumA"], x["cumB"], x["none"] = cA, cB, 1 - cA - cB
     weeks = {}
     for x in days:
         dd = P(x["date"]); mon = dd - dt.timedelta(days=dd.weekday())
         w = weeks.setdefault(str(mon), {"monday": str(mon), "friday": str(mon + dt.timedelta(days=4)), "first_day": x["date"],
-                                        "A": 0, "B": 0, "monA": 0, "monB": 0, "tueA": 0, "tueB": 0})
+                                        "A": 0, "B": 0, "days": {k: {"A": 0, "B": 0, "date": None} for k in ["Mon", "Tue", "Wed", "Thu", "Fri", "Wknd"]}})
+        k = WD[dd.weekday()] if dd.weekday() < 5 else "Wknd"
+        w["days"][k]["A"] += x["pA"]; w["days"][k]["B"] += x["pB"]
+        if dd.weekday() < 5: w["days"][k]["date"] = x["date"]
         w["A"] += x["pA"]; w["B"] += x["pB"]; w["cumA"], w["cumB"], w["none"] = x["cumA"], x["cumB"], x["none"]
-        if dd.weekday() == 0: w["monA"] += x["pA"]; w["monB"] += x["pB"]
-        if dd.weekday() == 1: w["tueA"] += x["pA"]; w["tueB"] += x["pB"]
     W = list(weeks.values())
     for w in W:
-        w["either"] = w["A"] + w["B"]; w["mon"] = w["monA"] + w["monB"]; w["tue"] = w["tueA"] + w["tueB"]
-        w["cum"] = w["cumA"] + w["cumB"]
+        w["either"] = w["A"] + w["B"]; w["cum"] = w["cumA"] + w["cumB"]
+        for v in w["days"].values(): v["either"] = v["A"] + v["B"]
+        w["mon"], w["tue"] = w["days"]["Mon"]["either"], w["days"]["Tue"]["either"]
     best = max(W, key=lambda w: w["either"])["monday"] if W else None
     return {"days": days, "weeks": W, "best_week": best, "p_end": p_end, "a_share": a_sh,
             "totals": {"A": days[-1]["cumA"], "B": days[-1]["cumB"], "none": days[-1]["none"]} if days else {}}
@@ -180,7 +194,7 @@ def drivers_diff(old, new):
         elif o["logodds"] != x["logodds"]: out.append(f"signal weight changed: {x['label']}")
     for k in ("p_any_by_end", "a_share"):
         if old[k]["base"] != new[k]["base"]: out.append(f"{k} prior {old[k]['base']} -> {new[k]['base']}")
-    for k in ("urgency", "weekday_mult", "blackouts", "post_event_boost", "window"):
+    for k in ("urgency", "weekday_mult", "blackouts", "post_event_boost", "window", "timing_anchors"):
         if old[k] != new[k]: out.append(f"calendar/config changed: {k}")
     return out
 
@@ -246,7 +260,7 @@ def main():
              "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "why", "events")} for x in m["days"]]}
     save("model.json", model)
     print(json.dumps({"totals": m["totals"], "best_week": m["best_week"], "a_share": m["a_share"],
-                      "weeks": [(w["monday"], round(w["A"]*100, 1), round(w["B"]*100, 1), round(w["either"]*100, 1), round(w["mon"]*100, 1), round(w["tue"]*100, 1), round(w["cum"]*100, 1), w["expiry"]) for w in m["weeks"]],
+                      "weeks": [(w["monday"], "either", round(w["either"]*100, 1), "A", round(w["A"]*100, 1), "B", round(w["B"]*100, 1), "cum", round(w["cum"]*100, 1), w["expiry"], {k: (round(v["either"]*100, 1), round(v["A"]*100, 1), round(v["B"]*100, 1)) for k, v in w["days"].items()}) for w in m["weeks"]],
                       "alerts": alerts}, indent=1))
 
 if __name__ == "__main__":

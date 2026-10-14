@@ -2,41 +2,41 @@
  {
   "v": 2,
   "date": "2026-10-13",
-  "as_of": "2026-10-13 22:01 ET",
+  "as_of": "2026-10-13 22:08 ET",
   "metrics": {
-   "end_A": 0.39614608236501947,
-   "end_B": 0.4838539176349806,
-   "end_none": 0.11999999999999988,
-   "wk2026-10-12_either": 0.044388642257791606,
-   "wk2026-10-12_A": 0.021272679645193703,
-   "wk2026-10-12_B": 0.023115962612597903,
-   "wk2026-10-19_either": 0.17328052014163503,
-   "wk2026-10-19_A": 0.08733583733136867,
-   "wk2026-10-19_B": 0.08594468281026635,
-   "wk2026-10-26_either": 0.17409963069641826,
-   "wk2026-10-26_A": 0.06750085767343625,
-   "wk2026-10-26_B": 0.106598773022982,
-   "wk2026-11-02_either": 0.16289095582076568,
-   "wk2026-11-02_A": 0.07431918050316505,
-   "wk2026-11-02_B": 0.08857177531760062,
-   "wk2026-11-09_either": 0.10981158802386497,
-   "wk2026-11-09_A": 0.04328852779701518,
-   "wk2026-11-09_B": 0.06652306022684978,
-   "wk2026-11-16_either": 0.105896289753207,
-   "wk2026-11-16_A": 0.05074941996314748,
-   "wk2026-11-16_B": 0.055146869790059526,
-   "wk2026-11-23_either": 0.06087285730161676,
-   "wk2026-11-23_A": 0.02917252537134278,
-   "wk2026-11-23_B": 0.03170033193027398,
-   "wk2026-11-30_either": 0.02733220851095746,
-   "wk2026-11-30_A": 0.013098605545817876,
-   "wk2026-11-30_B": 0.014233602965139583,
-   "wk2026-12-07_either": 0.015376050267567554,
-   "wk2026-12-07_A": 0.0065084621894780864,
-   "wk2026-12-07_B": 0.008867588078089466,
-   "wk2026-12-14_either": 0.006051257226175659,
-   "wk2026-12-14_A": 0.0028999863450543525,
-   "wk2026-12-14_B": 0.003151270881121307
+   "end_A": 0.427657702553146,
+   "end_B": 0.5223422974468541,
+   "end_none": 0.04999999999999982,
+   "wk2026-10-12_either": 0.038133191165310984,
+   "wk2026-10-12_A": 0.018497162024379746,
+   "wk2026-10-12_B": 0.019636029140931238,
+   "wk2026-10-19_either": 0.15991125999613098,
+   "wk2026-10-19_A": 0.08076633955570589,
+   "wk2026-10-19_B": 0.07914492044042508,
+   "wk2026-10-26_either": 0.20405420102925592,
+   "wk2026-10-26_A": 0.08447957581283881,
+   "wk2026-10-26_B": 0.1195746252164171,
+   "wk2026-11-02_either": 0.24286674995850321,
+   "wk2026-11-02_A": 0.11098297214627845,
+   "wk2026-11-02_B": 0.13188377781222477,
+   "wk2026-11-09_either": 0.22475580768474307,
+   "wk2026-11-09_A": 0.09409476380409543,
+   "wk2026-11-09_B": 0.13066104388064764,
+   "wk2026-11-16_either": 0.04240888505499243,
+   "wk2026-11-16_A": 0.02057116108470578,
+   "wk2026-11-16_B": 0.021837723970286646,
+   "wk2026-11-23_either": 0.03320500351004594,
+   "wk2026-11-23_A": 0.016106659610070666,
+   "wk2026-11-23_B": 0.017098343899975273,
+   "wk2026-11-30_either": 0.0024705986801448546,
+   "wk2026-11-30_A": 0.0011984064980491238,
+   "wk2026-11-30_B": 0.0012721921820957305,
+   "wk2026-12-07_either": 0.0015953699075039606,
+   "wk2026-12-07_A": 0.0006701392296161565,
+   "wk2026-12-07_B": 0.0009252306778878041,
+   "wk2026-12-14_either": 0.0005989330133684496,
+   "wk2026-12-14_A": 0.00029052278740584824,
+   "wk2026-12-14_B": 0.0003084102259626014
   },
   "inputs": {
    "window": {
@@ -44,8 +44,8 @@
     "end": "2026-12-14"
    },
    "p_any_by_end": {
-    "base": 0.88,
-    "_why": "Chance Tesla announces the 2026 meeting date (8-K, DEF/PRE 14A or IR post) or a merger first by Dec 14. High but not certain: the Texas 13-month rule (BOC 21.351) is not self-executing. A shareholder must first make a written request, then get a court order, and missing it does not dissolve the company (21.351(c)). Tesla also ran its 2025 meeting late and only set a date after shareholder pressure (Electrek). 12% allows for Tesla simply sliding into 2027."
+    "base": 0.95,
+    "_why": "Base case: Tesla holds its 2026 annual meeting in 2026 (~95%), which forces a date announcement before the notice cutoffs (e-proxy ~Oct 27, Texas 10-day ~Nov 26 for a Dec 6 meeting). The remaining ~5% is Tesla slipping to 2027. The Texas 13-month rule (BOC 21.351) is enforceable only by a shareholder court petition, so slipping is possible but unlikely."
    },
    "a_share": {
     "base": 0.5,
@@ -137,13 +137,13 @@
    ],
    "weekday_mult": {
     "Mon": 3.0,
-    "Tue": 2.0,
-    "Wed": 1.2,
-    "Thu": 1.0,
-    "Fri": 0.6,
+    "Tue": 2.6,
+    "Wed": 1.4,
+    "Thu": 1.2,
+    "Fri": 0.7,
     "Sat": 0.05,
-    "Sun": 0.0,
-    "_why": "Monday highest, then Tuesday. A Sunday-night or Monday pre-market filing counts as Monday, so Sunday is 0 and folded into Monday."
+    "Sun": 0.05,
+    "_why": "Monday most likely (Sunday-night/pre-market filings count as Monday), Tuesday a close second, small weekend share."
    },
    "blackouts": [
     {
@@ -207,6 +207,22 @@
      "mult": 1.3,
      "applies": "both",
      "label": "Morning after earnings"
+    }
+   ],
+   "timing_anchors": [
+    {
+     "date": "2026-11-13",
+     "share_of_total": 0.915,
+     "_why": "~87% by Nov 13 when the total is 95%"
+    },
+    {
+     "date": "2026-11-26",
+     "share_of_total": 0.995,
+     "_why": "~94.5% by Nov 26, the last Texas 10-day notice day for Dec 6"
+    },
+    {
+     "date": "2026-12-14",
+     "share_of_total": 1.0
     }
    ]
   }

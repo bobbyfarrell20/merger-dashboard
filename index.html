@@ -16,14 +16,18 @@ h1{font-size:19px;margin:6px 0 2px}h2{font-size:15px;margin:0 0 10px;color:var(-
 ul{padding-left:18px;margin:6px 0}li{margin:4px 0}.feed .day{border-top:1px solid var(--b);padding:8px 0}.feed .note{font-size:12px;color:#d29922}
 a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;border-collapse:collapse;font-size:12px}td,th{padding:4px;border-bottom:1px solid var(--b);text-align:left;vertical-align:top}
 .disc{font-size:11px;color:var(--m)}
+.days{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin:6px 0 2px}
+.dc{text-align:center;border-radius:6px;padding:3px 0 2px}.dc.mon{background:rgba(63,185,80,.14)}.dc.tue{background:rgba(63,185,80,.07)}
+.dc .col{height:46px;display:flex;flex-direction:column-reverse;align-items:center}.dc .col i{display:block;width:60%;max-width:26px}
+.dc .pv{font-size:12px;font-weight:700}.dc .dl{font-size:10px;color:var(--m)}.dc.mon .dl,.dc.tue .dl{color:var(--g);font-weight:700}
 </style></head><body><main>
 <header><h1>Will Tesla announce its 2026 meeting, and will it come with a merger?</h1><div class="sub" id="stamp"></div></header>
 
-<section class="card"><h2>By Dec 14</h2><div class="big3" id="big"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
+<section class="card"><h2>By Dec 14</h2><div class="big3" id="big"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 
-<section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Expiry = the Friday weekly that covers a Monday or Tuesday announcement.</div><div id="weeks"></div></section>
+<section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
 
-<section class="card"><h2>Cumulative odds</h2><div style="height:230px"><canvas id="cum"></canvas></div></section>
+<section class="card"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
 
 <section class="card"><h2>Why</h2><ul id="why"></ul></section>
 
@@ -40,18 +44,23 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json']
  document.getElementById('stamp').textContent=`Updated ${M.generated}`+(M.prev_as_of?` · changes vs ${M.prev_as_of}`:'');
  const T=M.totals;
  document.getElementById('big').innerHTML=`<div><div class="n A">${pct(T.A)}</div><div class="l">Meeting + merger</div></div><div><div class="n B">${pct(T.B)}</div><div class="l">Routine meeting only</div></div><div><div class="n N">${pct(T.none)}</div><div class="l">Still nothing</div></div>`;
+ document.getElementById('anyline').innerHTML=`Some announcement: <b style="color:#3fb950;font-size:18px">${pct(T.A+T.B)}</b>`;
  const S=M.split,f=v=>`<span class="${v>0?'up':v<0?'dn':''}">${v>0?'+':''}${v.toFixed(1)}</span>`;
  document.getElementById('chg').innerHTML=S.end_A?`Since yesterday: merger ${f(S.end_A.total)} (news ${f(S.end_A.news)}, time ${f(S.end_A.time)}) · routine ${f(S.end_B.total)} (news ${f(S.end_B.news)}, time ${f(S.end_B.time)}) · nothing ${f(S.end_none.total)}`:'Change since yesterday shows from the next daily update.';
+ const maxDay=Math.max(...M.weeks.flatMap(w=>Object.values(w.days).map(v=>v.either)));
+ const dayRow=w=>'<div class="days">'+['Mon','Tue','Wed','Thu','Fri','Wknd'].map(k=>{const v=w.days[k],h=v.either/maxDay*44,hot=k==='Mon'?'mon':k==='Tue'?'tue':'';
+   return `<div class="dc ${hot}" title="${k}: either ${p1(v.either)}, merger ${p1(v.A)}, routine ${p1(v.B)}"><div class="col"><i style="height:${v.either?h*(v.B/v.either):0}px;background:var(--B)"></i><i style="height:${v.either?h*(v.A/v.either):0}px;background:var(--A)"></i></div><div class="pv">${v.either>=0.0005?p1(v.either):'–'}</div><div class="dl">${k==='Wknd'?'Wkd':k}</div></div>`}).join('')+'</div>';
  document.getElementById('weeks').innerHTML=M.weeks.filter(w=>w.either>0.003).map(w=>{const best=w.monday===M.best_week,first=w.first_day!==w.monday;
-  return `<div class="wk ${best?'best':''}"><div class="d">${first?'This week ('+fmtD(w.first_day)+'–'+fmtD(w.friday)+')':'Mon '+fmtD(w.monday)}${best?'<span class="tag">BEST WEEK</span>':''}</div><div class="e">${pct(w.either)}</div>
-  <div class="row"><span class="A">merger <b>${p1(w.A)}</b></span> · <span class="B">routine <b>${p1(w.B)}</b></span>${first?"":` · Mon <b>${p1(w.mon)}</b> · Tue <b>${p1(w.tue)}</b>`}</div>
-  <div class="row" style="grid-column:1/-1">By end of week: <b>${pct(w.cum)}</b> · expiry <b>Fri ${fmtD(w.expiry)}</b>${w.expiry_iv?` (ATM IV ${w.expiry_iv}%)`:w.expiry_listed?'':' (not listed yet)'}</div>
-  <div class="bar"><i style="width:${w.A/w.either*100}%;background:var(--A)"></i><i style="width:${w.B/w.either*100}%;background:var(--B)"></i></div></div>`}).join('');
+  return `<div class="wk ${best?'best':''}"><div class="d">${first?'This week ('+fmtD(w.first_day)+'–'+fmtD(w.friday)+')':'Week of '+fmtD(w.monday)}${best?'<span class="tag">BEST WEEK</span>':''}</div><div class="e">${pct(w.either)}</div>
+  <div class="row"><span class="A">merger <b>${p1(w.A)}</b></span> · <span class="B">routine <b>${p1(w.B)}</b></span></div>
+  ${dayRow(w)}
+  <div class="row" style="grid-column:1/-1">By end of week: <b>${pct(w.cum)}</b> · expiry <b>Fri ${fmtD(w.expiry)}</b>${w.expiry_iv?` (ATM IV ${w.expiry_iv}%)`:w.expiry_listed?'':' (not listed yet)'}</div></div>`}).join('');
  new Chart(cum,{type:'line',data:{labels:M.daily.map(d=>fmtD(d.date)),datasets:[
-  {label:'With merger',data:M.daily.map(d=>d.cumA*100),borderColor:'#f0883e',backgroundColor:'#f0883e',pointRadius:0,borderWidth:2.5},
-  {label:'Routine',data:M.daily.map(d=>d.cumB*100),borderColor:'#58a6ff',backgroundColor:'#58a6ff',pointRadius:0,borderWidth:2.5},
-  {label:'Nothing yet',data:M.daily.map(d=>d.none*100),borderColor:'#6e7681',backgroundColor:'#6e7681',pointRadius:0,borderWidth:2,borderDash:[5,4]}]},
+  {label:'Any announcement (either)',data:M.daily.map(d=>(d.cumA+d.cumB)*100),borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,.12)',fill:true,pointRadius:0,borderWidth:3.5},
+  {label:'With merger',data:M.daily.map(d=>d.cumA*100),borderColor:'#f0883e',backgroundColor:'#f0883e',pointRadius:0,borderWidth:2},
+  {label:'Routine only',data:M.daily.map(d=>d.cumB*100),borderColor:'#58a6ff',backgroundColor:'#58a6ff',pointRadius:0,borderWidth:2}]},
   options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:6}},y:{min:0,max:100,ticks:{color:'#8b949e',callback:v=>v+'%'}}},plugins:{legend:{labels:{color:'#e6edf3',boxWidth:12}},tooltip:{callbacks:{afterBody:i=>{const d=M.daily[i[0].dataIndex];return d.events.join('\n')}}}}}});
+ const at=ds=>{const d=M.daily.find(x=>x.date===ds);return d?pct(d.cumA+d.cumB):'–'};document.getElementById('cumnote').innerHTML=`Any announcement: <b>${at('2026-10-27')}</b> by Oct 27 (e-proxy cutoff) · <b>${at('2026-11-13')}</b> by Nov 13 · <b>${at('2026-11-26')}</b> by Nov 26 (last Texas notice day). The rest is a slip to 2027.`;
  document.getElementById('why').innerHTML=JU.why.map(x=>`<li>${x}</li>`).join('')+`<li class="sub">Judgment as of ${JU.as_of}. Model: ${pct(M.p_end)} chance of some announcement by Dec 14; ${pct(M.a_share)} of that with a merger.</li>`;
  document.getElementById('feed').innerHTML=N.days.slice(0,10).map(d=>`<div class="day"><b>${fmtD(d.date)}</b>${d.odds_note?`<div class="note">${d.odds_note}</div>`:''}<ul>`+d.items.slice(0,5).map(i=>`<li><span class="sub">${i.time_et||''}</span> <a href="${i.url}" target="_blank" rel="noopener">${i.title}</a> <span class="sub">${i.source}</span></li>`).join('')+'</ul></div>').join('');
  const sg=C.signals.map(s=>`<tr><td>${s.active?'✅':'⬜'} ${s.label}</td><td>${s.target}</td><td>${s.logodds>0?'+':''}${s.logodds}</td></tr>`).join('');

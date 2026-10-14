@@ -5,8 +5,8 @@
   "end": "2026-12-14"
  },
  "p_any_by_end": {
-  "base": 0.88,
-  "_why": "Chance Tesla announces the 2026 meeting date (8-K, DEF/PRE 14A or IR post) or a merger first by Dec 14. High but not certain: the Texas 13-month rule (BOC 21.351) is not self-executing. A shareholder must first make a written request, then get a court order, and missing it does not dissolve the company (21.351(c)). Tesla also ran its 2025 meeting late and only set a date after shareholder pressure (Electrek). 12% allows for Tesla simply sliding into 2027."
+  "base": 0.95,
+  "_why": "Base case: Tesla holds its 2026 annual meeting in 2026 (~95%), which forces a date announcement before the notice cutoffs (e-proxy ~Oct 27, Texas 10-day ~Nov 26 for a Dec 6 meeting). The remaining ~5% is Tesla slipping to 2027. The Texas 13-month rule (BOC 21.351) is enforceable only by a shareholder court petition, so slipping is possible but unlikely."
  },
  "a_share": {
   "base": 0.5,
@@ -98,13 +98,13 @@
  ],
  "weekday_mult": {
   "Mon": 3.0,
-  "Tue": 2.0,
-  "Wed": 1.2,
-  "Thu": 1.0,
-  "Fri": 0.6,
+  "Tue": 2.6,
+  "Wed": 1.4,
+  "Thu": 1.2,
+  "Fri": 0.7,
   "Sat": 0.05,
-  "Sun": 0.0,
-  "_why": "Monday highest, then Tuesday. A Sunday-night or Monday pre-market filing counts as Monday, so Sunday is 0 and folded into Monday."
+  "Sun": 0.05,
+  "_why": "Monday most likely (Sunday-night/pre-market filings count as Monday), Tuesday a close second, small weekend share."
  },
  "blackouts": [
   {
@@ -219,5 +219,22 @@
    "SC TO-T",
    "DEFA14A"
   ]
- }
+ },
+ "timing_anchors": [
+  {
+   "date": "2026-11-13",
+   "share_of_total": 0.915,
+   "_why": "~87% by Nov 13 when the total is 95%"
+  },
+  {
+   "date": "2026-11-26",
+   "share_of_total": 0.995,
+   "_why": "~94.5% by Nov 26, the last Texas 10-day notice day for Dec 6"
+  },
+  {
+   "date": "2026-12-14",
+   "share_of_total": 1.0
+  }
+ ],
+ "_timing_doc": "Cumulative 'either' odds are pinned to timing_anchors (as a share of p_any_by_end). Within each segment, probability is spread by day weight (weekday x urgency x blackouts). The merger/routine split per day uses a_share with A-only blackouts."
 }

@@ -10,13 +10,16 @@ Between Oct 14 and Dec 14, 2026, does Tesla announce its 2026 annual meeting (an
 
 ## Model (`data/config.json`)
 1. **Totals:** P(any announcement by Dec 14) = logistic(logit(`p_any_by_end.base`) + active `p_any` signals). With-merger share = logistic(logit(`a_share.base`) + active `a_share` signals).
-   - Defaults: 0.88 and 0.50. Signals: no leaks −0.50, retail auto-vote +0.15, Musk hint +0.10, credit facility +0.05.
-   - Result: about 88% for some announcement, with about 45% of that being A.
+   - Defaults: 0.95 (base case: Tesla holds the meeting in 2026; the other 5% is a slip to 2027) and 0.50. Signals: no leaks −0.50, retail auto-vote +0.15, Musk hint +0.10, credit facility +0.05.
+   - Result: about 95% for some announcement, with about 45% of that being A.
 2. **Daily weights:** weekday × urgency period × blackout or boost. Unlock and launch blackouts apply to A only, since a routine date doesn't care about SpaceX unlocks.
-   - Weekdays: Mon 3.0 (includes Sunday night and pre-market), Tue 2.0, Wed 1.2, Thu 1.0, Fri 0.6, Sat 0.05, Sun 0.
+   - Weekdays: Mon 3.0 (includes Sunday night and pre-market), Tue 2.6, Wed 1.4, Thu 1.2, Fri 0.7, Sat 0.05, Sun 0.05.
    - Urgency rises toward the notice cutoffs: Oct 27 is the last day for an e-proxy notice for a Dec 6 meeting (Rule 14a-16, 40 days), and Nov 26 the last for Texas 10-day notice (BOC 21.353). It drops after Dec 6.
-3. **Competing hazards:** daily hazards hA = kA·wA and hB = kB·wB. kA and kB are solved so the cumulative A and B by Dec 14 hit the totals above. Weekly odds, Monday/Tuesday odds and cumulative odds all come from that daily curve.
-4. **Weekly view:** odds the announcement lands that week (A, B, either), the Monday and Tuesday odds, the cumulative odds by end of week, and the Friday weekly expiry that covers it (with ATM IV from Yahoo if that expiry is listed).
+3. **Timing anchors (`timing_anchors`):** the cumulative "either" curve is pinned to shares of the total: 91.5% of it by Nov 13 and 99.5% by Nov 26, the last Texas notice day for Dec 6. With a 95% total that's about 87% by Nov 13 and 94.5% by Nov 26.
+   - Within each segment, probability is spread by the day weights.
+   - Each day splits into merger and routine using an effective merger share, solved so the overall merger share equals `a_share` despite merger-only blackouts.
+   - If the window start has passed, the remaining days are rescaled.
+4. **Weekly view:** odds the announcement lands that week (A, B, either), a mini bar row with every weekday plus the weekend (stacked merger/routine, Mon and Tue highlighted), the cumulative odds by end of week, and the Friday weekly expiry that covers it (with ATM IV from Yahoo if that expiry is listed).
 
 ## Notice rules used
 - SEC Rule 14a-16: notice and access requires 40+ days.
