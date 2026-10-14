@@ -1,11 +1,11 @@
-# Runs update.py at 8:30am America/New_York on weekdays and commits refreshed data.
-# GitHub cron is UTC only, so two schedules cover DST: 12:30 UTC (EDT, UTC-4) and 13:30 UTC (EST, UTC-5).
+# Runs update.py at 8:10am America/New_York on weekdays and commits refreshed data.
+# GitHub cron is UTC only, so two schedules cover DST: 12:10 UTC (EDT, UTC-4) and 13:10 UTC (EST, UTC-5).
 # The guard step lets only the run that lands at 08:xx New York time proceed.
 name: Morning update
 on:
   schedule:
-    - cron: "30 12 * * 1-5"
-    - cron: "30 13 * * 1-5"
+    - cron: "10 12 * * 1-5"
+    - cron: "10 13 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: write

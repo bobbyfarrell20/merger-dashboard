@@ -41,7 +41,7 @@ Between Oct 14 and Dec 14, 2026, does Tesla announce its 2026 annual meeting (an
 - `judgment.json`: the plain-language "why".
 - `news.json`: the daily feed.
 - Prediction markets are not on the page. `watch.py` still tracks them for market-move alerts.
-- `.github/workflows/update.yml` runs weekdays at 8:30am ET.
+- `.github/workflows/update.yml` runs weekdays at 8:10am ET (dual UTC crons 12:10/13:10 + NY 8am-hour gate).
 
 ## Running locally
 ```
