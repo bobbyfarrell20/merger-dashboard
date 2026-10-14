@@ -25,7 +25,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <header><h1>Will Tesla announce its 2026 meeting, and will it come with a merger?</h1><div class="sub" id="stamp"></div></header>
 
 <section class="card" id="statebox" style="display:none"></section>
-<section class="card"><div id="smtoggle" style="display:none;text-align:center;margin-bottom:10px"></div><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
+<section class="card"><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 
 <section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
 
@@ -46,12 +46,8 @@ const pct=(x,d=0)=>x==null?'–':(x*100).toFixed(d)+'%', p1=x=>pct(x,1);
 const fmtD=s=>new Date(s+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const J=f=>fetch('data/'+f+'?v='+Date.now()).then(r=>r.json());
 Promise.all(['model.json','config.json','judgment.json','news.json','live.json'].map(J)).then(([M,C,JU,N,L])=>{
- const SC=M.scenarios;let view=null;
- if(SC){view=new URLSearchParams(location.search).get('sm')||localStorage.getItem('smView');if(view!=='on'&&view!=='off')view=SC.default;
-  Object.assign(M,SC[view]);M.special_meeting={...M.special_meeting,on:view==='on'};
-  const tg=document.getElementById('smtoggle');tg.style.display='';
-  tg.innerHTML=`<button id="smbtn" class="pill ${view==='on'?'on':''}" aria-pressed="${view==='on'}"><span class="k"></span>Special-meeting path: <b>${view==='on'?'ON':'OFF'}</b></button><div class="sub">View only: switches this page between the two scenarios. It doesn't change the model, config, or the daily email (saved setting: ${SC.default.toUpperCase()}).</div>`;
-  document.getElementById('smbtn').onclick=()=>{localStorage.setItem('smView',view==='on'?'off':'on');location.search='';};}
+ const SC=M.scenarios;try{localStorage.removeItem('smView')}catch(e){}
+ if(SC){const view=SC.default;Object.assign(M,SC[view]);M.special_meeting={...M.special_meeting,on:view==='on'};}
  const ST=M.state||{state:'pre'};
  if(ST.state!=='pre'){const sb=document.getElementById('statebox');sb.style.display='';const ev=ST.evidence||{};
   sb.innerHTML=ST.state==='meeting_only'?`<h2>State: meeting date set, no merger</h2><p>A routine meeting filing came out (${ev.form||''} ${ev.date||''}, <a href="${ev.url}">filing</a>). That closes the merger path for the 2026 regular meeting. Any SpaceX letter now points to a 2027 special meeting.</p>${M.kill?`<p style="font-size:18px">Letter odds by ${fmtD(M.kill.letter_by)} '27: <b class="A">${pct(M.kill.p_letter)}</b></p><p class="sub">${M.kill.why}</p>`:''}`
