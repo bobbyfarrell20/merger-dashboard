@@ -186,9 +186,14 @@ def main():
     news = json.loads((D / "news.json").read_text())
     seen |= {"news:" + re.sub(r"[^a-z0-9 ]", "", i["title"].lower())[:120] for d in news["days"] for i in d["items"]}
     hits, errors = [], []
-    for f in (edgar_hits, news_hits, state_items, starship_items):
+    for f in (edgar_hits, news_hits, state_items):
         try: hits += f()
         except Exception as ex: errors.append(f"{f.__name__}: {ex}")
+    try:   # Q3 date / lockup, Starship schedule+outcome, Grain ECFS, prices (fail-safe inside; low confidence -> REVIEW hits)
+        import trackers
+        _tr, th = trackers.run(dry=DRY); hits += th
+        errors += [f"tracker {k}: {v['error']}" for k, v in _tr.items() if isinstance(v, dict) and v.get("error")]
+    except Exception as ex: errors.append(f"trackers: {ex}")
     mitems = []
     try:
         mw = json.loads((D / "config.json").read_text())["market_watch"]

@@ -1,0 +1,73 @@
+{
+ "spcx_q3": {
+  "value": {
+   "status": "not announced",
+   "checked": "EDGAR SPCX 8-Ks since Oct 1 + Google News"
+  },
+  "ok": true,
+  "as_of": "2026-10-13 23:32 ET",
+  "last_ok": "2026-10-13 23:32 ET",
+  "error": null
+ },
+ "starship": {
+  "value": {
+   "status": "scheduled",
+   "next_net": null,
+   "headline_date": null,
+   "outcome_votes": {
+    "success": [],
+    "failure": [],
+    "partial": []
+   }
+  },
+  "ok": true,
+  "as_of": "2026-10-13 23:32 ET",
+  "last_ok": "2026-10-13 23:32 ET",
+  "error": null
+ },
+ "grain": {
+  "value": {
+   "status": "pending",
+   "filings": [
+    {
+     "id": "26110080153",
+     "date": "2026-10-09",
+     "type": "OTHER",
+     "filers": [
+      "Grain Management, LLC"
+     ],
+     "proceedings": [
+      "25-178"
+     ],
+     "url": "https://www.fcc.gov/ecfs/document/26110080153/1"
+    }
+   ],
+   "seen_ids": [
+    "26110080153"
+   ]
+  },
+  "ok": true,
+  "as_of": "2026-10-13 23:32 ET",
+  "last_ok": "2026-10-13 23:32 ET",
+  "error": null
+ },
+ "prices": {
+  "value": {
+   "TSLA": {
+    "price": 375.23,
+    "prev_close": 378.03,
+    "as_of": "2026-10-13 16:00 ET"
+   },
+   "SPCX": {
+    "price": 156.54,
+    "prev_close": 163.42,
+    "as_of": "2026-10-13 16:00 ET"
+   }
+  },
+  "ok": true,
+  "as_of": "2026-10-13 23:32 ET",
+  "last_ok": "2026-10-13 23:32 ET",
+  "error": null
+ },
+ "log": []
+}

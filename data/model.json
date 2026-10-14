@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13 23:20 ET",
+ "generated": "2026-10-13 23:32 ET",
  "today": "2026-10-13",
  "window": {
   "start": "2026-10-14",
@@ -586,6 +586,14 @@
   "_doc": "pre = no meeting date and no letter; meeting_only = meeting date set with no merger language (2026 regular-meeting merger path closed); letter = merger letter/agreement/committee disclosed (switch to close timing)."
  },
  "deal_math": {
+  "gap": {
+   "implied_ratio": 2.397023125079852,
+   "parity_ratio": 3.4365511464982816,
+   "parity_price": 537.957716472841,
+   "parity_premium": 0.43367459017893273,
+   "cap_gap": 642700828526.8799,
+   "ratio_gap": 1.0395280214184295
+  },
   "tsla_price": 375.23,
   "spcx_price": 156.54,
   "tsla_shares": 3949547394,
@@ -760,7 +768,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-13 23:20 ET",
+  "as_of": "2026-10-13 23:32 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -833,11 +841,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-13 23:20 ET",
+  "as_of": "2026-10-13 23:32 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-13 23:20 ET",
+  "as_of": "2026-10-13 23:32 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -870,8 +878,8 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.165,
     "closed": false,
-    "volume": 9753.847060999999,
-    "volume_24h": 385.562354,
+    "volume": 9755.097060999999,
+    "volume_24h": 386.812354,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -888,8 +896,8 @@
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
     "yes": 0.45,
     "closed": false,
-    "volume": 29338.613074999997,
-    "volume_24h": 105.908696,
+    "volume": 29339.913074999997,
+    "volume_24h": 107.208696,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -903,6 +911,143 @@
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
   ]
+ },
+ "lockups_eff": {
+  "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+  "src2": "https://tape.panke.app/unlocks.md",
+  "near_mult": 0.5,
+  "day_mult": 0.2,
+  "tranches": [
+   {
+    "date": "2026-10-26",
+    "label": "Day 135 (Oct 24 Sat): 180-day group +7%",
+    "shares": 328400000,
+    "verified": true
+   },
+   {
+    "date": "2026-11-05",
+    "label": "2nd full Nasdaq trading day after SpaceX's own Q3 results (not Tesla's Oct 21 report): 28% of 180-day group",
+    "shares": 1300000000,
+    "verified": false,
+    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 \u2014 Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Nov 5 is a placeholder from the Aug 4 Q2 release timing and creates no blackout until confirmed.",
+    "blackout": false
+   },
+   {
+    "date": "2026-12-08",
+    "label": "Day 180: 180-day group remainder",
+    "shares": 784000000,
+    "verified": true
+   },
+   {
+    "date": "2027-02-26",
+    "label": "After Q4 results: extended group",
+    "shares": 351900000,
+    "verified": false,
+    "note": "date depends on the Q4 release (~Feb/Mar)"
+   },
+   {
+    "date": "2027-03-18",
+    "label": "Day 280: extended group",
+    "shares": 176000000,
+    "verified": true
+   },
+   {
+    "date": "2027-05-07",
+    "label": "After Q1 2027 results: extended group",
+    "shares": 351900000,
+    "verified": false,
+    "note": "~May; estimated"
+   },
+   {
+    "date": "2027-05-17",
+    "label": "Day 340: extended group",
+    "shares": 176000000,
+    "verified": true
+   },
+   {
+    "date": "2027-06-14",
+    "label": "Day 366 (Jun 12 Sat): extended group, plus Musk's 6.42B shares",
+    "shares": 6770447515,
+    "verified": true
+   },
+   {
+    "date": "2027-08-06",
+    "label": "After Q2 2027 results: extended remainder",
+    "shares": 351900000,
+    "verified": false,
+    "note": "~Aug; estimated"
+   }
+  ]
+ },
+ "trackers": {
+  "spcx_q3": {
+   "value": {
+    "status": "not announced",
+    "checked": "EDGAR SPCX 8-Ks since Oct 1 + Google News"
+   },
+   "ok": true,
+   "as_of": "2026-10-13 23:32 ET",
+   "last_ok": "2026-10-13 23:32 ET",
+   "error": null
+  },
+  "starship": {
+   "value": {
+    "status": "scheduled",
+    "next_net": null,
+    "headline_date": null,
+    "outcome_votes": {
+     "success": [],
+     "failure": [],
+     "partial": []
+    }
+   },
+   "ok": true,
+   "as_of": "2026-10-13 23:32 ET",
+   "last_ok": "2026-10-13 23:32 ET",
+   "error": null
+  },
+  "grain": {
+   "value": {
+    "status": "pending",
+    "filings": [
+     {
+      "id": "26110080153",
+      "date": "2026-10-09",
+      "type": "OTHER",
+      "filers": [
+       "Grain Management, LLC"
+      ],
+      "proceedings": [
+       "25-178"
+      ],
+      "url": "https://www.fcc.gov/ecfs/document/26110080153/1"
+     }
+    ]
+   },
+   "ok": true,
+   "as_of": "2026-10-13 23:32 ET",
+   "last_ok": "2026-10-13 23:32 ET",
+   "error": null
+  },
+  "prices": {
+   "value": {
+    "TSLA": {
+     "price": 375.23,
+     "prev_close": 378.03,
+     "as_of": "2026-10-13 16:00 ET"
+    },
+    "SPCX": {
+     "price": 156.54,
+     "prev_close": 163.42,
+     "as_of": "2026-10-13 16:00 ET"
+    }
+   },
+   "ok": true,
+   "as_of": "2026-10-13 23:32 ET",
+   "last_ok": "2026-10-13 23:32 ET",
+   "error": null
+  },
+  "log": []
  },
  "later": {
   "on": true,

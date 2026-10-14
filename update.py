@@ -332,9 +332,7 @@ def grain_check(live, cfg):
             hits.append({"type": "news", "title": t, "url": it.findtext("link")})
     live["grain_check"] = {"as_of": now_et(), "approval_hits": hits[:5]}
     ev = load("events_state.json", {})
-    if hits and ev.get("grain", {}).get("status") != "approved":
-        ev.setdefault("grain", {}).update({"status": "approved", "approved_on": str(dt.datetime.now(ET).date()), "evidence": hits[0]})
-        save("events_state.json", ev)
+    # news-only approval wording is shown for review but no longer auto-applied; trackers.py applies FCC orders from ECFS
 
 def fetch_fcc(live, cfg):
     import requests
@@ -371,7 +369,9 @@ def deal_math(cfg, live):
     rv.update({"survivor": "Tesla", "control_ok": rv["musk_votes_tesla_survives"] > 0.5, "low_probability": True})
     cases.append(rv)
     par = next(c for c in cases if c["label"].startswith("1:1"))
-    return {"tsla_price": T, "spcx_price": S, "tsla_shares": tsh, "spcx_shares": ssh, "tsla_cap": T * tsh, "spcx_cap": S * ssh,
+    gap = {"implied_ratio": r0, "parity_ratio": ssh / tsh, "parity_price": ssh / tsh * S, "parity_premium": ssh / tsh * S / T - 1,
+           "cap_gap": S * ssh - T * tsh, "ratio_gap": ssh / tsh - r0}
+    return {"gap": gap, "tsla_price": T, "spcx_price": S, "tsla_shares": tsh, "spcx_shares": ssh, "tsla_cap": T * tsh, "spcx_cap": S * ssh,
             "musk_votes_now": mv / V, "cases": cases, "floor": g["vote_floor"],
             "notes": [g["_spcx_src"], g["_musk_votes_why"], g["_musk_tsla_src"]],
             "parity_note": f"1:1 market-cap parity works out to about ${par['tsla_price']:.0f} per TSLA at current prices ({par['premium']:+.0%}), which clears the ${g['vote_floor']} floor.",
@@ -410,6 +410,12 @@ def fmt(s): d = P(s); return d.strftime("%b ") + str(d.day)
 
 def main():
     cfg, jud = load("config.json"), load("judgment.json")
+    q3 = load("events_state.json", {}).get("spcx_q3") or {}
+    if q3.get("confirmed"):   # trackers.py found SpaceX's Q3 date in an SEC filing: confirm the 28% tranche and turn its blackout on
+        for t in cfg["lockups"]["tranches"]:
+            if t.get("blackout") is False and "Q3" in t["label"]:
+                t.update({"date": q3["unlock_date"], "blackout": True, "verified": True,
+                          "note": f"CONFIRMED by tracker: SpaceX Q3 results {q3['release_date']} ({q3['timing']}-market), 2nd full Nasdaq trading day after = {q3['unlock_date']}. Source: {q3.get('url')}"})
     live = load("live.json", {})
     news = load("news.json", {"days": []})
     if not OFFLINE:
@@ -496,6 +502,7 @@ def main():
              "state": state, "deal_math": dm, "blank_reasons": br, "leak_logodds": m["leak_logodds"], "weeks_blank": m["weeks_blank"],
              "fcc": live.get("fcc"), "shares": live.get("shares"), "why": why, "kill": kill, "leak": m["leak"],
              "starship": m["starship"], "grain": m["grain"], "grain_check": live.get("grain_check"), "polymarket": live.get("polymarket"),
+             "lockups_eff": cfg["lockups"], "trackers": {k: (v if k == "log" else {**v, "value": {kk: vv for kk, vv in (v.get("value") or {}).items() if kk != "seen_ids"}}) for k, v in load("trackers.json", {}).items()},
              "later": m["later"], "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"], "alt_later": alt["later"],
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,

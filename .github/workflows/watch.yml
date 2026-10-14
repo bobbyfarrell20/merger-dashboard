@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "merger-dashboard-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/seen.json data/news.json data/markets_history.json data/state.json data/events_state.json
+          git add data/seen.json data/news.json data/markets_history.json data/state.json data/events_state.json data/trackers.json
           if git diff --cached --quiet; then echo "No new items"; exit 0; fi
           git commit -m "Watcher: new items $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
