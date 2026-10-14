@@ -4,7 +4,7 @@ Free sources: Yahoo Finance (yfinance) prices/options, SEC EDGAR submissions,
 Polymarket gamma API, Kalshi public API. Anything that fails keeps its last value.
 Usage: python update.py [--offline]
 """
-import json, math, sys, datetime as dt
+import json, math, re, sys, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -106,7 +106,7 @@ def logit(p): return math.log(p / (1 - p))
 def sig(x): return 1 / (1 + math.exp(-x))
 
 def inputs_of(cfg, jud):
-    keys = ["window", "p_any_by_end", "a_share", "signals", "urgency", "weekday_mult", "blackouts", "post_event_boost", "timing_anchors"]
+    keys = ["window", "p_any_by_end", "a_share", "signals", "urgency", "weekday_mult", "blackouts", "post_event_boost", "timing_anchors", "leak_decay", "lockups", "starship"]
     return {k: cfg[k] for k in keys}
 
 def compute(cfg, today):
@@ -117,7 +117,28 @@ def compute(cfg, today):
         if s["active"]:
             if s["target"] == "p_any": lp += s["logodds"]
             else: la += s["logodds"]
+    ld = cfg["leak_decay"]; leak_on = not any(x["id"] == "committee_or_leak" and x["active"] for x in cfg["signals"])
+    weeks_blank = max(0, (today - P(ld["ref_date"])).days // 7)
+    leak_lo = max(ld["cap"], ld["base_logodds"] + ld["per_week"] * weeks_blank) if leak_on else 0.0
+    la += leak_lo
     p_end, a_sh = sig(lp), sig(la)
+    # A-only calendar: lockup days (+/-1 day softer), Starship launch/outcome
+    amult, alab = {}, {}
+    def addA(ds, m, lab):
+        amult[ds] = amult.get(ds, 1.0) * m; alab.setdefault(ds, []).append(lab)
+    lk = cfg["lockups"]
+    for t in lk["tranches"]:
+        t0 = P(t["date"])
+        addA(str(t0), lk["day_mult"], f"SPCX unlock {t['shares']/1e6:,.0f}M" + ("" if t["verified"] else " (est.)"))
+        for k in (-1, 1):
+            addA(str(t0 + dt.timedelta(days=k)), lk["near_mult"], "near SPCX unlock")
+    ss = cfg["starship"]; s0 = P(ss["next_net"])
+    addA(str(s0), ss["launch_mult"], "Starship launch (NET)")
+    addA(str(s0 + dt.timedelta(days=1)), ss["launch_mult"] if ss["status"] == "scheduled" else 1, "Starship slip buffer")
+    if ss["status"] == "success":
+        for k in (1, 2): addA(str(s0 + dt.timedelta(days=k)), ss["success_boost"], "after a successful Starship flight")
+    if ss["status"] == "failure":
+        for k in (1, 2, 3): addA(str(s0 + dt.timedelta(days=k)), ss["failure_mult"], "Starship failure blackout")
     days = []
     d = start0
     while d <= end:
@@ -131,6 +152,13 @@ def compute(cfg, today):
                 if bl["applies"] in ("A", "both"): wa *= bl["mult"]
                 if bl["applies"] in ("B", "both"): wb *= bl["mult"]
                 why.append(f"{bl['label']} x{bl['mult']}" + ("" if bl["applies"] == "both" else f" ({bl['applies']} only)"))
+        if str(d) in amult:
+            wa *= amult[str(d)]; ev += alab[str(d)]; why.append(f"merger-only x{amult[str(d)]:.2f} ({'; '.join(alab[str(d)])})")
+        if leak_on:
+            ahead = (d - today).days
+            for lz in ld["lead_days"]:
+                if ahead < lz["within"]:
+                    wa *= lz["mult"]; why.append(f"no-leak lead x{lz['mult']} (merger)"); break
         days.append({"date": str(d), "wa": wa, "wb": wb, "why": why, "events": ev})
         d += dt.timedelta(days=1)
     # cumulative anchors (absolute) from the window start
@@ -175,7 +203,7 @@ def compute(cfg, today):
         for v in w["days"].values(): v["either"] = v["A"] + v["B"]
         w["mon"], w["tue"] = w["days"]["Mon"]["either"], w["days"]["Tue"]["either"]
     best = max(W, key=lambda w: w["either"])["monday"] if W else None
-    return {"days": days, "weeks": W, "best_week": best, "p_end": p_end, "a_share": a_sh,
+    return {"days": days, "weeks": W, "best_week": best, "p_end": p_end, "a_share": a_sh, "leak_logodds": leak_lo, "weeks_blank": weeks_blank,
             "totals": {"A": days[-1]["cumA"], "B": days[-1]["cumB"], "none": days[-1]["none"]} if days else {}}
 
 def metrics(m):
@@ -194,9 +222,56 @@ def drivers_diff(old, new):
         elif o["logodds"] != x["logodds"]: out.append(f"signal weight changed: {x['label']}")
     for k in ("p_any_by_end", "a_share"):
         if old[k]["base"] != new[k]["base"]: out.append(f"{k} prior {old[k]['base']} -> {new[k]['base']}")
-    for k in ("urgency", "weekday_mult", "blackouts", "post_event_boost", "window", "timing_anchors"):
+    for k in ("urgency", "weekday_mult", "blackouts", "post_event_boost", "window", "timing_anchors", "lockups", "starship", "leak_decay"):
         if old[k] != new[k]: out.append(f"calendar/config changed: {k}")
     return out
+
+def fetch_shares(live):
+    import requests
+    r = requests.get("https://data.sec.gov/api/xbrl/companyconcept/CIK0001318605/dei/EntityCommonStockSharesOutstanding.json", headers=UA, timeout=20).json()
+    last = r["units"]["shares"][-1]
+    live["shares"] = {"TSLA": {"shares": last["val"], "as_of": last["end"], "form": last["form"], "filed": last["filed"], "src": "SEC XBRL dei:EntityCommonStockSharesOutstanding"}}
+
+def fetch_fcc(live, cfg):
+    import requests
+    f = cfg["fcc_watch"]
+    r = requests.get(f["api"], params={"api_key": "DEMO_KEY", "q": f["query"], "sort": "date_disseminated,DESC", "limit": 10}, timeout=20).json()
+    rows = [{"date": x["date_disseminated"][:10], "proceedings": [p["name"] for p in x.get("proceedings", [])],
+             "filers": [p["name"] for p in x.get("filers", [])], "type": x["submissiontype"]["description"],
+             "url": (x.get("documents") or [{}])[0].get("src")} for x in r.get("filing", []) if x["date_disseminated"][:10] >= f["since"]
+             and (re.search(r"grain|spacex|space exploration|starlink", " ".join(p["name"] for p in x.get("filers", [])), re.I)
+                  or any(p["name"] == "25-178" for p in x.get("proceedings", [])))]
+    live["fcc"] = {"as_of": now_et(), "filings": rows, "note": f["note"]}
+
+def deal_math(cfg, live):
+    pr = live.get("prices", {}); g = cfg["deal_math"]
+    if not pr: return None
+    T, S = pr["TSLA"]["close"], pr["SPCX"]["close"]
+    tsh = live.get("shares", {}).get("TSLA", {}).get("shares", 3949547394)
+    ssh = g["spcx_class_a"] + g["spcx_class_b"]
+    V = 10 * g["spcx_class_b"] + g["spcx_class_a"]
+    mv, mts, mss = g["musk_spcx_votes"], g["musk_tsla_shares"], g["musk_spcx_shares_outstanding"]
+    def case(label, ratio):
+        n = tsh * ratio
+        spx_vote = (mv + mts * ratio) / (V + n)                    # SpaceX survives (dual class)
+        tsla_econ = (mts + mss / ratio) / (tsh + ssh / ratio)      # Tesla survives (single class: votes = shares)
+        price = ratio * S
+        return {"label": label, "ratio": ratio, "tsla_price": price, "premium": price / T - 1, "new_spcx_shares": n,
+                "tesla_holders_pct": n / (ssh + n), "musk_votes_spacex_survives": spx_vote, "musk_votes_tesla_survives": tsla_econ,
+                "passes_floor": round(price, 2) >= g["vote_floor"] - 0.01}
+    r0 = T / S
+    cases = [case("At market (0%)" if p == 0 else f"{int(p*100)}% premium", r0 * (1 + p)) for p in g["premiums"]]
+    cases += [case(f"${x}/TSLA", x / S) for x in g["fixed_prices"]]
+    cases.append(case("1:1 market-cap parity (50/50)", ssh / tsh))
+    return {"tsla_price": T, "spcx_price": S, "tsla_shares": tsh, "spcx_shares": ssh, "tsla_cap": T * tsh, "spcx_cap": S * ssh,
+            "musk_votes_now": mv / V, "cases": cases, "floor": g["vote_floor"],
+            "notes": [g["_spcx_src"], g["_musk_votes_why"], g["_musk_tsla_src"]]}
+
+def blank_reasons(cfg, today):
+    b = cfg["blank_reasons"]; wk = max(0, (today - P(b["ref_date"])).days // 7)
+    ws = [(x, x["w"] * x["weekly"] ** wk) for x in b["items"]]
+    tot = sum(w for _, w in ws)
+    return sorted([{"id": x["id"], "label": x["label"], "p": w / tot, "src": x.get("src")} for x, w in ws], key=lambda r: -r["p"])
 
 def main():
     cfg, jud = load("config.json"), load("judgment.json")
@@ -212,7 +287,25 @@ def main():
         live.pop("markets", None); live.pop("markets_as_of", None)
         save("live.json", live)
     today = dt.datetime.now(ET).date()
+    state = load("state.json", {"state": "pre", "since": "2026-10-13"})
+    if not OFFLINE:
+        try:
+            import statecheck
+            new_state, hits = statecheck.check(state)
+            if new_state["state"] != state["state"]:
+                live.setdefault("state_changes", []).append({"at": now_et(), "from": state["state"], "to": new_state["state"], "evidence": new_state.get("evidence")})
+            state = new_state; save("state.json", state)
+        except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} statecheck: {ex}")
+        try: fetch_shares(live)
+        except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} shares: {ex}")
+        try: fetch_fcc(live, cfg)
+        except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} fcc: {ex}")
+        save("live.json", live)
     m = compute(cfg, today)
+    if state["state"] == "meeting_only":   # 2026 regular-meeting merger path closed: outcome B already happened
+        m["totals"] = {"A": 0.0, "B": 1.0, "none": 0.0}
+    dm = deal_math(cfg, live)
+    br = blank_reasons(cfg, today)
     exps = sorted(o["expiry"] for o in live.get("options", []) if "expiry" in o)
     ivs = {o["expiry"]: o.get("atm_iv") for o in live.get("options", []) if "expiry" in o}
     for w in m["weeks"]:
@@ -257,6 +350,8 @@ def main():
     model = {"generated": now_et(), "today": str(today), "window": cfg["window"], "weeks": m["weeks"], "best_week": m["best_week"],
              "totals": m["totals"], "p_end": m["p_end"], "a_share": m["a_share"], "split": split, "drivers": drivers, "alerts": alerts,
              "prev_as_of": prev["as_of"] if prev else None,
+             "state": state, "deal_math": dm, "blank_reasons": br, "leak_logodds": m["leak_logodds"], "weeks_blank": m["weeks_blank"],
+             "fcc": live.get("fcc"), "shares": live.get("shares"),
              "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "why", "events")} for x in m["days"]]}
     save("model.json", model)
     print(json.dumps({"totals": m["totals"], "best_week": m["best_week"], "a_share": m["a_share"],

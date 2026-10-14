@@ -23,6 +23,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 </style></head><body><main>
 <header><h1>Will Tesla announce its 2026 meeting, and will it come with a merger?</h1><div class="sub" id="stamp"></div></header>
 
+<section class="card" id="statebox" style="display:none"></section>
 <section class="card"><h2>By Dec 14</h2><div class="big3" id="big"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 
 <section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
@@ -30,6 +31,9 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <section class="card"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
 
 <section class="card"><h2>Why</h2><ul id="why"></ul></section>
+<section class="card"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section>
+<section class="card"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
+<section class="card"><h2>SpaceX unlocks and blackouts</h2><div id="lock"></div></section>
 
 <section class="card feed"><h2>What moved the odds</h2><div id="feed"></div></section>
 
@@ -41,6 +45,10 @@ const pct=(x,d=0)=>x==null?'–':(x*100).toFixed(d)+'%', p1=x=>pct(x,1);
 const fmtD=s=>new Date(s+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const J=f=>fetch('data/'+f+'?v='+Date.now()).then(r=>r.json());
 Promise.all(['model.json','config.json','judgment.json','news.json','live.json'].map(J)).then(([M,C,JU,N,L])=>{
+ const ST=M.state||{state:'pre'};
+ if(ST.state!=='pre'){const sb=document.getElementById('statebox');sb.style.display='';const ev=ST.evidence||{};
+  sb.innerHTML=ST.state==='meeting_only'?`<h2>State: meeting date set, no merger</h2><p>A routine meeting filing came out (${ev.form||''} ${ev.date||''}, <a href="${ev.url}">filing</a>). That closes the merger path for the 2026 regular meeting. Any SpaceX letter now points to a 2027 special meeting.</p>`
+  :`<h2 style="color:#f0883e">State: merger letter or process disclosed</h2><p>${ev.co||''} ${ev.form||''} ${ev.date||''} (<a href="${ev.url}">filing</a>). This page now tracks close timing (months, not weeks):</p><table>${C.close_timing.steps.map(x=>`<tr><td>${x.step}</td><td>${x.weeks[0]}–${x.weeks[1]} wks</td></tr>`).join('')}</table>`;}
  document.getElementById('stamp').textContent=`Updated ${M.generated}`+(M.prev_as_of?` · changes vs ${M.prev_as_of}`:'');
  const T=M.totals;
  document.getElementById('big').innerHTML=`<div><div class="n A">${pct(T.A)}</div><div class="l">Meeting + merger</div></div><div><div class="n B">${pct(T.B)}</div><div class="l">Routine meeting only</div></div><div><div class="n N">${pct(T.none)}</div><div class="l">Still nothing</div></div>`;
@@ -62,6 +70,11 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json']
   options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:6}},y:{min:0,max:100,ticks:{color:'#8b949e',callback:v=>v+'%'}}},plugins:{legend:{labels:{color:'#e6edf3',boxWidth:12}},tooltip:{callbacks:{afterBody:i=>{const d=M.daily[i[0].dataIndex];return d.events.join('\n')}}}}}});
  const at=ds=>{const d=M.daily.find(x=>x.date===ds);return d?pct(d.cumA+d.cumB):'–'};document.getElementById('cumnote').innerHTML=`Any announcement: <b>${at('2026-10-27')}</b> by Oct 27 (e-proxy cutoff) · <b>${at('2026-11-13')}</b> by Nov 13 · <b>${at('2026-11-26')}</b> by Nov 26 (last Texas notice day). The rest is a slip to 2027.`;
  document.getElementById('why').innerHTML=JU.why.map(x=>`<li>${x}</li>`).join('')+`<li class="sub">Judgment as of ${JU.as_of}. Model: ${pct(M.p_end)} chance of some announcement by Dec 14; ${pct(M.a_share)} of that with a merger.</li>`;
+ const BR=M.blank_reasons||[];document.getElementById('blank').innerHTML=BR.map((r,i)=>`<div style="display:grid;grid-template-columns:1fr 46px;gap:6px;align-items:center;margin:5px 0"><div style="font-size:13px">${i+1}. ${r.label}<div class="bar" style="margin-top:3px"><i style="width:${r.p*100}%;background:${r.id==='merger_hold'?'var(--A)':'var(--B)'}"></i></div></div><div style="text-align:right;font-weight:800">${pct(r.p)}</div></div>`).join('')+`<div class="sub">The merger-hold weight shrinks about 10% for each week with no leak (${M.weeks_blank} blank weeks counted so far).</div>`;
+ const DM=M.deal_math;if(DM){document.getElementById('deal').innerHTML=`<div class="sub">TSLA $${DM.tsla_price} × ${(DM.tsla_shares/1e9).toFixed(3)}B sh = <b>$${(DM.tsla_cap/1e12).toFixed(2)}T</b> · SPCX $${DM.spcx_price} × ${(DM.spcx_shares/1e9).toFixed(3)}B sh = <b>$${(DM.spcx_cap/1e12).toFixed(2)}T</b> · Musk's SpaceX votes today ≈ <b>${pct(DM.musk_votes_now,1)}</b></div>
+ <div style="overflow-x:auto"><table><tr><th>Case</th><th>SPCX per TSLA</th><th>$/TSLA</th><th>Tesla holders get</th><th>Musk votes: SpaceX survives</th><th>Tesla survives</th></tr>${DM.cases.map(c=>`<tr><td>${c.label}${c.passes_floor?'':' <span class="dn">below $'+DM.floor+'</span>'}</td><td>${c.ratio.toFixed(2)}</td><td>$${c.tsla_price.toFixed(0)}</td><td>${pct(c.tesla_holders_pct)}</td><td class="up"><b>${pct(c.musk_votes_spacex_survives)}</b></td><td class="dn">${pct(c.musk_votes_tesla_survives)}</td></tr>`).join('')}</table></div>
+ <div class="sub">If SpaceX survives, Musk keeps about 72–76% of the votes through Class B (10 votes per share). If Tesla survives (one share, one vote), he ends up with about 31–34%, so control forces SpaceX to be the survivor. Offers below $${DM.floor} are unlikely to win the Tesla vote (Bobby's floor). <details><summary>Sources and assumptions</summary>${DM.notes.map(n=>'<p>'+n+'</p>').join('')}<p>Ignores collars, ratchets and Musk's 423.7M Tesla award shares, which are voted proportionally.</p></details></div>`;}
+ const LK=C.lockups;document.getElementById('lock').innerHTML='<table>'+LK.tranches.map(t=>`<tr><td>${fmtD(t.date)}${t.date.slice(0,4)==='2027'?" '27":''}</td><td>${t.label}${t.verified?'':' <span class="sub">(est. date)</span>'}</td><td style="text-align:right">${(t.shares/1e6).toLocaleString(undefined,{maximumFractionDigits:0})}M</td></tr>`).join('')+'</table>'+`<div class="sub">Merger odds on an unlock day ×${LK.day_mult}, the day before and after ×${LK.near_mult}. Starship Flight 15 NET ${fmtD(C.starship.next_net)} (unofficial): launch day ×${C.starship.launch_mult}. Other blackouts: ${C.blackouts.map(b=>fmtD(b.date)+' '+b.label).join(' · ')}. Sources: <a href="${LK.src}">424B4</a>, <a href="${LK.src2}">tracker</a>.</div>`;
  document.getElementById('feed').innerHTML=N.days.slice(0,10).map(d=>`<div class="day"><b>${fmtD(d.date)}</b>${d.odds_note?`<div class="note">${d.odds_note}</div>`:''}<ul>`+d.items.slice(0,5).map(i=>`<li><span class="sub">${i.time_et||''}</span> <a href="${i.url}" target="_blank" rel="noopener">${i.title}</a> <span class="sub">${i.source}</span></li>`).join('')+'</ul></div>').join('');
  const sg=C.signals.map(s=>`<tr><td>${s.active?'✅':'⬜'} ${s.label}</td><td>${s.target}</td><td>${s.logodds>0?'+':''}${s.logodds}</td></tr>`).join('');
  const ed=Object.entries(L.edgar||{}).map(([c,fl])=>`<b>${c}</b>: `+fl.filter(x=>x.watch).slice(0,4).map(x=>`<a href="${x.url}">${x.form} ${x.date}</a>`).join(', ')).join('<br>');
@@ -70,6 +83,11 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json']
  <h3>Weekday weights</h3><p class="sub">${Object.entries(C.weekday_mult).filter(e=>e[0][0]!='_').map(e=>e[0]+' ×'+e[1]).join(' · ')}. ${C.weekday_mult._why}</p>
  <h3>Urgency by period</h3><table>${C.urgency.map(u=>`<tr><td>${fmtD(u.from)}–${fmtD(u.to)}</td><td>${u.label}</td><td>×${u.mult}</td></tr>`).join('')}</table>
  <h3>Blackouts</h3><table>${C.blackouts.concat(C.post_event_boost).map(b=>`<tr><td>${fmtD(b.date)}</td><td>${b.label}</td><td>×${b.mult} ${b.applies=='both'?'':'('+b.applies+' only)'}</td></tr>`).join('')}</table>
+ <h3>No-leak decay</h3><p class="sub">${C.leak_decay._why} Current penalty: ${M.leak_logodds.toFixed(2)} log-odds.</p>
+ <h3>Tesla's past proxy timing</h3><table><tr><th>Year</th><th>Meeting</th><th>PRE 14A</th><th>DEF 14A</th><th>DEF lead</th></tr>${C.historical_lags.rows.map(r=>`<tr><td>${r.year}${r.outlier?'*':''}</td><td>${r.meeting}</td><td>${r.pre||'–'}</td><td>${r.def}</td><td>${Math.round((new Date(r.meeting)-new Date(r.def))/864e5)}d</td></tr>`).join('')}</table><p class="sub">${C.historical_lags._why}</p>
+ <h3>FCC: SpaceX-Grain 800 MHz</h3><p class="sub">${(M.fcc&&M.fcc.note)||''}</p>${((M.fcc&&M.fcc.filings)||[]).map(f=>`<div class="sub">${f.date} ${f.type} by ${f.filers.join(', ')} (${f.proceedings.join(', ')}) ${f.url?`<a href="${f.url}">doc</a>`:''}</div>`).join('')}
+ <h3>Index notes</h3>${C.index_notes.map(x=>`<p class="sub">${x.label}</p>`).join('')}
+ <h3>Prediction markets (secondary only)</h3><p class="sub">${C.secondary_markets._why}</p>
  <h3>Notice rules</h3><table>${C.notice_rules.map(r=>`<tr><td>${r.src?`<a href="${r.src}">${r.rule}</a>`:r.rule}</td><td>${r.detail}</td></tr>`).join('')}</table>
  <h3>Recent watched SEC filings</h3><p class="sub">${ed}</p><p class="sub">Prices: TSLA $${L.prices?.TSLA?.close}, SPCX $${L.prices?.SPCX?.close} (${L.prices_as_of||''}).</p>`;
 });

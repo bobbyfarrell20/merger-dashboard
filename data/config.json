@@ -10,23 +10,16 @@
  },
  "a_share": {
   "base": 0.5,
-  "_why": "Starting split 50/50 for WITH merger vs routine. Bobby's thesis and Grok's Sept 18 read (silence ~60-70% merger-related if still blank late Sept) lean A. Polymarket's 'merger announced by Dec 31' at ~14% leans hard toward B. Signals below adjust it."
+  "_why": "Starting 50/50 for WITH merger vs routine before evidence. Bobby's thesis and Grok's Sept 18 read lean merger; Polymarket's Dec 31 2026 contract (~14%) leans routine. The leak decay and the signals adjust it."
  },
  "signals": [
   {
-   "id": "no_leaks",
-   "target": "a_share",
-   "logodds": -0.5,
-   "active": true,
-   "label": "No special committee, banker or deal leaks so far (~80% of $25B+ deals leak first)"
-  },
-  {
    "id": "retail_autovote",
    "target": "a_share",
-   "logodds": 0.15,
+   "logodds": 0.03,
    "active": true,
-   "label": "SEC OK'd Tesla retail auto-vote-with-board program (Sept 29)",
-   "src": "https://electrek.co/2026/09/29/tesla-sec-retail-auto-vote-board-spacex-merger/"
+   "label": "SEC retail standing-instruction no-action letter (Sept 29). Downgraded: holders can choose 'all matters except mergers', and anyone who chose 'all matters' gets a reminder and can override before a merger vote",
+   "src": "https://www.sec.gov/files/corpfin/no-action/tesla-inc-092926-incoming-letter.pdf"
   },
   {
    "id": "musk_hints",
@@ -38,17 +31,39 @@
   {
    "id": "credit_facility",
    "target": "a_share",
-   "logodds": 0.05,
+   "logodds": 0.0,
    "active": true,
-   "label": "$30B credit facilities 8-K (Sept 29)",
+   "label": "$30B credit 8-K (Sept 29): rules out 'waiting on an equity raise' as the reason, neutral for a merger",
    "src": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
   },
   {
-   "id": "committee_named",
+   "id": "spacex_spectrum",
    "target": "a_share",
-   "logodds": 2.0,
+   "logodds": 0.05,
+   "active": true,
+   "label": "SpaceX-Grain 800 MHz deal (Oct 8, ~$8B cash per WSJ, pending FCC): adds more Tesla-relevant connectivity",
+   "src": "https://graingp.com/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex/"
+  },
+  {
+   "id": "product_date_no_meeting",
+   "target": "a_share",
+   "logodds": -0.15,
    "active": false,
-   "label": "Special committee / merger letter reported (flip on)"
+   "label": "Terafab or Optimus Gen 3 event date set with no meeting or letter (flip on)"
+  },
+  {
+   "id": "roadster_clean_no_date",
+   "target": "a_share",
+   "logodds": 0.1,
+   "active": false,
+   "label": "Roadster goes cleanly (Oct 15) and still no meeting date (flip on Oct 16 if true)"
+  },
+  {
+   "id": "committee_or_leak",
+   "target": "a_share",
+   "logodds": 2.5,
+   "active": false,
+   "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)"
   },
   {
    "id": "said_2027",
@@ -68,32 +83,32 @@
   {
    "from": "2026-10-21",
    "to": "2026-10-27",
-   "mult": 1.7,
-   "label": "Last days to mail an e-proxy notice for a meeting by ~Dec 6 (40 days, Rule 14a-16)"
+   "mult": 1.6,
+   "label": "Tesla's usual 40-45 day DEF 14A lead puts the latest on-time proxy (Dec 6 meeting) here"
   },
   {
    "from": "2026-10-28",
    "to": "2026-11-13",
    "mult": 2.0,
-   "label": "Dec meeting still possible with full-set mailing (Texas 10-day minimum)"
+   "label": "A mid/late-Dec meeting still fits Tesla's usual 40-45 day lead"
   },
   {
    "from": "2026-11-14",
    "to": "2026-11-25",
-   "mult": 2.3,
-   "label": "Final stretch: Nov 26 is the last day to give 10-day notice for Dec 6"
+   "mult": 2.2,
+   "label": "Last chance for any 2026 meeting (Texas 10-day minimum)"
   },
   {
    "from": "2026-11-26",
    "to": "2026-12-06",
-   "mult": 1.1,
-   "label": "Deadline being missed; Tesla could still set a late-Dec or Jan date"
+   "mult": 1.0,
+   "label": "Sliding into 2027"
   },
   {
    "from": "2026-12-07",
    "to": "2026-12-14",
    "mult": 0.8,
-   "label": "Past the 13-month mark; risk of a shareholder court petition"
+   "label": "Past 13 months; court-petition risk"
   }
  ],
  "weekday_mult": {
@@ -109,33 +124,21 @@
  "blackouts": [
   {
    "date": "2026-10-15",
-   "mult": 0.4,
+   "mult": 0.3,
    "applies": "both",
    "label": "Roadster demo (evening)"
   },
   {
    "date": "2026-10-21",
-   "mult": 0.5,
+   "mult": 0.3,
    "applies": "both",
    "label": "Q3 earnings after the close"
   },
   {
-   "date": "2026-10-26",
-   "mult": 0.2,
-   "applies": "A",
-   "label": "SPCX unlock up to 328M shares (Oct 24 Sat, first trade Mon)"
-  },
-  {
-   "date": "2026-11-05",
-   "mult": 0.2,
-   "applies": "A",
-   "label": "SPCX unlock up to 1.31B shares (estimated date)"
-  },
-  {
-   "date": "2026-11-09",
-   "mult": 0.3,
-   "applies": "A",
-   "label": "Starship Flight 15 (NET Nov 8, unofficial)"
+   "date": "2026-10-22",
+   "mult": 0.6,
+   "applies": "both",
+   "label": "Earnings call day after"
   },
   {
    "date": "2026-11-26",
@@ -148,26 +151,20 @@
    "mult": 0.3,
    "applies": "both",
    "label": "Half day"
-  },
-  {
-   "date": "2026-12-08",
-   "mult": 0.2,
-   "applies": "A",
-   "label": "SPCX 180-day remainder unlock"
   }
  ],
  "post_event_boost": [
   {
-   "date": "2026-10-19",
-   "mult": 1.3,
+   "date": "2026-10-16",
+   "mult": 1.15,
    "applies": "A",
-   "label": "First Monday after Roadster (Bobby's preferred slot)"
+   "label": "Day after Roadster (bigger if clean; see signal)"
   },
   {
-   "date": "2026-10-22",
-   "mult": 1.3,
-   "applies": "both",
-   "label": "Morning after earnings"
+   "date": "2026-10-19",
+   "mult": 1.15,
+   "applies": "A",
+   "label": "First Monday after Roadster"
   }
  ],
  "notice_rules": [
@@ -236,5 +233,273 @@
    "share_of_total": 1.0
   }
  ],
- "_timing_doc": "Cumulative 'either' odds are pinned to timing_anchors (as a share of p_any_by_end). Within each segment, probability is spread by day weight (weekday x urgency x blackouts). The merger/routine split per day uses a_share with A-only blackouts."
+ "_timing_doc": "Cumulative 'either' odds are pinned to timing_anchors (as a share of p_any_by_end). Within each segment, probability is spread by day weight (weekday x urgency x blackouts). The merger/routine split per day uses a_share with A-only blackouts.",
+ "leak_decay": {
+  "ref_date": "2026-10-13",
+  "base_logodds": -0.4,
+  "per_week": -0.12,
+  "cap": -1.2,
+  "lead_days": [
+   {
+    "within": 7,
+    "mult": 0.35
+   },
+   {
+    "within": 14,
+    "mult": 0.7
+   }
+  ],
+  "_why": "No special committee 8-K, no named banks or law firms, and no 'people familiar' reports. A Musk-on-both-sides deal needs an independent committee with its own advisers, and those usually leak. (1) The merger-share penalty starts at -0.40 log-odds on Oct 13 and grows by -0.12 for each blank week, capped at -1.20. (2) Inside the forecast, a merger in the next 7 days is cut to x0.35 and in days 8-14 to x0.70, because a leak or committee would normally show up first. That suppression rolls forward each day. It turns off when committee_or_leak is flipped on."
+ },
+ "lockups": {
+  "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+  "src2": "https://tape.panke.app/unlocks.md",
+  "near_mult": 0.5,
+  "day_mult": 0.2,
+  "tranches": [
+   {
+    "date": "2026-10-26",
+    "label": "Day 135 (Oct 24 Sat): 180-day group +7%",
+    "shares": 328400000,
+    "verified": true
+   },
+   {
+    "date": "2026-11-05",
+    "label": "2nd full trading day after Q3 results: 180-day group",
+    "shares": 1313600000,
+    "verified": false,
+    "note": "SpaceX Q3 date not announced; estimated from the Aug 4 Q2 release"
+   },
+   {
+    "date": "2026-12-08",
+    "label": "Day 180: 180-day group remainder",
+    "shares": 784000000,
+    "verified": true
+   },
+   {
+    "date": "2027-02-26",
+    "label": "After Q4 results: extended group",
+    "shares": 351900000,
+    "verified": false,
+    "note": "date depends on the Q4 release (~Feb/Mar)"
+   },
+   {
+    "date": "2027-03-18",
+    "label": "Day 280: extended group",
+    "shares": 176000000,
+    "verified": true
+   },
+   {
+    "date": "2027-05-07",
+    "label": "After Q1 2027 results: extended group",
+    "shares": 351900000,
+    "verified": false,
+    "note": "~May; estimated"
+   },
+   {
+    "date": "2027-05-17",
+    "label": "Day 340: extended group",
+    "shares": 176000000,
+    "verified": true
+   },
+   {
+    "date": "2027-06-14",
+    "label": "Day 366 (Jun 12 Sat): extended group, plus Musk's 6.42B shares",
+    "shares": 6770447515,
+    "verified": true
+   },
+   {
+    "date": "2027-08-06",
+    "label": "After Q2 2027 results: extended remainder",
+    "shares": 351900000,
+    "verified": false,
+    "note": "~Aug; estimated"
+   }
+  ]
+ },
+ "starship": {
+  "next_net": "2026-11-08",
+  "verified": false,
+  "src": "https://aishiftnews.ca/",
+  "status": "scheduled",
+  "launch_mult": 0.1,
+  "success_boost": 1.3,
+  "failure_mult": 0.2,
+  "_why": "Launch day is a hard avoid for a merger. A success boosts the next 2 days for a merger; a failure blacks out the next 3. Set status to success or failure after the flight."
+ },
+ "historical_lags": {
+  "src": "SEC EDGAR filing index for Tesla (CIK 1318605)",
+  "_why": "Before 2025, Tesla's first public notice of the meeting date was the proxy itself (no separate date 8-K). The DEF 14A went out 40-45 days before the meeting, right at the notice-and-access minimum, and Tesla has never used the full Texas 60-day window. When there were non-routine items, a PRE 14A came about 10-13 days earlier. 2025 was the outlier: a separate 8-K on Jul 10, 119 days ahead.",
+  "rows": [
+   {
+    "year": 2019,
+    "meeting": "2019-06-11",
+    "pre": "2019-04-19",
+    "def": "2019-04-30"
+   },
+   {
+    "year": 2021,
+    "meeting": "2021-10-07",
+    "pre": "2021-08-13",
+    "def": "2021-08-26"
+   },
+   {
+    "year": 2022,
+    "meeting": "2022-08-04",
+    "pre": "2022-06-10",
+    "def": "2022-06-23"
+   },
+   {
+    "year": 2023,
+    "meeting": "2023-05-16",
+    "pre": null,
+    "def": "2023-04-06"
+   },
+   {
+    "year": 2024,
+    "meeting": "2024-06-13",
+    "pre": "2024-04-17",
+    "def": "2024-04-29"
+   },
+   {
+    "year": 2025,
+    "meeting": "2025-11-06",
+    "date_8k": "2025-07-10",
+    "pre": "2025-09-05",
+    "def": "2025-09-17",
+    "outlier": true
+   }
+  ],
+  "note": "Meeting dates come from the proxy filenames and well-known dates. 2020 (proxy May 28 for Jul 7) is left out because that meeting was later moved (unverified here)."
+ },
+ "blank_reasons": {
+  "_why": "Why is the 2026 meeting still unscheduled? Starting weights are normalized. Each blank week since Oct 13 multiplies the merger-hold weight by x0.90 (no leaks) and the drift weight by x1.04.",
+  "ref_date": "2026-10-13",
+  "items": [
+   {
+    "id": "merger_hold",
+    "label": "Holding the ballot for a merger letter or process",
+    "w": 0.34,
+    "weekly": 0.9
+   },
+   {
+    "id": "drift",
+    "label": "Ordinary drift or lateness (Tesla ran late in 2025 too)",
+    "w": 0.3,
+    "weekly": 1.04
+   },
+   {
+    "id": "comp_governance",
+    "label": "Preparing comp/governance items (2025 interim award forfeited Apr 21, 2026 after the Tornetta decision)",
+    "w": 0.2,
+    "weekly": 1.0,
+    "src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926047683/xslSCHEDULE_13G_X02/primary_doc.xml"
+   },
+   {
+    "id": "product_date",
+    "label": "Waiting to pair with a product date (Roadster Oct 15, Optimus Gen 3, Terafab)",
+    "w": 0.08,
+    "weekly": 0.95
+   },
+   {
+    "id": "retail_program",
+    "label": "Waiting on the retail voting program (cleared Sept 29, so weak)",
+    "w": 0.05,
+    "weekly": 0.9
+   },
+   {
+    "id": "equity_raise",
+    "label": "Waiting on an equity raise (unlikely after the $30B credit lines)",
+    "w": 0.03,
+    "weekly": 0.9
+   }
+  ]
+ },
+ "deal_math": {
+  "spcx_class_a": 8087335349,
+  "spcx_class_b": 5485486276,
+  "_spcx_src": "SpaceX 10-Q cover (Jul 28, 2026): 7,696,293,669 A + 5,485,486,276 B, plus 391,041,680 A issued in the Cursor merger (8-K Aug 14). Not a company-reported total.",
+  "musk_spcx_votes": 53040000000,
+  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
+  "musk_spcx_shares_outstanding": 6068547515,
+  "musk_tsla_shares": 699580882,
+  "_musk_tsla_src": "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy.",
+  "musk_tsla_src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926075203/0001104659-26-075203.txt",
+  "premiums": [
+   0,
+   0.2,
+   0.3
+  ],
+  "fixed_prices": [
+   450,
+   500
+  ],
+  "vote_floor": 450,
+  "_vote_floor_why": "Bobby's view: Tesla holders likely need $450 or more per share. Offers below that are treated as unlikely to pass."
+ },
+ "close_timing": {
+  "_why": "Used only once a letter or merger is detected (state = letter). Typical related-party all-stock steps; general practice, not rules.",
+  "steps": [
+   {
+    "step": "Special committee formed, advisers hired",
+    "weeks": [
+     0,
+     3
+    ]
+   },
+   {
+    "step": "Negotiation to signed agreement (if it starts as a letter)",
+    "weeks": [
+     4,
+     12
+    ]
+   },
+   {
+    "step": "S-4 / joint proxy filed after signing",
+    "weeks": [
+     3,
+     8
+    ]
+   },
+   {
+    "step": "SEC review to effectiveness",
+    "weeks": [
+     6,
+     16
+    ]
+   },
+   {
+    "step": "Special meeting after proxy mailing (Tesla's usual ~40-45 days)",
+    "weeks": [
+     6,
+     7
+    ]
+   },
+   {
+    "step": "HSR (30-day wait) / CFIUS / FCC (Starlink, spectrum): runs in parallel, a risk to close timing",
+    "weeks": [
+     4,
+     26
+    ]
+   }
+  ]
+ },
+ "secondary_markets": {
+  "_why": "Shown in details only, as a sentiment check. Bobby said the 2026 contracts 'resolved No'. Not quite: Polymarket's Jun 30 and Sept 30, 2026 contracts resolved No, but Dec 31, 2026 is still open (~14.5%). Dec 31, 2027: Polymarket ~59.5%, Kalshi 'before 2028' ~69% (Oct 13)."
+ },
+ "index_notes": [
+  {
+   "label": "Nasdaq-100 annual reconstitution, effective after the close Dec 18, 2026 (standard 3rd-Friday-of-December schedule; unverified for 2026)",
+   "date": "2026-12-18"
+  },
+  {
+   "label": "S&P 500 eligibility for SPCX needs about 12 months of trading after the Jun 12, 2026 IPO, so ~Jun 2027 at the earliest. Bobby's 'Sept 2027' and the Tesla-swap idea come from the Grok thread; the seasoning rule wasn't re-checked for 2026 changes (unverified)."
+  }
+ ],
+ "fcc_watch": {
+  "query": "\"Prism License\" OR \"Starlink Spectrum Holdings\"",
+  "since": "2026-10-01",
+  "api": "https://publicapi.fcc.gov/ecfs/filings",
+  "note": "The SpaceX-Grain transfer application was filed Oct 8 and asks for expedited consent. Its ECFS/ULS docket number wasn't found yet; the earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
+ }
 }

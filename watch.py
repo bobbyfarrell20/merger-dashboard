@@ -26,7 +26,8 @@ COMPANY_RE = re.compile(r"\b(tesla|spacex|spcx|tsla|musk)\b", re.I)
 DEAL_RE = re.compile(r"\b(merger|merge[sd]?|merging|combin(e|es|ed|ing|ation)|acqui(re|res|red|sition)|takeover|buyout|"
                      r"all-stock|stock[- ]swap|exchange ratio|bear[- ]hug|offer letter|special committee|independent directors|"
                      r"definitive agreement|tender offer|fairness opinion|(annual|special) (shareholder )?meeting|proxy statement|"
-                     r"go(es)? private|roll[- ]up)\b", re.I)
+                     r"go(es)? private|roll[- ]up|people familiar|familiar with the matter|advis[eo]rs?|bankers?|counsel|"
+                     r"goldman|morgan stanley|wachtell|skadden|sullivan & cromwell|fcc approv\w*|spectrum)\b", re.I)
 NEED_BOTH_RE = re.compile(r"spacex|spcx", re.I)  # deal headlines must mention SpaceX/SPCX, or Tesla + meeting/proxy terms
 MEETING_RE = re.compile(r"(annual|special) (shareholder )?meeting|proxy", re.I)
 NOISE_RE = re.compile(r"price prediction|stock forecast|should you buy|\bquote\b|top \d+|vs\.? .* stock|"
@@ -37,7 +38,9 @@ SOURCES = ["reuters", "bloomberg", "wall street journal", "wsj", "financial time
            "ars technica", "space.com", "spacenews", "spaceflight now", "investor's business daily", "seeking alpha",
            "benzinga", "cnn", "bbc", "the guardian", "forbes", "fox business", "puck", "insideevs", "notateslaapp"]
 QUERIES = ['Tesla SpaceX merger', 'Tesla SpaceX deal', 'Tesla special committee SpaceX',
-           'Tesla annual meeting 2026', 'SpaceX acquire Tesla', 'Tesla SpaceX exchange ratio']
+           'Tesla annual meeting 2026', 'SpaceX acquire Tesla', 'Tesla SpaceX exchange ratio',
+           'Tesla SpaceX "people familiar"', 'Tesla SpaceX advisers bankers', 'Goldman Sachs Tesla SpaceX', 'Morgan Stanley Tesla SpaceX',
+           'Wachtell Tesla SpaceX', 'Skadden Tesla SpaceX', 'Tesla independent directors SpaceX', 'FCC Grain SpaceX 800 MHz']
 
 def get(url, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
@@ -136,13 +139,25 @@ def market_moves(contracts, hist, mw, now):
         h["points"] = pts; h["name"] = c["name"]
     return items
 
+def state_items():
+    """Run the shared state machine; return a webhook item if the state changed (and persist it)."""
+    import statecheck
+    st = json.loads((D / "state.json").read_text())
+    new, hits = statecheck.check(st)
+    if new["state"] == st["state"]: return []
+    if not DRY: (D / "state.json").write_text(json.dumps(new, indent=1))
+    ev = new.get("evidence") or {}
+    return [{"id": "state:" + new["state"] + ":" + str(ev.get("url")), "type": "state_change",
+             "title": f"STATE CHANGE {st['state']} -> {new['state']}: {ev.get('co')} {ev.get('form')} ({ev.get('evidence', '')[:120]})",
+             "url": ev.get("url"), "source": "SEC EDGAR", "time_et": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M"), "factor": "sec"}]
+
 def main():
     first = not SEEN.exists() or "--bootstrap" in sys.argv
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     news = json.loads((D / "news.json").read_text())
     seen |= {"news:" + re.sub(r"[^a-z0-9 ]", "", i["title"].lower())[:120] for d in news["days"] for i in d["items"]}
     hits, errors = [], []
-    for f in (edgar_hits, news_hits):
+    for f in (edgar_hits, news_hits, state_items):
         try: hits += f()
         except Exception as ex: errors.append(f"{f.__name__}: {ex}")
     mitems = []

@@ -75,3 +75,13 @@ Not investment advice.
   - After an alert, it only alerts again once the price moves another `move_pp` points from the alerted price.
   - Price used: the bid/ask midpoint if the spread is 6¢ or less; otherwise the last trade if 24h volume is at least 50; otherwise the quote counts as thin and is stored but never alerts.
   - Extra payload fields: `contract`, `from`, `to` (0–1), `window_hours`.
+
+## Bobby's factor list (Oct 13, 2026) — how it is modeled
+All weights live in `data/config.json`, each with a `_why` field and a source.
+- **State machine** (`statecheck.py`, run by update.py and watch.py; state saved in `data/state.json`): `pre` → `meeting_only` (routine meeting filing with no merger language, which sets merger odds for the 2026 meeting to 0) or `letter` (S-4/425/PREM14A, or merger language that names the other company), which switches the page to close timing. The state only moves forward.
+- **No-leak decay**: the merger share loses 0.40 log-odds now and 0.12 more for each blank week, capped at −1.20. Merger odds within 7 or 14 days of today are scaled by ×0.35 or ×0.70. A committee or leak signal turns the decay off and adds +2.5.
+- **SpaceX unlocks**: on an unlock day merger odds are ×0.2, and ×0.5 the day before and after. Starship launch day is ×0.1.
+- **Blank-page reasons**: weights for why the meeting is still unscheduled. The merger-hold weight is ×0.90 for each blank week.
+- **Deal math**: live market caps; exchange ratios at market, +20%, +30%, $450, $500 and 1:1 parity; the share Tesla holders would own; and Musk's voting % under each survivor.
+- **New pulls**: TSLA shares outstanding (SEC XBRL), FCC ECFS (Grain / Starlink Spectrum Holdings, DEMO_KEY), and leak keywords in watch.py (special committee, people familiar, Goldman / Morgan Stanley / Wachtell / Skadden).
+- **Unverified items** (labeled on the page): SpaceX Q3 date / Nov 5 unlock, the earnings-dated unlock tranches, Starship Flight 15 NET Nov 8, Nasdaq-100 Dec 18, S&P seasoning, the FCC docket for the Grain transfer, and the ~$8B price (WSJ via Light Reading).
