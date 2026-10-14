@@ -2,41 +2,41 @@
  {
   "v": 2,
   "date": "2026-10-13",
-  "as_of": "2026-10-13 22:19 ET",
+  "as_of": "2026-10-13 22:29 ET",
   "metrics": {
-   "end_A": 0.4229597266481458,
-   "end_B": 0.527040273351854,
-   "end_none": 0.050000000000000266,
-   "wk2026-10-12_either": 0.02838996582012005,
-   "wk2026-10-12_A": 0.008445235506702278,
-   "wk2026-10-12_B": 0.019944730313417775,
-   "wk2026-10-19_either": 0.11464273609302991,
-   "wk2026-10-19_A": 0.046830653027409484,
-   "wk2026-10-19_B": 0.06781208306562043,
-   "wk2026-10-26_either": 0.20926975222089284,
-   "wk2026-10-26_A": 0.08648500622891468,
-   "wk2026-10-26_B": 0.12278474599197817,
-   "wk2026-11-02_either": 0.26599818741567693,
-   "wk2026-11-02_A": 0.12576180239945822,
-   "wk2026-11-02_B": 0.1402363850162187,
-   "wk2026-11-09_either": 0.25142060985952475,
-   "wk2026-11-09_A": 0.1125244508490311,
-   "wk2026-11-09_B": 0.13889615901049365,
-   "wk2026-11-16_either": 0.04241262683201801,
-   "wk2026-11-16_A": 0.02279658233105749,
-   "wk2026-11-16_B": 0.019616044500960522,
-   "wk2026-11-23_either": 0.03320238614543587,
-   "wk2026-11-23_A": 0.017846122390622457,
-   "wk2026-11-23_B": 0.015356263754813412,
-   "wk2026-11-30_either": 0.0025044499364101696,
-   "wk2026-11-30_A": 0.0013461297597885575,
-   "wk2026-11-30_B": 0.0011583201766216123,
-   "wk2026-12-07_either": 0.0014914323605152448,
-   "wk2026-12-07_A": 0.0005647762192179549,
-   "wk2026-12-07_B": 0.0009266561412972898,
-   "wk2026-12-14_either": 0.0006678533163760454,
-   "wk2026-12-14_A": 0.00035896793594361544,
-   "wk2026-12-14_B": 0.00030888538043243
+   "end_A": 0.46613516097336427,
+   "end_B": 0.4838648390266357,
+   "end_none": 0.050000000000000044,
+   "wk2026-10-12_either": 0.027838764979992874,
+   "wk2026-10-12_A": 0.011965363952247262,
+   "wk2026-10-12_B": 0.015873401027745614,
+   "wk2026-10-19_either": 0.12123964867307789,
+   "wk2026-10-19_A": 0.05872286924072592,
+   "wk2026-10-19_B": 0.06251677943235197,
+   "wk2026-10-26_either": 0.20374273227215906,
+   "wk2026-10-26_A": 0.09054599010144823,
+   "wk2026-10-26_B": 0.11319674217071081,
+   "wk2026-11-02_either": 0.26030036500871656,
+   "wk2026-11-02_A": 0.13101474577820926,
+   "wk2026-11-02_B": 0.12928561923050727,
+   "wk2026-11-09_either": 0.2565997404752982,
+   "wk2026-11-09_A": 0.12854690788765027,
+   "wk2026-11-09_B": 0.1280528325876479,
+   "wk2026-11-16_either": 0.042412626832018005,
+   "wk2026-11-16_A": 0.02407780545885088,
+   "wk2026-11-16_B": 0.018334821373167127,
+   "wk2026-11-23_either": 0.033202912054624494,
+   "wk2026-11-23_A": 0.01884941624306709,
+   "wk2026-11-23_B": 0.0143534958115574,
+   "wk2026-11-30_either": 0.002519718267692799,
+   "wk2026-11-30_A": 0.0014304534001374255,
+   "wk2026-11-30_B": 0.0010892648675553734,
+   "wk2026-12-07_either": 0.00147156656503529,
+   "wk2026-12-07_A": 0.0006001546709909912,
+   "wk2026-12-07_B": 0.0008714118940442989,
+   "wk2026-12-14_either": 0.0006719248713847465,
+   "wk2026-12-14_A": 0.0003814542400366469,
+   "wk2026-12-14_B": 0.00029047063134809964
   },
   "inputs": {
    "window": {
@@ -168,6 +168,12 @@
      "label": "Roadster demo (evening)"
     },
     {
+     "date": "2026-10-16",
+     "mult": 0.5,
+     "applies": "both",
+     "label": "Pre-earnings Friday (clean tape before Oct 21)"
+    },
+    {
      "date": "2026-10-21",
      "mult": 0.3,
      "applies": "both",
@@ -189,16 +195,11 @@
      "date": "2026-11-27",
      "mult": 0.3,
      "applies": "both",
-     "label": "Half day"
+     "label": "Early close 1pm ET (day after Thanksgiving)",
+     "src": "https://ir.theice.com/press/news-details/2025/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar/"
     }
    ],
    "post_event_boost": [
-    {
-     "date": "2026-10-16",
-     "mult": 1.15,
-     "applies": "A",
-     "label": "Day after Roadster (bigger if clean; see signal)"
-    },
     {
      "date": "2026-10-19",
      "mult": 1.15,
@@ -223,9 +224,8 @@
     }
    ],
    "leak_decay": {
-    "ref_date": "2026-10-13",
-    "base_logodds": -0.4,
-    "per_week": -0.12,
+    "ref_date": "2026-09-21",
+    "per_week": -0.13,
     "cap": -1.2,
     "lead_days": [
      {
@@ -237,7 +237,8 @@
       "mult": 0.7
      }
     ],
-    "_why": "No special committee 8-K, no named banks or law firms, and no 'people familiar' reports. A Musk-on-both-sides deal needs an independent committee with its own advisers, and those usually leak. (1) The merger-share penalty starts at -0.40 log-odds on Oct 13 and grows by -0.12 for each blank week, capped at -1.20. (2) Inside the forecast, a merger in the next 7 days is cut to x0.35 and in days 8-14 to x0.70, because a leak or committee would normally show up first. That suppression rolls forward each day. It turns off when committee_or_leak is flipped on."
+    "soften_by_quiet_hold": true,
+    "_why": "The blank-week clock starts Mon Sept 21, 2026. That is the first Monday after the anniversary of last year's DEF 14A (Sept 17, 2025) passed with no 2026 date. Sept 29 (the retail-program letter) was considered and rejected: the program was a reason the date might wait, so the clock would start too late. The penalty is -0.13 log-odds per full blank week, capped at -1.20. It replaces the old flat 'no leaks' -0.40, which was already about 3 weeks x -0.13 on Oct 13, so nothing is double-counted. The penalty, and the lead-day suppression (x0.35 within 7 days, x0.70 for days 8-14), are scaled by the active-process share of the merger-hold reasons. The quiet-hold path ('Musk told the board to hold the date; no committee or bankers yet') wouldn't leak, so it isn't penalized. Everything turns off when committee_or_leak is on."
    },
    "lockups": {
     "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
@@ -308,12 +309,104 @@
    "starship": {
     "next_net": "2026-11-08",
     "verified": false,
-    "src": "https://aishiftnews.ca/",
+    "src": "https://en.wikipedia.org/wiki/Starship_flight_15",
+    "src2": "https://thelaunchwindow.com/next-starship-launch",
     "status": "scheduled",
     "launch_mult": 0.1,
+    "day_after_mult": 0.3,
     "success_boost": 1.3,
+    "success_days": [
+     2,
+     4
+    ],
     "failure_mult": 0.2,
-    "_why": "Launch day is a hard avoid for a merger. A success boosts the next 2 days for a merger; a failure blacks out the next 3. Set status to success or failure after the flight."
+    "failure_days": [
+     1,
+     5
+    ],
+    "_why": "NET Nov 8 comes from planning-grade sources: the CADENA air-traffic planning slides of Oct 8 (cited by Wikipedia), and NASASpaceflight reporting on Oct 10 plus Musk's '4-6 weeks' remark (per thelaunchwindow). SpaceX hasn't announced a date, and Launch Library lists it only as NET Q4 2026. Unverified. Merger odds: launch day x0.1 and the day after x0.3. After a success, days +2 to +4 get x1.3. After a failure, days +1 to +5 get x0.2. The status comes from data/events_state.json (set by watch.py or by hand) or from this config."
+   },
+   "grain": {
+    "status": "pending",
+    "approved_on": null,
+    "pending_mult": 0.9,
+    "pending_within_days": 14,
+    "approval_boost": 1.2,
+    "approval_days": 5,
+    "src": "https://www.lightreading.com/",
+    "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
+   },
+   "special_meeting_planned": {
+    "on": false,
+    "_why": "If on, the merger vote is assumed to go to its own special meeting, so the e-proxy/Texas deadlines (urgency and timing anchors) stop pulling the merger letter forward. Letter timing uses plain weekday x calendar weights. The meeting-announcement ('either') curve is unchanged, and a letter only counts as 'meeting + merger' if it arrives by the time the meeting is announced. Result: merger-with-meeting falls and routine-only rises. Any letter that comes after the routine date belongs to the 2027 special-meeting path."
+   },
+   "blank_reasons": {
+    "_why": "Why is the 2026 meeting still unscheduled? Weights are set as of the clock start (Sept 21) and normalized. Each full blank week multiplies the active-process weight by x0.90 (processes leak), the quiet-hold weight by x0.98, and drift by x1.04.",
+    "ref_date": "2026-09-21",
+    "items": [
+     {
+      "id": "merger_hold",
+      "merger": true,
+      "leaky": true,
+      "label": "Merger process under way (committee or advisers working quietly)",
+      "w": 0.26,
+      "weekly": 0.9,
+      "src": null,
+      "note": "No committee, bank or law firm disclosed as of Oct 13 (EDGAR and news searches)."
+     },
+     {
+      "id": "quiet_hold",
+      "merger": true,
+      "leaky": false,
+      "label": "Musk asked the board to hold the date; no committee or bankers yet",
+      "w": 0.16,
+      "weekly": 0.98,
+      "src": null,
+      "note": "Low leak surface: explains the blank page without a leak. Bobby/Grok path; no public evidence either way."
+     },
+     {
+      "id": "drift",
+      "merger": false,
+      "label": "Ordinary drift or lateness (Tesla's 2025 meeting was Nov 6)",
+      "w": 0.33,
+      "weekly": 1.04,
+      "src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925090866/tm252289-12_def14a.htm"
+     },
+     {
+      "id": "product_date",
+      "merger": false,
+      "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
+      "w": 0.1,
+      "weekly": 0.95,
+      "src": null,
+      "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of Oct 11."
+     },
+     {
+      "id": "comp_governance",
+      "merger": false,
+      "label": "New comp/governance item being prepared",
+      "w": 0.06,
+      "weekly": 1.0,
+      "src": null,
+      "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of Oct 13. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
+     },
+     {
+      "id": "retail_program",
+      "merger": false,
+      "label": "Waiting to launch the retail voting program (SEC letter Sept 29)",
+      "w": 0.06,
+      "weekly": 0.9,
+      "src": "https://www.sec.gov/files/corpfin/no-action/tesla-inc-092926-incoming-letter.pdf"
+     },
+     {
+      "id": "equity_raise",
+      "merger": false,
+      "label": "Waiting on an equity raise (unlikely after the $30B credit lines)",
+      "w": 0.03,
+      "weekly": 0.9,
+      "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=8-K"
+     }
+    ]
    }
   }
  }

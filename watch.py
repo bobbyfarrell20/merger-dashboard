@@ -139,6 +139,35 @@ def market_moves(contracts, hist, mw, now):
         h["points"] = pts; h["name"] = c["name"]
     return items
 
+def classify_starship(title):
+    t = title
+    if not re.search(r"Starship", t) or not re.search(r"Flight 15|15th", t, re.I): return None
+    if re.search(r"explod|anomal|\blost\b|failure|fails|RUD|scrub", t, re.I):
+        return "scrub" if re.search(r"scrub|delay|postpone", t, re.I) else "failure"
+    if re.search(r"prep|underway|ahead|ready|delay|plan|target|\bNET\b|expected|preview", t, re.I): return None
+    if re.search(r"successful(ly)?|a success|splashdown|caught|nails|aces|completes", t, re.I) and not re.search(r"attempt|will|could|aims", t, re.I):
+        return "success"
+    return None
+
+def starship_items():
+    """Headline heuristic for the Flight 15 outcome. Writes data/events_state.json so update.py treats it as news."""
+    url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": "Starship Flight 15", "hl": "en-US", "gl": "US", "ceid": "US:en"})
+    root = X.fromstring(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
+    p = D / "events_state.json"; ev = json.loads(p.read_text()) if p.exists() else {}
+    cur = ev.get("starship", {}).get("status", "scheduled")
+    for it in root.iter("item"):
+        t = it.findtext("title") or ""
+        try:
+            if parsedate_to_datetime(it.findtext("pubDate")) < dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2): continue
+        except Exception: continue
+        st = classify_starship(t)
+        if st in ("success", "failure") and cur not in ("success", "failure"):
+            ev.setdefault("starship", {}).update({"status": st, "evidence": t, "url": it.findtext("link")})
+            if not DRY: p.write_text(json.dumps(ev, indent=1))
+            return [{"id": "starship:" + st, "type": "event_state", "title": f"Starship Flight 15 {st.upper()} (headline heuristic, please confirm): {t}",
+                     "url": it.findtext("link"), "source": "Google News", "time_et": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M"), "factor": "starship"}]
+    return []
+
 def state_items():
     """Run the shared state machine; return a webhook item if the state changed (and persist it)."""
     import statecheck
@@ -157,7 +186,7 @@ def main():
     news = json.loads((D / "news.json").read_text())
     seen |= {"news:" + re.sub(r"[^a-z0-9 ]", "", i["title"].lower())[:120] for d in news["days"] for i in d["items"]}
     hits, errors = [], []
-    for f in (edgar_hits, news_hits, state_items):
+    for f in (edgar_hits, news_hits, state_items, starship_items):
         try: hits += f()
         except Exception as ex: errors.append(f"{f.__name__}: {ex}")
     mitems = []

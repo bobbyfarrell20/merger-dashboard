@@ -85,3 +85,15 @@ All weights live in `data/config.json`, each with a `_why` field and a source.
 - **Deal math**: live market caps; exchange ratios at market, +20%, +30%, $450, $500 and 1:1 parity; the share Tesla holders would own; and Musk's voting % under each survivor.
 - **New pulls**: TSLA shares outstanding (SEC XBRL), FCC ECFS (Grain / Starlink Spectrum Holdings, DEMO_KEY), and leak keywords in watch.py (special committee, people familiar, Goldman / Morgan Stanley / Wachtell / Skadden).
 - **Unverified items** (labeled on the page): SpaceX Q3 date / Nov 5 unlock, the earnings-dated unlock tranches, Starship Flight 15 NET Nov 8, Nasdaq-100 Dec 18, S&P seasoning, the FCC docket for the Grain transfer, and the ~$8B price (WSJ via Light Reading).
+
+## Round 2 (Oct 13, 2026)
+- **Blank-week clock** starts Mon Sept 21, 2026, the first Monday after the Sept 17 anniversary of last year's DEF 14A. Sept 29 was considered and rejected. The penalty is −0.13 log-odds per week, capped at −1.20, replacing the old flat −0.40 (no double count). It is scaled by the active-process share of the merger reasons, because the quiet-hold path doesn't leak.
+- **WHY** bullets are generated in `update.py` (`make_why`) from the ranked reasons and the totals. The "X% come with a merger" line is computed from the totals.
+- **Kill switch** (state `meeting_only`): weekly bars are re-run with merger = 0, and a "letter odds by Jun 30, 2027" line appears.
+- **`special_meeting_planned` toggle** (default off): the page shows the alternative numbers.
+- **Event states** in `data/events_state.json`:
+  - Starship status: watch.py sets it from a headline heuristic; you can also set it by hand.
+  - Grain FCC approval: update.py sets it from an ECFS/news heuristic.
+  - Both count as news.
+- **Polymarket** contracts are fetched every run and shown as a sentiment gauge only.
+- **Deal math** adds pass/fail against the floor, a control test, the reverse case, and parity and collar notes.
