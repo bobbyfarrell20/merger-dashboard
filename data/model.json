@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13 23:02 ET",
+ "generated": "2026-10-13 23:07 ET",
  "today": "2026-10-13",
  "window": {
   "start": "2026-10-14",
@@ -760,7 +760,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-13 23:02 ET",
+  "as_of": "2026-10-13 23:07 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -833,11 +833,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-13 23:02 ET",
+  "as_of": "2026-10-13 23:07 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-13 23:02 ET",
+  "as_of": "2026-10-13 23:07 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -908,7 +908,7 @@
   "on": true,
   "mc_status": "armed",
   "mc_shift": 0.0,
-  "mc_projected": 0.07155324265569296,
+  "mc_projected": 0.030665675423868412,
   "active_share": 0.5572563395626247,
   "p": 0.18370565042439035
  },

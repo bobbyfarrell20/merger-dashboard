@@ -585,7 +585,7 @@
   "on": true,
   "check_close": "2026-10-26",
   "activate_on": "2026-10-27",
-  "shift_share": 0.35,
-  "_why": "If no Tesla/SpaceX merger-related filing (statecheck state 'letter') exists by the close of Oct 26, 35% of the remaining meeting+merger weight moves to the 'letter later / special meeting (2027)' path. Auto-activates on the first run on/after Oct 27; armed before then."
+  "shift_share": 0.15,
+  "_why": "If no Tesla/SpaceX merger-related filing (statecheck state 'letter') exists by the close of Oct 26, 15% of the remaining meeting+merger weight moves to the 'letter later / special meeting (2027)' path. Auto-activates on the first run on/after Oct 27; armed before then."
  }
 }
