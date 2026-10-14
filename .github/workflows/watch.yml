@@ -1,0 +1,53 @@
+# Intraday watcher: new Tesla/SpaceX SEC filings + strict-filtered merger headlines.
+# Every 15 min 07:00-20:00 New York time on weekdays, hourly otherwise.
+# GitHub cron is UTC-only, so the 15-min crons cover the union of EDT and EST windows
+# (11:00-01:45 UTC) and a New York-time gate decides which trigger actually runs:
+#   inside the window  -> only 15-min triggers run (the hourly trigger skips, avoiding duplicates)
+#   outside the window -> only the hourly trigger runs
+name: Intraday watch
+on:
+  schedule:
+    - cron: "*/15 11-23 * * 1-5"   # 15-min (UTC Mon-Fri)
+    - cron: "*/15 0-1 * * 2-6"     # 15-min (UTC early hours = NY evening Mon-Fri)
+    - cron: "0 * * * *"            # hourly
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: watcher
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: New York-time gate
+        id: gate
+        run: |
+          DOW=$(TZ=America/New_York date +%u)          # 1=Mon..7=Sun
+          MIN=$((10#$(TZ=America/New_York date +%H)*60 + 10#$(TZ=America/New_York date +%M)))
+          INWIN=false; if [ "$DOW" -le 5 ] && [ "$MIN" -ge 420 ] && [ "$MIN" -le 1200 ]; then INWIN=true; fi
+          SCHED="${{ github.event.schedule }}"
+          GO=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then GO=true
+          elif [ "$INWIN" = true ] && [ "$SCHED" != "0 * * * *" ]; then GO=true
+          elif [ "$INWIN" = false ] && [ "$SCHED" = "0 * * * *" ]; then GO=true; fi
+          echo "NY dow=$DOW min=$MIN in_window=$INWIN schedule='$SCHED' go=$GO"
+          echo "go=$GO" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
+        with: { fetch-depth: 1 }
+      - name: Watch (stdlib only, no installs)
+        if: steps.gate.outputs.go == 'true'
+        env:
+          WAKE_WEBHOOK_URL: ${{ secrets.WAKE_WEBHOOK_URL }}
+        run: python3 watch.py
+      - name: Commit seen-items and feed changes
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          git config user.name "merger-dashboard-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen.json data/news.json data/markets_history.json
+          if git diff --cached --quiet; then echo "No new items"; exit 0; fi
+          git commit -m "Watcher: new items $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done

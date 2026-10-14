@@ -1,0 +1,53 @@
+# Runs update.py at 8:30am America/New_York on weekdays and commits refreshed data.
+# GitHub cron is UTC only, so two schedules cover DST: 12:30 UTC (EDT, UTC-4) and 13:30 UTC (EST, UTC-5).
+# The guard step lets only the run that lands at 08:xx New York time proceed.
+name: Morning update
+on:
+  schedule:
+    - cron: "30 12 * * 1-5"
+    - cron: "30 13 * * 1-5"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: morning-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Only run at 8am New York time
+        id: gate
+        run: |
+          H=$(TZ=America/New_York date +%H)
+          echo "NY hour: $H (event: ${{ github.event_name }})"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "08" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        if: steps.gate.outputs.go == 'true'
+        run: pip install -r requirements.txt
+      - name: Refresh data and model
+        if: steps.gate.outputs.go == 'true'
+        env:
+          TZ: America/New_York
+        run: python update.py
+      - name: Commit data changes
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          git config user.name "merger-dashboard-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Data update $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+      - name: Surface alerts in the run summary
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          python -c "import json;a=json.load(open('data/model.json'))['alerts'];print('\n'.join('ALERT: '+x['text'] for x in a) or 'No alerts')" | tee -a "$GITHUB_STEP_SUMMARY"

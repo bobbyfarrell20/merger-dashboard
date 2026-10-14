@@ -1,0 +1,24 @@
+{
+ "as_of": "2026-10-13 21:30 ET",
+ "by": "Grok Bot",
+ "anchors": [
+  {
+   "date": "2026-10-20",
+   "p": 0.03
+  },
+  {
+   "date": "2026-11-12",
+   "p": 0.07
+  },
+  {
+   "date": "2027-01-11",
+   "p": 0.17
+  },
+  {
+   "date": "2027-06-30",
+   "p": 0.45
+  }
+ ],
+ "rationale": "Every near-term date Grok liked (Sept 28-29, Oct 2, Oct 5) passed with no filing, no special committee and no banker leaks; ~80% of $25B+ deals leak first, so a signed deal in the next week looks unlikely. Against that: Tesla still has no 2026 meeting date with a ~Dec 6 Texas deadline, won SEC approval for a retail auto-vote-with-board program (Sept 29), and set up $30B of credit lines. The Roadster demo moved to Oct 15 and Q3 earnings are Oct 21, so the cleanest near-term slots are Oct 16-19 (post-Roadster) or with/after the Q3 print. My read is that the AGM silence is more likely a delay/comp item than a held merger ballot until proven otherwise, and that a deal, if it comes, more likely targets a 2027 special meeting after SPCX's big Nov/Dec unlocks clear. Roughly in line with Polymarket (14% by Dec 31, 45% by Jun 30 2027), slightly below Kalshi's 'definitive agreement' curve in spring 2027.",
+ "note_signed": "Signed-deal judgment curve is derived from these anchors with the same signing-lag settings as the rules model (config.signing_lag)."
+}

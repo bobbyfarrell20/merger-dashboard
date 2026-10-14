@@ -1,0 +1,193 @@
+{
+ "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
+ "days": [
+  {
+   "date": "2026-10-13",
+   "odds_note": "Polymarket Dec-31 contract 14% (flat on week). Model tracking starts today, so no model delta yet.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Tesla will finally stream the new Roadster live this Thursday (Oct 15, 8:55pm ET)",
+     "url": "https://teslanorth.com/2026/10/13/tesla-roadster-event-live-stream-time/",
+     "source": "Tesla North",
+     "factor": "calendar",
+     "effect": "Confirms the Oct 15 event-day blackout and the Oct 16/19 post-event slots"
+    },
+    {
+     "time_et": "16:00",
+     "title": "SPCX closes $156.54 (-4.2%), TSLA $375.23 (-0.7%)",
+     "url": "https://tape.panke.app/unlocks.md",
+     "source": "tape.panke.app / Yahoo Finance",
+     "factor": "prices",
+     "effect": "Weaker SPCX price works against the 'announce at a high SPCX price' thesis"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "16:11",
+     "title": "SpaceX May Be Eyeing US Mobile Market \u2013 Even As Musk Says \u2018Star\u2019 Branding Has Gone Too Far - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObjBmVFJrM0hBanpuVkp6MzNDN3RnMWxMN1Y2cFhLX1lCdFZJaF9TVEctbGZ6OWNoVnlCWlYzMUpwcnBucXROMEdmQm15NWNpWGhyUldVWVZTWkI3OE4tUUszZjdZMVZEazlRQnoyTmlCc0pQR3Z1SGJEbWhVdDE4WW9ONE9UUDZuWjJFWEF3Z195eUpuV1lEanBzX3ZCcnBRbE9lblU0QUx4dw?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "19:30",
+     "title": "TSLA Stock In Focus: Could Optimus Be The Missing Link Between Tesla And SpaceX? - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMFRNRTlQa1FMUUhtWi12YVVXYUZJanRXZnJFVU96V2s2US04cnlBNFk1NmdhN2piNzE1M0NBczNQTEZTdDNVSVpZUXhvX2ZLOWxaSjhWWW5MRGxRTGRMSU5veE50MzFjeDBhVjZEVE5kb2l3bXljSDFFY0FJV1FLMzk5bmxlVVlQZUl2bVR2cm5EZFUtZFV2bU9xd0oyOHdCbF9JU1RrN0x1eWlSUm1JZGZON1pSMXNiNGRJd25RZkVaVDQ?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "odds_note": "No visible move.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "SPCX lock-up release #7: up to 328.4M shares become sellable",
+     "url": "https://tape.panke.app/unlocks.md",
+     "source": "424B4 via tape.panke.app",
+     "factor": "calendar",
+     "effect": "Unlock-day blackout (Grok had already ruled Oct 9 out)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "odds_note": "Polymarket Dec-31 week of Oct 5: 14% (from 16%).",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Analysts flag SpaceX-Tesla merger buzz as a TSLA narrative driver (Gary Black)",
+     "url": "https://www.tesery.com/blogs/news/analysts-flag-spacex-tesla-merger-buzz-tsla-narrative",
+     "source": "Tesery, summarizing Yahoo Finance / Seeking Alpha",
+     "factor": "news",
+     "effect": "Commentary only, no process leak, so it doesn't move the model"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "odds_note": "Grok's #2 date passed with no filing.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Barron's: SpaceX spectrum purchase seen as a step closer to a Tesla merger",
+     "url": "https://teslanewsplus.com/news/how-spacex-s-spectrum-purchase-brings-it-closer-to-a-tesla-merger",
+     "source": "Tesla News Plus, citing Barron's (exact date unverified, early Oct)",
+     "factor": "news",
+     "effect": "Speculative; no deal signal"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "odds_note": "Grok's #1 date (Oct 2) passed. The only 8-K was deliveries.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Tesla 8-K: Q3 deliveries 486,532; Q3 results Oct 21 after the close",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "Sets the Oct 21 earnings blackout and the quiet period; not a merger filing"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "odds_note": "Polymarket Dec-31 week of Sept 28: 16% (from 19%), as the Roadster-week package failed to show up.",
+   "items": [
+    {
+     "time_et": "00:30",
+     "title": "Tesla postpones Roadster unveiling due to weather",
+     "url": "https://www.electrive.com/2026/10/01/tesla-postpones-roadster-unveiling-due-to-weather/",
+     "source": "electrive",
+     "factor": "calendar",
+     "effect": "Removes Oct 1 as 'act one' and shifts the post-Roadster window to Oct 16-19"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "odds_note": "Two new signals, both added to the rules model (+0.15 and +0.05 log-odds).",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Tesla wins SEC OK to auto-vote retail shares with the board ahead of SpaceX merger",
+     "url": "https://electrek.co/2026/09/29/tesla-sec-retail-auto-vote-board-spacex-merger/",
+     "source": "Electrek",
+     "factor": "sec",
+     "effect": "Positive signal: makes a shareholder vote easier to win. Still no AGM date"
+    },
+    {
+     "time_et": null,
+     "title": "Tesla 8-K: $30B senior unsecured credit facilities, no draw planned in 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "Small positive: financing flexibility. An all-stock deal wouldn't need it"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "odds_note": "Launch-day blackout, then a clean result.",
+   "items": [
+    {
+     "time_et": "08:49",
+     "title": "Starship Flight 14 lifts off, first orbital flight; 26 Starlink V3 deployed",
+     "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/",
+     "source": "Spaceflight Now",
+     "factor": "calendar",
+     "effect": "Successful catalyst, which Bobby's thesis wanted before an announcement"
+    },
+    {
+     "time_et": null,
+     "title": "Tesla delays Roadster demo two weeks to October 15, blames weather",
+     "url": "https://electrek.co/2026/09/28/tesla-roadster-demo-delayed-october-15-weather/",
+     "source": "Electrek",
+     "factor": "calendar",
+     "effect": "Moves the Tesla-event blackout to Oct 15"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-24",
+   "odds_note": "Unlock plus Tesla event on the same day, so a blackout.",
+   "items": [
+    {
+     "time_et": "21:00",
+     "title": "Tesla opens Semi factory in Nevada, names fleet customers",
+     "url": "https://www.cnbc.com/2026/09/24/tesla-aims-to-scale-semi-truck-production-with-nevada-factory-opening.html",
+     "source": "CNBC",
+     "factor": "calendar",
+     "effect": "Tesla-event blackout; no merger content"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-18",
+   "odds_note": "Baseline: Grok ~35% merger 8-K by Oct 9; Polymarket Dec-31 ~20% (week of Sept 14).",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Polymarket weekly history: Dec 31 contract 20% (Sept 14 week) to 19% (Sept 21) to 16% (Sept 28) to 14% (Oct 5, Oct 12)",
+     "url": "https://kresmion.com/odds/tesla-and-spacex-merger-officially-announced-by-december-31",
+     "source": "Kresmion (Polymarket gamma API)",
+     "factor": "markets",
+     "effect": "Market odds drifted down about 6 pts as Grok's dates passed with no filing"
+    }
+   ]
+  }
+ ]
+}

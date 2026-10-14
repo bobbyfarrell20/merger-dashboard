@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tesla × SpaceX Merger Announcement Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--b:#30363d;--t:#e6edf3;--m:#8b949e;--r:#ff7b72;--g:#3fb950;--bl:#58a6ff;--y:#d29922;--p:#bc8cff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:16px 20px;border-bottom:1px solid var(--b)}h1{font-size:20px;margin:0}h2{font-size:16px;margin:0 0 10px}h3{font-size:14px;margin:12px 0 6px;color:var(--m)}
+.sub{color:var(--m);font-size:12px}main{max-width:1200px;margin:auto;padding:14px;display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--b);border-radius:10px;padding:14px;overflow:hidden}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 6px;border-bottom:1px solid var(--b);text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}
+th{color:var(--m);font-weight:600}.scroll{overflow-x:auto}.big{font-size:22px;font-weight:700}
+.pill{display:inline-block;padding:1px 7px;border-radius:9px;font-size:11px;border:1px solid var(--b);color:var(--m)}
+.up{color:var(--g)}.dn{color:var(--r)}.ph{color:var(--y)}a{color:var(--bl)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}.cal div{font-size:10px;padding:3px 2px;border-radius:3px;text-align:center;min-height:30px}
+.cal .h{color:var(--m);background:none}.legend span{margin-right:10px;font-size:12px}
+.feed .day{border-top:1px solid var(--b);padding:8px 0}.feed .note{color:var(--y);font-size:12px;margin:2px 0 4px}.feed li{margin:3px 0}
+.disc{font-size:12px;color:var(--m);border-left:3px solid var(--y);padding-left:8px}
+.why{color:var(--m);font-size:11px;white-space:normal;text-align:left}
+@media(max-width:600px){h1{font-size:17px}.big{font-size:15px}#head td:first-child{white-space:normal;max-width:80px}td,th{padding:5px 4px;font-size:12px}}
+.tog{display:flex;gap:6px;margin:4px 0 10px;flex-wrap:wrap}.tog button{background:#21262d;color:var(--t);border:1px solid var(--b);border-radius:16px;padding:5px 12px;font-size:13px}.tog button.on{background:var(--bl);color:#000;border-color:var(--bl)}
+.hdef{margin-bottom:12px}.hgrid{display:grid;grid-template-columns:minmax(64px,1.1fr) repeat(4,1fr);gap:6px 4px;align-items:center;margin-top:6px}.hgrid>div{text-align:right;font-size:11px}.hgrid .hn{text-align:left;font-size:13px}
+@media(max-width:600px){.hgrid .big{font-size:15px}.hgrid .hn{font-size:12px}}
+</style></head><body>
+<header><h1>Tesla × SpaceX merger announcement tracker</h1>
+<div class="sub" id="stamp">loading…</div>
+<p class="disc">A probability model plus prediction-market data, for information only. Not investment advice. Model outputs are estimates and can be badly wrong.</p></header>
+<main>
+<section class="card"><h2>Headline odds</h2><div class="tog"><button data-m="any">Any announcement</button><button data-m="signed">Signed deal</button><button data-m="both">Side by side</button></div><div id="head"></div>
+<div class="sub" id="expdate"></div><div id="alerts"></div></section>
+
+<section class="card"><h2>Odds before each TSLA expiration</h2><div class="sub">Uses the Any / Signed / Side-by-side toggle above.</div><div class="sub">Cumulative chance the announcement lands on or before expiry day, counted from today. ATM IV comes from Yahoo Finance via yfinance (delayed, free). ⚡ marks event days inside the window that inflate IV.</div>
+<div class="scroll"><table id="exp"></table></div></section>
+
+<section class="card"><h2>Cumulative probability, Oct 14 2026 to Jun 30 2027</h2><div style="height:320px"><canvas id="cum"></canvas></div>
+<div class="sub">Market curves are straight-line interpolations between contract dates. Kalshi resolves only on a <i>definitive agreement</i>; Polymarket resolves on any official announcement.</div></section>
+
+<section class="grid">
+<div class="card"><h2>Odds per week</h2><div style="height:260px"><canvas id="weekly"></canvas></div></div>
+<div class="card"><h2>Daily odds calendar (rules model)</h2><div class="legend sub" id="callegend"></div><div id="cal"></div></div>
+</section>
+
+<section class="card feed"><h2>News feed and what moved the odds</h2><div class="sub">Each day\'s change is split into <b>time decay</b> (days passing with no announcement, the window rolling, blackouts passing) and <b>news</b> (signals, filings, calendar or judgment updates). Only news moves trigger alerts. The split starts after the second daily run.</div><div id="feed"></div></section>
+
+<section class="grid">
+<div class="card"><h2>Rules model: how it works</h2><div id="rules"></div></div>
+<div class="card"><h2>Judgment estimate</h2><div id="judg"></div><h3>Signing lag (any announcement → signed deal)</h3><div id="lag"></div></div>
+</section>
+
+<section class="grid">
+<div class="card"><h2>Prediction markets</h2><div id="mk"></div></div>
+<div class="card"><h2>Prices and valuation split</h2><div id="val"></div></div>
+</section>
+<section class="grid">
+<div class="card"><h2>SEC filings (EDGAR)</h2><div id="sec"></div></div>
+<div class="card"><h2>Calendar blackouts and catalysts</h2><div class="scroll" id="blk" style="max-height:420px;overflow:auto"></div></div>
+</section>
+<section class="grid">
+<div class="card"><h2>TSLA options signals</h2><div id="opt"></div></div>
+<div class="card"><h2>Event log</h2><div id="log"></div></div>
+</section>
+<footer class="sub" style="padding:10px 0 30px">All times ET. Sources are linked inline. Unverified items are marked <span class="ph">(unverified)</span>.</footer>
+</main>
+<script>
+const pct=(x,d=1)=>x==null?'–':(x*100).toFixed(d)+'%';
+const dpp=x=>x==null?'<span class="sub">n/a</span>':`<span class="${x>0?'up':x<0?'dn':''}">${x>0?'+':''}${x.toFixed(1)} pts</span>`;
+const J=f=>fetch('data/'+f+'?v='+Date.now()).then(r=>r.json());
+Promise.all(['model.json','live.json','config.json','judgment.json','event_log.json','news.json'].map(J)).then(([M,L,C,JU,LOG,N])=>{
+ document.getElementById('stamp').innerHTML=`Model updated ${M.generated} · prices ${L.prices_as_of||'–'} · options ${L.options_as_of||'–'} · markets ${L.markets_as_of||'–'} · EDGAR ${L.edgar_as_of||'–'}`+(M.prev_as_of?` · changes are vs ${M.prev_as_of}`:' · first snapshot, so no change since yesterday yet');
+ window.MODE=window.MODE||'both';
+ const H=M.headline,D=M.delta_pp;
+ const DEF={any:{t:'Any official announcement',d:'Offer letter, bear hug, special committee formed, or signed deal. Compare with Polymarket.',rows:[['rules','Rules model'],['judgment','Judgment'],['polymarket','Polymarket']],c:['#58a6ff','#bc8cff','#3fb950']},
+  signed:{t:'Signed merger agreement only',d:'Definitive agreement signed. Compare with Kalshi. Derived from "any" using the signing-lag settings below.',rows:[['rules_signed','Rules model'],['judgment_signed','Judgment'],['kalshi','Kalshi']],c:['#79c0ff','#d2a8ff','#d29922']}};
+ const defs=()=>MODE==='both'?['any','signed']:[MODE];
+ let charts=[];
+ function render(){
+  charts.forEach(c=>c.destroy());charts=[];
+  document.querySelectorAll('.tog button').forEach(b=>b.classList.toggle('on',b.dataset.m===MODE));
+  let h='';defs().forEach(k=>{const df=DEF[k];h+=`<div class="hdef"><b>${df.t}</b><div class="sub">${df.d}</div><div class="hgrid"><div></div><div class="sub">7d</div><div class="sub">30d</div><div class="sub">90d</div><div class="sub">to 6/30/27</div>`;
+   df.rows.forEach(([key,n])=>{h+=`<div class="hn">${n}</div>`+['d7','d30','d90','end'].map(x=>`<div><span class="big">${pct(H[key][x])}</span><br>${dpp(D[key+'_'+x])}</div>`).join('')});h+='</div></div>'});
+  document.getElementById('head').innerHTML=h;
+  const E=M.expected_date,Md=M.median_date;
+  document.getElementById('expdate').innerHTML=defs().map(k=>{const r=k==='any'?'rules':'rules_signed',j=k==='any'?'judgment':'judgment_signed';return `<div>${DEF[k].t}: probability-weighted date if it happens by Jun 30 2027, rules <b>${E[r]}</b> / judgment <b>${E[j]}</b>. Median date: ${Md[r]} / ${Md[j]}.</div>`}).join('');
+  // expiries
+  const cols=defs().flatMap(k=>DEF[k].rows.map(([key,n])=>[key,(MODE==='both'?(k==='any'?'Any: ':'Signed: '):'')+n]));
+  let e='<tr><th>Expiry</th><th>Type</th><th>DTE</th>'+cols.map(c=>`<th>${c[1]}</th>`).join('')+'<th>ATM IV</th><th>Call vol</th><th>IV ev.</th></tr>';
+  M.expiries.forEach(r=>{e+=`<tr><td>${r.expiry}</td><td><span class="pill">${r.kind}</span></td><td>${r.dte}</td>`+cols.map(c=>`<td>${pct(r[c[0]])}</td>`).join('')+`<td>${r.atm_iv??'–'}%</td><td>${r.call_vol?.toLocaleString()??'–'}</td><td title="${r.iv_events.join('\n')}">${r.iv_events.length?'⚡'+r.iv_events.length:''}</td></tr>`});
+  document.getElementById('exp').innerHTML=e+`<tr><td colspan=${cols.length+6} class="why">Expiries after Jun 30 2027 fall outside the daily model, so only market odds apply there (Polymarket ${pct(L.markets.polymarket.at(-1).p)} by ${L.markets.polymarket.at(-1).date}; Kalshi ${pct(L.markets.kalshi.at(-1).p)} by ${L.markets.kalshi.at(-1).date}). ⚡ events: `+[...new Set(M.expiries.flatMap(r=>r.iv_events))].slice(0,8).join(' · ')+'</td></tr>';
+  // cumulative chart
+  const lab=M.daily.map(d=>d.date),F={rules:'rules_cum',judgment:'judgment_cum',rules_signed:'rules_s_cum',judgment_signed:'judgment_s_cum',polymarket:'poly_cum',kalshi:'kalshi_cum'};
+  const ds=defs().flatMap(k=>DEF[k].rows.map(([key,n],i)=>({label:(MODE==='both'?(k==='any'?'Any · ':'Signed · '):'')+n,data:M.daily.map(d=>d[F[key]]==null?null:d[F[key]]*100),borderColor:DEF[k].c[i],pointRadius:0,borderWidth:2,borderDash:i==2?[5,4]:(k==='signed'&&MODE==='both'?[2,2]:[])})));
+  charts.push(new Chart(cum,{type:'line',data:{labels:lab,datasets:ds},options:{maintainAspectRatio:false,interaction:{mode:'index',intersect:false},scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:7}},y:{ticks:{color:'#8b949e',callback:v=>v+'%'}}},plugins:{legend:{labels:{color:'#e6edf3',boxWidth:14,font:{size:11}}},tooltip:{callbacks:{afterBody:i=>{const d=M.daily[i[0].dataIndex];return (d.events.join('\n')||'')+'\n'+d.why.join(', ')}}}}}}));
+  const wd=defs().flatMap(k=>DEF[k].rows.slice(0,2).map(([key,n],i)=>({label:(k==='any'?'Any · ':'Signed · ')+n,data:M.weeks.map(w=>w[key]*100),backgroundColor:DEF[k].c[i]})));
+  charts.push(new Chart(weekly,{type:'bar',data:{labels:M.weeks.map(w=>w.week.slice(5)),datasets:wd},options:{maintainAspectRatio:false,scales:{x:{ticks:{color:'#8b949e',maxTicksLimit:10}},y:{ticks:{color:'#8b949e',callback:v=>v.toFixed(1)+'%'}}},plugins:{legend:{labels:{color:'#e6edf3',boxWidth:12,font:{size:11}}}}}}));
+ }
+ document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>{MODE=b.dataset.m;render()});
+ render();
+ const SL=M.signing_lag;document.getElementById('lag').innerHTML=`<p><b>${pct(SL.share_signed_at_announcement,0)}</b> of announcements are a signed deal on day one. The rest (letter, bear hug, committee, intent) sign after a gamma-distributed lag with mean <b>${SL.lag_mean_days} days</b> (shape ${SL.lag_gamma_shape}, median about ${Math.round(SL.lag_mean_days*0.84)} days), or never (<b>${pct(SL.p_never_signs,0)}</b>).</p><div class="sub">${SL._lag_why}</div>`;
+ // calendar
+ const mx=Math.max(...M.daily.map(d=>d.rules_p));let months={};M.daily.forEach(d=>{(months[d.date.slice(0,7)]??=[]).push(d)});
+ let ch='';Object.entries(months).forEach(([m,ds])=>{ch+=`<h3>${m}</h3><div class="cal">`+'MTWTFSS'.split('').map(x=>`<div class="h">${x}</div>`).join('');const off=(new Date(ds[0].date+'T12:00').getDay()+6)%7;ch+='<div></div>'.repeat(off);
+  ds.forEach(d=>{const a=d.rules_p/mx;ch+=`<div title="${d.date}: ${(d.rules_p*100).toFixed(3)}%\n${d.events.join('\n')}\n${d.why.join(', ')}" style="background:rgba(88,166,255,${0.08+0.85*a});${d.events.length?'outline:1px solid #d29922':''}">${+d.date.slice(8)}${d.iv_event?'⚡':''}<br>${(d.rules_p*100).toFixed(2)}</div>`});ch+='</div>'});
+ document.getElementById('cal').innerHTML=ch;document.getElementById('callegend').innerHTML='Each cell shows that day\'s % chance. Darker means likelier. A gold outline marks a calendar event, ⚡ an IV-inflating event. Hover or tap a cell for the breakdown.';
+ // feed
+ const splitTable=sp=>{const rows=[['rules','Any · rules'],['judgment','Any · judgment'],['rules_signed','Signed · rules'],['judgment_signed','Signed · judgment']];const f=v=>v==null?'–':`<span class="${v>0.0005?'up':v<-0.0005?'dn':''}">${v>0?'+':''}${v.toFixed(2)}</span>`;return '<div class="scroll"><table class="split"><tr><th>Change (pts)</th><th>30d total</th><th>time decay</th><th>news</th><th>to 6/30/27 total</th><th>time decay</th><th>news</th></tr>'+rows.map(([k,n])=>{const a=sp[k+'_d30']||{},b=sp[k+'_end']||{};return `<tr><td>${n}</td><td>${f(a.total)}</td><td>${f(a.time_decay)}</td><td><b>${f(a.news)}</b></td><td>${f(b.total)}</td><td>${f(b.time_decay)}</td><td><b>${f(b.news)}</b></td></tr>`}).join('')+'</table></div>'};
+ const F={sec:'SEC filings',calendar:'Calendar',news:'News/leaks',prices:'Prices',options:'Options',markets:'Prediction mkts'};
+ document.getElementById('feed').innerHTML=N.days.map(d=>`<div class="day"><b>${d.date}</b><div class="note">${d.odds_note||''}</div>${d.split?splitTable(d.split):''}<ul>`+d.items.map(i=>`<li><span class="sub">${i.time_et||'time n/a'} ET</span> <a href="${i.url}" target="_blank" rel="noopener">${i.title}</a> <span class="sub">(${i.source})</span> <span class="pill">${F[i.factor]||i.factor}</span><div class="why">${i.effect||''}</div></li>`).join('')+'</ul></div>').join('');
+ // rules
+ let r=`<p>P(announcement by Jun 30 2027) starts at a prior of <b>${pct(M.prior,0)}</b> and is adjusted in log-odds by signals, giving <b>${pct(M.rules_p_end)}</b>. That total is then spread across days in proportion to each day's weight, which is weekday × regime × event multipliers.</p><table><tr><th>Signal</th><th>log-odds</th></tr>`+C.signals.map(s=>`<tr><td style="white-space:normal">${s.active?'✅':'⬜'} ${s.label}</td><td>${s.logodds>0?'+':''}${s.logodds}</td></tr>`).join('')+'</table><h3>Event multipliers</h3><table>'+Object.entries(C.event_types).map(([k,v])=>`<tr><td>${v.label}</td><td>×${v.mult}</td></tr>`).join('')+'</table><h3>Regimes</h3><table>'+C.regimes.map(x=>`<tr><td style="white-space:normal">${x.from} → ${x.to}: ${x.label}</td><td>×${x.mult}</td></tr>`).join('')+'</table><h3>Weekday</h3><div class="sub">'+Object.entries(C.weekday_mult).map(([k,v])=>k+' ×'+v).join(' · ')+'</div>';
+ document.getElementById('rules').innerHTML=r;
+ document.getElementById('judg').innerHTML=`<div class="sub">As of ${JU.as_of}, by ${JU.by}</div><p>${JU.rationale}</p><table><tr><th>Cumulative by</th><th>Prob</th></tr>`+JU.anchors.map(a=>`<tr><td>${a.date}</td><td>${pct(a.p,0)}</td></tr>`).join('')+'</table>';
+ const mk=L.markets;document.getElementById('mk').innerHTML=`<div class="sub">As of ${L.markets_as_of}</div><h3><a href="${mk.polymarket_url}">Polymarket</a>: ${mk.polymarket_note}</h3><table>`+mk.polymarket.map(x=>`<tr><td>${x.label}</td><td>${pct(x.p)}</td></tr>`).join('')+`</table><h3><a href="${mk.kalshi_url}">Kalshi</a>: ${mk.kalshi_note}</h3><table><tr><th></th><th>used</th><th>bid/ask</th><th>last</th></tr>`+mk.kalshi.map(x=>`<tr><td>${x.label}</td><td>${pct(x.p)}</td><td>${x.bid}/${x.ask}</td><td>${x.last}</td></tr>`).join('')+'</table><div class="sub">Kalshi quotes are thin. The model uses mid-price when the spread is 6¢ or less, otherwise last trade, so some adjacent months can look out of order.</div>';
+ const V=M.valuation,P=L.prices;document.getElementById('val').innerHTML=`<table><tr><td>TSLA close (${P.TSLA.date})</td><td>$${P.TSLA.close}</td></tr><tr><td>SPCX close (${P.SPCX.date})</td><td>$${P.SPCX.close}</td></tr><tr><td>Market cap TSLA / SPCX</td><td>$${(V.tsla_cap/1e12).toFixed(2)}T / $${(V.spcx_cap/1e12).toFixed(2)}T</td></tr><tr><td>Split at market (SPCX / TSLA)</td><td>${pct(V.split_spcx)} / ${pct(1-V.split_spcx)}</td></tr><tr><td>Implied exchange ratio at market</td><td>${V.ratio_market.toFixed(3)} SPCX per TSLA</td></tr><tr><td>TSLA price for a 50/50 split</td><td>$${V.tsla_at_50_50.toFixed(0)}</td></tr></table><h3>Hypothetical bids for TSLA, paid in SPCX stock</h3><table><tr><th>Bid</th><th>Ratio</th><th>Premium</th><th>SPCX holders' share</th><th>New SPCX shares</th></tr>`+V.offers.map(o=>`<tr><td>$${o.tsla_price}</td><td>${o.ratio.toFixed(2)}</td><td>${pct(o.premium,0)}</td><td>${pct(o.split_spcx)}</td><td>${(o.new_spcx_shares/1e9).toFixed(1)}B</td></tr>`).join('')+`</table><div class="sub ph">${V.shares_note}</div>`;
+ document.getElementById('sec').innerHTML=`<div class="sub">As of ${L.edgar_as_of}. ★ marks a watched form (8-K, proxy, S-4, 425, 13D…)</div>`+Object.entries(L.edgar).map(([c,fl])=>`<h3>${c}</h3><table>`+fl.slice(0,8).map(f=>`<tr><td>${f.watch?'★ ':''}<a href="${f.url}">${f.form}</a> ${f.items?'<span class="sub">items '+f.items+'</span>':''}</td><td>${f.date}</td></tr>`).join('')+'</table>').join('')+'<div class="sub">TSLA: still no DEF 14A or PRE 14A for a 2026 annual meeting.</div>';
+ document.getElementById('blk').innerHTML='<table><tr><th>Date</th><th>Event</th><th>×</th></tr>'+C.events.slice().sort((a,b)=>a.date<b.date?-1:1).map(x=>`<tr><td>${x.date}${x.to?'→'+x.to.slice(5):''}</td><td style="white-space:normal">${x.label} ${x.verified?'':'<span class="ph">(unverified)</span>'} ${x.src&&x.src.startsWith('http')?`<a href="${x.src}">src</a>`:''}</td><td>${C.event_types[x.type].mult}</td></tr>`).join('')+'</table>';
+ const O=L.options||[];document.getElementById('opt').innerHTML=`<div class="sub">Yahoo Finance via yfinance, as of ${L.options_as_of}. Free data, may be delayed about 15 min. ATM IV is the average of the two strikes nearest spot.</div><table><tr><th>Expiry</th><th>ATM IV</th><th>Call vol</th><th>Put vol</th><th>C/P</th></tr>`+O.slice(0,12).map(o=>`<tr><td>${o.expiry}</td><td>${o.atm_iv}%</td><td>${o.call_vol?.toLocaleString()}</td><td>${o.put_vol?.toLocaleString()}</td><td>${(o.call_vol/Math.max(o.put_vol,1)).toFixed(2)}</td></tr>`).join('')+'</table><div class="sub">Earnings implied move Oct 21: about ±6.1% (<a href="https://algoxflow.com/earnings/tsla">AlgoX</a>, Oct 13). <span class="ph">Placeholder: unusual call-flow and IV-rank history need a paid feed and aren\'t tracked yet.</span></div>';
+ document.getElementById('log').innerHTML='<ul>'+LOG.map(l=>`<li><b>${l.date}</b> ${l.text} ${l.src.startsWith('http')?`<a href="${l.src}">src</a>`:''}</li>`).join('')+'</ul>';
+});
+</script></body></html>

@@ -1,0 +1,623 @@
+{
+ "prices": {
+  "TSLA": {
+   "close": 375.23,
+   "prev": 378.03,
+   "date": "2026-10-13 (last)"
+  },
+  "SPCX": {
+   "close": 156.54,
+   "prev": 163.42,
+   "date": "2026-10-13 (last)"
+  }
+ },
+ "prices_as_of": "2026-10-13 21:27 ET",
+ "options": [
+  {
+   "expiry": "2026-10-14",
+   "atm_iv": 39.0,
+   "call_vol": 294947,
+   "put_vol": 234661,
+   "call_oi": 53018
+  },
+  {
+   "expiry": "2026-10-16",
+   "atm_iv": 48.2,
+   "call_vol": 140085,
+   "put_vol": 124044,
+   "call_oi": 394964
+  },
+  {
+   "expiry": "2026-10-19",
+   "atm_iv": 38.2,
+   "call_vol": 23767,
+   "put_vol": 11005,
+   "call_oi": 22358
+  },
+  {
+   "expiry": "2026-10-23",
+   "atm_iv": 54.9,
+   "call_vol": 21770,
+   "put_vol": 14482,
+   "call_oi": 67324
+  },
+  {
+   "expiry": "2026-10-30",
+   "atm_iv": 49.3,
+   "call_vol": 14896,
+   "put_vol": 11359,
+   "call_oi": 55902
+  },
+  {
+   "expiry": "2026-11-06",
+   "atm_iv": 46.3,
+   "call_vol": 4383,
+   "put_vol": 3314,
+   "call_oi": 21858
+  },
+  {
+   "expiry": "2026-11-13",
+   "atm_iv": 44.4,
+   "call_vol": 8516,
+   "put_vol": 3734,
+   "call_oi": 10550
+  },
+  {
+   "expiry": "2026-11-20",
+   "atm_iv": 43.3,
+   "call_vol": 17575,
+   "put_vol": 12351,
+   "call_oi": 203026
+  },
+  {
+   "expiry": "2026-11-27",
+   "atm_iv": 42.3,
+   "call_vol": 1143,
+   "put_vol": 961,
+   "call_oi": 1330
+  },
+  {
+   "expiry": "2026-12-18",
+   "atm_iv": 42.4,
+   "call_vol": 9080,
+   "put_vol": 9695,
+   "call_oi": 395937
+  },
+  {
+   "expiry": "2027-01-15",
+   "atm_iv": 42.7,
+   "call_vol": 8701,
+   "put_vol": 11343,
+   "call_oi": 678254
+  },
+  {
+   "expiry": "2027-02-19",
+   "atm_iv": 44.8,
+   "call_vol": 4996,
+   "put_vol": 1891,
+   "call_oi": 53449
+  },
+  {
+   "expiry": "2027-03-19",
+   "atm_iv": 45.4,
+   "call_vol": 2260,
+   "put_vol": 4214,
+   "call_oi": 107514
+  },
+  {
+   "expiry": "2027-04-16",
+   "atm_iv": 46.3,
+   "call_vol": 7816,
+   "put_vol": 2898,
+   "call_oi": 10351
+  },
+  {
+   "expiry": "2027-06-17",
+   "atm_iv": 48.2,
+   "call_vol": 2746,
+   "put_vol": 4150,
+   "call_oi": 317492
+  },
+  {
+   "expiry": "2027-09-17",
+   "atm_iv": 50.0,
+   "call_vol": 3143,
+   "put_vol": 3812,
+   "call_oi": 40886
+  },
+  {
+   "expiry": "2027-12-17",
+   "atm_iv": 50.9,
+   "call_vol": 1038,
+   "put_vol": 3237,
+   "call_oi": 229796
+  },
+  {
+   "expiry": "2028-01-21",
+   "atm_iv": 51.2,
+   "call_vol": 1760,
+   "put_vol": 2336,
+   "call_oi": 157754
+  },
+  {
+   "expiry": "2028-06-16",
+   "atm_iv": 52.8,
+   "call_vol": 2828,
+   "put_vol": 1644,
+   "call_oi": 81182
+  },
+  {
+   "expiry": "2028-12-15",
+   "atm_iv": 54.1,
+   "call_vol": 3450,
+   "put_vol": 2257,
+   "call_oi": 184755
+  },
+  {
+   "expiry": "2029-01-19",
+   "atm_iv": 54.2,
+   "call_vol": 910,
+   "put_vol": 569,
+   "call_oi": 9602
+  }
+ ],
+ "options_as_of": "2026-10-13 21:27 ET",
+ "edgar": {
+  "TSLA": [
+   {
+    "date": "2026-10-02",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-09-29",
+    "form": "8-K",
+    "items": "1.01,1.02,2.03,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-09-09",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/xslF345X06/tm2625055d1_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-09-08",
+    "form": "144",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000195004726009212/xsl144X01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-07-23",
+    "form": "10-Q",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-07-22",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-07-02",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-17",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926075213/xslF345X06/tm2618092-2_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-17",
+    "form": "SCHEDULE 13G/A",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926075203/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-09",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926071970/xslF345X06/tm2617365-1_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-08",
+    "form": "144",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000195004726005795/xsl144X01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-05-29",
+    "form": "SD",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926068275/tm2615395d1_sd.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-05-15",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926062860/xslF345X06/tm2614845-1_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-05-13",
+    "form": "144",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000195004726004463/xsl144X01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-05-04",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926055079/xslF345X06/tm2613330-1_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-30",
+    "form": "10-K/A",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-04-30",
+    "form": "144",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000195004726003863/xsl144X01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-30",
+    "form": "SCHEDULE 13G",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000210011926001134/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-27",
+    "form": "S-8",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926048779/tm2612171d1_s8.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-04-23",
+    "form": "SCHEDULE 13G/A",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926047683/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-23",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926047678/xslF345X06/tm2612285-1_4seq1.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-23",
+    "form": "10-Q",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-04-22",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/tsla-20260422.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-04-02",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000197292826000002/xslF345X06/edgardoc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-04-02",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026022956/tsla-20260402.htm",
+    "watch": true
+   }
+  ],
+  "SPCX": [
+   {
+    "date": "2026-09-30",
+    "form": "4/A",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000121390026105393/xslF345X06/ownership.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-09-24",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/xslF345X06/wk-form4_1790280657.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-09-22",
+    "form": "144",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000195004726009740/xsl144X01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-09-15",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000121390026100186/xslF345X06/ownership.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-08-14",
+    "form": "SCHEDULE 13G",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000142601226000004/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-08-14",
+    "form": "SCHEDULE 13G",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000119312526352289/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-08-14",
+    "form": "8-K",
+    "items": "2.01,3.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-08-13",
+    "form": "SCHEDULE 13G",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-08-11",
+    "form": "SCHEDULE 13G",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000121390026087780/xslSCHEDULE_13G_X02/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-08-04",
+    "form": "S-8",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052715/spacex-formsx8xmeshoptical.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-08-04",
+    "form": "S-8",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052712/spacex-formsx8xresalesx8.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-08-04",
+    "form": "10-Q",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-08-04",
+    "form": "8-K",
+    "items": "2.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-26",
+    "form": "8-K",
+    "items": "8.01,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-23",
+    "form": "8-K",
+    "items": "8.01,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-22",
+    "form": "8-K",
+    "items": "7.01,8.01,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-18",
+    "form": "3",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044455/xslF345X06/wk-form3_1781830397.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-17",
+    "form": "4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044069/xslF345X06/wk-form4_1781740812.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-17",
+    "form": "8-K",
+    "items": "5.02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043865/spaceexplorationtechnologi.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-16",
+    "form": "8-K",
+    "items": "1.01,3.02,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043411/spaceexplorationtechnologi.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-15",
+    "form": "8-K",
+    "items": "3.02,3.03,5.02,5.03,7.01,8.01,9.01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043288/spaceexplorationtechnologi.htm",
+    "watch": true
+   },
+   {
+    "date": "2026-06-12",
+    "form": "S-8",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042832/spaceexplorationtechnologi.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-06-12",
+    "form": "424B4",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+    "watch": false
+   },
+   {
+    "date": "2026-06-11",
+    "form": "EFFECT",
+    "items": ",,",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/999999999526001968/xslEFFECTX01/primary_doc.xml",
+    "watch": false
+   },
+   {
+    "date": "2026-06-11",
+    "form": "3",
+    "items": "",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042636/xslF345X06/wk-form3_1781226111.xml",
+    "watch": false
+   }
+  ]
+ },
+ "edgar_as_of": "2026-10-13 21:27 ET",
+ "markets": {
+  "polymarket": [
+   {
+    "date": "2026-12-31",
+    "p": 0.145,
+    "label": "by December 31, 2026"
+   },
+   {
+    "date": "2027-01-31",
+    "p": 0.165,
+    "label": "by January 31, 2027"
+   },
+   {
+    "date": "2027-02-28",
+    "p": 0.235,
+    "label": "by February 28, 2027"
+   },
+   {
+    "date": "2027-06-30",
+    "p": 0.45,
+    "label": "by June 30, 2027"
+   },
+   {
+    "date": "2027-12-31",
+    "p": 0.595,
+    "label": "by December 31, 2027"
+   }
+  ],
+  "kalshi": [
+   {
+    "date": "2026-10-31",
+    "p": 0.015,
+    "label": "Before Nov 1, 2026",
+    "bid": 0.01,
+    "ask": 0.02,
+    "last": 0.02
+   },
+   {
+    "date": "2026-11-30",
+    "p": 0.065,
+    "label": "Before Dec 1, 2026",
+    "bid": 0.05,
+    "ask": 0.08,
+    "last": 0.07
+   },
+   {
+    "date": "2026-12-31",
+    "p": 0.12,
+    "label": "Before Jan 1, 2027",
+    "bid": 0.11,
+    "ask": 0.13,
+    "last": 0.11
+   },
+   {
+    "date": "2027-01-31",
+    "p": 0.215,
+    "label": "Before Feb 1, 2027",
+    "bid": 0.19,
+    "ask": 0.24,
+    "last": 0.19
+   },
+   {
+    "date": "2027-02-28",
+    "p": 0.3,
+    "label": "Before Mar 1, 2027",
+    "bid": 0.29,
+    "ask": 0.31,
+    "last": 0.31
+   },
+   {
+    "date": "2027-03-31",
+    "p": 0.3,
+    "label": "Before Apr 1, 2027",
+    "bid": 0.28,
+    "ask": 0.32,
+    "last": 0.27
+   },
+   {
+    "date": "2027-04-30",
+    "p": 0.395,
+    "label": "Before May 1, 2027",
+    "bid": 0.38,
+    "ask": 0.41,
+    "last": 0.41
+   },
+   {
+    "date": "2027-12-31",
+    "p": 0.685,
+    "label": "Before 2028",
+    "bid": 0.68,
+    "ask": 0.69,
+    "last": 0.69
+   }
+  ],
+  "polymarket_note": "Resolves on an official announcement (incl. non-binding).",
+  "kalshi_note": "Resolves only on a definitive binding agreement; stricter than Polymarket.",
+  "polymarket_url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
+  "kalshi_url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
+ },
+ "markets_as_of": "2026-10-13 21:27 ET",
+ "errors": []
+}
