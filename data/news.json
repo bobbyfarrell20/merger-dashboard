@@ -37,9 +37,9 @@
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVFpSTjFjMDVOZmp1aFhFZHZEbE5DUnpQUnRwMEVCZXU3LUg0TVotSWZ1WksyUjRZaTJRVmFXVUllc0ZCNEtNQ1lpMjQ3cVZRejh1TFFWel83bk5OSGZWOUJ5NDIwQ0pVeWdDSmJsN1JZNjlYbloxX3YtUUY5VkwwYlcwS1NvazdaT1RsUmttX1VpY0NaYXhPcWU4bw?oc=5",
      "source": "Seeking Alpha",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Re-assessed 18:45 ET: no model change. Barclays (Dan Levy) research note, not company news: says a merger announcement is possible before an AGM held by Dec 6, a slip to late Oct/early Nov would strain AGM approval. Same deadline logic the model already uses; no committee, bankers or filing, so the no-leak decay stays on.",
      "auto": true,
-     "watch": true
+     "url_alt": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news"
     },
     {
      "time_et": "18:43",
@@ -47,9 +47,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 18:45 ET: no model change. The jump came between 15:45 and 18:43 ET, right after the Barclays note hit (Bloomberg, TheFly, Seeking Alpha); no filing or deal report behind it. Kalshi's curve is inconsistent (Jan 1 35.5% vs Feb 1 30.5%), so it reads as sentiment, not information.",
+     "auto": true
     },
     {
      "time_et": "18:43",
@@ -57,9 +56,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 18:45 ET: no model change. The jump came between 15:45 and 18:43 ET, right after the Barclays note hit (Bloomberg, TheFly, Seeking Alpha); no filing or deal report behind it. Kalshi's curve is inconsistent (Jan 1 35.5% vs Feb 1 30.5%), so it reads as sentiment, not information.",
+     "auto": true
     },
     {
      "time_et": "18:43",
@@ -67,9 +65,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 18:45 ET: no model change. The jump came between 15:45 and 18:43 ET, right after the Barclays note hit (Bloomberg, TheFly, Seeking Alpha); no filing or deal report behind it. Kalshi's curve is inconsistent (Jan 1 35.5% vs Feb 1 30.5%), so it reads as sentiment, not information.",
+     "auto": true
     }
    ],
    "split": {
@@ -121,7 +118,7 @@
     },
     {
      "time_et": "02:12",
-     "title": "Ex-Tesla President Says Roadster Reveal Is A \u2018Not-So-Hidden Attempt\u2019 To Knit Tesla And SpaceX Together - Stocktwits",
+     "title": "Ex-Tesla President Says Roadster Reveal Is A ‘Not-So-Hidden Attempt’ To Knit Tesla And SpaceX Together - Stocktwits",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZVBLdE9PV1ZtdWhZOGQ1R3NBNmNVcFhITkFkNl8xZFJpSHJycHgtOGEwOVRqdTluOGhwT25zaXhuZHI0LXNvM2xnbk1tVW5LNi11N3dtbHlNTDlFTk1zZWlSaFpfbEthMWpIdTQyY3BhVkozNnhtdXpMcmxSdmsyeTJSQ1hQMlZlcUQzZURHNDFXOEpDUldkelFrYzE0aWpYcFpXWk5ET0dqRDQ5THQtLWc1VS1zZUM1Ymo3Z1dCclI0UnZk?oc=5",
      "source": "Stocktwits",
      "factor": "calendar",
@@ -130,7 +127,7 @@
     },
     {
      "time_et": "15:17",
-     "title": "Cipher Digital\u2019s $850M Convertible Note, Goldman Sachs SpaceX Price Target, AMD\u2019s Fermi Backstop",
+     "title": "Cipher Digital’s $850M Convertible Note, Goldman Sachs SpaceX Price Target, AMD’s Fermi Backstop",
      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc3NMYmE0Z2NRb1g3OGlfdG0yVEJtY1BraVNOUkNVcE5nNHZoWU5Dc0xPTHZpeHl0bEFCVXZrek5xb3Z5bHAyZXdqZnBEMXBKTXNwdVFzeEVqTkV1YS1YQ0JrVllFN1U2eHRWb1k3REg4bkdjY0hkeEtaUzFKeHJLMXRfc0VZMnk2N2J3?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
@@ -146,7 +143,7 @@
    "items": [
     {
      "time_et": "16:11",
-     "title": "SpaceX May Be Eyeing US Mobile Market \u2013 Even As Musk Says \u2018Star\u2019 Branding Has Gone Too Far - Stocktwits",
+     "title": "SpaceX May Be Eyeing US Mobile Market – Even As Musk Says ‘Star’ Branding Has Gone Too Far - Stocktwits",
      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObjBmVFJrM0hBanpuVkp6MzNDN3RnMWxMN1Y2cFhLX1lCdFZJaF9TVEctbGZ6OWNoVnlCWlYzMUpwcnBucXROMEdmQm15NWNpWGhyUldVWVZTWkI3OE4tUUszZjdZMVZEazlRQnoyTmlCc0pQR3Z1SGJEbWhVdDE4WW9ONE9UUDZuWjJFWEF3Z195eUpuV1lEanBzX3ZCcnBRbE9lblU0QUx4dw?oc=5",
      "source": "Stocktwits",
      "factor": "prices",
