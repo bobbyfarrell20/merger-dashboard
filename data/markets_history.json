@@ -49,6 +49,12 @@
 "p": 0.145,
 "how": "mid",
 "vol24": 943.5011649999999
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.205,
+"how": "mid",
+"vol24": 19273.123838
 }
 ],
 "last_alert_p": null
@@ -103,6 +109,12 @@
 "p": 0.165,
 "how": "mid",
 "vol24": 23.5
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.225,
+"how": "mid",
+"vol24": 2922.683044
 }
 ],
 "last_alert_p": null
@@ -157,6 +169,12 @@
 "p": 0.595,
 "how": "mid",
 "vol24": null
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.62,
+"how": "mid",
+"vol24": 900.584293
 }
 ],
 "last_alert_p": null
@@ -211,6 +229,12 @@
 "p": 0.235,
 "how": "mid",
 "vol24": 34.54
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.26,
+"how": "mid",
+"vol24": 1086.475975
 }
 ],
 "last_alert_p": null
@@ -265,6 +289,12 @@
 "p": 0.44,
 "how": "mid",
 "vol24": 116.39726800000001
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.435,
+"how": "mid",
+"vol24": 10.488572
 }
 ],
 "last_alert_p": null
@@ -319,6 +349,12 @@
 "p": 0.19,
 "how": "mid",
 "vol24": 166.47
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.305,
+"how": "mid",
+"vol24": 1529.26
 }
 ],
 "last_alert_p": null
@@ -373,6 +409,12 @@
 "p": 0.06,
 "how": "mid",
 "vol24": 200.0
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.16,
+"how": "mid",
+"vol24": 8557.49
 }
 ],
 "last_alert_p": null
@@ -427,6 +469,12 @@
 "p": 0.015,
 "how": "mid",
 "vol24": 1696.0
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.025,
+"how": "mid",
+"vol24": 4275.0
 }
 ],
 "last_alert_p": null
@@ -481,9 +529,15 @@
 "p": 0.39,
 "how": "mid",
 "vol24": 0.0
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.52,
+"how": "mid",
+"vol24": 2715.81
 }
 ],
-"last_alert_p": null
+"last_alert_p": 0.52
 },
 "kalshi:KXCOMPANYACTIONMERGER-27-27MAR01": {
 "name": "Kalshi: definitive agreement Before Mar 1, 2027",
@@ -535,9 +589,15 @@
 "p": 0.295,
 "how": "mid",
 "vol24": 4.14
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.41,
+"how": "last",
+"vol24": 1483.22
 }
 ],
-"last_alert_p": null
+"last_alert_p": 0.41
 },
 "kalshi:KXCOMPANYACTIONMERGER-27-27JAN01": {
 "name": "Kalshi: definitive agreement Before Jan 1, 2027",
@@ -589,9 +649,15 @@
 "p": 0.105,
 "how": "mid",
 "vol24": 600.01
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.355,
+"how": "mid",
+"vol24": 11331.23
 }
 ],
-"last_alert_p": null
+"last_alert_p": 0.355
 },
 "kalshi:KXCOMPANYACTIONMERGER-27-27APR01": {
 "name": "Kalshi: definitive agreement Before Apr 1, 2027",
@@ -643,6 +709,12 @@
 "p": 0.315,
 "how": "mid",
 "vol24": 71.87
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.385,
+"how": "mid",
+"vol24": 1980.67
 }
 ],
 "last_alert_p": null
@@ -697,6 +769,12 @@
 "p": 0.68,
 "how": "mid",
 "vol24": 941.62
+},
+{
+"t": "2026-10-14T18:43-04:00",
+"p": 0.705,
+"how": "mid",
+"vol24": 1778.62
 }
 ],
 "last_alert_p": null
