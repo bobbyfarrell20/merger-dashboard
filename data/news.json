@@ -2,6 +2,45 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-14",
+   "odds_note": "By Dec 14: with merger -0.1 pts (time -0.1, news +0.0); routine +0.1 (time +0.1, news +0.0); nothing -0.0. No new information, so this is just time passing.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "No overnight TSLA/SPCX merger 8-K, DEF/PRE 14A, or special-committee disclosure",
+     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=8-K&dateb=&owner=include&count=10",
+     "source": "EDGAR check",
+     "factor": "news",
+     "effect": "Confirms blank tape into the Oct 15 Roadster blackout"
+    },
+    {
+     "time_et": "00:12",
+     "title": "Elon Musk posts 'Timing is everything' ahead of Roadster reveal",
+     "url": "https://x.com/elonmusk/status/2110222071229989249",
+     "source": "X / Elon Musk",
+     "factor": "calendar",
+     "effect": "Event hype, not a filing; no model change (news +0.0)"
+    }
+   ],
+   "split": {
+    "end_A": {
+     "total": -0.13,
+     "time": -0.13,
+     "news": 0.0
+    },
+    "end_B": {
+     "total": 0.13,
+     "time": 0.13,
+     "news": 0.0
+    },
+    "end_none": {
+     "total": -0.0,
+     "time": -0.0,
+     "news": 0.0
+    }
+   }
+  },
+  {
    "date": "2026-10-13",
    "odds_note": "Polymarket Dec-31 contract 14% (flat on week). Model tracking starts today, so no model delta yet.",
    "items": [
