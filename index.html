@@ -46,7 +46,8 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 const pct=(x,d=0)=>x==null?'–':(x*100).toFixed(d)+'%', p1=x=>pct(x,1);
 const fmtD=s=>new Date(s+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const J=f=>fetch('data/'+f+'?v='+Date.now()).then(r=>r.json());
-Promise.all(['model.json','config.json','judgment.json','news.json','live.json'].map(J)).then(([M,C,JU,N,L])=>{
+Promise.all(['model.json','config.json','judgment.json','news.json','live.json','trackers.json'].map(f=>J(f).catch(()=>null))).then(([M,C,JU,N,L,TRK])=>{
+ if(TRK)M.trackers=TRK;
  const SC=M.scenarios;try{localStorage.removeItem('smView')}catch(e){}
  if(SC){const view=SC.default;Object.assign(M,SC[view]);M.special_meeting={...M.special_meeting,on:view==='on'};}
  const ST=M.state||{state:'pre'};
