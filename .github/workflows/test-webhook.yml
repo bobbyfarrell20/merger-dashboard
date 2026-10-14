@@ -9,6 +9,7 @@ jobs:
           URL: ${{ secrets.WAKE_WEBHOOK_URL }}
           AUTH: ${{ secrets.WAKE_WEBHOOK_AUTH }}
         run: |
+          AUTH="${AUTH#Authorization:}"; AUTH="${AUTH# }"; case "$AUTH" in Bearer\ *|bearer\ *) ;; *) AUTH="Bearer $AUTH";; esac
           code=$(curl -s -o /tmp/out -w '%{http_code}' -X POST "$URL" -H "Authorization: $AUTH" -H 'Content-Type: application/json' -d '{"items":[{"title":"TEST: webhook setup check (not real news)","url":"https://bobbyfarrell20.github.io/merger-dashboard/","source":"setup test","time_et":"test","type":"test"}]}')
           echo "HTTP $code"; cat /tmp/out; echo
           [ "${code:0:1}" = "2" ]

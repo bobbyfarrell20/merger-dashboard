@@ -181,6 +181,10 @@ def main():
         print("WAKE_WEBHOOK_URL unset; skipping POST"); return
     headers = {"Content-Type": "application/json", "User-Agent": UA}
     auth = os.environ.get("WAKE_WEBHOOK_AUTH", "").strip()
+    if auth.lower().startswith("authorization:"):
+        auth = auth.split(":", 1)[1].strip()
+    if auth and not auth.lower().startswith("bearer "):
+        auth = "Bearer " + auth
     if auth: headers["Authorization"] = auth   # full header value as stored, no prefix added
     req = urllib.request.Request(hook, data=json.dumps(payload).encode(), method="POST", headers=headers)
     try:
