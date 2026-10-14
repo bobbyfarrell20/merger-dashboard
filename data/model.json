@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13 23:32 ET",
+ "generated": "2026-10-13 23:33 ET",
  "today": "2026-10-13",
  "window": {
   "start": "2026-10-14",
@@ -705,7 +705,7 @@
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "2026-10-13 22:29 ET"
+  "prices_as_of": "2026-10-13 23:33 ET"
  },
  "blank_reasons": [
   {
@@ -768,7 +768,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -841,11 +841,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",

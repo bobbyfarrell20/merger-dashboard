@@ -11,7 +11,7 @@
    "date": "2026-10-13 (last)"
   }
  },
- "prices_as_of": "2026-10-13 22:29 ET",
+ "prices_as_of": "2026-10-13 23:33 ET",
  "options": [
   {
    "expiry": "2026-10-14",
@@ -24,8 +24,8 @@
    "expiry": "2026-10-16",
    "atm_iv": 48.2,
    "call_vol": 140085,
-   "put_vol": 124044,
-   "call_oi": 394964
+   "put_vol": 124042,
+   "call_oi": 394963
   },
   {
    "expiry": "2026-10-19",
@@ -66,8 +66,8 @@
    "expiry": "2026-11-20",
    "atm_iv": 43.3,
    "call_vol": 17575,
-   "put_vol": 12351,
-   "call_oi": 203026
+   "put_vol": 12350,
+   "call_oi": 203001
   },
   {
    "expiry": "2026-11-27",
@@ -87,8 +87,8 @@
    "expiry": "2027-01-15",
    "atm_iv": 42.7,
    "call_vol": 8701,
-   "put_vol": 11343,
-   "call_oi": 678254
+   "put_vol": 11344,
+   "call_oi": 678079
   },
   {
    "expiry": "2027-02-19",
@@ -101,7 +101,7 @@
    "expiry": "2027-03-19",
    "atm_iv": 45.4,
    "call_vol": 2260,
-   "put_vol": 4214,
+   "put_vol": 4190,
    "call_oi": 107514
   },
   {
@@ -116,14 +116,14 @@
    "atm_iv": 48.2,
    "call_vol": 2746,
    "put_vol": 4150,
-   "call_oi": 317492
+   "call_oi": 317487
   },
   {
    "expiry": "2027-09-17",
    "atm_iv": 50.0,
    "call_vol": 3143,
    "put_vol": 3812,
-   "call_oi": 40886
+   "call_oi": 40823
   },
   {
    "expiry": "2027-12-17",
@@ -161,7 +161,7 @@
    "call_oi": 9602
   }
  ],
- "options_as_of": "2026-10-13 22:29 ET",
+ "options_as_of": "2026-10-13 23:33 ET",
  "edgar": {
   "TSLA": [
    {
@@ -518,7 +518,7 @@
    }
   ]
  },
- "edgar_as_of": "2026-10-13 23:32 ET",
+ "edgar_as_of": "2026-10-13 23:33 ET",
  "errors": [
   "2026-10-13 23:18 ET fetch_prices: No module named 'yfinance'",
   "2026-10-13 23:18 ET fetch_options: No module named 'yfinance'",
@@ -541,7 +541,7 @@
   }
  },
  "fcc": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -558,11 +558,11 @@
   "note": "The SpaceX-Grain transfer application was filed Oct 8 and asks for expedited consent. Its ECFS/ULS docket number wasn't found yet; the earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-13 23:32 ET",
+  "as_of": "2026-10-13 23:33 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
