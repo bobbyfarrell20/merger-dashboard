@@ -193,7 +193,19 @@ def run(only=None, dry=False):
             tr[name] = {**prev, "ok": False, "as_of": stamp(), "error": f"{type(ex).__name__}: {ex}"[:200]}
             log.append(f"{stamp()} {name}: FAILED, kept last value ({ex})"[:240])
     tr["log"] = log[-30:]
-    if not dry:
+    old = load("trackers.json", {})
+    def sig(t, with_prices=False):   # tracked content only: drop as-of stamps (and prices unless asked)
+        return json.dumps({k: ({kk: vv for kk, vv in v.items() if kk not in ("as_of", "last_ok")} if isinstance(v, dict) else v)
+                           for k, v in t.items() if k != "prices_written" and (with_prices or k != "prices")}, sort_keys=True, default=str)
+    changed = sig(tr) != sig(old)
+    px_changed = sig({"p": tr.get("prices", {}).get("value")}, True) != sig({"p": old.get("prices", {}).get("value")}, True)
+    last_px = old.get("prices_written"); tr["prices_written"] = last_px
+    px_due = px_changed and (not last_px or now() - dt.datetime.fromisoformat(last_px) >= dt.timedelta(minutes=60))
+    if px_due: tr["prices_written"] = now().isoformat(timespec="minutes")
+    if not (changed or px_due):
+        for k in tr:   # keep the stored file byte-identical so git sees no change
+            if k in old: tr[k] = old[k]
+    if not dry and (changed or px_due):
         (D / "trackers.json").write_text(json.dumps(tr, indent=1, default=str))
         (D / "events_state.json").write_text(json.dumps(ev, indent=1, default=str))
     return tr, hits
