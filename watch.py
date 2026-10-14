@@ -179,8 +179,10 @@ def main():
     hook = os.environ.get("WAKE_WEBHOOK_URL", "").strip()
     if not hook:
         print("WAKE_WEBHOOK_URL unset; skipping POST"); return
-    req = urllib.request.Request(hook, data=json.dumps(payload).encode(), method="POST",
-                                 headers={"Content-Type": "application/json", "User-Agent": UA})
+    headers = {"Content-Type": "application/json", "User-Agent": UA}
+    auth = os.environ.get("WAKE_WEBHOOK_AUTH", "").strip()
+    if auth: headers["Authorization"] = auth   # full header value as stored, no prefix added
+    req = urllib.request.Request(hook, data=json.dumps(payload).encode(), method="POST", headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=15) as r: print("webhook", r.status)
     except Exception as ex:

@@ -71,7 +71,7 @@ Each run compares today with the last snapshot in `history.json`, which stores y
 - **Dedupe:** `data/seen.json` is committed in the repo and holds EDGAR accession numbers and normalized headline titles. If it's missing, the first run only records what it sees and sends no alert.
 - **On a new hit:**
   - Appends the item to `data/news.json`, tagged `watch: true`, with an "odds not yet re-assessed" note.
-  - POSTs `{"items":[{"title","url","source","time_et","type"}]}` to secret `WAKE_WEBHOOK_URL`. `type` is `filing` or `headline`, and `time_et` is "YYYY-MM-DD HH:MM" in New York time. If the secret isn't set, the POST is skipped.
+  - POSTs `{"items":[{"title","url","source","time_et","type"}]}` to secret `WAKE_WEBHOOK_URL`, with header `Authorization: <WAKE_WEBHOOK_AUTH>` (sent exactly as stored) if that secret is set. `type` is `filing` or `headline`, and `time_et` is "YYYY-MM-DD HH:MM" in New York time. If the secret isn't set, the POST is skipped.
   - It never recomputes any odds.
 - **Local testing:** `python3 watch.py --dry-run` prints the payload and writes nothing. `--bootstrap` marks everything currently visible as seen.
 - **Market-move alerts:** each watcher run also fetches every open Polymarket and Kalshi merger contract and keeps 14 days of prices in `data/markets_history.json`. Settings are in `config.market_watch`.

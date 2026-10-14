@@ -41,6 +41,7 @@ jobs:
         if: steps.gate.outputs.go == 'true'
         env:
           WAKE_WEBHOOK_URL: ${{ secrets.WAKE_WEBHOOK_URL }}
+          WAKE_WEBHOOK_AUTH: ${{ secrets.WAKE_WEBHOOK_AUTH }}
         run: python3 watch.py
       - name: Commit seen-items and feed changes
         if: steps.gate.outputs.go == 'true'
