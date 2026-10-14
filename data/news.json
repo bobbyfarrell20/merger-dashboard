@@ -20,6 +20,16 @@
      "source": "X / Elon Musk",
      "factor": "calendar",
      "effect": "Event hype, not a filing; no model change (news +0.0)"
+    },
+    {
+     "time_et": "06:30",
+     "title": "Goldman Sachs puts $230 price target on SpaceX",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZlpvMU1OMzFFZGl6REpmNGFENHNOekstVVVodm10N3ZmY3lFU1ZSNGp4R2JON0xCSEthZFJFSUdiWjNPUmZCNnd5ajNpcEZVRWRwcDRTOFZJRUtjUl9ZZWZMdFZ3YTAzdkIzV2FlZUtIdDA3aDRBNTZyVk92aUlaWQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
