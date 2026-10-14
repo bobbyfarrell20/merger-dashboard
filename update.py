@@ -215,11 +215,40 @@ def compute(cfg, today, force_no_merger=False):
             cE += x["pA"] + x["pB"]; cW += TA * (x["wa"] / x["u"]) / wsum
             nB = max(cB, cE - min(cW, cE)); nA = cE - nB      # either curve unchanged; letter timing unforced, capped by it
             x["pA"], x["pB"] = nA - cA, nB - cB; cA, cB = nA, nB
+    # path separation + missed-card switch: merger mass moved to 'routine date now, merger letter later (2027 special)'
+    for x in days: x["pL"] = 0.0
+    PS, MC = cfg.get("path_separation", {}), cfg.get("missed_card_switch", {})
+    sep_on = PS.get("on") and not force_no_merger and not cfg.get("special_meeting_planned", {}).get("on")
+    later = {"on": bool(sep_on), "mc_status": "off", "mc_shift": 0.0, "mc_projected": 0.0}
+    if sep_on:
+        br_ = blank_reasons(cfg, today)
+        act = sum(r["p"] for r in br_ if r["id"] == "merger_hold"); qu = sum(r["p"] for r in br_ if r["id"] == "quiet_hold")
+        act_sh = act / (act + qu) if PS.get("quiet_hold_no_deadline") and act + qu > 0 else 1.0
+        ds = P(PS["decay_start"]); later["active_share"] = act_sh
+        for x in days:
+            n = (P(x["date"]) - ds).days
+            if n > 0:
+                keep = act_sh * math.exp(-PS["merger_decay_per_day"] * n)
+                mv = x["pA"] * (1 - keep); x["pA"] -= mv; x["pB"] += mv; x["pL"] += mv
+                x["why"].append(f"post-Oct 26 merger x{keep:.2f} (active-process share {act_sh:.2f}, decay); rest -> routine now + letter later")
+        if MC.get("on"):
+            st_ = load("state.json", {"state": "pre"}).get("state", "pre")
+            act_d = P(MC["activate_on"]); sh = MC["shift_share"]
+            elig = [x for x in days if P(x["date"]) >= max(act_d, start)]
+            if st_ == "letter": later["mc_status"] = "disarmed (merger filing found)"
+            elif today >= act_d:
+                later["mc_status"] = "active"
+                for x in elig:
+                    mv = x["pA"] * sh; x["pA"] -= mv; x["pB"] += mv; x["pL"] += mv; later["mc_shift"] += mv
+                    x["why"].append(f"missed-card switch: merger x{1-sh:.2f}")
+            else:
+                later["mc_status"] = "armed"; later["mc_projected"] = sh * sum(x["pA"] for x in elig)
     # condition on no announcement before `today` (window start is past): rescale remaining days
     past = [x for x in days if P(x["date"]) < start]; days = [x for x in days if P(x["date"]) >= start]
     gone = sum(x["pA"] + x["pB"] for x in past)
     if gone > 0:
-        for x in days: x["pA"] /= (1 - gone); x["pB"] /= (1 - gone)
+        for x in days: x["pA"] /= (1 - gone); x["pB"] /= (1 - gone); x["pL"] /= (1 - gone)
+        later["mc_shift"] /= (1 - gone); later["mc_projected"] /= (1 - gone)
     cA = cB = 0
     for x in days:
         cA += x["pA"]; cB += x["pB"]; x["cumA"], x["cumB"], x["none"] = cA, cB, 1 - cA - cB
@@ -238,7 +267,9 @@ def compute(cfg, today, force_no_merger=False):
         for v in w["days"].values(): v["either"] = v["A"] + v["B"]
         w["mon"], w["tue"] = w["days"]["Mon"]["either"], w["days"]["Tue"]["either"]
     best = max(W, key=lambda w: w["either"])["monday"] if W else None
-    return {"days": days, "weeks": W, "best_week": best, "p_end": p_end, "a_share": a_sh, "leak_logodds": leak_lo, "weeks_blank": weeks_blank, "leak": LS, "starship": ss, "grain": gr,
+    later["p"] = sum(x["pL"] for x in days)
+    for w in W: w["L"] = sum(x["pL"] for x in days if w["monday"] <= x["date"] <= str(P(w["monday"]) + dt.timedelta(days=6)))
+    return {"later": later, "days": days, "weeks": W, "best_week": best, "p_end": p_end, "a_share": a_sh, "leak_logodds": leak_lo, "weeks_blank": weeks_blank, "leak": LS, "starship": ss, "grain": gr,
             "totals": {"A": days[-1]["cumA"], "B": days[-1]["cumB"], "none": days[-1]["none"]} if days else {}}
 
 def metrics(m):
@@ -370,6 +401,9 @@ def make_why(cfg, m, br, today, state):
     out.append(f"Deadlines force some announcement ({m['p_end']:.0%} by Dec 14): the e-proxy cutoff is ~Oct 27 and the last Texas 10-day notice is Nov 26. "
                f"By Dec 14: {T['A']:.0%} meeting with a merger, {T['B']:.0%} routine, {T['none']:.0%} nothing, so {sh:.0%} of announcements come with a merger.")
     out.append("Mondays are likeliest, then Tuesdays. Merger news should avoid SpaceX unlock days, Starship launch plus the day after, and the Oct 15-22 Roadster/earnings stretch, Oct 16 included.")
+    LT = m.get("later", {})
+    if LT.get("on"):
+        out.append(f"Merger and routine now carry separate deadline pressure. After Oct 26, merger odds keep only the active-process share ({LT.get('active_share',0):.0%}) and decay daily; the quiet-hold path gets no deadline pressure. That moves {LT.get('p',0):.1%} to 'routine date now, merger letter later (2027 special meeting)'. Missed-card switch: {LT.get('mc_status')}.")
     return out
 
 def fmt(s): d = P(s); return d.strftime("%b ") + str(d.day)
@@ -462,10 +496,10 @@ def main():
              "state": state, "deal_math": dm, "blank_reasons": br, "leak_logodds": m["leak_logodds"], "weeks_blank": m["weeks_blank"],
              "fcc": live.get("fcc"), "shares": live.get("shares"), "why": why, "kill": kill, "leak": m["leak"],
              "starship": m["starship"], "grain": m["grain"], "grain_check": live.get("grain_check"), "polymarket": live.get("polymarket"),
-             "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"],
+             "later": m["later"], "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"], "alt_later": alt["later"],
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,
-             "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "why", "events")} for x in m["days"]]}
+             "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in m["days"]]}
     save("model.json", model)
     print(json.dumps({"totals": m["totals"], "best_week": m["best_week"], "a_share": m["a_share"],
                       "weeks": [(w["monday"], "either", round(w["either"]*100, 1), "A", round(w["A"]*100, 1), "B", round(w["B"]*100, 1), "cum", round(w["cum"]*100, 1), w["expiry"], {k: (round(v["either"]*100, 1), round(v["A"]*100, 1), round(v["B"]*100, 1)) for k, v in w["days"].items()}) for w in m["weeks"]],

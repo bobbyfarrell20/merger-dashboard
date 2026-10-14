@@ -573,5 +573,19 @@
   "_why": "Sentiment gauge only, not a base rate. These contracts ask whether a merger is 'officially announced', which is a different event from a meeting date, and they trade thinly."
  },
  "tracking_start": "2026-10-13",
- "blank_clock_source": "Clock starts Mon Sept 21, 2026: the first Monday after the Sept 17 anniversary of last year's DEF 14A passed with no 2026 meeting date (Tesla's normal proxy timing). Sept 29 was considered and rejected."
+ "blank_clock_source": "Clock starts Mon Sept 21, 2026: the first Monday after the Sept 17 anniversary of last year's DEF 14A passed with no 2026 meeting date (Tesla's normal proxy timing). Sept 29 was considered and rejected.",
+ "path_separation": {
+  "on": true,
+  "decay_start": "2026-10-26",
+  "merger_decay_per_day": 0.005,
+  "quiet_hold_no_deadline": true,
+  "_why": "After Oct 26 a merger letter has likely missed this year's regular card. From Oct 27 on, each day's merger mass is (a) limited to the active-process share of the merger-hold reasons (the quiet-hold path, 'Musk asked the board to hold the date, no committee', doesn't respond to the notice deadline), and (b) decayed by exp(-0.005 x days after Oct 26). Routine keeps the full Texas/e-proxy deadline pressure. The removed merger mass is NOT redistributed to earlier weeks: it becomes a routine-date announcement on that same day plus a later merger letter (2027 special meeting path). Not applied when the special-meeting toggle is on (that toggle already decouples the letter from the card)."
+ },
+ "missed_card_switch": {
+  "on": true,
+  "check_close": "2026-10-26",
+  "activate_on": "2026-10-27",
+  "shift_share": 0.35,
+  "_why": "If no Tesla/SpaceX merger-related filing (statecheck state 'letter') exists by the close of Oct 26, 35% of the remaining meeting+merger weight moves to the 'letter later / special meeting (2027)' path. Auto-activates on the first run on/after Oct 27; armed before then."
+ }
 }
