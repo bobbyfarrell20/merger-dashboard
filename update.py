@@ -145,6 +145,7 @@ def compute(cfg, today, force_no_merger=False):
         amult[ds] = amult.get(ds, 1.0) * m; alab.setdefault(ds, []).append(lab)
     lk = cfg["lockups"]
     for t in lk["tranches"]:
+        if t.get("blackout", True) is False: continue  # unconfirmed date: no model effect
         t0 = P(t["date"])
         addA(str(t0), lk["day_mult"], f"SPCX unlock {t['shares']/1e6:,.0f}M" + ("" if t["verified"] else " (est.)"))
         for k in (-1, 1):

@@ -266,10 +266,11 @@
    },
    {
     "date": "2026-11-05",
-    "label": "2nd full trading day after Q3 results: 180-day group",
-    "shares": 1313600000,
+    "label": "2nd full Nasdaq trading day after SpaceX's own Q3 results (not Tesla's Oct 21 report): 28% of 180-day group",
+    "shares": 1300000000,
     "verified": false,
-    "note": "SpaceX Q3 date not announced; estimated from the Aug 4 Q2 release"
+    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 — Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Nov 5 is a placeholder from the Aug 4 Q2 release timing and creates no blackout until confirmed.",
+    "blackout": false
    },
    {
     "date": "2026-12-08",
@@ -456,7 +457,7 @@
   "spcx_class_b": 5485486276,
   "_spcx_src": "SpaceX 10-Q cover (Jul 28, 2026): 7,696,293,669 A + 5,485,486,276 B, plus 391,041,680 A issued in the Cursor merger (8-K Aug 14). Not a company-reported total.",
   "musk_spcx_votes": 53040000000,
-  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
+  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A ≈ 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
   "musk_spcx_shares_outstanding": 6068547515,
   "musk_tsla_shares": 699580882,
   "_musk_tsla_src": "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy.",
@@ -570,5 +571,6 @@
   "query": "tesla spacex merger",
   "_why": "Sentiment gauge only, not a base rate. These contracts ask whether a merger is 'officially announced', which is a different event from a meeting date, and they trade thinly."
  },
- "tracking_start": "2026-10-13"
+ "tracking_start": "2026-10-13",
+ "blank_clock_source": "Clock starts Mon Sept 21, 2026: the first Monday after the Sept 17 anniversary of last year's DEF 14A passed with no 2026 meeting date (Tesla's normal proxy timing). Sept 29 was considered and rejected."
 }
