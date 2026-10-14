@@ -163,9 +163,10 @@
  "post_event_boost": [
   {
    "date": "2026-10-19",
-   "mult": 1.15,
-   "applies": "A",
-   "label": "First Monday after Roadster"
+   "mult": 1.7,
+   "applies": "both",
+   "label": "Clean-Monday boost (Oct 19)",
+   "_why": "First clean Monday after the Oct 15 Roadster event and before Tesla's Oct 21 earnings; early enough that a shareholder letter would not collide with the earnings call. Named per-date multiplier on both merger and routine paths."
   }
  ],
  "notice_rules": [
