@@ -502,8 +502,10 @@ def main():
              "daily": [{k: x[k] for k in ("date", "cumA", "cumB", "none", "pA", "pB", "pL", "why", "events")} for x in m["days"]]}
     def scen(mm):
         T = mm["totals"]
-        Lp = mm["later"]["p"] if mm["later"].get("on") else 0.0
-        hl = {"X": T["A"] + Lp, "A": T["A"], "B": Lp, "C": T["B"] - Lp, "D": T["none"]}
+        hz = cfg.get("headline_horizon", "2026-11-26"); dd = [x for x in mm["days"] if x["date"] <= hz]
+        a = sum(x["pA"] for x in dd); b = sum(x["pB"] for x in dd)
+        Lp = sum(x["pL"] for x in dd) if mm["later"].get("on") else 0.0
+        hl = {"horizon": hz, "X": a + Lp, "A": a, "B": Lp, "C": b - Lp, "slip": (T["A"] + T["B"]) - (a + b), "D": T["none"]}
         return {"headline": hl, "totals": T, "weeks": mm["weeks"], "best_week": mm["best_week"], "later": mm["later"],
                 "merger_share_of_announcements": (T["A"] / max(T["A"] + T["B"], 1e-9)) if T else None,
                 "why": make_why(cfg, mm, br, today, state),
