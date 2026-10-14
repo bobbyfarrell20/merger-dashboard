@@ -1,403 +1,212 @@
 [
  {
+  "v": 2,
   "date": "2026-10-13",
-  "as_of": "2026-10-13 21:46 ET",
-  "rules_d7": 0.02132863813905006,
-  "rules_d30": 0.07143166220310904,
-  "rules_d90": 0.19172716873558693,
-  "rules_end": 0.49983232614074746,
-  "judgment_d7": 0.03,
-  "judgment_d30": 0.07,
-  "judgment_d90": 0.17000000000000007,
-  "judgment_end": 0.45000000000000007,
-  "rules_signed_d7": 0.00753683479475696,
-  "rules_signed_d30": 0.0298670504767162,
-  "rules_signed_d90": 0.11886592589235692,
-  "rules_signed_end": 0.40281914395773816,
-  "judgment_signed_d7": 0.01060100707643114,
-  "judgment_signed_d30": 0.030087460470221355,
-  "judgment_signed_d90": 0.1074077180801572,
-  "judgment_signed_end": 0.3622738969828938,
-  "polymarket_d7": 0.012848101265822783,
-  "polymarket_d30": 0.0550632911392405,
-  "polymarket_d90": 0.1520967741935484,
-  "polymarket_end": 0.45,
-  "kalshi_d7": 0.005833333333333333,
-  "kalshi_d30": 0.035,
-  "kalshi_d90": 0.15370967741935482,
-  "kalshi_end": 0.4672040816326531,
-  "signals": [
-   "$30B unsecured credit facilities (8-K Sept 29); no draw planned in 2026",
-   "Musk 'who can imagine what action one might take' (All-In, Sept 15)",
-   "No 2026 annual meeting date set (Texas ~Dec 6 deadline)",
-   "No committee, banker or deal leaks reported (~80% of >$25B deals leak first)",
-   "SEC OK for Tesla retail auto-vote-with-board program"
-  ],
+  "as_of": "2026-10-13 22:01 ET",
+  "metrics": {
+   "end_A": 0.39614608236501947,
+   "end_B": 0.4838539176349806,
+   "end_none": 0.11999999999999988,
+   "wk2026-10-12_either": 0.044388642257791606,
+   "wk2026-10-12_A": 0.021272679645193703,
+   "wk2026-10-12_B": 0.023115962612597903,
+   "wk2026-10-19_either": 0.17328052014163503,
+   "wk2026-10-19_A": 0.08733583733136867,
+   "wk2026-10-19_B": 0.08594468281026635,
+   "wk2026-10-26_either": 0.17409963069641826,
+   "wk2026-10-26_A": 0.06750085767343625,
+   "wk2026-10-26_B": 0.106598773022982,
+   "wk2026-11-02_either": 0.16289095582076568,
+   "wk2026-11-02_A": 0.07431918050316505,
+   "wk2026-11-02_B": 0.08857177531760062,
+   "wk2026-11-09_either": 0.10981158802386497,
+   "wk2026-11-09_A": 0.04328852779701518,
+   "wk2026-11-09_B": 0.06652306022684978,
+   "wk2026-11-16_either": 0.105896289753207,
+   "wk2026-11-16_A": 0.05074941996314748,
+   "wk2026-11-16_B": 0.055146869790059526,
+   "wk2026-11-23_either": 0.06087285730161676,
+   "wk2026-11-23_A": 0.02917252537134278,
+   "wk2026-11-23_B": 0.03170033193027398,
+   "wk2026-11-30_either": 0.02733220851095746,
+   "wk2026-11-30_A": 0.013098605545817876,
+   "wk2026-11-30_B": 0.014233602965139583,
+   "wk2026-12-07_either": 0.015376050267567554,
+   "wk2026-12-07_A": 0.0065084621894780864,
+   "wk2026-12-07_B": 0.008867588078089466,
+   "wk2026-12-14_either": 0.006051257226175659,
+   "wk2026-12-14_A": 0.0028999863450543525,
+   "wk2026-12-14_B": 0.003151270881121307
+  },
   "inputs": {
-   "cfg": {
-    "window": {
-     "start": "2026-10-14",
-     "end": "2027-06-30"
-    },
-    "horizon_prior": {
-     "prob_by_end": 0.45,
-     "_why": "Starting anchor for P(announcement by Jun 30, 2027) before signals. Between Grok's ~40% (Kalshi 1-yr, Sept 1) and Polymarket's ~45% for Jun 30, 2027."
-    },
-    "signals": [
-     {
-      "id": "agm_silence",
-      "label": "No 2026 annual meeting date set (Texas ~Dec 6 deadline)",
-      "active": true,
-      "logodds": 0.3,
-      "source": "Electrek 2026-09-29; EDGAR shows no DEF 14A as of 2026-10-13",
-      "verified": true
-     },
-     {
-      "id": "retail_autovote",
-      "label": "SEC OK for Tesla retail auto-vote-with-board program",
-      "active": true,
-      "logodds": 0.15,
-      "source": "https://electrek.co/2026/09/29/tesla-sec-retail-auto-vote-board-spacex-merger/",
-      "verified": true
-     },
-     {
-      "id": "credit_facility",
-      "label": "$30B unsecured credit facilities (8-K Sept 29); no draw planned in 2026",
-      "active": true,
-      "logodds": 0.05,
-      "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
-      "verified": true,
-      "_note": "Weak signal: all-stock deal wouldn't need it."
-     },
-     {
-      "id": "musk_hints",
-      "label": "Musk 'who can imagine what action one might take' (All-In, Sept 15)",
-      "active": true,
-      "logodds": 0.1,
-      "source": "Yahoo Finance / 24/7 Wall St",
-      "verified": true
-     },
-     {
-      "id": "no_leaks",
-      "label": "No committee, banker or deal leaks reported (~80% of >$25B deals leak first)",
-      "active": true,
-      "logodds": -0.4,
-      "source": "News search 2026-10-13",
-      "verified": true
-     },
-     {
-      "id": "routine_agm_set",
-      "label": "Routine AGM date set with no merger item (flip on if it happens)",
-      "active": false,
-      "logodds": -1.0,
-      "source": "",
-      "verified": false
-     },
-     {
-      "id": "committee_named",
-      "label": "Special committee / 'additional proposals to follow' disclosed (flip on if it happens)",
-      "active": false,
-      "logodds": 1.5,
-      "source": "",
-      "verified": false
-     }
-    ],
-    "regimes": [
-     {
-      "from": "2026-10-14",
-      "to": "2026-10-20",
-      "mult": 1.3,
-      "label": "Last window to put merger on 2026 annual ballot (Grok gray line ~Oct 8-20)"
-     },
-     {
-      "from": "2026-10-21",
-      "to": "2026-12-06",
-      "mult": 1.0,
-      "label": "Post-earnings, pre-AGM-deadline; deal would need 2027 special meeting"
-     },
-     {
-      "from": "2026-12-07",
-      "to": "2027-01-10",
-      "mult": 0.7,
-      "label": "Holiday lull"
-     },
-     {
-      "from": "2027-01-11",
-      "to": "2027-06-30",
-      "mult": 1.0,
-      "label": "2027 special-meeting path"
-     }
-    ],
-    "weekday_mult": {
-     "Mon": 1.2,
-     "Tue": 1.0,
-     "Wed": 1.0,
-     "Thu": 1.0,
-     "Fri": 0.7,
-     "Sat": 0.25,
-     "Sun": 0.6
-    },
-    "event_types": {
-     "unlock": {
-      "mult": 0.05,
-      "label": "SpaceX lock-up release (first tradable day)",
-      "iv": false
-     },
-     "launch": {
-      "mult": 0.1,
-      "label": "Starship launch",
-      "iv": false
-     },
-     "tesla_event": {
-      "mult": 0.1,
-      "label": "Tesla product event",
-      "iv": true
-     },
-     "earnings": {
-      "mult": 0.3,
-      "label": "Earnings release",
-      "iv": true
-     },
-     "rebalance": {
-      "mult": 0.1,
-      "label": "Index rebalance effective",
-      "iv": false
-     },
-     "holiday": {
-      "mult": 0.15,
-      "label": "US market holiday",
-      "iv": false
-     },
-     "post_event": {
-      "mult": 1.8,
-      "label": "Day after a clean catalyst (Grok's preferred slot)",
-      "iv": false
-     },
-     "quiet": {
-      "mult": 0.7,
-      "label": "Pre-earnings quiet period",
-      "iv": false
-     },
-     "deadline": {
-      "mult": 1.0,
-      "label": "Deadline / marker (no timing effect)",
-      "iv": false
-     }
-    },
-    "events": [
-     {
-      "date": "2026-10-15",
-      "type": "tesla_event",
-      "label": "Roadster demo, McGregor TX, stream 8:55pm ET",
-      "verified": true,
-      "src": "https://teslanorth.com/2026/10/13/tesla-roadster-event-live-stream-time/"
-     },
-     {
-      "date": "2026-10-16",
-      "type": "post_event",
-      "label": "Day after Roadster",
-      "verified": true
-     },
-     {
-      "date": "2026-10-19",
-      "type": "post_event",
-      "label": "First Monday after Roadster",
-      "verified": true
-     },
-     {
-      "date": "2026-10-07",
-      "to": "2026-10-20",
-      "type": "quiet",
-      "label": "Tesla Q3 quiet period",
-      "verified": false
-     },
-     {
-      "date": "2026-10-21",
-      "type": "earnings",
-      "label": "Tesla Q3 earnings, after close (call 5:30pm ET)",
-      "verified": true,
-      "src": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm"
-     },
-     {
-      "date": "2026-10-26",
-      "type": "unlock",
-      "label": "SPCX unlock up to 328.4M sh (Oct 24 Sat, first trade Mon)",
-      "verified": true,
-      "src": "https://tape.panke.app/unlocks.md (424B4)"
-     },
-     {
-      "date": "2026-11-03",
-      "type": "earnings",
-      "label": "SpaceX Q3 earnings (ESTIMATE; date not set)",
-      "verified": false
-     },
-     {
-      "date": "2026-11-05",
-      "type": "unlock",
-      "label": "SPCX unlock up to 1.31B sh, 2nd trading day after Q3 results (ESTIMATED date)",
-      "verified": false,
-      "src": "424B4 via tape.panke.app"
-     },
-     {
-      "date": "2026-11-09",
-      "type": "launch",
-      "label": "Starship Flight 15 NET Nov 8 (FAA planning; unofficial) - blackout Nov 8-9",
-      "verified": false,
-      "src": "https://aishiftnews.ca/"
-     },
-     {
-      "date": "2026-11-08",
-      "type": "launch",
-      "label": "Starship Flight 15 NET (unofficial)",
-      "verified": false
-     },
-     {
-      "date": "2026-11-26",
-      "type": "holiday",
-      "label": "Thanksgiving",
-      "verified": true
-     },
-     {
-      "date": "2026-12-06",
-      "type": "deadline",
-      "label": "Texas 13-month AGM deadline (~Dec 6)",
-      "verified": true
-     },
-     {
-      "date": "2026-12-08",
-      "type": "unlock",
-      "label": "SPCX 180-day remainder unlock up to 784M sh",
-      "verified": true,
-      "src": "424B4"
-     },
-     {
-      "date": "2026-12-18",
-      "type": "rebalance",
-      "label": "Quarterly S&P/Nasdaq rebalance + Nasdaq-100 annual reconstitution (standard 3rd-Friday schedule)",
-      "verified": false
-     },
-     {
-      "date": "2026-12-25",
-      "type": "holiday",
-      "label": "Christmas",
-      "verified": true
-     },
-     {
-      "date": "2027-01-01",
-      "type": "holiday",
-      "label": "New Year",
-      "verified": true
-     },
-     {
-      "date": "2027-01-18",
-      "type": "holiday",
-      "label": "MLK Day",
-      "verified": true
-     },
-     {
-      "date": "2027-01-27",
-      "type": "earnings",
-      "label": "Tesla Q4 earnings (ESTIMATE)",
-      "verified": false
-     },
-     {
-      "date": "2027-02-15",
-      "type": "holiday",
-      "label": "Presidents Day",
-      "verified": true
-     },
-     {
-      "date": "2027-02-05",
-      "type": "unlock",
-      "label": "SPCX extended-group unlock after Q4 results (ESTIMATED)",
-      "verified": false
-     },
-     {
-      "date": "2027-03-18",
-      "type": "unlock",
-      "label": "SPCX extended-group unlock 176M sh",
-      "verified": true,
-      "src": "424B4"
-     },
-     {
-      "date": "2027-03-19",
-      "type": "rebalance",
-      "label": "Quarterly index rebalance (standard schedule)",
-      "verified": false
-     },
-     {
-      "date": "2027-03-26",
-      "type": "holiday",
-      "label": "Good Friday",
-      "verified": true
-     },
-     {
-      "date": "2027-04-21",
-      "type": "earnings",
-      "label": "Tesla Q1 earnings (ESTIMATE)",
-      "verified": false
-     },
-     {
-      "date": "2027-05-07",
-      "type": "unlock",
-      "label": "SPCX extended-group unlock after Q1 results (ESTIMATED)",
-      "verified": false
-     },
-     {
-      "date": "2027-05-17",
-      "type": "unlock",
-      "label": "SPCX extended-group unlock 176M sh",
-      "verified": true,
-      "src": "424B4"
-     },
-     {
-      "date": "2027-05-31",
-      "type": "holiday",
-      "label": "Memorial Day",
-      "verified": true
-     },
-     {
-      "date": "2027-06-14",
-      "type": "unlock",
-      "label": "Musk 6.42B + extended 352M unlock (Jun 12 Sat, first trade Mon)",
-      "verified": true,
-      "src": "424B4"
-     },
-     {
-      "date": "2027-06-18",
-      "type": "rebalance",
-      "label": "Quarterly index rebalance (standard schedule)",
-      "verified": false
-     }
-    ],
-    "signing_lag": {
-     "_doc": "Converts 'any official announcement' (def 1) into 'signed merger agreement' (def 2). A share of announcements ARE signed deals on day one; the rest (offer letter / bear hug / committee formed / intent) sign after a gamma-distributed lag, or never.",
-     "share_signed_at_announcement": 0.35,
-     "_share_why": "Grok thread form split: signed agreement ~35%, letter/bear hug ~40%, soft intent ~25%.",
-     "p_never_signs": 0.15,
-     "_never_why": "Committee could reject / price dispute / regulatory or litigation (assumption).",
-     "lag_gamma_shape": 2.0,
-     "lag_mean_days": 55,
-     "_lag_why": "Precedents: Tesla-SolarCity offer letter Jun 21 2016 -> signed Aug 1 2016 (41 days); Musk/Twitter offer Apr 14 -> signed Apr 25 2022 (11 days). Related-party deals with special committees usually take 1-3 months. Mean 55d, shape 2 => median ~46d, 80% within ~90d.",
-     "max_lag_days": 240
-    }
+   "window": {
+    "start": "2026-10-14",
+    "end": "2026-12-14"
    },
-   "jud": [
+   "p_any_by_end": {
+    "base": 0.88,
+    "_why": "Chance Tesla announces the 2026 meeting date (8-K, DEF/PRE 14A or IR post) or a merger first by Dec 14. High but not certain: the Texas 13-month rule (BOC 21.351) is not self-executing. A shareholder must first make a written request, then get a court order, and missing it does not dissolve the company (21.351(c)). Tesla also ran its 2025 meeting late and only set a date after shareholder pressure (Electrek). 12% allows for Tesla simply sliding into 2027."
+   },
+   "a_share": {
+    "base": 0.5,
+    "_why": "Starting split 50/50 for WITH merger vs routine. Bobby's thesis and Grok's Sept 18 read (silence ~60-70% merger-related if still blank late Sept) lean A. Polymarket's 'merger announced by Dec 31' at ~14% leans hard toward B. Signals below adjust it."
+   },
+   "signals": [
     {
-     "date": "2026-10-20",
-     "p": 0.03
+     "id": "no_leaks",
+     "target": "a_share",
+     "logodds": -0.5,
+     "active": true,
+     "label": "No special committee, banker or deal leaks so far (~80% of $25B+ deals leak first)"
     },
     {
-     "date": "2026-11-12",
-     "p": 0.07
+     "id": "retail_autovote",
+     "target": "a_share",
+     "logodds": 0.15,
+     "active": true,
+     "label": "SEC OK'd Tesla retail auto-vote-with-board program (Sept 29)",
+     "src": "https://electrek.co/2026/09/29/tesla-sec-retail-auto-vote-board-spacex-merger/"
     },
     {
-     "date": "2027-01-11",
-     "p": 0.17
+     "id": "musk_hints",
+     "target": "a_share",
+     "logodds": 0.1,
+     "active": true,
+     "label": "Musk's All-In hint (Sept 15)"
     },
     {
-     "date": "2027-06-30",
-     "p": 0.45
+     "id": "credit_facility",
+     "target": "a_share",
+     "logodds": 0.05,
+     "active": true,
+     "label": "$30B credit facilities 8-K (Sept 29)",
+     "src": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+    },
+    {
+     "id": "committee_named",
+     "target": "a_share",
+     "logodds": 2.0,
+     "active": false,
+     "label": "Special committee / merger letter reported (flip on)"
+    },
+    {
+     "id": "said_2027",
+     "target": "p_any",
+     "logodds": -2.0,
+     "active": false,
+     "label": "Tesla says the meeting slips to 2027 with no date (flip on)"
+    }
+   ],
+   "urgency": [
+    {
+     "from": "2026-10-14",
+     "to": "2026-10-20",
+     "mult": 1.0,
+     "label": "Roadster and earnings week"
+    },
+    {
+     "from": "2026-10-21",
+     "to": "2026-10-27",
+     "mult": 1.7,
+     "label": "Last days to mail an e-proxy notice for a meeting by ~Dec 6 (40 days, Rule 14a-16)"
+    },
+    {
+     "from": "2026-10-28",
+     "to": "2026-11-13",
+     "mult": 2.0,
+     "label": "Dec meeting still possible with full-set mailing (Texas 10-day minimum)"
+    },
+    {
+     "from": "2026-11-14",
+     "to": "2026-11-25",
+     "mult": 2.3,
+     "label": "Final stretch: Nov 26 is the last day to give 10-day notice for Dec 6"
+    },
+    {
+     "from": "2026-11-26",
+     "to": "2026-12-06",
+     "mult": 1.1,
+     "label": "Deadline being missed; Tesla could still set a late-Dec or Jan date"
+    },
+    {
+     "from": "2026-12-07",
+     "to": "2026-12-14",
+     "mult": 0.8,
+     "label": "Past the 13-month mark; risk of a shareholder court petition"
+    }
+   ],
+   "weekday_mult": {
+    "Mon": 3.0,
+    "Tue": 2.0,
+    "Wed": 1.2,
+    "Thu": 1.0,
+    "Fri": 0.6,
+    "Sat": 0.05,
+    "Sun": 0.0,
+    "_why": "Monday highest, then Tuesday. A Sunday-night or Monday pre-market filing counts as Monday, so Sunday is 0 and folded into Monday."
+   },
+   "blackouts": [
+    {
+     "date": "2026-10-15",
+     "mult": 0.4,
+     "applies": "both",
+     "label": "Roadster demo (evening)"
+    },
+    {
+     "date": "2026-10-21",
+     "mult": 0.5,
+     "applies": "both",
+     "label": "Q3 earnings after the close"
+    },
+    {
+     "date": "2026-10-26",
+     "mult": 0.2,
+     "applies": "A",
+     "label": "SPCX unlock up to 328M shares (Oct 24 Sat, first trade Mon)"
+    },
+    {
+     "date": "2026-11-05",
+     "mult": 0.2,
+     "applies": "A",
+     "label": "SPCX unlock up to 1.31B shares (estimated date)"
+    },
+    {
+     "date": "2026-11-09",
+     "mult": 0.3,
+     "applies": "A",
+     "label": "Starship Flight 15 (NET Nov 8, unofficial)"
+    },
+    {
+     "date": "2026-11-26",
+     "mult": 0.05,
+     "applies": "both",
+     "label": "Thanksgiving"
+    },
+    {
+     "date": "2026-11-27",
+     "mult": 0.3,
+     "applies": "both",
+     "label": "Half day"
+    },
+    {
+     "date": "2026-12-08",
+     "mult": 0.2,
+     "applies": "A",
+     "label": "SPCX 180-day remainder unlock"
+    }
+   ],
+   "post_event_boost": [
+    {
+     "date": "2026-10-19",
+     "mult": 1.3,
+     "applies": "A",
+     "label": "First Monday after Roadster (Bobby's preferred slot)"
+    },
+    {
+     "date": "2026-10-22",
+     "mult": 1.3,
+     "applies": "both",
+     "label": "Morning after earnings"
     }
    ]
   }

@@ -11,7 +11,7 @@
    "date": "2026-10-13 (last)"
   }
  },
- "prices_as_of": "2026-10-13 21:45 ET",
+ "prices_as_of": "2026-10-13 22:01 ET",
  "options": [
   {
    "expiry": "2026-10-14",
@@ -24,8 +24,8 @@
    "expiry": "2026-10-16",
    "atm_iv": 48.2,
    "call_vol": 140085,
-   "put_vol": 124042,
-   "call_oi": 394963
+   "put_vol": 124044,
+   "call_oi": 394964
   },
   {
    "expiry": "2026-10-19",
@@ -66,8 +66,8 @@
    "expiry": "2026-11-20",
    "atm_iv": 43.3,
    "call_vol": 17575,
-   "put_vol": 12350,
-   "call_oi": 203001
+   "put_vol": 12351,
+   "call_oi": 203026
   },
   {
    "expiry": "2026-11-27",
@@ -87,8 +87,8 @@
    "expiry": "2027-01-15",
    "atm_iv": 42.7,
    "call_vol": 8701,
-   "put_vol": 11344,
-   "call_oi": 678079
+   "put_vol": 11343,
+   "call_oi": 678254
   },
   {
    "expiry": "2027-02-19",
@@ -101,7 +101,7 @@
    "expiry": "2027-03-19",
    "atm_iv": 45.4,
    "call_vol": 2260,
-   "put_vol": 4190,
+   "put_vol": 4214,
    "call_oi": 107514
   },
   {
@@ -116,14 +116,14 @@
    "atm_iv": 48.2,
    "call_vol": 2746,
    "put_vol": 4150,
-   "call_oi": 317487
+   "call_oi": 317492
   },
   {
    "expiry": "2027-09-17",
    "atm_iv": 50.0,
    "call_vol": 3143,
    "put_vol": 3812,
-   "call_oi": 40823
+   "call_oi": 40886
   },
   {
    "expiry": "2027-12-17",
@@ -161,7 +161,7 @@
    "call_oi": 9602
   }
  ],
- "options_as_of": "2026-10-13 21:46 ET",
+ "options_as_of": "2026-10-13 22:01 ET",
  "edgar": {
   "TSLA": [
    {
@@ -518,106 +518,6 @@
    }
   ]
  },
- "edgar_as_of": "2026-10-13 21:46 ET",
- "markets": {
-  "polymarket": [
-   {
-    "date": "2026-12-31",
-    "p": 0.145,
-    "label": "by December 31, 2026"
-   },
-   {
-    "date": "2027-01-31",
-    "p": 0.165,
-    "label": "by January 31, 2027"
-   },
-   {
-    "date": "2027-02-28",
-    "p": 0.235,
-    "label": "by February 28, 2027"
-   },
-   {
-    "date": "2027-06-30",
-    "p": 0.45,
-    "label": "by June 30, 2027"
-   },
-   {
-    "date": "2027-12-31",
-    "p": 0.595,
-    "label": "by December 31, 2027"
-   }
-  ],
-  "kalshi": [
-   {
-    "date": "2026-10-31",
-    "p": 0.015,
-    "label": "Before Nov 1, 2026",
-    "bid": 0.01,
-    "ask": 0.02,
-    "last": 0.02
-   },
-   {
-    "date": "2026-11-30",
-    "p": 0.065,
-    "label": "Before Dec 1, 2026",
-    "bid": 0.05,
-    "ask": 0.08,
-    "last": 0.07
-   },
-   {
-    "date": "2026-12-31",
-    "p": 0.12,
-    "label": "Before Jan 1, 2027",
-    "bid": 0.11,
-    "ask": 0.13,
-    "last": 0.11
-   },
-   {
-    "date": "2027-01-31",
-    "p": 0.215,
-    "label": "Before Feb 1, 2027",
-    "bid": 0.19,
-    "ask": 0.24,
-    "last": 0.19
-   },
-   {
-    "date": "2027-02-28",
-    "p": 0.3,
-    "label": "Before Mar 1, 2027",
-    "bid": 0.29,
-    "ask": 0.31,
-    "last": 0.31
-   },
-   {
-    "date": "2027-03-31",
-    "p": 0.3,
-    "label": "Before Apr 1, 2027",
-    "bid": 0.28,
-    "ask": 0.32,
-    "last": 0.27
-   },
-   {
-    "date": "2027-04-30",
-    "p": 0.395,
-    "label": "Before May 1, 2027",
-    "bid": 0.38,
-    "ask": 0.41,
-    "last": 0.41
-   },
-   {
-    "date": "2027-12-31",
-    "p": 0.685,
-    "label": "Before 2028",
-    "bid": 0.68,
-    "ask": 0.69,
-    "last": 0.69
-   }
-  ],
-  "polymarket_note": "Resolves on an official announcement (incl. non-binding).",
-  "kalshi_note": "Resolves only on a definitive binding agreement; stricter than Polymarket.",
-  "polymarket_url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
-  "kalshi_url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
- },
- "markets_as_of": "2026-10-13 21:46 ET",
+ "edgar_as_of": "2026-10-13 22:01 ET",
  "errors": []
 }
