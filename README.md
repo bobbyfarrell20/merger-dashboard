@@ -76,7 +76,7 @@ Not investment advice.
   - Price used: the bid/ask midpoint if the spread is 6¢ or less; otherwise the last trade if 24h volume is at least 50; otherwise the quote counts as thin and is stored but never alerts.
   - Extra payload fields: `contract`, `from`, `to` (0–1), `window_hours`.
 
-## Bobby's factor list (Oct 13, 2026) — how it is modeled
+## Factor list (Oct 13, 2026) — how it is modeled
 All weights live in `data/config.json`, each with a `_why` field and a source.
 - **State machine** (`statecheck.py`, run by update.py and watch.py; state saved in `data/state.json`): `pre` → `meeting_only` (routine meeting filing with no merger language, which sets merger odds for the 2026 meeting to 0) or `letter` (S-4/425/PREM14A, or merger language that names the other company), which switches the page to close timing. The state only moves forward.
 - **No-leak decay**: the merger share loses 0.40 log-odds now and 0.12 more for each blank week, capped at −1.20. Merger odds within 7 or 14 days of today are scaled by ×0.35 or ×0.70. A committee or leak signal turns the decay off and adds +2.5.
@@ -97,3 +97,5 @@ All weights live in `data/config.json`, each with a `_why` field and a source.
   - Both count as news.
 - **Polymarket** contracts are fetched every run and shown as a sentiment gauge only.
 - **Deal math** adds pass/fail against the floor, a control test, the reverse case, and parity and collar notes.
+
+Built by [@bobbyfarrell](https://x.com/bobbyfarrell)
