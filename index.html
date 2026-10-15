@@ -161,9 +161,9 @@ J('odds_history.json').then(OH=>{if(!OH||!OH.length)return;
   pointBackgroundColor:arr.map(d=>solid?(short(d.p)?'#f0883e':'#8b949e'):'#0d1117'),pointBorderColor:arr.map(d=>d.p.marker?'#8b949e':'#f0883e'),pointBorderWidth:2,pointHoverRadius:8});
  const ys=OH.map(p=>p.X*100),lo=Math.floor(Math.min(...ys)-4),hi=Math.ceil(Math.max(...ys)+4);
  const HC=new Chart(document.getElementById('hist'),{type:'line',plugins:[lblPlug],data:{datasets:[
-  {label:'Estimated backfill, not model output',data:bfData,borderColor:'#c9a27e',borderDash:[6,5],borderWidth:2,tension:.2,fill:false,...st(bfData,false)},
-  {label:'Event marker',data:mk.map(pt),showLine:false,borderColor:'#8b949e',pointStyle:'triangle',pointRadius:7,pointHoverRadius:9,pointBackgroundColor:'#0d1117',pointBorderColor:'#8b949e',pointBorderWidth:2},
-  {label:'Model output (from Oct 13)',data:mdData,borderColor:'#f0883e',borderWidth:2.5,tension:.2,fill:false,...st(mdData,true)}]},
+  {label:'Estimated (before tracking)',data:bfData,borderColor:'#c9a27e',borderDash:[6,5],borderWidth:2,tension:.2,fill:false,...st(bfData,false)},
+  {label:'News event (no odds change)',data:mk.map(pt),showLine:false,borderColor:'#8b949e',pointStyle:'triangle',pointRadius:7,pointHoverRadius:9,pointBackgroundColor:'#0d1117',pointBorderColor:'#8b949e',pointBorderWidth:2},
+  {label:'Daily model reading',data:mdData,borderColor:'#f0883e',borderWidth:2.5,tension:.2,fill:false,...st(mdData,true)}]},
   options:{responsive:true,maintainAspectRatio:false,parsing:false,layout:{padding:{top:44,left:8,right:8}},interaction:{mode:'nearest',intersect:true},
    plugins:{legend:{display:innerWidth>=600,labels:{color:'#8b949e',boxWidth:18,font:{size:11}}},tooltip:{callbacks:{
    title:i=>{const p=i[0].raw.p;return p.date+(p.backfill?' · estimate':'')},
@@ -180,7 +180,7 @@ J('odds_history.json').then(OH=>{if(!OH||!OH.length)return;
    if(vis.length&&!full){HC.options.scales.y.min=2*Math.floor((Math.min(...vis)-2)/2);HC.options.scales.y.max=2*Math.ceil((Math.max(...vis)+3)/2)}else{HC.options.scales.y.min=lo;HC.options.scales.y.max=hi}
    l.textContent=full?'Drag handles to zoom · showing all dates':`Showing ${xd(s)} – ${xd(e)}`;HC.update('none')};
   a.oninput=()=>ap(a);b.oninput=()=>ap(b);document.getElementById('hzall').onclick=ev=>{ev.preventDefault();a.value=0;b.value=N;ap()};ap();}
- document.getElementById('histnote').innerHTML=`Merger letter by Nov 26, any path (special-meeting toggle OFF). <b>Dashed line, hollow dots before Oct 13 = estimated backfill, not model output.</b> Solid line from ${fmtD(firstM?firstM.date:OH[0].date)} = model (first point recomputed from that day's saved inputs). Triangle = event marker. Tap a dot for details.`;
+ document.getElementById('histnote').innerHTML=`Odds of a merger letter by Nov 26, any path. <b>Dashed line, hollow dots:</b> estimated, before daily tracking began. <b>Solid line:</b> daily model reading from ${fmtD(firstM?firstM.date:OH[0].date)}. <b>Filled orange dot:</b> news moved the odds that day. <b>Triangle:</b> news event that didn't change the odds. Tap a dot for details.`;
  document.getElementById('histev').innerHTML=OH.filter(p=>!p.backfill&&hasEv(p)).reverse().map(p=>evOf(p).map(e=>`<div>● <b>${fmtD(p.date)}</b> <span class="A">${e.label}${e.delta!=null?` ${e.delta>0?'+':''}${(+e.delta).toFixed(1)} pts`:''}</span>: <a href="${e.url}" target="_blank">${e.title}</a> <span class="sub">(${e.source||''})</span></div>`).join('')).join('');
 }).catch(e=>console.error(e));
 </script><script>fetch('data/x_posts.json?v='+Date.now()).then(r=>r.json()).then(X=>{const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
