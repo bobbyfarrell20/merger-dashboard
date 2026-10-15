@@ -4,7 +4,7 @@
 <style>
 :root{--bg:#0d1117;--card:#161b22;--b:#30363d;--t:#e6edf3;--m:#8b949e;--A:#f0883e;--B:#58a6ff;--N:#6e7681;--g:#3fb950;--r:#ff7b72}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:760px;margin:auto;padding:14px;display:grid;gap:14px}
+main{max-width:760px;margin:auto;padding:14px;display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}.col{display:grid;gap:14px;min-width:0;align-content:start}.card{min-width:0;overflow-wrap:anywhere}img,canvas,table{max-width:100%}html,body{overflow-x:hidden}@media(min-width:1100px){main{max-width:1500px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}main>header,main>section,main>.disc{grid-column:1/-1}}
 h1{font-size:19px;margin:6px 0 2px}h2{font-size:15px;margin:0 0 10px;color:var(--m);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
 .sub{color:var(--m);font-size:12px}.card{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:14px}
 .big3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.big3 .n{font-size:30px;font-weight:800;line-height:1.1}.big3 .l{font-size:12px;color:var(--m)}
@@ -27,11 +27,11 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <section class="card" id="statebox" style="display:none"></section>
 <section class="card"><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 
-<section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
+<div class="col colL"><section class="card"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
 
 <section class="card"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
 
-<section class="card"><h2>Why</h2><p class="sub"><b>November peaks are mostly the notice deadline forcing a routine date. Merger odds are lower in those weeks because a letter after late October has likely missed this year's card.</b></p><ul id="why"></ul></section>
+</div><div class="col colR"><section class="card"><h2>Why</h2><p class="sub"><b>November peaks are mostly the notice deadline forcing a routine date. Merger odds are lower in those weeks because a letter after late October has likely missed this year's card.</b></p><ul id="why"></ul></section>
 <section class="card"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section>
 <section class="card"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
 <section class="card"><h2>SpaceX unlocks and blackouts</h2><div id="lock"></div></section>
@@ -40,7 +40,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 
 <section class="card"><h2>Live trackers</h2><div id="trk"></div></section>
 <section class="card"><details><summary>Details: model settings, notice rules, blackouts, filings</summary><div id="det"></div></details></section>
-<p class="disc">A simple probability model, for information only. Not investment advice. Times are ET.</p>
+</div><p class="disc">A simple probability model, for information only. Not investment advice. Times are ET.</p>
 </main>
 <script>
 const pct=(x,d=0)=>x==null?'–':(x*100).toFixed(d)+'%', p1=x=>pct(x,1);
