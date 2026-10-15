@@ -38,7 +38,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 .hzt input{position:absolute;left:0;width:100%;top:0;height:28px;margin:0;background:none;pointer-events:none;-webkit-appearance:none;appearance:none}
 .hzt input::-webkit-slider-thumb{-webkit-appearance:none;pointer-events:auto;width:22px;height:22px;border-radius:50%;background:#e6edf3;border:3px solid #f0883e;cursor:grab}
 .hzt input::-moz-range-thumb{pointer-events:auto;width:18px;height:18px;border-radius:50%;background:#e6edf3;border:3px solid #f0883e;cursor:grab}
-.hzt input::-webkit-slider-runnable-track{background:none}.hzl{display:flex;justify-content:space-between;font-size:12px;margin-top:2px}</style></head><body><main>
+.hzt input::-webkit-slider-runnable-track{background:none}.hzl{display:flex;justify-content:space-between;font-size:12px;margin-top:2px}.a-xp{order:13;grid-column:1/-1}@media(min-width:1100px){#xp{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}}</style></head><body><main>
 <header class="hero"><svg class="orbit" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="470" cy="150" rx="300" ry="70" fill="none" stroke="rgba(150,180,255,.18)" stroke-width="1.2"/><ellipse cx="470" cy="150" rx="210" ry="46" fill="none" stroke="rgba(150,180,255,.10)" stroke-width="1"/><circle cx="215" cy="122" r="2.6" fill="#cfe0ff"/></svg>
 <div class="hero-in"><h1><span class="t">Tesla</span> <span class="x">×</span> <span class="s">SpaceX</span> <span class="w">Merger Watch</span></h1>
 <div class="tagline">Daily odds of a merger announcement</div><div class="pill" id="stamp"><i class="dot"></i><span id="stampt">Loading…</span></div></div></header>
@@ -46,7 +46,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <section class="card a-top"><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 <section class="card a-feed feed"><h2>What moved the odds</h2><div id="feed"></div><details><summary>Background (before tracking started)</summary><div id="bg"></div></details></section>
 <section class="card a-wk"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
-<section class="card a-blank"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section><section class="card a-xp" id="xpcard"><h2>Relevant posts on X</h2><div class="sub" id="xpup"></div><div id="xp"></div></section></div>
+<section class="card a-blank"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section></div>
 <div class="colw colR"><section class="card a-cum"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
 <section class="card a-hist"><h2>Merger odds history</h2><div class="sub" id="histnote"></div><div style="height:300px"><canvas id="hist"></canvas></div><div id="hz" class="hz"><div class="hzt"><div class="hzf" id="hzf"></div><input type="range" id="hza" aria-label="Start date"><input type="range" id="hzb" aria-label="End date"></div><div class="hzl"><span id="hzlbl" class="sub"></span><a href="#" id="hzall">All</a></div></div><div class="sub" id="histev" style="margin-top:6px"></div></section>
 <section class="card a-deal"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
@@ -55,7 +55,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <section class="card a-det"><details><summary>Details: model settings, notice rules, blackouts, filings</summary><div id="det"></div></details></section>
 <section class="card a-why"><h2>Why</h2><p class="sub"><b>November peaks are mostly the notice deadline forcing a routine date. Merger odds are lower in those weeks because a letter after late October has likely missed this year's card.</b></p><ul id="why"></ul></section></div>
 <p class="disc">A simple probability model, for information only. Not investment advice. Times are ET.</p>
-<p class="disc credit" style="text-align:center;order:14;grid-column:1/-1">Built by <a href="https://x.com/bobbyfarrell" target="_blank" rel="noopener">@bobbyfarrell</a></p>
+<section class="card a-xp" id="xpcard"><h2>Relevant posts on X</h2><div class="sub" id="xpup"></div><div id="xp"></div></section><p class="disc credit" style="text-align:center;order:14;grid-column:1/-1">Built by <a href="https://x.com/bobbyfarrell" target="_blank" rel="noopener">@bobbyfarrell</a></p>
 </main>
 <script>
 const pct=(x,d=0)=>x==null?'–':(x*100).toFixed(d)+'%', p1=x=>pct(x,1);
