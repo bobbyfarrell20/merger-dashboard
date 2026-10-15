@@ -29,7 +29,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 <section class="card a-wk"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
 <section class="card a-blank"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section></div>
 <div class="colw colR"><section class="card a-cum"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
-<section class="card a-hist"><h2>Merger odds history</h2><div class="sub" id="histnote"></div><div style="height:240px"><canvas id="hist"></canvas></div><div class="sub" id="histev" style="margin-top:6px"></div></section>
+<section class="card a-hist"><h2>Merger odds history</h2><div class="sub" id="histnote"></div><div style="height:300px"><canvas id="hist"></canvas></div><div class="sub" id="histev" style="margin-top:6px"></div></section>
 <section class="card a-deal"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
 <section class="card a-trk"><h2>Live trackers</h2><div id="trk"></div></section>
 <section class="card a-lock"><h2>SpaceX unlocks and blackouts</h2><div id="lock"></div></section>
@@ -125,18 +125,30 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
 });
 
 J('odds_history.json').then(OH=>{if(!OH||!OH.length)return;
- const lab=OH.map(p=>fmtD(p.date)),ys=OH.map(p=>+(p.X*100).toFixed(2)),ev=OH.map(p=>(p.events||[]).length>0);
- const short=p=>p.events.map(e=>`${e.label} ${e.delta>0?'+':''}${(+e.delta).toFixed(1)}`).join(', ');
- const lblPlug={id:'evl',afterDatasetsDraw(c){const x=c.ctx,me=c.getDatasetMeta(0);x.save();x.font='600 11px system-ui';x.fillStyle='#f0883e';
-  OH.forEach((p,i)=>{if(!ev[i])return;const pt=me.data[i],t=short(p),w=x.measureText(t).width;let tx=pt.x-w/2;tx=Math.max(c.chartArea.left,Math.min(tx,c.chartArea.right-w));x.fillText(t,tx,pt.y-12);});x.restore();}};
- const lo=Math.floor(Math.min(...ys)-3),hi=Math.ceil(Math.max(...ys)+3);
- new Chart(document.getElementById('hist'),{type:'line',plugins:[lblPlug],data:{labels:lab,datasets:[{data:ys,borderColor:'#f0883e',backgroundColor:'rgba(240,136,62,.12)',fill:true,tension:.25,
-  pointRadius:ev.map(e=>e?7:3),pointHoverRadius:ev.map(e=>e?9:5),pointBackgroundColor:ev.map(e=>e?'#f0883e':'#8b949e'),pointBorderColor:ev.map(e=>e?'#fff':'#8b949e'),pointBorderWidth:ev.map(e=>e?2:0)}]},
-  options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:22,left:8,right:8}},plugins:{legend:{display:false},tooltip:{callbacks:{
-   title:i=>OH[i[0].dataIndex].date,label:i=>{const p=OH[i.dataIndex];return `Merger any path: ${(p.X*100).toFixed(1)}% (news ${p.news>0?'+':''}${p.news}, time ${p.time>0?'+':''}${p.time})`},
-   afterLabel:i=>{const p=OH[i.dataIndex];return (p.events||[]).map(e=>`${e.title} (${e.source||''})`)}}}},
-   scales:{y:{min:lo,max:hi,ticks:{callback:v=>v+'%',color:'#8b949e'},grid:{color:'#21262d'}},x:{ticks:{color:'#8b949e',maxRotation:0,autoSkip:true},grid:{display:false}}}}});
- document.getElementById('histnote').textContent=`Merger letter by Nov 26, any path (special-meeting toggle OFF). Daily points since ${fmtD(OH[0].date)}${OH[0].backfill?' (first point recomputed from that day\'s saved inputs)':''}. Highlighted dots are news-driven changes; plain line is time decay.`;
- document.getElementById('histev').innerHTML=OH.filter(p=>p.events&&p.events.length).reverse().map(p=>p.events.map(e=>`<div>● <b>${fmtD(p.date)}</b> <span class="A">${e.label} ${e.delta>0?'+':''}${(+e.delta).toFixed(1)} pts</span>: <a href="${e.url}" target="_blank">${e.title}</a> <span class="sub">(${e.source||''})</span></div>`).join('')).join('');
-}).catch(()=>{});
+ const D0=new Date(OH[0].date+'T12:00'),dx=s=>Math.round((new Date(s+'T12:00')-D0)/864e5),xd=n=>{const d=new Date(D0);d.setDate(d.getDate()+n);return d.toLocaleDateString('en-US',{month:'short',day:'numeric'})};
+ const pt=p=>({x:dx(p.date),y:+(p.X*100).toFixed(2),p});
+ const bf=OH.filter(p=>p.backfill),md=OH.filter(p=>!p.backfill),firstM=md[0];
+ const bfData=bf.map(pt).concat(firstM?[pt(firstM)]:[]),mdData=md.map(pt);
+ const evOf=p=>(p.events||[]),hasEv=p=>evOf(p).length>0;
+ const short=p=>evOf(p).filter(e=>e.callout).map(e=>e.label+(e.delta!=null?` ${e.delta>0?'+':''}${(+e.delta).toFixed(1)}`:'')).join(', ');
+ const lblPlug={id:'evl',afterDatasetsDraw(c){const x=c.ctx;x.save();x.font='600 11px system-ui';const placed=[];
+  c.data.datasets.forEach((ds,di)=>{const me=c.getDatasetMeta(di);ds.data.forEach((d,i)=>{if(di===0&&d.p===firstM)return;const t=short(d.p);if(!t)return;
+   const q=me.data[i],w=x.measureText(t).width;let tx=Math.max(c.chartArea.left,Math.min(q.x-w/2,c.chartArea.right-w));let ty=q.y-12;while(placed.some(r=>tx<r[1]+4&&tx+w>r[0]-4&&Math.abs(ty-r[2])<13))ty-=14;placed.push([tx,tx+w,ty]);
+   x.fillStyle=d.p.backfill?'#c9a27e':'#f0883e';x.fillText(t,tx,ty);});});x.restore();}};
+ const st=(arr,solid)=>({pointRadius:arr.map(d=>d.p.marker?6:hasEv(d.p)?(short(d.p)?6:4):3),pointStyle:arr.map(d=>d.p.marker?'triangle':'circle'),
+  pointBackgroundColor:arr.map(d=>solid?(short(d.p)?'#f0883e':'#8b949e'):'#0d1117'),pointBorderColor:arr.map(d=>d.p.marker?'#8b949e':'#f0883e'),pointBorderWidth:2,pointHoverRadius:8});
+ const ys=OH.map(p=>p.X*100),lo=Math.floor(Math.min(...ys)-4),hi=Math.ceil(Math.max(...ys)+4);
+ new Chart(document.getElementById('hist'),{type:'line',plugins:[lblPlug],data:{datasets:[
+  {label:'Estimated backfill (Grok/Bobby), not model output',data:bfData,borderColor:'#c9a27e',borderDash:[6,5],borderWidth:2,tension:.2,fill:false,...st(bfData,false)},
+  {label:'Model output (from Oct 13)',data:mdData,borderColor:'#f0883e',borderWidth:2.5,tension:.2,fill:false,...st(mdData,true)}]},
+  options:{responsive:true,maintainAspectRatio:false,parsing:false,layout:{padding:{top:44,left:8,right:8}},interaction:{mode:'nearest',intersect:true},
+   plugins:{legend:{display:innerWidth>=600,labels:{color:'#8b949e',boxWidth:18,font:{size:11}}},tooltip:{callbacks:{
+   title:i=>{const p=i[0].raw.p;return p.date+(p.backfill?' · estimate':'')},
+   label:i=>{const p=i.raw.p;return p.marker?'Event marker (no level change)':`Merger any path: ${(p.X*100).toFixed(1)}%`+(p.backfill?'':` (news ${p.news>0?'+':''}${p.news}, time ${p.time>0?'+':''}${p.time})`)},
+   afterLabel:i=>{const p=i.raw.p;return evOf(p).map(e=>e.title+(e.source?` (${e.source})`:'')).concat(p.backfill?[p.source]:[])}}}},
+   scales:{x:{type:'linear',min:-3,max:dx(OH[OH.length-1].date)+4,ticks:{color:'#8b949e',maxRotation:0,stepSize:14,callback:v=>xd(v)},grid:{color:'#21262d'}},
+    y:{min:lo,max:hi,ticks:{callback:v=>v+'%',color:'#8b949e'},grid:{color:'#21262d'}}}}});
+ document.getElementById('histnote').innerHTML=`Merger letter by Nov 26, any path (special-meeting toggle OFF). <b>Dashed line, hollow dots before Oct 13 = estimated backfill (Grok/Bobby), not model output.</b> Solid line from ${fmtD(firstM?firstM.date:OH[0].date)} = model (first point recomputed from that day's saved inputs). Triangle = event marker. Tap a dot for details.`;
+ document.getElementById('histev').innerHTML=OH.filter(p=>!p.backfill&&hasEv(p)).reverse().map(p=>evOf(p).map(e=>`<div>● <b>${fmtD(p.date)}</b> <span class="A">${e.label}${e.delta!=null?` ${e.delta>0?'+':''}${(+e.delta).toFixed(1)} pts`:''}</span>: <a href="${e.url}" target="_blank">${e.title}</a> <span class="sub">(${e.source||''})</span></div>`).join('')).join('');
+}).catch(e=>console.error(e));
 </script></body></html>

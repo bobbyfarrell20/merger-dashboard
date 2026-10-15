@@ -155,7 +155,7 @@ def odds_history(cfg, today, inp, prev, news_day):
     if prev:
         pin = {**off, **prev["inputs"], "special_meeting_planned": off["special_meeting_planned"]}
         cf = headline_of(off, compute(pin, today))["X"]
-        pp = next((p for p in reversed(oh) if p["date"] < str(today)), None)
+        pp = next((p for p in reversed(oh) if p["date"] < str(today) and not p.get("backfill")), None)
         base = pp["X"] if pp else cf
         pt["news"] = round((H["X"] - cf) * 100, 2); pt["time"] = round((H["X"] - base) * 100 - pt["news"], 2)
     if abs(pt["news"]) >= 0.05:
@@ -163,9 +163,9 @@ def odds_history(cfg, today, inp, prev, news_day):
         tagged = [i for i in items if i.get("odds_event")]
         for i in tagged or items[:1]:
             oe = i.get("odds_event", {})
-            pt["events"].append({"label": oe.get("label") or i["title"][:28], "delta": oe.get("delta", pt["news"]),
+            pt["events"].append({"callout": True, "label": oe.get("label") or i["title"][:28], "delta": oe.get("delta", pt["news"]),
                                  "title": i["title"], "url": i.get("url_alt") or i.get("url"), "source": i.get("source")})
-    oh = [p for p in oh if p["date"] != str(today)] + [pt]
+    oh = [p for p in oh if p.get("backfill") or p["date"] != str(today)] + [pt]   # never overwrite backfill points
     oh.sort(key=lambda p: p["date"]); save("odds_history.json", oh)
     return oh
 

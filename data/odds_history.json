@@ -1,8 +1,148 @@
 [
  {
+  "date": "2026-06-12",
+  "X": 0.275,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": "SpaceX IPO",
+    "title": "SpaceX IPO prices",
+    "callout": true,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-06-18",
+  "X": 0.35,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": null,
+    "title": "Musk/Shotwell overlap comments (All-In/CNBC), first public non-denial",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-07-22",
+  "X": 0.38,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": "appropriate process",
+    "title": "Q2 earnings call (Jul 22): Musk says a combination needs an appropriate process",
+    "callout": true,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-08-14",
+  "X": 0.4,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": null,
+    "title": "SpaceX acquisition close (Aug 14). Note: the SpaceX-xAI combination actually closed Feb 2, 2026; the August close that is verifiable is SpaceX's Cursor acquisition (8-K, Aug 14). Date/event to confirm with Bobby.",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-17",
+  "X": 0.42,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": null,
+    "title": "Proxy anniversary, no 2026 date",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-28",
+  "X": 0.44,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": null,
+    "title": "Starship Flight 14 success; Roadster moved to Oct 15",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-29",
+  "X": 0.45,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": "retail/credit 8-K",
+    "title": "SEC retail-voting no-action + $30B credit facility 8-K",
+    "callout": true,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-10-02",
+  "X": 0.44,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": null,
+    "title": "Q3 deliveries beat, no meeting date",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-10-08",
+  "X": 0.46,
+  "backfill": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": "Grain spectrum",
+    "title": "Grain spectrum deal",
+    "callout": true,
+    "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-10-09",
+  "X": 0.46,
+  "backfill": true,
+  "marker": true,
+  "source": "Estimated backfill (Grok/Bobby), not model output",
+  "events": [
+   {
+    "label": "SpaceX unlock",
+    "title": "SpaceX unlock tranche (event marker, no level change)",
+    "callout": false,
+    "delta": null
+   }
+  ]
+ },
+ {
   "date": "2026-10-13",
   "as_of": "2026-10-13 23:33 ET (recomputed)",
-  "backfill": true,
   "X": 0.46375,
   "A": 0.28134,
   "B": 0.18241,
@@ -10,11 +150,12 @@
   "D": 0.05,
   "news": 0.0,
   "time": 0.0,
-  "events": []
+  "events": [],
+  "recomputed": true
  },
  {
   "date": "2026-10-14",
-  "as_of": "2026-10-14 22:51 ET",
+  "as_of": "2026-10-14 22:56 ET",
   "X": 0.47934,
   "A": 0.28926,
   "B": 0.19008,
@@ -24,6 +165,7 @@
   "time": 0.08,
   "events": [
    {
+    "callout": true,
     "label": "Barclays note",
     "delta": 1.5,
     "title": "Tesla and SpaceX could merge before December 6 -- Barclays (TSLA:NASDAQ)",
