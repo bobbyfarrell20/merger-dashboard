@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-14",
-   "odds_note": "By Dec 14: with merger +0.8 pts (time -0.4, news +1.2); routine -0.9 (time +0.3, news -1.2); nothing +0.1. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path), approved by Bobby; calendar/config changed: blackouts; calendar/config changed: blank_reasons.",
+   "odds_note": "By Dec 14: with merger +0.8 pts (time -0.4, news +1.2); routine -0.9 (time +0.3, news -1.2); nothing +0.1. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path); calendar/config changed: blackouts; calendar/config changed: blank_reasons.",
    "items": [
     {
      "time_et": null,
@@ -230,7 +230,7 @@
      "url": "https://tape.panke.app/unlocks.md",
      "source": "424B4 via tape.panke.app",
      "factor": "calendar",
-     "effect": "Unlock-day blackout (Grok had already ruled Oct 9 out)"
+     "effect": "Unlock-day blackout (Oct 9 had already been ruled out)"
     }
    ]
   },
@@ -250,7 +250,7 @@
   },
   {
    "date": "2026-10-05",
-   "odds_note": "Grok's #2 date passed with no filing.",
+   "odds_note": "The #2 estimated date passed with no filing.",
    "items": [
     {
      "time_et": null,
@@ -264,7 +264,7 @@
   },
   {
    "date": "2026-10-02",
-   "odds_note": "Grok's #1 date (Oct 2) passed. The only 8-K was deliveries.",
+   "odds_note": "The #1 estimated date (Oct 2) passed. The only 8-K was deliveries.",
    "items": [
     {
      "time_et": null,
@@ -322,7 +322,7 @@
      "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/",
      "source": "Spaceflight Now",
      "factor": "calendar",
-     "effect": "Successful catalyst, which Bobby's thesis wanted before an announcement"
+     "effect": "Successful catalyst, which the merger thesis wanted before an announcement"
     },
     {
      "time_et": null,
@@ -350,7 +350,7 @@
   },
   {
    "date": "2026-09-18",
-   "odds_note": "Baseline: Grok ~35% merger 8-K by Oct 9; Polymarket Dec-31 ~20% (week of Sept 14).",
+   "odds_note": "Baseline: an outside estimate of ~35% merger 8-K by Oct 9; Polymarket Dec-31 ~20% (week of Sept 14).",
    "items": [
     {
      "time_et": null,
@@ -358,7 +358,7 @@
      "url": "https://kresmion.com/odds/tesla-and-spacex-merger-officially-announced-by-december-31",
      "source": "Kresmion (Polymarket gamma API)",
      "factor": "markets",
-     "effect": "Market odds drifted down about 6 pts as Grok's dates passed with no filing"
+     "effect": "Market odds drifted down about 6 pts as the estimated dates passed with no filing"
     }
    ]
   }

@@ -10,7 +10,7 @@
  },
  "a_share": {
   "base": 0.5,
-  "_why": "Starting 50/50 for WITH merger vs routine before evidence. Bobby's thesis and Grok's Sept 18 read lean merger; Polymarket's Dec 31 2026 contract (~14%) leans routine. The leak decay and the signals adjust it."
+  "_why": "Starting 50/50 for WITH merger vs routine before evidence. The merger thesis and a Sept 18 outside read lean merger; Polymarket's Dec 31 2026 contract (~14%) leans routine. The leak decay and the signals adjust it."
  },
  "signals": [
   {
@@ -77,7 +77,7 @@
    "target": "a_share",
    "logodds": 0.063,
    "active": true,
-   "label": "Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path), approved by Bobby",
+   "label": "Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path)",
    "src": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news"
   }
  ],
@@ -422,7 +422,7 @@
     "w": 0.16,
     "weekly": 0.98,
     "src": null,
-    "note": "Low leak surface: explains the blank page without a leak. Bobby/Grok path; no public evidence either way."
+    "note": "Low leak surface: explains the blank page without a leak. Speculative path; no public evidence either way."
    },
    {
     "id": "drift",
@@ -488,7 +488,7 @@
    500
   ],
   "vote_floor": 450,
-  "_vote_floor_why": "Bobby's view: Tesla holders likely need $450 or more per share. Offers below that are treated as unlikely to pass.",
+  "_vote_floor_why": "Assumption: Tesla holders likely need $450 or more per share. Offers below that are treated as unlikely to pass.",
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability."
  },
@@ -538,7 +538,7 @@
     ]
    },
    {
-    "step": "Index preference: SPCX S&P 500 eligibility ~mid-2027 at the earliest (seasoning, unverified); Bobby/Grok cite ~Sept 2027 and a clean ticker swap. Affects close-timing preference only, not near-term announcement odds.",
+    "step": "Index preference: SPCX S&P 500 eligibility ~mid-2027 at the earliest (seasoning, unverified); outside estimates cite ~Sept 2027 and a clean ticker swap. Affects close-timing preference only, not near-term announcement odds.",
     "weeks": [
      0,
      52
@@ -547,7 +547,7 @@
   ]
  },
  "secondary_markets": {
-  "_why": "Shown in details only, as a sentiment gauge. Bobby said the 2026 contracts 'resolved No'. Not quite: Polymarket's Jun 30 and Sept 30, 2026 contracts resolved No, but Dec 31, 2026 is still open."
+  "_why": "Shown in details only, as a sentiment gauge. The 2026 contracts were reported to have 'resolved No'. Not quite: Polymarket's Jun 30 and Sept 30, 2026 contracts resolved No, but Dec 31, 2026 is still open."
  },
  "index_notes": [
   {
@@ -555,7 +555,7 @@
    "date": "2026-12-18"
   },
   {
-   "label": "S&P 500 eligibility for SPCX needs about 12 months of trading after the Jun 12, 2026 IPO, so ~Jun 2027 at the earliest. Bobby's 'Sept 2027' and the Tesla-swap idea come from the Grok thread; the seasoning rule wasn't re-checked for 2026 changes (unverified)."
+   "label": "S&P 500 eligibility for SPCX needs about 12 months of trading after the Jun 12, 2026 IPO, so ~Jun 2027 at the earliest. The 'Sept 2027' estimate and the Tesla-swap idea come from outside commentary; the seasoning rule wasn't re-checked for 2026 changes (unverified)."
   }
  ],
  "fcc_watch": {
