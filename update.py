@@ -502,7 +502,7 @@ def main():
              "state": state, "deal_math": dm, "blank_reasons": br, "leak_logodds": m["leak_logodds"], "weeks_blank": m["weeks_blank"],
              "fcc": live.get("fcc"), "shares": live.get("shares"), "why": why, "kill": kill, "leak": m["leak"],
              "starship": m["starship"], "grain": m["grain"], "grain_check": live.get("grain_check"), "polymarket": live.get("polymarket"),
-             "lockups_eff": cfg["lockups"], "trackers": {k: (v if k == "log" else {**v, "value": {kk: vv for kk, vv in (v.get("value") or {}).items() if kk != "seen_ids"}}) for k, v in load("trackers.json", {}).items()},
+             "lockups_eff": cfg["lockups"], "trackers": {k: (v if k == "log" or not isinstance(v, dict) else {**v, "value": {kk: vv for kk, vv in (v.get("value") or {}).items() if kk != "seen_ids"}}) for k, v in load("trackers.json", {}).items()},
              "later": m["later"], "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"], "alt_later": alt["later"],
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,

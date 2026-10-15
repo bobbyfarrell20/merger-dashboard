@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-14",
-   "odds_note": "By Dec 14: with merger -0.1 pts (time -0.1, news +0.0); routine +0.1 (time +0.1, news +0.0); nothing -0.0. No new information, so this is just time passing.",
+   "odds_note": "By Dec 14: with merger +0.8 pts (time -0.1, news +0.9); routine -0.8 (time +0.1, news -0.9); nothing -0.0. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path), approved by Bobby.",
    "items": [
     {
      "time_et": null,
@@ -37,7 +37,7 @@
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVFpSTjFjMDVOZmp1aFhFZHZEbE5DUnpQUnRwMEVCZXU3LUg0TVotSWZ1WksyUjRZaTJRVmFXVUllc0ZCNEtNQ1lpMjQ3cVZRejh1TFFWel83bk5OSGZWOUJ5NDIwQ0pVeWdDSmJsN1JZNjlYbloxX3YtUUY5VkwwYlcwS1NvazdaT1RsUmttX1VpY0NaYXhPcWU4bw?oc=5",
      "source": "Seeking Alpha",
      "factor": "news",
-     "effect": "Re-assessed 18:45 ET: no model change. Barclays (Dan Levy) research note, not company news: says a merger announcement is possible before an AGM held by Dec 6, a slip to late Oct/early Nov would strain AGM approval. Same deadline logic the model already uses; no committee, bankers or filing, so the no-leak decay stays on.",
+     "effect": "Re-assessed 22:30 ET: +1.5 pts judgment bump to merger (any path), taken from routine. Barclays (Dan Levy) note says a merger announcement is possible before an AGM held by Dec 6. No committee, bankers or filing, so the no-leak decay stays on; the bump reflects named sell-side coverage making the scenario more mainstream.",
      "auto": true,
      "url_alt": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news"
     },
@@ -74,7 +74,7 @@
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTGwta25FVlF4T0c3OTZtY2RrTkhib1U3Tjl6eDBDTWFQUXpvemt5c2lSOVU4T3loVTF6SDFvOFQ5ZEJPNGZIRmR6cENHSzJHa0ZuZ252OTFUNmxWQjhyd1piRGZzYVJiZXBnQ1RjQm5iLUhWT0IwaVFOUjB4VVZ1Z2RpOE5ZRG9tajdLdkdnZ25VVENZRUowbk1vcHMzZmtGbnc?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "Re-assessed 20:20 ET: no model change. Yahoo Finance republish of the same Barclays (Dan Levy) note already assessed at 18:45 \u2014 possible announcement before a Dec 6 AGM, late Oct/early Nov slip would strain AGM approval. Still no committee, bankers, or filing.",
+     "effect": "Re-assessed 22:30 ET: +1.5 pts judgment bump to merger (any path), taken from routine. Barclays (Dan Levy) note says a merger announcement is possible before an AGM held by Dec 6. No committee, bankers or filing, so the no-leak decay stays on; the bump reflects named sell-side coverage making the scenario more mainstream.",
      "auto": true,
      "url_alt": "https://investinglive.com/stocks/barclays-sees-possible-tesla-spacex-merger-announcement-before-december/"
     },
@@ -104,18 +104,36 @@
      "factor": "markets",
      "effect": "Re-assessed 20:20 ET: no model change. Same Barclays-driven sentiment spike already assessed at 18:45 on adjacent expiries. vs 18:43 prints: Dec 16.0%\u219216.5%, Feb 30.5%\u219231.5%, Apr 38.5%\u219243.0%; Jan actually eased 35.5%\u219229.5%. No new filing or deal report; curve still noisy, so sentiment not information.",
      "auto": true
+    },
+    {
+     "time_et": "03:48",
+     "title": "Tesla-SpaceX Merger Talk Draws Fresh Skepticism \u2013 Analyst Says A Deal Could Leave Trillions In FSD, Optimus Value \u2018On The Table\u2019 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNzNhaERwREhsUTRfelpuTmhodVJ1bnQtQkUtaG5xWGxfX25MVzJDZ0R4ZjJ1X2pfakhNcEhQeF9hSktHbG1VOGc4QmYtdjVuanhYSkJuZkU2ZzBEbXlqWTYtTVVFNjdIXzFJMmEzNFhydW14YU5tcjFJa2ZyTmNiZU1hZFJjb09HWnVnTTdZSUhGcDd0RWJyS3ljM3F5bS1UQjAtNnd1eHNXOXMzWFE1amFvUGktTnJRajBfOVd0WlprNDJtNEdBZzVFd0V4Nk9BYy1R?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "06:22",
+     "title": "Tesla To Reportedly Unveil Design For \u2018Flying\u2019 Roadster This Month \u2013 Elon Musk Once Described It As \u2018Crazier\u2019 Than All James Bond Cars Combined - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOEtFV0tkY2N4b0Jyei1HNllDeWY2anRmbjF4VkJYakJPdGRjS1hXQ01BbGY3eWNJT2YtMUJ6SkhFOFJrenpTUFlveXhLNExjeVdxdkZOemZycE13dXhGN2o3T1JFNlF1T0NlUk8yVURRVmRhdm11TGM4NVVJSGlOcFpYTWtZcjctNXhEX3lQQ3B1ZXhQNnFGeVRNOElTMFMzWlNjUEhVNEp3WVhxT3ZuVGR2Tkd0VTlwSjJmeUk2VC04Xy01TFpSSmxmSm5idmpXekItNw?oc=5",
+     "source": "Stocktwits",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "end_A": {
-     "total": -0.13,
+     "total": 0.78,
      "time": -0.13,
-     "news": 0.0
+     "news": 0.9
     },
     "end_B": {
-     "total": 0.13,
+     "total": -0.78,
      "time": 0.13,
-     "news": 0.0
+     "news": -0.9
     },
     "end_none": {
      "total": -0.0,
