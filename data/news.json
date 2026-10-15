@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-14",
-   "odds_note": "By Dec 14: with merger +0.5 pts (time -0.4, news +0.9); routine -0.6 (time +0.3, news -0.9); nothing +0.1. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path), approved by Bobby; calendar/config changed: blackouts.",
+   "odds_note": "By Dec 14: with merger +0.8 pts (time -0.4, news +1.2); routine -0.9 (time +0.3, news -1.2); nothing +0.1. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path), approved by Bobby; calendar/config changed: blackouts; calendar/config changed: blank_reasons.",
    "items": [
     {
      "time_et": null,
@@ -130,14 +130,14 @@
    ],
    "split": {
     "end_A": {
-     "total": 0.54,
+     "total": 0.8,
      "time": -0.36,
-     "news": 0.89
+     "news": 1.16
     },
     "end_B": {
-     "total": -0.62,
+     "total": -0.88,
      "time": 0.27,
-     "news": -0.89
+     "news": -1.16
     },
     "end_none": {
      "total": 0.08,

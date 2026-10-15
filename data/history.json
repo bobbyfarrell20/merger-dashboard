@@ -415,41 +415,41 @@
  {
   "v": 2,
   "date": "2026-10-14",
-  "as_of": "2026-10-14 22:45 ET",
+  "as_of": "2026-10-14 22:51 ET",
   "metrics": {
-   "end_A": 0.28778445521089085,
-   "end_B": 0.6613709929116128,
-   "end_none": 0.05084455187749637,
-   "wk2026-10-12_either": 0.00977267172531451,
-   "wk2026-10-12_A": 0.004236027152755346,
-   "wk2026-10-12_B": 0.0055366445725591636,
-   "wk2026-10-19_either": 0.1350415467371122,
-   "wk2026-10-19_A": 0.06119227764831071,
-   "wk2026-10-19_B": 0.07384926908880149,
-   "wk2026-10-26_either": 0.19043896174847302,
-   "wk2026-10-26_A": 0.04846460165472127,
-   "wk2026-10-26_B": 0.14197436009375175,
-   "wk2026-11-02_either": 0.2862115363374676,
-   "wk2026-11-02_A": 0.08721442931546818,
-   "wk2026-11-02_B": 0.1989971070219994,
-   "wk2026-11-09_either": 0.24605599162647313,
-   "wk2026-11-09_A": 0.06396341785892663,
-   "wk2026-11-09_B": 0.1820925737675465,
-   "wk2026-11-16_either": 0.04312902010442864,
-   "wk2026-11-16_A": 0.01227876531999525,
-   "wk2026-11-16_B": 0.030850254784433394,
-   "wk2026-11-23_either": 0.03376380865152097,
-   "wk2026-11-23_A": 0.009308819605300798,
-   "wk2026-11-23_B": 0.024454989046220166,
-   "wk2026-11-30_either": 0.0025641649349681765,
-   "wk2026-11-30_A": 0.0006806603473839103,
-   "wk2026-11-30_B": 0.001883504587584266,
-   "wk2026-12-07_either": 0.0014939689407535883,
-   "wk2026-12-07_A": 0.0002750567373350473,
-   "wk2026-12-07_B": 0.001218912203418541,
-   "wk2026-12-14_either": 0.0006837773159915138,
-   "wk2026-12-14_A": 0.00017039957069362209,
-   "wk2026-12-14_B": 0.0005133777452978917
+   "end_A": 0.29041411291803665,
+   "end_B": 0.6587567728002297,
+   "end_none": 0.050829114281733645,
+   "wk2026-10-12_either": 0.02522876314416295,
+   "wk2026-10-12_A": 0.010962589661982864,
+   "wk2026-10-12_B": 0.014266173482180086,
+   "wk2026-10-19_either": 0.13258449629700064,
+   "wk2026-10-19_A": 0.060222177845604574,
+   "wk2026-10-19_B": 0.07236231845139608,
+   "wk2026-10-26_either": 0.1869586342551307,
+   "wk2026-10-26_A": 0.04769627757347549,
+   "wk2026-10-26_B": 0.1392623566816552,
+   "wk2026-11-02_either": 0.281147340019429,
+   "wk2026-11-02_A": 0.08583179242199741,
+   "wk2026-11-02_B": 0.19531554759743158,
+   "wk2026-11-09_either": 0.24164169827226306,
+   "wk2026-11-09_A": 0.06295179693357854,
+   "wk2026-11-09_B": 0.17868990133868454,
+   "wk2026-11-16_either": 0.04311592512466282,
+   "wk2026-11-16_A": 0.012297971629765975,
+   "wk2026-11-16_B": 0.030817953494896844,
+   "wk2026-11-23_either": 0.03375357620889739,
+   "wk2026-11-23_A": 0.009323385521528088,
+   "wk2026-11-23_B": 0.024430190687369308,
+   "wk2026-11-30_either": 0.002563939162582415,
+   "wk2026-11-30_A": 0.0006818720358579278,
+   "wk2026-11-30_B": 0.001882067126724487,
+   "wk2026-12-07_either": 0.0014927961241157756,
+   "wk2026-12-07_A": 0.0002755463840136157,
+   "wk2026-12-07_B": 0.00121724974010216,
+   "wk2026-12-14_either": 0.0006837171100219773,
+   "wk2026-12-14_A": 0.00017070291023232238,
+   "wk2026-12-14_B": 0.000513014199789655
   },
   "inputs": {
    "window": {
@@ -584,12 +584,13 @@
    "blackouts": [
     {
      "date": "2026-10-15",
-     "mult": 0.3,
+     "mult": 1.4,
      "applies": "both",
      "label": "Roadster demo (evening)",
      "event_start_et": "20:55",
      "event_end_et": "23:25",
-     "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)"
+     "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)",
+     "_why": "Roadster event day relaxed from x0.3 to x1.4 (Oct 14): the day stays open to the event end (11:25 PM ET) and covers a morning filing plus an on-stage/X comment after the livestream (8-K next morning counts as this day). Targets ~2% for the day."
     },
     {
      "date": "2026-10-16",
@@ -781,7 +782,7 @@
       "w": 0.26,
       "weekly": 0.9,
       "src": null,
-      "note": "No committee, bank or law firm disclosed as of Oct 13 (EDGAR and news searches)."
+      "note": "No committee, bank or law firm disclosed as of {checked} (EDGAR and news watcher)."
      },
      {
       "id": "quiet_hold",
@@ -808,7 +809,7 @@
       "w": 0.1,
       "weekly": 0.95,
       "src": null,
-      "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of Oct 11."
+      "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of {checked} (news watcher)."
      },
      {
       "id": "comp_governance",
@@ -817,7 +818,7 @@
       "w": 0.06,
       "weekly": 1.0,
       "src": null,
-      "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of Oct 13. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
+      "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of {checked}. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
      },
      {
       "id": "retail_program",

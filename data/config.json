@@ -132,12 +132,13 @@
  "blackouts": [
   {
    "date": "2026-10-15",
-   "mult": 0.3,
+   "mult": 1.4,
    "applies": "both",
    "label": "Roadster demo (evening)",
    "event_start_et": "20:55",
    "event_end_et": "23:25",
-   "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)"
+   "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)",
+   "_why": "Roadster event day relaxed from x0.3 to x1.4 (Oct 14): the day stays open to the event end (11:25 PM ET) and covers a morning filing plus an on-stage/X comment after the livestream (8-K next morning counts as this day). Targets ~2% for the day."
   },
   {
    "date": "2026-10-16",
@@ -411,7 +412,7 @@
     "w": 0.26,
     "weekly": 0.9,
     "src": null,
-    "note": "No committee, bank or law firm disclosed as of Oct 13 (EDGAR and news searches)."
+    "note": "No committee, bank or law firm disclosed as of {checked} (EDGAR and news watcher)."
    },
    {
     "id": "quiet_hold",
@@ -438,7 +439,7 @@
     "w": 0.1,
     "weekly": 0.95,
     "src": null,
-    "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of Oct 11."
+    "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of {checked} (news watcher)."
    },
    {
     "id": "comp_governance",
@@ -447,7 +448,7 @@
     "w": 0.06,
     "weekly": 1.0,
     "src": null,
-    "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of Oct 13. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
+    "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of {checked}. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
    },
    {
     "id": "retail_program",

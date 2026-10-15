@@ -426,7 +426,7 @@ def blank_reasons(cfg, today):
     b = cfg["blank_reasons"]; wk = max(0, (today - P(b["ref_date"])).days // 7)
     ws = [(x, x["w"] * x["weekly"] ** wk) for x in b["items"]]
     tot = sum(w for _, w in ws)
-    return sorted([{"id": x["id"], "label": x["label"], "p": w / tot, "src": x.get("src"), "note": x.get("note"), "merger": x.get("merger", False)} for x, w in ws], key=lambda r: -r["p"])
+    return sorted([{"id": x["id"], "label": x["label"], "p": w / tot, "src": x.get("src"), "note": (x.get("note") or "").replace("{checked}", now_et()) or None, "merger": x.get("merger", False)} for x, w in ws], key=lambda r: -r["p"])
 
 def make_why(cfg, m, br, today, state):
     """WHY bullets generated from the same numbers as the ranked reasons and the headline, so they can't drift."""
