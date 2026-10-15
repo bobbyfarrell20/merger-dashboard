@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-15",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "01:26",
+     "title": "Polymarket: announced by January 31, 2027: 16.5% -> 26.5% (+10.0 pts in 25.8h)",
+     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
+     "source": "Polymarket",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-14",
    "odds_note": "By Dec 14: with merger +0.8 pts (time -0.4, news +1.2); routine -0.9 (time +0.3, news -1.2); nothing +0.1. Why: new signal: Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path); calendar/config changed: blackouts; calendar/config changed: blank_reasons.",
    "items": [
@@ -126,6 +142,16 @@
      "factor": "calendar",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "19:06",
+     "title": "Tesla-SpaceX Merger Announcement Could Come This Year, Barclays Says",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSlhaMG9IS3hVTWpzNFpmZWlsU3h1MGJGdUlBQm5Pc3BiMDRzRS1pRThLOExVcDhnQkZXcnV3a3gzVUtZcEMweVB1dEFPUUxFTHBIeFQ5clBVRTY2dDNBSmM4X2JGdDJYSl83VDhzNEgwTFhCWXlqNWZBbGtzZU91b0dNbXVuR29wRy12WkdROGpzTl9SYWZpR1hlbElVQUE5TXBwUg?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
