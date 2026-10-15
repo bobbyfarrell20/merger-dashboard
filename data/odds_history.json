@@ -1,0 +1,35 @@
+[
+ {
+  "date": "2026-10-13",
+  "as_of": "2026-10-13 23:33 ET (recomputed)",
+  "backfill": true,
+  "X": 0.46375,
+  "A": 0.28134,
+  "B": 0.18241,
+  "C": 0.4815,
+  "D": 0.05,
+  "news": 0.0,
+  "time": 0.0,
+  "events": []
+ },
+ {
+  "date": "2026-10-14",
+  "as_of": "2026-10-14 22:45 ET",
+  "X": 0.47938,
+  "A": 0.28663,
+  "B": 0.19275,
+  "C": 0.46495,
+  "D": 0.05084,
+  "news": 1.49,
+  "time": 0.07,
+  "events": [
+   {
+    "label": "Barclays note",
+    "delta": 1.5,
+    "title": "Tesla and SpaceX could merge before December 6 -- Barclays (TSLA:NASDAQ)",
+    "url": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news",
+    "source": "Seeking Alpha"
+   }
+  ]
+ }
+]

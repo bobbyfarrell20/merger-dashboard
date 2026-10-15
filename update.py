@@ -141,6 +141,34 @@ def day_close_min(cfg, d):
             close = max(close, end)
     return close
 
+def headline_of(cfg, mm):
+    hz = cfg.get("headline_horizon", "2026-11-26"); dd = [x for x in mm["days"] if x["date"] <= hz]; T = mm["totals"]
+    a = sum(x["pA"] for x in dd); b = sum(x["pB"] for x in dd); Lp = sum(x["pL"] for x in dd) if mm["later"].get("on") else 0.0
+    return {"X": a + Lp, "A": a, "B": Lp, "C": b - Lp, "D": T["none"]}
+
+def odds_history(cfg, today, inp, prev, news_day):
+    """Daily merger-any-path (Nov 26 basis, toggle OFF) points; today's point is overwritten on reruns."""
+    oh = load("odds_history.json", [])
+    off = {**cfg, "special_meeting_planned": {**cfg["special_meeting_planned"], "on": False}}
+    H = headline_of(off, compute(off, today))
+    pt = {"date": str(today), "as_of": now_et(), **{k: round(v, 5) for k, v in H.items()}, "news": 0.0, "time": 0.0, "events": []}
+    if prev:
+        pin = {**off, **prev["inputs"], "special_meeting_planned": off["special_meeting_planned"]}
+        cf = headline_of(off, compute(pin, today))["X"]
+        pp = next((p for p in reversed(oh) if p["date"] < str(today)), None)
+        base = pp["X"] if pp else cf
+        pt["news"] = round((H["X"] - cf) * 100, 2); pt["time"] = round((H["X"] - base) * 100 - pt["news"], 2)
+    if abs(pt["news"]) >= 0.05:
+        items = (news_day or {}).get("items", [])
+        tagged = [i for i in items if i.get("odds_event")]
+        for i in tagged or items[:1]:
+            oe = i.get("odds_event", {})
+            pt["events"].append({"label": oe.get("label") or i["title"][:28], "delta": oe.get("delta", pt["news"]),
+                                 "title": i["title"], "url": i.get("url_alt") or i.get("url"), "source": i.get("source")})
+    oh = [p for p in oh if p["date"] != str(today)] + [pt]
+    oh.sort(key=lambda p: p["date"]); save("odds_history.json", oh)
+    return oh
+
 def compute(cfg, today, force_no_merger=False):
     """Anchor-calibrated daily model. Cumulative 'either' hits timing_anchors; each day's mass splits A/B by a_share."""
     start0 = P(cfg["window"]["start"]); end = P(cfg["window"]["end"])
@@ -504,6 +532,8 @@ def main():
                             + ("Why: " + "; ".join(drivers) + "." if drivers else "No new information, so this is just time passing."))
         day["split"] = {k: split[k] for k in ("end_A", "end_B", "end_none") if k in split}
     news["days"].sort(key=lambda d: d["date"], reverse=True); save("news.json", news)
+    try: odds_history(cfg, today, inp, prev, day)
+    except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} odds_history: {ex}")
     alerts = []
     if news_moved:
         alerts.append({"type": "news_driven_change", "drivers": drivers, "headlines": [i["title"] for i in day["items"]],

@@ -4,7 +4,7 @@
 <style>
 :root{--bg:#0d1117;--card:#161b22;--b:#30363d;--t:#e6edf3;--m:#8b949e;--A:#f0883e;--B:#58a6ff;--N:#6e7681;--g:#3fb950;--r:#ff7b72}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:760px;margin:auto;padding:14px;display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}.card{min-width:0;overflow-wrap:anywhere}img,canvas,table{max-width:100%}html,body{overflow-x:hidden}.a-st{order:1}.a-top{order:2}.a-feed{order:3}.a-cum{order:4}.a-wk{order:5}.a-deal{order:6}.a-trk{order:7}.a-lock{order:8}.a-det{order:9}.a-blank{order:10}.a-why{order:11}main>.disc{order:12}@media(min-width:1100px){main{max-width:1500px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"hd hd" "st st" "top cum" "feed feed" "wk deal" "wk trk" "wk lock" "wk det" "blank why" "disc disc";align-items:start}main>header{grid-area:hd}.a-st{grid-area:st}.a-top{grid-area:top}.a-cum{grid-area:cum;align-self:stretch}.a-feed{grid-area:feed}.a-wk{grid-area:wk}.a-deal{grid-area:deal}.a-trk{grid-area:trk}.a-lock{grid-area:lock}.a-det{grid-area:det}.a-blank{grid-area:blank;align-self:stretch}.a-why{grid-area:why;align-self:stretch}main>.disc{grid-area:disc}.a-cum>div[style*="height:230px"]{height:380px!important}}
+main{max-width:760px;margin:auto;padding:14px;display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}.card{min-width:0;overflow-wrap:anywhere}img,canvas,table{max-width:100%}html,body{overflow-x:hidden}.colw{display:contents}.a-st{order:1}.a-top{order:2}.a-feed{order:3}.a-hist{order:4}.a-cum{order:5}.a-wk{order:6}.a-deal{order:7}.a-trk{order:8}.a-lock{order:9}.a-det{order:10}.a-blank{order:11}.a-why{order:12}main>.disc{order:13}main>header{order:0}@media(min-width:1100px){main{max-width:1500px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}main>header,main>.disc{grid-column:1/-1}.colw{display:flex;flex-direction:column;gap:14px;min-width:0}.a-cum>div[style*="height:230px"]{height:300px!important}}
 h1{font-size:19px;margin:6px 0 2px}h2{font-size:15px;margin:0 0 10px;color:var(--m);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
 .sub{color:var(--m);font-size:12px}.card{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:14px}
 .big3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.big3 .n{font-size:30px;font-weight:800;line-height:1.1}.big3 .l{font-size:12px;color:var(--m)}
@@ -23,23 +23,18 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 .pill{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 16px;border-radius:999px;border:2px solid #58a6ff;background:#0d1117;color:#e6edf3;font-size:16px;cursor:pointer;margin-bottom:4px}.pill .k{width:36px;height:20px;border-radius:10px;background:#30363d;position:relative;flex:none}.pill .k:after{content:'';position:absolute;left:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#8b949e;transition:left .15s}.pill.on{border-color:#f0883e}.pill.on .k{background:#f0883e}.pill.on .k:after{left:18px;background:#fff}
 .dc.closed{opacity:.3;filter:grayscale(1)}.dc.closed .pv{color:var(--m)}</style></head><body><main>
 <header><h1>Will Tesla announce its 2026 meeting, and will it come with a merger?</h1><div class="sub" id="stamp"></div></header>
-
-<section class="card a-st" id="statebox" style="display:none"></section>
+<div class="colw colL"><section class="card a-st" id="statebox" style="display:none"></section>
 <section class="card a-top"><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
-
-<section class="card a-wk"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
-
-<section class="card a-cum"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
-
-<section class="card a-why"><h2>Why</h2><p class="sub"><b>November peaks are mostly the notice deadline forcing a routine date. Merger odds are lower in those weeks because a letter after late October has likely missed this year's card.</b></p><ul id="why"></ul></section>
-<section class="card a-blank"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section>
-<section class="card a-deal"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
-<section class="card a-lock"><h2>SpaceX unlocks and blackouts</h2><div id="lock"></div></section>
-
 <section class="card a-feed feed"><h2>What moved the odds</h2><div id="feed"></div><details><summary>Background (before tracking started)</summary><div id="bg"></div></details></section>
-
+<section class="card a-wk"><h2>Week by week</h2><div class="sub" style="margin-bottom:8px">The big number is the chance the announcement lands that week. <span class="A">■ with merger</span> <span class="B">■ routine</span>. Bars show each day's odds (orange = merger, blue = routine). Monday is likeliest, Tuesday a close second. Expiry is that week's Friday.</div><div id="weeks"></div></section>
+<section class="card a-blank"><h2>Why is the meeting still unscheduled?</h2><div id="blank"></div></section></div>
+<div class="colw colR"><section class="card a-cum"><h2>Cumulative odds of any announcement</h2><div class="sub" id="cumnote"></div><div style="height:230px"><canvas id="cum"></canvas></div></section>
+<section class="card a-hist"><h2>Merger odds history</h2><div class="sub" id="histnote"></div><div style="height:240px"><canvas id="hist"></canvas></div><div class="sub" id="histev" style="margin-top:6px"></div></section>
+<section class="card a-deal"><h2>Deal math (SpaceX buys Tesla, all stock)</h2><div id="deal"></div></section>
 <section class="card a-trk"><h2>Live trackers</h2><div id="trk"></div></section>
+<section class="card a-lock"><h2>SpaceX unlocks and blackouts</h2><div id="lock"></div></section>
 <section class="card a-det"><details><summary>Details: model settings, notice rules, blackouts, filings</summary><div id="det"></div></details></section>
+<section class="card a-why"><h2>Why</h2><p class="sub"><b>November peaks are mostly the notice deadline forcing a routine date. Merger odds are lower in those weeks because a letter after late October has likely missed this year's card.</b></p><ul id="why"></ul></section></div>
 <p class="disc">A simple probability model, for information only. Not investment advice. Times are ET.</p>
 </main>
 <script>
@@ -128,4 +123,20 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
  <h3>Notice rules</h3><table>${C.notice_rules.map(r=>`<tr><td>${r.src?`<a href="${r.src}">${r.rule}</a>`:r.rule}</td><td>${r.detail}</td></tr>`).join('')}</table>
  <h3>Recent watched SEC filings</h3><p class="sub">${ed}</p><p class="sub">Prices: TSLA $${L.prices?.TSLA?.close}, SPCX $${L.prices?.SPCX?.close} (${L.prices_as_of||''}).</p>`;
 });
+
+J('odds_history.json').then(OH=>{if(!OH||!OH.length)return;
+ const lab=OH.map(p=>fmtD(p.date)),ys=OH.map(p=>+(p.X*100).toFixed(2)),ev=OH.map(p=>(p.events||[]).length>0);
+ const short=p=>p.events.map(e=>`${e.label} ${e.delta>0?'+':''}${(+e.delta).toFixed(1)}`).join(', ');
+ const lblPlug={id:'evl',afterDatasetsDraw(c){const x=c.ctx,me=c.getDatasetMeta(0);x.save();x.font='600 11px system-ui';x.fillStyle='#f0883e';
+  OH.forEach((p,i)=>{if(!ev[i])return;const pt=me.data[i],t=short(p),w=x.measureText(t).width;let tx=pt.x-w/2;tx=Math.max(c.chartArea.left,Math.min(tx,c.chartArea.right-w));x.fillText(t,tx,pt.y-12);});x.restore();}};
+ const lo=Math.floor(Math.min(...ys)-3),hi=Math.ceil(Math.max(...ys)+3);
+ new Chart(document.getElementById('hist'),{type:'line',plugins:[lblPlug],data:{labels:lab,datasets:[{data:ys,borderColor:'#f0883e',backgroundColor:'rgba(240,136,62,.12)',fill:true,tension:.25,
+  pointRadius:ev.map(e=>e?7:3),pointHoverRadius:ev.map(e=>e?9:5),pointBackgroundColor:ev.map(e=>e?'#f0883e':'#8b949e'),pointBorderColor:ev.map(e=>e?'#fff':'#8b949e'),pointBorderWidth:ev.map(e=>e?2:0)}]},
+  options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:22,left:8,right:8}},plugins:{legend:{display:false},tooltip:{callbacks:{
+   title:i=>OH[i[0].dataIndex].date,label:i=>{const p=OH[i.dataIndex];return `Merger any path: ${(p.X*100).toFixed(1)}% (news ${p.news>0?'+':''}${p.news}, time ${p.time>0?'+':''}${p.time})`},
+   afterLabel:i=>{const p=OH[i.dataIndex];return (p.events||[]).map(e=>`${e.title} (${e.source||''})`)}}}},
+   scales:{y:{min:lo,max:hi,ticks:{callback:v=>v+'%',color:'#8b949e'},grid:{color:'#21262d'}},x:{ticks:{color:'#8b949e',maxRotation:0,autoSkip:true},grid:{display:false}}}}});
+ document.getElementById('histnote').textContent=`Merger letter by Nov 26, any path (special-meeting toggle OFF). Daily points since ${fmtD(OH[0].date)}${OH[0].backfill?' (first point recomputed from that day\'s saved inputs)':''}. Highlighted dots are news-driven changes; plain line is time decay.`;
+ document.getElementById('histev').innerHTML=OH.filter(p=>p.events&&p.events.length).reverse().map(p=>p.events.map(e=>`<div>● <b>${fmtD(p.date)}</b> <span class="A">${e.label} ${e.delta>0?'+':''}${(+e.delta).toFixed(1)} pts</span>: <a href="${e.url}" target="_blank">${e.title}</a> <span class="sub">(${e.source||''})</span></div>`).join('')).join('');
+}).catch(()=>{});
 </script></body></html>

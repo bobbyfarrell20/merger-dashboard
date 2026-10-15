@@ -39,7 +39,11 @@
      "factor": "news",
      "effect": "Re-assessed 22:30 ET: +1.5 pts judgment bump to merger (any path), taken from routine. Barclays (Dan Levy) note says a merger announcement is possible before an AGM held by Dec 6. No committee, bankers or filing, so the no-leak decay stays on; the bump reflects named sell-side coverage making the scenario more mainstream.",
      "auto": true,
-     "url_alt": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news"
+     "url_alt": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news",
+     "odds_event": {
+      "label": "Barclays note",
+      "delta": 1.5
+     }
     },
     {
      "time_et": "18:43",
