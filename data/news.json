@@ -21,7 +21,7 @@
      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNR2UySDNvUHVSQXl2NHNFVDJyZXUxY3lycXVLc2JrSVducEd5MlRRTHZWWDRPTWxFaGVmeEc5Y1lYUmhnbzBwTkFOV1J0dDRwalVTX0tHNWgzdVZ4S1NXR3lnb05ZRnktLVdxUGZlTEUxX01Fbk9xOGdMQ1VNSlAyb0w3WVpKT05iRGNnaHA5WDVXeWtweDdpeXlrMkVKWklEMHFZUVA4VWR5MWtUQmlpaFo4YlZURnplejE1cDJvdTRkNnhiYkprSldkbUVCQWNHV01lSnhiSQ?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Re-assessed 06:45 ET: no model change. Republished Barclays (Dan Levy) Dec-AGM note already counted in the +1.5 pt bump at 22:30 ET Oct 14; cites Polymarket Dec 31 ~24% / Kalshi as still skeptical of a near-term deal. No new facts.",
      "auto": true,
      "watch": true
     },
@@ -31,7 +31,7 @@
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORkdZdlo5ZXE4cXh1RWN0LTVUbTBoclZKaG9DRDVqdVMxMUpEZFlUV09BU0toVm0yRUxWODZsXzEyZmxoNzBjZXF4N0ZPMlZQczE4c3htenAwUXdTaUF2WkxnU01FMjVXOGFmRkU1S3JqWlpuUnBPNjg4aVBJR3k4bW1QTWRZX2VlSDl4U3hNMzlTRzlGVUZaWWNn?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Re-assessed 06:45 ET: no model change. Elon's X valuation take (SpaceX >$100T in <10 years absent major war) plus Stocktwits retail hoping for a Roadster-night merger tease; restates Barclays. Not a filing, leak, or committee signal.",
      "auto": true,
      "watch": true
     },
@@ -41,7 +41,7 @@
      "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
      "source": "Polymarket",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
+     "effect": "Re-assessed 06:45 ET: no model change. Nearly all of the 14.5%->24.5% move (+10 pts over ~28h) is the Oct 14 Barclays spike (14.5%->20.5% by 18:43 ET) plus overnight firming already noted with the Jan 31 neighbor alert; only +0.5 pts since 01:26. Same Barclays sentiment, not new information.",
      "auto": true,
      "watch": true
     },
@@ -51,7 +51,7 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
+     "effect": "Re-assessed 06:45 ET: no model change. Watcher window still measures from pre-Barclays 12%, but the contract peaked 35.5% at 18:43 ET Oct 14 (already alerted) and has faded to 24% by 06:39 \u2014 a ~11.5 pt giveback from the alerted high with no filing or leak. Curve remains noisy; leave model alone.",
      "auto": true,
      "watch": true
     }
