@@ -21,8 +21,23 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 .dc .col{height:46px;display:flex;flex-direction:column-reverse;align-items:center}.dc .col i{display:block;width:60%;max-width:26px}
 .dc .pv{font-size:12px;font-weight:700}.dc .dl{font-size:10px;color:var(--m)}.dc.mon .dl,.dc.tue .dl{color:var(--g);font-weight:700}
 .pill{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 16px;border-radius:999px;border:2px solid #58a6ff;background:#0d1117;color:#e6edf3;font-size:16px;cursor:pointer;margin-bottom:4px}.pill .k{width:36px;height:20px;border-radius:10px;background:#30363d;position:relative;flex:none}.pill .k:after{content:'';position:absolute;left:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#8b949e;transition:left .15s}.pill.on{border-color:#f0883e}.pill.on .k{background:#f0883e}.pill.on .k:after{left:18px;background:#fff}
-.dc.closed{opacity:.3;filter:grayscale(1)}.dc.closed .pv{color:var(--m)}</style></head><body><main>
-<header><h1>Tesla × SpaceX Merger Watch</h1><div class="sub" id="stamp"></div></header>
+.dc.closed{opacity:.3;filter:grayscale(1)}.dc.closed .pv{color:var(--m)}.hero{position:relative;overflow:hidden;border-radius:14px;padding:18px 20px 16px;border:1px solid #1f2a44;background:radial-gradient(120% 140% at 85% 120%,#132a5a 0%,#0b1430 38%,#05070d 75%),#05070d}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.7;background-image:radial-gradient(1px 1px at 12% 22%,#fff,transparent),radial-gradient(1px 1px at 28% 68%,#cfd8ff,transparent),radial-gradient(1.2px 1.2px at 47% 18%,#fff,transparent),radial-gradient(1px 1px at 63% 52%,#aab8e6,transparent),radial-gradient(1px 1px at 78% 28%,#fff,transparent),radial-gradient(1.3px 1.3px at 90% 64%,#e6ecff,transparent),radial-gradient(1px 1px at 6% 80%,#aab8e6,transparent),radial-gradient(1px 1px at 37% 40%,#fff,transparent),radial-gradient(1px 1px at 70% 85%,#cfd8ff,transparent),radial-gradient(1px 1px at 96% 12%,#fff,transparent)}
+.hero .orbit{position:absolute;right:0;bottom:0;width:70%;height:100%;pointer-events:none}
+.hero-in{position:relative}
+.hero h1{margin:0;font:800 clamp(22px,4.2vw,34px)/1.12 "Inter","Segoe UI",system-ui,sans-serif;letter-spacing:-.02em;color:#e6edf3}
+.hero .t{color:#e82127}.hero .s{background:linear-gradient(180deg,#fff,#aeb7c4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .x{color:#fff;font-weight:300;text-shadow:0 0 8px rgba(120,170,255,.95),0 0 18px rgba(120,170,255,.6);padding:0 .08em}
+.hero .w{display:inline-block;color:#c9d4e6;font-weight:600}
+.hero .tagline{margin-top:4px;color:#8fa3c2;font-size:13px;letter-spacing:.02em}
+.pill{display:inline-flex;align-items:center;gap:7px;margin-top:10px;padding:4px 11px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font-size:12px;color:#c4cfdf;max-width:100%;flex-wrap:wrap}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:#6e7681;flex:none}.pill.fresh .dot{background:#3fb950;box-shadow:0 0 0 0 rgba(63,185,80,.7);animation:pulse 2s infinite}
+@media(max-width:600px){.pill .vs{display:none}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,185,80,.6)}70%{box-shadow:0 0 0 7px rgba(63,185,80,0)}100%{box-shadow:0 0 0 0 rgba(63,185,80,0)}}
+</style><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet"></head><body><main>
+<header class="hero"><svg class="orbit" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="470" cy="150" rx="300" ry="70" fill="none" stroke="rgba(150,180,255,.18)" stroke-width="1.2"/><ellipse cx="470" cy="150" rx="210" ry="46" fill="none" stroke="rgba(150,180,255,.10)" stroke-width="1"/><circle cx="215" cy="122" r="2.6" fill="#cfe0ff"/></svg>
+<div class="hero-in"><h1><span class="t">Tesla</span> <span class="x">×</span> <span class="s">SpaceX</span> <span class="w">Merger Watch</span></h1>
+<div class="tagline">Daily odds of a merger announcement</div><div class="pill" id="stamp"><i class="dot"></i><span id="stampt">Loading…</span></div></div></header>
 <div class="colw colL"><section class="card a-st" id="statebox" style="display:none"></section>
 <section class="card a-top"><h2>By the Nov 26 notice deadline</h2><div id="hl"></div><div class="sub" id="anyline" style="text-align:center;margin-top:6px"></div><div class="sub" id="chg" style="margin-top:8px;text-align:center"></div></section>
 <section class="card a-feed feed"><h2>What moved the odds</h2><div id="feed"></div><details><summary>Background (before tracking started)</summary><div id="bg"></div></details></section>
@@ -50,7 +65,9 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
  if(ST.state!=='pre'){const sb=document.getElementById('statebox');sb.style.display='';const ev=ST.evidence||{};
   sb.innerHTML=ST.state==='meeting_only'?`<h2>State: meeting date set, no merger</h2><p>A routine meeting filing came out (${ev.form||''} ${ev.date||''}, <a href="${ev.url}">filing</a>). That closes the merger path for the 2026 regular meeting. Any SpaceX letter now points to a 2027 special meeting.</p>${M.kill?`<p style="font-size:18px">Letter odds by ${fmtD(M.kill.letter_by)} '27: <b class="A">${pct(M.kill.p_letter)}</b></p><p class="sub">${M.kill.why}</p>`:''}`
   :`<h2 style="color:#f0883e">State: merger letter or process disclosed</h2><p>${ev.co||''} ${ev.form||''} ${ev.date||''} (<a href="${ev.url}">filing</a>). This page now tracks close timing (months, not weeks):</p><table>${C.close_timing.steps.map(x=>`<tr><td>${x.step}</td><td>${x.weeks[0]}–${x.weeks[1]} wks</td></tr>`).join('')}</table>`;}
- document.getElementById('stamp').textContent=`Updated ${M.generated}`+(M.prev_as_of?` · changes vs ${M.prev_as_of}`:'');
+ {const st=document.getElementById('stamp'),m=(M.generated||'').match(/(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)/);let fresh=false;
+  if(m){const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),g=new Date(+m[1],m[2]-1,+m[3],+m[4],+m[5]);fresh=(n-g)<3*3600e3;}
+  st.classList.toggle('fresh',fresh);document.getElementById('stampt').textContent=`${fresh?'Live · ':''}Updated ${M.generated}`+'';if(M.prev_as_of)st.insertAdjacentHTML('beforeend',`<span class="vs">· vs ${M.prev_as_of}</span>`);}
  {// client-side dead-day rolloff: a day is closed after 8 PM ET (or once past); its odds go to the remaining open days
   const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),pad=x=>String(x).padStart(2,'0');
   const tdy=`${n.getFullYear()}-${pad(n.getMonth()+1)}-${pad(n.getDate())}`,hm=t=>+t.split(':')[0]*60+ +t.split(':')[1],RO=(C&&C.rolloff)||{};
