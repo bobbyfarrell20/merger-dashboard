@@ -111,6 +111,26 @@
      "factor": "calendar",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "11:57",
+     "title": "Will SpaceX merge with Tesla? Speculation resurfaces it could happen before the end of 2026",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY01TRGVoSWFlX2hIRURtREJPeTdReENNMF9aZUcwQTB0ZmVRZkVlaEFSVHFXeFRyb1FVbkVyam1Odm5ZX3ZydjA4YkhuNTZIZUEyaHhCMEl0RWRpQXZHd1FLZFppbFZUQlhvQ3k1bWJ2UU5HUjhCWnJuc2h3ZlRqRVI1V3g4UDJlZE1LZ0IzZTJZbUcyY0t4ZHd6Q01rR1U3c3Z2Ui1vTjlObDZkNHQzQzB1Y0ZqQ2pIZ0R3TjBHOEFLS3dudWdFSWFrNkRIYjlDeHZ0UllrdFFUREhkeXdvVTVEenNFZGJMR0E?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "15:25",
+     "title": "Kalshi: definitive agreement Before Apr 1, 2027: 30.0% -> 53.5% (+23.5 pts in 27.7h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
