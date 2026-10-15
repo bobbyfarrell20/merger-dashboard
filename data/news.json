@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-15",
-   "odds_note": "",
+   "odds_note": "By Dec 14: with merger -0.0 pts (time -0.0, news +0.0); routine +0.0 (time +0.0, news +0.0); nothing +0.0. No new information, so this is just time passing.",
    "items": [
     {
      "time_et": "01:26",
@@ -54,8 +54,34 @@
      "effect": "Re-assessed 06:45 ET: no model change. Watcher window still measures from pre-Barclays 12%, but the contract peaked 35.5% at 18:43 ET Oct 14 (already alerted) and has faded to 24% by 06:39 \u2014 a ~11.5 pt giveback from the alerted high with no filing or leak. Curve remains noisy; leave model alone.",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "05:18",
+     "title": "Tesla And SpaceX Merger By 2027? Here's Why Wedbush Believes Odds Have Jumped Above 80% - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWktOaXRBYTNlallOZEZKbHVYMmhlOUgtc1pPNUpSSDR3VGFDR0JpcWJBVHNIRUZzdU1rZWdfNGJWd0FTMXoyZG96Q0V6ZWNOT1JNbGZHUGZGWmVtTU9jY3g0Z3M4Sm84YTNySlYyN3loVkpHZXoyWlQ1WEVrQVFadEFfU3lRNEZ3SGFSNjFleE1rb3ZpTW8yS0syZlYtYWhyUVRhdFNNWE5TMU1jQzZYZVZYTWdsQ19UMVE?oc=5",
+     "source": "Stocktwits",
+     "factor": "analyst",
+     "effect": "Re-assessed 08:25 ET: no model change. Dan Ives (now Yorkville Ives) repeating his >80% merger-by-end-2027 view, first said in July; no new facts and a 2027 horizon, not this year's meeting.",
+     "auto": true
     }
-   ]
+   ],
+   "split": {
+    "end_A": {
+     "total": -0.03,
+     "time": -0.03,
+     "news": 0.0
+    },
+    "end_B": {
+     "total": 0.03,
+     "time": 0.03,
+     "news": 0.0
+    },
+    "end_none": {
+     "total": 0.0,
+     "time": 0.0,
+     "news": 0.0
+    }
+   }
   },
   {
    "date": "2026-10-14",
@@ -192,6 +218,24 @@
      "effect": "Re-assessed 01:40 ET: no model change. Republished Barclays (Dan Levy) note, already counted in the +1.5 pt bump at 22:30 ET; no new facts.",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "23:33",
+     "title": "SpaceX Could Be Worth $50 Trillion In 10 Years, Says Ron Baron: \u2018Elon Thinks I\u2019m Way Low\u2019 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWHhYdU42WUtUV2kxTGg0eTZDQkZoYXF2bmE5QmlWVzh1NEdhQXBva3hmR1pjWl9fd1hNTzVqZXJfMWdodVE3VzI2SFo5NElZY2dUOWx3a0JJdjhBbmxxUl9mXzluS3J3elNlWVVoU3FuSEZOMDBFczNPaTNqVzFTd2thTlUwZjBrRkwyNVhfVUtOaXNCVk5xYTJIbnBSMEt3LXlxV1JzTmEzN3UwWU41RnNmRV9KS0N1dnlfSVZ6QXF4M1FXZEsxeVF3?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "12:23",
+     "title": "Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week: IBM, PYPL, TSM, NOK, SPCX - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQd2R2bm5lWkQxZDMwX08zNVJ0VTJRVmNNWlk5M0dFZEZsSGNWYWZ6ZXNTaWR5eW5iajBRZkZqVC1kamhhaTdNbE9RRmVyemdxT0xySDQxYjFHdzVjYlNuN243NmJlQjZjV0RnWTNWd1FwUjdpTkE2ekVBQlRlYjRlUlJlSHZTZUVXbDljVWg0VXB2MmNfV1llLVh5eTJDOHM0ZEsyOGRwQXo5bFp3NXRPbWQ1YTNQaWZwOXJLV3hxTlJlTnVEU3RSS0taOWIyZmljVXAzMzh4bktvLW9ucW4zOGlhSlBBSms5YjhCUA?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {

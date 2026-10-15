@@ -13,7 +13,7 @@
    "market_time": "2026-10-14 16:00 ET"
   }
  },
- "prices_as_of": "2026-10-14 23:00 ET",
+ "prices_as_of": "2026-10-15 08:24 ET",
  "options": [
   {
    "expiry": "2026-10-14",
@@ -520,9 +520,8 @@
    }
   ]
  },
- "edgar_as_of": "2026-10-14 23:00 ET",
+ "edgar_as_of": "2026-10-15 08:24 ET",
  "errors": [
-  "2026-10-14 22:29 ET fetch_prices: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_prices: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_options: No module named 'yfinance'",
@@ -531,7 +530,8 @@
   "2026-10-14 22:45 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:51 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:56 ET fetch_options: No module named 'yfinance'",
-  "2026-10-14 23:00 ET fetch_options: No module named 'yfinance'"
+  "2026-10-14 23:00 ET fetch_options: No module named 'yfinance'",
+  "2026-10-15 08:24 ET fetch_options: No module named 'yfinance'"
  ],
  "shares": {
   "TSLA": {
@@ -543,7 +543,7 @@
   }
  },
  "fcc": {
-  "as_of": "2026-10-14 23:01 ET",
+  "as_of": "2026-10-15 08:24 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -560,11 +560,11 @@
   "note": "The SpaceX-Grain transfer application was filed Oct 8 and asks for expedited consent. Its ECFS/ULS docket number wasn't found yet; the earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-10-14 23:01 ET",
+  "as_of": "2026-10-15 08:24 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-14 23:01 ET",
+  "as_of": "2026-10-15 08:24 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -586,10 +586,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.24,
+    "yes": 0.225,
     "closed": false,
-    "volume": 233927.98382999995,
-    "volume_24h": 21965.832885999997,
+    "volume": 236387.34735399994,
+    "volume_24h": 24425.196409999993,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -597,26 +597,26 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.265,
     "closed": false,
-    "volume": 12984.973952999999,
-    "volume_24h": 3232.3768919999993,
+    "volume": 12986.973952999999,
+    "volume_24h": 3231.8768919999993,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
-    "yes": 0.295,
+    "yes": 0.325,
     "closed": false,
-    "volume": 14136.285638000001,
-    "volume_24h": 2653.558568,
+    "volume": 14914.373703000005,
+    "volume_24h": 3431.646633,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.44,
+    "yes": 0.45,
     "closed": false,
-    "volume": 29349.101646999996,
-    "volume_24h": 10.488572,
+    "volume": 29355.951648,
+    "volume_24h": 16.038573,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -624,8 +624,8 @@
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
     "yes": 0.625,
     "closed": false,
-    "volume": 39919.848135,
-    "volume_24h": 1028.784293,
+    "volume": 40004.943399,
+    "volume_24h": 1113.879557,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
