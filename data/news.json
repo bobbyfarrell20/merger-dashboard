@@ -14,6 +14,46 @@
      "effect": "Re-assessed 01:40 ET: no model change. Most of the move (16.5%->22.5%) came 15:45-18:43 ET Oct 14 with the Barclays note, already assessed; the rest (22.5%->26.5%) drifted up overnight on ~$300 of volume with no new filing, leak or report. Neighbors also firmed (Dec 31 20.5%->24%, Kalshi Feb 1 31.5%->35.5%) but Polymarket Feb 28 sits at 29.5%, so it reads as Barclays sentiment, not information.",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "01:57",
+     "title": "Analyst Sees TSLA-SPCX Merger Coming By December, but Prediction Markets Aren\u2019t Buying It",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNR2UySDNvUHVSQXl2NHNFVDJyZXUxY3lycXVLc2JrSVducEd5MlRRTHZWWDRPTWxFaGVmeEc5Y1lYUmhnbzBwTkFOV1J0dDRwalVTX0tHNWgzdVZ4S1NXR3lnb05ZRnktLVdxUGZlTEUxX01Fbk9xOGdMQ1VNSlAyb0w3WVpKT05iRGNnaHA5WDVXeWtweDdpeXlrMkVKWklEMHFZUVA4VWR5MWtUQmlpaFo4YlZURnplejE1cDJvdTRkNnhiYkprSldkbUVCQWNHV01lSnhiSQ?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "03:34",
+     "title": "Elon Musk Sees SpaceX Topping $100 Trillion In Under 10 Years \u2014 Retail Eyes Tesla Merger Reveal At Roadster Event",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORkdZdlo5ZXE4cXh1RWN0LTVUbTBoclZKaG9DRDVqdVMxMUpEZFlUV09BU0toVm0yRUxWODZsXzEyZmxoNzBjZXF4N0ZPMlZQczE4c3htenAwUXdTaUF2WkxnU01FMjVXOGFmRkU1S3JqWlpuUnBPNjg4aVBJR3k4bW1QTWRZX2VlSDl4U3hNMzlTRzlGVUZaWWNn?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:39",
+     "title": "Polymarket: announced by December 31, 2026: 14.5% -> 24.5% (+10.0 pts in 27.7h)",
+     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
+     "source": "Polymarket",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:39",
+     "title": "Kalshi: definitive agreement Before Jan 1, 2027: 12.0% -> 24.0% (+12.0 pts in 27.7h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ]
   },
