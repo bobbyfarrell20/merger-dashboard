@@ -74,9 +74,9 @@
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTGwta25FVlF4T0c3OTZtY2RrTkhib1U3Tjl6eDBDTWFQUXpvemt5c2lSOVU4T3loVTF6SDFvOFQ5ZEJPNGZIRmR6cENHSzJHa0ZuZ252OTFUNmxWQjhyd1piRGZzYVJiZXBnQ1RjQm5iLUhWT0IwaVFOUjB4VVZ1Z2RpOE5ZRG9tajdLdkdnZ25VVENZRUowbk1vcHMzZmtGbnc?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Re-assessed 20:20 ET: no model change. Yahoo Finance republish of the same Barclays (Dan Levy) note already assessed at 18:45 \u2014 possible announcement before a Dec 6 AGM, late Oct/early Nov slip would strain AGM approval. Still no committee, bankers, or filing.",
      "auto": true,
-     "watch": true
+     "url_alt": "https://investinglive.com/stocks/barclays-sees-possible-tesla-spacex-merger-announcement-before-december/"
     },
     {
      "time_et": "20:13",
@@ -84,9 +84,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 20:20 ET: no model change. Same Barclays-driven sentiment spike already assessed at 18:45 on adjacent expiries. vs 18:43 prints: Dec 16.0%\u219216.5%, Feb 30.5%\u219231.5%, Apr 38.5%\u219243.0%; Jan actually eased 35.5%\u219229.5%. No new filing or deal report; curve still noisy, so sentiment not information.",
+     "auto": true
     },
     {
      "time_et": "20:13",
@@ -94,9 +93,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 20:20 ET: no model change. Same Barclays-driven sentiment spike already assessed at 18:45 on adjacent expiries. vs 18:43 prints: Dec 16.0%\u219216.5%, Feb 30.5%\u219231.5%, Apr 38.5%\u219243.0%; Jan actually eased 35.5%\u219229.5%. No new filing or deal report; curve still noisy, so sentiment not information.",
+     "auto": true
     },
     {
      "time_et": "20:13",
@@ -104,9 +102,8 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
-     "auto": true,
-     "watch": true
+     "effect": "Re-assessed 20:20 ET: no model change. Same Barclays-driven sentiment spike already assessed at 18:45 on adjacent expiries. vs 18:43 prints: Dec 16.0%\u219216.5%, Feb 30.5%\u219231.5%, Apr 38.5%\u219243.0%; Jan actually eased 35.5%\u219229.5%. No new filing or deal report; curve still noisy, so sentiment not information.",
+     "auto": true
     }
    ],
    "split": {
