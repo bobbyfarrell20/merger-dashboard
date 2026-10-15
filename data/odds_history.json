@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-02-02",
+  "X": 0.275,
+  "backfill": true,
+  "marker": true,
+  "source": "Merger agreement (SpaceX S-1 Exhibit 2.1, closing Feb 2, 2026) / Reuters, Feb 2, 2026",
+  "events": [
+   {
+    "label": "SpaceX-xAI closes",
+    "title": "SpaceX-xAI combination closes (event marker, no level; drawn at the 27.5% starting level)",
+    "callout": false,
+    "delta": null,
+    "url": "https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/"
+   }
+  ]
+ },
+ {
   "date": "2026-06-12",
   "X": 0.275,
   "backfill": true,
@@ -37,20 +53,6 @@
     "label": "appropriate process",
     "title": "Q2 earnings call (Jul 22): Musk says a combination needs an appropriate process",
     "callout": true,
-    "delta": null
-   }
-  ]
- },
- {
-  "date": "2026-08-14",
-  "X": 0.4,
-  "backfill": true,
-  "source": "Estimated backfill (Grok/Bobby), not model output",
-  "events": [
-   {
-    "label": null,
-    "title": "SpaceX acquisition close (Aug 14). Note: the SpaceX-xAI combination actually closed Feb 2, 2026; the August close that is verifiable is SpaceX's Cursor acquisition (8-K, Aug 14). Date/event to confirm with Bobby.",
-    "callout": false,
     "delta": null
    }
   ]
