@@ -93,6 +93,24 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:33",
+     "title": "Tesla-SpaceX Merger could be announced before December, Barclays says - Investing.com",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZEpzQ3dmYUJhdFZsbnZZaF9JV2QteXVrQ0thSmNkZnpLcUxtZXBCZTFvLTFxdi1pM2dIS2JDdGxYSzRxOWRoU3lJbGl6cTU3Y1VvdkNnbkdDcnM2NHhVUTBzR2hrUlhobmNaZHVmTHZnRTdRMGxmNDBPaUZ4ME1BY3lvelRwLVRRdUxYb0NvU3gza2lFTmNVeGRZUk5pdGFYNlJ1VGk5Y1lwc2lDS01sSzhQTGdyRDNCemp4dmtqY0NxZw?oc=5",
+     "source": "Investing.com",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "06:00",
+     "title": "Tesla is set to end the long wait for the next-gen Roadster (TSLA:NASDAQ) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT01zSURyRGRnRk41dHpITHpGaEZQMXV5Wk15VllUbHFVejJlSGhsSXkzUTNwWXBFTzEwaVRFeDNoeW1qdmRTZmYxc1RGdS02aTA0M0Q1RjJSZDdmNEg4MFpwUnpNUW9EWnZPVUowalRQaVBiUU1YbHk4MlE2Zm1Pd1B0WjF3XzZ5YVlMYUdmYWIzMHJUYVVyRHBWcFZQUQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
@@ -264,6 +282,15 @@
      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQd2R2bm5lWkQxZDMwX08zNVJ0VTJRVmNNWlk5M0dFZEZsSGNWYWZ6ZXNTaWR5eW5iajBRZkZqVC1kamhhaTdNbE9RRmVyemdxT0xySDQxYjFHdzVjYlNuN243NmJlQjZjV0RnWTNWd1FwUjdpTkE2ekVBQlRlYjRlUlJlSHZTZUVXbDljVWg0VXB2MmNfV1llLVh5eTJDOHM0ZEsyOGRwQXo5bFp3NXRPbWQ1YTNQaWZwOXJLV3hxTlJlTnVEU3RSS0taOWIyZmljVXAzMzh4bktvLW9ucW4zOGlhSlBBSms5YjhCUA?oc=5",
      "source": "Stocktwits",
      "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "12:08",
+     "title": "TSLA Stock Rises Overnight: Tesla\u2019s Long-Delayed Roadster Event Is Back On \u2014 Musk Teases \u2018Timing Is Everything\u2019 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOblRHc05SRmg5VG51Yi1CYktPelczMDg5YTcyNDZSMW9rSUNPUjVXUE5Ba0s5c19CcDJFUXpUUXZjVWhSalI4Vk9IOC1XaVZrNkNoUFkxX1V4RGdkQ3REOWg3bFpGdVZiY1BsTkRUSHpGMGsyWFJwTWN4amxtc1lMQnQwRVJaVUxQWVFNSEVUQXBXNThyUmZ0eHVLd1JVSTBubmxTWTVZOXFWY2dhM1hybjNvbWcxZW5GWGREZmc5OXQ3N1hqQzM2djgwdmZJdw?oc=5",
+     "source": "Stocktwits",
+     "factor": "calendar",
      "effect": "auto-tagged; review",
      "auto": true
     }
