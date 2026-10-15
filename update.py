@@ -131,11 +131,21 @@ def events_state(cfg):
     gr = dict(cfg["grain"]); gr.update({k: v for k, v in ev.get("grain", {}).items() if v is not None})
     return st, gr
 
+def day_close_min(cfg, d):
+    """Minutes after midnight ET when day d closes: 8 PM, or later if a scheduled event runs past it (event_end_et, default start + 2.5h)."""
+    ro = cfg.get("rolloff", {}); hm = lambda t: int(t.split(":")[0]) * 60 + int(t.split(":")[1])
+    close = hm(ro.get("day_close_et", "20:00"))
+    for b in cfg.get("blackouts", []) + cfg.get("post_event_boost", []):
+        if b.get("date") == str(d) and (b.get("event_end_et") or b.get("event_start_et")):
+            end = hm(b["event_end_et"]) if b.get("event_end_et") else hm(b["event_start_et"]) + int(60 * ro.get("event_default_hours", 2.5))
+            close = max(close, end)
+    return close
+
 def compute(cfg, today, force_no_merger=False):
     """Anchor-calibrated daily model. Cumulative 'either' hits timing_anchors; each day's mass splits A/B by a_share."""
     start0 = P(cfg["window"]["start"]); end = P(cfg["window"]["end"])
-    _n = dt.datetime.now(ET)   # dead-day rolloff: after 8 PM ET with no filing, today is closed too
-    start = max(start0, today + dt.timedelta(days=1) if (today == _n.date() and _n.hour >= 20) else today)
+    _n = dt.datetime.now(ET)   # dead-day rolloff: today closes at 8 PM ET, or at a scheduled event's end if later
+    start = max(start0, today + dt.timedelta(days=1) if (today == _n.date() and _n.hour * 60 + _n.minute >= day_close_min(cfg, today)) else today)
     lp, la = logit(cfg["p_any_by_end"]["base"]), logit(cfg["a_share"]["base"])
     for s in cfg["signals"]:
         if s["active"]:
@@ -405,6 +415,7 @@ def make_why(cfg, m, br, today, state):
                f"because the quiet-hold path ({next((r['p'] for r in br if r['id']=='quiet_hold'), 0):.0%}) wouldn't leak.")
     out.append(f"Deadlines force some announcement ({m['p_end']:.0%} by Dec 14): the e-proxy cutoff is ~Oct 27 and the last Texas 10-day notice is Nov 26. "
                f"By Dec 14: {T['A']:.0%} meeting with a merger, {T['B']:.0%} routine, {T['none']:.0%} nothing, so {sh:.0%} of announcements come with a merger.")
+    out.append("Dead days roll off: a day with no filing closes at 8 PM ET and its odds move to the remaining open days. On a scheduled Tesla/SpaceX event day (e.g. Roadster, Oct 15, 8:55 PM ET) the day stays open until the event ends (default start + 2.5h), since an on-stage or X statement that night with an 8-K next morning counts as that day; after that the residual rolls to the next open morning.")
     out.append("Mondays are likeliest, then Tuesdays. Merger news should avoid SpaceX unlock days, Starship launch plus the day after, and the Oct 15-22 Roadster/earnings stretch, Oct 16 included.")
     LT = m.get("later", {})
     if LT.get("on"):

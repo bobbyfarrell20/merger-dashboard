@@ -134,7 +134,10 @@
    "date": "2026-10-15",
    "mult": 0.3,
    "applies": "both",
-   "label": "Roadster demo (evening)"
+   "label": "Roadster demo (evening)",
+   "event_start_et": "20:55",
+   "event_end_et": "23:25",
+   "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)"
   },
   {
    "date": "2026-10-16",
@@ -146,7 +149,10 @@
    "date": "2026-10-21",
    "mult": 0.3,
    "applies": "both",
-   "label": "Q3 earnings after the close"
+   "label": "Q3 earnings after the close",
+   "event_start_et": "17:30",
+   "event_end_et": "19:00",
+   "_event_note": "Q3 call 5:30 PM ET; 8 PM close still applies"
   },
   {
    "date": "2026-10-22",
@@ -595,5 +601,10 @@
   "activate_on": "2026-10-27",
   "shift_share": 0.15,
   "_why": "If no Tesla/SpaceX merger-related filing (statecheck state 'letter') exists by the close of Oct 26, 15% of the remaining meeting+merger weight moves to the 'letter later / special meeting (2027)' path. Auto-activates on the first run on/after Oct 27; armed before then."
+ },
+ "rolloff": {
+  "day_close_et": "20:00",
+  "event_default_hours": 2.5,
+  "_why": "A day closes at 8 PM ET with no filing; its odds roll to the remaining open days (model conditions on no announcement so far). On a scheduled Tesla/SpaceX event day the day stays open until event_end_et (default start + 2.5h); an on-stage or X statement that night with an 8-K the next morning counts as that event day's announcement. After the event ends, the residual rolls to the next open morning."
  }
 }

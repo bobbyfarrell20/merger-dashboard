@@ -57,7 +57,9 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
  document.getElementById('stamp').textContent=`Updated ${M.generated}`+(M.prev_as_of?` · changes vs ${M.prev_as_of}`:'');
  {// client-side dead-day rolloff: a day is closed after 8 PM ET (or once past); its odds go to the remaining open days
   const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),pad=x=>String(x).padStart(2,'0');
-  const tdy=`${n.getFullYear()}-${pad(n.getMonth()+1)}-${pad(n.getDate())}`,late=n.getHours()>=20;
+  const tdy=`${n.getFullYear()}-${pad(n.getMonth()+1)}-${pad(n.getDate())}`,hm=t=>+t.split(':')[0]*60+ +t.split(':')[1],RO=(C&&C.rolloff)||{};
+  let cl=hm(RO.day_close_et||'20:00');((C&&C.blackouts)||[]).concat((C&&C.post_event_boost)||[]).forEach(b=>{if(b.date===tdy&&(b.event_end_et||b.event_start_et))cl=Math.max(cl,b.event_end_et?hm(b.event_end_et):hm(b.event_start_et)+60*(RO.event_default_hours||2.5));});
+  const late=n.getHours()*60+n.getMinutes()>=cl;
   const isClosed=d=>d&&(d<tdy||(d===tdy&&late));let gA=0,gB=0;
   M.weeks.forEach(w=>{const sun=new Date(w.monday+'T12:00');sun.setDate(sun.getDate()+6);const su=sun.toISOString().slice(0,10);
    Object.entries(w.days).forEach(([k,v])=>{const c=k==='Wknd'?(su<tdy||(su===tdy&&late)):(v.date?isClosed(v.date):(w.first_day>w.monday&&k!=='Wknd'));

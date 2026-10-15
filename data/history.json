@@ -415,7 +415,7 @@
  {
   "v": 2,
   "date": "2026-10-14",
-  "as_of": "2026-10-14 22:36 ET",
+  "as_of": "2026-10-14 22:37 ET",
   "metrics": {
    "end_A": 0.28778445521089085,
    "end_B": 0.6613709929116128,
@@ -586,7 +586,10 @@
      "date": "2026-10-15",
      "mult": 0.3,
      "applies": "both",
-     "label": "Roadster demo (evening)"
+     "label": "Roadster demo (evening)",
+     "event_start_et": "20:55",
+     "event_end_et": "23:25",
+     "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)"
     },
     {
      "date": "2026-10-16",
@@ -598,7 +601,10 @@
      "date": "2026-10-21",
      "mult": 0.3,
      "applies": "both",
-     "label": "Q3 earnings after the close"
+     "label": "Q3 earnings after the close",
+     "event_start_et": "17:30",
+     "event_end_et": "19:00",
+     "_event_note": "Q3 call 5:30 PM ET; 8 PM close still applies"
     },
     {
      "date": "2026-10-22",
