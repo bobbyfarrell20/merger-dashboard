@@ -67,6 +67,46 @@
      "factor": "markets",
      "effect": "Re-assessed 18:45 ET: no model change. The jump came between 15:45 and 18:43 ET, right after the Barclays note hit (Bloomberg, TheFly, Seeking Alpha); no filing or deal report behind it. Kalshi's curve is inconsistent (Jan 1 35.5% vs Feb 1 30.5%), so it reads as sentiment, not information.",
      "auto": true
+    },
+    {
+     "time_et": "19:47",
+     "title": "Tesla-SpaceX Merger Could Be Announced As Early As Before December AGM, Says Barclays",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTGwta25FVlF4T0c3OTZtY2RrTkhib1U3Tjl6eDBDTWFQUXpvemt5c2lSOVU4T3loVTF6SDFvOFQ5ZEJPNGZIRmR6cENHSzJHa0ZuZ252OTFUNmxWQjhyd1piRGZzYVJiZXBnQ1RjQm5iLUhWT0IwaVFOUjB4VVZ1Z2RpOE5ZRG9tajdLdkdnZ25VVENZRUowbk1vcHMzZmtGbnc?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "20:13",
+     "title": "Kalshi: definitive agreement Before Apr 1, 2027: 30.0% -> 43.0% (+13.0 pts in 22.6h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "20:13",
+     "title": "Kalshi: definitive agreement Before Feb 1, 2027: 21.5% -> 31.5% (+10.0 pts in 22.6h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "20:13",
+     "title": "Kalshi: definitive agreement Before Dec 1, 2026: 6.5% -> 16.5% (+10.0 pts in 22.6h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
@@ -118,7 +158,7 @@
     },
     {
      "time_et": "02:12",
-     "title": "Ex-Tesla President Says Roadster Reveal Is A ‘Not-So-Hidden Attempt’ To Knit Tesla And SpaceX Together - Stocktwits",
+     "title": "Ex-Tesla President Says Roadster Reveal Is A \u2018Not-So-Hidden Attempt\u2019 To Knit Tesla And SpaceX Together - Stocktwits",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZVBLdE9PV1ZtdWhZOGQ1R3NBNmNVcFhITkFkNl8xZFJpSHJycHgtOGEwOVRqdTluOGhwT25zaXhuZHI0LXNvM2xnbk1tVW5LNi11N3dtbHlNTDlFTk1zZWlSaFpfbEthMWpIdTQyY3BhVkozNnhtdXpMcmxSdmsyeTJSQ1hQMlZlcUQzZURHNDFXOEpDUldkelFrYzE0aWpYcFpXWk5ET0dqRDQ5THQtLWc1VS1zZUM1Ymo3Z1dCclI0UnZk?oc=5",
      "source": "Stocktwits",
      "factor": "calendar",
@@ -127,7 +167,7 @@
     },
     {
      "time_et": "15:17",
-     "title": "Cipher Digital’s $850M Convertible Note, Goldman Sachs SpaceX Price Target, AMD’s Fermi Backstop",
+     "title": "Cipher Digital\u2019s $850M Convertible Note, Goldman Sachs SpaceX Price Target, AMD\u2019s Fermi Backstop",
      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc3NMYmE0Z2NRb1g3OGlfdG0yVEJtY1BraVNOUkNVcE5nNHZoWU5Dc0xPTHZpeHl0bEFCVXZrek5xb3Z5bHAyZXdqZnBEMXBKTXNwdVFzeEVqTkV1YS1YQ0JrVllFN1U2eHRWb1k3REg4bkdjY0hkeEtaUzFKeHJLMXRfc0VZMnk2N2J3?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
@@ -143,7 +183,7 @@
    "items": [
     {
      "time_et": "16:11",
-     "title": "SpaceX May Be Eyeing US Mobile Market – Even As Musk Says ‘Star’ Branding Has Gone Too Far - Stocktwits",
+     "title": "SpaceX May Be Eyeing US Mobile Market \u2013 Even As Musk Says \u2018Star\u2019 Branding Has Gone Too Far - Stocktwits",
      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObjBmVFJrM0hBanpuVkp6MzNDN3RnMWxMN1Y2cFhLX1lCdFZJaF9TVEctbGZ6OWNoVnlCWlYzMUpwcnBucXROMEdmQm15NWNpWGhyUldVWVZTWkI3OE4tUUszZjdZMVZEazlRQnoyTmlCc0pQR3Z1SGJEbWhVdDE4WW9ONE9UUDZuWjJFWEF3Z195eUpuV1lEanBzX3ZCcnBRbE9lblU0QUx4dw?oc=5",
      "source": "Stocktwits",
      "factor": "prices",
