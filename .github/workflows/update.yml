@@ -22,7 +22,10 @@ jobs:
         run: |
           H=$(TZ=America/New_York date +%H)
           echo "NY hour: $H (event: ${{ github.event_name }})"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$H" = "08" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+          # GitHub often delays crons by hours; accept a late start (08-13 NY) unless today's morning run already landed
+          DONE=$(curl -s "https://raw.githubusercontent.com/${{ github.repository }}/main/data/model.json" | python3 -c "import json,sys;print(json.load(sys.stdin).get('morning_run',''))" 2>/dev/null)
+          TODAY=$(TZ=America/New_York date +%F); echo "last morning run: $DONE"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ "$((10#$H))" -ge 8 ] && [ "$((10#$H))" -le 13 ] && [ "$DONE" != "$TODAY" ]; }; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v4
         if: steps.gate.outputs.go == 'true'
       - uses: actions/setup-python@v5
@@ -37,7 +40,7 @@ jobs:
         if: steps.gate.outputs.go == 'true'
         env:
           TZ: America/New_York
-        run: python update.py
+        run: python update.py --morning
       - name: Commit data changes
         if: steps.gate.outputs.go == 'true'
         run: |

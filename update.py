@@ -25,16 +25,19 @@ def now_et():
 
 # ---------------- live fetchers ----------------
 def fetch_prices(live):
-    import yfinance as yf
+    """Yahoo chart meta: regularMarketPrice + regularMarketTime (intraday during market hours), previous close."""
+    import requests
     out = {}
     for t in ["TSLA", "SPCX"]:
-        tk = yf.Ticker(t); fi = tk.fast_info
-        h = tk.history(period="5d").dropna(subset=["Close"])
-        last, prevc = fi.get("lastPrice"), fi.get("previousClose")
-        if last and last == last:
-            out[t] = {"close": round(float(last), 2), "prev": round(float(prevc), 2), "date": str(dt.datetime.now(ET).date()) + " (last)"}
-        else:
-            out[t] = {"close": round(float(h["Close"].iloc[-1]), 2), "prev": round(float(h["Close"].iloc[-2]), 2), "date": str(h.index[-1].date())}
+        r = requests.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?interval=1d&range=5d", headers={"User-Agent": "Mozilla/5.0"}, timeout=15).json()
+        mt = r["chart"]["result"][0]["meta"]
+        ts = dt.datetime.fromtimestamp(mt["regularMarketTime"], ET)
+        prev = mt.get("previousClose") or mt.get("chartPreviousClose")
+        if ts.date() < dt.datetime.now(ET).date() or not (ts.hour < 16):
+            closes = [c for c in r["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+            prev = closes[-2] if len(closes) > 1 else prev
+        out[t] = {"close": round(float(mt["regularMarketPrice"]), 2), "prev": round(float(prev), 2),
+                  "date": ts.strftime("%Y-%m-%d %H:%M ET"), "market_time": ts.strftime("%Y-%m-%d %H:%M ET")}
     live["prices"] = out; live["prices_as_of"] = now_et()
 
 def fetch_options(live):
@@ -130,7 +133,9 @@ def events_state(cfg):
 
 def compute(cfg, today, force_no_merger=False):
     """Anchor-calibrated daily model. Cumulative 'either' hits timing_anchors; each day's mass splits A/B by a_share."""
-    start0 = P(cfg["window"]["start"]); start = max(start0, today); end = P(cfg["window"]["end"])
+    start0 = P(cfg["window"]["start"]); end = P(cfg["window"]["end"])
+    _n = dt.datetime.now(ET)   # dead-day rolloff: after 8 PM ET with no filing, today is closed too
+    start = max(start0, today + dt.timedelta(days=1) if (today == _n.date() and _n.hour >= 20) else today)
     lp, la = logit(cfg["p_any_by_end"]["base"]), logit(cfg["a_share"]["base"])
     for s in cfg["signals"]:
         if s["active"]:
@@ -377,7 +382,7 @@ def deal_math(cfg, live):
             "parity_note": f"1:1 market-cap parity works out to about ${par['tsla_price']:.0f} per TSLA at current prices ({par['premium']:+.0%}), which clears the ${g['vote_floor']} floor.",
             "collar_note": g["collar_note"], "reverse_note": g["reverse_note"],
             "spcx_shares_src": live.get("shares", {}).get("SPCX", {}).get("src", "config (10-Q cover + Cursor shares)"),
-            "prices_as_of": pr.get("as_of") or live.get("prices_as_of")}
+            "prices_as_of": (f"last trade {pr['TSLA']['market_time']}, fetched {live.get('prices_as_of')}" if pr.get("TSLA", {}).get("market_time") else live.get("prices_as_of"))}
 
 def blank_reasons(cfg, today):
     b = cfg["blank_reasons"]; wk = max(0, (today - P(b["ref_date"])).days // 7)
@@ -496,7 +501,7 @@ def main():
         for f in fl:
             if f["watch"] and f["date"] >= str(today - dt.timedelta(days=1)):
                 alerts.append({"type": "filing", "text": f"{co} filed {f['form']} on {f['date']}", "url": f["url"]})
-    model = {"generated": now_et(), "today": str(today), "window": cfg["window"], "weeks": m["weeks"], "best_week": m["best_week"],
+    model = {"morning_run": (str(today) if "--morning" in sys.argv else load("model.json", {}).get("morning_run")), "generated": now_et(), "today": str(today), "window": cfg["window"], "weeks": m["weeks"], "best_week": m["best_week"],
              "totals": m["totals"], "p_end": m["p_end"], "a_share": m["a_share"], "split": split, "drivers": drivers, "alerts": alerts,
              "prev_as_of": prev["as_of"] if prev else None,
              "state": state, "deal_math": dm, "blank_reasons": br, "leak_logodds": m["leak_logodds"], "weeks_blank": m["weeks_blank"],

@@ -21,7 +21,7 @@ a{color:var(--B)}details summary{cursor:pointer;color:var(--m)}table{width:100%;
 .dc .col{height:46px;display:flex;flex-direction:column-reverse;align-items:center}.dc .col i{display:block;width:60%;max-width:26px}
 .dc .pv{font-size:12px;font-weight:700}.dc .dl{font-size:10px;color:var(--m)}.dc.mon .dl,.dc.tue .dl{color:var(--g);font-weight:700}
 .pill{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 16px;border-radius:999px;border:2px solid #58a6ff;background:#0d1117;color:#e6edf3;font-size:16px;cursor:pointer;margin-bottom:4px}.pill .k{width:36px;height:20px;border-radius:10px;background:#30363d;position:relative;flex:none}.pill .k:after{content:'';position:absolute;left:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#8b949e;transition:left .15s}.pill.on{border-color:#f0883e}.pill.on .k{background:#f0883e}.pill.on .k:after{left:18px;background:#fff}
-</style></head><body><main>
+.dc.closed{opacity:.3;filter:grayscale(1)}.dc.closed .pv{color:var(--m)}</style></head><body><main>
 <header><h1>Will Tesla announce its 2026 meeting, and will it come with a merger?</h1><div class="sub" id="stamp"></div></header>
 
 <section class="card" id="statebox" style="display:none"></section>
@@ -55,6 +55,19 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
   sb.innerHTML=ST.state==='meeting_only'?`<h2>State: meeting date set, no merger</h2><p>A routine meeting filing came out (${ev.form||''} ${ev.date||''}, <a href="${ev.url}">filing</a>). That closes the merger path for the 2026 regular meeting. Any SpaceX letter now points to a 2027 special meeting.</p>${M.kill?`<p style="font-size:18px">Letter odds by ${fmtD(M.kill.letter_by)} '27: <b class="A">${pct(M.kill.p_letter)}</b></p><p class="sub">${M.kill.why}</p>`:''}`
   :`<h2 style="color:#f0883e">State: merger letter or process disclosed</h2><p>${ev.co||''} ${ev.form||''} ${ev.date||''} (<a href="${ev.url}">filing</a>). This page now tracks close timing (months, not weeks):</p><table>${C.close_timing.steps.map(x=>`<tr><td>${x.step}</td><td>${x.weeks[0]}–${x.weeks[1]} wks</td></tr>`).join('')}</table>`;}
  document.getElementById('stamp').textContent=`Updated ${M.generated}`+(M.prev_as_of?` · changes vs ${M.prev_as_of}`:'');
+ {// client-side dead-day rolloff: a day is closed after 8 PM ET (or once past); its odds go to the remaining open days
+  const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),pad=x=>String(x).padStart(2,'0');
+  const tdy=`${n.getFullYear()}-${pad(n.getMonth()+1)}-${pad(n.getDate())}`,late=n.getHours()>=20;
+  const isClosed=d=>d&&(d<tdy||(d===tdy&&late));let gA=0,gB=0;
+  M.weeks.forEach(w=>{const sun=new Date(w.monday+'T12:00');sun.setDate(sun.getDate()+6);const su=sun.toISOString().slice(0,10);
+   Object.entries(w.days).forEach(([k,v])=>{const c=k==='Wknd'?(su<tdy||(su===tdy&&late)):(v.date?isClosed(v.date):(w.first_day>w.monday&&k!=='Wknd'));
+    if(c){v.closed=true;gA+=v.A||0;gB+=v.B||0;v.A=v.B=v.either=0;}});});
+  const g=gA+gB;
+  if(g>1e-6){const sc=1/(1-g);let cA=0,cB=0;M.weeks=M.weeks.filter(w=>Object.values(w.days).some(v=>!v.closed));
+   M.weeks.forEach(w=>{w.A=w.B=0;Object.values(w.days).forEach(v=>{v.A*=sc;v.B*=sc;v.either=v.A+v.B;w.A+=v.A;w.B+=v.B});w.either=w.A+w.B;cA+=w.A;cB+=w.B;w.cumA=cA;w.cumB=cB;w.cum=cA+cB;w.none=1-cA-cB;});
+   if(M.headline){const H=M.headline;H.A=(H.A-gA)*sc;H.B*=sc;H.C=(H.C-gB)*sc;H.X=H.A+H.B;H.D=1-H.X-H.C-(H.slip||0);}
+   M.totals={A:cA,B:cB,none:1-cA-cB};M.rolled=g;}
+  if(M.weeks.length&&!M.weeks.some(w=>w.monday===M.best_week))M.best_week=M.weeks.reduce((a,b)=>b.either>a.either?b:a).monday;}
  const T=M.totals;
 
  {const KILL=ST.state==='meeting_only';const H=M.headline||{X:T.A,A:T.A,B:0,C:T.B,D:T.none},r=(l,v,c,ind,big)=>`<div style="display:flex;justify-content:space-between;gap:10px;padding:${ind?'3px 0 3px 18px':'7px 0'};${ind?'font-size:13px;color:var(--m)':'font-size:16px'}"><span>${l}</span><b class="${c}" style="font-size:${big?'26px':ind?'15px':'22px'};white-space:nowrap">${p1(v)}</b></div>`;
@@ -65,7 +78,7 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
  document.getElementById('chg').innerHTML=S.end_A?`Since yesterday: merger ${f(S.end_A.total)} (news ${f(S.end_A.news)}, time ${f(S.end_A.time)}) · routine ${f(S.end_B.total)} (news ${f(S.end_B.news)}, time ${f(S.end_B.time)}) · nothing ${f(S.end_none.total)}`:'Change since yesterday shows from the next daily update.';
  const maxDay=Math.max(...M.weeks.flatMap(w=>Object.values(w.days).map(v=>v.either)));
  const dayRow=w=>'<div class="days">'+['Mon','Tue','Wed','Thu','Fri','Wknd'].map(k=>{const v=w.days[k],h=v.either/maxDay*44,hot=k==='Mon'?'mon':k==='Tue'?'tue':'';
-   return `<div class="dc ${hot}" title="${k}: either ${p1(v.either)}, merger ${p1(v.A)}, routine ${p1(v.B)}"><div class="col"><i style="height:${v.either?h*(v.B/v.either):0}px;background:var(--B)"></i><i style="height:${v.either?h*(v.A/v.either):0}px;background:var(--A)"></i></div><div class="pv">${v.either>=0.0005?p1(v.either):'–'}</div><div class="dl">${k==='Wknd'?'Wkd':k}</div></div>`}).join('')+'</div>';
+   return `<div class="dc ${hot} ${v.closed||(!v.date&&k!=='Wknd')?'closed':''}" title="${k}: either ${p1(v.either)}, merger ${p1(v.A)}, routine ${p1(v.B)}"><div class="col"><i style="height:${v.either?h*(v.B/v.either):0}px;background:var(--B)"></i><i style="height:${v.either?h*(v.A/v.either):0}px;background:var(--A)"></i></div><div class="pv">${v.closed?'closed':v.either>=0.0005?p1(v.either):'–'}</div><div class="dl">${k==='Wknd'?'Wkd':k}</div></div>`}).join('')+'</div>';
  document.getElementById('weeks').innerHTML=M.weeks.filter(w=>w.either>0.003).map(w=>{const best=w.monday===M.best_week,first=w.first_day!==w.monday;
   return `<div class="wk ${best?'best':''}"><div class="d">${first?'This week ('+fmtD(w.first_day)+'–'+fmtD(w.friday)+')':'Week of '+fmtD(w.monday)}${best?'<span class="tag">BEST WEEK</span>':''}</div><div class="e">${pct(w.either)}</div>
   <div class="row"><span class="A">merger <b>${p1(w.A)}</b></span> · <span class="B">routine <b>${p1(w.B)}</b></span></div>
