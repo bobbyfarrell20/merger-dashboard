@@ -37,9 +37,11 @@
   "events": [
    {
     "label": null,
-    "title": "Musk/Shotwell overlap comments (All-In/CNBC), first public non-denial",
+    "title": "Shotwell: synergies, Elon life easier (first public non-denial)",
     "callout": false,
-    "delta": null
+    "delta": null,
+    "source": "Sawyer Merritt on X, Jun 12",
+    "url": "https://x.com/SawyerMerritt/status/2065403324912763296"
    }
   ]
  },
@@ -54,6 +56,23 @@
     "title": "Q2 earnings call (Jul 22): Musk says a combination needs an appropriate process",
     "callout": true,
     "delta": null
+   }
+  ]
+ },
+ {
+  "date": "2026-09-14",
+  "X": 0.42,
+  "backfill": true,
+  "marker": true,
+  "source": "Estimated backfill, not model output",
+  "events": [
+   {
+    "label": "Musk at All-In",
+    "title": "Musk at All-In: who can imagine\u2026 (non-denial)",
+    "callout": false,
+    "delta": null,
+    "source": "Sawyer Merritt on X, Sep 14",
+    "url": "https://x.com/SawyerMerritt/status/2099666896261910662"
    }
   ]
  },
