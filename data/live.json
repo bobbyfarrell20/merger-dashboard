@@ -1,19 +1,19 @@
 {
  "prices": {
   "TSLA": {
-   "close": 363.21,
+   "close": 363.25,
    "prev": 375.0,
-   "date": "2026-10-15 15:25 ET",
-   "market_time": "2026-10-15 15:25 ET"
+   "date": "2026-10-15 15:26 ET",
+   "market_time": "2026-10-15 15:26 ET"
   },
   "SPCX": {
-   "close": 148.62,
+   "close": 148.92,
    "prev": 160.57,
-   "date": "2026-10-15 15:25 ET",
-   "market_time": "2026-10-15 15:25 ET"
+   "date": "2026-10-15 15:26 ET",
+   "market_time": "2026-10-15 15:26 ET"
   }
  },
- "prices_as_of": "2026-10-15 15:25 ET",
+ "prices_as_of": "2026-10-15 15:26 ET",
  "options": [
   {
    "expiry": "2026-10-16",
@@ -527,9 +527,8 @@
    }
   ]
  },
- "edgar_as_of": "2026-10-15 15:25 ET",
+ "edgar_as_of": "2026-10-15 15:26 ET",
  "errors": [
-  "2026-10-14 22:29 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_prices: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:36 ET fetch_options: No module named 'yfinance'",
@@ -538,7 +537,8 @@
   "2026-10-14 22:51 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:56 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 23:00 ET fetch_options: No module named 'yfinance'",
-  "2026-10-15 08:24 ET fetch_options: No module named 'yfinance'"
+  "2026-10-15 08:24 ET fetch_options: No module named 'yfinance'",
+  "2026-10-15 15:26 ET fetch_options: No module named 'yfinance'"
  ],
  "shares": {
   "TSLA": {
@@ -550,7 +550,7 @@
   }
  },
  "fcc": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -567,11 +567,11 @@
   "note": "The SpaceX-Grain transfer application was filed Oct 8 and asks for expedited consent. Its ECFS/ULS docket number wasn't found yet; the earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",

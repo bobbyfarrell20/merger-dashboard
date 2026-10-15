@@ -1,6 +1,6 @@
 {
  "morning_run": "2026-10-15",
- "generated": "2026-10-15 15:25 ET",
+ "generated": "2026-10-15 15:26 ET",
  "today": "2026-10-15",
  "window": {
   "start": "2026-10-14",
@@ -754,82 +754,82 @@
  },
  "deal_math": {
   "gap": {
-   "implied_ratio": 2.443883730318934,
+   "implied_ratio": 2.4392291163040563,
    "parity_ratio": 3.4365511464982816,
-   "parity_price": 510.74023139257463,
-   "parity_premium": 0.40618438752395214,
-   "cap_gap": 582677640932.76,
-   "ratio_gap": 0.9926674161793478
+   "parity_price": 511.7711967365241,
+   "parity_premium": 0.4088677129704723,
+   "cap_gap": 586591505524.4998,
+   "ratio_gap": 0.9973220301942254
   },
-  "tsla_price": 363.21,
-  "spcx_price": 148.62,
+  "tsla_price": 363.25,
+  "spcx_price": 148.92,
   "tsla_shares": 3949547394,
   "spcx_shares": 13572821625,
-  "tsla_cap": 1434515108974.74,
-  "spcx_cap": 2017192749907.5,
+  "tsla_cap": 1434673090870.5,
+  "spcx_cap": 2021264596394.9998,
   "musk_votes_now": 0.8426779107419812,
   "cases": [
    {
     "label": "At market (0%)",
-    "ratio": 2.443883730318934,
-    "tsla_price": 363.21,
+    "ratio": 2.4392291163040563,
+    "tsla_price": 363.25,
     "premium": 0.0,
-    "new_spcx_shares": 9652234618.320145,
-    "tesla_holders_pct": 0.4155957478508266,
-    "musk_votes_spacex_survives": 0.7541858552874606,
-    "musk_votes_tesla_survives": 0.33490734184116794,
+    "new_spcx_shares": 9633850999.667608,
+    "tesla_holders_pct": 0.41513280061646035,
+    "musk_votes_spacex_survives": 0.754332024530746,
+    "musk_votes_tesla_survives": 0.3350323287328846,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "20% premium",
-    "ratio": 2.9326604763827206,
-    "tsla_price": 435.852,
-    "premium": 0.19999999999999996,
-    "new_spcx_shares": 11582681541.984173,
-    "tesla_holders_pct": 0.460443246358359,
-    "musk_votes_spacex_survives": 0.7392381371252147,
-    "musk_votes_tesla_survives": 0.32279937569811173,
+    "ratio": 2.9270749395648674,
+    "tsla_price": 435.90000000000003,
+    "premium": 0.20000000000000018,
+    "new_spcx_shares": 11560621199.60113,
+    "tesla_holders_pct": 0.45996966194720273,
+    "musk_votes_spacex_survives": 0.7394045779626109,
+    "musk_votes_tesla_survives": 0.32292723442394894,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "30% premium",
-    "ratio": 3.177048849414614,
-    "tsla_price": 472.17299999999994,
-    "premium": 0.2999999999999998,
-    "new_spcx_shares": 12547905003.816187,
-    "tesla_holders_pct": 0.48038116175426127,
-    "musk_votes_spacex_survives": 0.7320509624108389,
-    "musk_votes_tesla_survives": 0.3174165201853086,
+    "ratio": 3.170997851195273,
+    "tsla_price": 472.225,
+    "premium": 0.30000000000000004,
+    "new_spcx_shares": 12524006299.567892,
+    "tesla_holders_pct": 0.47990531016904275,
+    "musk_votes_spacex_survives": 0.7322266954674834,
+    "musk_votes_tesla_survives": 0.31754499100474526,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$450/TSLA",
-    "ratio": 3.0278562777553493,
+    "ratio": 3.0217566478646254,
     "tsla_price": 450.0,
-    "premium": 0.23895267200792936,
-    "new_spcx_shares": 11958661871.21518,
-    "tesla_holders_pct": 0.46838883737358805,
-    "musk_votes_spacex_survives": 0.7364165161779344,
-    "musk_votes_tesla_survives": 0.32065421821551976,
+    "premium": 0.2388162422573985,
+    "new_spcx_shares": 11934571093.875906,
+    "tesla_holders_pct": 0.4678867505358209,
+    "musk_votes_spacex_survives": 0.7365964606654546,
+    "musk_votes_tesla_survives": 0.3207897720509592,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$500/TSLA",
-    "ratio": 3.364284753061499,
+    "ratio": 3.3575073865162506,
     "tsla_price": 500.0,
-    "premium": 0.37661408000881047,
-    "new_spcx_shares": 13287402079.127977,
-    "tesla_holders_pct": 0.49468694771465815,
-    "musk_votes_spacex_survives": 0.726667713829528,
-    "musk_votes_tesla_survives": 0.3135542318119849,
+    "premium": 0.3764624913971095,
+    "new_spcx_shares": 13260634548.751009,
+    "tesla_holders_pct": 0.4941828761411216,
+    "musk_votes_spacex_survives": 0.7268607484389448,
+    "musk_votes_tesla_survives": 0.313690321488091,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
@@ -837,8 +837,8 @@
    {
     "label": "1:1 market-cap parity (50/50)",
     "ratio": 3.4365511464982816,
-    "tsla_price": 510.74023139257463,
-    "premium": 0.40618438752395214,
+    "tsla_price": 511.7711967365241,
+    "premium": 0.4088677129704723,
     "new_spcx_shares": 13572821625.0,
     "tesla_holders_pct": 0.5,
     "musk_votes_spacex_survives": 0.7246178028164106,
@@ -849,13 +849,13 @@
    },
    {
     "label": "Reverse: Tesla acquires SpaceX (at market)",
-    "ratio": 2.443883730318934,
-    "tsla_price": 363.21,
+    "ratio": 2.4392291163040563,
+    "tsla_price": 363.25,
     "premium": 0.0,
-    "new_spcx_shares": 9652234618.320145,
-    "tesla_holders_pct": 0.4155957478508266,
-    "musk_votes_spacex_survives": 0.7541858552874606,
-    "musk_votes_tesla_survives": 0.33490734184116794,
+    "new_spcx_shares": 9633850999.667608,
+    "tesla_holders_pct": 0.41513280061646035,
+    "musk_votes_spacex_survives": 0.754332024530746,
+    "musk_votes_tesla_survives": 0.3350323287328846,
     "passes_floor": false,
     "control_ok": false,
     "survivor": "Tesla",
@@ -868,11 +868,11 @@
    "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
    "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy."
   ],
-  "parity_note": "1:1 market-cap parity works out to about $511 per TSLA at current prices (+41%), which clears the $450 floor.",
+  "parity_note": "1:1 market-cap parity works out to about $512 per TSLA at current prices (+41%), which clears the $450 floor.",
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-10-15 15:25 ET, fetched 2026-10-15 15:25 ET"
+  "prices_as_of": "last trade 2026-10-15 15:26 ET, fetched 2026-10-15 15:26 ET"
  },
  "blank_reasons": [
   {
@@ -888,7 +888,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.20542258842562391,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-10-15 15:25 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-10-15 15:26 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -904,7 +904,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.09292191186631807,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-15 15:25 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-15 15:26 ET (news watcher).",
    "merger": false
   },
   {
@@ -912,7 +912,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06502772663046023,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-15 15:25 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-15 15:26 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -935,7 +935,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -1009,11 +1009,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-15 15:25 ET",
+  "as_of": "2026-10-15 15:26 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
