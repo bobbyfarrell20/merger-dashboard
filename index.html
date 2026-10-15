@@ -75,7 +75,7 @@ Promise.all(['model.json','config.json','judgment.json','news.json','live.json',
   :`<h2 style="color:#f0883e">State: merger letter or process disclosed</h2><p>${ev.co||''} ${ev.form||''} ${ev.date||''} (<a href="${ev.url}">filing</a>). This page now tracks close timing (months, not weeks):</p><table>${C.close_timing.steps.map(x=>`<tr><td>${x.step}</td><td>${x.weeks[0]}–${x.weeks[1]} wks</td></tr>`).join('')}</table>`;}
  {const st=document.getElementById('stamp'),m=(M.generated||'').match(/(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)/);let fresh=false;
   if(m){const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),g=new Date(+m[1],m[2]-1,+m[3],+m[4],+m[5]);fresh=(n-g)<3*3600e3;}
-  st.classList.toggle('fresh',fresh);document.getElementById('stampt').textContent=`${fresh?'Live · ':''}Updated ${M.generated}`+'';if(M.prev_as_of)st.insertAdjacentHTML('beforeend',`<span class="vs">· vs ${M.prev_as_of}</span>`);}
+  st.classList.toggle('fresh',fresh);document.getElementById('stampt').textContent=`Last Updated ${M.generated}`;}
  {// client-side dead-day rolloff: a day is closed after 8 PM ET (or once past); its odds go to the remaining open days
   const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})),pad=x=>String(x).padStart(2,'0');
   const tdy=`${n.getFullYear()}-${pad(n.getMonth()+1)}-${pad(n.getDate())}`,hm=t=>+t.split(':')[0]*60+ +t.split(':')[1],RO=(C&&C.rolloff)||{};
