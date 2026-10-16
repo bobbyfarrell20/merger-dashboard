@@ -1,6 +1,36 @@
 {
  "posts": [
   {
+   "id": "2111092018319438123",
+   "handle": "SawyerMerritt",
+   "name": "Sawyer Merritt",
+   "created_at": "2026-10-16T13:48:54Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 1018
+   },
+   "text": "SpaceX has announced that they will release their Q3 earnings on October 20th (next Tuesday). Tesla's Q3 earnings will be on October 21st (next Wednesday).",
+   "why": "Back-to-back SpaceX (Oct 20) and Tesla (Oct 21) Q3 calls give both companies a near-term window to address the combination and the delayed annual meeting.",
+   "factor": "Catalyst calendar / earnings timing",
+   "url": "https://x.com/SawyerMerritt/status/2111092018319438123",
+   "time_et": "Oct 16, 2026 9:48 AM ET"
+  },
+  {
+   "id": "2111087990818628047",
+   "handle": "CNBC",
+   "name": "CNBC",
+   "created_at": "2026-10-16T13:32:53Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 49
+   },
+   "text": "Prediction market odds on Tesla-SpaceX merger are above 50% for early 2027",
+   "why": "Major outlet reports prediction-market odds for a merger by early 2027 crossed 50% after the Barclays note and Roadster event.",
+   "factor": "Prediction-market sentiment",
+   "url": "https://x.com/CNBC/status/2111087990818628047",
+   "time_et": "Oct 16, 2026 9:32 AM ET"
+  },
+  {
    "id": "2110993962232324366",
    "handle": "DivesTech",
    "name": "Dan Ives",
@@ -198,6 +228,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-10-16T12:09:25+00:00",
- "updated_et": "Oct 16, 2026 8:09 AM ET"
+ "updated_at": "2026-10-16T16:13:08+00:00",
+ "updated_et": "Oct 16, 2026 12:13 PM ET"
 }
