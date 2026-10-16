@@ -1,6 +1,6 @@
 {
  "morning_run": "2026-10-16",
- "generated": "2026-10-16 08:31 ET",
+ "generated": "2026-10-16 11:19 ET",
  "today": "2026-10-16",
  "window": {
   "start": "2026-10-14",
@@ -61,7 +61,7 @@
    "L": 0.0,
    "expiry": "2026-10-16",
    "expiry_listed": true,
-   "expiry_iv": 0.1
+   "expiry_iv": 46.9
   },
   {
    "monday": "2026-10-19",
@@ -117,7 +117,7 @@
    "L": 0.0,
    "expiry": "2026-10-23",
    "expiry_listed": true,
-   "expiry_iv": 0.0
+   "expiry_iv": 66.1
   },
   {
    "monday": "2026-10-26",
@@ -173,7 +173,7 @@
    "L": 0.02993173160199623,
    "expiry": "2026-10-30",
    "expiry_listed": true,
-   "expiry_iv": 0.0
+   "expiry_iv": 56.2
   },
   {
    "monday": "2026-11-02",
@@ -229,7 +229,7 @@
    "L": 0.07863251994911392,
    "expiry": "2026-11-06",
    "expiry_listed": true,
-   "expiry_iv": 0.4
+   "expiry_iv": 52.2
   },
   {
    "monday": "2026-11-09",
@@ -285,7 +285,7 @@
    "L": 0.06233599712871461,
    "expiry": "2026-11-13",
    "expiry_listed": true,
-   "expiry_iv": 0.4
+   "expiry_iv": 49.9
   },
   {
    "monday": "2026-11-16",
@@ -341,7 +341,7 @@
    "L": 0.012808545551129962,
    "expiry": "2026-11-20",
    "expiry_listed": true,
-   "expiry_iv": 0.4
+   "expiry_iv": 48.3
   },
   {
    "monday": "2026-11-23",
@@ -397,7 +397,7 @@
    "L": 0.01034191892404238,
    "expiry": "2026-11-27",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 49.8
   },
   {
    "monday": "2026-11-30",
@@ -565,7 +565,7 @@
    "L": 0.0002285677089978557,
    "expiry": "2026-12-18",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 46.0
   }
  ],
  "best_week": "2026-11-02",
@@ -754,82 +754,82 @@
  },
  "deal_math": {
   "gap": {
-   "implied_ratio": 2.4387027317992196,
+   "implied_ratio": 2.4728010453201295,
    "parity_ratio": 3.4365511464982816,
-   "parity_price": 510.74023139257463,
-   "parity_premium": 0.4091718115897103,
-   "cap_gap": 585718792426.1399,
-   "ratio_gap": 0.997848414699062
+   "parity_price": 499.70890221231514,
+   "parity_premium": 0.3897402514456578,
+   "cap_gap": 553485236030.6699,
+   "ratio_gap": 0.9637501011781522
   },
-  "tsla_price": 362.44,
-  "spcx_price": 148.62,
+  "tsla_price": 359.57,
+  "spcx_price": 145.41,
   "tsla_shares": 3949547394,
   "spcx_shares": 13572821625,
-  "tsla_cap": 1431473957481.36,
-  "spcx_cap": 2017192749907.5,
+  "tsla_cap": 1420138756460.58,
+  "spcx_cap": 1973623992491.25,
   "musk_votes_now": 0.8426779107419812,
   "cases": [
    {
     "label": "At market (0%)",
-    "ratio": 2.4387027317992196,
-    "tsla_price": 362.44000000000005,
-    "premium": 2.220446049250313e-16,
-    "new_spcx_shares": 9631772019.118288,
-    "tesla_holders_pct": 0.4150804003223591,
-    "musk_votes_spacex_survives": 0.7543485592892611,
-    "musk_votes_tesla_survives": 0.3350464758092652,
+    "ratio": 2.4728010453201295,
+    "tsla_price": 359.57,
+    "premium": 0.0,
+    "new_spcx_shares": 9766444924.424593,
+    "tesla_holders_pct": 0.41845552017423515,
+    "musk_votes_spacex_survives": 0.753279418392082,
+    "musk_votes_tesla_survives": 0.33413525805453564,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "20% premium",
-    "ratio": 2.9264432781590632,
-    "tsla_price": 434.928,
-    "premium": 0.19999999999999996,
-    "new_spcx_shares": 11558126422.941946,
-    "tesla_holders_pct": 0.4599160525457565,
-    "musk_votes_spacex_survives": 0.7394234067536024,
-    "musk_votes_tesla_survives": 0.3229417079361684,
+    "ratio": 2.9673612543841554,
+    "tsla_price": 431.48400000000004,
+    "premium": 0.20000000000000018,
+    "new_spcx_shares": 11719733909.309513,
+    "tesla_holders_pct": 0.46336693393483386,
+    "musk_votes_spacex_survives": 0.7382063082701704,
+    "musk_votes_tesla_survives": 0.32201003601659334,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "30% premium",
-    "ratio": 3.1703135513389857,
-    "tsla_price": 471.1720000000001,
-    "premium": 0.30000000000000027,
-    "new_spcx_shares": 12521303624.853777,
-    "tesla_holders_pct": 0.4798514418460509,
-    "musk_votes_spacex_survives": 0.7322465759056205,
-    "musk_votes_tesla_survives": 0.31755953442082585,
+    "ratio": 3.214641358916168,
+    "tsla_price": 467.44100000000003,
+    "premium": 0.30000000000000004,
+    "new_spcx_shares": 12696378401.75197,
+    "tesla_holders_pct": 0.4833180450421886,
+    "musk_votes_spacex_survives": 0.7309616889646908,
+    "musk_votes_tesla_survives": 0.31662361791428534,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$450/TSLA",
-    "ratio": 3.0278562777553493,
+    "ratio": 3.0946977511863007,
     "tsla_price": 450.0,
-    "premium": 0.24158481403818555,
-    "new_spcx_shares": 11958661871.21518,
-    "tesla_holders_pct": 0.46838883737358805,
-    "musk_votes_spacex_survives": 0.7364165161779344,
-    "musk_votes_tesla_survives": 0.32065421821551976,
+    "premium": 0.2514948410601552,
+    "new_spcx_shares": 12222655438.415514,
+    "tesla_holders_pct": 0.4738294007266227,
+    "musk_votes_spacex_survives": 0.7344521911091586,
+    "musk_votes_tesla_survives": 0.31918537025142135,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$500/TSLA",
-    "ratio": 3.364284753061499,
+    "ratio": 3.4385530568736677,
     "tsla_price": 500.0,
-    "premium": 0.3795386822646507,
-    "new_spcx_shares": 13287402079.127977,
-    "tesla_holders_pct": 0.49468694771465815,
-    "musk_votes_spacex_survives": 0.726667713829528,
-    "musk_votes_tesla_survives": 0.3135542318119849,
+    "premium": 0.3905498234001725,
+    "new_spcx_shares": 13580728264.906128,
+    "tesla_holders_pct": 0.5001455912751406,
+    "musk_votes_spacex_survives": 0.7245612342295117,
+    "musk_votes_tesla_survives": 0.3120805025379601,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
@@ -837,8 +837,8 @@
    {
     "label": "1:1 market-cap parity (50/50)",
     "ratio": 3.4365511464982816,
-    "tsla_price": 510.74023139257463,
-    "premium": 0.4091718115897103,
+    "tsla_price": 499.70890221231514,
+    "premium": 0.3897402514456578,
     "new_spcx_shares": 13572821625.0,
     "tesla_holders_pct": 0.5,
     "musk_votes_spacex_survives": 0.7246178028164106,
@@ -849,13 +849,13 @@
    },
    {
     "label": "Reverse: Tesla acquires SpaceX (at market)",
-    "ratio": 2.4387027317992196,
-    "tsla_price": 362.44000000000005,
-    "premium": 2.220446049250313e-16,
-    "new_spcx_shares": 9631772019.118288,
-    "tesla_holders_pct": 0.4150804003223591,
-    "musk_votes_spacex_survives": 0.7543485592892611,
-    "musk_votes_tesla_survives": 0.3350464758092652,
+    "ratio": 2.4728010453201295,
+    "tsla_price": 359.57,
+    "premium": 0.0,
+    "new_spcx_shares": 9766444924.424593,
+    "tesla_holders_pct": 0.41845552017423515,
+    "musk_votes_spacex_survives": 0.753279418392082,
+    "musk_votes_tesla_survives": 0.33413525805453564,
     "passes_floor": false,
     "control_ok": false,
     "survivor": "Tesla",
@@ -868,11 +868,11 @@
    "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
    "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy."
   ],
-  "parity_note": "1:1 market-cap parity works out to about $511 per TSLA at current prices (+41%), which clears the $450 floor.",
+  "parity_note": "1:1 market-cap parity works out to about $500 per TSLA at current prices (+39%), which clears the $450 floor.",
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-10-15 16:00 ET, fetched 2026-10-16 08:31 ET"
+  "prices_as_of": "last trade 2026-10-16 11:19 ET, fetched 2026-10-16 11:19 ET"
  },
  "blank_reasons": [
   {
@@ -888,7 +888,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.20542258842562391,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-10-16 08:31 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-10-16 11:19 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -904,7 +904,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.09292191186631807,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-16 08:31 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-16 11:19 ET (news watcher).",
    "merger": false
   },
   {
@@ -912,7 +912,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06502772663046023,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-16 08:31 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-16 11:19 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -935,7 +935,7 @@
  "leak_logodds": -0.21732997242942362,
  "weeks_blank": 3,
  "fcc": {
-  "as_of": "2026-10-16 08:31 ET",
+  "as_of": "2026-10-16 11:19 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -1009,11 +1009,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-16 08:31 ET",
+  "as_of": "2026-10-16 11:19 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-10-16 08:31 ET",
+  "as_of": "2026-10-16 11:19 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -1035,37 +1035,37 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.245,
+    "yes": 0.235,
     "closed": false,
-    "volume": 243560.27169699996,
-    "volume_24h": 7172.924343,
+    "volume": 244745.58643399997,
+    "volume_24h": 6901.328823,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
-    "yes": 0.29,
+    "yes": 0.275,
     "closed": false,
-    "volume": 15294.080750999998,
-    "volume_24h": 2307.106798,
+    "volume": 15415.210750999997,
+    "volume_24h": 2266.936798,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
-    "yes": 0.29,
+    "yes": 0.315,
     "closed": false,
-    "volume": 19899.713263000005,
-    "volume_24h": 4985.33956,
+    "volume": 20416.153263,
+    "volume_24h": 5501.77956,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.48,
+    "yes": 0.51,
     "closed": false,
-    "volume": 30530.812211000004,
-    "volume_24h": 1174.8605630000002,
+    "volume": 30726.320055,
+    "volume_24h": 1319.3684070000002,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -1074,7 +1074,7 @@
     "yes": 0.625,
     "closed": false,
     "volume": 40488.24721000001,
-    "volume_24h": 483.30381099999994,
+    "volume_24h": 481.7165089999999,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -1150,12 +1150,18 @@
  "trackers": {
   "spcx_q3": {
    "value": {
-    "status": "not announced",
-    "checked": "EDGAR SPCX 8-Ks since Oct 1 + Google News"
+    "status": "unconfirmed (news only)",
+    "release_date": "2026-10-20",
+    "timing": "post",
+    "source": "TeslaNorth.com",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5PZHBTYUtqYjZQTVBMakxJY01KTks2THFJWnAwdFM0Smxsc2ttZnlmS0hfcmNaTWRlLUZxMUZYNkpMVGlhNGcybzlacU5CclQwajNBWklrUHNBRVZUaXNNaFMtZ05oNEZzSjFZRlBKQzh0S28?oc=5",
+    "confidence": "low",
+    "title": "SpaceX Q3 2026 Earnings: Results Oct. 20, Webcast 1:30 PM PT - TeslaNorth.com",
+    "unlock_date_if_post_market": "2026-10-22"
    },
    "ok": true,
-   "as_of": "2026-10-15 18:36 ET",
-   "last_ok": "2026-10-15 18:36 ET",
+   "as_of": "2026-10-16 11:18 ET",
+   "last_ok": "2026-10-16 11:18 ET",
    "error": null
   },
   "starship": {
@@ -1170,8 +1176,8 @@
     }
    },
    "ok": true,
-   "as_of": "2026-10-15 18:36 ET",
-   "last_ok": "2026-10-15 18:36 ET",
+   "as_of": "2026-10-16 11:18 ET",
+   "last_ok": "2026-10-16 11:18 ET",
    "error": null
   },
   "grain": {
@@ -1193,30 +1199,30 @@
     ]
    },
    "ok": true,
-   "as_of": "2026-10-15 18:36 ET",
-   "last_ok": "2026-10-15 18:36 ET",
+   "as_of": "2026-10-16 11:18 ET",
+   "last_ok": "2026-10-16 11:18 ET",
    "error": null
   },
   "prices": {
    "value": {
     "TSLA": {
-     "price": 362.44,
-     "prev_close": 367.16,
-     "as_of": "2026-10-15 16:00 ET"
+     "price": 359.64,
+     "prev_close": 362.44,
+     "as_of": "2026-10-16 11:18 ET"
     },
     "SPCX": {
-     "price": 148.62,
-     "prev_close": 152.16,
-     "as_of": "2026-10-15 16:00 ET"
+     "price": 145.385,
+     "prev_close": 148.62,
+     "as_of": "2026-10-16 11:18 ET"
     }
    },
    "ok": true,
-   "as_of": "2026-10-15 18:36 ET",
-   "last_ok": "2026-10-15 18:36 ET",
+   "as_of": "2026-10-16 11:18 ET",
+   "last_ok": "2026-10-16 11:18 ET",
    "error": null
   },
   "log": [],
-  "prices_written": "2026-10-15T18:36-04:00"
+  "prices_written": "2026-10-16T11:18-04:00"
  },
  "later": {
   "on": true,
@@ -2364,7 +2370,7 @@
      "L": 0.0,
      "expiry": "2026-10-16",
      "expiry_listed": true,
-     "expiry_iv": 0.1
+     "expiry_iv": 46.9
     },
     {
      "monday": "2026-10-19",
@@ -2420,7 +2426,7 @@
      "L": 0.0,
      "expiry": "2026-10-23",
      "expiry_listed": true,
-     "expiry_iv": 0.0
+     "expiry_iv": 66.1
     },
     {
      "monday": "2026-10-26",
@@ -2476,7 +2482,7 @@
      "L": 0.02993173160199623,
      "expiry": "2026-10-30",
      "expiry_listed": true,
-     "expiry_iv": 0.0
+     "expiry_iv": 56.2
     },
     {
      "monday": "2026-11-02",
@@ -2532,7 +2538,7 @@
      "L": 0.07863251994911392,
      "expiry": "2026-11-06",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 52.2
     },
     {
      "monday": "2026-11-09",
@@ -2588,7 +2594,7 @@
      "L": 0.06233599712871461,
      "expiry": "2026-11-13",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 49.9
     },
     {
      "monday": "2026-11-16",
@@ -2644,7 +2650,7 @@
      "L": 0.012808545551129962,
      "expiry": "2026-11-20",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 48.3
     },
     {
      "monday": "2026-11-23",
@@ -2700,7 +2706,7 @@
      "L": 0.01034191892404238,
      "expiry": "2026-11-27",
      "expiry_listed": true,
-     "expiry_iv": 0.2
+     "expiry_iv": 49.8
     },
     {
      "monday": "2026-11-30",
@@ -2868,7 +2874,7 @@
      "L": 0.0002285677089978557,
      "expiry": "2026-12-18",
      "expiry_listed": true,
-     "expiry_iv": 0.2
+     "expiry_iv": 46.0
     }
    ],
    "best_week": "2026-11-02",
@@ -3940,7 +3946,7 @@
      "L": 0.0,
      "expiry": "2026-10-16",
      "expiry_listed": true,
-     "expiry_iv": 0.1
+     "expiry_iv": 46.9
     },
     {
      "monday": "2026-10-19",
@@ -3996,7 +4002,7 @@
      "L": 0.0,
      "expiry": "2026-10-23",
      "expiry_listed": true,
-     "expiry_iv": 0.0
+     "expiry_iv": 66.1
     },
     {
      "monday": "2026-10-26",
@@ -4052,7 +4058,7 @@
      "L": 0.0,
      "expiry": "2026-10-30",
      "expiry_listed": true,
-     "expiry_iv": 0.0
+     "expiry_iv": 56.2
     },
     {
      "monday": "2026-11-02",
@@ -4108,7 +4114,7 @@
      "L": 0.0,
      "expiry": "2026-11-06",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 52.2
     },
     {
      "monday": "2026-11-09",
@@ -4164,7 +4170,7 @@
      "L": 0.0,
      "expiry": "2026-11-13",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 49.9
     },
     {
      "monday": "2026-11-16",
@@ -4220,7 +4226,7 @@
      "L": 0.0,
      "expiry": "2026-11-20",
      "expiry_listed": true,
-     "expiry_iv": 0.4
+     "expiry_iv": 48.3
     },
     {
      "monday": "2026-11-23",
@@ -4276,7 +4282,7 @@
      "L": 0.0,
      "expiry": "2026-11-27",
      "expiry_listed": true,
-     "expiry_iv": 0.2
+     "expiry_iv": 49.8
     },
     {
      "monday": "2026-11-30",
@@ -4444,7 +4450,7 @@
      "L": 0.0,
      "expiry": "2026-12-18",
      "expiry_listed": true,
-     "expiry_iv": 0.2
+     "expiry_iv": 46.0
     }
    ],
    "best_week": "2026-11-02",
