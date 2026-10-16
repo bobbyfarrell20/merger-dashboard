@@ -320,6 +320,24 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "10:35",
+     "title": "Batteries to thrusters: Tesla's 18-year road to the flying car (TSLA:NASDAQ) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQb0pVY2VXQ0lNdVNka09aTlMtb0tvSlNWNklkUFdEMVhxRTF5OFg1Z21DOWFjbkJXMzNEQkhLVF9OcmJySXRUX2U2bS1CYm1YZ21qZ0I1ZWszSV9hSUU1ekdqVHRQX3hhMlRmQzNLRExTVnRrNTZoT0JMSWJMQzFwZ2ZYRTJ4UTRjOFBWSkExRTlWWlNlT3J3anhrWXRuNzA?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "15:04",
+     "title": "TSLY: Tesla Flies, The Stock Doesn\u2019t For Me, The Premiums Do (NYSEARCA:TSLY) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ1M1UDVDc2g3alprVkNiMEh6Zlc4eExwdkRPeVNDMDUzR3dDNHdfYUpHRFFOMjVzcUN1RU15bzd5QlhVZEo2RVFDZ2xPSlNCUFdxRW9yTUhpdHZobUdkMU9YSjA0Nm5mUDZjYVJiN1pkUVRNdTFuZjVSanVabWNFWXhWUElwOC1kU1Rjc09kNzNGQlExdTBHUlhORXJFdw?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
