@@ -140,6 +140,16 @@
      "factor": "prices",
      "effect": "Re-assessed 15:30 ET: no model change. Terafab/TSMC report, not merger-specific.",
      "auto": true
+    },
+    {
+     "time_et": "20:55",
+     "title": "Kalshi: definitive agreement Before Apr 1, 2027: 43.0% -> 68.0% (+25.0 pts in 24.7h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
