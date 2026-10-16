@@ -1267,5 +1267,433 @@
     ]
    }
   }
+ },
+ {
+  "v": 2,
+  "date": "2026-10-16",
+  "as_of": "2026-10-16 08:31 ET",
+  "metrics": {
+   "end_A": 0.2861993600301331,
+   "end_B": 0.6618181634567116,
+   "end_none": 0.05198247651315524,
+   "wk2026-10-12_either": 0.005522269863267446,
+   "wk2026-10-12_A": 0.002436128881750541,
+   "wk2026-10-12_B": 0.003086140981516905,
+   "wk2026-10-19_either": 0.13441987860384577,
+   "wk2026-10-19_A": 0.06032506268315992,
+   "wk2026-10-19_B": 0.07409481592068584,
+   "wk2026-10-26_either": 0.1814234232851212,
+   "wk2026-10-26_A": 0.04340817641933292,
+   "wk2026-10-26_B": 0.13801524686578828,
+   "wk2026-11-02_either": 0.2923604091808949,
+   "wk2026-11-02_A": 0.09028224997110484,
+   "wk2026-11-02_B": 0.20207815920979008,
+   "wk2026-11-09_either": 0.2508297792912269,
+   "wk2026-11-09_A": 0.06621349032035426,
+   "wk2026-11-09_B": 0.18461628897087265,
+   "wk2026-11-16_either": 0.04409426756313178,
+   "wk2026-11-16_A": 0.012721350417956447,
+   "wk2026-11-16_B": 0.03137291714517533,
+   "wk2026-11-23_either": 0.034519597811284226,
+   "wk2026-11-23_A": 0.009644391989389114,
+   "wk2026-11-23_B": 0.024875205821895112,
+   "wk2026-11-30_either": 0.0026256013745019464,
+   "wk2026-11-30_A": 0.0007062838244025809,
+   "wk2026-11-30_B": 0.0019193175500993654,
+   "wk2026-12-07_either": 0.001522136147036683,
+   "wk2026-12-07_A": 0.00028541125558342683,
+   "wk2026-12-07_B": 0.0012367248914532563,
+   "wk2026-12-14_either": 0.0007001603665338524,
+   "wk2026-12-14_A": 0.00017681426709901846,
+   "wk2026-12-14_B": 0.000523346099434834
+  },
+  "inputs": {
+   "window": {
+    "start": "2026-10-14",
+    "end": "2026-12-14"
+   },
+   "p_any_by_end": {
+    "base": 0.95,
+    "_why": "Base case: Tesla holds its 2026 annual meeting in 2026 (~95%), which forces a date announcement before the notice cutoffs (e-proxy ~Oct 27, Texas 10-day ~Nov 26 for a Dec 6 meeting). The remaining ~5% is Tesla slipping to 2027. The Texas 13-month rule (BOC 21.351) is enforceable only by a shareholder court petition, so slipping is possible but unlikely."
+   },
+   "a_share": {
+    "base": 0.5,
+    "_why": "Starting 50/50 for WITH merger vs routine before evidence. The merger thesis and a Sept 18 outside read lean merger; Polymarket's Dec 31 2026 contract (~14%) leans routine. The leak decay and the signals adjust it."
+   },
+   "signals": [
+    {
+     "id": "retail_autovote",
+     "target": "a_share",
+     "logodds": 0.03,
+     "active": true,
+     "label": "SEC retail standing-instruction no-action letter (Sept 29). Downgraded: holders can choose 'all matters except mergers', and anyone who chose 'all matters' gets a reminder and can override before a merger vote",
+     "src": "https://www.sec.gov/files/corpfin/no-action/tesla-inc-092926-incoming-letter.pdf"
+    },
+    {
+     "id": "musk_hints",
+     "target": "a_share",
+     "logodds": 0.1,
+     "active": true,
+     "label": "Musk's All-In hint (Sept 15)"
+    },
+    {
+     "id": "credit_facility",
+     "target": "a_share",
+     "logodds": 0.0,
+     "active": true,
+     "label": "$30B credit 8-K (Sept 29): rules out 'waiting on an equity raise' as the reason, neutral for a merger",
+     "src": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+    },
+    {
+     "id": "spacex_spectrum",
+     "target": "a_share",
+     "logodds": 0.05,
+     "active": true,
+     "label": "SpaceX-Grain 800 MHz deal (Oct 8, ~$8B cash per WSJ, pending FCC): adds more Tesla-relevant connectivity",
+     "src": "https://graingp.com/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex/"
+    },
+    {
+     "id": "product_date_no_meeting",
+     "target": "a_share",
+     "logodds": -0.15,
+     "active": false,
+     "label": "Terafab or Optimus Gen 3 event date set with no meeting or letter (flip on)"
+    },
+    {
+     "id": "roadster_clean_no_date",
+     "target": "a_share",
+     "logodds": 0.1,
+     "active": false,
+     "label": "Roadster goes cleanly (Oct 15) and still no meeting date (flip on Oct 16 if true)"
+    },
+    {
+     "id": "committee_or_leak",
+     "target": "a_share",
+     "logodds": 2.5,
+     "active": false,
+     "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)"
+    },
+    {
+     "id": "said_2027",
+     "target": "p_any",
+     "logodds": -2.0,
+     "active": false,
+     "label": "Tesla says the meeting slips to 2027 with no date (flip on)"
+    },
+    {
+     "id": "barclays_levy_note",
+     "target": "a_share",
+     "logodds": 0.063,
+     "active": true,
+     "label": "Barclays (Dan Levy) note, Oct 14: merger announcement possible before the annual meeting (by Dec 6). Named sell-side coverage, no new facts; small judgment bump (+1.5 pts merger, any path)",
+     "src": "https://www.tipranks.com/news/the-fly/tesla-spacex-merger-possible-before-annual-meeting-says-barclays-thefly-news"
+    }
+   ],
+   "urgency": [
+    {
+     "from": "2026-10-14",
+     "to": "2026-10-20",
+     "mult": 1.0,
+     "label": "Roadster and earnings week"
+    },
+    {
+     "from": "2026-10-21",
+     "to": "2026-10-27",
+     "mult": 1.6,
+     "label": "Tesla's usual 40-45 day DEF 14A lead puts the latest on-time proxy (Dec 6 meeting) here"
+    },
+    {
+     "from": "2026-10-28",
+     "to": "2026-11-13",
+     "mult": 2.0,
+     "label": "A mid/late-Dec meeting still fits Tesla's usual 40-45 day lead"
+    },
+    {
+     "from": "2026-11-14",
+     "to": "2026-11-25",
+     "mult": 2.2,
+     "label": "Last chance for any 2026 meeting (Texas 10-day minimum)"
+    },
+    {
+     "from": "2026-11-26",
+     "to": "2026-12-06",
+     "mult": 1.0,
+     "label": "Sliding into 2027"
+    },
+    {
+     "from": "2026-12-07",
+     "to": "2026-12-14",
+     "mult": 0.8,
+     "label": "Past 13 months; court-petition risk"
+    }
+   ],
+   "weekday_mult": {
+    "Mon": 3.0,
+    "Tue": 2.6,
+    "Wed": 1.4,
+    "Thu": 1.2,
+    "Fri": 0.7,
+    "Sat": 0.05,
+    "Sun": 0.05,
+    "_why": "Monday most likely (Sunday-night/pre-market filings count as Monday), Tuesday a close second, small weekend share."
+   },
+   "blackouts": [
+    {
+     "date": "2026-10-15",
+     "mult": 1.4,
+     "applies": "both",
+     "label": "Roadster demo (evening)",
+     "event_start_et": "20:55",
+     "event_end_et": "23:25",
+     "_event_note": "Roadster livestream 8:55 PM ET; end = start + ~2.5h (not published)",
+     "_why": "Roadster event day relaxed from x0.3 to x1.4 (Oct 14): the day stays open to the event end (11:25 PM ET) and covers a morning filing plus an on-stage/X comment after the livestream (8-K next morning counts as this day). Targets ~2% for the day."
+    },
+    {
+     "date": "2026-10-16",
+     "mult": 0.5,
+     "applies": "both",
+     "label": "Pre-earnings Friday (clean tape before Oct 21)"
+    },
+    {
+     "date": "2026-10-21",
+     "mult": 0.3,
+     "applies": "both",
+     "label": "Q3 earnings after the close",
+     "event_start_et": "17:30",
+     "event_end_et": "19:00",
+     "_event_note": "Q3 call 5:30 PM ET; 8 PM close still applies"
+    },
+    {
+     "date": "2026-10-22",
+     "mult": 0.6,
+     "applies": "both",
+     "label": "Earnings call day after"
+    },
+    {
+     "date": "2026-11-26",
+     "mult": 0.05,
+     "applies": "both",
+     "label": "Thanksgiving"
+    },
+    {
+     "date": "2026-11-27",
+     "mult": 0.3,
+     "applies": "both",
+     "label": "Early close 1pm ET (day after Thanksgiving)",
+     "src": "https://ir.theice.com/press/news-details/2025/NYSE-Group-Announces-2026-2027-and-2028-Holiday-and-Early-Closings-Calendar/"
+    }
+   ],
+   "post_event_boost": [
+    {
+     "date": "2026-10-19",
+     "mult": 1.7,
+     "applies": "both",
+     "label": "Clean-Monday boost (Oct 19)",
+     "_why": "First clean Monday after the Oct 15 Roadster event and before Tesla's Oct 21 earnings; early enough that a shareholder letter would not collide with the earnings call. Named per-date multiplier on both merger and routine paths."
+    }
+   ],
+   "timing_anchors": [
+    {
+     "date": "2026-11-13",
+     "share_of_total": 0.915,
+     "_why": "~87% by Nov 13 when the total is 95%"
+    },
+    {
+     "date": "2026-11-26",
+     "share_of_total": 0.995,
+     "_why": "~94.5% by Nov 26, the last Texas 10-day notice day for Dec 6"
+    },
+    {
+     "date": "2026-12-14",
+     "share_of_total": 1.0
+    }
+   ],
+   "leak_decay": {
+    "ref_date": "2026-09-21",
+    "per_week": -0.13,
+    "cap": -1.2,
+    "lead_days": [
+     {
+      "within": 7,
+      "mult": 0.35
+     },
+     {
+      "within": 14,
+      "mult": 0.7
+     }
+    ],
+    "soften_by_quiet_hold": true,
+    "_why": "The blank-week clock starts Mon Sept 21, 2026. That is the first Monday after the anniversary of last year's DEF 14A (Sept 17, 2025) passed with no 2026 date. Sept 29 (the retail-program letter) was considered and rejected: the program was a reason the date might wait, so the clock would start too late. The penalty is -0.13 log-odds per full blank week, capped at -1.20. It replaces the old flat 'no leaks' -0.40, which was already about 3 weeks x -0.13 on Oct 13, so nothing is double-counted. The penalty, and the lead-day suppression (x0.35 within 7 days, x0.70 for days 8-14), are scaled by the active-process share of the merger-hold reasons. The quiet-hold path ('Musk told the board to hold the date; no committee or bankers yet') wouldn't leak, so it isn't penalized. Everything turns off when committee_or_leak is on."
+   },
+   "lockups": {
+    "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+    "src2": "https://tape.panke.app/unlocks.md",
+    "near_mult": 0.5,
+    "day_mult": 0.2,
+    "tranches": [
+     {
+      "date": "2026-10-26",
+      "label": "Day 135 (Oct 24 Sat): 180-day group +7%",
+      "shares": 328400000,
+      "verified": true
+     },
+     {
+      "date": "2026-11-05",
+      "label": "2nd full Nasdaq trading day after SpaceX's own Q3 results (not Tesla's Oct 21 report): 28% of 180-day group",
+      "shares": 1300000000,
+      "verified": false,
+      "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 \u2014 Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Nov 5 is a placeholder from the Aug 4 Q2 release timing and creates no blackout until confirmed.",
+      "blackout": false
+     },
+     {
+      "date": "2026-12-08",
+      "label": "Day 180: 180-day group remainder",
+      "shares": 784000000,
+      "verified": true
+     },
+     {
+      "date": "2027-02-26",
+      "label": "After Q4 results: extended group",
+      "shares": 351900000,
+      "verified": false,
+      "note": "date depends on the Q4 release (~Feb/Mar)"
+     },
+     {
+      "date": "2027-03-18",
+      "label": "Day 280: extended group",
+      "shares": 176000000,
+      "verified": true
+     },
+     {
+      "date": "2027-05-07",
+      "label": "After Q1 2027 results: extended group",
+      "shares": 351900000,
+      "verified": false,
+      "note": "~May; estimated"
+     },
+     {
+      "date": "2027-05-17",
+      "label": "Day 340: extended group",
+      "shares": 176000000,
+      "verified": true
+     },
+     {
+      "date": "2027-06-14",
+      "label": "Day 366 (Jun 12 Sat): extended group, plus Musk's 6.42B shares",
+      "shares": 6770447515,
+      "verified": true
+     },
+     {
+      "date": "2027-08-06",
+      "label": "After Q2 2027 results: extended remainder",
+      "shares": 351900000,
+      "verified": false,
+      "note": "~Aug; estimated"
+     }
+    ]
+   },
+   "starship": {
+    "next_net": "2026-11-08",
+    "verified": false,
+    "src": "https://en.wikipedia.org/wiki/Starship_flight_15",
+    "src2": "https://thelaunchwindow.com/next-starship-launch",
+    "status": "scheduled",
+    "launch_mult": 0.1,
+    "day_after_mult": 0.3,
+    "success_boost": 1.3,
+    "success_days": [
+     2,
+     4
+    ],
+    "failure_mult": 0.2,
+    "failure_days": [
+     1,
+     5
+    ],
+    "_why": "NET Nov 8 comes from planning-grade sources: the CADENA air-traffic planning slides of Oct 8 (cited by Wikipedia), and NASASpaceflight reporting on Oct 10 plus Musk's '4-6 weeks' remark (per thelaunchwindow). SpaceX hasn't announced a date, and Launch Library lists it only as NET Q4 2026. Unverified. Merger odds: launch day x0.1 and the day after x0.3. After a success, days +2 to +4 get x1.3. After a failure, days +1 to +5 get x0.2. The status comes from data/events_state.json (set by watch.py or by hand) or from this config."
+   },
+   "grain": {
+    "status": "pending",
+    "approved_on": null,
+    "pending_mult": 0.9,
+    "pending_within_days": 14,
+    "approval_boost": 1.2,
+    "approval_days": 5,
+    "src": "https://www.lightreading.com/",
+    "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
+   },
+   "special_meeting_planned": {
+    "on": false,
+    "_why": "If on, the merger vote is assumed to go to its own special meeting, so the e-proxy/Texas deadlines (urgency and timing anchors) stop pulling the merger letter forward. Letter timing uses plain weekday x calendar weights. The meeting-announcement ('either') curve is unchanged, and a letter only counts as 'meeting + merger' if it arrives by the time the meeting is announced. Result: merger-with-meeting falls and routine-only rises. Any letter that comes after the routine date belongs to the 2027 special-meeting path."
+   },
+   "blank_reasons": {
+    "_why": "Why is the 2026 meeting still unscheduled? Weights are set as of the clock start (Sept 21) and normalized. Each full blank week multiplies the active-process weight by x0.90 (processes leak), the quiet-hold weight by x0.98, and drift by x1.04.",
+    "ref_date": "2026-09-21",
+    "items": [
+     {
+      "id": "merger_hold",
+      "merger": true,
+      "leaky": true,
+      "label": "Merger process under way (committee or advisers working quietly)",
+      "w": 0.26,
+      "weekly": 0.9,
+      "src": null,
+      "note": "No committee, bank or law firm disclosed as of {checked} (EDGAR and news watcher)."
+     },
+     {
+      "id": "quiet_hold",
+      "merger": true,
+      "leaky": false,
+      "label": "Musk asked the board to hold the date; no committee or bankers yet",
+      "w": 0.16,
+      "weekly": 0.98,
+      "src": null,
+      "note": "Low leak surface: explains the blank page without a leak. Speculative path; no public evidence either way."
+     },
+     {
+      "id": "drift",
+      "merger": false,
+      "label": "Ordinary drift or lateness (Tesla's 2025 meeting was Nov 6)",
+      "w": 0.33,
+      "weekly": 1.04,
+      "src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925090866/tm252289-12_def14a.htm"
+     },
+     {
+      "id": "product_date",
+      "merger": false,
+      "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
+      "w": 0.1,
+      "weekly": 0.95,
+      "src": null,
+      "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of {checked} (news watcher)."
+     },
+     {
+      "id": "comp_governance",
+      "merger": false,
+      "label": "New comp/governance item being prepared",
+      "w": 0.06,
+      "weekly": 1.0,
+      "src": null,
+      "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of {checked}. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event."
+     },
+     {
+      "id": "retail_program",
+      "merger": false,
+      "label": "Waiting to launch the retail voting program (SEC letter Sept 29)",
+      "w": 0.06,
+      "weekly": 0.9,
+      "src": "https://www.sec.gov/files/corpfin/no-action/tesla-inc-092926-incoming-letter.pdf"
+     },
+     {
+      "id": "equity_raise",
+      "merger": false,
+      "label": "Waiting on an equity raise (unlikely after the $30B credit lines)",
+      "w": 0.03,
+      "weekly": 0.9,
+      "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=8-K"
+     }
+    ]
+   }
+  }
  }
 ]
