@@ -1,12 +1,18 @@
 {
  "spcx_q3": {
   "value": {
-   "status": "not announced",
-   "checked": "EDGAR SPCX 8-Ks since Oct 1 + Google News"
+   "status": "unconfirmed (news only)",
+   "release_date": "2026-10-20",
+   "timing": "post",
+   "source": "TeslaNorth.com",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5PZHBTYUtqYjZQTVBMakxJY01KTks2THFJWnAwdFM0Smxsc2ttZnlmS0hfcmNaTWRlLUZxMUZYNkpMVGlhNGcybzlacU5CclQwajNBWklrUHNBRVZUaXNNaFMtZ05oNEZzSjFZRlBKQzh0S28?oc=5",
+   "confidence": "low",
+   "title": "SpaceX Q3 2026 Earnings: Results Oct. 20, Webcast 1:30 PM PT - TeslaNorth.com",
+   "unlock_date_if_post_market": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-15 18:36 ET",
-  "last_ok": "2026-10-15 18:36 ET",
+  "as_of": "2026-10-16 11:18 ET",
+  "last_ok": "2026-10-16 11:18 ET",
   "error": null
  },
  "starship": {
@@ -21,8 +27,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-15 18:36 ET",
-  "last_ok": "2026-10-15 18:36 ET",
+  "as_of": "2026-10-16 11:18 ET",
+  "last_ok": "2026-10-16 11:18 ET",
   "error": null
  },
  "grain": {
@@ -47,28 +53,28 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-15 18:36 ET",
-  "last_ok": "2026-10-15 18:36 ET",
+  "as_of": "2026-10-16 11:18 ET",
+  "last_ok": "2026-10-16 11:18 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 362.44,
-    "prev_close": 367.16,
-    "as_of": "2026-10-15 16:00 ET"
+    "price": 359.64,
+    "prev_close": 362.44,
+    "as_of": "2026-10-16 11:18 ET"
    },
    "SPCX": {
-    "price": 148.62,
-    "prev_close": 152.16,
-    "as_of": "2026-10-15 16:00 ET"
+    "price": 145.385,
+    "prev_close": 148.62,
+    "as_of": "2026-10-16 11:18 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-15 18:36 ET",
-  "last_ok": "2026-10-15 18:36 ET",
+  "as_of": "2026-10-16 11:18 ET",
+  "last_ok": "2026-10-16 11:18 ET",
   "error": null
  },
  "log": [],
- "prices_written": "2026-10-15T18:36-04:00"
+ "prices_written": "2026-10-16T11:18-04:00"
 }
