@@ -2,6 +2,32 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-16",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "01:20",
+     "title": "Kalshi: definitive agreement Before Mar 1, 2027: 39.0% -> 54.0% (+15.0 pts in 29.1h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "01:20",
+     "title": "Kalshi: definitive agreement Before Apr 1, 2027: 43.0% -> 54.0% (+11.0 pts in 29.1h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-15",
    "odds_note": "By Dec 14: with merger -0.0 pts (time -0.0, news +0.0); routine +0.0 (time +0.0, news +0.0); nothing +0.0. No new information, so this is just time passing.",
    "items": [
@@ -148,6 +174,16 @@
      "source": "Kalshi",
      "factor": "markets",
      "effect": "Re-assessed 20:55 ET: no model change. Thin Apr-2027 contract printed 68% on last trade (~$1.8K 24h vol; was 54.5% mid at 18:36), while nearer dates barely moved (Dec 12%, Jan 26%, Mar 44%) and May sits at 60.5% \u2014 inverted vs Apr, so noisy. Driver is Roadster-night hype: livestream just starting at SpaceX McGregor; Elon posted 'Tesla x SpaceX' quoting the stream (event branding / thruster collab, not a filing); Kalshi's midday post already tied 'flying' Roadster to merger odds. No 8-K, proxy, committee, or bankers leak. Today's ~2% event-day residual already covers an on-stage hint; leave model alone.",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "21:16",
+     "title": "Did Elon Musk Just Hint at Tesla x SpaceX Merger, or Will Cars Fly First?",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZnVuMjlVWi1feVNKVS1tWUxLLXVXdE05ejRYc084VGJ1bDZmeFNpd01objVseXAtNmtUMUtCN19GN2E1X3pPb0IyZEk1ZGhZNU1ZTTl1alpXd2Nxd1lFTkluRkJPMFV6ejZ2d0RGbVZkZDBSZ0x5Y0IzbFRGTkFIZ2R2M1NOall1dmFYYkdTLXh3UQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
     }
