@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-16",
-   "odds_note": "By Dec 14: with merger -0.4 pts (time -0.4, news +0.0); routine +0.3 (time +0.3, news +0.0); nothing +0.1. No new information, so this is just time passing.",
+   "odds_note": "By Dec 14: with merger -0.5 pts (time -0.5, news +0.0); routine +0.3 (time +0.3, news +0.0); nothing +0.1. No new information, so this is just time passing.",
    "items": [
     {
      "time_et": "08:32",
@@ -348,22 +348,49 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "17:03",
+     "title": "Industrial Execution Comes Into Focus Across TSLA, SPCX and ADUR - SECFilings.com",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV0d6WElPaHRBRTkwSThuMzEtSXIyMEdwTlhRcGFfa0F3LTAyQi16MGhrTjRvU2dXSUdYX01EZXJrZ1B6cS1RUFFVM0E5ZlBoeElMQVJfNnFlaEp3M3VsNVo5Tk52N1FjMWN6eUpCZDJDTDVJdE9BSHY1VUZNaV9BZ19ubHprNE5hblNnQ3l6RjhfeFJvUlNQcEdROA?oc=5",
+     "source": "SECFilings.com",
+     "factor": "sec",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "13:59",
+     "title": "Tesla analysis: stock falls after Roadster reveal fails to hold gains - Investing.com Australia",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSktDc1lJWnBNSzF3V3hwVkRXbGQtSkVTT2E1VV9JdnZuYmRWdDFrQlRFUWZ4UkFfRHJfTW1TX28zOW11SjRwakJIYVVYVEFsaVQwMXlvRkQ2ZC10Si1TRU5JMWlZSlBNbHFHN0ROOURzd3lIQm1Zd2ZwQVhRMlZ2ekxlWmVPamRmaUJUZndjQkZCTzVYNUVLSlhoUnM5TU9hNWlkbUNtOWVaVi1BU3ZxcExKXzRCdU9lYWtIdmF2SUtMNXZEeDZwYQ?oc=5",
+     "source": "Investing.com Australia",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "04:37",
+     "title": "Why is Tesla stock surging today? By Investing.com - Investing.com India",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWkhESmVYRm00TWRTZG5OQk1JVE01WWRuckVjb1lQdU9lLU1VNmVueDYyektLQ3RhTmFEX18zSlpoWU8xZXJKd3NTWmpsT2VyaEpzX1pfYWtUMklYQy1teVE0Uk1URWZmbmFseWszMEtzNV80UGVwUF9wdHVONTRQdEhWemNZaVZzZ0JCUURIaXJ1d3BPQ2FXVg?oc=5",
+     "source": "Investing.com India",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "end_A": {
-     "total": -0.39,
-     "time": -0.39,
+     "total": -0.45,
+     "time": -0.45,
      "news": 0.0
     },
     "end_B": {
-     "total": 0.28,
-     "time": 0.28,
+     "total": 0.32,
+     "time": 0.32,
      "news": 0.0
     },
     "end_none": {
-     "total": 0.11,
-     "time": 0.11,
+     "total": 0.13,
+     "time": 0.13,
      "news": 0.0
     }
    }
