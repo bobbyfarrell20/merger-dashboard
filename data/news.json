@@ -338,6 +338,16 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "06:24",
+     "title": "Barclays Analysts See Rising Potential For SpaceX-Tesla Merger",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd1ZBNGlSZm5ZcDZzc2dUT3NEWVhWQm1JTFQwVnAtU0FqQUJVUWl2UTFrVEFrbnAzcDE3VGNJWXlTTmVqU0J6bzlKSTdiRWZjOHZNejY4ODNURENkU2k3UTAtNlpiTExiZnRvczRobjJxUTdoTGFkcWNRRlozR1c1LXVWSER3bFRlaVB0TVI4dDF5aXNmbjNPN1MtSHBzd2VyNlVoV3V3?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
