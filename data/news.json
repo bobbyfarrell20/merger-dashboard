@@ -375,6 +375,16 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "12:19",
+     "title": "Tesla Unveils Roadster With a Nod to SpaceX Merger",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOREdUdGQ5dkU4ODg3RmxORHhQU09ZZTNhZmliRFM3ODVSRFZKZHF1eV83eW9BTGY4RmpPQlRJZTVoZVRPd2EzcDg4RVJ4MzNYUVN2aW5pVHJ3N3pITEd4b3pBNXllazZnSmZVaUJwVW1HZW5tZmh1WENIeWZibXQ1LTlITE5yODg?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
