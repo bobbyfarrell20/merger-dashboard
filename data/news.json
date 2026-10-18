@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-18",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "03:38",
+     "title": "Kalshi: definitive agreement Before Dec 1, 2026: 7.0% -> 30.0% (+23.0 pts in 26.3h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-16",
    "odds_note": "By Dec 14: with merger -0.5 pts (time -0.5, news +0.0); routine +0.3 (time +0.3, news +0.0); nothing +0.1. No new information, so this is just time passing.",
    "items": [
