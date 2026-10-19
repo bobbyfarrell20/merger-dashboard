@@ -11,8 +11,8 @@
    "unlock_date_if_post_market": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-19 13:23 ET",
-  "last_ok": "2026-10-19 13:23 ET",
+  "as_of": "2026-10-19 17:41 ET",
+  "last_ok": "2026-10-19 17:41 ET",
   "error": null
  },
  "starship": {
@@ -27,8 +27,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-19 13:23 ET",
-  "last_ok": "2026-10-19 13:23 ET",
+  "as_of": "2026-10-19 17:41 ET",
+  "last_ok": "2026-10-19 17:41 ET",
   "error": null
  },
  "grain": {
@@ -53,28 +53,28 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-19 13:23 ET",
-  "last_ok": "2026-10-19 13:23 ET",
+  "as_of": "2026-10-19 17:41 ET",
+  "last_ok": "2026-10-19 17:41 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 367.57,
+    "price": 368.06,
     "prev_close": 354.72,
-    "as_of": "2026-10-19 13:23 ET"
+    "as_of": "2026-10-19 16:00 ET"
    },
    "SPCX": {
-    "price": 148.325,
+    "price": 147.96,
     "prev_close": 146.03,
-    "as_of": "2026-10-19 13:23 ET"
+    "as_of": "2026-10-19 16:00 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-19 13:23 ET",
-  "last_ok": "2026-10-19 13:23 ET",
+  "as_of": "2026-10-19 17:41 ET",
+  "last_ok": "2026-10-19 17:41 ET",
   "error": null
  },
  "log": [],
- "prices_written": "2026-10-19T13:23-04:00"
+ "prices_written": "2026-10-19T17:41-04:00"
 }
