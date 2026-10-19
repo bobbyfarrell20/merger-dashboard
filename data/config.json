@@ -281,11 +281,11 @@
     "verified": true
    },
    {
-    "date": "2026-11-05",
+    "date": "2026-10-22",
     "label": "2nd full Nasdaq trading day after SpaceX's own Q3 results (not Tesla's Oct 21 report): 28% of 180-day group",
     "shares": 1300000000,
     "verified": false,
-    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 — Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Nov 5 is a placeholder from the Aug 4 Q2 release timing and creates no blackout until confirmed.",
+    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 \u2014 Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Oct 22 assumes the press-reported Oct 20 SpaceX Q3 release (not confirmed in an SEC filing) and creates no blackout until confirmed.",
     "blackout": false
    },
    {
@@ -473,7 +473,7 @@
   "spcx_class_b": 5485486276,
   "_spcx_src": "SpaceX 10-Q cover (Jul 28, 2026): 7,696,293,669 A + 5,485,486,276 B, plus 391,041,680 A issued in the Cursor merger (8-K Aug 14). Not a company-reported total.",
   "musk_spcx_votes": 53040000000,
-  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A ≈ 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
+  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
   "musk_spcx_shares_outstanding": 6068547515,
   "musk_tsla_shares": 699580882,
   "_musk_tsla_src": "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy.",
@@ -657,5 +657,86 @@
    "convergence"
   ],
   "max_calls_per_run": 10
+ },
+ "post_proxy": {
+  "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
+  "start": "2026-10-19",
+  "by": "2027-06-30",
+  "rules_total_from_start": 0.2946,
+  "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). Judgment, not data.",
+  "month_weights": {
+   "2026-10": 0.05,
+   "2026-11": 0.11,
+   "2026-12": 0.15,
+   "2027-01": 0.13,
+   "2027-02": 0.14,
+   "2027-03": 0.13,
+   "2027-04": 0.11,
+   "2027-05": 0.1,
+   "2027-06": 0.08
+  },
+  "_month_why": "How the rules model spreads the letter odds over time. Spread fairly evenly, with a bit more weight in Dec (AGM Q&A, Day-180 unlock) and Feb (after SpaceX's Q4 results). Then multiplied by catalyst-day weights below.",
+  "market_weight": 0.4,
+  "_market_why": "Share of the dashboard number taken from the prediction-market composite. Markets often move before the news hits the wire, so they get real weight, but they are thin (a few $K a day), so not all of it.",
+  "market": {
+   "min_vol_weight": 250,
+   "use_last_if_thin": true,
+   "_why": "Composite: every live Kalshi (definitive agreement before X) and Polymarket (announced by X) contract is treated as the same event. A volume-weighted monotone fit is drawn through them (weight = 24h volume, at least min_vol_weight). Polymarket 'announced' can include a non-binding letter, Kalshi needs a definitive agreement, so the two are not identical; the fit splits the difference."
+  },
+  "smart_money": {
+   "flag_pp": 5,
+   "flag_min_vol24": 1000,
+   "nudge_pp": 10,
+   "nudge_window_hours": 72,
+   "nudge_share": 0.25,
+   "nudge_cap_pp": 4,
+   "_why": "Flag 'Market moved before news': a contract moves 5+ pts in 24h with at least $1K traded and no filing or strict-filtered deal headline in that window. Nudge: if a flagged-quality move is 10+ pts within 72h, the dashboard adds 25% of that move (capped at 4 pts) on top of the blend, until news explains it or the move ages out."
+  },
+  "catalysts": [
+   {
+    "date": "2026-10-20",
+    "end": "2026-10-20",
+    "label": "SpaceX Q3 results + call",
+    "confirmed": false,
+    "mult": 3.0,
+    "note": "Date per press reports; SpaceX has not confirmed in an SEC filing."
+   },
+   {
+    "date": "2026-10-21",
+    "end": "2026-10-22",
+    "label": "Tesla Q3 earnings (after close) + next-day reaction",
+    "confirmed": true,
+    "mult": 3.0
+   },
+   {
+    "date": "2026-10-22",
+    "end": "2026-10-22",
+    "label": "SpaceX unlock, 28% of 180-day group (2nd trading day after SpaceX Q3)",
+    "confirmed": false,
+    "mult": 0.4,
+    "note": "Only if SpaceX reports Oct 20. Unlock days are less likely for a deal letter."
+   },
+   {
+    "date": "2026-10-26",
+    "end": "2026-10-26",
+    "label": "SpaceX unlock, 180-day group +7%",
+    "confirmed": true,
+    "mult": 0.4
+   },
+   {
+    "date": "2026-12-03",
+    "end": "2026-12-03",
+    "label": "Tesla annual meeting (Q&A or on-stage comment could be the announcement)",
+    "confirmed": true,
+    "mult": 4.0
+   },
+   {
+    "date": "2026-12-08",
+    "end": "2026-12-08",
+    "label": "SpaceX Day-180 unlock (remainder)",
+    "confirmed": true,
+    "mult": 0.4
+   }
+  ]
  }
 }

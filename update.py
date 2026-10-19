@@ -146,7 +146,7 @@ def headline_of(cfg, mm):
     a = sum(x["pA"] for x in dd); b = sum(x["pB"] for x in dd); Lp = sum(x["pL"] for x in dd) if mm["later"].get("on") else 0.0
     return {"X": a + Lp, "A": a, "B": Lp, "C": b - Lp, "D": T["none"]}
 
-def odds_history(cfg, today, inp, prev, news_day, kill=None):
+def odds_history(cfg, today, inp, prev, news_day, kill=None, ppm=None, pps=None):
     """Daily merger-any-path (Nov 26 basis, toggle OFF) points; today's point is overwritten on reruns.
     After the kill switch (routine meeting filed), the point is the deferred-letter odds the headline shows."""
     oh = load("odds_history.json", [])
@@ -161,6 +161,12 @@ def odds_history(cfg, today, inp, prev, news_day, kill=None):
         pp = next((p for p in reversed(oh) if p["date"] < str(today) and not p.get("backfill")), None)
         base = pp["X"] if pp else cf
         pt["news"] = round((H["X"] - cf) * 100, 2); pt["time"] = round((H["X"] - base) * 100 - pt["news"], 2)
+    if ppm:
+        hh = ppm["headline"]; pt.update({"X": round(hh["blend"], 5), "B": round(hh["blend"], 5), "C": round(1 - hh["blend"], 5), "rules": round(hh["rules"], 5),
+                                        "market": round(hh["market"], 5), "basis": "letter by Jun 30, 2027 (blend)"})
+        if pps: pt.update({"news": pps["news"], "time": pps["time"], "markets": pps["markets"]})
+        if pps and pps.get("first"):
+            pt["events"].append({"callout": True, "label": "Market blend added", "delta": pps["markets"], "title": f"Dashboard now blends in the prediction-market composite ({hh['market_weight']:.0%} weight)", "source": "model change"})
     if abs(pt["news"]) >= 0.05:
         items = (news_day or {}).get("items", [])
         tagged = [i for i in items if i.get("odds_event")]
@@ -453,6 +459,15 @@ def make_why(cfg, m, br, today, state):
         out.append(f"Merger and routine now carry separate deadline pressure. After Oct 26, merger odds keep only the active-process share ({LT.get('active_share',0):.0%}) and decay daily; the quiet-hold path gets no deadline pressure. That moves {LT.get('p',0):.1%} to 'routine date now, merger letter later (2027 special meeting)'. Missed-card switch: {LT.get('mc_status')}.")
     return out
 
+def make_why_pp(cfg, pp, state):
+    H = pp["headline"]; w = H["market_weight"]; ev = state.get("evidence") or {}
+    out = [f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) set a routine Dec 3 annual meeting with three items and no merger. If a deal were close, Tesla could have waited a few weeks and put it on that ballot, so a deal in the next month or so is unlikely.",
+           "A merger is still possible through the normal route for a deal this size: a special committee, fairness opinions and an S-4, then a separate announcement and a special meeting, most likely in 2027.",
+           f"The rules model keeps 60% of the pre-proxy merger odds: {H['rules']:.0%} by {fmt(pp['by'])}, 2027. That is a judgment call, not data.",
+           f"Prediction markets price it higher, {H['market']:.0%} on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
+           "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter."]
+    return out
+
 def fmt(s): d = P(s); return d.strftime("%b ") + str(d.day)
 
 def main():
@@ -498,10 +513,15 @@ def main():
         lk = cfg["letter_after_kill"]
         kill = {"letter_by": lk["by"], "p_letter": lk["mult_of_prior"] * pre_kill["a_share"], "why": lk["_why"]}
         m["totals"] = {"A": 0.0, "B": 1.0, "none": 0.0}
+    pp = None
+    if state["state"] == "meeting_only":   # post-proxy model: rules x (1-w) + prediction-market composite x w (+ smart-money nudge)
+        import postproxy
+        pp = postproxy.run(cfg, today, live)
+        kill["p_rules"] = kill["p_letter"]; kill["p_letter"] = pp["headline"]["blend"]
     alt = compute({**cfg, "special_meeting_planned": {**cfg["special_meeting_planned"], "on": not cfg["special_meeting_planned"]["on"]}}, today)
     dm = deal_math(cfg, live)
     br = blank_reasons(cfg, today)
-    why = make_why(cfg, m, br, today, state)
+    why = make_why(cfg, m, br, today, state) if not pp else make_why_pp(cfg, pp, state)
     exps = sorted(o["expiry"] for o in live.get("options", []) if "expiry" in o)
     ivs = {o["expiry"]: o.get("atm_iv") for o in live.get("options", []) if "expiry" in o}
     for w in m["weeks"] + alt["weeks"]:
@@ -521,24 +541,44 @@ def main():
             if k in prev["metrics"]:
                 split[k] = {"total": round((v - prev["metrics"][k]) * 100, 2), "time": round((cf[k] - prev["metrics"][k]) * 100, 2),
                             "news": round((v - cf[k]) * 100, 2)}
-    hist.append({"v": 2, "date": str(today), "as_of": now_et(), "metrics": met, "inputs": inp})
+    pps = None
+    if pp:
+        H = pp["headline"]; o = (prev or {}).get("pp")
+        if o:
+            import postproxy
+            cfr = postproxy.run({**cfg, "post_proxy": o["inputs"]}, today, live)["headline"]["rules"]
+            tot = (H["blend"] - o["blend"]) * 100; tm = (cfr - o["rules"]) * (1 - o["w"]) * 100
+            nw = (H["rules"] * (1 - H["market_weight"]) - cfr * (1 - o["w"])) * 100
+            pps = {"total": round(tot, 2), "time": round(tm, 2), "news": round(nw, 2), "markets": round(tot - tm - nw, 2)}
+        else:   # first post-proxy run: filing effect on the rules model, then the market blend added on top
+            ohp = next((p for p in reversed(load("odds_history.json", [])) if p["date"] < str(today) and not p.get("backfill")), None)
+            if ohp:
+                pps = {"total": round((H["blend"] - ohp["X"]) * 100, 2), "time": 0.0, "news": round((H["rules"] - ohp["X"]) * 100, 2),
+                       "markets": round((H["blend"] - H["rules"]) * 100, 2), "first": True}
+    hist.append({"v": 2, "date": str(today), "as_of": now_et(), "metrics": met, "inputs": inp,
+                 **({"pp": {"blend": pp["headline"]["blend"], "rules": pp["headline"]["rules"], "market": pp["headline"]["market"],
+                            "w": pp["headline"]["market_weight"], "inputs": cfg["post_proxy"]}} if pp else {})})
     hist = [h for i, h in enumerate(hist) if h["date"] != str(today) or i == len(hist) - 1]
     save("history.json", hist[-200:])
-    news_moved = any(abs(v["news"]) > 0.005 for v in split.values())
+    news_moved = (abs(pps["news"]) >= 0.5) if pps else (False if pp else any(abs(v["news"]) > 0.005 for v in split.values()))
     day = next((d for d in news["days"] if d["date"] == str(today)), None)
     if not day:
         day = {"date": str(today), "odds_note": "", "items": []}; news["days"].insert(0, day)
     if kill and state.get("changed") == str(today) and not any(d.startswith("Tesla filed a routine") for d in drivers):
         ev = state.get("evidence") or {}
         drivers = drivers + [f"Tesla filed a routine meeting proxy ({ev.get('form', 'filing')} {ev.get('date', '')}) with no merger item, closing the 2026 regular-card merger path"]
-    if prev:
+    if pps:
+        day["odds_note"] = (f"Merger letter by Jun 30, 2027: {pps['total']:+.1f} pts (filings/news {pps['news']:+.1f}, prediction markets {pps['markets']:+.1f}, time {pps['time']:+.1f}). "
+                            + ("Why: " + "; ".join(drivers) + "." if drivers else "No new filing or news, so only the markets and time moved it."))
+        day["split"] = {"pp": pps}
+    elif prev and not pp:
         e = lambda k: split.get(k, {"total": 0, "time": 0, "news": 0})
         day["odds_note"] = ("By Dec 14: with merger {:+.1f} pts (time {:+.1f}, news {:+.1f}); routine {:+.1f} (time {:+.1f}, news {:+.1f}); nothing {:+.1f}. "
                             .format(e("end_A")["total"], e("end_A")["time"], e("end_A")["news"], e("end_B")["total"], e("end_B")["time"], e("end_B")["news"], e("end_none")["total"])
                             + ("Why: " + "; ".join(drivers) + "." if drivers else "No new information, so this is just time passing."))
         day["split"] = {k: split[k] for k in ("end_A", "end_B", "end_none") if k in split}
     news["days"].sort(key=lambda d: d["date"], reverse=True); save("news.json", news)
-    try: odds_history(cfg, today, inp, prev, day, kill)
+    try: odds_history(cfg, today, inp, prev, day, kill, pp, pps)
     except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} odds_history: {ex}")
     alerts = []
     if news_moved:
@@ -555,6 +595,7 @@ def main():
              "fcc": live.get("fcc"), "shares": live.get("shares"), "why": why, "kill": kill, "leak": m["leak"],
              "starship": m["starship"], "grain": m["grain"], "grain_check": live.get("grain_check"), "polymarket": live.get("polymarket"),
              "lockups_eff": cfg["lockups"], "trackers": {k: (v if k == "log" or not isinstance(v, dict) else {**v, "value": {kk: vv for kk, vv in (v.get("value") or {}).items() if kk != "seen_ids"}}) for k, v in load("trackers.json", {}).items()},
+             "pp": pp, "pp_split": pps,
              "later": m["later"], "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"], "alt_later": alt["later"],
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,

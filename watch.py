@@ -107,12 +107,13 @@ def fetch_contracts(mw):
         if m.get("closed"): continue
         p, how = usable(f(m.get("bestBid")), f(m.get("bestAsk")), f(m.get("lastTradePrice")), f(m.get("volume24hr")), mw)
         out.append({"id": "polymarket:" + str(m["id"]), "name": "Polymarket: announced by " + m["groupItemTitle"], "p": p, "how": how,
-                    "vol24": f(m.get("volume24hr")), "url": PM_URL})
+                    "vol24": f(m.get("volume24hr")), "url": PM_URL, "bid": f(m.get("bestBid")), "ask": f(m.get("bestAsk")), "last": f(m.get("lastTradePrice"))})
     for m in json.loads(get("https://api.elections.kalshi.com/trade-api/v2/markets?event_ticker=KXCOMPANYACTIONMERGER-27&limit=50"))["markets"]:
         if m.get("status") not in ("active", "open"): continue
         p, how = usable(f(m.get("yes_bid_dollars")), f(m.get("yes_ask_dollars")), f(m.get("last_price_dollars")), f(m.get("volume_24h_fp")), mw)
         out.append({"id": "kalshi:" + m["ticker"], "name": "Kalshi: definitive agreement " + (m.get("yes_sub_title") or m["ticker"]),
-                    "p": p, "how": how, "vol24": f(m.get("volume_24h_fp")), "url": KS_URL})
+                    "p": p, "how": how, "vol24": f(m.get("volume_24h_fp")), "url": KS_URL,
+                    "bid": f(m.get("yes_bid_dollars")), "ask": f(m.get("yes_ask_dollars")), "last": f(m.get("last_price_dollars"))})
     return out
 
 def market_moves(contracts, hist, mw, now):
@@ -135,8 +136,8 @@ def market_moves(contracts, hist, mw, now):
                               "source": c["id"].split(":")[0].capitalize(), "time_et": now.strftime("%Y-%m-%d %H:%M"), "quote": c["how"]})
                 h["last_alert_p"] = c["p"]
         if c["p"] is not None:
-            pts.append({"t": ts, "p": c["p"], "how": c["how"], "vol24": c["vol24"]})
-        h["points"] = pts; h["name"] = c["name"]
+            pts.append({"t": ts, "p": c["p"], "how": c["how"], "vol24": c["vol24"], "bid": c.get("bid"), "ask": c.get("ask"), "last": c.get("last")})
+        h["points"] = pts; h["name"] = c["name"]; h["url"] = c["url"]
     return items
 
 def classify_starship(title):
