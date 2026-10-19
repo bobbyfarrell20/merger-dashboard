@@ -22,7 +22,12 @@ def _text(url):
     t = html.unescape(re.sub(r"<[^>]+>", " ", _get(url)))
     return re.sub(r"\s+", " ", t)
 
+# Boilerplate that mentions SpaceX next to an unrelated "merger" (e.g. Musk's proxy bio: "merger of X and xAI",
+# xAI Holdings becoming a SpaceX subsidiary) is not a Tesla-SpaceX deal; drop those sentences before matching.
+BENIGN_RE = re.compile(r"[^.]*(x\.?ai|solarcity|paypal|zip2|boring company|neuralink|twitter)[^.]*\.", re.I)
+
 def classify(co, form, text):
+    text = BENIGN_RE.sub(" ", text)
     near = re.search(rf"({OTHER[co]}).{{0,250}}{MERGER_RE}|{MERGER_RE}.{{0,250}}({OTHER[co]})", text, re.I)
     if near or form in ("S-4", "S-4/A", "425", "DEFM14A", "PREM14A"):
         return "letter", (near.group(0)[:200] if near else form)

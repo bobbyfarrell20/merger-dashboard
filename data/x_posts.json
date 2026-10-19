@@ -1,6 +1,51 @@
 {
  "posts": [
   {
+   "id": "2112142996594401524",
+   "handle": "ReutersLegal",
+   "name": "Reuters Legal",
+   "created_at": "2026-10-19T11:25:06Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 0
+   },
+   "text": "Tesla filed its proxy statement with the US Securities and Exchange Commission on Monday asking shareholders to re-elect CEO Elon Musk, Chair Robyn Denholm and director JB Straubel to three-year terms at its December 3 annual meeting. https://t.co/9Z2P7CNerj",
+   "why": "Reuters confirms Tesla's definitive proxy (filed 6:15 AM ET) sets the delayed 2026 annual meeting for Dec 3 with only routine items, so there's no merger on this year's ballot.",
+   "factor": "Annual meeting / proxy filed (routine, no merger item)",
+   "url": "https://x.com/ReutersLegal/status/2112142996594401524",
+   "time_et": "Oct 19, 2026 7:25 AM ET"
+  },
+  {
+   "id": "2112142523103686723",
+   "handle": "xdNiBoR",
+   "name": "Robin",
+   "created_at": "2026-10-19T11:23:13Z",
+   "kind": "analyst",
+   "metrics": {
+    "likes": 21
+   },
+   "text": "Here is the full annual proxy for the December 3, 2026 AGM. (Annual General Meeting)\n\nNo Tesla-SpaceX merger-related news in it. Nothing about a special committee or a merger proposal.\nThey could still delay the AGM or call a special meeting later.\nhttps://t.co/BHCBg08kqx https://t.co/1VCZ4J09Ho",
+   "why": "A read of the full proxy finds no special committee or merger proposal, leaving only a later special meeting as the path for a deal vote.",
+   "factor": "Proxy contents / process",
+   "url": "https://x.com/xdNiBoR/status/2112142523103686723",
+   "time_et": "Oct 19, 2026 7:23 AM ET"
+  },
+  {
+   "id": "2112128135915520170",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "created_at": "2026-10-19T10:26:03Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 108
+   },
+   "text": "TESLA ANNUAL MEETING OF HOLDERS WILL BE HELD ON DEC. 3",
+   "why": "First wire headline on the proxy, 11 minutes after it hit EDGAR: the long-delayed meeting date is finally set.",
+   "factor": "Annual meeting date set",
+   "url": "https://x.com/FirstSquawk/status/2112128135915520170",
+   "time_et": "Oct 19, 2026 6:26 AM ET"
+  },
+  {
    "id": "2111229232713998658",
    "handle": "garyblack00",
    "name": "Gary Black",
@@ -243,6 +288,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-10-16T23:10:29+00:00",
- "updated_et": "Oct 16, 2026 7:10 PM ET"
+ "updated_at": "2026-10-19T12:16:36+00:00",
+ "updated_et": "Oct 19, 2026 8:16 AM ET"
 }
