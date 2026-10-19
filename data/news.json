@@ -2,6 +2,70 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-19",
+   "odds_note": "By Dec 14: with merger -28.6 pts (time -1.7, news -26.8); routine +33.8 (time +1.7, news +32.1); nothing -5.2. Why: Tesla filed a routine meeting proxy (DEF 14A 2026-10-19) with no merger item, closing the 2026 regular-card merger path.",
+   "items": [
+    {
+     "time_et": "06:15",
+     "title": "Tesla files definitive proxy: 2026 annual meeting Dec 3, routine items only, no merger proposal",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+     "url_alt": "https://x.com/ReutersLegal/status/2112142996594401524",
+     "source": "SEC EDGAR (Tesla DEF 14A)",
+     "factor": "sec",
+     "effect": "Kill switch tripped 08:17 ET Oct 19: the DEF 14A (accepted 6:15 AM ET) sets the meeting for Dec 3, 2026, 3 PM CT, record date Oct 13, with three routine proposals (elect Musk, Denholm and Straubel as Class I directors; say-on-pay; PwC ratification). No special committee, merger or SpaceX deal language (SpaceX appears only in Musk's bio and the xAI investment note). The 2026 regular-card merger path is closed; the dashboard now shows the deferred path, a merger letter for a 2027 special meeting, at 0.6 x the prior merger share. Reported by Reuters and First Squawk on X.",
+     "auto": false,
+     "watch": true,
+     "odds_event": {
+      "label": "Routine proxy (Dec 3 AGM)"
+     }
+    },
+    {
+     "time_et": "03:21",
+     "title": "TSLA, SPCX Eye Green Open: Gary Black Sees SpaceX Buying Tesla For $420/Share In \u2018Next Few Weeks\u2019 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNzkyUzJtRkQ2Y0pFa0ViYlJsN1FvQjNBbTBLa2hyeW9Pb09sSzlkUzY1eC14WGlPYkw5elM1OEdEZWlLLXJaanloOVdaQUxVVjBFblQ2NTdqQUF4U1NHekVkUGt0ZXFudXVzMDdFLUxuMUl6d2hhUmtvNjdtVWhOcnEtRjc2NUd0bVg5eU5ON3B6WkxsdU0zaV83QU9XSW1KbUM0ZGVqUmxtTlBCNFE5MlNJTXM1bzdJMlFyeWx1Z1Y2SFhXUDVkOTR1M2U?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "06:16",
+     "title": "Musk announces one SpaceX share for every American kid in 2027 - Pasquale Pillitteri",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNy1LOWJpYzcwRVhiTDNhUXhPUnJFdTU4TTNjajMxOXpOb1U3cDBDWmgtaEhySXBmbjBTQ1pVZ1RKRTlYd2ZhR1k1TVFxVm9PRDV6VDhLeGtLd2RaUzlBWmpHcXlTT21FcVMyYTVIeEx5cmdsRmE0cTd1Q1oxR2I2MVF1cmt1WkpYVFllYzF3?oc=5",
+     "source": "Pasquale Pillitteri",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "04:21",
+     "title": "Why Are Nasdaq Futures Soaring Premarket? NBIS, MU, TSLA, SPCX, ASTS, SLS Stocks In Focus - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeXc4NWdoTndoY2R5OGhGTERQQmVuM0UtTUR5MDVWZV9wRjRqNkVOc2RtSXVJWFozUG9EOFhJM3pyWGxxZkVPSUtuNDQybWF3MDZkRmNEZFJ3aW9lQUI3ck03c01oaUJIOEtRdXhESm02TWpMN0dvcE1acW9tMko1aGY3bkxYQy1GLVFfWWcwbG1mS2RhOFBIcWJEa0V2WDJwV29oRU03dERqZ2pfd3NaT3M2X1JQcWVpaWNrejZsOFVZNkNESFhCZHQtc0xfejItbWlCUVpHdVNUS2dMOS04Sw?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    }
+   ],
+   "split": {
+    "end_A": {
+     "total": -28.55,
+     "time": -1.72,
+     "news": -26.83
+    },
+    "end_B": {
+     "total": 33.77,
+     "time": 1.71,
+     "news": 32.06
+    },
+    "end_none": {
+     "total": -5.22,
+     "time": 0.01,
+     "news": -5.23
+    }
+   }
+  },
+  {
    "date": "2026-10-18",
    "odds_note": "",
    "items": [
@@ -54,6 +118,48 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "15:44",
+     "title": "SpaceX, Tesla, and Meta earnings highlight AI s... - Pluang",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYjMwUnZMT1FpdHlDRTZZRXVkck9SRnNXT01fNWhyTmY0R2VXbGtwS2paVjVzVTlvS21lcElMY2IxQVpMY2xobjRiS0RjWmdTdEpLei16RmI2RzNhRmlSZlpqZHJBTlBFLU9YNnhOY045RTlyQ3V5OFg0WlJfOUhOQnFidWVTY0FwS2VmeDZDQXhReTNWa0E?oc=5",
+     "source": "Pluang",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    }
+   ]
+  },
+  {
+   "date": "2026-10-17",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "14:52",
+     "title": "SA Asks: How important is the new Roadster to Tesla's future? (TSLA:NASDAQ) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcmFXdEVvYUdNUWVPYldHOC1BZ2hfWFhFMEhaTTg3NmVZWUhKdHAyZGZhSjUxVWcyWkhwa2R6cGktUW4xeGViSURvLUl4V2Q3WENzeU9PSjFxcXNrN3VsaVNRRUVXYnRBUjJnY1BCMmxHT1dnVjRKNnpGNVJrTXpUekxhRVhwZFZac2pHaXM2WURWMWdVMTRVdEpXdWw?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "09:30",
+     "title": "Tesla: Musk Proves He Can Deliver (Earnings Preview) (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTWN4LWozLVlPZm12VzFxOV9QLTJTZV90U2Q5dzFfRS1hcjNFcHZmQTJvd0tuYmZadm1pZHFSdmNWNnRYV0QwM1FMTXVBVWpnUFIzWmw4MDloZDVTX3ExX2NLcWdDVk9xNWlqRENyeVJnanN1TXpaZ0NqN0dTaTh5YXFIOUpjTlhFcmUxdlNwdU5BRXdk?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "08:25",
+     "title": "Tesla: Who Needs Federal Incentives With Gas Above $4? (Earnings Preview) (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYURsTkY1SVJvaHNzMEVpSWlKYWJEMDN5bE5iUG1WWVlBbVQwRGEyd1BVTW1sQlRVaWttQlo5ZGs3SGRySGUtR1l1aXFKV3RlZlE5Zk9teGZ6ZHZYX2o4NFRrWi1CZlp1a2JHTzE2OWlWY2ZOcDIxZzRSQmRYM1ZXQ2tvaElaeHdjc0JsNmt6MFlvRkRLOTRVWUZUZjkxbUFtMXhILVlXN3ZXZEUzUWc?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ]
   },

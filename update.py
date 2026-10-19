@@ -146,11 +146,14 @@ def headline_of(cfg, mm):
     a = sum(x["pA"] for x in dd); b = sum(x["pB"] for x in dd); Lp = sum(x["pL"] for x in dd) if mm["later"].get("on") else 0.0
     return {"X": a + Lp, "A": a, "B": Lp, "C": b - Lp, "D": T["none"]}
 
-def odds_history(cfg, today, inp, prev, news_day):
-    """Daily merger-any-path (Nov 26 basis, toggle OFF) points; today's point is overwritten on reruns."""
+def odds_history(cfg, today, inp, prev, news_day, kill=None):
+    """Daily merger-any-path (Nov 26 basis, toggle OFF) points; today's point is overwritten on reruns.
+    After the kill switch (routine meeting filed), the point is the deferred-letter odds the headline shows."""
     oh = load("odds_history.json", [])
     off = {**cfg, "special_meeting_planned": {**cfg["special_meeting_planned"], "on": False}}
     H = headline_of(off, compute(off, today))
+    if kill:
+        pl = kill["p_letter"]; H = {"X": pl, "A": 0.0, "B": pl, "C": 1 - pl, "D": 0.0}
     pt = {"date": str(today), "as_of": now_et(), **{k: round(v, 5) for k, v in H.items()}, "news": 0.0, "time": 0.0, "events": []}
     if prev:
         pin = {**off, **prev["inputs"], "special_meeting_planned": off["special_meeting_planned"]}
@@ -525,6 +528,9 @@ def main():
     day = next((d for d in news["days"] if d["date"] == str(today)), None)
     if not day:
         day = {"date": str(today), "odds_note": "", "items": []}; news["days"].insert(0, day)
+    if kill and state.get("changed") == str(today) and not any(d.startswith("Tesla filed a routine") for d in drivers):
+        ev = state.get("evidence") or {}
+        drivers = drivers + [f"Tesla filed a routine meeting proxy ({ev.get('form', 'filing')} {ev.get('date', '')}) with no merger item, closing the 2026 regular-card merger path"]
     if prev:
         e = lambda k: split.get(k, {"total": 0, "time": 0, "news": 0})
         day["odds_note"] = ("By Dec 14: with merger {:+.1f} pts (time {:+.1f}, news {:+.1f}); routine {:+.1f} (time {:+.1f}, news {:+.1f}); nothing {:+.1f}. "
@@ -532,7 +538,7 @@ def main():
                             + ("Why: " + "; ".join(drivers) + "." if drivers else "No new information, so this is just time passing."))
         day["split"] = {k: split[k] for k in ("end_A", "end_B", "end_none") if k in split}
     news["days"].sort(key=lambda d: d["date"], reverse=True); save("news.json", news)
-    try: odds_history(cfg, today, inp, prev, day)
+    try: odds_history(cfg, today, inp, prev, day, kill)
     except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} odds_history: {ex}")
     alerts = []
     if news_moved:

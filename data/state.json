@@ -1,6 +1,14 @@
 {
- "state": "pre",
+ "state": "meeting_only",
  "since": "2026-10-13",
- "evidence": null,
+ "changed": "2026-10-19",
+ "evidence": {
+  "co": "TSLA",
+  "form": "DEF 14A",
+  "date": "2026-10-19",
+  "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+  "to": "meeting_only",
+  "evidence": "2026 Annual Meeting of Shareholders will be held on December 3, 2026 (Class I directors, say-on-pay, PwC ratification; no merger item)"
+ },
  "_doc": "pre = no meeting date and no letter; meeting_only = meeting date set with no merger language (2026 regular-meeting merger path closed); letter = merger letter/agreement/committee disclosed (switch to close timing)."
 }

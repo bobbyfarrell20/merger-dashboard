@@ -202,5 +202,26 @@
   "news": 0.0,
   "time": 0.03,
   "events": []
+ },
+ {
+  "date": "2026-10-19",
+  "as_of": "2026-10-19 08:19 ET",
+  "X": 0.29463,
+  "A": 0.0,
+  "B": 0.29463,
+  "C": 0.70537,
+  "D": 0.0,
+  "news": -16.97,
+  "time": -1.49,
+  "events": [
+   {
+    "callout": true,
+    "label": "Routine proxy (Dec 3 AGM)",
+    "delta": -16.97,
+    "title": "Tesla files definitive proxy: 2026 annual meeting Dec 3, routine items only, no merger proposal",
+    "url": "https://x.com/ReutersLegal/status/2112142996594401524",
+    "source": "SEC EDGAR (Tesla DEF 14A)"
+   }
+  ]
  }
 ]
