@@ -1,6 +1,6 @@
 {
- "morning_run": "2026-10-16",
- "generated": "2026-10-19 08:19 ET",
+ "morning_run": "2026-10-19",
+ "generated": "2026-10-19 08:31 ET",
  "today": "2026-10-19",
  "window": {
   "start": "2026-10-14",
@@ -61,7 +61,7 @@
    "L": 0.0,
    "expiry": "2026-10-23",
    "expiry_listed": true,
-   "expiry_iv": 76.3
+   "expiry_iv": 77.7
   },
   {
    "monday": "2026-10-26",
@@ -117,7 +117,7 @@
    "L": 0.0,
    "expiry": "2026-10-30",
    "expiry_listed": true,
-   "expiry_iv": 60.6
+   "expiry_iv": 61.2
   },
   {
    "monday": "2026-11-02",
@@ -173,7 +173,7 @@
    "L": 0.0,
    "expiry": "2026-11-06",
    "expiry_listed": true,
-   "expiry_iv": 53.7
+   "expiry_iv": 55.2
   },
   {
    "monday": "2026-11-09",
@@ -285,7 +285,7 @@
    "L": 0.0,
    "expiry": "2026-11-20",
    "expiry_listed": true,
-   "expiry_iv": 58.1
+   "expiry_iv": 59.5
   },
   {
    "monday": "2026-11-23",
@@ -685,7 +685,8 @@
     "Tesla files definitive proxy: 2026 annual meeting Dec 3, routine items only, no merger proposal",
     "TSLA, SPCX Eye Green Open: Gary Black Sees SpaceX Buying Tesla For $420/Share In \u2018Next Few Weeks\u2019 - Stocktwits",
     "Musk announces one SpaceX share for every American kid in 2027 - Pasquale Pillitteri",
-    "Why Are Nasdaq Futures Soaring Premarket? NBIS, MU, TSLA, SPCX, ASTS, SLS Stocks In Focus - Stocktwits"
+    "Why Are Nasdaq Futures Soaring Premarket? NBIS, MU, TSLA, SPCX, ASTS, SLS Stocks In Focus - Stocktwits",
+    "A big 'yikes' still hangs over the AI trade as Meta and Tesla report: What to watch this week - Yahoo Finance"
    ],
    "text": "News-driven change: end_A -26.8pts, end_B +32.1pts, end_none -5.2pts"
   },
@@ -845,7 +846,7 @@
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-10-16 16:00 ET, fetched 2026-10-19 08:18 ET"
+  "prices_as_of": "last trade 2026-10-16 16:00 ET, fetched 2026-10-19 08:31 ET"
  },
  "blank_reasons": [
   {
@@ -861,7 +862,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.1885516009016749,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-10-19 08:19 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-10-19 08:31 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -877,7 +878,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.09002875815243913,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-19 08:19 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-19 08:31 ET (news watcher).",
    "merger": false
   },
   {
@@ -885,7 +886,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06631901829048394,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-19 08:19 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-19 08:31 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -908,7 +909,7 @@
  "leak_logodds": -0.2788010822020718,
  "weeks_blank": 4,
  "fcc": {
-  "as_of": "2026-10-19 08:19 ET",
+  "as_of": "2026-10-19 08:31 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -985,7 +986,7 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-19 08:19 ET",
+  "as_of": "2026-10-19 08:31 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -995,7 +996,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-10-19 08:19 ET",
+  "as_of": "2026-10-19 08:31 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -1017,10 +1018,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.215,
+    "yes": 0.21,
     "closed": false,
     "volume": 284111.61833699996,
-    "volume_24h": 26190.02339,
+    "volume_24h": 28940.02339,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -1028,7 +1029,7 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.33,
     "closed": false,
-    "volume": 25416.85218,
+    "volume": 25416.852179999998,
     "volume_24h": 2398.315506,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -1037,7 +1038,7 @@
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
     "yes": 0.385,
     "closed": false,
-    "volume": 24220.420603,
+    "volume": 24265.420602999995,
     "volume_24h": 2075.1296370000005,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -1046,7 +1047,7 @@
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
     "yes": 0.54,
     "closed": false,
-    "volume": 48796.766318,
+    "volume": 48796.76631800001,
     "volume_24h": 13931.82935,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -1055,7 +1056,7 @@
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
     "yes": 0.64,
     "closed": false,
-    "volume": 47153.194309,
+    "volume": 47153.19430899999,
     "volume_24h": 4027.132773,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
