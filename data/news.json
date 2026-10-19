@@ -251,7 +251,7 @@
      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm",
      "source": "SEC EDGAR",
      "factor": "sec",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "re-assessed 17:41 ET: retail vote-solicitation materials for the routine Dec 3 meeting (shareholder letter, VoteTesla.com, ads, X post); no merger item; no model change",
      "auto": true,
      "watch": true
     },
@@ -261,7 +261,7 @@
      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVUhQTTcwUnFPZktrOFVVM1QtMFhXajRTUktLdzZFelMwQTdjclNhbkF0UnJwcUpZa3RWQnl5NmlHLVFQZV9QdE53R0h0eGo1bWNYdDg0LTZEX2VIZURfd3NncjFwcU1kMUc5ekdfSGMxeUw2UXA2V3c5cmEwZVFVZFJUZW5UYmI1b19LbmZuMUVUV3dOZ2pyTDMxUU5zeXd5dk9NYjhPWDl2UQ?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "re-assessed 17:41 ET: RBC's Tom Narayan says a deal would be all-stock with SpaceX buying Tesla near $480, roughly a 50/50 split; analyst opinion, no sourced deal news; no model change",
      "auto": true,
      "watch": true
     },
@@ -273,6 +273,16 @@
      "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "17:41",
+     "title": "Polymarket: announced by December 31, 2026: 29.0% -> 17.5% (-11.5 pts in 23.6h)",
+     "url": "https://polymarket.com",
+     "source": "Polymarket",
+     "factor": "markets",
+     "effect": "re-assessed 17:41 ET: repricing of this morning's routine Dec 3 proxy (no merger item), already in the model; no model change",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
