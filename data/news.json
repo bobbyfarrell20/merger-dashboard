@@ -54,6 +54,196 @@
      "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "06:53",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:47",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116713/tm267596d5_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:42",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116707/tm267596d3_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:15",
+     "title": "TSLA filed DEF 14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:27",
+     "title": "SpaceX, Tesla earnings to test Musk's AI spending ambitions as merger talk grows",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdi1oa1VDTm0wMUJualVQRU5ieHFCQmFCejlxdEx1cEM3am1WaEV4LVJwRGVab29QU05IUl9fYzhsaFFFSk5hVGtTZFFLNGNOUVNFMjJ4RkE2b2RCdVJmN0t5UmVBeWpPb2ZwMThLcVRkVENsdFhRc0JOUml0Z3F3MFg5bDhsNmZrX2tuS1ZkRFl2elAzd0p0ZDlFb0E1MF9malVCZXhEZnJqRUFYMUxFNDV5ZmRrZkYxZndkWGthUEpPQVdOTHAtMHBVTQ?oc=5",
+     "source": "Reuters",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:04",
+     "title": "Tesla-SpaceX Merger Mania Strikes Wall Street Ahead of Earnings",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1SbXNIVjJ6YkhGTml5NmJEZ1U4YUJpUzZuYVZOT3EwaXpRMmhUb2Z3TjFFTGt6Qkw0OFY5bjhIMllMcHBUYTJseC1fTXdhX0xCdjdnbHZTemJqZ01pNDBFM3k0QW1STWNpMmlENm1BdDFkWEJOaUp6dGd6RVloQQ?oc=5",
+     "source": "Barron's",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "10:07",
+     "title": "Tesla (TSLA) proxy shows a board getting ready for a SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQUpzOXdpajN0Tm1DbmtXN1RZa2k0UGl4MnBnREVhcXBPbnM2M3Q4NHVFaExfd25mVnhQTGVoT05KdUV4NkZmUlQ1TzFMRTN0N0VFSTQ0YW1kQWdVbVNKeko0Y2hIZERnUGp3eEpHeDYya0hxX3NTVTFIUXJiLVp3Wk9QZw?oc=5",
+     "source": "Electrek",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:59",
+     "title": "SpaceX Stock Climbs After Musk Gift Pledge; Analysts Predict Tesla Merger Price",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQWZYTXBndlAwdWpzS252M3lUNXFtZ182VGpuYUxXMjhqNllrdUZpX2Mta3cxVl91R1VReTVUN1d5ZUxvNmhmX3dORkNzWTVNbnF3cXNibVUzWFU3OEpVLW9YNmh2UTltUGxsNEZfVlFhZG9FaEY4UHQzR2FzdTM5eDR3?oc=5",
+     "source": "Investor's Business Daily",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:40",
+     "title": "A SpaceX-Tesla Merger Could Happen Before the End of 2026. Here's What That Could Mean for the Stocks",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3hDYkx3SWRsMnhfMkc1RTI2VEFwaHdzb1NQRHJfU1N1VXh3Q2JySVNKaWZOLWE5OGtERzZkWFlWMHVJQXdaVTNLMWRWYkxoUWNvd0E3WGtHM3lWbkZlTjE5RVNTWDhueUVHRDJ2VkFfWEtzb28wVy1hOFBJLW1pVlp0X0JJVGk2amdWd1h0VGcwREx6dUNuQ0plQzN5UQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:46",
+     "title": "SpaceX to Continue Sharing 'Ambitious' Updates as Interest Around Potential Tesla Merger Grows, RBC Says",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZmQ5Uk5ZVTR3US1SX3dVT1JxZ2huTmZpWXhUM0lmQVVENl9QYklYdlp4aFZlMzZyWUhKNHp4TXUxYUJDZVRCWGdsaXhkaXdUZXBpWDFuOWdVWm9pZVp2MllLb0hQMkVtM2FhRk5HR2VBbklTQXBpdFZER2ZtVFhOMjY3cVhsVnVxZmFWYm8yWVNkaTUyMVV4R0VPV0tOaGw5V0t1X0VB?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:21",
+     "title": "SpaceX Could Buy Tesla for $480 Per Share in $3.74 Trillion Merger, RBC Says",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVGNPOHJMeE5MSGNkc19YTGJUaUMwWlZacy01aUJ3Q1R0YnBPWkQtVFpWckIwM20tZ3hOU183UlRHbXhGeWV6cGhJaWRteHRub2dGdHUtMXJjTy1vWUd0bGs1N1RrMTdITjZoc3ZWSzZyTTd0S0tYTDdKSElTX2FUcjd2aGpmRHRYY1FJWk1OaE8zangzLVVBYktn?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:00",
+     "title": "Why a Tesla\u2013SpaceX merger might actually not be 'so easy'",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeFVyTkRXcjMxdWhUMG5RN19BR1BCNUZ3QzQwV2E2X2lOQ3JzRWlIdlVzUXlXVEpFd3pWOGNCbDd3VzRWTDU1cHdTMjBVWWdUMTBtdUdpTjNhY05zb0ZoVzd6YWJUOFNvd2owTjJFMlBsLXoyRkh6SUNnbk1yWDl4bURR?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:28",
+     "title": "Tesla\u2013SpaceX merger: What is the Roadster's bigger strategic play?",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPOUlObUJ6SmE5cUVNb1lrZTFyTXRYcWFQeEdkTHJvSXhDdjFQeWhXUTZvajhwNWhwZ2g0NlhlWUNnVUhKNURqcnNTbldrYWNoQTFTSFZxRDBlLVdSR05KWER2ZndIN0lBdlEtaGczQkRoR09jNjlqNVdRUEIxRDNEZ3lkcDBWTUplMVY1WTRBX05NbzRNeHRWUDFtaTBUemk2MkszQS1DU0FFd3RELXc?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:00",
+     "title": "Tesla\u2019s rocket-thrusted Roadster hints at a SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaVNkQ3VxenNqRTdPSUVwb1BDNDFtQUw0cXJQcUtGbWZMZlJFRzhEVnBQcmFxaTV0MmdaT2F2aG5MNG5KWFlHcHlsaGQ5LUY2YVJtbG9TdTN6bGpOckVnU3F1M2hGS2psTVJ4M05RTDM5TW5jc3lkNjF4N19TeFJMc0hzalM4SVNMVmpN?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "03:20",
+     "title": "TSLA, SPCX Eye Green Open: Gary Black Predicts $420 SpaceX Buyout Of Tesla \u2014 Sees Announcement In \u2018Next Few Weeks\u2019",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPb2NETE9lUFB1Z2VjVmoxUmNVcFpUTlVUdjBnOGlrcUwzdzE4NW1fTlNHY0NJeWdwTGI2aTdDd3BjcmpTSzhrVjkzQXdVT1NDbEYyc1gyMXVpQVdKc215UHNYLVVZc3ZleUplU09tMTcxSksxaFJvaDgxdkJwRkx2OVJVVk5wSkFGSkVZc3lmWHBBTG8?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:11",
+     "title": "Tesla asks shareholders to re-elect Musk, Denholm and Straubel at December annual meeting",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSGFSdFBReS1udk5oWTRSUXFiY05EZ3IzNkpKc1Z5QzJENC1jbkdzZWpUUFBFUks4ckxlV3ljRlZoakpsUXdkSmVNTVRGNEJQYTBOYjg3NnJBaGQzMnZFRnBvSU1iSl9SUGtIeWV5cHJtcnpCdTJZTVZmZ3V3cmItMVNjSFdtMWhCX0JpR202T3lxMEgyQ08wTVhVRW10Z0QyNEhnRC03MGotNHRkRjVyekZ1Z2p5QURJTjdNMlg4WENDa25KT1VlUmJtNA?oc=5",
+     "source": "Reuters",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:45",
+     "title": "Tesla sets annual meeting for December 3 (TSLA:NASDAQ)",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVG52bzhHVDBvUmNJYnFsa1UwQllDNFpfU3dwWC1OVzhNbFBobkdEalN2c3pISHhKUUlzRWtaU2p4Mm5RWW9rZ2hkb3VManJ5M1NPeEROeUhNcTN0MGNTOG41U292Z0I4WDlyNGtreHhkbVBSbVJVQ0VYYlJ1TkJKU0dCcG8?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "10:02",
+     "title": "Elon Musk Has a Pattern, Says Analyst Who Predicted SpaceX Spectrum Deal",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYlJYREJ2VGFEa2w3UGxhWDgzYl9wUkhhbS1RQS1sNHZBLUZ6VnBZdzVWbkhHMHVfVmhFemxLR0hOeFI3c2xrcWo2OEMyaFU1cXF6WXRUaFB3UnRwWF9KWkRQNGlFVnRtd0dHbHZfUkVLVTZMbWNzRXFsSy1lQnhuU2tSLVdmejJEOEpNb1BLZlc0SU1JdWpaOTJWa0dWWFdxQWFWUjBoQnk?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "13:23",
+     "title": "Kalshi: definitive agreement Before Dec 1, 2026: 18.5% -> 7.5% (-11.0 pts in 25.1h)",
+     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
+     "source": "Kalshi",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
