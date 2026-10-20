@@ -4,15 +4,15 @@
    "status": "unconfirmed (news only)",
    "release_date": "2026-10-20",
    "timing": "post",
-   "source": "TOKENPOST",
+   "source": "tokenpost.com",
    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9jejd4cU1aRm0yMnlqcjdXbmtNVHlEdGx1S0ZmRVVncG9WOG5HQUVJaVZTUklZNHR4d0FvUFZ2UXppMFlfcTJmS3Z5ZlRmOFhyQnl6cHNVV0w?oc=5",
    "confidence": "low",
-   "title": "SpaceX Sets Oct. 20 Date for Q3 Results After $7.8 Billion in Q2 Revenue - TOKENPOST",
+   "title": "SpaceX Sets Oct. 20 Date for Q3 Results After $7.8 Billion in Q2 Revenue - tokenpost.com",
    "unlock_date_if_post_market": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-19 17:41 ET",
-  "last_ok": "2026-10-19 17:41 ET",
+  "as_of": "2026-10-20 11:35 ET",
+  "last_ok": "2026-10-20 11:35 ET",
   "error": null
  },
  "starship": {
@@ -27,8 +27,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-19 17:41 ET",
-  "last_ok": "2026-10-19 17:41 ET",
+  "as_of": "2026-10-20 11:35 ET",
+  "last_ok": "2026-10-20 11:35 ET",
   "error": null
  },
  "grain": {
@@ -53,28 +53,28 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-19 17:41 ET",
-  "last_ok": "2026-10-19 17:41 ET",
+  "as_of": "2026-10-20 11:35 ET",
+  "last_ok": "2026-10-20 11:35 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 368.06,
-    "prev_close": 354.72,
-    "as_of": "2026-10-19 16:00 ET"
+    "price": 373.33,
+    "prev_close": 368.06,
+    "as_of": "2026-10-20 11:35 ET"
    },
    "SPCX": {
-    "price": 147.96,
-    "prev_close": 146.03,
-    "as_of": "2026-10-19 16:00 ET"
+    "price": 146.29,
+    "prev_close": 147.96,
+    "as_of": "2026-10-20 11:35 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-19 17:41 ET",
-  "last_ok": "2026-10-19 17:41 ET",
+  "as_of": "2026-10-20 11:35 ET",
+  "last_ok": "2026-10-20 11:35 ET",
   "error": null
  },
  "log": [],
- "prices_written": "2026-10-19T17:41-04:00"
+ "prices_written": "2026-10-20T11:35-04:00"
 }
