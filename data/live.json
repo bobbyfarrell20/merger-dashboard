@@ -13,7 +13,7 @@
    "market_time": "2026-10-20 16:00 ET"
   }
  },
- "prices_as_of": "2026-10-20 18:41 ET",
+ "prices_as_of": "2026-10-20 18:43 ET",
  "options": [
   {
    "expiry": "2026-10-23",
@@ -156,7 +156,7 @@
    "call_oi": 12054
   }
  ],
- "options_as_of": "2026-10-20 18:41 ET",
+ "options_as_of": "2026-10-20 18:43 ET",
  "edgar": {
   "TSLA": [
    {
@@ -513,7 +513,7 @@
    }
   ]
  },
- "edgar_as_of": "2026-10-20 18:41 ET",
+ "edgar_as_of": "2026-10-20 18:43 ET",
  "errors": [
   "2026-10-14 22:29 ET fetch_prices: No module named 'yfinance'",
   "2026-10-14 22:29 ET fetch_options: No module named 'yfinance'",
@@ -536,7 +536,7 @@
   }
  },
  "fcc": {
-  "as_of": "2026-10-20 18:42 ET",
+  "as_of": "2026-10-20 18:44 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -553,7 +553,7 @@
   "note": "The SpaceX-Grain transfer application was filed Oct 8 and asks for expedited consent. Its ECFS/ULS docket number wasn't found yet; the earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-10-20 18:42 ET",
+  "as_of": "2026-10-20 18:44 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -563,7 +563,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-10-20 18:42 ET",
+  "as_of": "2026-10-20 18:44 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -612,7 +612,7 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.575,
+    "yes": 0.57,
     "closed": false,
     "volume": 51935.440075000006,
     "volume_24h": 2189.443757,

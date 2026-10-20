@@ -461,11 +461,18 @@ def make_why(cfg, m, br, today, state):
 
 def make_why_pp(cfg, pp, state):
     H = pp["headline"]; w = H["market_weight"]; ev = state.get("evidence") or {}
-    out = [f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) set a routine Dec 3 annual meeting with three items and no merger. If a deal were close, Tesla could have waited a few weeks and put it on that ballot, so a deal in the next month or so is unlikely.",
+    committee = any(x["id"] == "committee_or_leak" and x["active"] for x in cfg["signals"])
+    if committee:
+        out = ["On SpaceX's Oct 20 earnings call, Musk said the Tesla and SpaceX boards have each formed a special committee of independent directors to look at a merger. He called it a good idea but said no terms are agreed and there's no guarantee.",
+               f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) still set a routine Dec 3 meeting with no merger item, so any deal goes the normal route: committee talks, fairness opinions, an S-4, then a separate announcement and a special meeting, most likely in 2027. Tesla needs 50% of all outstanding shares to approve.",
+               f"With committees confirmed, the rules model rises to {H['rules']:.0%} for a merger letter or agreement by {fmt(pp['by'])}, 2027 (60% of the committee-adjusted merger odds). That is a judgment call, not data."]
+    else:
+        out = [f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) set a routine Dec 3 annual meeting with three items and no merger. If a deal were close, Tesla could have waited a few weeks and put it on that ballot, so a deal in the next month or so is unlikely.",
            "A merger is still possible through the normal route for a deal this size: a special committee, fairness opinions and an S-4, then a separate announcement and a special meeting, most likely in 2027.",
-           f"The rules model keeps 60% of the pre-proxy merger odds: {H['rules']:.0%} by {fmt(pp['by'])}, 2027. That is a judgment call, not data.",
-           f"Prediction markets price it higher, {H['market']:.0%} on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
-           "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter."]
+           f"The rules model keeps 60% of the pre-proxy merger odds: {H['rules']:.0%} by {fmt(pp['by'])}, 2027. That is a judgment call, not data."]
+    out += [
+           f"Prediction markets price it at {H['market']:.0%} on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
+           ("Catalysts to watch: Tesla's Q3 earnings call Oct 21, any banker or law-firm hires by the committees, and the Dec 3 meeting Q&A. Unlock days and Starship launch days are less likely days for a deal letter." if committee else "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter.")]
     return out
 
 def fmt(s): d = P(s); return d.strftime("%b ") + str(d.day)

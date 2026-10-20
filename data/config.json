@@ -62,8 +62,9 @@
    "id": "committee_or_leak",
    "target": "a_share",
    "logodds": 2.5,
-   "active": false,
-   "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)"
+   "active": true,
+   "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)",
+   "note": "ON Oct 20, 2026 ~5 PM ET: on SpaceX's Q3 call Musk said both boards formed special committees of independent directors to evaluate a merger (no terms agreed). Sources: CNBC, BBC, WSJ, FT."
   },
   {
    "id": "said_2027",
@@ -285,7 +286,7 @@
     "label": "2nd full Nasdaq trading day after SpaceX's own Q3 results (not Tesla's Oct 21 report): 28% of 180-day group",
     "shares": 1300000000,
     "verified": false,
-    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 \u2014 Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Oct 22 assumes the press-reported Oct 20 SpaceX Q3 release (not confirmed in an SEC filing) and creates no blackout until confirmed.",
+    "note": "UNCONFIRMED. 424B4: \"The second full trading day on Nasdaq immediately following the public release of our quarterly financial results for the quarter ended September 30, 2026 — Up to 1.3 billion shares... representing 28% of the shares subject to the 180-day lock-up period.\" SpaceX has not set its Q3 date (no 8-K as of Oct 13). Oct 22 assumes the press-reported Oct 20 SpaceX Q3 release (not confirmed in an SEC filing) and creates no blackout until confirmed.",
     "blackout": false
    },
    {
@@ -473,7 +474,7 @@
   "spcx_class_b": 5485486276,
   "_spcx_src": "SpaceX 10-Q cover (Jul 28, 2026): 7,696,293,669 A + 5,485,486,276 B, plus 391,041,680 A issued in the Cursor merger (8-K Aug 14). Not a company-reported total.",
   "musk_spcx_votes": 53040000000,
-  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
+  "_musk_votes_why": "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A ≈ 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
   "musk_spcx_shares_outstanding": 6068547515,
   "musk_tsla_shares": 699580882,
   "_musk_tsla_src": "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy.",
@@ -662,8 +663,8 @@
   "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
   "start": "2026-10-19",
   "by": "2027-06-30",
-  "rules_total_from_start": 0.2946,
-  "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). Judgment, not data.",
+  "rules_total_from_start": 0.5637,
+  "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). With the committee signal on (Oct 20: both boards formed special committees), that share is 94%, so the rules number is 0.6 x 0.94 = 56%. The 0.6 keeps a haircut because Musk said no terms are agreed, there's no guarantee, and the Tesla vote needs 50% of all shares. Judgment, not data.",
   "month_weights": {
    "2026-10": 0.05,
    "2026-11": 0.11,
@@ -697,9 +698,9 @@
     "date": "2026-10-20",
     "end": "2026-10-20",
     "label": "SpaceX Q3 results + call",
-    "confirmed": false,
+    "confirmed": true,
     "mult": 3.0,
-    "note": "Date per press reports; SpaceX has not confirmed in an SEC filing."
+    "note": "Confirmed: SpaceX 8-K (Item 2.02) filed Oct 20, 2026 with Q3 results."
    },
    {
     "date": "2026-10-21",
@@ -712,9 +713,9 @@
     "date": "2026-10-22",
     "end": "2026-10-22",
     "label": "SpaceX unlock, 28% of 180-day group (2nd trading day after SpaceX Q3)",
-    "confirmed": false,
+    "confirmed": true,
     "mult": 0.4,
-    "note": "Only if SpaceX reports Oct 20. Unlock days are less likely for a deal letter."
+    "note": "Confirmed: SpaceX reported Q3 Oct 20 after the close."
    },
    {
     "date": "2026-10-26",

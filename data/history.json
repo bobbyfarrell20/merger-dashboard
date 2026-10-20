@@ -2124,38 +2124,38 @@
  {
   "v": 2,
   "date": "2026-10-20",
-  "as_of": "2026-10-20 18:42 ET",
+  "as_of": "2026-10-20 18:44 ET",
   "metrics": {
    "end_A": 0.0,
    "end_B": 1.0,
    "end_none": 0.0,
-   "wk2026-10-19_either": 0.08466072321250184,
+   "wk2026-10-19_either": 0.08478181817797904,
    "wk2026-10-19_A": 0.0,
-   "wk2026-10-19_B": 0.08466072321250184,
-   "wk2026-10-26_either": 0.2340703206624183,
+   "wk2026-10-19_B": 0.08478181817797904,
+   "wk2026-10-26_either": 0.23414414295035635,
    "wk2026-10-26_A": 0.0,
-   "wk2026-10-26_B": 0.2340703206624183,
-   "wk2026-11-02_either": 0.26855453601851725,
+   "wk2026-10-26_B": 0.23414414295035635,
+   "wk2026-11-02_either": 0.2684972097640971,
    "wk2026-11-02_A": 0.0,
-   "wk2026-11-02_B": 0.26855453601851725,
-   "wk2026-11-09_either": 0.26570534555449205,
+   "wk2026-11-02_B": 0.2684972097640971,
+   "wk2026-11-09_either": 0.2655209316868185,
    "wk2026-11-09_A": 0.0,
-   "wk2026-11-09_B": 0.26570534555449205,
-   "wk2026-11-16_either": 0.04785923327743508,
+   "wk2026-11-09_B": 0.2655209316868185,
+   "wk2026-11-16_either": 0.04787447659898947,
    "wk2026-11-16_A": 0.0,
-   "wk2026-11-16_B": 0.04785923327743508,
-   "wk2026-11-23_either": 0.037456904203341336,
+   "wk2026-11-16_B": 0.04787447659898947,
+   "wk2026-11-23_either": 0.03746883434923177,
    "wk2026-11-23_A": 0.0,
-   "wk2026-11-23_B": 0.037456904203341336,
-   "wk2026-11-30_either": 0.0025556550689328794,
+   "wk2026-11-23_B": 0.03746883434923177,
+   "wk2026-11-30_either": 0.0025564690533895888,
    "wk2026-11-30_A": 0.0,
-   "wk2026-11-30_B": 0.0025556550689328794,
-   "wk2026-12-07_either": 0.0020348012074173855,
+   "wk2026-11-30_B": 0.0025564690533895888,
+   "wk2026-12-07_either": 0.0020354492982241094,
    "wk2026-12-07_A": 0.0,
-   "wk2026-12-07_B": 0.0020348012074173855,
-   "wk2026-12-14_either": 0.0006815080183821013,
+   "wk2026-12-07_B": 0.0020354492982241094,
+   "wk2026-12-14_either": 0.0006817250809038905,
    "wk2026-12-14_A": 0.0,
-   "wk2026-12-14_B": 0.0006815080183821013
+   "wk2026-12-14_B": 0.0006817250809038905
   },
   "inputs": {
    "window": {
@@ -2220,8 +2220,9 @@
      "id": "committee_or_leak",
      "target": "a_share",
      "logodds": 2.5,
-     "active": false,
-     "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)"
+     "active": true,
+     "label": "Special committee, banker, counsel or 'people familiar' deal report (flip on; also resets the leak decay)",
+     "note": "ON Oct 20, 2026 ~5 PM ET: on SpaceX's Q3 call Musk said both boards formed special committees of independent directors to evaluate a merger (no terms agreed). Sources: CNBC, BBC, WSJ, FT."
     },
     {
      "id": "said_2027",
@@ -2546,16 +2547,16 @@
    }
   },
   "pp": {
-   "blend": 0.42225729908934173,
-   "rules": 0.29389003414354486,
+   "blend": 0.5836386716648835,
+   "rules": 0.5628589884361145,
    "market": 0.614808196508037,
    "w": 0.4,
    "inputs": {
     "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
     "start": "2026-10-19",
     "by": "2027-06-30",
-    "rules_total_from_start": 0.2946,
-    "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). Judgment, not data.",
+    "rules_total_from_start": 0.5637,
+    "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). With the committee signal on (Oct 20: both boards formed special committees), that share is 94%, so the rules number is 0.6 x 0.94 = 56%. The 0.6 keeps a haircut because Musk said no terms are agreed, there's no guarantee, and the Tesla vote needs 50% of all shares. Judgment, not data.",
     "month_weights": {
      "2026-10": 0.05,
      "2026-11": 0.11,
@@ -2589,9 +2590,9 @@
       "date": "2026-10-20",
       "end": "2026-10-20",
       "label": "SpaceX Q3 results + call",
-      "confirmed": false,
+      "confirmed": true,
       "mult": 3.0,
-      "note": "Date per press reports; SpaceX has not confirmed in an SEC filing."
+      "note": "Confirmed: SpaceX 8-K (Item 2.02) filed Oct 20, 2026 with Q3 results."
      },
      {
       "date": "2026-10-21",
@@ -2604,9 +2605,9 @@
       "date": "2026-10-22",
       "end": "2026-10-22",
       "label": "SpaceX unlock, 28% of 180-day group (2nd trading day after SpaceX Q3)",
-      "confirmed": false,
+      "confirmed": true,
       "mult": 0.4,
-      "note": "Only if SpaceX reports Oct 20. Unlock days are less likely for a deal letter."
+      "note": "Confirmed: SpaceX reported Q3 Oct 20 after the close."
      },
      {
       "date": "2026-10-26",
