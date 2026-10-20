@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-20",
-   "odds_note": "Merger letter by Jun 30, 2027: 39.2% (up from 29.5% yesterday). The jump is the new prediction-market blend that went live this morning (rules model 29.4% x 60% + markets 53.9% x 40%), not news. Overnight filings and headlines: none that move the odds (rules -0.1 pt from a lockup calendar update; time +0.0).",
+   "odds_note": "Merger letter by Jun 30, 2027: +10.2 pts (filings/news -0.1, prediction markets +10.3, time +0.0). Why: calendar/config changed: lockups.",
    "items": [
     {
      "time_et": "08:30",
@@ -102,14 +102,41 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "10:50",
+     "title": "Elon Musk to give a share of SpaceX (SPCX) to every American child, President Trump praises the act, more - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdWFuQ2VvYl9HWE9iQ2dtUk5sNFE3X3ZlUEROSkZQakNtZkNmVFdvVG1admE5SmJhaHdpUnU4cWp6V0pYTFpnSG9MSUVWQjgtcVhBb3dsaUh0MEl5ZVpjMXVGV3V6TWJ2cWh6eHl3LVg3Z1hsWjFSOWNSLVQ4WmhILXBCWERxSGtOcGo5bVo1cVVKZDdmenJWbk1SRXJiNjFmSl85VU1oZHR0ekxLTWlEeG42N0JKcGZsMHRhM3lpOG8xLURleHFYUnF4MmQ0TEU5YThfaHVBcXA?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "03:31",
+     "title": "SPCX Stock Slips Ahead Of Q3 Print: S&P Flags AI Debt Risks, But Analyst Sees Over 50% Upside As Tesla Merger Buzz Builds - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdS1wODRkVU40UFQzZVhRbW12d2J0aE1wYm9LWHROOWpVYXFnRUZYaG9WRHVrS3NVVzdjNFpXU3NVOWx6cWJsWkRSTUFlYUh4ZVI3alZMaDdpVThuQWN4RHhuVUg5YmIzTHlYUkFORmM4dTVFQmtYYVBlR2paakdfazNCUWpna2tSNFYtcV9PY3pnZ1BPcTRrNnJON0FmV1hhVTA0aEtnMVh1TWFlOFV1ZnRmX2pTY2VFV1N5TEJBOGVVZW1uZjJ6MHd6OUFrLVBuamRnZQ?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "08:30",
+     "title": "Why Tesla Could Make Much More Money (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMUh2QlhYLS10akl2dW5sQkliQmlSblcwS3NPQUlkNEdHYWg4ZWV4N3JteGcyZjZBOTRaT2tJUzZrdUNvQzhXSkxsS1hKMFRyWkNvNXFzTHZfSGdQR2lLQktiSGU5UkRkWVRQMTBDU2xWSElPU2cxLUl3aHM3MDRIMUdLVQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 9.73,
+     "total": 10.25,
      "time": 0.0,
      "news": -0.07,
-     "markets": 9.81,
+     "markets": 10.32,
      "first": true
     }
    }
@@ -413,6 +440,15 @@
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOFlUY0lIcEZiUkRJbjkyLS01MDZLRWNDSWZ3QllEOTBZVzdhZDctVUQ4dEtvWVRWRWRsdEI3RGYxUDNJVW9jOEF2cnFXQXhEdFZVUVIyWm9nQlpJTlROR1BsXzJZdmI4SDZWYllGcXpCT05OVHlYUy1xV0ExUWlhaUduUkFCRUhCWmpNY1F4WTJwRkQxWXIxOW9SOA?oc=5",
      "source": "Yahoo Finance",
      "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "17:27",
+     "title": "Why December 3 Could Be a Critical Date for Tesla and SpaceX Stocks - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPLWNjbXd1VzNUUEtDLUc4OFhEcmVvdTdrRUU5bU1lQTk2WnRaUXE3dmpPWkdKRHN4bXEzNmRSN2ktZThlaWxHSmEydkJlUTRobEFJQzVsOTN0Y3dxaUVUQmFnRXpEeUJXb3VNN1hnMXdDMXVpY3VSQnFQME5tWHEwaHBBSzk2SW55WGR6SGg1T2JmMjFIUWgtZmFB?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
     }

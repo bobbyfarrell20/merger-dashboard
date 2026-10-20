@@ -226,11 +226,11 @@
  },
  {
   "date": "2026-10-20",
-  "as_of": "2026-10-20 08:29 ET",
-  "X": 0.39197,
+  "as_of": "2026-10-20 11:36 ET",
+  "X": 0.39713,
   "A": 0.0,
-  "B": 0.39197,
-  "C": 0.60803,
+  "B": 0.39713,
+  "C": 0.60287,
   "D": 0.0,
   "news": -0.07,
   "time": 0.0,
@@ -238,14 +238,22 @@
    {
     "callout": true,
     "label": "Market blend added",
-    "delta": 9.81,
+    "delta": 10.32,
     "title": "Dashboard now blends in the prediction-market composite (40% weight)",
     "source": "model change"
+   },
+   {
+    "callout": true,
+    "label": "Morning review: no new TSLA ",
+    "delta": -0.07,
+    "title": "Morning review: no new TSLA or SpaceX filings overnight; the 9:12 PM ET Oct 19 DEFA14A is retail vote-solicitation material (shareholder letter, VoteTesla.com, ads, X post) with no merger or SpaceX language",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm",
+    "source": "SEC EDGAR"
    }
   ],
   "rules": 0.29389,
-  "market": 0.53909,
+  "market": 0.55198,
   "basis": "letter by Jun 30, 2027 (blend)",
-  "markets": 9.81
+  "markets": 10.32
  }
 ]
