@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-20",
-   "odds_note": "Merger letter by Jun 30, 2027: +10.2 pts (filings/news -0.1, prediction markets +10.3, time +0.0). Why: calendar/config changed: lockups.",
+   "odds_note": "Merger letter by Jun 30, 2027: +10.7 pts (filings/news -0.1, prediction markets +10.8, time +0.0). Why: calendar/config changed: lockups.",
    "items": [
     {
      "time_et": "08:30",
@@ -159,14 +159,32 @@
      "effect": "re-assessed 15:40 ET: earnings-call preview or recap (merger is a top retail question for the SpaceX Q3 call, already noted); no sourced deal news; no model change",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "04:45",
+     "title": "SpaceX is set to release its second post-IPO earnings report, with Tesla close behind. Markets are focusing on AI spending and cash flow. - \u5bcc\u9014\u725b\u725b",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdlNqRXZ3VWViUHlWMmwycDVOenpzeUJqMHVYay1fN0JoRkU0eTE3LXNIc3c0eVJRMFo4WXhybFYxbWhwLVlROEV5SUhYMmZFM3BlNVUyTGtOY1h6ZHp3aXBSRzhZYkpqc2llcUZyMFJlbVE0X1hoa1F5SWZGVVB3UHd3al9tTF82TWhKUXhlRUxsbzVMdGJUTGVWWHQ?oc=5",
+     "source": "\u5bcc\u9014\u725b\u725b",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "03:02",
+     "title": "Over the next two days, SpaceX and Tesla will sequentially release their financial reports: Can heavy AI investment deliver returns? Merger speculation resurfaces. - \u5bcc\u9014\u725b\u725b",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVd5OTlUYTFjWFhGcXBFa2FyUjFveVRldlBIMndJV05NSUVVcW5LZ2FBd19mVjAzMTNqWm9Lb0NLc2ZfbUc5WndhdjRDYjlhbllEWFpQY2ZlY3lFR0hwUHdzOXducTlYZ1otdjFEclY0dlNYblQtNkJuMDVxNThGOFdSSTd2bXM4OGFlXzFiMzFvWTlTYURoNkZDakhHVlg5Q2c?oc=5",
+     "source": "\u5bcc\u9014\u725b\u725b",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 10.25,
+     "total": 10.69,
      "time": 0.0,
      "news": -0.07,
-     "markets": 10.32,
+     "markets": 10.77,
      "first": true
     }
    }
