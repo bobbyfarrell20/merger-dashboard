@@ -226,11 +226,11 @@
  },
  {
   "date": "2026-10-20",
-  "as_of": "2026-10-20 15:39 ET",
-  "X": 0.40155,
+  "as_of": "2026-10-20 18:42 ET",
+  "X": 0.42226,
   "A": 0.0,
-  "B": 0.40155,
-  "C": 0.59845,
+  "B": 0.42226,
+  "C": 0.57774,
   "D": 0.0,
   "news": -0.07,
   "time": 0.0,
@@ -238,7 +238,7 @@
    {
     "callout": true,
     "label": "Market blend added",
-    "delta": 10.77,
+    "delta": 12.84,
     "title": "Dashboard now blends in the prediction-market composite (40% weight)",
     "source": "model change"
    },
@@ -252,8 +252,8 @@
    }
   ],
   "rules": 0.29389,
-  "market": 0.56305,
+  "market": 0.61481,
   "basis": "letter by Jun 30, 2027 (blend)",
-  "markets": 10.77
+  "markets": 12.84
  }
 ]
