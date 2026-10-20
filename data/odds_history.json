@@ -223,5 +223,29 @@
     "source": "SEC EDGAR (Tesla DEF 14A)"
    }
   ]
+ },
+ {
+  "date": "2026-10-20",
+  "as_of": "2026-10-20 08:17 ET",
+  "X": 0.39197,
+  "A": 0.0,
+  "B": 0.39197,
+  "C": 0.60803,
+  "D": 0.0,
+  "news": -0.07,
+  "time": 0.0,
+  "events": [
+   {
+    "callout": true,
+    "label": "Market blend added",
+    "delta": 9.81,
+    "title": "Dashboard now blends in the prediction-market composite (40% weight)",
+    "source": "model change"
+   }
+  ],
+  "rules": 0.29389,
+  "market": 0.53909,
+  "basis": "letter by Jun 30, 2027 (blend)",
+  "markets": 9.81
  }
 ]

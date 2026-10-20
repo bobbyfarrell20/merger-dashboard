@@ -504,6 +504,10 @@ def main():
         for nm, fn in (("fcc", lambda: fetch_fcc(live, cfg)), ("grain", lambda: grain_check(live, cfg)), ("spcx_shares", lambda: fetch_spcx_shares(live)), ("polymarket", lambda: fetch_polymarket(live, cfg))):
             try: fn()
             except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} {nm}: {ex}")
+        if "--morning" in sys.argv:
+            try:
+                import pm_backfill; pm_backfill.run()
+            except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} pm_backfill: {ex}")
         save("live.json", live)
     m = compute(cfg, today)
     pre_kill = m

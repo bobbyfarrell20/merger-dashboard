@@ -140,6 +140,21 @@ def catalysts_live(cfg):
     out.append({"date": None, "end": None, "label": f"Grain 800 MHz FCC decision (docket 25-178): {gr.get('status')}", "confirmed": False, "mult": 1.0, "note": "No date. An approval would add Tesla-relevant spectrum to SpaceX."})
     return out
 
+GROUPS = [("2026", "2026-12-31", "Dec 2026"), ("JF27", "2027-02-28", "Jan–Feb '27"), ("MA27", "2027-04-30", "Mar–Apr '27"),
+          ("MID27", "2027-06-30", "Mid-2027"), ("LATE", "9999-12-31", "2027+")]
+
+def chart_series(mh):
+    """Backfill (pm_backfill.py) merged with the watcher's own log; watcher points win within 1h."""
+    bf = load("markets_backfill.json", {}).get("series", {}); out = {}
+    for cid in sorted(set(bf) | set(mh)):
+        name = (mh.get(cid) or bf.get(cid))["name"]; d = contract_date(name)
+        pts = {p["t"][:13]: [p["t"][:16], round(p["p"], 4)] for p in bf.get(cid, {}).get("points", [])}
+        for p in (mh.get(cid) or {}).get("points", []): pts[p["t"][:13]] = [p["t"][:16], round(p["p"], 4)]
+        g = next(k for k, lim, _ in GROUPS if (d or "9999") <= lim)
+        out[cid] = {"name": name, "venue": cid.split(":")[0].capitalize(), "date": d, "group": g, "points": sorted(pts.values())}
+    return {"groups": [{"id": k, "label": l} for k, _, l in GROUPS], "series": out,
+            "backfill_src": "Polymarket CLOB prices-history (6h) and Kalshi candlesticks (hourly, sampled 4h), from Aug 20; watcher log every 15 min from Oct 13"}
+
 def run(cfg, today, live, prev_hist=None):
     pp = cfg["post_proxy"]; sm = pp["smart_money"]; now = dt.datetime.now(ET)
     mh = load("markets_history.json", {}); news = load("news.json", {"days": []})
@@ -183,5 +198,5 @@ def run(cfg, today, live, prev_hist=None):
     H = series[-1]
     return {"by": pp["by"], "headline": {"blend": H["blend"], "rules": H["rules"], "market": H["market"], "nudge": nudge, "market_weight": w},
             "series": series, "months": months, "opex": opex, "catalysts": cats, "markets": rows, "composite": curve,
-            "flags": [r for r in rows if r["flag"]], "nudge_from": [r["name"] for r in nudge_rows],
+            "flags": [r for r in rows if r["flag"]], "chart": chart_series(mh), "chart_events": pp.get("chart_events", []), "nudge_from": [r["name"] for r in nudge_rows],
             "rules_total_from_start": pp["rules_total_from_start"], "gone": gone, "docs": {k: pp[k] for k in pp if k.startswith("_")} | {"market": pp["market"]["_why"], "smart_money": sm["_why"]}}
