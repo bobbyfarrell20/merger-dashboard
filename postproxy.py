@@ -195,8 +195,9 @@ def run(cfg, today, live, prev_hist=None):
         while dd <= e: tot += dmap.get(str(dd), 0); dd += dt.timedelta(days=1)
         cx["p"] = tot * bl_scale
     cats.sort(key=lambda c: c["date"] or "9999")
-    H = series[-1]
-    return {"by": pp["by"], "headline": {"blend": H["blend"], "rules": H["rules"], "market": H["market"], "nudge": nudge, "market_weight": w},
+    H = series[-1]; D = at(pp.get("near_by", "2026-12-31"))
+    return {"by": pp["by"], "headline": {"blend": H["blend"], "rules": H["rules"], "market": H["market"], "nudge": nudge, "market_weight": w,
+                         "near": {"by": pp.get("near_by", "2026-12-31"), "blend": D["blend"], "rules": D["rules"], "market": D["market"]}},
             "series": series, "months": months, "opex": opex, "catalysts": cats, "markets": rows, "composite": curve,
             "flags": [r for r in rows if r["flag"]], "chart": chart_series(mh), "chart_events": pp.get("chart_events", []), "nudge_from": [r["name"] for r in nudge_rows],
             "rules_total_from_start": pp["rules_total_from_start"], "gone": gone, "docs": {k: pp[k] for k in pp if k.startswith("_")} | {"market": pp["market"]["_why"], "smart_money": sm["_why"]}}

@@ -2124,7 +2124,7 @@
  {
   "v": 2,
   "date": "2026-10-20",
-  "as_of": "2026-10-20 18:44 ET",
+  "as_of": "2026-10-20 19:52 ET",
   "metrics": {
    "end_A": 0.0,
    "end_B": 1.0,
@@ -2551,6 +2551,7 @@
    "rules": 0.5628589884361145,
    "market": 0.614808196508037,
    "w": 0.4,
+   "near": 0.18713770225129722,
    "inputs": {
     "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
     "start": "2026-10-19",

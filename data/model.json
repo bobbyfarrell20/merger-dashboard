@@ -1,6 +1,6 @@
 {
  "morning_run": "2026-10-20",
- "generated": "2026-10-20 18:44 ET",
+ "generated": "2026-10-20 19:52 ET",
  "today": "2026-10-20",
  "window": {
   "start": "2026-10-14",
@@ -905,7 +905,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.1885516009016749,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-10-20 18:44 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-10-20 19:52 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -921,7 +921,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.09002875815243913,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-20 18:44 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-20 19:52 ET (news watcher).",
    "merger": false
   },
   {
@@ -929,7 +929,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06631901829048394,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-20 18:44 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-20 19:52 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -1257,7 +1257,13 @@
    "rules": 0.5628589884361145,
    "market": 0.614808196508037,
    "nudge": 0.0,
-   "market_weight": 0.4
+   "market_weight": 0.4,
+   "near": {
+    "by": "2026-12-31",
+    "blend": 0.18713770225129722,
+    "rules": 0.1731562429151238,
+    "market": 0.20810989125555732
+   }
   },
   "series": [
    {
@@ -3001,7 +3007,7 @@
     "vol24": 4041.89,
     "ch24": -1.5,
     "ch7": 1.5,
-    "ch72": -3.5000000000000004,
+    "ch72": -3.0,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.015,
@@ -3071,7 +3077,7 @@
     "vol24": 3690.39,
     "ch24": -2.4999999999999996,
     "ch7": 0.0,
-    "ch72": -2.4999999999999996,
+    "ch72": -3.0,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.065,
@@ -3141,7 +3147,7 @@
     "vol24": 5453.66,
     "ch24": 0.5000000000000004,
     "ch7": 5.000000000000002,
-    "ch72": -9.5,
+    "ch72": -8.5,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.12,
@@ -3281,7 +3287,7 @@
     "vol24": 3242.13,
     "ch24": -5.499999999999999,
     "ch7": 10.500000000000002,
-    "ch72": 0.0,
+    "ch72": -0.5000000000000004,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.215,
@@ -3351,7 +3357,7 @@
     "vol24": 2113.795884,
     "ch24": 0.0,
     "ch7": 16.5,
-    "ch72": 3.0000000000000027,
+    "ch72": -1.0000000000000009,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.165,
@@ -3561,7 +3567,7 @@
     "vol24": 2442.21,
     "ch24": -1.9999999999999962,
     "ch7": 16.500000000000004,
-    "ch72": -10.999999999999993,
+    "ch72": -10.499999999999993,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.3,
@@ -3841,7 +3847,7 @@
     "vol24": 4904.557572999999,
     "ch24": 4.999999999999993,
     "ch7": 9.999999999999998,
-    "ch72": 5.499999999999994,
+    "ch72": 6.499999999999995,
     "as_of": "2026-10-20T18:41-04:00",
     "spark": [
      0.595,

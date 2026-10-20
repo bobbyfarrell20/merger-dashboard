@@ -58,7 +58,7 @@ tr.flag{background:rgba(240,136,62,.12)}.fl{display:inline-block;margin-top:3px;
 <header class="hero"><svg class="orbit" viewBox="0 0 600 160" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="470" cy="150" rx="300" ry="70" fill="none" stroke="rgba(150,180,255,.18)" stroke-width="1.2"/><ellipse cx="470" cy="150" rx="210" ry="46" fill="none" stroke="rgba(150,180,255,.10)" stroke-width="1"/><circle cx="215" cy="122" r="2.6" fill="#cfe0ff"/></svg>
 <div class="hero-in"><h1><span class="t">Tesla</span> <span class="x">×</span> <span class="s">SpaceX</span> <span class="w">Merger Watch</span></h1>
 <div class="tagline">Odds of a merger letter, with prediction markets in the mix</div><div class="pill" id="stamp"><i class="dot"></i><span id="stampt">Loading…</span></div></div></header>
-<div class="colw colL"><section class="card a-top"><h2>Merger letter by Jun 30, 2027</h2><div id="hl"></div></section>
+<div class="colw colL"><section class="card a-top"><h2>Merger letter by Dec 31, 2026</h2><div id="hl"></div></section>
 <section class="card a-pm"><h2>Prediction markets</h2><div id="pm"></div></section>
 <section class="card a-feed feed"><h2>What moved the odds</h2><div id="feed"></div><details><summary>Background (before tracking started)</summary><div id="bg"></div></details></section>
 <section class="card a-cat"><h2>Catalysts ahead</h2><div id="cat"></div></section></div>
@@ -78,7 +78,7 @@ const fmtD=s=>new Date(s+'T12:00').toLocaleDateString('en-US',{month:'short',day
 const J=f=>fetch('data/'+f+'?v='+Date.now()).then(r=>r.json());
 Promise.all(['model.json','config.json','news.json','live.json','trackers.json'].map(f=>J(f).catch(()=>null))).then(([M,C,N,L,TRK])=>{
  if(TRK)M.trackers=TRK;
- const ST=M.state||{state:'pre'},PP=M.pp,ev=ST.evidence||{},H=PP.headline,w=H.market_weight,fmtY=s=>fmtD(s)+(s.slice(0,4)==='2027'?" '27":'');
+ const ST=M.state||{state:'pre'},PP=M.pp,ev=ST.evidence||{},H=PP.headline,HN=H.near||H,w=H.market_weight,fmtY=s=>fmtD(s)+(s.slice(0,4)==='2027'?" '27":'');
  const sg=v=>v==null?'–':`<span class="${v>0.05?'up':v<-0.05?'dn':''}">${v>0?'+':''}${v.toFixed(1)}</span>`;
  {const st=document.getElementById('stamp'),t=document.getElementById('stampt'),m=(M.generated||'').match(/(\d{4})-(\d\d)-(\d\d) (\d\d):(\d\d)/);st.title='Data timestamp: '+(M.generated||'unknown');
   const tick=()=>{if(!m){st.classList.remove('fresh');t.textContent='Last Updated '+(M.generated||'');return}
@@ -87,8 +87,10 @@ Promise.all(['model.json','config.json','news.json','live.json','trackers.json']
   tick();setInterval(tick,60e3);}
  // ---- top module
  const S=M.pp_split;
- document.getElementById('hl').innerHTML=`<div class="status"><b>Dec 3 AGM set, routine (no merger item).</b> Remaining path: separate deal announcement, then a special meeting. <a href="${ev.url}" target="_blank" rel="noopener">${ev.form||'Proxy'} ${ev.date?fmtD(ev.date):''}</a></div>
-  <div class="hlbig"><span class="n">${p1(H.blend)}</span><span class="sub" style="font-size:13px">chance of a merger letter or deal announcement by Jun 30, 2027</span></div>
+ document.getElementById('hl').innerHTML=`<div class="status"><b>Special committees formed at Tesla and SpaceX (Oct 20).</b> Dec 3 AGM stays routine; a deal would come as a separate announcement, then a special meeting. <a href="${ev.url}" target="_blank" rel="noopener">${ev.form||'Proxy'} ${ev.date?fmtD(ev.date):''}</a></div>
+  <div class="hlbig"><span class="n">${p1(HN.blend)}</span><span class="sub" style="font-size:13px">chance of a merger letter or deal agreement by Dec 31, 2026</span></div>
+  <div class="parts"><div><b>${p1(HN.rules)}</b><span>Rules model<br>${pct(1-w)} weight</span></div><div><b class="B">${p1(HN.market)}</b><span>Prediction markets<br>${pct(w)} weight</span></div></div>
+  <div class="hl2" style="margin:12px 0 4px;padding-top:10px;border-top:1px solid #30363d;display:flex;align-items:baseline;gap:10px"><span style="font-size:26px;font-weight:800">${p1(H.blend)}</span><span class="sub" style="font-size:13px">by Jun 30, 2027 (odds history chart tracks this)</span></div>
   <div class="parts"><div><b>${p1(H.rules)}</b><span>Rules model<br>${pct(1-w)} weight</span></div><div><b class="B">${p1(H.market)}</b><span>Prediction markets<br>${pct(w)} weight</span></div><div><b class="${H.nudge?'A':'N'}">${H.nudge?(H.nudge>0?'+':'')+(H.nudge*100).toFixed(1):'0.0'}</b><span>Smart-money nudge<br>(pts)</span></div></div>
   <div class="sub" style="text-align:center">${S?`Since last update: <b>${sg(S.total)}</b> pts · filings/news ${sg(S.news)} · markets ${sg(S.markets)} · time ${sg(S.time)}`:'Change since last update shows from the next run.'}</div>`;
  // ---- prediction markets

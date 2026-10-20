@@ -568,7 +568,7 @@ def main():
                        "markets": round((H["blend"] - H["rules"]) * 100, 2), "first": True}
     hist.append({"v": 2, "date": str(today), "as_of": now_et(), "metrics": met, "inputs": inp,
                  **({"pp": {"blend": pp["headline"]["blend"], "rules": pp["headline"]["rules"], "market": pp["headline"]["market"],
-                            "w": pp["headline"]["market_weight"], "inputs": cfg["post_proxy"]}} if pp else {})})
+                            "w": pp["headline"]["market_weight"], "near": pp["headline"]["near"]["blend"], "inputs": cfg["post_proxy"]}} if pp else {})})
     hist = [h for i, h in enumerate(hist) if h["date"] != str(today) or i == len(hist) - 1]
     save("history.json", hist[-200:])
     news_moved = (abs(pps["news"]) >= 0.5) if pps else (False if pp else any(abs(v["news"]) > 0.005 for v in split.values()))
