@@ -177,6 +177,156 @@
      "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "16:00",
+     "title": "SPCX filed 8-K (items 2.02,9.01)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "16:12",
+     "title": "SpaceX and Tesla form special committees to study potential merger",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMzNRRDRYUUpYbk9aM3pLd0tOTXlibVA4blhxNS1oSGExUXdJWEcyTHhURy1CUGNnQkZwbEFvUGE3SXp3dS12VUtZeHozdzVWVUZ0QWJXUFpXNlJoOC1zaHlHR29ycktaYndmRTlzcUlPUzJ6b2FEdUpIZDhvTnBoekN3T1c?oc=5",
+     "source": "Financial Times",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:48",
+     "title": "Elon Musk says Tesla and SpaceX have set up committees to explore a merger",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOHVMM2wza09KenlHMFI0c1ZYeXpQdnl3d2hvRS1hcjE1VVFiVWI0MjZnWkdJdlVYWFRKYWF0ZDJsV0NZZ2szVnNOZFdGRnREMTIzYzVVeWdxdHJ1ZHNGOG9WZFZSZEg2X0Q0TGU1R21LNlZLbHJjMUFCc29QZFp0YjVIeGdZRmM2?oc=5",
+     "source": "Business Insider",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:50",
+     "title": "Elon Musk says Tesla-SpaceX merger would be a 'good idea'",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xQVFkemlnVHpuR0hUUWJNMzNoZWoxbEVWa2sxMUlTd1BIRXBocmRDLThIYUtOR2JDWjJ4ZWFZbWZuWDhVWnFLb0NNajRJQm9QTU9oSUZXRnFEUEE?oc=5",
+     "source": "BBC",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:10",
+     "title": "Deepwater's Gene Munster weighs in on a possible SpaceX and Tesla merger",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLTlVaXU3U0ozMzkyYUVzUkRTX3ByTXZDelMxUHpJQVVOZ3FwdmZEVjFaQWNPQ1dKVXVsT0JxdWZhVE5rRExZUkM3eGxSNGVQWUM3cEhwZ1BZdHZhLVZPMUY4emo3bHlHTDh2TzN2WUNoWmhCbC1OTVltbTNVbEZnUEVfeDBsRWltcHRvb3V6RmRZWUR0VkgyYncwSm53NlM4MW12WGUtSzM0YWpRQ3BuVUhOZmQ?oc=5",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:30",
+     "title": "Tesla and SpaceX are discussing a possible merger, Musk says",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTmNleG5LOFpyZmNyOU9RaFpuY1laV2U1czVwNS1NNmdmTkNXS3hoa1pndTdmaUYzV2RxM19CcjE0Z1p3ZzhBRWlIX0pmc21XMEZhUXgtWVpDc0QxNk5jQ1g1c1NCU3ZaanYwS2Y4czBwS0xkelc1RktRNHlGOHZVak9DdENQbEJidGdxRE8tRHAybVE?oc=5",
+     "source": "The Verge",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:33",
+     "title": "Tesla\u2019s stock rises as Elon Musk drops new clues about a possible SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNzE0ZjI5cEtLVVRxOXJoOENoTElaUmpzTjJpaFB1OXR5WUNKSmc1YWp5Z1Fjb01xMk5OcmFPcWNKWFZRc0stRnJyakEzRWVFOXdYNWNWRnh6eE5saGRQZU9obDM0OUc0b2FFYktnbjIzRTNEV3NlVXdGUjdlYVlSZ1Nmb3hhZGhjN1VIRWI3c1d0R084Q1paUnRvV3VkVURyeWFFNkdTVEoxeUxDTlJGdEVmUnEtd2RUXzhIdnpR?oc=5",
+     "source": "MarketWatch",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:52",
+     "title": "Musk Says SpaceX, Tesla Have Formed Committees to Explore Merger",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZXlJeVRqb0VLTDJOLWw2REpwUWcxbnkzQXZWWElyYVFyNzRoYWhudjZwazV2dnJ4OFJONVRMaFpTXy1PVFl6RC1mODVENkd5b1d2c1RlMGVhM2lHT0pGN2xvMnpuZUVsWGw5bUZzNjR1WTEyVEU5U3BZLUFOek9WUWg4NTZtNnhZd2RUZGhYaFpFN1RUeFE2WmZMRlM?oc=5",
+     "source": "The Information",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:05",
+     "title": "Musk says backs SpaceX-Tesla merger as rocket firm turns profit",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPalRNMUdjNEQwQ0lEUWZQTEdaUGVqSzFWWG1DMlFfY09sSEh6VHcwZDZNWmFLbXpkT09xb3NveUhYRU5TaGJVTE14WjNQZV8yNkhwSXZVTVdhTzh3ZE9ib2hNLUxLVzBoN2FXVmV0VzdnMGEwSW9MNno1Mm14MnY3TVdNaWxFcy1mR0pFSEhEb2tCWlFVcGhn?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:57",
+     "title": "SpaceX-Tesla merger? Musk speaks on 'tap-dancing through a minefield'",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWExibkNMSmFqS0hwakdGaUxzd3c0bUhJeExNVVVSaEpUQTVhSmI2ZDJENGZMeDBxUFRXM3RZUDl1cEhIYjc5SFpCbVZ2a1BfSy05anR5cXRCZm5JODlqcXRQN2dsdF9qVnVXc0duTTFpM195dVJWU3psT3BibVNMc0pEZFhkX2FVbE5XeFhiSWdadHRBRlJDTzYtbEVsOWVuZjFidUpkQ19VSVB3VFZ5X1Q4Zw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:55",
+     "title": "Elon Musk Confirms SpaceX, Tesla Merger Committees, Calls Deal \u2018A Good Idea\u2019",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRWd5ZE9uM0F3b2p2WjUybkUwT2ZQUmhBZDM1VnNBbm1sWXNaYzhYYUVZMnRwQk1LTW10bnl1MHQ0ZVNEenBRYTdUeUZqN0laV2c4cDVIYUpHblNnR3NQdGYyUWZMY21wNlBoaXg2TXpySlRUal8yZmpoNnBjYkZPSm9CTk1Nb0dzelp2R0puVGV1VUF6NGVlZ09VSlJmMDQxV2o0OVNHR1FNdTVsMWFNS2tDbWN4Um51MHdhZUFBbnlQaGc?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:29",
+     "title": "FirstFT: SpaceX and Tesla to study potential merger, Musk says",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYzh2MHMwdGlZczZEY21hYUlWczdvNDBnOWxRaGJSSkRlRjRQWHVLenYwVkpFZGRZLXUxN1NVODdpSFJKZERUeGlsSmphdmNMTnlpQjZaMkNFSWtlWHlFenRudGE4LUw0SkRwb1h5SURqYnFfaEZXaXNUUC1rX1RvZzN1VHc?oc=5",
+     "source": "Financial Times",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:40",
+     "title": "Musk says SpaceX, Tesla form committees to explore potential merger (SPCX:NASDAQ)",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcDhMQ3VJSldHQkN0SVVPVWg3Q3E0a2J6Ry1NQkdVeUxtUF9PNkRZdmg5QUs2WllsdjB0akprS0J4MUVHbll4cUtUYW1sVk5rcWxNTkF2a0gtYUpiODhhcVYwTVBOWTQ2T1RnbUZUYWpPdnQ1dy1OMFdwY2JTbUhTVC1hMi1kQnI0QlM3N2N4ZWoyNFBYSE1Sc3duY193NS1vWThRYU5EUQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:59",
+     "title": "SpaceX and Tesla have formed committees to discuss potential merger, Musk says",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lLWJUcHdJcDZvWnVoeGlraDVxSFRiRXZWQTlsRHhWeldSYm5IdUZkTkRTRFBzWTVzcDVBUjFuMGlVSWtsNVpHckhlVGNDTzdXeUVBZTd1SmFYTE5zMEx4NFVPYUlucklhOXFtYUJ3bWVRUQ?oc=5",
+     "source": "CNN",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:41",
+     "title": "SpaceX Q3 results released 2026-10-20 (post-market): 28% 180-day tranche (~1.3B sh) unlocks 2026-10-22; blackout now ON",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm",
+     "source": "tracker",
+     "factor": "lockup",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
