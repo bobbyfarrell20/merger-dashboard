@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-21",
-   "odds_note": "Merger letter by Jun 30, 2027: -1.6 pts (filings/news +0.0, prediction markets -1.5, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: -1.3 pts (filings/news +0.0, prediction markets -1.1, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "01:29",
@@ -751,14 +751,41 @@
      "effect": "prediction-market move; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "15:07",
+     "title": "Tesla Surges 3.6%, Adding Roughly $50 Billion in One Session - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRC1MdGVIdDluLW5DSnFHYzBtc09pblA5VVgyTnNiNlNqaXM5d1FPYUp1RHpNUGQ1aUxaaU5oM0RTQkM3Z2N3clFxMXp1ZkZuS3ZKTlpLNjdvOFB6RXQ0M3otUmhXYlBJR3BYeS1Falh0YjEyT012SFByMEJadkN5RTR4UQ?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "13:49",
+     "title": "Here's What $10,000 Invested in SpaceX and Tesla Could Be Worth in 2030 - The Motley Fool",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUEZtcnA1YXFLS0ZERFE2dERIaEYxWlhjeFlJNkVuMk5vNjNjT09HRFJxNFpDaXhTVkFlMHJKeFlSM203Ri1DQ2hlcERWR21jTERMYkRLdV9qaldLQmlyZ184Z2N2cUNWOGlTY3ZSVUE5a1RlRk9EVEFHdkpLYTZGQ1k0cW1MNTY1cVBEUg?oc=5",
+     "source": "The Motley Fool",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "13:04",
+     "title": "Wall St sees Tesla-SpaceX merger as inevitable, but split on price - Bilyonaryo Business",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX3cyY3FNMTNRQjBPcXdSTF9rOUt0VFE2TGNEZ2dfMWlmSDRyUWE0ZXdWX0R3REltTmlTMjBmRzNzNWhCOUJwX0FXa3BVZkZlQ1ZNZVdtdzU0UnlwU3BSOWptR2lEQ1V1TVMzLTA3aDRhb09xZmtzSktqUDJxTVRfXzlFa2VOYnhVckVKclZOcHZobkU?oc=5",
+     "source": "Bilyonaryo Business",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -1.65,
+     "total": -1.27,
      "time": -0.15,
      "news": 0.0,
-     "markets": -1.5
+     "markets": -1.11
     }
    }
   },
