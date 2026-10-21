@@ -1,6 +1,51 @@
 {
  "posts": [
   {
+   "id": "2113025940548718836",
+   "handle": "aralyxMI",
+   "name": "Aralyx Market Intelligence",
+   "created_at": "2026-10-21T21:53:37Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 1
+   },
+   "text": "🇺🇸 Tesla $TSLA earnings call:\n\n⦁ Cuts 2026 capex guidance to $20bn from more than $25bn\n\n⦁ Energy gross margin up to 33.1% from 20.4%, mainly on tariff refunds and warranty true downs\n\n⦁ Musk: Aiming for 5mn vehicles a year by around 2030\n\n⦁ Musk on a potential SpaceX $SPCX merger: \"I said everything that should be said yesterday\"",
+   "why": "On Tesla's Q3 call Musk declined to add anything on the merger beyond Tuesday's special-committee remarks, so no new terms or timing.",
+   "factor": "Process: special committees (no new detail)",
+   "url": "https://x.com/aralyxMI/status/2113025940548718836",
+   "time_et": "Oct 21, 2026 5:53 PM ET"
+  },
+  {
+   "id": "2113019606273229110",
+   "handle": "garyblack00",
+   "name": "Gary Black",
+   "created_at": "2026-10-21T21:28:26Z",
+   "kind": "analyst",
+   "metrics": {
+    "likes": 0
+   },
+   "text": "I'm surprised $TSLA is down AH, given 3Q auto gross margins beat easily (18.1% vs 16.7% est), TSLA's return to free cash flow, and huge North American FSD attach rate (75% vs 55% in 2Q).  Hopefully, Elon can make it clear to investors that the Board forming a special committee to evaluate the benefits and risks associated with a potential combo between SPCX and TSLA is a very positive development.",
+   "why": "A prominent Tesla bull calls the board's special committee a positive for TSLA holders, a sign of how investors may read a deal.",
+   "factor": "Investor sentiment on a combination",
+   "url": "https://x.com/garyblack00/status/2113019606273229110",
+   "time_et": "Oct 21, 2026 5:28 PM ET"
+  },
+  {
+   "id": "2113002235302949008",
+   "handle": "WSJ",
+   "name": "The Wall Street Journal",
+   "created_at": "2026-10-21T20:19:25Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 45
+   },
+   "text": "Tesla reported flat revenue in the third quarter but a surprise positive free cash flow despite its heavy investments on AI and robotics, all while talk of a merger with SpaceX raises questions about the future of the electric carmaker\n\nhttps://t.co/rmv3Yxm96X",
+   "why": "WSJ's Q3 story frames Tesla's results around the SpaceX merger talk, keeping the deal at the center of coverage.",
+   "factor": "Coverage: Tesla Q3 results",
+   "url": "https://x.com/WSJ/status/2113002235302949008",
+   "time_et": "Oct 21, 2026 4:19 PM ET"
+  },
+  {
    "id": "2112996699874476441",
    "handle": "business",
    "name": "Bloomberg",
@@ -603,6 +648,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-10-21T20:14:41+00:00",
- "updated_et": "Oct 21, 2026 4:14 PM ET"
+ "updated_at": "2026-10-21T23:10:07+00:00",
+ "updated_et": "Oct 21, 2026 7:10 PM ET"
 }
