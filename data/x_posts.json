@@ -1,6 +1,66 @@
 {
  "posts": [
   {
+   "id": "2113171002221871146",
+   "handle": "Reuters",
+   "name": "Reuters",
+   "created_at": "2026-10-22T07:30:02Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 21
+   },
+   "text": "Elon Musk’s potential mega-merger of Tesla and SpaceX would likely face a China-shaped hurdle from regulators on both sides of the Pacific over concerns about national security and the sharing of data and technology https://t.co/obt6Fjdg9B",
+   "why": "Reuters flags US and Chinese regulatory review over national security and data sharing as a likely hurdle that could stretch a deal timeline.",
+   "factor": "Regulatory risk (US/China)",
+   "url": "https://x.com/Reuters/status/2113171002221871146",
+   "time_et": "Oct 22, 2026 3:30 AM ET"
+  },
+  {
+   "id": "2113130727827001358",
+   "handle": "Reuters",
+   "name": "Reuters",
+   "created_at": "2026-10-22T04:50:00Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 34
+   },
+   "text": "Exclusive: Elon Musk's public endorsement this week of a potential $3.5 trillion merger between SpaceX and Tesla has rattled some insiders involved in the discussions, who worry his comments could invite shareholder scrutiny and delay the process by several weeks",
+   "why": "Insiders in the talks tell Reuters Musk's public endorsement could invite shareholder scrutiny and push the process back several weeks.",
+   "factor": "Process timing: possible delay",
+   "url": "https://x.com/Reuters/status/2113130727827001358",
+   "time_et": "Oct 22, 2026 12:50 AM ET"
+  },
+  {
+   "id": "2113107595816825270",
+   "handle": "WSJ",
+   "name": "The Wall Street Journal",
+   "created_at": "2026-10-22T03:18:05Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 161
+   },
+   "text": "Elon Musk has engineered ties between Tesla and SpaceX that are hard to break, and now he wants to fuse them together permanently. https://t.co/JM3n6C809P",
+   "why": "WSJ details the existing Tesla–SpaceX ties that a merger would make permanent, context for how the committees may weigh it.",
+   "factor": "Deal rationale / related-party ties",
+   "url": "https://x.com/WSJ/status/2113107595816825270",
+   "time_et": "Oct 21, 2026 11:18 PM ET"
+  },
+  {
+   "id": "2113094261369417863",
+   "handle": "business",
+   "name": "Bloomberg",
+   "created_at": "2026-10-22T02:25:05Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 421
+   },
+   "text": "Elon Musk wants to combine Tesla and SpaceX in a $3.7 trillion deal. He’s rushing to get it done before Trump leaves office https://t.co/cUbVGi0GgN",
+   "why": "Bloomberg reports Musk wants the $3.7 trillion combination done before Trump leaves office, signaling urgency on timing.",
+   "factor": "Process timing: target window",
+   "url": "https://x.com/business/status/2113094261369417863",
+   "time_et": "Oct 21, 2026 10:25 PM ET"
+  },
+  {
    "id": "2113025940548718836",
    "handle": "aralyxMI",
    "name": "Aralyx Market Intelligence",
@@ -648,6 +708,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-10-21T23:10:07+00:00",
- "updated_et": "Oct 21, 2026 7:10 PM ET"
+ "updated_at": "2026-10-22T12:08:09+00:00",
+ "updated_et": "Oct 22, 2026 8:08 AM ET"
 }
