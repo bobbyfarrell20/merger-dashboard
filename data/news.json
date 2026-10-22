@@ -3,24 +3,53 @@
  "days": [
   {
    "date": "2026-10-22",
-   "odds_note": "",
+   "odds_note": "Merger letter by Dec 31, 2026: 18.0% to 13.4% (news); by Jun 30, 2027: 56.1% to 55.9% (markets -0.3, time -0.1). Reuters says Musk's public comments could delay talks by several weeks, and Bloomberg says the announcement is targeted for the first half of 2027, so the rules model now puts less weight on a 2026 letter.",
    "items": [
+    {
+     "time_et": "00:29",
+     "title": "Reuters exclusive: Musk's public endorsement of SpaceX-Tesla deal may throw a wrench in talks; insiders worry it could delay the process by several weeks; talks at an early stage, advisers hired, structures include SpaceX acquiring Tesla or a new holding company",
+     "url": "https://www.investing.com/news/stock-market-news/exclusivemusks-public-endorsement-of-spacextesla-deal-may-throw-a-wrench-in-talks-4964606",
+     "source": "Reuters",
+     "factor": "news",
+     "effect": "timing: pushes a letter later; shifted rules-model weight from Oct-Dec 2026 into 2027",
+     "watch": true,
+     "odds_event": {
+      "label": "Reuters: talks may slip weeks"
+     }
+    },
     {
      "time_et": "02:57",
      "title": "Kalshi: definitive agreement Before May 1, 2027: 64.5% -> 48.0% (-16.5 pts in 25.3h)",
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
+     "effect": "re-assessed 03:05 ET Oct 22: overnight drop on a thin quote (bid 47 / ask 57, last trade 48); fits the Reuters and Bloomberg timing reports below; flows into the market blend automatically",
      "auto": true,
      "watch": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.27,
+     "time": -0.15,
+     "news": 0.22,
+     "markets": -0.33
+    }
+   }
   },
   {
    "date": "2026-10-21",
    "odds_note": "Merger letter by Jun 30, 2027: -2.2 pts (filings/news +0.0, prediction markets -2.1, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
+    {
+     "time_et": "21:44",
+     "title": "Bloomberg (people familiar, via Yahoo Finance): merger announcement targeted for the first half of 2027, aiming to close during Trump's presidency",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tsla-spcx-slip-overnight-musk-014422511.html",
+     "source": "Bloomberg via Yahoo Finance",
+     "factor": "news",
+     "effect": "timing: announcement target H1 2027; supports Jun 30, 2027, lowers Dec 31, 2026",
+     "watch": true
+    },
     {
      "time_et": "01:29",
      "title": "Watch SpaceX 3Q Earnings Beat, SpaceX and Tesla Discuss Potential Merger",
@@ -993,6 +1022,24 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "13:57",
+     "title": "\u2018No Question Tesla\u2019s Going to Merge With SpaceX\u2019 \u2014 Kevin O\u2019Leary Says If You Own Tesla Stock, You\u2019ll Own the New Company After Flying Roadster Demo - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWhCWEVsXzVaUTFjdGJQNDRzOVEtZ3ZkOURCWk9VamhMSnFXTFlkOEFmTU0xUEttWEN0VEZ4U3U2SlhmZjM0TTIxVWJpZHlUay1BbkJabTlfRWVqUkpqRXlJYjV2WnZNanhqSmYxYnNIVVpzZU8wRXNVV1BzQVM5bXlqTGtubzRadkJScl81R3BpVWVJNjln?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "01:28",
+     "title": "SpaceX Stock (SPCX) Jumps 9.3% After Q3 as AI Revenue Soars 830% to $7.6B - The Crypto Times",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRmFHS3NkWVloX3VFazhlczdUZXhaUmc2T0hUWjJYYjdDWmpiOGRybzRpZVBicGpibzhXa0RTWTJPYkZtVTVhaEl3OWNNenNJNUpkRWowQzhwc1dDVm5xMk82cFV0QTA3ZjZGUS1NU3MxNmpsWnFjZUEyenR0dFZyQll2SzRha3U1YzJzQ3l5NkVBVVNPNlgxdGItejBHWUFNQ3Z6VjRn?oc=5",
+     "source": "The Crypto Times",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {

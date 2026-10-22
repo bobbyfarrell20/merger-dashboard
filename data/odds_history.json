@@ -271,5 +271,30 @@
   "market": 0.56318,
   "basis": "letter by Jun 30, 2027 (blend)",
   "markets": -2.07
+ },
+ {
+  "date": "2026-10-22",
+  "as_of": "2026-10-22 02:59 ET",
+  "X": 0.5588,
+  "A": 0.0,
+  "B": 0.5588,
+  "C": 0.4412,
+  "D": 0.0,
+  "news": 0.22,
+  "time": -0.15,
+  "events": [
+   {
+    "callout": true,
+    "label": "Reuters: talks may slip weeks",
+    "delta": 0.22,
+    "title": "Reuters exclusive: Musk's public endorsement of SpaceX-Tesla deal may throw a wrench in talks; insiders worry it could delay the process by several weeks; talks at an early stage, advisers hired, structures include SpaceX acquiring Tesla or a new holding company",
+    "url": "https://www.investing.com/news/stock-market-news/exclusivemusks-public-endorsement-of-spacextesla-deal-may-throw-a-wrench-in-talks-4964606",
+    "source": "Reuters"
+   }
+  ],
+  "rules": 0.56134,
+  "market": 0.555,
+  "basis": "letter by Jun 30, 2027 (blend)",
+  "markets": -0.33
  }
 ]
