@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-22",
-   "odds_note": "Merger letter by Dec 31, 2026: 18.0% to 13.4% (news); by Jun 30, 2027: 56.1% to 55.9% (markets -0.3, time -0.1). Reuters says Musk's public comments could delay talks by several weeks, and Bloomberg says the announcement is targeted for the first half of 2027, so the rules model now puts less weight on a 2026 letter.",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.2, prediction markets -0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "00:29",
@@ -26,14 +26,184 @@
      "effect": "re-assessed 03:05 ET Oct 22: overnight drop on a thin quote (bid 47 / ask 57, last trade 48); fits the Reuters and Bloomberg timing reports below; flows into the market blend automatically",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "05:56",
+     "title": "Musk\u2019s Tesla-SpaceX Merger Would Formalize a Decadeslong Partnership",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNVdHcXJLUDN1N0FpRTE3WDBtU2dWQVZmQl8wb3RDaWpuRkpqcUU3NERZYjA0Ri15WC1FT3FHMENTaDIxVUFFR3NjWXZ4TFUyN2EtVVFiR243UGRZQVY3dmo3Q1o0bkE0bVdQUHBUYlEtMWJlbmFqZi1FUTVpeHpoeXlRby1Nb2JvU1Rtb0k3cFZKMkNUX0dha1VUSFU2QzVzZkF6RkFsdzQ?oc=5",
+     "source": "WSJ",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:28",
+     "title": "A Tesla-SpaceX Merger Would Make a Daunting Foe \u2014 For Now",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb1pfMnNhQlRjNER4bDUteDFaUmVJTnFJdG44cEdEMUhYX05vdDVVSEhuR0pGYjFZTDJxRkt5ckFyeW1aYXMwY0NncHpuUFJueng0S3dESmk3RERZSldiNTZFdGxYSllJTzJ3LV9VRzllMDNqYlV5MGkwU2tRTHk5eGEtajZYaU8tRHIxLVhVbDRvMGlZRHJPcDVEQTlqa0xPSzROd2R4N2MzQzQ?oc=5",
+     "source": "Bloomberg.com",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "03:00",
+     "title": "Elon Musk\u2019s dream merger is a nightmare for SpaceX shareholders",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNURJRmhWdmFQMXNhZEhqcklsM05rRGhIS2t2dHEyejd4RDJSTl9hd2lXMDFKTVY4VmNZNXJSZVI0NzYydklFSy0wRzVvY3F1SmZSSW9yamhjVlRrMGwxdDBEZVRjeFhsRzVsc2JfU1BKVFg4NEZzQ2pkdjBGbHRxOW9DYlRBSkdSSDF3QVVfa3A5TXc?oc=5",
+     "source": "Fortune",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:44",
+     "title": "Dan Ives Sees 90% Odds Of A Tesla-SpaceX Merger: Eyes \u2018More And More M&A\u2019 Across Space, Industrials",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMDVsV09iNmJUQ2RUa0F2b1NJVmlNbF9DRTd5OTh1VHdXLXhDYnk2WF8xdE1fQTNVcV9mNUpseldCYjlvRDdxaW1IVzZBRVNNZ3FGNERra0t2a2Fwd1o1eEN4WlJRVWhnRG1hOWV1eVFfSlNNcC1BUzVDTV9Fdlk1WURnMGl3NmVNSnJSWXMwVQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "05:50",
+     "title": "Tesla and SpaceX merger talks are real. Here are the pros and cons investors need to weigh.",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOEtUU1FWbzdPX21JOG5lempJSDQtMEp5a3hTelJkQ0pRTDF5MFE3aXBRczZRbnR3YkhMeXVRbmt2bXRXa2ZPa0RDNTBmbkNDaU1mZU93c1FNT09fSVV1S1lCSG9BaVhpcjFiblFfQm5LamRGeko3Y1ZiWExCX1YwSUVrYUpQaHZYckg5X1l1Y3pnMkZ2ZnVveW54NFA4dm5raWdtZDA1MTNYTHlHRDJv?oc=5",
+     "source": "Business Insider",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "05:38",
+     "title": "A SpaceX-Tesla merger: The ins, outs, and what-have-yous",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOFlla1BGY21yQ05sWGV5aUZ4cldPU1V5eVVTd0tjSmdIUS1CLS1aMUgzOHV0aFNCeHNoaENnRFhJTFEwVEx5QWx6NEp4bkxwLTBmRXBYUzdFYThkV3NkU3Z0dUxTZkdHOGI4cnJENDRsNWFTSGM4VUdleDRnWThPUQ?oc=5",
+     "source": "Fortune",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "05:28",
+     "title": "SpaceX-Tesla Merger Could Create a Frankenstein's Monster Wall Street Can't Value",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLVBZemZ5OXpwWGZTQk5EVnFlajBWY2szbGRxMWMtdUtobTc4d0U1WWRqNEw0SUVvMGVYT3hPLWEzWjNfZXFNRDBLY0JyTHVSOFNDTHpaZng1YjFLaVpNOGdKQ1JES1NSdGpobHYyQWxiYmNVQVJnLXdLVGViSGwzZWRDUWFCdlRVaDFQaG5tU0pZTEExYXpEUmp3LTFFbnpZYlQ1SkVhMWJ0RTVPY2FV?oc=5",
+     "source": "Business Insider",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:27",
+     "title": "Elon Musk\u2019s SpaceX-Tesla merger math doesn\u2019t add up",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYmR3eGR4WnVtOWhtWVV5Q1BFdktWOUhUMzRtbmdmeG9BZkxKMUpiTXBFazM4Vnk3T184QzFKcVpRSHNSWHRXWFprWTdNdFBIenM1THlYOUN0WG1wQUtQb2xlM3BCcHZhYU9xY0pQaGNNQnZWak1MLUdnVjQ0VEl0SVBkQ0RVR00?oc=5",
+     "source": "Fortune",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "02:19",
+     "title": "How a merged SpaceX-Tesla might navigate its China problem",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTmY1NjhtaFZzWlhreTlYYko3OHc5TU9QbjBvUHZ3Sm40Wm5hUTdxRzlwQ0VMQ3VFeEU4VDYxazBpSG1Yc0VqZU4tcmYyLV9KMG1iQ19xXzBJZ3JqN0F1Q2R4dkVjVnRhZ092bmFaYldaY2ZGWWRsUHFhNUxZN1ozT3RqMHNmcVJpendlNjZta00yVHNCLS05Y3lzSV9WdzQwRGo3dFJlcXA4bzhtaUFGMzJB?oc=5",
+     "source": "Reuters",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:43",
+     "title": "The biggest hurdle to a SpaceX merger with Tesla isn\u2019t Elon Musk. It\u2019s Tesla\u2019s shareholders",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQc1Ezbm13ak9QSkF3MkdTNmtZYkhLOXQyeUh4SXJzYzdEZk5CeThJLXlrTlpMNVFxSlFKYVBNUDVBV18tS041ODJpWlJBM3pROVNWZm1QUXJaeU9ZVHNLckhFZzBNeGxmR2Q2OW12Y1N0cm8tSmZjV0x2YTNYTUNDX3pyTm1ZcjBydU1Eb2k2eGRjX0k?oc=5",
+     "source": "Fortune",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "04:29",
+     "title": "Tesla-SpaceX merger proposal sparks stock dip despite ARK\u2019s long-term growth forecast (SPCX:NASDAQ)",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSEpRQUE2dEUzZzdLOE9wRTRnX2RWd0VGMWVHbUZWMHB3Y25fZWdKZEF6YXYzZmRFU3VaSnRSWEJPZVJRbjhSUzhndEZSTHo2ZnlDRDVHOFVOVHl6YkxVa0ZGYko0UjJNaldHNEw1bFFWcEtyakZhV1BHOWJsZHNUSl9VdnBFYjctdkdwUUlGSXpkOTBzRTNqeS1OTE54dUZscHA0VEJOeDZtVEo0YlBDYS1odld5bzJUTllES1BEZw?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "02:23",
+     "title": "Analyst sees boost to SpaceX shares in long run if Tesla merger happens",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5VWEpPaTVPY0M0ZHdOeVZqM21YUzRkVHdXYXpPSXh0VmtwVWlUTjV0YXpNc21XcDRMVHQzR3NDU2lCRV9uTU1saVZJTUtiQVhvX0x2Wmthc3l2ODlIY19UY2Y1VFY5alRfamJweXNiM0lmZWx1SjhvWFlvVQ?oc=5",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:00",
+     "title": "Why Tesla shareholders should be 'a little bit nervous' about a SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb1pacEdCdnBJSG5GMkRZSHM5Z3diWXRzQXhVZTV3TkRybGpMX3RUSzQ1WHFUVlJnWUhTWU1ZbjE1Q193SWJNQTRDUlhRYzBrcm5qak4xLVpZUjhUWlp0bFQzVUFrT25zeGR0cEVsTHJnaGt3Tjd3V0hxb3NwUmx5ZmoxVmUzeGM?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "04:21",
+     "title": "TSLA, SPCX Slide Premarket: Musk\u2019s Merger Talk Reportedly Creates \u2018Mess\u2019 \u2014 Rivian Exec Urges Tesla To \u2018Stop Doing These Calls\u2019",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLU0zZVZuWWVtUzVkZ0xfVUdlTGtpMFowd3lLc1IySHk5aTI1WTQ3d2dfV2w4bU1aLUU0R3RPcHQyMnRoRWhKb3Z5WW4wN0R3Q3dvX1Iyckh6WVoxLXJnQzZiZVlWeDRSX1YzVWlocDdxZ3VmaTQtQWtNQ2w3S2h5QkdYYXpzS1Qzck9mWlRXbzBiUF9mQkc2NVRfYw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "01:22",
+     "title": "Elon Musk\u2019s endorsement of SpaceX-Tesla merger sparks insider concerns- Reuters",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT0FSNFBCWlVjQjN1VEt4U1J1VHZmY2RzVjFyY1Bxd1gyM1pqQTNmUEhPYmdPTlhGcjE1dHNKT1FrWFNBWHFVMzR2b1JpbFJSY3hHR0l4Q0lza193ZDhqN2lSaDNoNlluNmEyclJ3S0RrYkdlRUpzcVgyTk9KV2tXbWxfb1BIcG03UUJzQVlKZzVReTlhSmZLaFlLREtPdi1y?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:01",
+     "title": "Why Elon Musk wants to merge Tesla and SpaceX before Trump leaves office",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1UNkFZTHplTUpwX241akRlNGxiSlpLTUNkNF9YVTFWR2JJbXd0WXpzZDRzbGRfSVR6M1ozLW5ZRDdhamFiY2tsU0hDOFplTWlPNXJyXzJGWGtIN1lKOXlRekp1Q1ZfZjVsY05QQUt0eWcwT1VqUnFqbjBNWmpFRE0?oc=5",
+     "source": "Yahoo Finance Australia",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "01:53",
+     "title": "Tesla's profit drops as it explores a possible merger with Musk's other public company, SpaceX",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOd01DdEI0S3ZYYTdTNUJjNnBqZ2FuWmNsbm51a1hPNVUxSElHbjlIOWM3Wk5CZXNCYjAyS08wRGVqNmlmOG9NZ1RNQk9yN2Nmb1RZN2RqaElZTnJ4NjRlQmI5RXFDV1FzM0xoX25za1h6LVBSUDBXQ2lPVkg0ZUliczdNTDFVcUVkdWljVFU1aGM4cTJHZHZJSjhaVFBiZVlPdTlMcQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
     "pp": {
-     "total": -0.27,
+     "total": -0.07,
      "time": -0.15,
      "news": 0.22,
-     "markets": -0.33
+     "markets": -0.13
     }
    }
   },
@@ -1040,6 +1210,55 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "13:57",
+     "title": "\u2018No Question Tesla\u2019s Going to Merge With SpaceX\u2019 \u2014 Kevin O\u2019Leary Says If You Own Tesla Stock, You\u2019ll Own the New Company After Flying Roadster Demo - Barchart.com",
+     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNaG1jc2tOSl9UTDFPbnJONi1QU1VoUWpGRUVtUk5HLUFzU3owVFhRdEJoRWlYN0dvaUlxRm1LUFhzNkRaOWdZVm5uaG5wTmwzZnhEM0lGckotd0lPRWgzRk9kQzRaekgwQ19JV05UVVNuRFVFSlpQUWI1TklRdlZHNFZzWlZ4MjVIZFJHU1MtVlhxOHlZT0hTbFc2elpKNzZaQ3dmR29rTWtYX1JkTml2aFc1U0tVallJNEprV0ZBQWlRRkFxaFplX1MycEdWbnVQa0NNSVJYWkFMbmY0azZ5eFVLZmdhY3U4NTZ2aElZUFE1dkVOWlE3OHBsVU1SQ1QyUXY0RVVxaXdLU2xIUF95cA?oc=5",
+     "source": "Barchart.com",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "21:20",
+     "title": "3 AI Infrastructure Stocks Retail Investors May Be Watching After Tesla SpaceX Merger Talk",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc1J3MFFac21PbHFXRXhqclRsYTVDcGNqdTFDQ05Ka3REOWRQUUU0VUZVYWl0WUY2NWxPeVJqWDFhSWk5VmVNaGJ5bGE4a1BlazE0N3o2Y0ltSUdMaFN1SU5Yak1tTmxoVzZlVmpqeG55WU9xSm9wWEdDaks0N1FNQ1lFbFZ0TUxIUzRhTUF2a1Y2NnVwdkNQVWFUZGJRUQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "13:42",
+     "title": "Altimeter\u2019s Gerstner Puts $420\u2013$550 Range On Tesla In Potential SpaceX Merger",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPb0ZGSlNOUzZJS1BKblo4YmJWT1ZYY18tSEMyeG9fMzlEZ0xKLWpZVU5BeEJ6XzNLc1BuNXVTYlhpb21UZFN2em9fZWcwbkxneW53c2ZxMk5jcjQ2RHNIQm10MVBzTGhnblJtemZoRXpfZklGVXIxc0MwM1lDRVo2WHBERktnT2p3UGk1bkxSUWw1MGZZNlFnWUhIRDk?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "21:44",
+     "title": "TSLA, SPCX Slip Overnight: Musk Reportedly Pushes Merger Before Trump\u2019s Exit \u2014 ARK Sees Tesla Holders \u20185x Better Off\u2019 By 2036",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOXEyVVRCaWZpRksxYlRBOHdnMFNCQXByblRYbFhRNk1yRzl2LWdqZDl0cnBwSVJuOGQybDZ6WmVvODl1WUpDU0tOdGhBTDVxRHUtanhsWlkyalJuYmI0emZzS1FfandLbmN6MFYxUHFoeDNBVUJfRDdGNmJXUWFVdllnX2NnTGlnc0FBdk42bENCckliSXpWS0N3?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "23:26",
+     "title": "Musk says merging SpaceX and Tesla would be a \u2018good idea\u2019; boards form special committees",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZEdSNUhkN0NNTkFxUDB5S1o0V1cxbjUyZWk2b05vOFV3Sllia1VldG1SY3dlUE1zNFA5Ukh2OG56Mkg0VFF1YTVrRnI0aXpYaDBIWkl2M05zbDQ4MDhkbkZzV0ZEeGh1aUY0OEFNNTY5N2x1RC1tZHhFNDNVRzBtMWlqUVMwMTFKLTl1R0NzZERmdGN4MGZCa3B1VDM0RU1pQ2VXNkozaWZTZzdtRHo0R1lvSnY2dDUtMjFWS2dVYldCa05wX004aWJ3RVZYd9IB2wFBVV95cUxOLVFyRHhBdFI3bHFUNGhHaDJNRFhZTDRGSnVSLUh3QmNLN01ISV9UNVhkZ1BrWWRvYkdadHYtUVRTNVNkSWQ5WXZkQ0NZendWbjNGczJxRGpXWTlaT2NVZ3hndDBzSGNkVEFTanlLbm13NUlucHVEeDRoN1lfdXp4alVEYnRIRnJJTGE5cHZOTl9QeDJ6WlBtdmY0SlhSdUVoalQtVktYNTVmSnZjVnFsREFsUzVtLXZyQXo5ZjlWWGhuRmk4RS1KWGpCS1ljZ2s4X3dWdk9ERnQtNzA?oc=5",
+     "source": "Fortune India",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
