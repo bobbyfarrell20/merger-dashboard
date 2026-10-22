@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-22 08:32 ET",
-  "last_ok": "2026-10-22 08:32 ET",
+  "as_of": "2026-10-22 11:49 ET",
+  "last_ok": "2026-10-22 11:49 ET",
   "error": null
  },
  "starship": {
@@ -32,8 +32,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-22 08:32 ET",
-  "last_ok": "2026-10-22 08:32 ET",
+  "as_of": "2026-10-22 11:49 ET",
+  "last_ok": "2026-10-22 11:49 ET",
   "error": null
  },
  "grain": {
@@ -58,30 +58,30 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-22 08:32 ET",
-  "last_ok": "2026-10-22 08:32 ET",
+  "as_of": "2026-10-22 11:49 ET",
+  "last_ok": "2026-10-22 11:49 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 386.47,
-    "prev_close": 373.71,
-    "as_of": "2026-10-21 16:00 ET"
+    "price": 382.735,
+    "prev_close": 386.47,
+    "as_of": "2026-10-22 11:49 ET"
    },
    "SPCX": {
-    "price": 159.31,
-    "prev_close": 147.79,
-    "as_of": "2026-10-21 16:00 ET"
+    "price": 150.105,
+    "prev_close": 159.31,
+    "as_of": "2026-10-22 11:49 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-22 08:32 ET",
-  "last_ok": "2026-10-22 08:32 ET",
+  "as_of": "2026-10-22 11:49 ET",
+  "last_ok": "2026-10-22 11:49 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-10-21T19:11-04:00"
+ "prices_written": "2026-10-22T11:49-04:00"
 }
