@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-21 19:11 ET",
-  "last_ok": "2026-10-21 19:11 ET",
+  "as_of": "2026-10-22 02:57 ET",
+  "last_ok": "2026-10-22 02:57 ET",
   "error": null
  },
  "starship": {
@@ -31,10 +31,10 @@
     "partial": []
    }
   },
-  "ok": true,
-  "as_of": "2026-10-21 19:11 ET",
+  "ok": false,
+  "as_of": "2026-10-22 02:57 ET",
   "last_ok": "2026-10-21 19:11 ET",
-  "error": null
+  "error": "HTTPError: HTTP Error 503: Service Unavailable"
  },
  "grain": {
   "value": {
@@ -58,8 +58,8 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-21 19:11 ET",
-  "last_ok": "2026-10-21 19:11 ET",
+  "as_of": "2026-10-22 02:57 ET",
+  "last_ok": "2026-10-22 02:57 ET",
   "error": null
  },
  "prices": {
@@ -76,10 +76,12 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-21 19:11 ET",
-  "last_ok": "2026-10-21 19:11 ET",
+  "as_of": "2026-10-22 02:57 ET",
+  "last_ok": "2026-10-22 02:57 ET",
   "error": null
  },
- "log": [],
+ "log": [
+  "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
+ ],
  "prices_written": "2026-10-21T19:11-04:00"
 }
