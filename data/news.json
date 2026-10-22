@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-22",
-   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.2, prediction markets -0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.0 pts (filings/news +0.2, prediction markets -0.0, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "00:29",
@@ -266,14 +266,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:50",
+     "title": "Tesla: Profits No Longer Matter (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBYS0lzVVMtTHFtaDI4WkRmY1V6SkVnaXpPU2ZCWlZRS2JXWGo3c0g4bGtQVEZKUENkY1ZuRXVYLW4tT2J0U0RfM3E5dXZZbUpwNzZEU2s2dU1YNHBqU0xreWJtalZBM3JGYnIteDJ3RGxIRjlteWs5NjF1TQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -0.07,
+     "total": 0.04,
      "time": -0.15,
      "news": 0.22,
-     "markets": -0.13
+     "markets": -0.02
     }
    }
   },
