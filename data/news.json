@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-23",
-   "odds_note": "",
+   "odds_note": "Morning review Oct 23: no new filing or news moved the odds. Merger letter by Dec 31, 2026 flat at 13.9%; by Jun 30, 2027 56.1% (-0.2 pts, all from prediction markets and time).",
    "items": [
     {
      "time_et": "04:55",
@@ -24,8 +24,36 @@
      "effect": "Republish of SpaceX's Q3 10-Q note that Musk's approval is required (reported Oct 22). Already counted, no change.",
      "auto": false,
      "watch": true
+    },
+    {
+     "time_et": "07:00",
+     "title": "With earnings in rearview mirror, SpaceX-Tesla merger chatter takes center stage",
+     "url": "https://www.cnbc.com/2026/10/23/spacex-tesla-merger-chatter-takes-center-stage-after-earnings.html",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "Morning review: commentary. Recaps Musk's endorsement; ex-board member Steve Westly expects a proposal 'before the elections if they possibly can' (opinion, not sourced reporting). No change.",
+     "auto": false,
+     "watch": false
+    },
+    {
+     "time_et": "08:05",
+     "title": "Elon Musk's political baggage clouds prospects for SpaceX-Tesla deal",
+     "url": "https://www.thehindu.com/sci-tech/technology/elon-musks-political-baggage-clouds-prospects-for-spacex-tesla-deal/article71614450.ece",
+     "source": "Reuters",
+     "factor": "news",
+     "effect": "Morning review: analysis of China and midterm political risk. Bears on closing risk, not on signing a letter. No change.",
+     "auto": false,
+     "watch": false
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.18,
+     "time": -0.02,
+     "news": 0.0,
+     "markets": -0.16
+    }
+   }
   },
   {
    "date": "2026-10-22",
@@ -535,6 +563,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "13:59",
+     "title": "Tesla (TSLA) Q3 2026 Earnings: 75% FSD attach rate, financial highlights, more - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSlNxOE9XQ3ZIdzAzSXRWcXZEblo2NmhUUFBQMDJuUEFUYjNNT3FwTEpPV3hoMzdxblJwVE9sS2o1YTViU2NfYjgxT0h5VFBBVHg0c0laTXZCRjcwbkZ6anJyZHNZUzFZc1IxSVdIZkNrRDduRjZqaDkwNDlsTG1ELXFWNGQtUGZDLUY2VEZFZnhYU1N0ZTVmeWg2ZVFPSHNURU5fZlE2NDQxS3RnWVlrQW5KSjJEXzdDdmZpTlQ5dnEzX01RQmpFWUJxZ2R3aGhqQ2NFcEU5R1piVzhS?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
