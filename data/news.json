@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-23",
-   "odds_note": "Morning review Oct 23: no new filing or news moved the odds. Merger letter by Dec 31, 2026 flat at 13.9%; by Jun 30, 2027 56.1% (-0.2 pts, all from prediction markets and time).",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.1 pts (filings/news +0.0, prediction markets +0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "04:55",
@@ -98,10 +98,10 @@
    ],
    "split": {
     "pp": {
-     "total": -0.18,
+     "total": 0.1,
      "time": -0.02,
      "news": 0.0,
-     "markets": -0.16
+     "markets": 0.13
     }
    }
   },
@@ -632,6 +632,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "08:53",
+     "title": "What analysts are saying about Tesla after earnings (TSLA:NASDAQ) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcDYtSXVxcEFpV2JUUXExdlFMS0d1dXRqenRLZVM2UTE4YkRPTWc0Xy1pdjdGLWtyanNFcFE5TE5qNmdkd0dqU0ZnOEo3TGc4dzA5UXZxcmxuT2YyQXV5dWxNNURlUXFCZV9PZjNXUkZwVEtFSWlDQ0ZkN0dsd2dMREgyRGFqMTVZWVVEMl9UT24yN0E?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
@@ -1702,6 +1711,15 @@
      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNM3huUmhhTWFmYzVPMlhMd0hXR0lNV0dQTnF2YVdXSnlsbUxaSXVBTThLWU5mVDRWSkhadWVaZ3dPTnJCdkxJNWIwbzI3ajgzUWlIVFZxajN6RnVOa1g3RDNpb3dfS2ltZFpiN1g3b0RKMzZnakVOWnlIOTRxam00dEprcEI3cVQ3UUEwSndxU2ZzaDZqaEZJVkRpanlmNEh2bFZpalF1MkFQWmNBV1NvS0xtNWlTcTU1dEpTWEJSNWpPRzBXQ2lsa0hDR3ZGZFg5cUVOM203NA?oc=5",
      "source": "Yahoo Finance",
      "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "17:50",
+     "title": "Tesla: One Of The Worst Quarters Ever (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORjFsX2FWQ05Fa2RxblVKb0t3aU5Gbk5XbEpLazVDdUtHOHhNMnh3Umk3RGo3ZzhpRDNuY0kzaHVhdmEyd1pHNFh3eWJScTFGSjJ0cGJ0WnhPUkViWFB4OXRvWkVMckhCR1NaOVZTeTMzNEZwY282UFItV1ZzSDJuYjdTZw?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
     }
