@@ -2,6 +2,32 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-23",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "04:55",
+     "title": "Exclusive / SpaceX-Tesla merger could face antitrust scrutiny",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc1hJMEpHaVJubmtNRTdpSkNrQ0IwZ2taUl8yLUNlWHlDM3VTQ3B1M0Y3ZEE4LWt3MVRySk9IYXVBT1o2dS00cjF4OG14WEZYODhna09MRGU4VEFjOVNhVV80c1ptWl9RU3Zsc2lkelU4aXFFaHVaQ1RTSUR1MV9JXzRqcHNMOVhpOUVvYk9vLXlDUGp2cG9R?oc=5",
+     "source": "Semafor",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "05:01",
+     "title": "SpaceX CEO Elon Musk's Approval Required in Potential Merger With Tesla",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOamRMMEFVNlo2WFZyQ2ZpRE1tSEx3YkhaY1BjcjFHdV9MLTJCY1VjejBiWTVPLUxpXzYtcTJHbHVsZVZTR2w0UURzXy0zUUVEbkM1dkxEaU1mYjdQQXRMR01DSVNQVmRyYmRkRlZBNGhUUGRIcGRhbTFqYXB6djJFb2VJeUJoTjJKRFlyNm5pZU9wb2ZU?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-22",
    "odds_note": "Merger letter by Jun 30, 2027: +0.1 pts (filings/news +0.2, prediction markets +0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [

@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-22 19:05 ET",
-  "last_ok": "2026-10-22 19:05 ET",
+  "as_of": "2026-10-23 06:49 ET",
+  "last_ok": "2026-10-23 06:49 ET",
   "error": null
  },
  "starship": {
@@ -21,14 +21,16 @@
    "next_net": null,
    "headline_date": null,
    "outcome_votes": {
-    "success": [],
+    "success": [
+     "Tech Times"
+    ],
     "failure": [],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-10-22 19:05 ET",
-  "last_ok": "2026-10-22 19:05 ET",
+  "as_of": "2026-10-23 06:49 ET",
+  "last_ok": "2026-10-23 06:49 ET",
   "error": null
  },
  "grain": {
@@ -53,8 +55,8 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-22 19:05 ET",
-  "last_ok": "2026-10-22 19:05 ET",
+  "as_of": "2026-10-23 06:49 ET",
+  "last_ok": "2026-10-23 06:49 ET",
   "error": null
  },
  "prices": {
@@ -71,8 +73,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-10-22 19:05 ET",
-  "last_ok": "2026-10-22 19:05 ET",
+  "as_of": "2026-10-23 06:49 ET",
+  "last_ok": "2026-10-23 06:49 ET",
   "error": null
  },
  "log": [
