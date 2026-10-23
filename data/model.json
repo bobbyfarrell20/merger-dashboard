@@ -1,6 +1,6 @@
 {
- "morning_run": "2026-10-22",
- "generated": "2026-10-23 11:41 ET",
+ "morning_run": "2026-10-23",
+ "generated": "2026-10-23 13:00 ET",
  "today": "2026-10-23",
  "window": {
   "start": "2026-10-14",
@@ -61,7 +61,7 @@
    "L": 0.0,
    "expiry": "2026-10-23",
    "expiry_listed": true,
-   "expiry_iv": 33.2
+   "expiry_iv": 19.0
   },
   {
    "monday": "2026-10-26",
@@ -117,7 +117,7 @@
    "L": 0.0,
    "expiry": "2026-10-30",
    "expiry_listed": true,
-   "expiry_iv": 42.4
+   "expiry_iv": 38.8
   },
   {
    "monday": "2026-11-02",
@@ -173,7 +173,7 @@
    "L": 0.0,
    "expiry": "2026-11-06",
    "expiry_listed": true,
-   "expiry_iv": 43.4
+   "expiry_iv": 40.7
   },
   {
    "monday": "2026-11-09",
@@ -229,7 +229,7 @@
    "L": 0.0,
    "expiry": "2026-11-13",
    "expiry_listed": true,
-   "expiry_iv": 43.4
+   "expiry_iv": 40.8
   },
   {
    "monday": "2026-11-16",
@@ -285,7 +285,7 @@
    "L": 0.0,
    "expiry": "2026-11-20",
    "expiry_listed": true,
-   "expiry_iv": 42.6
+   "expiry_iv": 40.7
   },
   {
    "monday": "2026-11-23",
@@ -341,7 +341,7 @@
    "L": 0.0,
    "expiry": "2026-11-27",
    "expiry_listed": true,
-   "expiry_iv": 42.2
+   "expiry_iv": 40.0
   },
   {
    "monday": "2026-11-30",
@@ -509,7 +509,7 @@
    "L": 0.0,
    "expiry": "2026-12-18",
    "expiry_listed": true,
-   "expiry_iv": 42.5
+   "expiry_iv": 41.1
   }
  ],
  "best_week": "2026-11-02",
@@ -691,82 +691,82 @@
  },
  "deal_math": {
   "gap": {
-   "implied_ratio": 2.5436432637571156,
+   "implied_ratio": 2.529779286926995,
    "parity_ratio": 3.4337598735928263,
-   "parity_price": 506.6856069473575,
-   "parity_premium": 0.34993767503425577,
-   "cap_gap": 519177391533.3601,
-   "ratio_gap": 0.8901166098357107
+   "parity_price": 505.6211413865437,
+   "parity_premium": 0.3573357530980208,
+   "cap_gap": 526156121816.79004,
+   "ratio_gap": 0.9039805866658313
   },
-  "tsla_price": 375.34,
-  "spcx_price": 147.56,
+  "tsla_price": 372.51,
+  "spcx_price": 147.25,
   "tsla_shares": 3952757946,
   "spcx_shares": 13572821625,
-  "tsla_cap": 1483628167451.64,
-  "spcx_cap": 2002805558985.0,
+  "tsla_cap": 1472441862464.46,
+  "spcx_cap": 1998597984281.25,
   "musk_votes_now": 0.8426779107419812,
   "cases": [
    {
     "label": "At market (0%)",
-    "ratio": 2.5436432637571156,
-    "tsla_price": 375.34,
-    "premium": 0.0,
-    "new_spcx_shares": 10054406122.605312,
-    "tesla_holders_pct": 0.4255432008363468,
-    "musk_votes_spacex_survives": 0.7509867722616251,
-    "musk_votes_tesla_survives": 0.3321604970666938,
+    "ratio": 2.529779286926995,
+    "tsla_price": 372.51000000000005,
+    "premium": 2.220446049250313e-16,
+    "new_spcx_shares": 9999605178.026894,
+    "tesla_holders_pct": 0.42420770935400093,
+    "musk_votes_spacex_survives": 0.751418017582271,
+    "musk_votes_tesla_survives": 0.33252124634054275,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "20% premium",
-    "ratio": 3.052371916508539,
-    "tsla_price": 450.408,
-    "premium": 0.20000000000000018,
-    "new_spcx_shares": 12065287347.126375,
-    "tesla_holders_pct": 0.4705997372990222,
-    "musk_votes_spacex_survives": 0.7355983299802317,
-    "musk_votes_tesla_survives": 0.3199896123954518,
-    "passes_floor": true,
+    "ratio": 3.035735144312394,
+    "tsla_price": 447.012,
+    "premium": 0.19999999999999996,
+    "new_spcx_shares": 11999526213.63227,
+    "tesla_holders_pct": 0.4692383464104351,
+    "musk_votes_spacex_survives": 0.7360885110181153,
+    "musk_votes_tesla_survives": 0.32035735773937535,
+    "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "30% premium",
-    "ratio": 3.3067362428842504,
-    "tsla_price": 487.942,
+    "ratio": 3.2887130730050935,
+    "tsla_price": 484.26300000000003,
     "premium": 0.30000000000000004,
-    "new_spcx_shares": 13070727959.386908,
-    "tesla_holders_pct": 0.49057757555871384,
-    "musk_votes_spacex_survives": 0.7282094285850587,
-    "musk_votes_tesla_survives": 0.3145931042630334,
+    "new_spcx_shares": 12999486731.434961,
+    "tesla_holders_pct": 0.489211797374273,
+    "musk_votes_spacex_survives": 0.7287265341628528,
+    "musk_votes_tesla_survives": 0.31496203472405754,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$450/TSLA",
-    "ratio": 3.0496069395500136,
+    "ratio": 3.0560271646859083,
     "tsla_price": 450.0,
-    "premium": 0.19891298555975934,
-    "new_spcx_shares": 12054358062.483057,
-    "tesla_holders_pct": 0.47037396270221266,
-    "musk_votes_spacex_survives": 0.7356797368984132,
-    "musk_votes_tesla_survives": 0.32005059969707766,
+    "premium": 0.20802126117419673,
+    "new_spcx_shares": 12079735658.404074,
+    "tesla_holders_pct": 0.4708979118514262,
+    "musk_votes_spacex_survives": 0.7354907479505804,
+    "musk_votes_tesla_survives": 0.31990906807549024,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$500/TSLA",
-    "ratio": 3.3884521550555706,
+    "ratio": 3.395585738539898,
     "tsla_price": 500.0,
-    "premium": 0.33212553951084356,
-    "new_spcx_shares": 13393731180.536732,
-    "tesla_holders_pct": 0.49667939677431633,
-    "musk_votes_spacex_survives": 0.7258770131307437,
-    "musk_votes_tesla_survives": 0.3129448514648816,
+    "premium": 0.34224584574910755,
+    "new_spcx_shares": 13421928509.33786,
+    "tesla_holders_pct": 0.49720513961212404,
+    "musk_votes_spacex_survives": 0.7256743358414454,
+    "musk_votes_tesla_survives": 0.31280283532364994,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
@@ -774,8 +774,8 @@
    {
     "label": "1:1 market-cap parity (50/50)",
     "ratio": 3.4337598735928263,
-    "tsla_price": 506.6856069473575,
-    "premium": 0.34993767503425577,
+    "tsla_price": 505.6211413865437,
+    "premium": 0.3573357530980208,
     "new_spcx_shares": 13572821625.0,
     "tesla_holders_pct": 0.5,
     "musk_votes_spacex_survives": 0.724592282060252,
@@ -786,13 +786,13 @@
    },
    {
     "label": "Reverse: Tesla acquires SpaceX (at market)",
-    "ratio": 2.5436432637571156,
-    "tsla_price": 375.34,
-    "premium": 0.0,
-    "new_spcx_shares": 10054406122.605312,
-    "tesla_holders_pct": 0.4255432008363468,
-    "musk_votes_spacex_survives": 0.7509867722616251,
-    "musk_votes_tesla_survives": 0.3321604970666938,
+    "ratio": 2.529779286926995,
+    "tsla_price": 372.51000000000005,
+    "premium": 2.220446049250313e-16,
+    "new_spcx_shares": 9999605178.026894,
+    "tesla_holders_pct": 0.42420770935400093,
+    "musk_votes_spacex_survives": 0.751418017582271,
+    "musk_votes_tesla_survives": 0.33252124634054275,
     "passes_floor": false,
     "control_ok": false,
     "survivor": "Tesla",
@@ -805,11 +805,11 @@
    "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
    "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy."
   ],
-  "parity_note": "1:1 market-cap parity works out to about $507 per TSLA at current prices (+35%), which clears the $450 floor.",
+  "parity_note": "1:1 market-cap parity works out to about $506 per TSLA at current prices (+36%), which clears the $450 floor.",
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-10-23 11:40 ET, fetched 2026-10-23 11:40 ET"
+  "prices_as_of": "last trade 2026-10-23 12:59 ET, fetched 2026-10-23 13:00 ET"
  },
  "blank_reasons": [
   {
@@ -825,7 +825,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.1885516009016749,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-10-23 11:41 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-10-23 13:00 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -841,7 +841,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.09002875815243913,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-23 11:41 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-10-23 13:00 ET (news watcher).",
    "merger": false
   },
   {
@@ -849,7 +849,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06631901829048394,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-23 11:41 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-10-23 13:00 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -872,7 +872,7 @@
  "leak_logodds": 0.0,
  "weeks_blank": 4,
  "fcc": {
-  "as_of": "2026-10-23 11:41 ET",
+  "as_of": "2026-10-23 13:00 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -949,7 +949,7 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-10-23 11:41 ET",
+  "as_of": "2026-10-23 13:00 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -959,7 +959,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-10-23 11:41 ET",
+  "as_of": "2026-10-23 13:00 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -981,10 +981,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.19,
+    "yes": 0.185,
     "closed": false,
     "volume": 317813.12886,
-    "volume_24h": 960.113067,
+    "volume_24h": 817.6920140000001,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -993,7 +993,7 @@
     "yes": 0.29,
     "closed": false,
     "volume": 54932.866806,
-    "volume_24h": 535.069585,
+    "volume_24h": 466.041015,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -1008,10 +1008,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.555,
+    "yes": 0.6,
     "closed": false,
-    "volume": 70059.436684,
-    "volume_24h": 57.625715,
+    "volume": 71220.92287499999,
+    "volume_24h": 1219.1119059999999,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -1019,8 +1019,8 @@
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
     "yes": 0.655,
     "closed": false,
-    "volume": 65114.19128300001,
-    "volume_24h": 652.862942,
+    "volume": 65685.81985600002,
+    "volume_24h": 1224.491515,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -2764,7 +2764,7 @@
    {
     "date": "2026-11-20",
     "listed": true,
-    "iv": 42.6,
+    "iv": 40.7,
     "rules": 0.03244818634117094,
     "market": 0.06166666666666667,
     "blend": 0.04413557847136923
@@ -2772,7 +2772,7 @@
    {
     "date": "2026-12-18",
     "listed": true,
-    "iv": 42.5,
+    "iv": 41.1,
     "rules": 0.08409246229764906,
     "market": 0.1560217995953303,
     "blend": 0.11286419721672156
@@ -2780,7 +2780,7 @@
    {
     "date": "2027-01-15",
     "listed": true,
-    "iv": 43.4,
+    "iv": 42.0,
     "rules": 0.1473013343635639,
     "market": 0.2542578788216395,
     "blend": 0.19008395214679416
@@ -2788,7 +2788,7 @@
    {
     "date": "2027-02-19",
     "listed": true,
-    "iv": 45.5,
+    "iv": 44.9,
     "rules": 0.2558920411591954,
     "market": 0.34812134256488847,
     "blend": 0.2927837617214726
@@ -2796,7 +2796,7 @@
    {
     "date": "2027-03-19",
     "listed": true,
-    "iv": 46.3,
+    "iv": 45.2,
     "rules": 0.340657660139282,
     "market": 0.4431088923404518,
     "blend": 0.3816381530197499
@@ -2804,7 +2804,7 @@
    {
     "date": "2027-04-16",
     "listed": true,
-    "iv": 46.8,
+    "iv": 45.8,
     "rules": 0.4135738176675584,
     "market": 0.5318012777211176,
     "blend": 0.4608648016889821
@@ -2820,7 +2820,7 @@
    {
     "date": "2027-06-17",
     "listed": true,
-    "iv": 48.5,
+    "iv": 47.1,
     "rules": 0.5395190697072241,
     "market": 0.5683773957270957,
     "blend": 0.5510624001151727
@@ -2909,7 +2909,7 @@
     "ask": 0.02,
     "last": 0.02,
     "vol24": 961.54,
-    "ch24": 0.9999999999999999,
+    "ch24": 0.49999999999999994,
     "ch7": -2.0000000000000004,
     "ch72": -2.5,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3039,7 +3039,7 @@
     "ask": 0.23,
     "last": 0.22,
     "vol24": 1310.61,
-    "ch24": 7.500000000000001,
+    "ch24": 6.0,
     "ch7": -2.4999999999999996,
     "ch72": 6.5,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3104,7 +3104,7 @@
     "ask": 0.2,
     "last": 0.18,
     "vol24": 960.113067,
-    "ch24": 3.0,
+    "ch24": 1.0000000000000009,
     "ch7": -4.499999999999998,
     "ch72": 1.0000000000000009,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3169,7 +3169,7 @@
     "ask": 0.34,
     "last": 0.34,
     "vol24": 15.43,
-    "ch24": 3.0000000000000027,
+    "ch24": 0.0,
     "ch7": 0.5000000000000004,
     "ch72": -0.9999999999999953,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3299,7 +3299,7 @@
     "ask": 0.39,
     "last": 0.36,
     "vol24": 423.53,
-    "ch24": -3.4999999999999973,
+    "ch24": -2.500000000000002,
     "ch7": -9.499999999999996,
     "ch72": -7.000000000000001,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3429,7 +3429,7 @@
     "ask": 0.5,
     "last": 0.51,
     "vol24": 142.55,
-    "ch24": -1.0000000000000009,
+    "ch24": -2.500000000000002,
     "ch7": -4.5000000000000036,
     "ch72": -3.500000000000003,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3494,7 +3494,7 @@
     "ask": 0.58,
     "last": 0.59,
     "vol24": 504.99,
-    "ch24": 6.999999999999995,
+    "ch24": 0.5000000000000004,
     "ch7": -1.5000000000000013,
     "ch72": 1.0000000000000009,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3624,7 +3624,7 @@
     "ask": 0.74,
     "last": 0.73,
     "vol24": 1876.6,
-    "ch24": -5.500000000000005,
+    "ch24": -1.5000000000000013,
     "ch7": -3.0000000000000027,
     "ch72": -3.0000000000000027,
     "as_of": "2026-10-23T11:40-04:00",
@@ -3689,7 +3689,7 @@
     "ask": 0.66,
     "last": 0.65,
     "vol24": 652.862942,
-    "ch24": -2.500000000000002,
+    "ch24": -1.5000000000000013,
     "ch7": 3.0000000000000027,
     "ch72": 1.0000000000000009,
     "as_of": "2026-10-23T11:40-04:00",
@@ -5077,6 +5077,10 @@
        0.065
       ],
       [
+       "2026-10-22T23:00",
+       0.075
+      ],
+      [
        "2026-10-23T01:38",
        0.08
       ],
@@ -5085,7 +5089,15 @@
        0.08
       ],
       [
+       "2026-10-23T07:00",
+       0.08
+      ],
+      [
        "2026-10-23T11:40",
+       0.085
+      ],
+      [
+       "2026-10-23T13:00",
        0.085
       ]
      ]
@@ -6721,11 +6733,23 @@
        0.015
       ],
       [
+       "2026-10-22T23:00",
+       0.015
+      ],
+      [
        "2026-10-23T01:38",
        0.015
       ],
       [
+       "2026-10-23T03:00",
+       0.015
+      ],
+      [
        "2026-10-23T06:49",
+       0.015
+      ],
+      [
+       "2026-10-23T07:00",
        0.015
       ],
       [
@@ -8201,7 +8225,15 @@
        0.49
       ],
       [
+       "2026-10-22T23:00",
+       0.495
+      ],
+      [
        "2026-10-23T01:38",
+       0.495
+      ],
+      [
+       "2026-10-23T03:00",
        0.495
       ],
       [
@@ -8209,8 +8241,16 @@
        0.495
       ],
       [
+       "2026-10-23T07:00",
+       0.495
+      ],
+      [
        "2026-10-23T11:40",
        0.49
+      ],
+      [
+       "2026-10-23T13:00",
+       0.485
       ]
      ]
     },
@@ -9441,7 +9481,15 @@
        0.335
       ],
       [
+       "2026-10-22T18:00",
+       0.335
+      ],
+      [
        "2026-10-22T19:05",
+       0.335
+      ],
+      [
+       "2026-10-22T21:00",
        0.335
       ],
       [
@@ -9449,11 +9497,23 @@
        0.335
       ],
       [
+       "2026-10-23T02:00",
+       0.335
+      ],
+      [
        "2026-10-23T06:49",
        0.335
       ],
       [
+       "2026-10-23T07:00",
+       0.335
+      ],
+      [
        "2026-10-23T11:40",
+       0.335
+      ],
+      [
+       "2026-10-23T13:00",
        0.335
       ]
      ]
@@ -10865,7 +10925,15 @@
        0.185
       ],
       [
+       "2026-10-22T23:00",
+       0.195
+      ],
+      [
        "2026-10-23T01:38",
+       0.2
+      ],
+      [
+       "2026-10-23T03:00",
        0.2
       ],
       [
@@ -10873,7 +10941,15 @@
        0.2
       ],
       [
+       "2026-10-23T07:00",
+       0.2
+      ],
+      [
        "2026-10-23T11:40",
+       0.22
+      ],
+      [
+       "2026-10-23T13:00",
        0.22
       ]
      ]
@@ -12093,15 +12169,31 @@
        0.39
       ],
       [
+       "2026-10-22T23:00",
+       0.39
+      ],
+      [
        "2026-10-23T01:38",
        0.385
+      ],
+      [
+       "2026-10-23T03:00",
+       0.39
       ],
       [
        "2026-10-23T06:49",
        0.385
       ],
       [
+       "2026-10-23T07:00",
+       0.385
+      ],
+      [
        "2026-10-23T11:40",
+       0.38
+      ],
+      [
+       "2026-10-23T13:00",
        0.38
       ]
      ]
@@ -13621,7 +13713,15 @@
        0.57
       ],
       [
+       "2026-10-22T23:00",
+       0.575
+      ],
+      [
        "2026-10-23T01:38",
+       0.57
+      ],
+      [
+       "2026-10-23T03:00",
        0.57
       ],
       [
@@ -13629,8 +13729,16 @@
        0.575
       ],
       [
+       "2026-10-23T07:00",
+       0.575
+      ],
+      [
        "2026-10-23T11:40",
        0.575
+      ],
+      [
+       "2026-10-23T13:00",
+       0.58
       ]
      ]
     },
@@ -15149,7 +15257,15 @@
        0.755
       ],
       [
+       "2026-10-22T23:00",
+       0.725
+      ],
+      [
        "2026-10-23T01:38",
+       0.725
+      ],
+      [
+       "2026-10-23T02:00",
        0.725
       ],
       [
@@ -15157,8 +15273,16 @@
        0.725
       ],
       [
+       "2026-10-23T07:00",
+       0.725
+      ],
+      [
        "2026-10-23T11:40",
        0.73
+      ],
+      [
+       "2026-10-23T13:00",
+       0.725
       ]
      ]
     },
@@ -16341,7 +16465,15 @@
        0.185
       ],
       [
+       "2026-10-22T20:00",
+       0.185
+      ],
+      [
        "2026-10-23T01:38",
+       0.185
+      ],
+      [
+       "2026-10-23T02:00",
        0.185
       ],
       [
@@ -16349,8 +16481,16 @@
        0.185
       ],
       [
+       "2026-10-23T08:00",
+       0.185
+      ],
+      [
        "2026-10-23T11:40",
        0.19
+      ],
+      [
+       "2026-10-23T12:59",
+       0.185
       ]
      ]
     },
@@ -17525,11 +17665,23 @@
        0.31
       ],
       [
+       "2026-10-23T02:00",
+       0.31
+      ],
+      [
        "2026-10-23T06:49",
        0.31
       ],
       [
+       "2026-10-23T08:00",
+       0.31
+      ],
+      [
        "2026-10-23T11:40",
+       0.29
+      ],
+      [
+       "2026-10-23T12:59",
        0.29
       ]
      ]
@@ -18713,15 +18865,31 @@
        0.67
       ],
       [
+       "2026-10-22T20:00",
+       0.67
+      ],
+      [
        "2026-10-23T01:38",
        0.67
+      ],
+      [
+       "2026-10-23T02:00",
+       0.66
       ],
       [
        "2026-10-23T06:49",
        0.66
       ],
       [
+       "2026-10-23T08:00",
+       0.655
+      ],
+      [
        "2026-10-23T11:40",
+       0.655
+      ],
+      [
+       "2026-10-23T12:59",
        0.655
       ]
      ]
@@ -19905,11 +20073,23 @@
        0.36
       ],
       [
+       "2026-10-23T02:00",
+       0.36
+      ],
+      [
        "2026-10-23T06:49",
        0.36
       ],
       [
+       "2026-10-23T08:00",
+       0.36
+      ],
+      [
        "2026-10-23T11:40",
+       0.35
+      ],
+      [
+       "2026-10-23T12:59",
        0.35
       ]
      ]
@@ -21089,7 +21269,15 @@
        0.56
       ],
       [
+       "2026-10-22T20:00",
+       0.56
+      ],
+      [
        "2026-10-23T01:38",
+       0.555
+      ],
+      [
+       "2026-10-23T02:00",
        0.555
       ],
       [
@@ -21097,8 +21285,16 @@
        0.555
       ],
       [
+       "2026-10-23T08:00",
+       0.555
+      ],
+      [
        "2026-10-23T11:40",
        0.555
+      ],
+      [
+       "2026-10-23T12:59",
+       0.6
       ]
      ]
     }
