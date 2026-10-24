@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-24",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "05:45",
+     "title": "'Almost Everything Elon Musk Touches\u2019 Grows 10x and More, Says Top Analyst as He Makes the Case for Tesla-SpaceX Merger",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcDZQRmlHaERaaEp4WGJKM3J1enBrZWY2bUluYS1kVER2dXFuSjhBeW4yamtTM2VsR1JXSEJOd0pqWkVrNjlEMHdRQzBUUU1Vc2ZmUGNhVE1rdXBXOTFmZW1VU3hjb2l6T1dTdDduUUtlS2tRanYxZDVkYVRiVWdLaWtaZzRLS09JZFFKOGMwWnV2ODcyc3VXbUc0MkQzOHJvQ2c?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-23",
    "odds_note": "Merger letter by Jun 30, 2027: +0.8 pts (filings/news +0.0, prediction markets +0.8, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
