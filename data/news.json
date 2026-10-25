@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-25",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "13:00",
+     "title": "If Tesla Merges With SpaceX, How Many Bitcoin Would Elon's Companies Hold?",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNanhPbXBtVElGQzdMT3NHZXBoQ09ZSWtocFN6aGRjeGUyOGJxaEg1NFdfSVRSbTA1SzlPZGswX1BnWmJvWmY2ZW51R3lqWUJfaXJnN3JhdVNITnk5ZXJYMjhBY2hVOG1qT25tSDRnQ0xlZlRzMnhBZU5oOHhuZVF3UXB2QWRpYW85bEVBOFpjM0UzcjRlT3RhQjVnOHRObEIxOUptVFVDaXU5MkhCMklGTEJSNnNWUEQ4MlNJSFJVU2s5UXp2SWNTNU52QjZBZw?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-24",
    "odds_note": "",
    "items": [
