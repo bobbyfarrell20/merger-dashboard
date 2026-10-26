@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-26",
-   "odds_note": "Merger letter by Dec 31, 2026: 14.5% to 11.9% (filings/news +0.0, prediction markets -2.6, time -0.0); by Jun 30, 2027: -0.6 pts (markets -0.6). No filing or news moved it; Polymarket's Dec 31 contract slid from 18.5% to 12.5% over the weekend with no headline behind it.",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.0 pts (filings/news +0.0, prediction markets +0.0, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "06:49",
@@ -154,14 +154,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "08:33",
+     "title": "Tesla: Too Big To Fail, Too Expensive To Justify - Reiterate Sell (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZGdTWFJoTGpLU3B3OGZyT1BvUW53T0k0VDlJRVBFLTVCcEYyQjZoVWVpQVJ5M01nbUFNTXk3Tnd1V0FuMzZwYjk1UlY5YmFQUVhOSEpFNWMtb0VxQW9VWTE2UHRfX1FPTDlNaUh4MDVhc1pVSWt0bWY0ZFQ5UWIwUG40R0toempRQlBQZ2d3MGVYVklZRnRyRHIzeFJXZk5jMjVjSw?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -0.6,
+     "total": -0.03,
      "time": -0.03,
      "news": 0.0,
-     "markets": -0.57
+     "markets": 0.0
     }
    }
   },
@@ -270,6 +279,15 @@
      "factor": "sec",
      "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
      "auto": false
+    },
+    {
+     "time_et": "14:06",
+     "title": "Elon Musk\u2019s Roadster, Nvidia\u2019s Space AI Push, Nadella\u2019s Security Warning: Mag 7 Voices This Week - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX2Q0TVpjSWp5WVBsZFkxUjhzWUJxNlZPaEEwNmx2UTlhemtCUjVCcTU3QXVkSXdramFKRFFCZEczY0VXenJaRXJ0NFBBNFROT2NieUNNWWZLRW1HUGlHRVdtMjBCQ0RGQlFhM0RzRlVYb2RtbjZjTkhmQThMU29TOG5abl9aN0xHQjBCS3FrMDcwdF9qTmR1Wm5pbnR6c2VueXAxbE5uNVhlMUlHM09KQlpXcWdNMTFvaFJpTW9sbzl3VHFvMmJzbGhlVUNuR1otVzBvR3R5LWZKZ0g5bF9XemRZYw?oc=5",
+     "source": "Stocktwits",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ]
   },
