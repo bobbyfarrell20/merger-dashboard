@@ -1,6 +1,30 @@
 {
  "posts": [
   {
+   "id": "2114675952999334005",
+   "handle": "business",
+   "name": "Bloomberg",
+   "created_at": "2026-10-26T11:10:10Z",
+   "kind": "report",
+   "text": "Elon Musk must persuade Tesla shareholders that a merger with SpaceX is in their interests. https://t.co/WgrQFlTrbr",
+   "why": "Bloomberg stresses that any deal still has to win a Tesla shareholder vote; commentary on the process with no new facts, so no odds change.",
+   "factor": "Vote/process: shareholder approval hurdle (commentary)",
+   "url": "https://x.com/business/status/2114675952999334005",
+   "time_et": "Oct 26, 2026 7:10 AM ET"
+  },
+  {
+   "id": "2114670677319995530",
+   "handle": "DeItaone",
+   "name": "*Walter Bloomberg",
+   "created_at": "2026-10-26T10:49:12Z",
+   "kind": "analyst",
+   "text": "$TSLA  $SPCX - BARCLAYS UPGRADES TESLA TO OVERWEIGHT, SEES SPACEX MERGER UPSIDE\n\nBarclays upgraded $TSLA to Overweight, raising its price target to $450 from $370.\n\nThe bank sees a potential SpaceX merger as a major bullish catalyst, alongside accelerating Robotaxi adoption,",
+   "why": "Barclays upgrades Tesla to Overweight ($450 target) partly on SpaceX merger upside; sell-side view, not inside information, so no odds change.",
+   "factor": "Analyst: Barclays upgrade citing merger upside",
+   "url": "https://x.com/DeItaone/status/2114670677319995530",
+   "time_et": "Oct 26, 2026 6:49 AM ET"
+  },
+  {
    "id": "2113587033834766512",
    "handle": "CNBC",
    "name": "CNBC",
@@ -756,6 +780,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-10-23T12:08:03+00:00",
- "updated_et": "Oct 23, 2026 8:08 AM ET"
+ "updated_at": "2026-10-26T12:10:14+00:00",
+ "updated_et": "Oct 26, 2026 8:10 AM ET"
 }
