@@ -34,6 +34,126 @@
      "effect": "Morning review: Item 8.01 financing for data-center GPUs; no mention of Tesla or a combination. No change.",
      "auto": false,
      "watch": false
+    },
+    {
+     "time_et": "08:00",
+     "title": "SPCX filed 8-K (items 8.01)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "06:49",
+     "title": "Buy Tesla ahead of potential SpaceX merger, says Barclays",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84RWIxU2dTNVlEVmZORVpmNUxtcWtJOGFwSUFNZjNSRHdIbGk3VkN2YklyN2dtSWFrQkl2YXpKSm5rcFdXNGdxVy1DcDRick5PempXQ1VwcjVFN3JPWG9hdDRMdkxXVEwzUGh0MVdYdWwySmc?oc=5",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "13:03",
+     "title": "Musk\u2019s Dream of SpaceX-Tesla Merger Rests on Carmaker\u2019s Shareholders",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeXJ6QURuQ1N2TWdLaVNSVktjMFNPYUhxb25Xd2NUWndrTE84ZUlFcEJlSjczNVZNTG42M1VFTF83TWNUM2tfUk1TMHpISGxRMUpaNHlnejVuRnlXeWVnZVRDR09FM3RSajZKUHRYeGNXT04wQ2lqbVRxZkhGNWV1QmE2cl85RllwTEJoZUo0SGJVTWFhWVphN3k4cnotWFo1OFlHdERvVmhvUFlqYjRHTlNKVEVWY2kzSzAyWGwyYw?oc=5",
+     "source": "Bloomberg.com",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:35",
+     "title": "Tesla-SpaceX merger explained in charts",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaTg3YkwxT1NhVWFxbXJMb2g2bkk2d1c5bVhLXzZXZXdXRnhiTGh5QTVPSEI4eHdLbEVzaTFnc1h6YW94cTNsTVo5Y0ppakhMSHRiT0t5RFRaM25QcUVTNC1NR2ZCeWpHNmk5aXRYUEJ5elNVWW5PcHhKNEJ2bHNLOUE0UHFKVzJOMVFWNVN3U0daMzNYQVZGajdhU0ZRV0xSalZ6eERfMUxqck91UmJOZmdrclU?oc=5",
+     "source": "Reuters",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:15",
+     "title": "Dan Ives Sees Tesla-SpaceX Merger at $500 a Share - Tesla (NASDAQ:TSLA), SpaceX (NASDAQ:SPCX)",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5MQVE4cjRyV0FXWEIyZ0tKYndsekN5QXotM3BNYmVsV2V2eVI0QTRtaWF6aGtJZE1tOUQ4WEpfRXhrSWpFODdDUlpRZUJSNFBLZGM1VU9yWnQ4eHJ1Z3lSdmdpTkd3NWVIRk1CUVZVYWZFUGM5X1E?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "10:50",
+     "title": "Tesla's upside goes beyond SpaceX merger -- Barclays (TSLA:NASDAQ)",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYjVIMUhUcGlXMmkxQWRwUEVuTHI1WS1DQzRIUHUwUWIyYm92bmZQM0VPakxNSWhvTnEwUU1zSlFaemxuZDVjcUdsY2JSOS1fTDhVR1B4ZlBBLUpSQUZRRnRNMTFGdUVuXzNOMkx6UVhhdmJVV3liZGV0TkhncUM5SzMtRUpuRWYxeFFNeVRvVS1QUQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:06",
+     "title": "Musk wants a Tesla and SpaceX merger, here\u2019s what the numbers say",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSUFiamhPSEZIbWN3aF8zcUlMejFqbV9nUV93bkR3VkZyWEgtclhYMWNHWldSdjlrX2JvMWtLOUZ2MGN6MjlyT1hla1ZvUFBMVEwxaFpSQVJZTGVleEZ4Nk96YWVMTFJ6c3dlQjFyOXU4aW5YejBndVNHbDBBN2M1TG5YWlFMNEhmSjlRXy1RcDRTYjRNNW5DN3V3Yw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:59",
+     "title": "Tesla Gets $450 Target as Barclays Calls SpaceX Merger Key",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeU0za1g2ZzBWUExBTlpHT2JQLS13N3B0Rk95UGJuUldZWEFsWTUtWHI1RFFBQnM4bDVJNEYtTnQ1Vy16U0RaUWNXVTZXYTBvRWIzNXJlOUpkSDN0bFBLNzdRYTlYLTZ2d1h4WHc1VmNJWkpreVlxb1UxYWlRUVQ4NnNQVkxNRElRQUU4WW12YkxuTnZHbDJCQ1ZPTQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "09:58",
+     "title": "Tesla Rises 6% as Barclays Upgrade Cites SpaceX Merger Potential; Lucid Drops 4%, Rivian Slips",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbEhVSHJmamJuRnlQN1Y4S19kcmU3M3lXTkhmRnpOWkMxNEFlSHZMU2VlYUdBU25EdzhWN3JqQmMxUHRoTDNSV3huaVYzenJDTkdFVGpHRThpY1lmeXZKYWFZYWNZVkZKTFpZVzNpRTdRanhNVlg3Mm5GRks1b1F4ejhJZVBvdDJ0eUJuM2xxRHRGVXdKblNaSTBkbw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:03",
+     "title": "Tesla expands Robotaxi geofence in Houston with an ode to SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JMUI3Tl9mbkJUUVlOVmNoR2dVRUpQOGh0V1hHZkxHbmcwdlZhN1ktT1k4WEVLN2FSWUQ1RGo3UURFN2txQ0laYkZWS0RrTkJNc3pvbHotLWZnd3AwWlBySWM0WUtQRF9DcHlTQ1B2TGs4SkNLYU1sa240cXF2UQ?oc=5",
+     "source": "Teslarati",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:08",
+     "title": "Barclays upgrades Tesla, says SpaceX merger \u201cnow a key part of bull case\u201d",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSVVXSmFqTTVUam0zVTlzdENacW56ZlJVQjFzNVUyd2Q5dlZBRVhnOHNnSFpCaERBNzFiWFBUN2RmUV9WOUZEaHEwSE9uQVgxVkM0dXBrUXJvTXc5MUxaOHkwVUQ2YkthRkRCcXlFb1RUSlZfbmx0c1dLb0pjRG9ESC1Hb0ZMV2QyZUdNWUR4U2VQdlNhT0ctWHVCdGxYUUtGM2c?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "13:11",
+     "title": "REVIEW NEEDED: Starship Flight 15 outcome unclear (success: Drive Tesla Canada); not applied, please classify",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {

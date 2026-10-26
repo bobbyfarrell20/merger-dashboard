@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-10-24 17:21 ET",
-  "last_ok": "2026-10-24 17:21 ET",
+  "as_of": "2026-10-26 13:11 ET",
+  "last_ok": "2026-10-26 13:11 ET",
   "error": null
  },
  "starship": {
@@ -21,14 +21,16 @@
    "next_net": null,
    "headline_date": null,
    "outcome_votes": {
-    "success": [],
+    "success": [
+     "Drive Tesla Canada"
+    ],
     "failure": [],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-10-24 17:21 ET",
-  "last_ok": "2026-10-24 17:21 ET",
+  "as_of": "2026-10-26 13:11 ET",
+  "last_ok": "2026-10-26 13:11 ET",
   "error": null
  },
  "grain": {
@@ -53,30 +55,30 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-10-24 17:21 ET",
-  "last_ok": "2026-10-24 17:21 ET",
+  "as_of": "2026-10-26 13:11 ET",
+  "last_ok": "2026-10-26 13:11 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 372.22,
-    "prev_close": 374.58,
-    "as_of": "2026-10-23 16:00 ET"
+    "price": 396.37,
+    "prev_close": 372.22,
+    "as_of": "2026-10-26 13:11 ET"
    },
    "SPCX": {
-    "price": 147.49,
-    "prev_close": 144.75,
-    "as_of": "2026-10-23 16:00 ET"
+    "price": 148.975,
+    "prev_close": 147.49,
+    "as_of": "2026-10-26 13:11 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-10-24 17:21 ET",
-  "last_ok": "2026-10-24 17:21 ET",
+  "as_of": "2026-10-26 13:11 ET",
+  "last_ok": "2026-10-26 13:11 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-10-23T18:39-04:00"
+ "prices_written": "2026-10-26T13:11-04:00"
 }
