@@ -2,6 +2,50 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-26",
+   "odds_note": "Merger letter by Dec 31, 2026: 14.5% to 11.9% (filings/news +0.0, prediction markets -2.6, time -0.0); by Jun 30, 2027: -0.6 pts (markets -0.6). No filing or news moved it; Polymarket's Dec 31 contract slid from 18.5% to 12.5% over the weekend with no headline behind it.",
+   "items": [
+    {
+     "time_et": "06:49",
+     "title": "Barclays upgrades Tesla to overweight on potential SpaceX merger ($450 target)",
+     "url": "https://www.cnbc.com/2026/10/26/tesla-spacex-merger-barclays.html",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "Morning review: sell-side upgrade that assumes a combination is 'heavily expected'; analyst view, not inside information. No change.",
+     "auto": false,
+     "watch": false
+    },
+    {
+     "time_et": "07:10",
+     "title": "Bloomberg: Musk must persuade Tesla shareholders that a merger with SpaceX is in their interests",
+     "url": "https://x.com/business/status/2114675952999334005",
+     "source": "Bloomberg",
+     "factor": "news",
+     "effect": "Morning review: commentary on the 50%-of-outstanding-shares vote hurdle (already counted). No change.",
+     "auto": false,
+     "watch": false
+    },
+    {
+     "time_et": null,
+     "title": "SpaceX 8-K: binding commitment for a ~$40B Apollo-managed GPU finance lease (dated Oct 24, filed Oct 26)",
+     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "Morning review: Item 8.01 financing for data-center GPUs; no mention of Tesla or a combination. No change.",
+     "auto": false,
+     "watch": false
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": -0.6,
+     "time": -0.03,
+     "news": 0.0,
+     "markets": -0.57
+    }
+   }
+  },
+  {
    "date": "2026-10-25",
    "odds_note": "",
    "items": [
@@ -11,8 +55,8 @@
      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNanhPbXBtVElGQzdMT3NHZXBoQ09ZSWtocFN6aGRjeGUyOGJxaEg1NFdfSVRSbTA1SzlPZGswX1BnWmJvWmY2ZW51R3lqWUJfaXJnN3JhdVNITnk5ZXJYMjhBY2hVOG1qT25tSDRnQ0xlZlRzMnhBZU5oOHhuZVF3UXB2QWRpYW85bEVBOFpjM0UzcjRlT3RhQjVnOHRObEIxOUptVFVDaXU5MkhCMklGTEJSNnNWUEQ4MlNJSFJVU2s5UXp2SWNTNU52QjZBZw?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
     },
     {
@@ -21,8 +65,8 @@
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeXIwdHVyYU55UmJtY1lQU1EtSG9PNFlPeGJSLUI4dVVQUFRXbHpFYVNKQ2cteVJSeXJWNnFVSXp6NUdMQUFnSlFfQ21RbFIzMWpJanhXOXh5Ql9CNnFrR0tjV3FrSjg4Sld1X3k5MEZ3dTcwOXB4a0ZmSjVpdGNKLTFaaDdhd1lnV3NjcF9rVnNzY2NsV2JmQXhLRkNqUWxtSm0wcU9UR3JzVFZ3aWZTcnZyekFIY2p3OC1JYjlkSFQ4cC1sNVlmZ3NyTHI1YVE?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
     },
     {
@@ -31,9 +75,27 @@
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeXIwdHVyYU55UmJtY1lQU1EtSG9PNFlPeGJSLUI4dVVQUFRXbHpFYVNKQ2cteVJSeXJWNnFVSXp6NUdMQUFnSlFfQ21RbFIzMWpJanhXOXh5Ql9CNnFrR0tjV3FrSjg4Sld1X3k5MEZ3dTcwOXB4a0ZmSjVpdGNKLTFaaDdhd1lnV3NjcF9rVnNzY2NsV2JmQXhLRkNqUWxtSm0wcU9UR3JzVFZ3aWZTcnZyekFIY2p3OC1JYjlkSFQ4cC1sNVlmZ3NyTHI1YVE?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
+    },
+    {
+     "time_et": "11:07",
+     "title": "Prediction: This Will Be SpaceX's Stock Price by the End of 2030 - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcV9Ra2l3bXdSeWRyblBXdlZxTklMZjhQdkJGYlZqa2U5T1R6ZzhoWDNHYzdPVXN2YVRsbEhYRTF3blBsZWJsUzVxT284SHhqanBEODhuTF9uZ2FDV05EOW5vSmZQc09wLWJET1B1ampVOERkTERidjlFbUNsckVpUW9sOFFPMzJHOWZHTmQzdW9FUkZyS1RKS2I0c0twcUsz?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "prices",
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false
+    },
+    {
+     "time_et": "21:08",
+     "title": "SPCX, SMCI, NOK, TSLA, NFLX: Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVFJMSFFPU1phMXJfV2Z0MXo5TWpYTjhTVFRVMmN1Nks0Q0l6cUk5NFQydW5Ya0E4QXNSNUhUQl9teDkxakxqNy01WkNFc0VWbllIQjJ2YTN5YUMzNmk1bjNMX3JnS3JLZHp2Z09LNG9GUDNRdDE3WnAwcG5xbFV2dEhxWDFlRnZRYy0yVEl0WDJ1UXUzNksyM0d4blozNVdMWUg1WGk0VUFrRXByVmpqQUhkS044d1RrMUxoRG9ZUnlQQ0JpOWpaVld1R042MXBfYjVyTVVXa0NPUDZYTkt0YlJmUzVmVVVZY1N6YXNXMA?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false
     }
    ]
   },
@@ -47,8 +109,8 @@
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcDZQRmlHaERaaEp4WGJKM3J1enBrZWY2bUluYS1kVER2dXFuSjhBeW4yamtTM2VsR1JXSEJOd0pqWkVrNjlEMHdRQzBUUU1Vc2ZmUGNhVE1rdXBXOTFmZW1VU3hjb2l6T1dTdDduUUtlS2tRanYxZDVkYVRiVWdLaWtaZzRLS09JZFFKOGMwWnV2ODcyc3VXbUc0MkQzOHJvQ2c?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
     },
     {
@@ -57,8 +119,8 @@
      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPZE1OLXlJNXhvRkNEMkhVTUFkeE5UQ2J6SUF1UnptVHROQno4eGFKRVpIbm9tclhmajF5TGRWc2JIQWdJNTZGUGlpZ1NLcktCYmZnWERvSExEUGttVmdZYmZaNlJnMV8yYmtOYjhYRU05aEFPRVg5T3dCdmNfRUUtLTRMQ0NzSDBSSVREQ2oxZExOUmpzS0dPMEM4RG83Z2t1aUMzOGozYmRFb19QSEVHTS1fMHNmMm5lcmdpX0JBZy1lMVdRYnh4V0Z4SmNVV0hlbV9xeldLRElGdW0xOWFlVndrbGxFdWFxYUpucW9qYnMyM01GQUowMQ?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
     },
     {
@@ -67,9 +129,27 @@
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3QwSjVqWjMtekJHZGhUNjdSWXVXRFA4WXRhS1pCM0NLR3AtQ29kSWNuM2oyOTlxRXp5SFJsM3NzV28tNUNMQVFlSTNhei1DMFlhUlQxTF80REV6Mi1Ma3BoY2hsQjU5elZGcEdwM1JSdVJxRHBDQWhEb1NJYXkyaFVuZFAwbEpOOE9qb3ZUOHdjVGxGZjNsVmxHWEdPcVRD?oc=5",
      "source": "Seeking Alpha",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
-     "auto": true,
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false,
      "watch": true
+    },
+    {
+     "time_et": "18:34",
+     "title": "SpaceX Stock Jumps 19% on Day One \u2014 What Happens Next After the Historic IPO? - TradingKey",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxONUc2dEV1V0hHS0hXV3pZc1dyc0Zza1otNXl2QnIwX3F6bTF3M2JLZk5aUFVxUE91YV9lX3B6dHllX19hel9jSEYtMnpaY0NVZ2s5OWJMSUt4U09ZMGE1Z0lIZ0RoQUtKQUZwOUFJb0hBVHIyMkh6NWE1N3I5QzMwcnFvQ244b3FGNHQ1TDVTZ2tQb3ZhQWRDMlZfdUNmU3hQVDBWX0ROb3JnaExnRVRiYl9ycm9wYUFuUHhJTkpwRWlCckswT1R3S0JvNVZlRG1ENks1QTA4UGVKd09lcm5JczR3?oc=5",
+     "source": "TradingKey",
+     "factor": "prices",
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false
+    },
+    {
+     "time_et": "18:24",
+     "title": "SpaceX, Tesla Form Independent Committees To Explore Merger: Elon Musk Says Deal \u2018Not A Certainty\u2019 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdE0wTllrSTdISVlyQlMyZjlqbTNEaDRib0NSTGV0NTVkaHhzZ0d0aTg5TjR2NkV6aVBVRzVLYXRuYlNfbTFXVWgtd1hMWl9DXzRiVEFwcGhOT2FURVVHWUU3ZnNaU2xRVFl3cW5CdnlROUo5eGxOdGxWN0tiM3Q3U0NfU0hRUzdyQXdaQ1NjWHVtYkw3SzN4UUV0VlEwMEJqdmpJcGxSejdCSEphcF8td1dZQjVJMEFTbXh2TEdmekZlODRYallja3dCRXlRTW9VN0kxelBvQlhSdU85UE5na3RKWUFPM1lVcWNDTmJfZkI?oc=5",
+     "source": "Stocktwits",
+     "factor": "sec",
+     "effect": "Morning review (Oct 26): weekend commentary/opinion with no new facts. No change.",
+     "auto": false
     }
    ]
   },

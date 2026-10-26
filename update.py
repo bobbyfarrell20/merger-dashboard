@@ -472,7 +472,7 @@ def make_why_pp(cfg, pp, state):
            f"The rules model keeps 60% of the pre-proxy merger odds: {H['rules']:.0%} by {fmt(pp['by'])}, 2027. That is a judgment call, not data."]
     out += [
            f"Prediction markets price it at {H['market']:.0%} on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
-           ("Catalysts to watch: Tesla's Q3 earnings call Oct 21, any banker or law-firm hires by the committees, and the Dec 3 meeting Q&A. Unlock days and Starship launch days are less likely days for a deal letter." if committee else "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter.")]
+           ("Catalysts to watch: the Nov 3 midterms (a former Tesla director expects a proposal before them), Starship Flight 15 (NET Nov 8), the Nov 20 and Dec 18 monthly options expirations, the Dec 3 annual meeting Q&A, the Dec 8 SpaceX unlock, and any banker or law-firm hire by the committees. Unlock days and Starship launch days are less likely days for a deal letter." if committee else "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter.")]
     return out
 
 def fmt(s): d = P(s); return d.strftime("%b ") + str(d.day)
