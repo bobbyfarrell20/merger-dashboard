@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-26",
-   "odds_note": "Merger letter by Jun 30, 2027: -2.6 pts (filings/news +0.0, prediction markets -2.6, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: -2.2 pts (filings/news +0.0, prediction markets -2.2, time -0.0). Why: calendar/config changed: starship.",
    "items": [
     {
      "time_et": "06:49",
@@ -246,21 +246,21 @@
     },
     {
      "time_et": "23:11",
-     "title": "Starship Flight 15 SUCCESS on 2026-10-26 (2 sources agree); blackout rules applied",
-     "url": null,
-     "source": "tracker",
+     "title": "Tracker false alarm: Starship Flight 15 has not flown (headlines were about the Oct 25 booster static fire); still NET Nov 8",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+     "source": "tracker (corrected)",
      "factor": "starship",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "no change; false success reading reverted before it reached the odds",
      "auto": true,
      "watch": true
     }
    ],
    "split": {
     "pp": {
-     "total": -2.64,
+     "total": -2.23,
      "time": -0.03,
      "news": 0.0,
-     "markets": -2.6
+     "markets": -2.2
     }
    }
   },

@@ -7,8 +7,9 @@
   "confirmed": true
  },
  "starship": {
-  "status": "success",
-  "next_net": "2026-10-26",
-  "evidence": "2 sources: Drive Tesla Canada, Starlust.org"
+  "status": "scheduled",
+  "next_net": "2026-11-08",
+  "evidence": "Oct 26 23:11 ET tracker 'success' was a false positive: headlines were about Booster 22's Oct 25 static fire (Space.com, Aviation Week). Flight 15 still NET Nov 8, unflown.",
+  "locked_until_launch": true
  }
 }

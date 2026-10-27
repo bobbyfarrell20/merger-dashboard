@@ -145,7 +145,7 @@ def classify_starship(title):
     if not re.search(r"Starship", t) or not re.search(r"Flight 15|15th", t, re.I): return None
     if re.search(r"explod|anomal|\blost\b|failure|fails|RUD|scrub", t, re.I):
         return "scrub" if re.search(r"scrub|delay|postpone", t, re.I) else "failure"
-    if re.search(r"prep|underway|ahead|ready|delay|plan|target|\bNET\b|expected|preview", t, re.I): return None
+    if re.search(r"prep|underway|ahead|ready|delay|plan|target|\bNET\b|expected|preview|static[- ]fire|test[- ]fire|fires all|ignit|engine test|booster test|tested", t, re.I): return None
     if re.search(r"successful(ly)?|a success|splashdown|caught|nails|aces|completes", t, re.I) and not re.search(r"attempt|will|could|aims", t, re.I):
         return "success"
     return None

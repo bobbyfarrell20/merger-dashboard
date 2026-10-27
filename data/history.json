@@ -4258,35 +4258,35 @@
  {
   "v": 2,
   "date": "2026-10-26",
-  "as_of": "2026-10-26 17:40 ET",
+  "as_of": "2026-10-26 23:12 ET",
   "metrics": {
    "end_A": 0.0,
    "end_B": 1.0,
    "end_none": 0.0,
-   "wk2026-10-26_either": 0.25588898532602483,
+   "wk2026-10-26_either": 0.19325599217719236,
    "wk2026-10-26_A": 0.0,
-   "wk2026-10-26_B": 0.25588898532602483,
-   "wk2026-11-02_either": 0.2932381743407965,
+   "wk2026-10-26_B": 0.19325599217719236,
+   "wk2026-11-02_either": 0.3179204921700928,
    "wk2026-11-02_A": 0.0,
-   "wk2026-11-02_B": 0.2932381743407965,
-   "wk2026-11-09_either": 0.2901796484998159,
+   "wk2026-11-02_B": 0.3179204921700928,
+   "wk2026-11-09_either": 0.3146045254039465,
    "wk2026-11-09_A": 0.0,
-   "wk2026-11-09_B": 0.2901796484998159,
-   "wk2026-11-16_either": 0.05231413759648225,
+   "wk2026-11-09_B": 0.3146045254039465,
+   "wk2026-11-16_either": 0.056717500746674504,
    "wk2026-11-16_A": 0.0,
-   "wk2026-11-16_B": 0.05231413759648225,
-   "wk2026-11-23_either": 0.04094352345915538,
+   "wk2026-11-16_B": 0.056717500746674504,
+   "wk2026-11-23_either": 0.044389804153481496,
    "wk2026-11-23_A": 0.0,
-   "wk2026-11-23_B": 0.04094352345915538,
-   "wk2026-11-30_either": 0.002793544354341717,
+   "wk2026-11-23_B": 0.044389804153481496,
+   "wk2026-11-30_either": 0.0030286813714749798,
    "wk2026-11-30_A": 0.0,
-   "wk2026-11-30_B": 0.002793544354341717,
-   "wk2026-12-07_either": 0.0022242075991741887,
+   "wk2026-11-30_B": 0.0030286813714749798,
+   "wk2026-12-07_either": 0.0024114226471622833,
    "wk2026-12-07_A": 0.0,
-   "wk2026-12-07_B": 0.0022242075991741887,
-   "wk2026-12-14_either": 0.0007449451611577912,
+   "wk2026-12-07_B": 0.0024114226471622833,
+   "wk2026-12-14_either": 0.0008076483657266614,
    "wk2026-12-14_A": 0.0,
-   "wk2026-12-14_B": 0.0007449451611577912
+   "wk2026-12-14_B": 0.0008076483657266614
   },
   "inputs": {
    "window": {
@@ -4592,7 +4592,9 @@
      1,
      5
     ],
-    "_why": "NET Nov 8 comes from planning-grade sources: the CADENA air-traffic planning slides of Oct 8 (cited by Wikipedia), and NASASpaceflight reporting on Oct 10 plus Musk's '4-6 weeks' remark (per thelaunchwindow). SpaceX hasn't announced a date, and Launch Library lists it only as NET Q4 2026. Unverified. Merger odds: launch day x0.1 and the day after x0.3. After a success, days +2 to +4 get x1.3. After a failure, days +1 to +5 get x0.2. The status comes from data/events_state.json (set by watch.py or by hand) or from this config."
+    "_why": "NET Nov 8 comes from planning-grade sources: the CADENA air-traffic planning slides of Oct 8 (cited by Wikipedia), and NASASpaceflight reporting on Oct 10 plus Musk's '4-6 weeks' remark (per thelaunchwindow). SpaceX hasn't announced a date, and Launch Library lists it only as NET Q4 2026. Unverified. Merger odds: launch day x0.1 and the day after x0.3. After a success, days +2 to +4 get x1.3. After a failure, days +1 to +5 get x0.2. The status comes from data/events_state.json (set by watch.py or by hand) or from this config.",
+    "evidence": "Oct 26 23:11 ET tracker 'success' was a false positive: headlines were about Booster 22's Oct 25 static fire (Space.com, Aviation Week). Flight 15 still NET Nov 8, unflown.",
+    "locked_until_launch": true
    },
    "grain": {
     "status": "pending",
@@ -4678,11 +4680,11 @@
    }
   },
   "pp": {
-   "blend": 0.5441965345293098,
+   "blend": 0.5482280953240172,
    "rules": 0.5603504828878059,
-   "market": 0.5199656119915659,
+   "market": 0.5300445139783341,
    "w": 0.4,
-   "near": 0.12954875499764884,
+   "near": 0.1250671138201413,
    "inputs": {
     "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
     "start": "2026-10-19",

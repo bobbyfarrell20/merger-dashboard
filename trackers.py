@@ -128,7 +128,7 @@ def starship(prev, ev):
             else:
                 hits.append(hit(f"starship_date1:{best[0]}", f"Starship Flight 15 possibly {best[0]} (single source: {', '.join(best[1])}); not applied", None, "starship", review=True))
     # outcome (only recent, last 2 days)
-    rec = [n for n in items if n["at"] > now() - dt.timedelta(days=2) and not re.search(r"\bwill\b|could|aims|preview|ahead of|what to expect|attempt to", n["title"], re.I)]
+    rec = [n for n in items if n["at"] > now() - dt.timedelta(days=2) and not re.search(r"\bwill\b|could|aims|preview|ahead of|what to expect|attempt to|static[- ]fire|test[- ]fire|fires all|ignit|engine test|prepar", n["title"], re.I)]
     votes = {"success": set(), "failure": set(), "partial": set()}; first = {}
     for n in rec:
         t = n["title"]; k = "partial" if re.search(PART, t, re.I) and re.search(FAIL + "|" + SUCC, t, re.I) else "failure" if re.search(FAIL, t, re.I) else "success" if re.search(SUCC, t, re.I) else None
