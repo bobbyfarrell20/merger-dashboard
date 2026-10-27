@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-10-27",
-   "odds_note": "Merger letter by Jun 30, 2027: +0.2 pts (filings/news +0.0, prediction markets +0.2, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.3 pts (filings/news +0.0, prediction markets +0.3, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -62,14 +62,32 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "06:00",
+     "title": "Hiltzik: Who would gain from a merger of Musk's SpaceX and Musk's Tesla? Take a wild guess - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeGJhcUU1ZVpoMS1aN1RMTFJFaEtEZ2ZRalp2SGJBZjdTR1ZKcDFTSGdkZDRKc3pvTFNHMEVtYmgxVVpPVEc1dlZ1QTlvQ3llUTZUblRRMVA3c29nekkyX1pQQ0xUTlJIQk1ZSXN0WXRMczdIRWxDc1IzcjR1NmN0dHZjNW1ZT0M0LUNrMndGWFNycDNsbEZEeE1laEVGZw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "00:32",
+     "title": "Tesla Could Go Beyond Robotaxis Into Underground Travel And Electric Aviation \u2014 TSLA Could \u2018Own\u2019 Transportation, ARK Says - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPR3ZqWU5UbE1hX1dHa2NzUVNWOFZaVUk4NHJ2S2hXczVEUHhkQ0hBUEwwRWU2c1o0UnQxZW5kOWsxOG5uMHU2d2txQU9oVWJQRWEwaFdyYXo2c1pmbGVoLUtCaFNlelZPOS1kVy1xRDhlUUVaS3Fva0NpWXhxWXVWYlNTa09HazVEanF5MWJ4RkYxUWNGNVhtS0VRbUowRy1Jd0Fz?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 0.22,
+     "total": 0.28,
      "time": -0.01,
      "news": 0.0,
-     "markets": 0.23
+     "markets": 0.29
     }
    }
   },
