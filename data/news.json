@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-27",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "01:35",
+     "title": "Tesla Jumps 5% as Barclays Raises Its Target to $450 on SpaceX Merger Prospects",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSlJTdXFLbDdVUHhZczBfcDFqaVUxS0J6b2V6anlBbG9TX3FtRVl0dUJFb25rVFZNSEdWeVV3UHZMUnVXLW54S25LeFhFeG01WFZYMkk3RURheDQ4dy1zX29xY2E5VzZWV0pkdVdQMndyM284N214MnkyT2dSOTJMMVctbERzRV9ybzNMQ2Nad3YwUlg5Q3luaUtn?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-26",
    "odds_note": "Merger letter by Jun 30, 2027: -2.2 pts (filings/news +0.0, prediction markets -2.2, time -0.0). Why: calendar/config changed: starship.",
    "items": [
@@ -251,6 +267,26 @@
      "source": "tracker (corrected)",
      "factor": "starship",
      "effect": "no change; false success reading reverted before it reached the odds",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "16:11",
+     "title": "Tesla-SpaceX Merger Hopes Send Sell Ratings to 11-Year Low",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVlllQnltNUl1eDZDUkZUb0ZTRVlicnl5R2d0R0dDTkF2clFobzJQSjNkMUxOY0JMTWZ0X1NINk5iU3VVUEw1N3VPWVJtNUtYc0JDTDlaTy1xRWxNaWYtWFdwN1lHV19OZ09sT0ktYnNKOU5TWjI2NENnTC1lcXFLaERubFUwTjNSdHBJaHlLZm9KcHBxTkZKMFNMX2RDWjRPUDRTTzJYaGZWQWJQMjcwNHZn?oc=5",
+     "source": "Bloomberg.com",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:12",
+     "title": "Tesla rises after Barclays upgrade highlights potential SpaceX merger",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQnBYbGdfc21vdXlubmRNeGdQOUY1RG5EWVJFcDJqTk83bENpeHY5WkdkMzNJcUY1d0VuUEMzWDdMUnlnX2R1NnRlRDY2b3Azb202MlpsZVlCQXhqZ3A5S3EydEJJdnh2Uy14cWk5WGVkeEdPZ1dPVkMzSTFDLVlWand6ZDdNclZNVVJycnRBYVp0UQ?oc=5",
+     "source": "Yahoo Finance UK",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
     }
