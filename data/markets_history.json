@@ -3,12 +3,6 @@
 "name": "Polymarket: announced by December 31, 2026",
 "points": [
 {
-"t": "2026-10-15T15:25-04:00",
-"p": 0.245,
-"how": "mid",
-"vol24": 25590.381292
-},
-{
 "t": "2026-10-15T18:36-04:00",
 "p": 0.26,
 "how": "mid",
@@ -598,6 +592,15 @@
 "bid": 0.18,
 "ask": 0.2,
 "last": 0.18
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.19,
+"how": "mid",
+"vol24": 6008.029866999999,
+"bid": 0.18,
+"ask": 0.2,
+"last": 0.18
 }
 ],
 "last_alert_p": 0.245,
@@ -606,12 +609,6 @@
 "polymarket:3585429": {
 "name": "Polymarket: announced by January 31, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.295,
-"how": "mid",
-"vol24": 3723.9355129999994
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.295,
@@ -1202,6 +1199,15 @@
 "bid": 0.22,
 "ask": 0.24,
 "last": 0.25
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.23,
+"how": "mid",
+"vol24": 624.16,
+"bid": 0.22,
+"ask": 0.24,
+"last": 0.25
 }
 ],
 "last_alert_p": 0.265,
@@ -1210,12 +1216,6 @@
 "polymarket:3585430": {
 "name": "Polymarket: announced by December 31, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.675,
-"how": "mid",
-"vol24": 1140.703367
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.675,
@@ -1806,6 +1806,15 @@
 "bid": 0.69,
 "ask": 0.7,
 "last": 0.7
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.665,
+"how": "mid",
+"vol24": 11204.091049,
+"bid": 0.66,
+"ask": 0.67,
+"last": 0.66
 }
 ],
 "last_alert_p": null,
@@ -1814,12 +1823,6 @@
 "polymarket:3585431": {
 "name": "Polymarket: announced by February 28, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.325,
-"how": "mid",
-"vol24": 3491.646633
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.325,
@@ -2410,6 +2413,15 @@
 "bid": 0.39,
 "ask": 0.4,
 "last": 0.4
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.39,
+"how": "mid",
+"vol24": 4762.127513999999,
+"bid": 0.38,
+"ask": 0.4,
+"last": 0.4
 }
 ],
 "last_alert_p": 0.395,
@@ -2418,12 +2430,6 @@
 "polymarket:3585432": {
 "name": "Polymarket: announced by June 30, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.44,
-"how": "mid",
-"vol24": 163.211818
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.44,
@@ -3014,20 +3020,23 @@
 "bid": 0.58,
 "ask": 0.6,
 "last": 0.59
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.45,
+"how": "mid",
+"vol24": 5767.923119999999,
+"bid": 0.44,
+"ask": 0.46,
+"last": 0.46
 }
 ],
-"last_alert_p": null,
+"last_alert_p": 0.45,
 "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
 },
 "kalshi:KXCOMPANYACTIONMERGER-27-27FEB01": {
 "name": "Kalshi: definitive agreement Before Feb 1, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.36,
-"how": "mid",
-"vol24": 2544.5
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.36,
@@ -3618,6 +3627,15 @@
 "bid": 0.33,
 "ask": 0.35,
 "last": 0.33
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.34,
+"how": "mid",
+"vol24": 357.28,
+"bid": 0.33,
+"ask": 0.35,
+"last": 0.33
 }
 ],
 "last_alert_p": 0.315,
@@ -3626,12 +3644,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-26DEC01": {
 "name": "Kalshi: definitive agreement Before Dec 1, 2026",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.11,
-"how": "mid",
-"vol24": 9751.62
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.12,
@@ -4222,6 +4234,15 @@
 "bid": 0.15,
 "ask": 0.17,
 "last": 0.17
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.155,
+"how": "mid",
+"vol24": 2648.45,
+"bid": 0.15,
+"ask": 0.16,
+"last": 0.15
 }
 ],
 "last_alert_p": 0.075,
@@ -4230,12 +4251,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-26NOV01": {
 "name": "Kalshi: definitive agreement Before Nov 1, 2026",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.035,
-"how": "mid",
-"vol24": 2859.48
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.04,
@@ -4826,6 +4841,15 @@
 "bid": 0.01,
 "ask": 0.02,
 "last": 0.01
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.015,
+"how": "mid",
+"vol24": 348.99,
+"bid": 0.01,
+"ask": 0.02,
+"last": 0.01
 }
 ],
 "last_alert_p": null,
@@ -4834,12 +4858,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-27MAY01": {
 "name": "Kalshi: definitive agreement Before May 1, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.575,
-"how": "mid",
-"vol24": 3655.78
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.585,
@@ -5430,6 +5448,15 @@
 "bid": 0.63,
 "ask": 0.66,
 "last": 0.65
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.64,
+"how": "mid",
+"vol24": 421.69,
+"bid": 0.62,
+"ask": 0.66,
+"last": 0.62
 }
 ],
 "last_alert_p": 0.48,
@@ -5438,12 +5465,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-27MAR01": {
 "name": "Kalshi: definitive agreement Before Mar 1, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.425,
-"how": "mid",
-"vol24": 1701.07
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.43,
@@ -6034,6 +6055,15 @@
 "bid": 0.4,
 "ask": 0.42,
 "last": 0.41
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.415,
+"how": "mid",
+"vol24": 2942.81,
+"bid": 0.4,
+"ask": 0.43,
+"last": 0.43
 }
 ],
 "last_alert_p": 0.54,
@@ -6042,12 +6072,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-27JAN01": {
 "name": "Kalshi: definitive agreement Before Jan 1, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.215,
-"how": "mid",
-"vol24": 13649.75
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.27,
@@ -6638,6 +6662,15 @@
 "bid": 0.21,
 "ask": 0.22,
 "last": 0.21
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.205,
+"how": "mid",
+"vol24": 3181.63,
+"bid": 0.2,
+"ask": 0.21,
+"last": 0.21
 }
 ],
 "last_alert_p": 0.24,
@@ -6646,12 +6679,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-27APR01": {
 "name": "Kalshi: definitive agreement Before Apr 1, 2027",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.535,
-"how": "mid",
-"vol24": 2929.75
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.545,
@@ -7242,6 +7269,15 @@
 "bid": 0.47,
 "ask": 0.48,
 "last": 0.47
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.48,
+"how": "mid",
+"vol24": 2205.48,
+"bid": 0.47,
+"ask": 0.49,
+"last": 0.49
 }
 ],
 "last_alert_p": 0.44,
@@ -7250,12 +7286,6 @@
 "kalshi:KXCOMPANYACTIONMERGER-27-28JAN01": {
 "name": "Kalshi: definitive agreement Before 2028",
 "points": [
-{
-"t": "2026-10-15T15:25-04:00",
-"p": 0.7,
-"how": "mid",
-"vol24": 988.98
-},
 {
 "t": "2026-10-15T18:36-04:00",
 "p": 0.7,
@@ -7846,6 +7876,15 @@
 "bid": 0.73,
 "ask": 0.74,
 "last": 0.74
+},
+{
+"t": "2026-10-29T17:57-04:00",
+"p": 0.715,
+"how": "mid",
+"vol24": 2836.94,
+"bid": 0.71,
+"ask": 0.72,
+"last": 0.72
 }
 ],
 "last_alert_p": null,

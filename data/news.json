@@ -31,6 +31,26 @@
      "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "17:00",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "17:57",
+     "title": "Polymarket: announced by June 30, 2027: 60.5% -> 45.0% (-15.5 pts in 24.3h)",
+     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
+     "source": "Polymarket",
+     "factor": "markets",
+     "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
