@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-29",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "01:01",
+     "title": "Tesla\u2019s Roadster appearance at SpaceX has merger watchers talking",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBhMnFoNHZDQTQ5ekx3Q1BQUHE4djZ5Y0o1bks0Vmc4cmIxSk5Od2ltX3FVRndYZmlfYTVKMHFtcWFLeVlqWnNlMC1HaG93eUFzZjBqOXliTW5qWFd6V1NKOWZ6MjhxVGpMRXJ3?oc=5",
+     "source": "Teslarati",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-28",
    "odds_note": "Merger letter by Jun 30, 2027: +1.8 pts (filings/news +0.0, prediction markets +1.8, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
