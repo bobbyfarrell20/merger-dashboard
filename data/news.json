@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-30",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "02:50",
+     "title": "The Case Against a SpaceX and Tesla Merger",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZ01xU214cUh2b1Q2ZndVUTd5VlhtckZSc29wUC1abGVnNXJoTlBCVlRjelUxQkh4Z0xza0NjWkVhMk1jbGpFUENubUdLWFBGM3pxTkRVemFXVW9aUW5kS3ZEN3hoa3YwR3BXS091QXpFQkRIWmRpekNDRjh0NTN5RXgxaFY?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-29",
    "odds_note": "Merger letter by Jun 30, 2027: -5.5 pts (filings/news +0.0, prediction markets -5.5, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
