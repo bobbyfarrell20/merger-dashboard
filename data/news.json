@@ -42,14 +42,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:43",
+     "title": "Tesla Stock (TSLA) Falls Flat As China Says its Flying Cars Can Soar Past the Roadster - TipRanks",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMXRiRzJUVVdubEdMUXY2MnRzckRYNjhKZlE1YmJFVmFKSlBXRDgyaHpaajl4X0tpdTM5Y3BvaE1kRXFkMjdaa2pyODBQc0ZYM1pOa3ZNMnFIb3p5SXU2b1lWZGVLNzNTUml4UEZXZWduQWVfWXBxc2I4M0pLVHZIeG1hSWQ2SkhuOU1Id3c0RjBjMnRaa1pnZFN6SFNnOEExQVBqMUhfejU5YVJlUUo2QVNXaVQ?oc=5",
+     "source": "TipRanks",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 2.31,
+     "total": 2.27,
      "time": -0.02,
      "news": 0.0,
-     "markets": 2.33
+     "markets": 2.29
     }
    }
   },
