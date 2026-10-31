@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-10-31",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "02:50",
+     "title": "A SpaceX and Tesla Merger Will Only Be Successful If This One Thing Happens",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS21aQUp4Ni1KUWNoVE10V1czTnhIZEE5ZXhfc2JIQk9paDBtTTdmYThMdTZvUlFBM1l4VDZJN3lwR0lRTTFQeDBxRVdpN0lxTHZvVjhqNVFZb3RFcUMySWI3VWp2VXcxV1ltelZ0TnUtekxidXNCbEVVRm5SWkFFWjFISDBYR3FwWW5qdV9BRnVVUjlGdDFmS2ozLU9GOFlJSUE?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-30",
    "odds_note": "Merger letter by Jun 30, 2027: +3.2 pts (filings/news +0.0, prediction markets +3.2, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -80,6 +96,16 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "15:42",
+     "title": "Musk Says Tesla, SpaceX Form Committees to Weigh Merger",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYWpnWG5NOEhBRHhYVzRfc3FHYUIxTHpvNFdIb2RUTFhyZUJiLU5jOWY1NVM1OVFEV1FwSnQ3M1FyMTdsSVZHZVZFajNSN2tCRlN0SDZTVDR2TXBWUndCOVJmU0NLZ1RlNkhPNHBUS1JFOGRuaGdicFFaR0dzMGhzNjh2UTBqT3RDanU3UlcxQU1Ga0RSSXFR?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
