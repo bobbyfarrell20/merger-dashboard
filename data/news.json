@@ -14,6 +14,16 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "15:02",
+     "title": "REVIEW NEEDED: Starship Flight 15 possibly 2026-11-20 (single source: SSBCrack); not applied",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ]
   },
@@ -25,6 +35,16 @@
      "time_et": "02:50",
      "title": "A SpaceX and Tesla Merger Will Only Be Successful If This One Thing Happens",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS21aQUp4Ni1KUWNoVE10V1czTnhIZEE5ZXhfc2JIQk9paDBtTTdmYThMdTZvUlFBM1l4VDZJN3lwR0lRTTFQeDBxRVdpN0lxTHZvVjhqNVFZb3RFcUMySWI3VWp2VXcxV1ltelZ0TnUtekxidXNCbEVVRm5SWkFFWjFISDBYR3FwWW5qdV9BRnVVUjlGdDFmS2ozLU9GOFlJSUE?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "16:30",
+     "title": "SpaceX Hits Back at T-Mobile\u2019s \u2018Misplaced Desire\u2019 to Harm Starlink by Opposing \u2018Modernized\u2019 Spectrum Rules",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUE52cG4tU0xxbnZ2TXFMc3FnelJ6N3NyQ3NaUWhsd2ZBeGJpaEttdTl3QUJNUkJWSzVKT2Y3dDd4U3B0TmtPd1ZHOWdhX196b2VMckFwelVjeGxyZnpKQmFFeDNvcDktLXdYS25WXzFmZjY1eXJROTNRRGQ1Z3dSckFxbTdrNXRKSEF2YVVNRQ?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
      "effect": "intraday watcher hit; odds not yet re-assessed",
