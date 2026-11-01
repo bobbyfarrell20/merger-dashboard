@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-01",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "10:39",
+     "title": "REVIEW NEEDED: Starship Flight 15 possibly 2026-11-12 (single source: ShiftDelete.Net); not applied",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-10-31",
    "odds_note": "",
    "items": [
