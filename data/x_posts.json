@@ -1,6 +1,36 @@
 {
  "posts": [
   {
+   "id": "2117301850450104645",
+   "handle": "wallstengine",
+   "name": "Wall St Engine",
+   "created_at": "2026-11-02T17:04:33Z",
+   "kind": "analyst",
+   "metrics": {
+    "likes": 40
+   },
+   "text": "Piper Sandler says a SpaceX $SPCX / Tesla $TSLA merger proposal is now more likely than not.\n\nBoth companies have formed special committees to explore a potential merger.\n\nThe firm expects Elon Musk to retain over 70% voting control of a combined company in most scenarios.",
+   "why": "Piper Sandler joins the sell-side calling a merger proposal more likely than not, and models Musk keeping 70%+ voting control; analyst view, no new facts.",
+   "factor": "Analyst coverage / deal structure",
+   "url": "https://x.com/wallstengine/status/2117301850450104645",
+   "time_et": "Nov 2, 2026 12:04 PM ET"
+  },
+  {
+   "id": "2117276050333831442",
+   "handle": "garyblack00",
+   "name": "Gary Black",
+   "created_at": "2026-11-02T15:22:02Z",
+   "kind": "analyst",
+   "metrics": {
+    "likes": 94
+   },
+   "text": "$TSLA bulls excited by a $SPCX - $TSLA merger should look at what happened to Lumentum Holdings stock ($LITE) this morning after $MRVL offered a 24% premium to $LITE’s 10/28/2026 closing price of $914, or $1,132 per $LITE share.   The stock is is currently down -15% to $750/share",
+   "why": "Gary Black warns an all-stock premium can evaporate (Marvell–Lumentum precedent), a reminder that the vote-floor math depends on SpaceX's price after a deal drops.",
+   "factor": "Deal math / premium risk",
+   "url": "https://x.com/garyblack00/status/2117276050333831442",
+   "time_et": "Nov 2, 2026 10:22 AM ET"
+  },
+  {
    "id": "2116118362224779372",
    "handle": "barronsonline",
    "name": "Barron's",
@@ -882,6 +912,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-11-02T13:08:40+00:00",
- "updated_et": "Nov 2, 2026 8:08 AM ET"
+ "updated_at": "2026-11-02T17:12:32+00:00",
+ "updated_et": "Nov 2, 2026 12:12 PM ET"
 }
