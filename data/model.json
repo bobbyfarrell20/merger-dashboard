@@ -1,6 +1,6 @@
 {
- "morning_run": "2026-11-02",
- "generated": "2026-11-03 02:27 ET",
+ "morning_run": "2026-11-03",
+ "generated": "2026-11-03 08:30 ET",
  "today": "2026-11-03",
  "window": {
   "start": "2026-10-14",
@@ -61,7 +61,7 @@
    "L": 0.0,
    "expiry": "2026-11-06",
    "expiry_listed": true,
-   "expiry_iv": 0.4
+   "expiry_iv": 59.3
   },
   {
    "monday": "2026-11-09",
@@ -117,7 +117,7 @@
    "L": 0.0,
    "expiry": "2026-11-13",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 50.5
   },
   {
    "monday": "2026-11-16",
@@ -173,7 +173,7 @@
    "L": 0.0,
    "expiry": "2026-11-20",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 53.1
   },
   {
    "monday": "2026-11-23",
@@ -229,7 +229,7 @@
    "L": 0.0,
    "expiry": "2026-11-27",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 49.6
   },
   {
    "monday": "2026-11-30",
@@ -285,7 +285,7 @@
    "L": 0.0,
    "expiry": "2026-12-04",
    "expiry_listed": true,
-   "expiry_iv": 0.2
+   "expiry_iv": 49.5
   },
   {
    "monday": "2026-12-07",
@@ -341,7 +341,7 @@
    "L": 0.0,
    "expiry": "2026-12-11",
    "expiry_listed": true,
-   "expiry_iv": 0.1
+   "expiry_iv": 50.0
   },
   {
    "monday": "2026-12-14",
@@ -397,7 +397,7 @@
    "L": 0.0,
    "expiry": "2026-12-18",
    "expiry_listed": true,
-   "expiry_iv": 0.1
+   "expiry_iv": 48.2
   }
  ],
  "best_week": "2026-11-09",
@@ -673,7 +673,7 @@
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-11-02 16:00 ET, fetched 2026-11-03 02:27 ET"
+  "prices_as_of": "last trade 2026-11-02 16:00 ET, fetched 2026-11-03 08:30 ET"
  },
  "blank_reasons": [
   {
@@ -697,7 +697,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.1572304216920637,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-11-03 02:27 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-11-03 08:30 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -705,7 +705,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.08364689151063233,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-03 02:27 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-03 08:30 ET (news watcher).",
    "merger": false
   },
   {
@@ -713,7 +713,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06827464096183643,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-03 02:27 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-03 08:30 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -736,7 +736,7 @@
  "leak_logodds": 0.0,
  "weeks_blank": 6,
  "fcc": {
-  "as_of": "2026-11-03 02:27 ET",
+  "as_of": "2026-11-03 08:30 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -815,11 +815,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-11-03 02:27 ET",
+  "as_of": "2026-11-03 08:30 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-11-03 02:27 ET",
+  "as_of": "2026-11-03 08:30 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -843,17 +843,17 @@
     "question": "Tesla and SpaceX merger officially announced by December 31?",
     "yes": 0.09,
     "closed": false,
-    "volume": 350865.860965,
-    "volume_24h": 6422.3024000000005,
+    "volume": 351476.00966100005,
+    "volume_24h": 6391.142048,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
-    "yes": 0.195,
+    "yes": 0.18,
     "closed": false,
-    "volume": 65075.58045799999,
-    "volume_24h": 537.4082880000001,
+    "volume": 65186.34009699999,
+    "volume_24h": 648.167927,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -861,8 +861,8 @@
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
     "yes": 0.355,
     "closed": false,
-    "volume": 48573.765783,
-    "volume_24h": 0.0,
+    "volume": 48581.458091,
+    "volume_24h": 7.692308,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -870,8 +870,8 @@
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
     "yes": 0.555,
     "closed": false,
-    "volume": 85841.284467,
-    "volume_24h": 11.617142999999999,
+    "volume": 85845.72891199999,
+    "volume_24h": 4.444445,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -2556,7 +2556,7 @@
    {
     "date": "2026-11-20",
     "listed": true,
-    "iv": 0.2,
+    "iv": 53.1,
     "rules": 0.025400710126854797,
     "market": 0.02833333333333334,
     "blend": 0.026573759409446215
@@ -2564,7 +2564,7 @@
    {
     "date": "2026-12-18",
     "listed": true,
-    "iv": 0.1,
+    "iv": 48.2,
     "rules": 0.0774211538515815,
     "market": 0.07912670052725625,
     "blend": 0.0781033725218514
@@ -2572,7 +2572,7 @@
    {
     "date": "2027-01-15",
     "listed": true,
-    "iv": 0.4,
+    "iv": 48.2,
     "rules": 0.14109042815759326,
     "market": 0.16510452773853704,
     "blend": 0.15069606798997076
@@ -2580,7 +2580,7 @@
    {
     "date": "2027-02-19",
     "listed": true,
-    "iv": 0.1,
+    "iv": 50.7,
     "rules": 0.25047209044773605,
     "market": 0.3370434321626007,
     "blend": 0.2851006271336819
@@ -2588,7 +2588,7 @@
    {
     "date": "2027-03-19",
     "listed": true,
-    "iv": 0.0,
+    "iv": 50.8,
     "rules": 0.3358551271982414,
     "market": 0.435,
     "blend": 0.3755130763189448
@@ -2596,7 +2596,7 @@
    {
     "date": "2027-04-16",
     "listed": true,
-    "iv": 0.0,
+    "iv": 52.0,
     "rules": 0.4093023931163381,
     "market": 0.5156666666666667,
     "blend": 0.45184810253646956
@@ -2612,7 +2612,7 @@
    {
     "date": "2027-06-17",
     "listed": true,
-    "iv": 0.0,
+    "iv": 50.3,
     "rules": 0.5361650080873998,
     "market": 0.56,
     "blend": 0.5456990048524399
@@ -2703,10 +2703,9 @@
     "vol24": 93.58,
     "ch24": 0.0,
     "ch7": 0.0,
-    "ch72": -0.5,
+    "ch72": 0.0,
     "as_of": "2026-10-31T21:44-04:00",
     "spark": [
-     0.005,
      0.01,
      0.015,
      0.015,
@@ -2748,11 +2747,10 @@
     "last": 0.03,
     "vol24": 7453.9,
     "ch24": -5.0,
-    "ch7": -10.5,
-    "ch72": -5.0,
+    "ch7": -11.0,
+    "ch72": -7.000000000000001,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.155,
      0.125,
      0.14,
      0.14,
@@ -2801,11 +2799,10 @@
     "last": 0.14,
     "vol24": 3372.93,
     "ch24": -7.499999999999998,
-    "ch7": -6.0,
-    "ch72": -9.5,
+    "ch7": -5.499999999999999,
+    "ch72": -8.5,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.185,
      0.17,
      0.175,
      0.175,
@@ -2854,11 +2851,10 @@
     "last": 0.1,
     "vol24": 6422.3024000000005,
     "ch24": -8.5,
-    "ch7": -4.000000000000001,
+    "ch7": -3.5000000000000004,
     "ch72": -9.0,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.125,
      0.125,
      0.135,
      0.135,
@@ -2911,7 +2907,6 @@
     "ch72": -11.5,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.335,
      0.32,
      0.32,
      0.32,
@@ -2961,10 +2956,9 @@
     "vol24": 537.4082880000001,
     "ch24": -7.000000000000001,
     "ch7": -4.999999999999999,
-    "ch72": -8.500000000000002,
+    "ch72": -7.500000000000001,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.245,
      0.24,
      0.24,
      0.24,
@@ -3013,11 +3007,10 @@
     "last": 0.4,
     "vol24": 94.79,
     "ch24": 2.9999999999999973,
-    "ch7": 6.5,
+    "ch7": 5.499999999999999,
     "ch72": 1.9999999999999962,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.365,
      0.36,
      0.365,
      0.365,
@@ -3067,10 +3060,9 @@
     "vol24": 0,
     "ch24": 0.0,
     "ch7": 7.000000000000001,
-    "ch72": -1.5000000000000013,
+    "ch72": 0.0,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.285,
      0.285,
      0.285,
      0.285,
@@ -3120,10 +3112,9 @@
     "vol24": 293.52,
     "ch24": 0.0,
     "ch7": 0.0,
-    "ch72": 0.0,
+    "ch72": -0.4999999999999949,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.465,
      0.465,
      0.465,
      0.465,
@@ -3172,11 +3163,10 @@
     "last": 0.58,
     "vol24": 173.55,
     "ch24": 0.49999999999998934,
-    "ch7": -4.0000000000000036,
-    "ch72": -3.0000000000000027,
+    "ch7": -3.500000000000003,
+    "ch72": -4.0000000000000036,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.6,
      0.6,
      0.595,
      0.59,
@@ -3226,10 +3216,9 @@
     "vol24": 11.617142999999999,
     "ch24": 0.0,
     "ch7": 3.500000000000003,
-    "ch72": 1.5000000000000013,
+    "ch72": 0.5000000000000004,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.52,
      0.52,
      0.52,
      0.52,
@@ -3278,11 +3267,10 @@
     "last": 0.74,
     "vol24": 1476.83,
     "ch24": -1.5000000000000013,
-    "ch7": -1.5000000000000013,
-    "ch72": 1.0000000000000009,
+    "ch7": 1.5000000000000013,
+    "ch72": -1.0000000000000009,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.71,
      0.715,
      0.725,
      0.725,
@@ -3331,11 +3319,10 @@
     "last": 0.66,
     "vol24": 0,
     "ch24": 0.0,
-    "ch7": 3.500000000000003,
+    "ch7": 6.000000000000005,
     "ch72": 0.0,
     "as_of": "2026-11-03T02:26-05:00",
     "spark": [
-     0.605,
      0.605,
      0.635,
      0.635,
