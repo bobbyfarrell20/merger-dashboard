@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-03",
-   "odds_note": "Merger letter by Jun 30, 2027: +0.1 pts (filings/news +0.0, prediction markets +0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +2.9 pts (filings/news +0.0, prediction markets +2.9, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -66,10 +66,10 @@
    ],
    "split": {
     "pp": {
-     "total": 0.06,
+     "total": 2.86,
      "time": -0.04,
      "news": 0.0,
-     "markets": 0.11
+     "markets": 2.9
     }
    }
   },
@@ -148,6 +148,15 @@
      "title": "As Tesla Races to End Two-Year Car Sales Slump, Europe Gives It Hope - TipRanks",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3ZhMTlBVWZsQW5scGtnUmxET0ljYVl1Y1ZMLURmaFZIVkh5Qmsyd0NSYjEzSEkyN0NqbUwyaVFRU3dLcjBTQ3FJZ0JFMmFTN2xPR3RubVo4dFJibHZ3aVZabWdqYnBDNlJMMUtQbDRlVExaSFZFcW1XZ0F2MTRzRTRSQzRHOUpGeXZNMUVtb21wVTRfOWs3c3RWeGhYNWR3TUNqbjhPMUthdUd1dmJqaXZYUQ?oc=5",
      "source": "TipRanks",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "02:48",
+     "title": "SpaceX Could Mirror Nvidia\u2019s Revenue Boom, Sequoia Partner Says \u2014 Tesla Influencer Runs Hypothetical Merger Math - TradingView",
+     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOakxGMUFtendvVE1tS3ZsV0tHbXpnT3JNTzZxWmxfNVhCUWxlS0JtQXBrR0c0RzkyU3VrNlByQTJndHFXWlJMU0xONjg0eG5RWmVjRnROUFU1YVlpR1pvQk5QVzZzSzJ4S2sydENVTGZDV2VmaUZWd0twcVVESVFxdW9HY2p0aU02ZHNzeDJ0SlItdTQyeE5iempwVTY3TGR4R3NHOUpFU0g4YTN0TmF3bl9qeWx5S3UwdmZvRjRCRFN6Z2ZFVkxiak1YUi1COTBVdWx4REpVcW1vVXQ2djAyTlVhN0podGVQMFJDWlhTSzk5c2p1dEJiN0JyWFByZEE?oc=5",
+     "source": "TradingView",
      "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
