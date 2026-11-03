@@ -2,6 +2,19 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-03",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.0, prediction markets -0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [],
+   "split": {
+    "pp": {
+     "total": -0.14,
+     "time": -0.04,
+     "news": 0.0,
+     "markets": -0.1
+    }
+   }
+  },
+  {
    "date": "2026-11-02",
    "odds_note": "Merger letter by Jun 30, 2027: +0.6 pts (filings/news +0.0, prediction markets +0.6, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -61,6 +74,24 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "04:28",
+     "title": "Tesla Faces China Heat as Rivals BYD, Xiaomi, and XPeng Post Strong October Sales - TipRanks",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNlZKcVR1Y3c2QlVMbjFDcGxZSkdtSTZzMzVYZDJLd1JxLWJacmtSZFU4X25Dc0ZjTzlwdFJ6NEZLZXpSNXhfVjRNckM2MUZac0cxR3NWZW9JMWFhSUxlN2c1dzlNZ3Z2ODUyWmZEd0E4cEk1SE81MU5jYTZhc2xKcW9KV3ZXWjBCTld2QzN6TERNNnBIWl9aTUJMTHJUOUlHd1NGalQzLTdPdTFoOHc?oc=5",
+     "source": "TipRanks",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "04:30",
+     "title": "As Tesla Races to End Two-Year Car Sales Slump, Europe Gives It Hope - TipRanks",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3ZhMTlBVWZsQW5scGtnUmxET0ljYVl1Y1ZMLURmaFZIVkh5Qmsyd0NSYjEzSEkyN0NqbUwyaVFRU3dLcjBTQ3FJZ0JFMmFTN2xPR3RubVo4dFJibHZ3aVZabWdqYnBDNlJMMUtQbDRlVExaSFZFcW1XZ0F2MTRzRTRSQzRHOUpGeXZNMUVtb21wVTRfOWs3c3RWeGhYNWR3TUNqbjhPMUthdUd1dmJqaXZYUQ?oc=5",
+     "source": "TipRanks",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
