@@ -8018,7 +8018,7 @@
  {
   "v": 2,
   "date": "2026-11-04",
-  "as_of": "2026-11-04 08:28 ET",
+  "as_of": "2026-11-04 13:31 ET",
   "metrics": {
    "end_A": 0.0,
    "end_B": 1.0,
@@ -8438,11 +8438,11 @@
    }
   },
   "pp": {
-   "blend": 0.5650495351993738,
+   "blend": 0.5589710627140495,
    "rules": 0.5569681878123464,
-   "market": 0.5771715562799152,
+   "market": 0.5619753750666043,
    "w": 0.4,
-   "near": 0.10080233567462539,
+   "near": 0.1007552981068317,
    "inputs": {
     "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
     "start": "2026-10-19",
