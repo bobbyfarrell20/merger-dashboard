@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-04",
-   "odds_note": "Merger letter by Jun 30, 2027: -3.0 pts (filings/news +0.0, prediction markets -2.9, time -0.1). Why: calendar/config changed: starship.",
+   "odds_note": "Merger letter by Jun 30, 2027: -2.6 pts (filings/news +0.0, prediction markets -2.6, time -0.1). Why: calendar/config changed: starship.",
    "items": [
     {
      "time_et": null,
@@ -100,14 +100,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:12",
+     "title": "A blue Texas threatens Musk\u2019s expanding footprint and hopes for SpaceX-Tesla deal - Investing.com",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNN3pOWnA0eEUzakpRX1VWdzdXWFBzSnRqakJkS0NtWWlraEZRcktFNmNXb2VxZ0JGMm9RUFpSQzBGTlBxWWJNc3UxcC13Q3VtTW5sTlBQUlgyb0NRVGozaE9ybjZ1b000NldCbGFRcUptR01odGZzTE4yZTVaRGxQVkw1Qy1sZUg2M2JGdE9SNmtDLVpqaV9YckN0U1ZmaXZaTklQUWdoY3FuLWMycVZnUlR1ZXBmeEZvc2RuQWVxaGdiOW0tM0s3ck9KNlNZUVhDcFZlWkh4eUg?oc=5",
+     "source": "Investing.com",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -2.97,
+     "total": -2.64,
      "time": -0.05,
      "news": 0.0,
-     "markets": -2.92
+     "markets": -2.6
     }
    }
   },
