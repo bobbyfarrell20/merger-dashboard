@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-05",
-   "odds_note": "Merger letter by Jun 30, 2027: -0.5 pts (filings/news +0.0, prediction markets -0.5, time -0.1). No new filing or merger news; the move versus last night came from prediction markets and time only. Dec 31, 2026 odds are 10.1%, about flat from 10.1% yesterday morning and 10.0% last night.",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.3 pts (filings/news +0.0, prediction markets -0.3, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -46,10 +46,10 @@
    ],
    "split": {
     "pp": {
-     "total": -0.5,
+     "total": -0.34,
      "time": -0.05,
      "news": 0.0,
-     "markets": -0.46
+     "markets": -0.3
     }
    }
   },
