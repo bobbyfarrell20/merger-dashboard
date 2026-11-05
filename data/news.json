@@ -2,6 +2,32 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-05",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "00:22",
+     "title": "TSLA Stock Slips Overnight: Analysts Flag Political, Premium Risks To SpaceX Merger \u2014 Cathie Wood\u2019s ARK Buys Anyway",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNUZLaEc1RFl6MnBIbUotazdlR0ZXdWpmQ0hocG1jUnVHdlhJLWJ1Q0poendsbDZjVXBwa245Nm16S244VkpBWWxkVV9JU2hTaThYSmU2dmF1Wk5PSjJ4eFgxbDExSGNCYk9fNkFsdExvb0tGaFJWcFZXR1pwN1ZEcWMyeUo0Y0NycGZTQmU2R2M3dWJCd1RQdlY4dFNWTlRaV1E?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "02:29",
+     "title": "Tesla Bulls Could Get Burned? Gary Black Sees Trouble With SpaceX All-Stock Merger: Warns 24% Premium 'Ca",
+     "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQYmVWRzdyZXFJMWFRRGtDa09VbldyelNPeW1wdW45bU1QUG5URzJCUl9reGN1aDBPLVc5eUpSbHZSdWxKZ29SRDZSRWhqTG1PNUZycmdIYUZHbE9FNWctMnBNaTNlS3lRVzBzVUtMcnE5ang2X3BHR1ZFZTc3UG5NYkJFOElBc1lOcV9pSUpQdUcyVXM1ZldjRERPeHBSTHFWSFRMRWNVN2Y4WkFYMGgtdlprVEYxNjlzRk9leU8wdlhPczl3Nnk3cDZrM1Rmbk4wTXRoeGg1djZZT2c4TENENzU4d2dPMjFwZnczODZlNHJJdVFVYzg1SHRvUUhLZVJnTW5NRWJn?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-04",
    "odds_note": "Merger letter by Jun 30, 2027: -2.6 pts (filings/news +0.0, prediction markets -2.6, time -0.1). Why: calendar/config changed: starship.",
    "items": [
@@ -125,6 +151,16 @@
      "title": "Goldman, Apollo seek buyers for $40 billion SpaceX AI chip deal, Bloomberg News reports",
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMWUxSzVqTVBwUmFlWHFWS0xiRTN1ZVR1TXRUZi01bHBQbF9VOTl1N05uYk5HSGs2NVFCR0hJYVBVNjBKQUR0MlV6ZnRBc3pHVDFHRzAzZUZEaFU4elRlN0lLYXc2NWRzZWNHaVRkOTZTeHZvNGFEU0NXVUZienFBbTBYWlU0WE9BanBDeTVoZG41MW92cXV1OEIwbWNydWZkWjhmUmk3OUx0c2dxUndKWjFxYjFpT0t0eWpadENSMm1OdlQwVk1GdFEyQkVyeHFmanc?oc=5",
      "source": "Reuters",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "22:43",
+     "title": "A SpaceX-Tesla merger could pay Elon Musk without the milestones",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbVlTZWEwclZjR1hGaEtzUGtOVmpjYU1na2M5QlFmOFk3b083Q2ZadGlFUDAxZ1pRZWs4SjFXV3lkaE5vRTZuMFd3bXFmRzk1WlhCTTV6aEZaY2hJNU1fZVdGSklnZEVaWWpoT3VhUk9TSW1CQk5zN3JmU2dPa1E0cmYxU0IyLUgtVnFILUJVZlZHcEw2VHZOMTZzd09Oa2hiNUNOUzNsc0U5LUNJZ1VHTVpSZTNpWUpUTE0wMk43dkvSAcYBQVVfeXFMTXRsbHZ5SHpJRGRON0RUV1VHRmNnS0t3dGR1QnV3YUFEWDBzOGExWE5OSHpiUGtPbE9iQmR1VzUxWUd3dDJzdkpoVllnYUtETVlIUElLdzd5c3dsMzJvNVFhTUh2Q0hpTWtVZkh6N3p3SFZGOUZNbWJoV0ZJUnZxVXA3d0VCMnpndEhZZ0JWeVVfZnJyeGxoYkJsN1FidmJSS1U3bjZkeVVCbnFac0xaSzlHS1o4cEd4LWhWeE1jMmpaTXJvajhR?oc=5",
+     "source": "Forbes India",
      "factor": "news",
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
