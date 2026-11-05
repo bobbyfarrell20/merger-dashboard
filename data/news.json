@@ -3,15 +3,23 @@
  "days": [
   {
    "date": "2026-11-05",
-   "odds_note": "",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.5 pts (filings/news +0.0, prediction markets -0.5, time -0.1). No new filing or merger news; the move versus last night came from prediction markets and time only. Dec 31, 2026 odds are 10.1%, about flat from 10.1% yesterday morning and 10.0% last night.",
    "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: overnight coverage was commentary/repeats only (Yahoo Finance on TSLA overnight slip with political/premium risks plus ARK buying about $47M of SPCX; Benzinga rehash of Gary Black's 24% premium warning already logged Nov 2; Forbes India/Reuters rehash of Musk pay without milestones; Nov 4 evening Bloomberg/Reuters/Seeking Alpha on Goldman/Apollo seeking buyers for the $40B SpaceX AI chip deal \u2014 financing, not merger-process news). Midterm fallout was already handled Nov 4. No new Tesla or SpaceX SEC filings since Tesla's Nov 2 DEFA14A. No news nudge added.",
+     "url": null,
+     "source": "Morning review",
+     "factor": "news",
+     "effect": "Morning review: no odds change from news or filings; moves came from prediction markets and time only."
+    },
     {
      "time_et": "00:22",
      "title": "TSLA Stock Slips Overnight: Analysts Flag Political, Premium Risks To SpaceX Merger \u2014 Cathie Wood\u2019s ARK Buys Anyway",
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNUZLaEc1RFl6MnBIbUotazdlR0ZXdWpmQ0hocG1jUnVHdlhJLWJ1Q0poendsbDZjVXBwa245Nm16S244VkpBWWxkVV9JU2hTaThYSmU2dmF1Wk5PSjJ4eFgxbDExSGNCYk9fNkFsdExvb0tGaFJWcFZXR1pwN1ZEcWMyeUo0Y0NycGZTQmU2R2M3dWJCd1RQdlY4dFNWTlRaV1E?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review: commentary/repeat \u2014 midterm/premium color already reflected Nov 4; ARK SPCX buy is flow, not process news; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -21,11 +29,19 @@
      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQYmVWRzdyZXFJMWFRRGtDa09VbldyelNPeW1wdW45bU1QUG5URzJCUl9reGN1aDBPLVc5eUpSbHZSdWxKZ29SRDZSRWhqTG1PNUZycmdIYUZHbE9FNWctMnBNaTNlS3lRVzBzVUtMcnE5ang2X3BHR1ZFZTc3UG5NYkJFOElBc1lOcV9pSUpQdUcyVXM1ZldjRERPeHBSTHFWSFRMRWNVN2Y4WkFYMGgtdlprVEYxNjlzRk9leU8wdlhPczl3Nnk3cDZrM1Rmbk4wTXRoeGg1djZZT2c4TENENzU4d2dPMjFwZnczODZlNHJJdVFVYzg1SHRvUUhLZVJnTW5NRWJn?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review: commentary/repeat \u2014 Gary Black 24% premium warning already logged Nov 2; no news nudge.",
      "auto": true,
      "watch": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.5,
+     "time": -0.05,
+     "news": 0.0,
+     "markets": -0.46
+    }
+   }
   },
   {
    "date": "2026-11-04",
@@ -45,7 +61,7 @@
      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTU9jVXdyOFJhcTdZLURISmZneXRXbHJodVR5Nnlyb0JjSVpwSFpfa01FNGJjQU9MTkJ3bGhmZTVKY2VlWWN0SHBJNnkwUl9qLTd6d0wtejFnd01qTE1ianBJWVI3NEN4TUdmeE5PRGFZakZ6b29YZE5INHJ5c1BkU0xIUWJBT1lIOF9JTEFFT2xmREhmUUp1dHNrTlBQUQ?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4: SPCX financial commentary, not merger news; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -55,7 +71,7 @@
      "url": null,
      "source": "tracker",
      "factor": "starship",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4/5: tracker date change only (Flight 15 NET Nov 20); shifts launch-day blackout; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -65,7 +81,7 @@
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOS0Z1WE9EeTcxWkZ2STFTckJDakhpWDJTX1dEbGM2aHNzWkJXSUlsbTI3NjB2V2FlVUJENWF2SEpFOXRaZHJ2UG5qU0FSR1lvclA5ZG5ZSDUxdkVrRWJPV2JQT3oxSzBUX3preGpQZ21ONUw3UExPVy00bUNUblA1Ti1TWUZWVHV2Y2hjZURyVVpBSTk2MmVxUnphMFFveUZOdUY0V25mMm5QcFNWUDNOTzNkLWE5X3FaNUhsWG5QbnhKZjA2SkZv?oc=5",
      "source": "Investing.com",
      "factor": "news",
-     "effect": "auto-tagged; review",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true
     },
     {
@@ -74,7 +90,7 @@
      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbE1sTms3Mm5OaWdEN2NxYmNLMUVDV3EyV1o0VDkyaUR0T0EwSVhlZV9HY2lfS1hlUDFyZFhINm1kSm9pVHRvTHB2MEo1N3NVX1VKVnZYRkZTdEtUVl9DTU9FemcxejhTb0FQYk1KNS1QVjRKSEVXUW42RnVTS1VRaEE1QjlUSnZPNEE2TmQ5OTFjaWtkVnI3V0puTlp5NzJnQ0dsYkYzZUJDVkFQV09mMHFsTnVqdml2d01zOWkwdEpNXzlhdUsxQw?oc=5",
      "source": "TradingKey",
      "factor": "news",
-     "effect": "auto-tagged; review",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true
     },
     {
@@ -83,7 +99,7 @@
      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTWR5UnRLWUQtMmRINnFJT0FvQm1QNTFqZjNFNmZkalZZY2FmdDdqLXFsdDE0WWJKUS1nNVh4SUFINTVUUUJ5TGZyNzRMVkZFWjU5QzJQWWhvZ2NJTkt0RFlQYXkzTURlNXlmVHpqZ2dHVGw1LV93ODUzR3RJbmo2N29aS3QycjZCQWY5MXFSX2hyREJUNUlwNHlleThMbzlkenZR?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -93,7 +109,7 @@
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWWpPbDBUUnJEZ2dpQ1piYVVHMXpFOXhQRXVDc0lGeHdLRnBmNlN6WWJ2bnBiMW5HNUN5bG0tdmZhTy1nbWFjOWlqWDRwVHdvYTJYVVVFMl96Z2dWRDZicHFYRU9FX0dJbUVvMXNJSENaWmxtRGZ3ajV2VjZENmRObG9kRjE2OXhNYVoxU3hoRHdJOGtVd1dBdW56Mk1WM1k?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -103,7 +119,7 @@
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaUo5S0IxeW9IeEN2STF1V0lfanprdE5mVTNVUVV4b0dEYnFjbWpMR0k5QTZxbEREV251dmViY0FLY1lxTERHeWFyX2o3UHdOdHZmaE9LbVZkd2M2U3MwRGpyWGtnc1lOVXRZN0ZzVW5CY2hHQWF5el9mcFAxNlRuQU5jOElWTFB6S2tlaXdLbGdiR1BPTzNTU2NR?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -113,7 +129,7 @@
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQTBCN3l2bXdJMk9BWVZqR2t0cG81aC1Vd2ZzS2N3dmotQWZNSHlZZFB3eFBDSW5mWkFzQ3ZYZlFfbFJfcW9KTGFwX3F5ZVNVRkZXekIyY2MtZE10eWFOVEQ0OUZjdjN2TXNlSjg4dXM3QUZpMS1NOHlfMU16SlVzR0lWWTVkV2duUXNuODRqalQ5VmQ5OWhrNFk2SGNVandGa2dkZ2R4UXRMSG0zVG5PczJiX1kzNmxpY1JlNDVsUDQ5OVo4M0o1bUUwdnp5bHBfX0E?oc=5",
      "source": "Bloomberg",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 5: financing news (Goldman/Apollo seeking buyers for SpaceX AI chip deal); not merger-process; already seen Nov 4 evening; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -123,7 +139,7 @@
      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRGRYaEhnZkd2VmVLeHVubURvWXNLb3h0bkVUeklFa3BkUzNKNTdndUlfbGNrWndOY2NyTHh3SkJUVUJQa2pMb29zNjZPd3BtLVJfLVBkNXNVMUVqazdEdUhWYWpDRmEyREtZWkdXT2ZvOG02SW1RVmNydHp3TFJXZnp4OW1Oc3Y0ampFblE1Zkg2bjdZWV9tTWFjMXFEYmpZRWc?oc=5",
      "source": "Seeking Alpha",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 5: financing news (Goldman/Apollo seeking buyers for SpaceX AI chip deal); not merger-process; already seen Nov 4 evening; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -133,7 +149,7 @@
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNN3pOWnA0eEUzakpRX1VWdzdXWFBzSnRqakJkS0NtWWlraEZRcktFNmNXb2VxZ0JGMm9RUFpSQzBGTlBxWWJNc3UxcC13Q3VtTW5sTlBQUlgyb0NRVGozaE9ybjZ1b000NldCbGFRcUptR01odGZzTE4yZTVaRGxQVkw1Qy1sZUg2M2JGdE9SNmtDLVpqaV9YckN0U1ZmaXZaTklQUWdoY3FuLWMycVZnUlR1ZXBmeEZvc2RuQWVxaGdiOW0tM0s3ck9KNlNZUVhDcFZlWkh4eUg?oc=5",
      "source": "Investing.com",
      "factor": "news",
-     "effect": "auto-tagged; review",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true
     },
     {
@@ -142,7 +158,7 @@
      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYk5BaE9uT0FWQVc0UTNVdHhaV18xQzVuRHVjdkVUWU00N0dLQ0FEWEc3bC1uMVJvakNRakZJTkRTdDFYVnVFV19XU053TnpzSnY3TnBlV3cyNWtVdlJYQ0FTck96aE1JdkJrdDJWcmU3TlJnSUVBOV9jaVBONnF6dzNwUS1FWmRRSUd2aFp2V09tZW1WSERsXzM1dGVRc0U?oc=5",
      "source": "Yahoo Finance",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 4/5: midterm-fallout / merger commentary already reflected Nov 4 (markets priced election); no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -152,7 +168,7 @@
      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMWUxSzVqTVBwUmFlWHFWS0xiRTN1ZVR1TXRUZi01bHBQbF9VOTl1N05uYk5HSGs2NVFCR0hJYVBVNjBKQUR0MlV6ZnRBc3pHVDFHRzAzZUZEaFU4elRlN0lLYXc2NWRzZWNHaVRkOTZTeHZvNGFEU0NXVUZienFBbTBYWlU0WE9BanBDeTVoZG41MW92cXV1OEIwbWNydWZkWjhmUmk3OUx0c2dxUndKWjFxYjFpT0t0eWpadENSMm1OdlQwVk1GdFEyQkVyeHFmanc?oc=5",
      "source": "Reuters",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 5: financing news (Goldman/Apollo seeking buyers for SpaceX AI chip deal); not merger-process; already seen Nov 4 evening; no news nudge.",
      "auto": true,
      "watch": true
     },
@@ -162,7 +178,7 @@
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbVlTZWEwclZjR1hGaEtzUGtOVmpjYU1na2M5QlFmOFk3b083Q2ZadGlFUDAxZ1pRZWs4SjFXV3lkaE5vRTZuMFd3bXFmRzk1WlhCTTV6aEZaY2hJNU1fZVdGSklnZEVaWWpoT3VhUk9TSW1CQk5zN3JmU2dPa1E0cmYxU0IyLUgtVnFILUJVZlZHcEw2VHZOMTZzd09Oa2hiNUNOUzNsc0U5LUNJZ1VHTVpSZTNpWUpUTE0wMk43dkvSAcYBQVVfeXFMTXRsbHZ5SHpJRGRON0RUV1VHRmNnS0t3dGR1QnV3YUFEWDBzOGExWE5OSHpiUGtPbE9iQmR1VzUxWUd3dDJzdkpoVllnYUtETVlIUElLdzd5c3dsMzJvNVFhTUh2Q0hpTWtVZkh6N3p3SFZGOUZNbWJoV0ZJUnZxVXA3d0VCMnpndEhZZ0JWeVVfZnJyeGxoYkJsN1FidmJSS1U3bjZkeVVCbnFac0xaSzlHS1o4cEd4LWhWeE1jMmpaTXJvajhR?oc=5",
      "source": "Forbes India",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Morning review Nov 5: rehash of Reuters Musk pay/voting-control piece already logged Nov 3; no news nudge.",
      "auto": true,
      "watch": true
     }
@@ -244,6 +260,15 @@
      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVGdwVXhmcFhkZVlJOGk3cG4xRU9RYk9LYmUxdXJXTEJQbF85WkJ3LWhhYW03TWp4dEN3OURka00yTl9vSEZyTEk1dXNjSXdBZGo1TWpIWGJqb3FYbEYtcTVEYzJGVllfV0YzUHlOSFJlRXAyc1NsVW9YM1pXQlpYVUphcmhkQQ?oc=5",
      "source": "Seeking Alpha",
      "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "14:56",
+     "title": "How to Buy SpaceX Stock (SPCX) in 2026 - The Motley Fool",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWVlkQ1JxWVFwaWJlUDVEV3RUcWNua2hMcnNmZi1fbnAyYzI1akEtY2pETGYwRzI3eEpfSlRmWTFzUGFaMzdzRV8wZC0wWTVTc3J1ZDk2eHdad3IzUl9SejBhcld0SDhLM0NYTHk5cktQU3Z0ZS1sMm5GVWJKa1VSbWRBV1pWQlJRQWc?oc=5",
+     "source": "The Motley Fool",
+     "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
     }
