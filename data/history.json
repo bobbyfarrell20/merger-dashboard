@@ -9090,32 +9090,32 @@
  {
   "v": 2,
   "date": "2026-11-06",
-  "as_of": "2026-11-06 08:32 ET",
+  "as_of": "2026-11-06 12:52 ET",
   "metrics": {
    "end_A": 0.0,
    "end_B": 1.0,
    "end_none": 0.0,
-   "wk2026-11-02_either": 0.05459470864998689,
+   "wk2026-11-02_either": 0.05461904623879019,
    "wk2026-11-02_A": 0.0,
-   "wk2026-11-02_B": 0.05459470864998689,
-   "wk2026-11-09_either": 0.6085844112821029,
+   "wk2026-11-02_B": 0.05461904623879019,
+   "wk2026-11-09_either": 0.6084636800995544,
    "wk2026-11-09_A": 0.0,
-   "wk2026-11-09_B": 0.6085844112821029,
-   "wk2026-11-16_either": 0.10957363901258335,
+   "wk2026-11-09_B": 0.6084636800995544,
+   "wk2026-11-16_either": 0.10964160230343453,
    "wk2026-11-16_A": 0.0,
-   "wk2026-11-16_B": 0.10957363901258335,
-   "wk2026-11-23_either": 0.08589906966102037,
+   "wk2026-11-16_B": 0.10964160230343453,
+   "wk2026-11-23_either": 0.08588886088484449,
    "wk2026-11-23_A": 0.0,
-   "wk2026-11-23_B": 0.08589906966102037,
-   "wk2026-11-30_either": 0.005855405624322862,
+   "wk2026-11-23_B": 0.08588886088484449,
+   "wk2026-11-30_either": 0.005857006263925589,
    "wk2026-11-30_A": 0.0,
-   "wk2026-11-30_B": 0.005855405624322862,
-   "wk2026-12-07_either": 0.004662047934060865,
+   "wk2026-11-30_B": 0.005857006263925589,
+   "wk2026-12-07_either": 0.004663322356198604,
    "wk2026-12-07_A": 0.0,
-   "wk2026-12-07_B": 0.004662047934060865,
-   "wk2026-12-14_either": 0.00156144149981943,
+   "wk2026-12-07_B": 0.004663322356198604,
+   "wk2026-12-14_either": 0.0015618683370468237,
    "wk2026-12-14_A": 0.0,
-   "wk2026-12-14_B": 0.00156144149981943
+   "wk2026-12-14_B": 0.0015618683370468237
   },
   "inputs": {
    "window": {
@@ -9404,7 +9404,7 @@
     ]
    },
    "starship": {
-    "next_net": "2026-11-20",
+    "next_net": "2026-11-13",
     "verified": false,
     "src": "https://en.wikipedia.org/wiki/Starship_flight_15",
     "src2": "https://thelaunchwindow.com/next-starship-launch",
@@ -9424,7 +9424,7 @@
     "_why": "NET Nov 8 comes from planning-grade sources: the CADENA air-traffic planning slides of Oct 8 (cited by Wikipedia), and NASASpaceflight reporting on Oct 10 plus Musk's '4-6 weeks' remark (per thelaunchwindow). SpaceX hasn't announced a date, and Launch Library lists it only as NET Q4 2026. Unverified. Merger odds: launch day x0.1 and the day after x0.3. After a success, days +2 to +4 get x1.3. After a failure, days +1 to +5 get x0.2. The status comes from data/events_state.json (set by watch.py or by hand) or from this config.",
     "evidence": "Oct 26 23:11 ET tracker 'success' was a false positive: headlines were about Booster 22's Oct 25 static fire (Space.com, Aviation Week). Flight 15 still NET Nov 8, unflown.",
     "locked_until_launch": true,
-    "date_src": "Mjengo Hub, SSBCrack"
+    "date_src": "Drive Tesla Canada, KeepTrack, Starlust.org, Tesla Accessories, TeslaNorth.com"
    },
    "grain": {
     "status": "pending",
@@ -9510,11 +9510,11 @@
    }
   },
   "pp": {
-   "blend": 0.555157479684429,
+   "blend": 0.5612771490802615,
    "rules": 0.5554619151337691,
-   "market": 0.5547008265104187,
+   "market": 0.57,
    "w": 0.4,
-   "near": 0.09738849285608425,
+   "near": 0.09805858983065491,
    "inputs": {
     "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
     "start": "2026-10-19",

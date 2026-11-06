@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-06",
-   "odds_note": "Merger letter by Jun 30, 2027: +0.0 pts (filings/news +0.0, prediction markets +0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.6 pts (filings/news +0.0, prediction markets +0.7, time -0.1). Why: calendar/config changed: starship.",
    "items": [
     {
      "time_et": "09:40",
@@ -48,10 +48,10 @@
    ],
    "split": {
     "pp": {
-     "total": 0.01,
+     "total": 0.62,
      "time": -0.05,
      "news": 0.0,
-     "markets": 0.06
+     "markets": 0.67
     }
    }
   },
