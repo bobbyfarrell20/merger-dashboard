@@ -4,7 +4,48 @@
   {
    "date": "2026-11-06",
    "odds_note": "Merger letter by Jun 30, 2027: +0.0 pts (filings/news +0.0, prediction markets +0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
-   "items": [],
+   "items": [
+    {
+     "time_et": "09:40",
+     "title": "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks.",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNM2JQek9iNjBJQ1pWRDVQVmtsbGlPcGNHNEp2aWN1UEhQWDdKSWxaNmZta1hUUTZMRU10UjFmaE5PUkdQUERVaktPa3VrYURkVDhRcGZhRmZ2TmkwVDdUYVFFWWYyd19CbVVYdk0yWUxyRDRuVWpHb1NNREFaZ2RSTHpjSTBtZURuazNQX0RVQWN0MG11UDFtZl9BVXB4TDNac2FFbFVzS05nRFNpdmJSX3ZZVVR6VGNLZjZvU0pxOGpPQ0dVNWduZ2JPSTdJT085OG41WndPWUFjYlVpYkVybmV5QQ?oc=5",
+     "source": "Investor's Business Daily",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "10:00",
+     "title": "I asked ChatGPT whether SpaceX shares would boom after a merger with Tesla",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVXJON3FQckxmekdobkxvcFdRaEF1ZmxwY1VneFQ4Q3kteUxYc3FiR3N3TFREbjFpOTV6VU9NRk45ZDRiYXktQWc1SF8wQ08zVkdPUXpOMVhiX05kakVPd1dpak5mQzQ4SEszb0JHdW5FM1JwaUdiNVlJelVhMmtQeW02VzNqRnhKT1phZA?oc=5",
+     "source": "Yahoo Finance UK",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "07:50",
+     "title": "\u2018He wants the whole bag:\u2019 A SpaceX-Tesla merger could help Elon Musk gain major control \u2014 without hitting lofty goals",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMjM3QldRckxLeFd4aFg1S09aT1kzeVcwTGkwdHZHbmdadFVNRzlhamlhdXRkZ0lITHZZdjJibkFHb0hfSDFqMktXN0pmTERYaTJlMHlGS2dDSVlkYUJfTXJWaFdBYkwyOVVsVmx6c21MZmlsdWVDS3lWeGJvUUN1cGVYbw?oc=5",
+     "source": "Yahoo Finance Singapore",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:51",
+     "title": "Starship Flight 15 date moved to 2026-11-13 (headlines from Drive Tesla Canada, KeepTrack, Starlust.org, Tesla Accessories, TeslaNorth.com); launch-day/next-day blackout moved",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ],
    "split": {
     "pp": {
      "total": 0.01,
