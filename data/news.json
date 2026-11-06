@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-06",
-   "odds_note": "Merger letter by Jun 30, 2027: +0.6 pts (filings/news +0.0, prediction markets +0.7, time -0.1). Why: calendar/config changed: starship.",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.3 pts (filings/news +0.0, prediction markets +0.4, time -0.1). Why: calendar/config changed: starship.",
    "items": [
     {
      "time_et": "09:40",
@@ -64,14 +64,41 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "13:33",
+     "title": "Tesla (TSLA) to end Cybertruck production next year, and it\u2019s not just about the Cybercab - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMmhXM1R4Q0xNcnIzajMxeDZqbGNqdmozRUZwZHZzMzRHWnlwQ012TUxMRzh0UGRlMGJFZ3lEMkVJTTdmZVB3U2lMYzExYkEtcXR3Vzg2d3l5NGF0bGhyLW5vaW1BV2xkVmkwOWxoQ0NGYjBZa25sN3JPLVJXeUxzbUMtR1FSRmhVQUFWTkVVV3JwUWF0MWl1bDhBMkFaNkwtakdqdXo4Mk1TeXZiQUxneFVfMkR1Qnc0R2ttdnpqLWZwNms?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "08:00",
+     "title": "Democrats Retake the House and Senate: Here's What It Could Mean for SpaceX and Tesla - The Motley Fool",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNVplRGtEc2VxSWplNEFxYWtMVVd2QTlJWk84U19JTkR5Q0R1dVlvLXF5Sm1qS1k2R0tEOWZGOXZQaEQ4bWN0c091bG5sdlFReHRRTHRHcWdoM2xIYUkyVXBGNUZBcjhYZ2EtSzBaLVVDU1JraXowdUtEeVQ1VmZDVXZpWFkzZk5IYmpvTVVfaHhqaE9Fb2FjTQ?oc=5",
+     "source": "The Motley Fool",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "01:44",
+     "title": "Tesla to end Cybertruck production at Texas factory by mid-2027 to ramp up Cybercab output, Musk says - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZENtWjF5QmZiRGloUktOemNUc3l3Y1lPbFRmLWRqOGIzWmZTdkZPUi1Tb2U0R3ZIb20tYUp3TUpkLVRqbGVWb09pWk5PVm9ac1RTT3FtcUFkOFVBU2UyalpKN1BNbVpnTkZPSFRvdGZrOEdVSGpXcW5GUVMyRHNhTnJTYVR5MjV1QmVrYU9STEpEdWdNeDZ3Ny10Z2tsVjQ1V2NxZEhKM2taMG80MFhHZDl3cUxpUkJ0NllTVkQzdktfWXBKNHgyZjF1VkpsWkRGWE1VMg?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 0.62,
+     "total": 0.32,
      "time": -0.05,
      "news": 0.0,
-     "markets": 0.67
+     "markets": 0.37
     }
    }
   },
