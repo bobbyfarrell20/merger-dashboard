@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-06 12:51 ET",
-  "last_ok": "2026-11-06 12:51 ET",
+  "as_of": "2026-11-06 17:53 ET",
+  "last_ok": "2026-11-06 17:53 ET",
   "error": null
  },
  "starship": {
@@ -24,6 +24,7 @@
     "sources": [
      "Drive Tesla Canada",
      "KeepTrack",
+     "MLQ.ai",
      "Starlust.org",
      "Tesla Accessories",
      "TeslaNorth.com"
@@ -36,8 +37,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-06 12:51 ET",
-  "last_ok": "2026-11-06 12:51 ET",
+  "as_of": "2026-11-06 17:53 ET",
+  "last_ok": "2026-11-06 17:53 ET",
   "error": null
  },
  "grain": {
@@ -62,30 +63,30 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-06 12:51 ET",
-  "last_ok": "2026-11-06 12:51 ET",
+  "as_of": "2026-11-06 17:53 ET",
+  "last_ok": "2026-11-06 17:53 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 357.17,
+    "price": 358.22,
     "prev_close": 343.69,
-    "as_of": "2026-11-06 12:51 ET"
+    "as_of": "2026-11-06 16:00 ET"
    },
    "SPCX": {
-    "price": 130.78,
+    "price": 134.27,
     "prev_close": 123.62,
-    "as_of": "2026-11-06 12:51 ET"
+    "as_of": "2026-11-06 16:00 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-11-06 12:51 ET",
-  "last_ok": "2026-11-06 12:51 ET",
+  "as_of": "2026-11-06 17:53 ET",
+  "last_ok": "2026-11-06 17:53 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-11-06T12:51-05:00"
+ "prices_written": "2026-11-06T17:53-05:00"
 }
