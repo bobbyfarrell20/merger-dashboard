@@ -71,6 +71,16 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "07:01",
+     "title": "Morgan Stanley Sees SpaceX Stock Hitting $300 as AI Forecasts Explode",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMlAtNlRpUk5pNWU5dUVMcmFJOTczcFZMdGpTTzY3R1lNOG8zYjBhSlY2OU5DRTdsWW81ZGppRUo4cHNNcHdyS2M5RGZSdzdTNWZTVHZTMDlnLVFXNE9lNmIxdGJVMFhSYUFLbWRkaXgwdzBxYVN6M3oxTkxRYlFycUV3WW9tbWV2bzMyUHZzeC05dVBaRE5wVEF0WGZHZw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
