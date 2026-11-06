@@ -2,6 +2,19 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-06",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.0 pts (filings/news +0.0, prediction markets +0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "items": [],
+   "split": {
+    "pp": {
+     "total": 0.01,
+     "time": -0.05,
+     "news": 0.0,
+     "markets": 0.06
+    }
+   }
+  },
+  {
    "date": "2026-11-05",
    "odds_note": "Merger letter by Jun 30, 2027: -0.7 pts (filings/news +0.0, prediction markets -0.7, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -230,6 +243,24 @@
      "effect": "Morning review Nov 5: rehash of Reuters Musk pay/voting-control piece already logged Nov 3; no news nudge.",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "12:07",
+     "title": "Elon Musk\u2019s Tesla, SpaceX Fell After the Midterm Elections\u2014Then Dropped Even Further - Investopedia",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUm9HWHhmNWRzODRQWEt4NUxubEhVRUdQRTA4cjM5bjNocFlObEVmSEN1NTZwN0lfcC1NdVUtMHQxc2M4X2lOQkstUXJLbkh0Q29LaVBvdGU1WGZXa05uSFgyWkgwUUdvWFBhaThPdXc0cW5LRDcyVlJCbmVhbnBUdFVyM3FzUUNwR2NQUHk0WWQ4V2w3ZVhPRmlqaGRmTUhLLTg5Yw?oc=5",
+     "source": "Investopedia",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "08:49",
+     "title": "SpaceX Declines 6%, Tesla Falls 5% as Democratic Sweep Raises Merger and Regulatory Risks; General Motors Rises 2% - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZDF6cmVGNVlCRUNkY2tkMUZoOXZMVXFVeG5Jc3V4VEVwNTBaTWwyUTM4azFsMFpXUk83VW9uNjRwMWVFbjViMm4xNlZEZm5haG1kNDA2OG9lTHU3TEdJYVQwWXlZYXlXV1ZUeURYbnVvRm53bWMtR2VOZXVUQjFwMmk5WlJrUGtjYlFNb3BtOGVWQW5ZTWhuUElUelc0UFVTTEkzcTRaY3Bwd3N0RTFKc3pEcGtrelgtUnQ1anA4WEhBNUFjVUdxdUN1UHJkd1NZQkwyU0xNekRPY1ZsMmFxTXQwWnJXXzhN?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
