@@ -2,6 +2,58 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-08",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "09:03",
+     "title": "SpaceX has had limited impact on stock indexes, Goldman Sachs says (SPCX:NASDAQ)",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONzUxQ0ctbGhXU2RBakVFb0tndmo4WnBmdkk2VS03VUlyNVdEVWVramJGM1NZU1Rqd0YtYUc3NEZwb3Mtb0lsUjdHb1ZSLXQxUF9Jc2NmUXJEV0s5d203bUJXNnF3UFUwVHJQai1Ub3ZOeW1aSkRFWE9uYTEzSERZSFNhdFN3YWMtT0thR2l4ZS1uSHVDbFRndUkzUUFvQVVIOEtmbDZ3?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:50",
+     "title": "Morgan Stanley Says $300. Michael Burry Says Overvalued. Here's Who Is Right About SpaceX Stock.",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNHVpU3l5WVFrSVJTNWRGUFREY2NiQ0o4enRXQ3JTUG9UVzBldlRGM1R2OEJGZG9nekJDWXpMcjMtcFBNSTYyQkE1Sm9VWE5XaE9iOE1hclRnZGsyUzVTRE1ja2RmdXZDOTAwblJIc29mUXhjOEZmTlUyZFJjbWMtRzloa2xtY1BLWlpLRGI0MkV1SlNzM1d3N3kzZEs?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "15:13",
+     "title": "Morgan Stanley says SpaceX stock is now cheaper than the S&P 500",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc2t6ZHJDdEtSNUF2NjNQUHo1andlTGJoRU9zbUR5UDRvZ0MxNlU1SnR3MVBqbko2ZG5XbHMtRkgyemMtQ09ObG93YlFYbktJZ29YXzRGODVnOGx1Mnl3bFgxTkVGWDBIVEdwNnlOUlFYWUV3d3Uwcm5Cb0pMQTREN3o3UXItOEFNVTc3TDhrWWhLQTl1Y1ZQanRtRTZGZw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "21:18",
+     "title": "Musk \u201cWould Never Lend Money\u201d to Pure AI Clouds. Goldman Is Selling SpaceX\u2019s $40 Billion GPU Debt",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdFZuVDZvdmFjUmJFSXg3QjdYQnNFTk43WEdXZGdwLXRzMklMZURiNmZtUWRBTG9KU29VSnFTd0tNOE5vbk53Y3hrNUVEcW56MHlVcWxLUlJpVUo3N2wzdHVyUnE4a2dzbUxnajFYUEpQaG1FOG1kZFJ6ejM3Slp5cFdYZEdKX0RZZWkwRVlHZnIyaEFYOWc?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-06",
    "odds_note": "Merger letter by Jun 30, 2027: +0.3 pts (filings/news +0.0, prediction markets +0.4, time -0.1). Why: calendar/config changed: starship.",
    "items": [
