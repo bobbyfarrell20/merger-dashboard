@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-09",
-   "odds_note": "",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.4 pts (filings/news +0.0, prediction markets -0.3, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "04:30",
@@ -15,7 +15,15 @@
      "auto": true,
      "watch": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.38,
+     "time": -0.08,
+     "news": 0.0,
+     "markets": -0.3
+    }
+   }
   },
   {
    "date": "2026-11-08",
@@ -50,6 +58,16 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "19:05",
+     "title": "Musk Lays Out SpaceX Revenue Roadmap: $500 Billion Annualized by End of Next Year, Chip Capacity Aiming for 30 Times Global Output - BigGo Finance",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKU1EwREs0R3hfMC1RcENBMzM0Zk9GWkhoa0xTR1NUdTFMX1FNS0NHQ0VtZXdEc21zNTlyZXAtaGhqOEcybEFSUXA1ZUhFNVJfc0stYWJ6X09Jek0xU0hCd0pBYXBSNW5wNHVJVkJlZmtNODNJbGc?oc=5",
+     "source": "BigGo Finance",
+     "factor": "news",
+     "effect": "Morning review Nov 9: Musk SpaceX revenue/chip-capacity roadmap; business outlook, no merger-process fact; no news nudge.",
+     "auto": true,
+     "watch": true
     }
    ]
   },
@@ -76,6 +94,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "11:34",
+     "title": "Flight 15 Starship double-catch to happen NET Friday the 13th (confirmed) - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdUNLQnVrblNnUGQ4RXlhOVRWVHAxTUlkemJxVEFhMnBIWHBQV0hvSXVpcXFHZTdYQWNlUDQ1eExrWjh4Y1pvSG5mbDhRSmFyd3lHOUxjbVA4T1Z0Wnd3bF9iakt0SFlCOEg0LUY3TnkxaW84aDI0d3VwR0E5Z3FMcHpUNmFKRGpFTEFiWFh5eTF6cE5xc1dQbUIyaHgtaW5GcUxkMkstbmR5NGppZDhYWQ?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ]
   },

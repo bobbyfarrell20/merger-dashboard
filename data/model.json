@@ -1,360 +1,304 @@
 {
- "morning_run": "2026-11-05",
- "generated": "2026-11-06 17:54 ET",
- "today": "2026-11-06",
+ "morning_run": "2026-11-09",
+ "generated": "2026-11-09 08:28 ET",
+ "today": "2026-11-09",
  "window": {
   "start": "2026-10-14",
   "end": "2026-12-14"
  },
  "weeks": [
   {
-   "monday": "2026-11-02",
-   "friday": "2026-11-06",
-   "first_day": "2026-11-06",
-   "A": 0.0,
-   "B": 0.05461904623879019,
-   "days": {
-    "Mon": {
-     "A": 0,
-     "B": 0,
-     "date": null,
-     "either": 0
-    },
-    "Tue": {
-     "A": 0,
-     "B": 0,
-     "date": null,
-     "either": 0
-    },
-    "Wed": {
-     "A": 0,
-     "B": 0,
-     "date": null,
-     "either": 0
-    },
-    "Thu": {
-     "A": 0,
-     "B": 0,
-     "date": null,
-     "either": 0
-    },
-    "Fri": {
-     "A": 0.0,
-     "B": 0.04779166545894142,
-     "date": "2026-11-06",
-     "either": 0.04779166545894142
-    },
-    "Wknd": {
-     "A": 0.0,
-     "B": 0.006827380779848774,
-     "date": null,
-     "either": 0.006827380779848774
-    }
-   },
-   "cumA": 0.0,
-   "cumB": 0.05461904623879019,
-   "none": 0.9453809537612098,
-   "either": 0.05461904623879019,
-   "cum": 0.05461904623879019,
-   "mon": 0,
-   "tue": 0,
-   "L": 0.0,
-   "expiry": "2026-11-06",
-   "expiry_listed": true,
-   "expiry_iv": 5.2
-  },
-  {
    "monday": "2026-11-09",
    "friday": "2026-11-13",
    "first_day": "2026-11-09",
    "A": 0.0,
-   "B": 0.6084636800995544,
+   "B": 0.6436119476605442,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.20482142339546325,
+     "B": 0.21665302316151894,
      "date": "2026-11-09",
-     "either": 0.20482142339546325
+     "either": 0.21665302316151894
     },
     "Tue": {
      "A": 0.0,
-     "B": 0.1775119002760681,
+     "B": 0.1877659534066497,
      "date": "2026-11-10",
-     "either": 0.1775119002760681
+     "either": 0.1877659534066497
     },
     "Wed": {
      "A": 0.0,
-     "B": 0.09558333091788283,
+     "B": 0.10110474414204214,
      "date": "2026-11-11",
-     "either": 0.09558333091788283
+     "either": 0.10110474414204214
     },
     "Thu": {
      "A": 0.0,
-     "B": 0.0819285693581853,
+     "B": 0.08666120926460756,
      "date": "2026-11-12",
-     "either": 0.0819285693581853
+     "either": 0.08666120926460756
     },
     "Fri": {
      "A": 0.0,
-     "B": 0.04740416546873378,
+     "B": 0.05014248797314793,
      "date": "2026-11-13",
-     "either": 0.04740416546873378
+     "either": 0.05014248797314793
     },
     "Wknd": {
      "A": 0.0,
-     "B": 0.0012142906832211045,
+     "B": 0.0012845297125779606,
      "date": null,
-     "either": 0.0012142906832211045
+     "either": 0.0012845297125779606
     }
    },
    "cumA": 0.0,
-   "cumB": 0.6630827263383445,
-   "none": 0.33691727366165547,
-   "either": 0.6084636800995544,
-   "cum": 0.6630827263383445,
-   "mon": 0.20482142339546325,
-   "tue": 0.1775119002760681,
+   "cumB": 0.6436119476605442,
+   "none": 0.3563880523394558,
+   "either": 0.6436119476605442,
+   "cum": 0.6436119476605442,
+   "mon": 0.21665302316151894,
+   "tue": 0.1877659534066497,
    "L": 0.0,
    "expiry": "2026-11-13",
    "expiry_listed": true,
-   "expiry_iv": 56.0
+   "expiry_iv": 76.4
   },
   {
    "monday": "2026-11-16",
    "friday": "2026-11-20",
    "first_day": "2026-11-16",
    "A": 0.0,
-   "B": 0.10964160230343453,
+   "B": 0.11597335588480637,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.036543949165171966,
+     "B": 0.03865778529493546,
      "date": "2026-11-16",
-     "either": 0.036543949165171966
+     "either": 0.03865778529493546
     },
     "Tue": {
      "A": 0.0,
-     "B": 0.0316714226098157,
+     "B": 0.033503413922277396,
      "date": "2026-11-17",
-     "either": 0.0316714226098157
+     "either": 0.033503413922277396
     },
     "Wed": {
      "A": 0.0,
-     "B": 0.017053842943746914,
+     "B": 0.01804029980430321,
      "date": "2026-11-18",
-     "either": 0.017053842943746914
+     "either": 0.01804029980430321
     },
     "Thu": {
      "A": 0.0,
-     "B": 0.014617579666068787,
+     "B": 0.015463114117974183,
      "date": "2026-11-19",
-     "either": 0.014617579666068787
+     "either": 0.015463114117974183
     },
     "Fri": {
      "A": 0.0,
-     "B": 0.008535456928802261,
+     "B": 0.009020149902151605,
      "date": "2026-11-20",
-     "either": 0.008535456928802261
+     "either": 0.009020149902151605
     },
     "Wknd": {
      "A": 0.0,
-     "B": 0.0012193509898288945,
+     "B": 0.0012885928431645155,
      "date": null,
-     "either": 0.0012193509898288945
+     "either": 0.0012885928431645155
     }
    },
    "cumA": 0.0,
-   "cumB": 0.7727243286417791,
-   "none": 0.2272756713582209,
-   "either": 0.10964160230343453,
-   "cum": 0.7727243286417791,
-   "mon": 0.036543949165171966,
-   "tue": 0.0316714226098157,
+   "cumB": 0.7595853035453506,
+   "none": 0.2404146964546494,
+   "either": 0.11597335588480637,
+   "cum": 0.7595853035453506,
+   "mon": 0.03865778529493546,
+   "tue": 0.033503413922277396,
    "L": 0.0,
    "expiry": "2026-11-20",
    "expiry_listed": true,
-   "expiry_iv": 55.3
+   "expiry_iv": 65.4
   },
   {
    "monday": "2026-11-23",
    "friday": "2026-11-27",
    "first_day": "2026-11-23",
    "A": 0.0,
-   "B": 0.08588886088484449,
+   "B": 0.09085697720388139,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.03658052969486683,
+     "B": 0.03869648177671217,
      "date": "2026-11-23",
-     "either": 0.03658052969486683
+     "either": 0.03869648177671217
     },
     "Tue": {
      "A": 0.0,
-     "B": 0.03170312573555125,
+     "B": 0.03353695087315055,
      "date": "2026-11-24",
-     "either": 0.03170312573555125
+     "either": 0.03353695087315055
     },
     "Wed": {
      "A": 0.0,
-     "B": 0.017070913857604522,
+     "B": 0.01805835816246568,
      "date": "2026-11-25",
-     "either": 0.017070913857604522
+     "either": 0.01805835816246568
     },
     "Thu": {
      "A": 0.0,
-     "B": 0.0003325502699533348,
+     "B": 0.0003517861979701105,
      "date": "2026-11-26",
-     "either": 0.0003325502699533348
+     "either": 0.0003517861979701105
     },
     "Fri": {
      "A": 0.0,
-     "B": 0.00013666347949159704,
+     "B": 0.00014456142145936678,
      "date": "2026-11-27",
-     "either": 0.00013666347949159704
+     "either": 0.00014456142145936678
     },
     "Wknd": {
      "A": 0.0,
-     "B": 6.507784737695098e-05,
+     "B": 6.8838772123508e-05,
      "date": null,
-     "either": 6.507784737695098e-05
+     "either": 6.8838772123508e-05
     }
    },
    "cumA": 0.0,
-   "cumB": 0.8586131895266236,
-   "none": 0.14138681047337642,
-   "either": 0.08588886088484449,
-   "cum": 0.8586131895266236,
-   "mon": 0.03658052969486683,
-   "tue": 0.03170312573555125,
+   "cumB": 0.850442280749232,
+   "none": 0.149557719250768,
+   "either": 0.09085697720388139,
+   "cum": 0.850442280749232,
+   "mon": 0.03869648177671217,
+   "tue": 0.03353695087315055,
    "L": 0.0,
    "expiry": "2026-11-27",
    "expiry_listed": true,
-   "expiry_iv": 52.5
+   "expiry_iv": 59.6
   },
   {
    "monday": "2026-11-30",
    "friday": "2026-12-04",
    "first_day": "2026-11-30",
    "A": 0.0,
-   "B": 0.005857006263925589,
+   "B": 0.006195489491115719,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.0019523354213085292,
+     "B": 0.0020651631637052395,
      "date": "2026-11-30",
-     "either": 0.0019523354213085292
+     "either": 0.0020651631637052395
     },
     "Tue": {
      "A": 0.0,
-     "B": 0.0016920240318007253,
+     "B": 0.0017898080752112076,
      "date": "2026-12-01",
-     "either": 0.0016920240318007253
+     "either": 0.0017898080752112076
     },
     "Wed": {
      "A": 0.0,
-     "B": 0.0009110898632773138,
+     "B": 0.0009637428097291121,
      "date": "2026-12-02",
-     "either": 0.0009110898632773138
+     "either": 0.0009637428097291121
     },
     "Thu": {
      "A": 0.0,
-     "B": 0.0007809341685234118,
+     "B": 0.0008260652654820959,
      "date": "2026-12-03",
-     "either": 0.0007809341685234118
+     "either": 0.0008260652654820959
     },
     "Fri": {
      "A": 0.0,
-     "B": 0.0004555449316386569,
+     "B": 0.00048187140486455603,
      "date": "2026-12-04",
-     "either": 0.0004555449316386569
+     "either": 0.00048187140486455603
     },
     "Wknd": {
      "A": 0.0,
-     "B": 6.507784737695098e-05,
+     "B": 6.8838772123508e-05,
      "date": null,
-     "either": 6.507784737695098e-05
+     "either": 6.8838772123508e-05
     }
    },
    "cumA": 0.0,
-   "cumB": 0.8644701957905492,
-   "none": 0.13552980420945082,
-   "either": 0.005857006263925589,
-   "cum": 0.8644701957905492,
-   "mon": 0.0019523354213085292,
-   "tue": 0.0016920240318007253,
+   "cumB": 0.8566377702403477,
+   "none": 0.1433622297596523,
+   "either": 0.006195489491115719,
+   "cum": 0.8566377702403477,
+   "mon": 0.0020651631637052395,
+   "tue": 0.0017898080752112076,
    "L": 0.0,
    "expiry": "2026-12-04",
    "expiry_listed": true,
-   "expiry_iv": 52.7
+   "expiry_iv": 58.4
   },
   {
    "monday": "2026-12-07",
    "friday": "2026-12-11",
    "first_day": "2026-12-07",
    "A": 0.0,
-   "B": 0.004663322356198604,
+   "B": 0.0049328211973174866,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.0015540589953615897,
+     "B": 0.0016438698783093713,
      "date": "2026-12-07",
-     "either": 0.0015540589953615897
+     "either": 0.0016438698783093713
     },
     "Tue": {
      "A": 0.0,
-     "B": 0.0013427902716370557,
+     "B": 0.0014203916884876146,
      "date": "2026-12-08",
-     "either": 0.0013427902716370557
+     "either": 0.0014203916884876146
     },
     "Wed": {
      "A": 0.0,
-     "B": 0.0007252275311687417,
+     "B": 0.0007671392765443731,
      "date": "2026-12-09",
-     "either": 0.0007252275311687417
+     "either": 0.0007671392765443731
     },
     "Thu": {
      "A": 0.0,
-     "B": 0.0006247473348187293,
+     "B": 0.0006608522123856767,
      "date": "2026-12-10",
-     "either": 0.0006247473348187293
+     "either": 0.0006608522123856767
     },
     "Fri": {
      "A": 0.0,
-     "B": 0.00036443594531092543,
+     "B": 0.0003854971238916447,
      "date": "2026-12-11",
-     "either": 0.00036443594531092543
+     "either": 0.0003854971238916447
     },
     "Wknd": {
      "A": 0.0,
-     "B": 5.2062277901560797e-05,
+     "B": 5.507101769880641e-05,
      "date": null,
-     "either": 5.2062277901560797e-05
+     "either": 5.507101769880641e-05
     }
    },
    "cumA": 0.0,
-   "cumB": 0.8691335181467479,
-   "none": 0.13086648185325211,
-   "either": 0.004663322356198604,
-   "cum": 0.8691335181467479,
-   "mon": 0.0015540589953615897,
-   "tue": 0.0013427902716370557,
+   "cumB": 0.8615705914376651,
+   "none": 0.13842940856233488,
+   "either": 0.0049328211973174866,
+   "cum": 0.8615705914376651,
+   "mon": 0.0016438698783093713,
+   "tue": 0.0014203916884876146,
    "L": 0.0,
    "expiry": "2026-12-11",
    "expiry_listed": true,
-   "expiry_iv": 52.3
+   "expiry_iv": 57.3
   },
   {
    "monday": "2026-12-14",
    "friday": "2026-12-18",
    "first_day": "2026-12-14",
    "A": 0.0,
-   "B": 0.0015618683370468237,
+   "B": 0.0016521305309641922,
    "days": {
     "Mon": {
      "A": 0.0,
-     "B": 0.0015618683370468237,
+     "B": 0.0016521305309641922,
      "date": "2026-12-14",
-     "either": 0.0015618683370468237
+     "either": 0.0016521305309641922
     },
     "Tue": {
      "A": 0,
@@ -388,16 +332,16 @@
     }
    },
    "cumA": 0.0,
-   "cumB": 0.8706953864837947,
-   "none": 0.12930461351620526,
-   "either": 0.0015618683370468237,
-   "cum": 0.8706953864837947,
-   "mon": 0.0015618683370468237,
+   "cumB": 0.8632227219686294,
+   "none": 0.13677727803137063,
+   "either": 0.0016521305309641922,
+   "cum": 0.8632227219686294,
+   "mon": 0.0016521305309641922,
    "tue": 0,
    "L": 0.0,
    "expiry": "2026-12-18",
    "expiry_listed": true,
-   "expiry_iv": 52.1
+   "expiry_iv": 55.3
   }
  ],
  "best_week": "2026-11-09",
@@ -411,108 +355,93 @@
  "split": {
   "end_A": {
    "total": 0.0,
-   "time": 31.52,
-   "news": -31.52
+   "time": 29.8,
+   "news": -29.8
   },
   "end_B": {
    "total": 0.0,
-   "time": -44.39,
-   "news": 44.39
+   "time": -43.49,
+   "news": 43.49
   },
   "end_none": {
    "total": 0.0,
-   "time": 12.87,
-   "news": -12.87
-  },
-  "wk2026-11-02_either": {
-   "total": -7.15,
-   "time": -6.79,
-   "news": -0.37
-  },
-  "wk2026-11-02_A": {
-   "total": 0.0,
-   "time": 2.18,
-   "news": -2.18
-  },
-  "wk2026-11-02_B": {
-   "total": -7.15,
-   "time": -8.97,
-   "news": 1.81
+   "time": 13.69,
+   "news": -13.69
   },
   "wk2026-11-09_either": {
-   "total": 4.59,
-   "time": 4.34,
-   "news": 0.26
+   "total": 3.51,
+   "time": 3.43,
+   "news": 0.08
   },
   "wk2026-11-09_A": {
    "total": 0.0,
-   "time": 22.13,
-   "news": -22.13
+   "time": 22.47,
+   "news": -22.47
   },
   "wk2026-11-09_B": {
-   "total": 4.59,
-   "time": -17.8,
-   "news": 22.39
+   "total": 3.51,
+   "time": -19.03,
+   "news": 22.55
   },
   "wk2026-11-16_either": {
-   "total": 0.84,
-   "time": 0.38,
-   "news": 0.46
+   "total": 0.63,
+   "time": 0.16,
+   "news": 0.47
   },
   "wk2026-11-16_A": {
    "total": 0.0,
-   "time": 3.72,
-   "news": -3.72
+   "time": 3.77,
+   "news": -3.77
   },
   "wk2026-11-16_B": {
-   "total": 0.84,
-   "time": -3.34,
-   "news": 4.18
+   "total": 0.63,
+   "time": -3.6,
+   "news": 4.24
   },
   "wk2026-11-23_either": {
-   "total": 0.65,
-   "time": 1.07,
-   "news": -0.42
+   "total": 0.5,
+   "time": 1.04,
+   "news": -0.54
   },
   "wk2026-11-23_A": {
    "total": 0.0,
-   "time": 3.1,
-   "news": -3.1
+   "time": 3.17,
+   "news": -3.17
   },
   "wk2026-11-23_B": {
-   "total": 0.65,
-   "time": -2.04,
-   "news": 2.69
+   "total": 0.5,
+   "time": -2.14,
+   "news": 2.63
   },
   "wk2026-11-30_either": {
-   "total": 0.04,
+   "total": 0.03,
    "time": 0.16,
-   "news": -0.12
+   "news": -0.13
   },
   "wk2026-11-30_A": {
    "total": 0.0,
-   "time": 0.23,
-   "news": -0.23
+   "time": 0.24,
+   "news": -0.24
   },
   "wk2026-11-30_B": {
-   "total": 0.04,
-   "time": -0.07,
-   "news": 0.12
+   "total": 0.03,
+   "time": -0.08,
+   "news": 0.11
   },
   "wk2026-12-07_either": {
-   "total": 0.04,
-   "time": -0.12,
-   "news": 0.16
+   "total": 0.03,
+   "time": -0.14,
+   "news": 0.17
   },
   "wk2026-12-07_A": {
    "total": 0.0,
-   "time": 0.09,
-   "news": -0.09
+   "time": 0.1,
+   "news": -0.1
   },
   "wk2026-12-07_B": {
-   "total": 0.04,
-   "time": -0.22,
-   "news": 0.25
+   "total": 0.03,
+   "time": -0.23,
+   "news": 0.26
   },
   "wk2026-12-14_either": {
    "total": 0.01,
@@ -530,22 +459,9 @@
    "news": 0.03
   }
  },
- "drivers": [
-  "calendar/config changed: starship"
- ],
- "alerts": [
-  {
-   "type": "filing",
-   "text": "TSLA filed DEFA14A on 2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm"
-  },
-  {
-   "type": "filing",
-   "text": "SPCX filed 8-K on 2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm"
-  }
- ],
- "prev_as_of": "2026-11-05 18:51 ET",
+ "drivers": [],
+ "alerts": [],
+ "prev_as_of": "2026-11-06 17:54 ET",
  "state": {
   "state": "meeting_only",
   "since": "2026-10-13",
@@ -680,13 +596,13 @@
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-11-06 16:00 ET, fetched 2026-11-06 17:54 ET"
+  "prices_as_of": "last trade 2026-11-06 16:00 ET, fetched 2026-11-09 08:28 ET"
  },
  "blank_reasons": [
   {
    "id": "drift",
    "label": "Ordinary drift or lateness (Tesla's 2025 meeting was Nov 6)",
-   "p": 0.47514060929498736,
+   "p": 0.4989198913642139,
    "src": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925090866/tm252289-12_def14a.htm",
    "note": null,
    "merger": false
@@ -694,7 +610,7 @@
   {
    "id": "quiet_hold",
    "label": "Musk asked the board to hold the date; no committee or bankers yet",
-   "p": 0.16128152133938123,
+   "p": 0.1595827764150487,
    "src": null,
    "note": "Low leak surface: explains the blank page without a leak. Speculative path; no public evidence either way.",
    "merger": true
@@ -702,31 +618,31 @@
   {
    "id": "merger_hold",
    "label": "Merger process under way (committee or advisers working quietly)",
-   "p": 0.1572304216920637,
+   "p": 0.14287439953733658,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-11-06 17:54 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-11-09 08:28 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
    "id": "product_date",
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
-   "p": 0.08364689151063233,
+   "p": 0.08023220743781152,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-06 17:54 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-09 08:28 ET (news watcher).",
    "merger": false
   },
   {
    "id": "comp_governance",
    "label": "New comp/governance item being prepared",
-   "p": 0.06827464096183643,
+   "p": 0.06893420232881897,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-06 17:54 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-09 08:28 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
    "id": "retail_program",
    "label": "Waiting to launch the retail voting program (SEC letter Sept 29)",
-   "p": 0.03628394346739932,
+   "p": 0.0329710152778469,
    "src": "https://www.sec.gov/files/corpfin/no-action/tesla-inc-092926-incoming-letter.pdf",
    "note": null,
    "merger": false
@@ -734,16 +650,16 @@
   {
    "id": "equity_raise",
    "label": "Waiting on an equity raise (unlikely after the $30B credit lines)",
-   "p": 0.01814197173369966,
+   "p": 0.01648550763892345,
    "src": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=8-K",
    "note": null,
    "merger": false
   }
  ],
  "leak_logodds": 0.0,
- "weeks_blank": 6,
+ "weeks_blank": 7,
  "fcc": {
-  "as_of": "2026-11-06 17:54 ET",
+  "as_of": "2026-11-09 08:28 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -771,21 +687,21 @@
  "why": [
   "On SpaceX's Oct 20 earnings call, Musk said the Tesla and SpaceX boards have each formed a special committee of independent directors to look at a merger. He called it a good idea but said no terms are agreed and there's no guarantee.",
   "Tesla's DEF 14A (Oct 19) still set a routine Dec 3 meeting with no merger item, so any deal goes the normal route: committee talks, fairness opinions, an S-4, then a separate announcement and a special meeting, most likely in 2027. Tesla needs 50% of all outstanding shares to approve.",
-  "With committees confirmed, the rules model rises to 56% for a merger letter or agreement by Jun 30, 2027 (60% of the committee-adjusted merger odds). That is a judgment call, not data.",
-  "Prediction markets price it at 56% on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get 40% of the weight. Dashboard number: 60% x 55.5% + 40% x 56.2% = 55.8%.",
+  "With committees confirmed, the rules model rises to 55% for a merger letter or agreement by Jun 30, 2027 (60% of the committee-adjusted merger odds). That is a judgment call, not data.",
+  "Prediction markets price it at 56% on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get 40% of the weight. Dashboard number: 60% x 55.4% + 40% x 55.5% = 55.5%.",
   "Catalysts to watch: Starship Flight 15 (NET Nov 20), the Nov 20 and Dec 18 monthly options expirations, the Dec 3 annual meeting Q&A, the Dec 8 SpaceX unlock, and any banker or law-firm hire by the committees. Unlock days and Starship launch days are less likely days for a deal letter."
  ],
  "kill": {
   "letter_by": "2027-06-30",
-  "p_letter": 0.5582771490802615,
+  "p_letter": 0.5545041041516694,
   "why": "If a routine meeting is set with no SpaceX language, the 2026-meeting merger path is closed. Letter odds by mid-2027 are modeled as 0.6 x the pre-kill merger share: a clean routine proxy is evidence against a live deal, but a 2027 special meeting is still possible. This is judgment, not data. For comparison, Polymarket's Jun 30, 2027 contract is shown in details.",
   "p_rules": 0.5637100779535781
  },
  "leak": {
   "on": false,
-  "weeks_blank": 6,
-  "raw": -0.78,
-  "soft": 0.49364058438631675,
+  "weeks_blank": 7,
+  "raw": -0.91,
+  "soft": 0.47237893790236524,
   "logodds": 0.0,
   "start": "2026-09-21"
  },
@@ -823,11 +739,11 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-11-06 17:54 ET",
+  "as_of": "2026-11-09 08:28 ET",
   "approval_hits": []
  },
  "polymarket": {
-  "as_of": "2026-11-06 17:54 ET",
+  "as_of": "2026-11-09 08:28 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -849,10 +765,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.095,
+    "yes": 0.085,
     "closed": false,
-    "volume": 354435.146719,
-    "volume_24h": 18.18,
+    "volume": 356893.573676,
+    "volume_24h": 902.37,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -860,8 +776,8 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.18,
     "closed": false,
-    "volume": 66152.78009500001,
-    "volume_24h": 105.263158,
+    "volume": 66153.984915,
+    "volume_24h": 0.0,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -876,19 +792,19 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.55,
+    "yes": 0.535,
     "closed": false,
-    "volume": 89186.64711800001,
-    "volume_24h": 157.821053,
+    "volume": 89418.904228,
+    "volume_24h": 75.351852,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
-    "yes": 0.685,
+    "yes": 0.675,
     "closed": false,
-    "volume": 102468.44601400002,
-    "volume_24h": 37.87,
+    "volume": 103368.831078,
+    "volume_24h": 141.622942,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -974,8 +890,8 @@
     "unlock_date": "2026-10-22"
    },
    "ok": true,
-   "as_of": "2026-11-06 17:53 ET",
-   "last_ok": "2026-11-06 17:53 ET",
+   "as_of": "2026-11-09 05:44 ET",
+   "last_ok": "2026-11-09 05:44 ET",
    "error": null
   },
   "starship": {
@@ -985,12 +901,16 @@
     "headline_date": {
      "date": "2026-11-13",
      "sources": [
+      "Aero-News Network",
       "Drive Tesla Canada",
       "KeepTrack",
       "MLQ.ai",
       "Starlust.org",
       "Tesla Accessories",
-      "TeslaNorth.com"
+      "TeslaNorth.com",
+      "The News International",
+      "The Sun Malaysia",
+      "shattered.io"
      ]
     },
     "outcome_votes": {
@@ -1000,8 +920,8 @@
     }
    },
    "ok": true,
-   "as_of": "2026-11-06 17:53 ET",
-   "last_ok": "2026-11-06 17:53 ET",
+   "as_of": "2026-11-09 05:44 ET",
+   "last_ok": "2026-11-09 05:44 ET",
    "error": null
   },
   "grain": {
@@ -1023,8 +943,8 @@
     ]
    },
    "ok": true,
-   "as_of": "2026-11-06 17:53 ET",
-   "last_ok": "2026-11-06 17:53 ET",
+   "as_of": "2026-11-09 05:44 ET",
+   "last_ok": "2026-11-09 05:44 ET",
    "error": null
   },
   "prices": {
@@ -1041,8 +961,8 @@
     }
    },
    "ok": true,
-   "as_of": "2026-11-06 17:53 ET",
-   "last_ok": "2026-11-06 17:53 ET",
+   "as_of": "2026-11-09 05:44 ET",
+   "last_ok": "2026-11-09 05:44 ET",
    "error": null
   },
   "log": [
@@ -1053,1564 +973,1546 @@
  "pp": {
   "by": "2027-06-30",
   "headline": {
-   "blend": 0.5582771490802615,
-   "rules": 0.5554619151337691,
-   "market": 0.5625,
+   "blend": 0.5545041041516694,
+   "rules": 0.554173506919449,
+   "market": 0.555,
    "nudge": 0.0,
    "market_weight": 0.4,
    "near": {
     "by": "2026-12-31",
-    "blend": 0.0985922147443318,
-    "rules": 0.09598702457388633,
-    "market": 0.1025
+    "blend": 0.0917540682013256,
+    "rules": 0.09336691668427739,
+    "market": 0.08933479547689792
    }
   },
   "series": [
    {
-    "date": "2026-11-06",
-    "rules": 0.0016999599545027319,
-    "market": 0.0,
-    "blend": 0.001019975972701639
-   },
-   {
-    "date": "2026-11-07",
-    "rules": 0.002294945938578688,
-    "market": 0.001875,
-    "blend": 0.0021269675631472125
-   },
-   {
-    "date": "2026-11-08",
-    "rules": 0.002889931922654644,
-    "market": 0.00375,
-    "blend": 0.0032339591535927867
-   },
-   {
     "date": "2026-11-09",
-    "rules": 0.004589891877157376,
-    "market": 0.005625,
-    "blend": 0.005003935126294426
+    "rules": 0.001704886961758034,
+    "market": 0.0,
+    "blend": 0.0010229321770548203
    },
    {
     "date": "2026-11-10",
-    "rules": 0.006289851831660108,
-    "market": 0.0075,
-    "blend": 0.0067739110989960645
+    "rules": 0.003409773923516068,
+    "market": 0.0021428571428571425,
+    "blend": 0.0029030072112524977
    },
    {
     "date": "2026-11-11",
-    "rules": 0.007989811786162839,
-    "market": 0.009375,
-    "blend": 0.008543887071697703
+    "rules": 0.005114660885274102,
+    "market": 0.004285714285714285,
+    "blend": 0.004783082245450175
    },
    {
     "date": "2026-11-12",
-    "rules": 0.00968977174066557,
-    "market": 0.01125,
-    "blend": 0.010313863044399341
+    "rules": 0.006819547847032136,
+    "market": 0.006428571428571428,
+    "blend": 0.006663157279647853
    },
    {
     "date": "2026-11-13",
-    "rules": 0.010539751717916936,
-    "market": 0.013125,
-    "blend": 0.011573851030750162
+    "rules": 0.007671991327911153,
+    "market": 0.00857142857142857,
+    "blend": 0.008031766225318121
    },
    {
     "date": "2026-11-14",
-    "rules": 0.011134737701992891,
-    "market": 0.015,
-    "blend": 0.012680842621195735
+    "rules": 0.008268701764526465,
+    "market": 0.010714285714285713,
+    "blend": 0.009246935344430163
    },
    {
     "date": "2026-11-15",
-    "rules": 0.011729723686068847,
-    "market": 0.016875,
-    "blend": 0.013787834211641307
+    "rules": 0.008865412201141776,
+    "market": 0.012857142857142855,
+    "blend": 0.010462104463542208
    },
    {
     "date": "2026-11-16",
-    "rules": 0.013429683640571578,
-    "market": 0.01875,
-    "blend": 0.015557810184342945
+    "rules": 0.01057029916289981,
+    "market": 0.015,
+    "blend": 0.012342179497739886
    },
    {
     "date": "2026-11-17",
-    "rules": 0.01512964359507431,
-    "market": 0.020624999999999998,
-    "blend": 0.017327786157044583
+    "rules": 0.012275186124657844,
+    "market": 0.01714285714285714,
+    "blend": 0.014222254531937564
    },
    {
     "date": "2026-11-18",
-    "rules": 0.016829603549577042,
-    "market": 0.0225,
-    "blend": 0.019097762129746225
+    "rules": 0.013980073086415877,
+    "market": 0.019285714285714285,
+    "blend": 0.01610232956613524
    },
    {
     "date": "2026-11-19",
-    "rules": 0.018529563504079773,
-    "market": 0.024374999999999997,
-    "blend": 0.020867738102447863
+    "rules": 0.01568496004817391,
+    "market": 0.021428571428571425,
+    "blend": 0.017982404600332916
    },
    {
     "date": "2026-11-20",
-    "rules": 0.020229523458582505,
-    "market": 0.02625,
-    "blend": 0.0226377140751495
+    "rules": 0.017389847009931944,
+    "market": 0.023571428571428573,
+    "blend": 0.019862479634530597
    },
    {
     "date": "2026-11-21",
-    "rules": 0.02082450944265846,
-    "market": 0.028124999999999997,
-    "blend": 0.023744705665595077
+    "rules": 0.017986557446547258,
+    "market": 0.02571428571428571,
+    "blend": 0.02107764875364264
    },
    {
     "date": "2026-11-22",
-    "rules": 0.021419495426734415,
-    "market": 0.03,
-    "blend": 0.02485169725604065
+    "rules": 0.01858326788316257,
+    "market": 0.027857142857142858,
+    "blend": 0.022292817872754687
    },
    {
     "date": "2026-11-23",
-    "rules": 0.023119455381237147,
-    "market": 0.031875,
-    "blend": 0.026621673228742287
+    "rules": 0.020288154844920605,
+    "market": 0.03,
+    "blend": 0.024172892906952362
    },
    {
     "date": "2026-11-24",
-    "rules": 0.024819415335739878,
-    "market": 0.03375,
-    "blend": 0.02839164920144393
+    "rules": 0.02199304180667864,
+    "market": 0.03214285714285714,
+    "blend": 0.02605296794115004
    },
    {
     "date": "2026-11-25",
-    "rules": 0.02651937529024261,
-    "market": 0.035625,
-    "blend": 0.030161625174145563
+    "rules": 0.023697928768436672,
+    "market": 0.03428571428571428,
+    "blend": 0.027933042975347717
    },
    {
     "date": "2026-11-26",
-    "rules": 0.02821933524474534,
-    "market": 0.0375,
-    "blend": 0.031931601146847205
+    "rules": 0.025402815730194706,
+    "market": 0.03642857142857143,
+    "blend": 0.029813118009545395
    },
    {
     "date": "2026-11-27",
-    "rules": 0.02991929519924807,
-    "market": 0.039375,
-    "blend": 0.03370157711954884
+    "rules": 0.02710770269195274,
+    "market": 0.03857142857142857,
+    "blend": 0.03169319304374307
    },
    {
     "date": "2026-11-28",
-    "rules": 0.030514281183324027,
-    "market": 0.041249999999999995,
-    "blend": 0.03480856870999441
+    "rules": 0.02770441312856805,
+    "market": 0.04071428571428571,
+    "blend": 0.032908362162855115
    },
    {
     "date": "2026-11-29",
-    "rules": 0.031109267167399982,
-    "market": 0.043125,
-    "blend": 0.03591556030043999
+    "rules": 0.028301123565183363,
+    "market": 0.04285714285714285,
+    "blend": 0.03412353128196716
    },
    {
     "date": "2026-11-30",
-    "rules": 0.03280922712190271,
+    "rules": 0.030006010526941396,
     "market": 0.045,
-    "blend": 0.037685536273141626
+    "blend": 0.03600360631616484
    },
    {
     "date": "2026-12-01",
-    "rules": 0.03504957454927802,
-    "market": 0.04685483870967742,
-    "blend": 0.03977168021343778
+    "rules": 0.03225285117081856,
+    "market": 0.046430154692803156,
+    "blend": 0.037923772579612394
    },
    {
     "date": "2026-12-02",
-    "rules": 0.037289921976653324,
-    "market": 0.048709677419354835,
-    "blend": 0.04185782415373393
+    "rules": 0.03449969181469573,
+    "market": 0.047860309385606314,
+    "blend": 0.039843938843059964
    },
    {
     "date": "2026-12-03",
-    "rules": 0.04625131168615455,
-    "market": 0.050564516129032254,
-    "blend": 0.047976593463305635
+    "rules": 0.04348705439020439,
+    "market": 0.04929046407840947,
+    "blend": 0.04580841826548643
    },
    {
     "date": "2026-12-04",
-    "rules": 0.04849165911352986,
-    "market": 0.05241935483870967,
-    "blend": 0.05006273740360179
+    "rules": 0.045733895034081554,
+    "market": 0.05072061877121263,
+    "blend": 0.047728584528933984
    },
    {
     "date": "2026-12-05",
-    "rules": 0.049275780713111214,
-    "market": 0.0542741935483871,
-    "blend": 0.051275145847221565
+    "rules": 0.04652028925943856,
+    "market": 0.052150773464015795,
+    "blend": 0.04877248294126946
    },
    {
     "date": "2026-12-06",
-    "rules": 0.05005990231269257,
-    "market": 0.05612903225806451,
-    "blend": 0.05248755429084134
+    "rules": 0.04730668348479557,
+    "market": 0.05358092815681895,
+    "blend": 0.049816381353604916
    },
    {
     "date": "2026-12-07",
-    "rules": 0.052300249740067875,
-    "market": 0.057983870967741935,
-    "blend": 0.0545736982311375
+    "rules": 0.049553524128672734,
+    "market": 0.05501108284962211,
+    "blend": 0.051736547617052486
    },
    {
     "date": "2026-12-08",
-    "rules": 0.053196388711018,
-    "market": 0.059838709677419354,
-    "blend": 0.05585331709757854
+    "rules": 0.0504522603862236,
+    "market": 0.05644123754242527,
+    "blend": 0.05284785124870427
    },
    {
     "date": "2026-12-09",
-    "rules": 0.055436736138393304,
-    "market": 0.06169354838709677,
-    "blend": 0.05793946103787469
+    "rules": 0.05269910103010077,
+    "market": 0.05787139223522843,
+    "blend": 0.05476801751215183
    },
    {
     "date": "2026-12-10",
-    "rules": 0.05767708356576861,
-    "market": 0.06354838709677418,
-    "blend": 0.06002560497817084
+    "rules": 0.054945941673977934,
+    "market": 0.059301546928031586,
+    "blend": 0.05668818377559939
    },
    {
     "date": "2026-12-11",
-    "rules": 0.059917430993143915,
-    "market": 0.06540322580645161,
-    "blend": 0.06211174891846699
+    "rules": 0.0571927823178551,
+    "market": 0.060731701620834744,
+    "blend": 0.05860835003904696
    },
    {
     "date": "2026-12-12",
-    "rules": 0.06070155259272527,
-    "market": 0.06725806451612903,
-    "blend": 0.06332415736208677
+    "rules": 0.05797917654321211,
+    "market": 0.0621618563136379,
+    "blend": 0.05965224845138242
    },
    {
     "date": "2026-12-13",
-    "rules": 0.061485674192306626,
-    "market": 0.06911290322580645,
-    "blend": 0.06453656580570655
+    "rules": 0.058765570768569114,
+    "market": 0.06359201100644106,
+    "blend": 0.06069614686371789
    },
    {
     "date": "2026-12-14",
-    "rules": 0.06372602161968194,
-    "market": 0.07096774193548387,
-    "blend": 0.0666227097460027
+    "rules": 0.06101241141244628,
+    "market": 0.06502216569924422,
+    "blend": 0.06261631312716545
    },
    {
     "date": "2026-12-15",
-    "rules": 0.06596636904705724,
-    "market": 0.07282258064516128,
-    "blend": 0.06870885368629887
+    "rules": 0.06325925205632345,
+    "market": 0.06645232039204738,
+    "blend": 0.06453647939061302
    },
    {
     "date": "2026-12-16",
-    "rules": 0.06820671647443255,
-    "market": 0.07467741935483871,
-    "blend": 0.07079499762659501
+    "rules": 0.06550609270020061,
+    "market": 0.06788247508485054,
+    "blend": 0.06645664565406058
    },
    {
     "date": "2026-12-17",
-    "rules": 0.07044706390180785,
-    "market": 0.07653225806451612,
-    "blend": 0.07288114156689116
+    "rules": 0.06775293334407777,
+    "market": 0.06931262977765369,
+    "blend": 0.06837681191750813
    },
    {
     "date": "2026-12-18",
-    "rules": 0.07268741132918316,
-    "market": 0.07838709677419355,
-    "blend": 0.07496728550718731
+    "rules": 0.06999977398795493,
+    "market": 0.07074278447045686,
+    "blend": 0.0702969781809557
    },
    {
     "date": "2026-12-19",
-    "rules": 0.07347153292876452,
-    "market": 0.08024193548387096,
-    "blend": 0.07617969395080709
+    "rules": 0.07078616821331193,
+    "market": 0.07217293916326001,
+    "blend": 0.07134087659329116
    },
    {
     "date": "2026-12-20",
-    "rules": 0.07425565452834587,
-    "market": 0.08209677419354838,
-    "blend": 0.07739210239442687
+    "rules": 0.07157256243866894,
+    "market": 0.07360309385606317,
+    "blend": 0.07238477500562664
    },
    {
     "date": "2026-12-21",
-    "rules": 0.07649600195572118,
-    "market": 0.08395161290322581,
-    "blend": 0.07947824633472303
+    "rules": 0.0738194030825461,
+    "market": 0.07503324854886632,
+    "blend": 0.07430494126907419
    },
    {
     "date": "2026-12-22",
-    "rules": 0.07873634938309648,
-    "market": 0.08580645161290322,
-    "blend": 0.08156439027501919
+    "rules": 0.07606624372642326,
+    "market": 0.07646340324166949,
+    "blend": 0.07622510753252175
    },
    {
     "date": "2026-12-23",
-    "rules": 0.08097669681047179,
-    "market": 0.08766129032258063,
-    "blend": 0.08365053421531532
+    "rules": 0.07831308437030042,
+    "market": 0.07789355793447264,
+    "blend": 0.0781452737959693
    },
    {
     "date": "2026-12-24",
-    "rules": 0.0832170442378471,
-    "market": 0.08951612903225806,
-    "blend": 0.08573667815561148
+    "rules": 0.08055992501417758,
+    "market": 0.0793237126272758,
+    "blend": 0.08006544005941688
    },
    {
     "date": "2026-12-25",
-    "rules": 0.0854573916652224,
-    "market": 0.09137096774193548,
-    "blend": 0.08782282209590764
+    "rules": 0.08280676565805474,
+    "market": 0.08075386732007897,
+    "blend": 0.08198560632286443
    },
    {
     "date": "2026-12-26",
-    "rules": 0.08624151326480375,
-    "market": 0.09322580645161291,
-    "blend": 0.08903523053952742
+    "rules": 0.08359315988341175,
+    "market": 0.08218402201288214,
+    "blend": 0.0830295047351999
    },
    {
     "date": "2026-12-27",
-    "rules": 0.08702563486438511,
-    "market": 0.09508064516129032,
-    "blend": 0.0902476389831472
+    "rules": 0.08437955410876875,
+    "market": 0.08361417670568529,
+    "blend": 0.08407340314753536
    },
    {
     "date": "2026-12-28",
-    "rules": 0.08926598229176042,
-    "market": 0.09693548387096773,
-    "blend": 0.09233378292344335
+    "rules": 0.08662639475264591,
+    "market": 0.08504433139848844,
+    "blend": 0.08599356941098293
    },
    {
     "date": "2026-12-29",
-    "rules": 0.09150632971913572,
-    "market": 0.09879032258064516,
-    "blend": 0.0944199268637395
+    "rules": 0.08887323539652307,
+    "market": 0.0864744860912916,
+    "blend": 0.08791373567443048
    },
    {
     "date": "2026-12-30",
-    "rules": 0.09374667714651103,
-    "market": 0.10064516129032258,
-    "blend": 0.09650607080403564
+    "rules": 0.09112007604040023,
+    "market": 0.08790464078409477,
+    "blend": 0.08983390193787805
    },
    {
     "date": "2026-12-31",
-    "rules": 0.09598702457388633,
-    "market": 0.1025,
-    "blend": 0.0985922147443318
+    "rules": 0.09336691668427739,
+    "market": 0.08933479547689792,
+    "blend": 0.0917540682013256
    },
    {
     "date": "2027-01-01",
-    "rules": 0.09926898807788548,
-    "market": 0.10596774193548386,
-    "blend": 0.10194848962092484
+    "rules": 0.09665839232881433,
+    "market": 0.09330786659054638,
+    "blend": 0.09531818203350714
    },
    {
     "date": "2027-01-02",
-    "rules": 0.10041767530428518,
-    "market": 0.10943548387096774,
-    "blend": 0.10402479873095821
+    "rules": 0.09781040880440225,
+    "market": 0.09728093770419483,
+    "blend": 0.0975986203643193
    },
    {
     "date": "2027-01-03",
-    "rules": 0.10156636253068488,
-    "market": 0.11290322580645161,
-    "blend": 0.10610110784099158
+    "rules": 0.09896242527999018,
+    "market": 0.10125400881784329,
+    "blend": 0.09987905869513142
    },
    {
     "date": "2027-01-04",
-    "rules": 0.10484832603468403,
-    "market": 0.11637096774193548,
-    "blend": 0.10945738271758461
+    "rules": 0.10225390092452712,
+    "market": 0.10522707993149173,
+    "blend": 0.10344317252731296
    },
    {
     "date": "2027-01-05",
-    "rules": 0.10813028953868317,
-    "market": 0.11983870967741934,
-    "blend": 0.11281365759417765
+    "rules": 0.10554537656906406,
+    "market": 0.10920015104514019,
+    "blend": 0.10700728635949451
    },
    {
     "date": "2027-01-06",
-    "rules": 0.11141225304268232,
-    "market": 0.12330645161290321,
-    "blend": 0.11616993247077068
+    "rules": 0.108836852213601,
+    "market": 0.11317322215878864,
+    "blend": 0.11057140019167605
    },
    {
     "date": "2027-01-07",
-    "rules": 0.11469421654668147,
-    "market": 0.1267741935483871,
-    "blend": 0.11952620734736372
+    "rules": 0.11212832785813794,
+    "market": 0.1171462932724371,
+    "blend": 0.1141355140238576
    },
    {
     "date": "2027-01-08",
-    "rules": 0.11797618005068061,
-    "market": 0.13024193548387097,
-    "blend": 0.12288248222395676
+    "rules": 0.11541980350267488,
+    "market": 0.12111936438608556,
+    "blend": 0.11769962785603914
    },
    {
     "date": "2027-01-09",
-    "rules": 0.11912486727708031,
-    "market": 0.13370967741935483,
-    "blend": 0.12495879133399011
+    "rules": 0.1165718199782628,
+    "market": 0.125092435499734,
+    "blend": 0.11998006618685128
    },
    {
     "date": "2027-01-10",
-    "rules": 0.12027355450348001,
-    "market": 0.1371774193548387,
-    "blend": 0.1270351004440235
+    "rules": 0.11772383645385072,
+    "market": 0.12906550661338245,
+    "blend": 0.1222605045176634
    },
    {
     "date": "2027-01-11",
-    "rules": 0.12355551800747916,
-    "market": 0.14064516129032256,
-    "blend": 0.1303913753206165
+    "rules": 0.12101531209838766,
+    "market": 0.13303857772703093,
+    "blend": 0.12582461834984496
    },
    {
     "date": "2027-01-12",
-    "rules": 0.1268374815114783,
-    "market": 0.14411290322580644,
-    "blend": 0.13374765019720955
+    "rules": 0.1243067877429246,
+    "market": 0.13701164884067937,
+    "blend": 0.1293887321820265
    },
    {
     "date": "2027-01-13",
-    "rules": 0.13011944501547745,
-    "market": 0.14758064516129032,
-    "blend": 0.1371039250738026
+    "rules": 0.12759826338746152,
+    "market": 0.14098471995432782,
+    "blend": 0.13295284601420804
    },
    {
     "date": "2027-01-14",
-    "rules": 0.1334014085194766,
-    "market": 0.15104838709677418,
-    "blend": 0.14046019995039563
+    "rules": 0.13088973903199846,
+    "market": 0.14495779106797627,
+    "blend": 0.13651695984638956
    },
    {
     "date": "2027-01-15",
-    "rules": 0.13668337202347575,
-    "market": 0.15451612903225806,
-    "blend": 0.14381647482698867
+    "rules": 0.1341812146765354,
+    "market": 0.14893086218162474,
+    "blend": 0.14008107367857114
    },
    {
     "date": "2027-01-16",
-    "rules": 0.13783205924987546,
-    "market": 0.1579838709677419,
-    "blend": 0.14589278393702204
+    "rules": 0.13533323115212334,
+    "market": 0.1529039332952732,
+    "blend": 0.14236151200938327
    },
    {
     "date": "2027-01-17",
-    "rules": 0.13898074647627517,
-    "market": 0.1614516129032258,
-    "blend": 0.1479690930470554
+    "rules": 0.13648524762771128,
+    "market": 0.15687700440892163,
+    "blend": 0.14464195034019542
    },
    {
     "date": "2027-01-18",
-    "rules": 0.14226270998027432,
-    "market": 0.16491935483870968,
-    "blend": 0.15132536792364845
+    "rules": 0.13977672327224822,
+    "market": 0.16085007552257008,
+    "blend": 0.14820606417237697
    },
    {
     "date": "2027-01-19",
-    "rules": 0.14554467348427347,
-    "market": 0.16838709677419356,
-    "blend": 0.1546816428002415
+    "rules": 0.14306819891678516,
+    "market": 0.16482314663621855,
+    "blend": 0.1517701780045585
    },
    {
     "date": "2027-01-20",
-    "rules": 0.14882663698827261,
-    "market": 0.1718548387096774,
-    "blend": 0.15803791767683453
+    "rules": 0.1463596745613221,
+    "market": 0.168796217749867,
+    "blend": 0.15533429183674005
    },
    {
     "date": "2027-01-21",
-    "rules": 0.15210860049227176,
-    "market": 0.17532258064516126,
-    "blend": 0.16139419255342757
+    "rules": 0.14965115020585903,
+    "market": 0.17276928886351545,
+    "blend": 0.1588984056689216
    },
    {
     "date": "2027-01-22",
-    "rules": 0.1553905639962709,
-    "market": 0.17879032258064514,
-    "blend": 0.1647504674300206
+    "rules": 0.15294262585039597,
+    "market": 0.17674235997716392,
+    "blend": 0.16246251950110313
    },
    {
     "date": "2027-01-23",
-    "rules": 0.15653925122267062,
-    "market": 0.18225806451612903,
-    "blend": 0.16682677654005398
+    "rules": 0.1540946423259839,
+    "market": 0.18071543109081237,
+    "blend": 0.16474295783191528
    },
    {
     "date": "2027-01-24",
-    "rules": 0.15768793844907034,
-    "market": 0.1857258064516129,
-    "blend": 0.16890308565008738
+    "rules": 0.15524665880157185,
+    "market": 0.1846885022044608,
+    "blend": 0.16702339616272743
    },
    {
     "date": "2027-01-25",
-    "rules": 0.16096990195306948,
-    "market": 0.18919354838709676,
-    "blend": 0.1722593605266804
+    "rules": 0.15853813444610879,
+    "market": 0.18866157331810926,
+    "blend": 0.17058750999490896
    },
    {
     "date": "2027-01-26",
-    "rules": 0.16425186545706863,
-    "market": 0.19266129032258064,
-    "blend": 0.17561563540327343
+    "rules": 0.16182961009064573,
+    "market": 0.19263464443175773,
+    "blend": 0.17415162382709054
    },
    {
     "date": "2027-01-27",
-    "rules": 0.16753382896106778,
-    "market": 0.1961290322580645,
-    "blend": 0.17897191027986648
+    "rules": 0.16512108573518267,
+    "market": 0.19660771554540618,
+    "blend": 0.17771573765927207
    },
    {
     "date": "2027-01-28",
-    "rules": 0.17081579246506692,
-    "market": 0.19959677419354838,
-    "blend": 0.1823281851564595
+    "rules": 0.1684125613797196,
+    "market": 0.20058078665905463,
+    "blend": 0.1812798514914536
    },
    {
     "date": "2027-01-29",
-    "rules": 0.17409775596906607,
-    "market": 0.20306451612903226,
-    "blend": 0.18568446003305256
+    "rules": 0.17170403702425655,
+    "market": 0.20455385777270307,
+    "blend": 0.18484396532363517
    },
    {
     "date": "2027-01-30",
-    "rules": 0.17524644319546578,
-    "market": 0.20653225806451614,
-    "blend": 0.18776076914308593
+    "rules": 0.17285605349984448,
+    "market": 0.20852692888635155,
+    "blend": 0.18712440365444732
    },
    {
     "date": "2027-01-31",
-    "rules": 0.1763951304218655,
-    "market": 0.21,
-    "blend": 0.1898370782531193
+    "rules": 0.17400806997543242,
+    "market": 0.2125,
+    "blend": 0.18940484198525945
    },
    {
     "date": "2027-02-01",
-    "rules": 0.18067751701151352,
-    "market": 0.2151785714285714,
-    "blend": 0.1944779387783367
+    "rules": 0.17830286823968566,
+    "market": 0.2175892857142857,
+    "blend": 0.1940174352295257
    },
    {
     "date": "2027-02-02",
-    "rules": 0.18495990360116155,
-    "market": 0.22035714285714286,
-    "blend": 0.19911879930355408
+    "rules": 0.1825976665039389,
+    "market": 0.22267857142857142,
+    "blend": 0.1986300284737919
    },
    {
     "date": "2027-02-03",
-    "rules": 0.18924229019080957,
-    "market": 0.22553571428571428,
-    "blend": 0.20375965982877145
+    "rules": 0.18689246476819216,
+    "market": 0.22776785714285713,
+    "blend": 0.20324262171805815
    },
    {
     "date": "2027-02-04",
-    "rules": 0.1935246767804576,
-    "market": 0.2307142857142857,
-    "blend": 0.20840052035398884
+    "rules": 0.1911872630324454,
+    "market": 0.23285714285714285,
+    "blend": 0.20785521496232437
    },
    {
     "date": "2027-02-05",
-    "rules": 0.19780706337010562,
-    "market": 0.23589285714285713,
-    "blend": 0.2130413808792062
+    "rules": 0.19548206129669865,
+    "market": 0.23794642857142856,
+    "blend": 0.2124678082065906
    },
    {
     "date": "2027-02-06",
-    "rules": 0.19930589867648243,
-    "market": 0.24107142857142855,
-    "blend": 0.21601211063446088
+    "rules": 0.1969852406891873,
+    "market": 0.24303571428571427,
+    "blend": 0.2154054301277981
    },
    {
     "date": "2027-02-07",
-    "rules": 0.20080473398285925,
-    "market": 0.24625,
-    "blend": 0.21898284038971555
+    "rules": 0.19848842008167594,
+    "market": 0.24812499999999998,
+    "blend": 0.21834305204900556
    },
    {
     "date": "2027-02-08",
-    "rules": 0.20508712057250728,
-    "market": 0.25142857142857145,
-    "blend": 0.22362370091493294
+    "rules": 0.2027832183459292,
+    "market": 0.2532142857142857,
+    "blend": 0.2229556452932718
    },
    {
     "date": "2027-02-09",
-    "rules": 0.2093695071621553,
-    "market": 0.25660714285714287,
-    "blend": 0.2282645614401503
+    "rules": 0.20707801661018244,
+    "market": 0.2583035714285714,
+    "blend": 0.22756823853753802
    },
    {
     "date": "2027-02-10",
-    "rules": 0.21365189375180332,
-    "market": 0.2617857142857143,
-    "blend": 0.23290542196536773
+    "rules": 0.21137281487443568,
+    "market": 0.26339285714285715,
+    "blend": 0.23218083178180426
    },
    {
     "date": "2027-02-11",
-    "rules": 0.21793428034145135,
-    "market": 0.2669642857142857,
-    "blend": 0.2375462824905851
+    "rules": 0.21566761313868893,
+    "market": 0.26848214285714284,
+    "blend": 0.23679342502607048
    },
    {
     "date": "2027-02-12",
-    "rules": 0.22221666693109937,
-    "market": 0.27214285714285713,
-    "blend": 0.24218714301580246
+    "rules": 0.21996241140294218,
+    "market": 0.2735714285714286,
+    "blend": 0.24140601827033673
    },
    {
     "date": "2027-02-13",
-    "rules": 0.2237155022374762,
-    "market": 0.27732142857142855,
-    "blend": 0.24515787277105713
+    "rules": 0.22146559079543082,
+    "market": 0.27866071428571426,
+    "blend": 0.2443436401915442
    },
    {
     "date": "2027-02-14",
-    "rules": 0.225214337543853,
-    "market": 0.2825,
-    "blend": 0.24812860252631178
+    "rules": 0.22296877018791947,
+    "market": 0.28375,
+    "blend": 0.2472812621127517
    },
    {
     "date": "2027-02-15",
-    "rules": 0.22949672413350103,
-    "market": 0.2876785714285714,
-    "blend": 0.2527694630515292
+    "rules": 0.22726356845217272,
+    "market": 0.2888392857142857,
+    "blend": 0.2518938553570179
    },
    {
     "date": "2027-02-16",
-    "rules": 0.23377911072314905,
-    "market": 0.2928571428571428,
-    "blend": 0.25741032357674654
+    "rules": 0.23155836671642596,
+    "market": 0.29392857142857143,
+    "blend": 0.25650644860128413
    },
    {
     "date": "2027-02-17",
-    "rules": 0.23806149731279708,
-    "market": 0.2980357142857143,
-    "blend": 0.26205118410196393
+    "rules": 0.2358531649806792,
+    "market": 0.2990178571428571,
+    "blend": 0.26111904184555035
    },
    {
     "date": "2027-02-18",
-    "rules": 0.2423438839024451,
-    "market": 0.3032142857142857,
-    "blend": 0.2666920446271813
+    "rules": 0.24014796324493246,
+    "market": 0.30410714285714285,
+    "blend": 0.2657316350898166
    },
    {
     "date": "2027-02-19",
-    "rules": 0.24662627049209312,
-    "market": 0.30839285714285714,
-    "blend": 0.2713329051523987
+    "rules": 0.2444427615091857,
+    "market": 0.3091964285714286,
+    "blend": 0.2703442283340829
    },
    {
     "date": "2027-02-20",
-    "rules": 0.24812510579846994,
-    "market": 0.31357142857142856,
-    "blend": 0.2743036349076534
+    "rules": 0.24594594090167435,
+    "market": 0.3142857142857143,
+    "blend": 0.27328185025529034
    },
    {
     "date": "2027-02-21",
-    "rules": 0.24962394110484676,
-    "market": 0.31875,
-    "blend": 0.27727436466290806
+    "rules": 0.247449120294163,
+    "market": 0.31937499999999996,
+    "blend": 0.2762194721764978
    },
    {
     "date": "2027-02-22",
-    "rules": 0.2539063276944948,
-    "market": 0.3239285714285714,
-    "blend": 0.2819152251881254
+    "rules": 0.2517439185584162,
+    "market": 0.3244642857142857,
+    "blend": 0.280832065420764
    },
    {
     "date": "2027-02-23",
-    "rules": 0.2581887142841428,
-    "market": 0.3291071428571428,
-    "blend": 0.2865560857133428
+    "rules": 0.25603871682266943,
+    "market": 0.3295535714285714,
+    "blend": 0.2854446586650302
    },
    {
     "date": "2027-02-24",
-    "rules": 0.26247110087379083,
-    "market": 0.3342857142857143,
-    "blend": 0.2911969462385602
+    "rules": 0.26033351508692265,
+    "market": 0.33464285714285713,
+    "blend": 0.29005725190929643
    },
    {
     "date": "2027-02-25",
-    "rules": 0.26675348746343885,
-    "market": 0.33946428571428566,
-    "blend": 0.2958378067637776
+    "rules": 0.26462831335117587,
+    "market": 0.3397321428571428,
+    "blend": 0.29466984515356265
    },
    {
     "date": "2027-02-26",
-    "rules": 0.2710358740530869,
-    "market": 0.34464285714285714,
-    "blend": 0.30047866728899497
+    "rules": 0.2689231116154291,
+    "market": 0.34482142857142856,
+    "blend": 0.29928243839782886
    },
    {
     "date": "2027-02-27",
-    "rules": 0.27253470935946367,
-    "market": 0.34982142857142856,
-    "blend": 0.3034493970442496
+    "rules": 0.2704262910079177,
+    "market": 0.3499107142857143,
+    "blend": 0.30222006031903637
    },
    {
     "date": "2027-02-28",
-    "rules": 0.27403354466584046,
+    "rules": 0.2719294704004063,
     "market": 0.355,
-    "blend": 0.30642012679950426
+    "blend": 0.30515768224024375
    },
    {
     "date": "2027-03-01",
-    "rules": 0.2775953655228938,
-    "market": 0.35854838709677417,
-    "blend": 0.30997657415244595
+    "rules": 0.2755016145107565,
+    "market": 0.35838709677419356,
+    "blend": 0.3086558074161313
    },
    {
     "date": "2027-03-02",
-    "rules": 0.2811571863799472,
-    "market": 0.36209677419354835,
-    "blend": 0.31353302150538764
+    "rules": 0.27907375862110667,
+    "market": 0.3617741935483871,
+    "blend": 0.31215393259201885
    },
    {
     "date": "2027-03-03",
-    "rules": 0.28471900723700055,
-    "market": 0.36564516129032254,
-    "blend": 0.31708946885832934
+    "rules": 0.28264590273145684,
+    "market": 0.36516129032258066,
+    "blend": 0.3156520577679064
    },
    {
     "date": "2027-03-04",
-    "rules": 0.2882808280940539,
-    "market": 0.3691935483870968,
-    "blend": 0.32064591621127103
+    "rules": 0.286218046841807,
+    "market": 0.3685483870967742,
+    "blend": 0.3191501829437939
    },
    {
     "date": "2027-03-05",
-    "rules": 0.2918426489511073,
-    "market": 0.37274193548387097,
-    "blend": 0.3242023635642127
+    "rules": 0.2897901909521572,
+    "market": 0.37193548387096775,
+    "blend": 0.3226483081196814
    },
    {
     "date": "2027-03-06",
-    "rules": 0.29308928625107594,
-    "market": 0.37629032258064515,
-    "blend": 0.3263697007829036
+    "rules": 0.2910404413907797,
+    "market": 0.3753225806451613,
+    "blend": 0.3247532970925323
    },
    {
     "date": "2027-03-07",
-    "rules": 0.2943359235510446,
-    "market": 0.37983870967741934,
-    "blend": 0.3285370380015945
+    "rules": 0.29229069182940226,
+    "market": 0.37870967741935485,
+    "blend": 0.3268582860653833
    },
    {
     "date": "2027-03-08",
-    "rules": 0.29789774440809796,
-    "market": 0.3833870967741935,
-    "blend": 0.3320934853545362
+    "rules": 0.29586283593975243,
+    "market": 0.38209677419354837,
+    "blend": 0.3303564112412708
    },
    {
     "date": "2027-03-09",
-    "rules": 0.30145956526515133,
-    "market": 0.38693548387096777,
-    "blend": 0.3356499327074779
+    "rules": 0.2994349800501026,
+    "market": 0.38548387096774195,
+    "blend": 0.33385453641715834
    },
    {
     "date": "2027-03-10",
-    "rules": 0.3050213861222047,
-    "market": 0.39048387096774195,
-    "blend": 0.3392063800604196
+    "rules": 0.3030071241604528,
+    "market": 0.3888709677419355,
+    "blend": 0.3373526615930459
    },
    {
     "date": "2027-03-11",
-    "rules": 0.30858320697925806,
-    "market": 0.39403225806451614,
-    "blend": 0.3427628274133613
+    "rules": 0.30657926827080295,
+    "market": 0.39225806451612905,
+    "blend": 0.34085078676893343
    },
    {
     "date": "2027-03-12",
-    "rules": 0.31214502783631143,
-    "market": 0.3975806451612903,
-    "blend": 0.346319274766303
+    "rules": 0.3101514123811531,
+    "market": 0.39564516129032257,
+    "blend": 0.34434891194482087
    },
    {
     "date": "2027-03-13",
-    "rules": 0.3133916651362801,
-    "market": 0.4011290322580645,
-    "blend": 0.34848661198499387
+    "rules": 0.31140166281977566,
+    "market": 0.39903225806451614,
+    "blend": 0.3464539009176718
    },
    {
     "date": "2027-03-14",
-    "rules": 0.31463830243624874,
-    "market": 0.4046774193548387,
-    "blend": 0.35065394920368476
+    "rules": 0.3126519132583982,
+    "market": 0.4024193548387097,
+    "blend": 0.34855888989052286
    },
    {
     "date": "2027-03-15",
-    "rules": 0.3182001232933021,
-    "market": 0.4082258064516129,
-    "blend": 0.35421039655662645
+    "rules": 0.31622405736874837,
+    "market": 0.40580645161290324,
+    "blend": 0.3520570150664103
    },
    {
     "date": "2027-03-16",
-    "rules": 0.3217619441503555,
-    "market": 0.41177419354838707,
-    "blend": 0.35776684390956814
+    "rules": 0.31979620147909854,
+    "market": 0.4091935483870968,
+    "blend": 0.35555514024229784
    },
    {
     "date": "2027-03-17",
-    "rules": 0.32532376500740884,
-    "market": 0.4153225806451613,
-    "blend": 0.36132329126250984
+    "rules": 0.3233683455894487,
+    "market": 0.41258064516129034,
+    "blend": 0.3590532654181854
    },
    {
     "date": "2027-03-18",
-    "rules": 0.3288855858644622,
-    "market": 0.4188709677419355,
-    "blend": 0.36487973861545153
+    "rules": 0.3269404896997989,
+    "market": 0.4159677419354839,
+    "blend": 0.36255139059407293
    },
    {
     "date": "2027-03-19",
-    "rules": 0.33244740672151557,
-    "market": 0.4224193548387097,
-    "blend": 0.3684361859683932
+    "rules": 0.33051263381014906,
+    "market": 0.4193548387096775,
+    "blend": 0.3660495157699605
    },
    {
     "date": "2027-03-20",
-    "rules": 0.3336940440214842,
-    "market": 0.42596774193548387,
-    "blend": 0.3706035231870841
+    "rules": 0.3317628842487716,
+    "market": 0.422741935483871,
+    "blend": 0.36815450474281136
    },
    {
     "date": "2027-03-21",
-    "rules": 0.3349406813214529,
-    "market": 0.42951612903225805,
-    "blend": 0.37277086040577495
+    "rules": 0.33301313468739413,
+    "market": 0.42612903225806453,
+    "blend": 0.3702594937156623
    },
    {
     "date": "2027-03-22",
-    "rules": 0.33850250217850625,
-    "market": 0.4330645161290323,
-    "blend": 0.3763273077587167
+    "rules": 0.3365852787977443,
+    "market": 0.4295161290322581,
+    "blend": 0.3737576188915498
    },
    {
     "date": "2027-03-23",
-    "rules": 0.3420643230355596,
-    "market": 0.4366129032258065,
-    "blend": 0.3798837551116584
+    "rules": 0.3401574229080945,
+    "market": 0.4329032258064517,
+    "blend": 0.37725574406743734
    },
    {
     "date": "2027-03-24",
-    "rules": 0.345626143892613,
-    "market": 0.44016129032258067,
-    "blend": 0.3834402024646001
+    "rules": 0.34372956701844465,
+    "market": 0.4362903225806452,
+    "blend": 0.3807538692433249
    },
    {
     "date": "2027-03-25",
-    "rules": 0.34918796474966635,
-    "market": 0.44370967741935485,
-    "blend": 0.3869966498175418
+    "rules": 0.3473017111287948,
+    "market": 0.4396774193548387,
+    "blend": 0.38425199441921243
    },
    {
     "date": "2027-03-26",
-    "rules": 0.3527497856067197,
-    "market": 0.44725806451612904,
-    "blend": 0.3905530971704835
+    "rules": 0.350873855239145,
+    "market": 0.4430645161290323,
+    "blend": 0.3877501195950999
    },
    {
     "date": "2027-03-27",
-    "rules": 0.35399642290668837,
-    "market": 0.4508064516129032,
-    "blend": 0.3927204343891743
+    "rules": 0.35212410567776753,
+    "market": 0.4464516129032259,
+    "blend": 0.38985510856795086
    },
    {
     "date": "2027-03-28",
-    "rules": 0.355243060206657,
-    "market": 0.4543548387096774,
-    "blend": 0.39488777160786515
+    "rules": 0.35337435611639006,
+    "market": 0.4498387096774194,
+    "blend": 0.3919600975408018
    },
    {
     "date": "2027-03-29",
-    "rules": 0.3588048810637104,
-    "market": 0.4579032258064516,
-    "blend": 0.3984442189608069
+    "rules": 0.35694650022674024,
+    "market": 0.453225806451613,
+    "blend": 0.39545822271668934
    },
    {
     "date": "2027-03-30",
-    "rules": 0.36236670192076376,
-    "market": 0.46145161290322584,
-    "blend": 0.40200066631374864
+    "rules": 0.3605186443370904,
+    "market": 0.4566129032258065,
+    "blend": 0.39895634789257683
    },
    {
     "date": "2027-03-31",
-    "rules": 0.3659285227778171,
-    "market": 0.465,
-    "blend": 0.4055571136666903
+    "rules": 0.3640907884474406,
+    "market": 0.4600000000000001,
+    "blend": 0.4024544730684644
    },
    {
     "date": "2027-04-01",
-    "rules": 0.3689391949437841,
-    "market": 0.46825,
-    "blend": 0.40866351696627046
+    "rules": 0.36711018646813476,
+    "market": 0.4631666666666667,
+    "blend": 0.40553277854754755
    },
    {
     "date": "2027-04-02",
-    "rules": 0.37194986710975103,
-    "market": 0.47150000000000003,
-    "blend": 0.41176992026585063
+    "rules": 0.37012958448882893,
+    "market": 0.46633333333333343,
+    "blend": 0.4086110840266307
    },
    {
     "date": "2027-04-03",
-    "rules": 0.37300360236783947,
-    "market": 0.47475,
-    "blend": 0.4137021614207037
+    "rules": 0.3711863737960719,
+    "market": 0.4695000000000001,
+    "blend": 0.4105118242776432
    },
    {
     "date": "2027-04-04",
-    "rules": 0.3740573376259279,
-    "market": 0.47800000000000004,
-    "blend": 0.4156344025755568
+    "rules": 0.37224316310331484,
+    "market": 0.47266666666666673,
+    "blend": 0.4124125645286556
    },
    {
     "date": "2027-04-05",
-    "rules": 0.37706800979189486,
-    "market": 0.48125,
-    "blend": 0.4187408058751369
+    "rules": 0.375262561124009,
+    "market": 0.4758333333333334,
+    "blend": 0.41549087000773877
    },
    {
     "date": "2027-04-06",
-    "rules": 0.3800786819578618,
-    "market": 0.48450000000000004,
-    "blend": 0.4218472091747171
+    "rules": 0.3782819591447032,
+    "market": 0.4790000000000001,
+    "blend": 0.41856917548682193
    },
    {
     "date": "2027-04-07",
-    "rules": 0.3830893541238288,
-    "market": 0.48775,
-    "blend": 0.4249536124742973
+    "rules": 0.38130135716539737,
+    "market": 0.48216666666666674,
+    "blend": 0.4216474809659051
    },
    {
     "date": "2027-04-08",
-    "rules": 0.38610002628979573,
-    "market": 0.491,
-    "blend": 0.4280600157738774
+    "rules": 0.38432075518609154,
+    "market": 0.4853333333333334,
+    "blend": 0.42472578644498826
    },
    {
     "date": "2027-04-09",
-    "rules": 0.3891106984557627,
-    "market": 0.49425,
-    "blend": 0.43116641907345765
+    "rules": 0.3873401532067857,
+    "market": 0.48850000000000005,
+    "blend": 0.42780409192407143
    },
    {
     "date": "2027-04-10",
-    "rules": 0.3901644337138511,
-    "market": 0.4975,
-    "blend": 0.4330986602283107
+    "rules": 0.3883969425140287,
+    "market": 0.49166666666666675,
+    "blend": 0.42970483217508393
    },
    {
     "date": "2027-04-11",
-    "rules": 0.39121816897193956,
-    "market": 0.50075,
-    "blend": 0.43503090138316375
+    "rules": 0.38945373182127163,
+    "market": 0.4948333333333334,
+    "blend": 0.4316055724260963
    },
    {
     "date": "2027-04-12",
-    "rules": 0.3942288411379065,
-    "market": 0.504,
-    "blend": 0.4381373046827439
+    "rules": 0.3924731298419658,
+    "market": 0.49800000000000005,
+    "blend": 0.4346838779051795
    },
    {
     "date": "2027-04-13",
-    "rules": 0.39723951330387347,
-    "market": 0.50725,
-    "blend": 0.44124370798232404
+    "rules": 0.39549252786266,
+    "market": 0.5011666666666668,
+    "blend": 0.43776218338426265
    },
    {
     "date": "2027-04-14",
-    "rules": 0.4002501854698404,
-    "market": 0.5105000000000001,
-    "blend": 0.44435011128190427
+    "rules": 0.39851192588335416,
+    "market": 0.5043333333333334,
+    "blend": 0.44084048886334587
    },
    {
     "date": "2027-04-15",
-    "rules": 0.4032608576358074,
-    "market": 0.51375,
-    "blend": 0.44745651458148444
+    "rules": 0.40153132390404833,
+    "market": 0.5075000000000001,
+    "blend": 0.44391879434242904
    },
    {
     "date": "2027-04-16",
-    "rules": 0.40627152980177433,
-    "market": 0.517,
-    "blend": 0.4505629178810646
+    "rules": 0.4045507219247425,
+    "market": 0.5106666666666667,
+    "blend": 0.4469970998215122
    },
    {
     "date": "2027-04-17",
-    "rules": 0.4073252650598628,
-    "market": 0.52025,
-    "blend": 0.45249515903591764
+    "rules": 0.40560751123198546,
+    "market": 0.5138333333333334,
+    "blend": 0.44889784007252465
    },
    {
     "date": "2027-04-18",
-    "rules": 0.4083790003179512,
-    "market": 0.5235,
-    "blend": 0.4544274001907707
+    "rules": 0.4066643005392284,
+    "market": 0.517,
+    "blend": 0.45079858032353703
    },
    {
     "date": "2027-04-19",
-    "rules": 0.41138967248391817,
-    "market": 0.52675,
-    "blend": 0.4575338034903509
+    "rules": 0.4096836985599226,
+    "market": 0.5201666666666667,
+    "blend": 0.4538768858026202
    },
    {
     "date": "2027-04-20",
-    "rules": 0.4144003446498851,
-    "market": 0.53,
-    "blend": 0.4606402067899311
+    "rules": 0.41270309658061677,
+    "market": 0.5233333333333334,
+    "blend": 0.4569551912817034
    },
    {
     "date": "2027-04-21",
-    "rules": 0.4174110168158521,
-    "market": 0.53325,
-    "blend": 0.46374661008951124
+    "rules": 0.41572249460131094,
+    "market": 0.5265000000000001,
+    "blend": 0.4600334967607866
    },
    {
     "date": "2027-04-22",
-    "rules": 0.42042168898181903,
-    "market": 0.5365,
-    "blend": 0.4668530133890914
+    "rules": 0.4187418926220051,
+    "market": 0.5296666666666667,
+    "blend": 0.46311180223986975
    },
    {
     "date": "2027-04-23",
-    "rules": 0.423432361147786,
-    "market": 0.53975,
-    "blend": 0.4699594166886716
+    "rules": 0.4217612906426993,
+    "market": 0.5328333333333334,
+    "blend": 0.466190107718953
    },
    {
     "date": "2027-04-24",
-    "rules": 0.4244860964058744,
-    "market": 0.543,
-    "blend": 0.4718916578435247
+    "rules": 0.42281807994994225,
+    "market": 0.536,
+    "blend": 0.46809084796996536
    },
    {
     "date": "2027-04-25",
-    "rules": 0.42553983166396286,
-    "market": 0.54625,
-    "blend": 0.47382389899837773
+    "rules": 0.4238748692571852,
+    "market": 0.5391666666666667,
+    "blend": 0.4699915882209778
    },
    {
     "date": "2027-04-26",
-    "rules": 0.4285505038299298,
-    "market": 0.5495,
-    "blend": 0.47693030229795785
+    "rules": 0.4268942672778794,
+    "market": 0.5423333333333333,
+    "blend": 0.4730698937000609
    },
    {
     "date": "2027-04-27",
-    "rules": 0.4315611759958968,
-    "market": 0.55275,
-    "blend": 0.4800367055975381
+    "rules": 0.42991366529857356,
+    "market": 0.5455000000000001,
+    "blend": 0.4761481991791442
    },
    {
     "date": "2027-04-28",
-    "rules": 0.4345718481618637,
-    "market": 0.556,
-    "blend": 0.48314310889711826
+    "rules": 0.43293306331926773,
+    "market": 0.5486666666666667,
+    "blend": 0.4792265046582273
    },
    {
     "date": "2027-04-29",
-    "rules": 0.4375825203278307,
-    "market": 0.55925,
-    "blend": 0.48624951219669843
+    "rules": 0.4359524613399619,
+    "market": 0.5518333333333334,
+    "blend": 0.4823048101373105
    },
    {
     "date": "2027-04-30",
-    "rules": 0.44059319249379764,
-    "market": 0.5625,
-    "blend": 0.48935591549627855
+    "rules": 0.4389718593606561,
+    "market": 0.555,
+    "blend": 0.4853831156163937
    },
    {
     "date": "2027-05-01",
-    "rules": 0.4414957324573974,
-    "market": 0.5625,
-    "blend": 0.4898974394744384
+    "rules": 0.43987701516290373,
+    "market": 0.555,
+    "blend": 0.48592620909774226
    },
    {
     "date": "2027-05-02",
-    "rules": 0.4423982724209972,
-    "market": 0.5625,
-    "blend": 0.4904389634525983
+    "rules": 0.4407821709651514,
+    "market": 0.555,
+    "blend": 0.4864693025790908
    },
    {
     "date": "2027-05-03",
-    "rules": 0.4449769580312823,
-    "market": 0.5625,
-    "blend": 0.4919861748187694
+    "rules": 0.4433683304001447,
+    "market": 0.555,
+    "blend": 0.4880209982400868
    },
    {
     "date": "2027-05-04",
-    "rules": 0.44755564364156736,
-    "market": 0.5625,
-    "blend": 0.49353338618494036
+    "rules": 0.44595448983513797,
+    "market": 0.555,
+    "blend": 0.4895726939010828
    },
    {
     "date": "2027-05-05",
-    "rules": 0.4501343292518524,
-    "market": 0.5625,
-    "blend": 0.49508059755111145
+    "rules": 0.44854064927013126,
+    "market": 0.555,
+    "blend": 0.49112438956207877
    },
    {
     "date": "2027-05-06",
-    "rules": 0.4527130148621375,
-    "market": 0.5625,
-    "blend": 0.49662780891728253
+    "rules": 0.45112680870512456,
+    "market": 0.555,
+    "blend": 0.49267608522307477
    },
    {
     "date": "2027-05-07",
-    "rules": 0.45529170047242257,
-    "market": 0.5625,
-    "blend": 0.4981750202834535
+    "rules": 0.45371296814011786,
+    "market": 0.555,
+    "blend": 0.4942277808840707
    },
    {
     "date": "2027-05-08",
-    "rules": 0.45619424043602236,
-    "market": 0.5625,
-    "blend": 0.4987165442616134
+    "rules": 0.4546181239423655,
+    "market": 0.555,
+    "blend": 0.49477087436541933
    },
    {
     "date": "2027-05-09",
-    "rules": 0.45709678039962215,
-    "market": 0.5625,
-    "blend": 0.49925806823977326
+    "rules": 0.45552327974461315,
+    "market": 0.555,
+    "blend": 0.4953139678467679
    },
    {
     "date": "2027-05-10",
-    "rules": 0.4596754660099072,
-    "market": 0.5625,
-    "blend": 0.5008052796059443
+    "rules": 0.45810943917960645,
+    "market": 0.555,
+    "blend": 0.4968656635077639
    },
    {
     "date": "2027-05-11",
-    "rules": 0.4622541516201923,
-    "market": 0.5625,
-    "blend": 0.5023524909721153
+    "rules": 0.46069559861459974,
+    "market": 0.555,
+    "blend": 0.49841735916875984
    },
    {
     "date": "2027-05-12",
-    "rules": 0.46483283723047736,
-    "market": 0.5625,
-    "blend": 0.5038997023382864
+    "rules": 0.46328175804959304,
+    "market": 0.555,
+    "blend": 0.49996905482975584
    },
    {
     "date": "2027-05-13",
-    "rules": 0.46741152284076243,
-    "market": 0.5625,
-    "blend": 0.5054469137044575
+    "rules": 0.46586791748458634,
+    "market": 0.555,
+    "blend": 0.5015207504907518
    },
    {
     "date": "2027-05-14",
-    "rules": 0.4699902084510475,
-    "market": 0.5625,
-    "blend": 0.5069941250706285
+    "rules": 0.46845407691957963,
+    "market": 0.555,
+    "blend": 0.5030724461517477
    },
    {
     "date": "2027-05-15",
-    "rules": 0.4708927484146473,
-    "market": 0.5625,
-    "blend": 0.5075356490487883
+    "rules": 0.4693592327218273,
+    "market": 0.555,
+    "blend": 0.5036155396330964
    },
    {
     "date": "2027-05-16",
-    "rules": 0.4717952883782471,
-    "market": 0.5625,
-    "blend": 0.5080771730269482
+    "rules": 0.4702643885240749,
+    "market": 0.555,
+    "blend": 0.504158633114445
    },
    {
     "date": "2027-05-17",
-    "rules": 0.47437397398853215,
-    "market": 0.5625,
-    "blend": 0.5096243843931193
+    "rules": 0.4728505479590682,
+    "market": 0.555,
+    "blend": 0.505710328775441
    },
    {
     "date": "2027-05-18",
-    "rules": 0.4769526595988172,
-    "market": 0.5625,
-    "blend": 0.5111715957592903
+    "rules": 0.4754367073940615,
+    "market": 0.555,
+    "blend": 0.507262024436437
    },
    {
     "date": "2027-05-19",
-    "rules": 0.4795313452091023,
-    "market": 0.5625,
-    "blend": 0.5127188071254614
+    "rules": 0.4780228668290548,
+    "market": 0.555,
+    "blend": 0.508813720097433
    },
    {
     "date": "2027-05-20",
-    "rules": 0.48211003081938736,
-    "market": 0.5625,
-    "blend": 0.5142660184916324
+    "rules": 0.4806090262640481,
+    "market": 0.555,
+    "blend": 0.5103654157584289
    },
    {
     "date": "2027-05-21",
-    "rules": 0.48468871642967243,
-    "market": 0.5625,
-    "blend": 0.5158132298578034
+    "rules": 0.4831951856990414,
+    "market": 0.555,
+    "blend": 0.5119171114194249
    },
    {
     "date": "2027-05-22",
-    "rules": 0.4855912563932722,
-    "market": 0.5625,
-    "blend": 0.5163547538359633
+    "rules": 0.48410034150128906,
+    "market": 0.555,
+    "blend": 0.5124602049007734
    },
    {
     "date": "2027-05-23",
-    "rules": 0.486493796356872,
-    "market": 0.5625,
-    "blend": 0.5168962778141232
+    "rules": 0.4850054973035367,
+    "market": 0.555,
+    "blend": 0.513003298382122
    },
    {
     "date": "2027-05-24",
-    "rules": 0.4890724819671571,
-    "market": 0.5625,
-    "blend": 0.5184434891802943
+    "rules": 0.48759165673853,
+    "market": 0.555,
+    "blend": 0.514554994043118
    },
    {
     "date": "2027-05-25",
-    "rules": 0.49165116757744215,
-    "market": 0.5625,
-    "blend": 0.5199907005464652
+    "rules": 0.4901778161735233,
+    "market": 0.555,
+    "blend": 0.516106689704114
    },
    {
     "date": "2027-05-26",
-    "rules": 0.4942298531877272,
-    "market": 0.5625,
-    "blend": 0.5215379119126363
+    "rules": 0.4927639756085166,
+    "market": 0.555,
+    "blend": 0.51765838536511
    },
    {
     "date": "2027-05-27",
-    "rules": 0.4968085387980123,
-    "market": 0.5625,
-    "blend": 0.5230851232788074
+    "rules": 0.4953501350435099,
+    "market": 0.555,
+    "blend": 0.519210081026106
    },
    {
     "date": "2027-05-28",
-    "rules": 0.49938722440829736,
-    "market": 0.5625,
-    "blend": 0.5246323346449784
+    "rules": 0.4979362944785032,
+    "market": 0.555,
+    "blend": 0.520761776687102
    },
    {
     "date": "2027-05-29",
-    "rules": 0.5002897643718971,
-    "market": 0.5625,
-    "blend": 0.5251738586231383
+    "rules": 0.49884145028075083,
+    "market": 0.555,
+    "blend": 0.5213048701684505
    },
    {
     "date": "2027-05-30",
-    "rules": 0.5011923043354969,
-    "market": 0.5625,
-    "blend": 0.5257153826012981
+    "rules": 0.4997466060829985,
+    "market": 0.555,
+    "blend": 0.5218479636497991
    },
    {
     "date": "2027-05-31",
-    "rules": 0.503770989945782,
-    "market": 0.5625,
-    "blend": 0.5272625939674692
+    "rules": 0.5023327655179918,
+    "market": 0.555,
+    "blend": 0.523399659310795
    },
    {
     "date": "2027-06-01",
-    "rules": 0.5058553014452976,
-    "market": 0.5625,
-    "blend": 0.5285131808671786
+    "rules": 0.504423117993857,
+    "market": 0.555,
+    "blend": 0.5246538707963142
    },
    {
     "date": "2027-06-02",
-    "rules": 0.5079396129448132,
-    "market": 0.5625,
-    "blend": 0.5297637677668879
+    "rules": 0.5065134704697222,
+    "market": 0.555,
+    "blend": 0.5259080822818334
    },
    {
     "date": "2027-06-03",
-    "rules": 0.5100239244443288,
-    "market": 0.5625,
-    "blend": 0.5310143546665973
+    "rules": 0.5086038229455874,
+    "market": 0.555,
+    "blend": 0.5271622937673525
    },
    {
     "date": "2027-06-04",
-    "rules": 0.5121082359438444,
-    "market": 0.5625,
-    "blend": 0.5322649415663067
+    "rules": 0.5106941754214526,
+    "market": 0.555,
+    "blend": 0.5284165052528715
    },
    {
     "date": "2027-06-05",
-    "rules": 0.5128377449686748,
-    "market": 0.5625,
-    "blend": 0.532702646981205
+    "rules": 0.5114257987880054,
+    "market": 0.555,
+    "blend": 0.5288554792728033
    },
    {
     "date": "2027-06-06",
-    "rules": 0.5135672539935053,
-    "market": 0.5625,
-    "blend": 0.5331403523961032
+    "rules": 0.5121574221545583,
+    "market": 0.555,
+    "blend": 0.5292944532927351
    },
    {
     "date": "2027-06-07",
-    "rules": 0.5156515654930209,
-    "market": 0.5625,
-    "blend": 0.5343909392958126
+    "rules": 0.5142477746304235,
+    "market": 0.555,
+    "blend": 0.5305486647782541
    },
    {
     "date": "2027-06-08",
-    "rules": 0.5177358769925365,
-    "market": 0.5625,
-    "blend": 0.535641526195522
+    "rules": 0.5163381271062887,
+    "market": 0.555,
+    "blend": 0.5318028762637732
    },
    {
     "date": "2027-06-09",
-    "rules": 0.5198201884920521,
-    "market": 0.5625,
-    "blend": 0.5368921130952313
+    "rules": 0.5184284795821539,
+    "market": 0.555,
+    "blend": 0.5330570877492924
    },
    {
     "date": "2027-06-10",
-    "rules": 0.5219044999915677,
-    "market": 0.5625,
-    "blend": 0.5381426999949407
+    "rules": 0.5205188320580191,
+    "market": 0.555,
+    "blend": 0.5343112992348115
    },
    {
     "date": "2027-06-11",
-    "rules": 0.5239888114910833,
-    "market": 0.5625,
-    "blend": 0.53939328689465
+    "rules": 0.5226091845338843,
+    "market": 0.555,
+    "blend": 0.5355655107203305
    },
    {
     "date": "2027-06-12",
-    "rules": 0.5247183205159138,
-    "market": 0.5625,
-    "blend": 0.5398309923095483
+    "rules": 0.5233408079004371,
+    "market": 0.555,
+    "blend": 0.5360044847402623
    },
    {
     "date": "2027-06-13",
-    "rules": 0.5254478295407443,
-    "market": 0.5625,
-    "blend": 0.5402686977244466
+    "rules": 0.52407243126699,
+    "market": 0.555,
+    "blend": 0.5364434587601941
    },
    {
     "date": "2027-06-14",
-    "rules": 0.5275321410402599,
-    "market": 0.5625,
-    "blend": 0.541519284624156
+    "rules": 0.5261627837428552,
+    "market": 0.555,
+    "blend": 0.5376976702457131
    },
    {
     "date": "2027-06-15",
-    "rules": 0.5296164525397755,
-    "market": 0.5625,
-    "blend": 0.5427698715238654
+    "rules": 0.5282531362187204,
+    "market": 0.555,
+    "blend": 0.5389518817312322
    },
    {
     "date": "2027-06-16",
-    "rules": 0.5317007640392911,
-    "market": 0.5625,
-    "blend": 0.5440204584235747
+    "rules": 0.5303434886945856,
+    "market": 0.555,
+    "blend": 0.5402060932167514
    },
    {
     "date": "2027-06-17",
-    "rules": 0.5337850755388067,
-    "market": 0.5625,
-    "blend": 0.5452710453232841
+    "rules": 0.5324338411704508,
+    "market": 0.555,
+    "blend": 0.5414603047022705
    },
    {
     "date": "2027-06-18",
-    "rules": 0.5358693870383223,
-    "market": 0.5625,
-    "blend": 0.5465216322229934
+    "rules": 0.534524193646316,
+    "market": 0.555,
+    "blend": 0.5427145161877895
    },
    {
     "date": "2027-06-19",
-    "rules": 0.5365988960631528,
-    "market": 0.5625,
-    "blend": 0.5469593376378917
+    "rules": 0.5352558170128688,
+    "market": 0.555,
+    "blend": 0.5431534902077213
    },
    {
     "date": "2027-06-20",
-    "rules": 0.5373284050879833,
-    "market": 0.5625,
-    "blend": 0.54739704305279
+    "rules": 0.5359874403794217,
+    "market": 0.555,
+    "blend": 0.5435924642276531
    },
    {
     "date": "2027-06-21",
-    "rules": 0.5394127165874989,
-    "market": 0.5625,
-    "blend": 0.5486476299524994
+    "rules": 0.5380777928552869,
+    "market": 0.555,
+    "blend": 0.5448466757131721
    },
    {
     "date": "2027-06-22",
-    "rules": 0.5414970280870145,
-    "market": 0.5625,
-    "blend": 0.5498982168522087
+    "rules": 0.5401681453311521,
+    "market": 0.555,
+    "blend": 0.5461008871986912
    },
    {
     "date": "2027-06-23",
-    "rules": 0.5435813395865301,
-    "market": 0.5625,
-    "blend": 0.5511488037519181
+    "rules": 0.5422584978070173,
+    "market": 0.555,
+    "blend": 0.5473550986842104
    },
    {
     "date": "2027-06-24",
-    "rules": 0.5456656510860457,
-    "market": 0.5625,
-    "blend": 0.5523993906516275
+    "rules": 0.5443488502828825,
+    "market": 0.555,
+    "blend": 0.5486093101697296
    },
    {
     "date": "2027-06-25",
-    "rules": 0.5477499625855613,
-    "market": 0.5625,
-    "blend": 0.5536499775513368
+    "rules": 0.5464392027587477,
+    "market": 0.555,
+    "blend": 0.5498635216552487
    },
    {
     "date": "2027-06-26",
-    "rules": 0.5484794716103918,
-    "market": 0.5625,
-    "blend": 0.5540876829662351
+    "rules": 0.5471708261253005,
+    "market": 0.555,
+    "blend": 0.5503024956751803
    },
    {
     "date": "2027-06-27",
-    "rules": 0.5492089806352223,
-    "market": 0.5625,
-    "blend": 0.5545253883811334
+    "rules": 0.5479024494918534,
+    "market": 0.555,
+    "blend": 0.5507414696951121
    },
    {
     "date": "2027-06-28",
-    "rules": 0.5512932921347379,
-    "market": 0.5625,
-    "blend": 0.5557759752808428
+    "rules": 0.5499928019677186,
+    "market": 0.555,
+    "blend": 0.5519956811806312
    },
    {
     "date": "2027-06-29",
-    "rules": 0.5533776036342535,
-    "market": 0.5625,
-    "blend": 0.5570265621805521
+    "rules": 0.5520831544435838,
+    "market": 0.555,
+    "blend": 0.5532498926661503
    },
    {
     "date": "2027-06-30",
-    "rules": 0.5554619151337691,
-    "market": 0.5625,
-    "blend": 0.5582771490802615
+    "rules": 0.554173506919449,
+    "market": 0.555,
+    "blend": 0.5545041041516694
    }
   ],
   "months": [
    {
     "date": "2026-11-30",
     "label": "Nov 2026",
-    "rules": 0.03280922712190271,
+    "rules": 0.030006010526941396,
     "market": 0.045,
-    "blend": 0.037685536273141626
+    "blend": 0.03600360631616484
    },
    {
     "date": "2026-12-31",
     "label": "Dec 2026",
-    "rules": 0.09598702457388633,
-    "market": 0.1025,
-    "blend": 0.0985922147443318
+    "rules": 0.09336691668427739,
+    "market": 0.08933479547689792,
+    "blend": 0.0917540682013256
    },
    {
     "date": "2027-01-31",
     "label": "Jan 2027",
-    "rules": 0.1763951304218655,
-    "market": 0.21,
-    "blend": 0.1898370782531193
+    "rules": 0.17400806997543242,
+    "market": 0.2125,
+    "blend": 0.18940484198525945
    },
    {
     "date": "2027-02-28",
     "label": "Feb 2027",
-    "rules": 0.27403354466584046,
+    "rules": 0.2719294704004063,
     "market": 0.355,
-    "blend": 0.30642012679950426
+    "blend": 0.30515768224024375
    },
    {
     "date": "2027-03-31",
     "label": "Mar 2027",
-    "rules": 0.3659285227778171,
-    "market": 0.465,
-    "blend": 0.4055571136666903
+    "rules": 0.3640907884474406,
+    "market": 0.4600000000000001,
+    "blend": 0.4024544730684644
    },
    {
     "date": "2027-04-30",
     "label": "Apr 2027",
-    "rules": 0.44059319249379764,
-    "market": 0.5625,
-    "blend": 0.48935591549627855
+    "rules": 0.4389718593606561,
+    "market": 0.555,
+    "blend": 0.4853831156163937
    },
    {
     "date": "2027-05-31",
     "label": "May 2027",
-    "rules": 0.503770989945782,
-    "market": 0.5625,
-    "blend": 0.5272625939674692
+    "rules": 0.5023327655179918,
+    "market": 0.555,
+    "blend": 0.523399659310795
    },
    {
     "date": "2027-06-30",
     "label": "Jun 2027",
-    "rules": 0.5554619151337691,
-    "market": 0.5625,
-    "blend": 0.5582771490802615
+    "rules": 0.554173506919449,
+    "market": 0.555,
+    "blend": 0.5545041041516694
    }
   ],
   "opex": [
    {
     "date": "2026-11-20",
     "listed": true,
-    "iv": 55.3,
-    "rules": 0.020229523458582505,
-    "market": 0.02625,
-    "blend": 0.0226377140751495
+    "iv": 65.4,
+    "rules": 0.017389847009931944,
+    "market": 0.023571428571428573,
+    "blend": 0.019862479634530597
    },
    {
     "date": "2026-12-18",
     "listed": true,
-    "iv": 52.1,
-    "rules": 0.07268741132918316,
-    "market": 0.07838709677419355,
-    "blend": 0.07496728550718731
+    "iv": 55.3,
+    "rules": 0.06999977398795493,
+    "market": 0.07074278447045686,
+    "blend": 0.0702969781809557
    },
    {
     "date": "2027-01-15",
     "listed": true,
-    "iv": 51.0,
-    "rules": 0.13668337202347575,
-    "market": 0.15451612903225806,
-    "blend": 0.14381647482698867
+    "iv": 53.8,
+    "rules": 0.1341812146765354,
+    "market": 0.14893086218162474,
+    "blend": 0.14008107367857114
    },
    {
     "date": "2027-02-19",
     "listed": true,
-    "iv": 51.7,
-    "rules": 0.24662627049209312,
-    "market": 0.30839285714285714,
-    "blend": 0.2713329051523987
+    "iv": 54.5,
+    "rules": 0.2444427615091857,
+    "market": 0.3091964285714286,
+    "blend": 0.2703442283340829
    },
    {
     "date": "2027-03-19",
     "listed": true,
-    "iv": 51.6,
-    "rules": 0.33244740672151557,
-    "market": 0.4224193548387097,
-    "blend": 0.3684361859683932
+    "iv": 54.2,
+    "rules": 0.33051263381014906,
+    "market": 0.4193548387096775,
+    "blend": 0.3660495157699605
    },
    {
     "date": "2027-04-16",
     "listed": true,
-    "iv": 51.6,
-    "rules": 0.40627152980177433,
-    "market": 0.517,
-    "blend": 0.4505629178810646
+    "iv": 53.9,
+    "rules": 0.4045507219247425,
+    "market": 0.5106666666666667,
+    "blend": 0.4469970998215122
    },
    {
     "date": "2027-05-21",
     "listed": false,
     "iv": null,
-    "rules": 0.48468871642967243,
-    "market": 0.5625,
-    "blend": 0.5158132298578034
+    "rules": 0.4831951856990414,
+    "market": 0.555,
+    "blend": 0.5119171114194249
    },
    {
     "date": "2027-06-17",
     "listed": true,
-    "iv": 52.5,
-    "rules": 0.5337850755388067,
-    "market": 0.5625,
-    "blend": 0.5452710453232841
+    "iv": 54.5,
+    "rules": 0.5324338411704508,
+    "market": 0.555,
+    "blend": 0.5414603047022705
    }
   ],
   "catalysts": [
@@ -2655,7 +2557,7 @@
     "confirmed": false,
     "mult": 0.5,
     "note": "Launch day is a poor day for a deal letter; a clean flight can help the days after.",
-    "p": 0.0008542879098397246
+    "p": 0.0008529520137696805
    },
    {
     "date": "2026-12-03",
@@ -2663,7 +2565,7 @@
     "label": "Tesla annual meeting (Q&A or on-stage comment could be the announcement)",
     "confirmed": true,
     "mult": 4.0,
-    "p": 0.009006808500296021
+    "p": 0.00899272406817355
    },
    {
     "date": "2026-12-08",
@@ -2671,7 +2573,7 @@
     "label": "SpaceX Day-180 unlock (remainder)",
     "confirmed": true,
     "mult": 0.4,
-    "p": 0.0009006808500296022
+    "p": 0.0008992724068173551
    },
    {
     "date": null,
@@ -2697,17 +2599,10 @@
     "last": 0.02,
     "vol24": 93.58,
     "ch24": 0.0,
-    "ch7": -0.5,
+    "ch7": 0.0,
     "ch72": 0.0,
     "as_of": "2026-10-31T21:44-04:00",
-    "spark": [
-     0.01,
-     0.005,
-     0.005,
-     0.01,
-     0.005,
-     0.005
-    ],
+    "spark": [],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
@@ -2726,23 +2621,12 @@
     "bid": 0.04,
     "ask": 0.05,
     "last": 0.04,
-    "vol24": 525.27,
+    "vol24": 864.3,
     "ch24": 0.0,
-    "ch7": -11.0,
+    "ch7": -5.0,
     "ch72": 0.0,
-    "as_of": "2026-11-06T17:53-05:00",
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.095,
-     0.115,
-     0.115,
-     0.115,
-     0.105,
-     0.105,
-     0.105,
-     0.095,
-     0.105,
-     0.1,
-     0.095,
      0.075,
      0.045,
      0.045,
@@ -2757,12 +2641,23 @@
      0.045,
      0.045,
      0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.045,
+     0.05,
+     0.045,
+     0.045,
      0.045
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -2772,28 +2667,17 @@
     "name": "Kalshi: definitive agreement Before Jan 1, 2027",
     "short": "definitive agreement Before Jan 1, 2027",
     "date": "2026-12-31",
-    "p": 0.11,
+    "p": 0.105,
     "how": "mid",
     "bid": 0.1,
-    "ask": 0.12,
+    "ask": 0.11,
     "last": 0.1,
-    "vol24": 118.03,
-    "ch24": 0.0,
-    "ch7": -12.000000000000002,
-    "ch72": -2.500000000000001,
-    "as_of": "2026-11-06T17:53-05:00",
+    "vol24": 130.7,
+    "ch24": -1.5,
+    "ch7": -10.0,
+    "ch72": -0.5000000000000004,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.225,
-     0.215,
-     0.22,
-     0.225,
-     0.22,
-     0.22,
-     0.22,
-     0.225,
-     0.215,
-     0.215,
-     0.205,
      0.125,
      0.13,
      0.135,
@@ -2808,12 +2692,23 @@
      0.11,
      0.11,
      0.11,
-     0.11
+     0.11,
+     0.115,
+     0.115,
+     0.115,
+     0.12,
+     0.12,
+     0.12,
+     0.12,
+     0.115,
+     0.105,
+     0.105,
+     0.105
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -2823,28 +2718,17 @@
     "name": "Polymarket: announced by December 31, 2026",
     "short": "announced by December 31, 2026",
     "date": "2026-12-31",
-    "p": 0.095,
+    "p": 0.085,
     "how": "mid",
-    "bid": 0.09,
-    "ask": 0.1,
-    "last": 0.1,
-    "vol24": 18.18,
-    "ch24": 0.0,
-    "ch7": -8.5,
-    "ch72": 0.5000000000000004,
-    "as_of": "2026-11-06T17:53-05:00",
+    "bid": 0.08,
+    "ask": 0.09,
+    "last": 0.11,
+    "vol24": 903.456957,
+    "ch24": -0.9999999999999996,
+    "ch7": -8.999999999999998,
+    "ch72": -0.9999999999999996,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.18,
-     0.18,
-     0.175,
-     0.175,
-     0.175,
-     0.175,
-     0.175,
-     0.175,
-     0.165,
-     0.165,
-     0.175,
      0.09,
      0.09,
      0.09,
@@ -2859,12 +2743,23 @@
      0.095,
      0.095,
      0.095,
-     0.095
+     0.095,
+     0.095,
+     0.095,
+     0.095,
+     0.095,
+     0.095,
+     0.095,
+     0.09,
+     0.09,
+     0.09,
+     0.09,
+     0.085
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -2874,28 +2769,17 @@
     "name": "Kalshi: definitive agreement Before Feb 1, 2027",
     "short": "definitive agreement Before Feb 1, 2027",
     "date": "2027-01-31",
-    "p": 0.24,
+    "p": 0.245,
     "how": "mid",
     "bid": 0.23,
-    "ask": 0.25,
-    "last": 0.26,
-    "vol24": 51.09,
-    "ch24": 1.4999999999999987,
-    "ch7": -10.499999999999998,
-    "ch72": 0.5000000000000004,
-    "as_of": "2026-11-06T17:53-05:00",
+    "ask": 0.26,
+    "last": 0.23,
+    "vol24": 28.11,
+    "ch24": -2.0000000000000018,
+    "ch7": -4.499999999999998,
+    "ch72": 1.0000000000000009,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.35,
-     0.35,
-     0.35,
-     0.35,
-     0.345,
-     0.345,
-     0.345,
-     0.345,
-     0.295,
-     0.295,
-     0.29,
      0.235,
      0.235,
      0.235,
@@ -2910,12 +2794,23 @@
      0.225,
      0.235,
      0.235,
-     0.24
+     0.24,
+     0.245,
+     0.24,
+     0.24,
+     0.24,
+     0.265,
+     0.265,
+     0.255,
+     0.245,
+     0.25,
+     0.245,
+     0.245
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -2930,23 +2825,12 @@
     "bid": 0.17,
     "ask": 0.19,
     "last": 0.19,
-    "vol24": 105.263158,
+    "vol24": 1.20482,
     "ch24": 0.0,
-    "ch7": -10.999999999999998,
-    "ch72": -2.4999999999999996,
-    "as_of": "2026-11-06T17:53-05:00",
+    "ch7": -8.500000000000002,
+    "ch72": 0.0,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.28,
-     0.27,
-     0.275,
-     0.245,
-     0.27,
-     0.265,
-     0.265,
-     0.265,
-     0.265,
-     0.265,
-     0.265,
      0.21,
      0.195,
      0.205,
@@ -2961,12 +2845,23 @@
      0.18,
      0.18,
      0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
+     0.18,
      0.18
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -2980,24 +2875,13 @@
     "how": "mid",
     "bid": 0.37,
     "ask": 0.38,
-    "last": 0.36,
-    "vol24": 36.56,
-    "ch24": 0.5000000000000004,
-    "ch7": -2.500000000000002,
-    "ch72": -3.9999999999999982,
-    "as_of": "2026-11-06T17:53-05:00",
+    "last": 0.37,
+    "vol24": 40.81,
+    "ch24": 0.0,
+    "ch7": -1.5000000000000013,
+    "ch72": 0.5000000000000004,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.4,
-     0.4,
-     0.395,
-     0.4,
-     0.395,
-     0.4,
-     0.4,
-     0.4,
-     0.39,
-     0.39,
-     0.39,
      0.405,
      0.42,
      0.415,
@@ -3012,12 +2896,23 @@
      0.37,
      0.37,
      0.365,
+     0.375,
+     0.375,
+     0.375,
+     0.375,
+     0.375,
+     0.375,
+     0.375,
+     0.38,
+     0.38,
+     0.38,
+     0.38,
      0.375
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -3034,21 +2929,10 @@
     "last": 0.33,
     "vol24": 0,
     "ch24": 0.0,
-    "ch7": -3.9999999999999982,
+    "ch7": -1.9999999999999962,
     "ch72": 0.0,
-    "as_of": "2026-11-06T17:53-05:00",
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.37,
-     0.355,
-     0.355,
-     0.355,
-     0.35,
-     0.35,
-     0.355,
-     0.355,
-     0.355,
-     0.355,
-     0.355,
      0.355,
      0.355,
      0.335,
@@ -3056,6 +2940,17 @@
      0.335,
      0.34,
      0.34,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
+     0.335,
      0.335,
      0.335,
      0.335,
@@ -3068,7 +2963,7 @@
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -3078,28 +2973,17 @@
     "name": "Kalshi: definitive agreement Before Apr 1, 2027",
     "short": "definitive agreement Before Apr 1, 2027",
     "date": "2027-03-31",
-    "p": 0.465,
+    "p": 0.46,
     "how": "mid",
-    "bid": 0.46,
+    "bid": 0.45,
     "ask": 0.47,
     "last": 0.45,
-    "vol24": 247.15,
-    "ch24": 0.5000000000000004,
-    "ch7": 0.0,
-    "ch72": -2.4999999999999964,
-    "as_of": "2026-11-06T17:53-05:00",
+    "vol24": 458.33,
+    "ch24": -1.4999999999999958,
+    "ch7": -0.5000000000000004,
+    "ch72": -0.5000000000000004,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.465,
-     0.47,
-     0.47,
-     0.47,
-     0.475,
-     0.475,
-     0.475,
-     0.47,
-     0.465,
-     0.47,
-     0.465,
      0.46,
      0.465,
      0.49,
@@ -3114,12 +2998,23 @@
      0.46,
      0.465,
      0.465,
-     0.465
+     0.465,
+     0.465,
+     0.465,
+     0.465,
+     0.465,
+     0.465,
+     0.475,
+     0.47,
+     0.47,
+     0.46,
+     0.46,
+     0.46
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -3133,24 +3028,13 @@
     "how": "mid",
     "bid": 0.57,
     "ask": 0.58,
-    "last": 0.57,
-    "vol24": 65.2,
+    "last": 0.56,
+    "vol24": 159.51,
     "ch24": 0.0,
-    "ch7": -2.0000000000000018,
-    "ch72": 0.5000000000000004,
-    "as_of": "2026-11-06T17:53-05:00",
+    "ch7": 1.4999999999999902,
+    "ch72": 0.0,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.595,
-     0.605,
-     0.605,
-     0.59,
-     0.59,
-     0.59,
-     0.595,
-     0.555,
-     0.555,
-     0.56,
-     0.56,
      0.57,
      0.565,
      0.57,
@@ -3165,12 +3049,23 @@
      0.575,
      0.575,
      0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.575,
+     0.57,
+     0.57,
      0.575
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -3180,28 +3075,17 @@
     "name": "Polymarket: announced by June 30, 2027",
     "short": "announced by June 30, 2027",
     "date": "2027-06-30",
-    "p": 0.55,
+    "p": 0.535,
     "how": "mid",
-    "bid": 0.54,
-    "ask": 0.56,
-    "last": 0.57,
-    "vol24": 157.821053,
-    "ch24": 0.0,
-    "ch7": 2.500000000000002,
-    "ch72": -0.5000000000000004,
-    "as_of": "2026-11-06T17:53-05:00",
+    "bid": 0.53,
+    "ask": 0.54,
+    "last": 0.53,
+    "vol24": 75.351852,
+    "ch24": -0.5000000000000004,
+    "ch7": -2.0000000000000018,
+    "ch72": -1.0000000000000009,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.54,
-     0.55,
-     0.59,
-     0.57,
-     0.57,
-     0.56,
-     0.555,
-     0.555,
-     0.555,
-     0.555,
-     0.555,
      0.555,
      0.555,
      0.555,
@@ -3216,12 +3100,23 @@
      0.545,
      0.545,
      0.565,
-     0.55
+     0.55,
+     0.55,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.535,
+     0.535,
+     0.535
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -3231,48 +3126,48 @@
     "name": "Kalshi: definitive agreement Before 2028",
     "short": "definitive agreement Before 2028",
     "date": "2027-12-31",
-    "p": 0.72,
+    "p": 0.745,
     "how": "mid",
-    "bid": 0.71,
-    "ask": 0.73,
-    "last": 0.73,
-    "vol24": 7.58,
-    "ch24": -0.5000000000000004,
+    "bid": 0.74,
+    "ask": 0.75,
+    "last": 0.76,
+    "vol24": 38.24,
+    "ch24": 0.0,
     "ch7": 0.5000000000000004,
-    "ch72": 0.0,
-    "as_of": "2026-11-06T17:53-05:00",
+    "ch72": 2.0000000000000018,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
-     0.715,
+     0.745,
+     0.725,
+     0.72,
+     0.73,
+     0.71,
+     0.71,
+     0.72,
+     0.72,
+     0.72,
+     0.725,
+     0.725,
+     0.725,
+     0.725,
+     0.725,
+     0.72,
+     0.725,
      0.735,
-     0.725,
-     0.725,
-     0.725,
-     0.72,
-     0.72,
-     0.73,
-     0.74,
      0.745,
-     0.74,
      0.745,
-     0.725,
-     0.72,
-     0.73,
-     0.71,
-     0.71,
-     0.72,
-     0.72,
-     0.72,
-     0.725,
-     0.725,
-     0.725,
-     0.725,
-     0.725,
-     0.72
+     0.745,
+     0.745,
+     0.745,
+     0.75,
+     0.75,
+     0.75,
+     0.745
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
    },
@@ -3282,16 +3177,16 @@
     "name": "Polymarket: announced by December 31, 2027",
     "short": "announced by December 31, 2027",
     "date": "2027-12-31",
-    "p": 0.685,
+    "p": 0.675,
     "how": "mid",
-    "bid": 0.68,
-    "ask": 0.69,
+    "bid": 0.67,
+    "ask": 0.68,
     "last": 0.68,
-    "vol24": 37.87,
-    "ch24": 0.0,
-    "ch7": 2.0000000000000018,
-    "ch72": 2.0000000000000018,
-    "as_of": "2026-11-06T17:53-05:00",
+    "vol24": 141.622942,
+    "ch24": -1.0000000000000009,
+    "ch7": 1.0000000000000009,
+    "ch72": -1.0000000000000009,
+    "as_of": "2026-11-09T05:44-05:00",
     "spark": [
      0.665,
      0.665,
@@ -3299,17 +3194,6 @@
      0.665,
      0.665,
      0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
-     0.665,
      0.705,
      0.705,
      0.705,
@@ -3318,12 +3202,23 @@
      0.685,
      0.685,
      0.685,
-     0.685
+     0.685,
+     0.685,
+     0.685,
+     0.685,
+     0.685,
+     0.685,
+     0.685,
+     0.665,
+     0.665,
+     0.665,
+     0.665,
+     0.675
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "SpaceX, Tesla Merger Less Likely After Midterms. Texas Gov. Requests Pause On Land Talks."
+     "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -3339,11 +3234,11 @@
    ],
    [
     "2026-12-31",
-    0.1025
+    0.08933479547689792
    ],
    [
     "2027-01-31",
-    0.21
+    0.2125
    ],
    [
     "2027-02-28",
@@ -3351,19 +3246,19 @@
    ],
    [
     "2027-03-31",
-    0.465
+    0.4600000000000001
    ],
    [
     "2027-04-30",
-    0.5625
+    0.555
    ],
    [
     "2027-06-30",
-    0.5625
+    0.555
    ],
    [
     "2027-12-31",
-    0.7025
+    0.71
    ]
   ],
   "flags": [],
@@ -4522,23 +4417,11 @@
        0.06
       ],
       [
-       "2026-10-23T18:39",
-       0.065
-      ],
-      [
        "2026-10-23T19:00",
        0.065
       ],
       [
-       "2026-10-23T21:18",
-       0.075
-      ],
-      [
        "2026-10-23T23:00",
-       0.085
-      ],
-      [
-       "2026-10-24T02:44",
        0.085
       ],
       [
@@ -4546,27 +4429,19 @@
        0.085
       ],
       [
-       "2026-10-24T07:46",
+       "2026-10-24T07:00",
        0.085
       ],
       [
-       "2026-10-24T11:10",
+       "2026-10-24T11:00",
        0.085
       ],
       [
-       "2026-10-24T14:30",
+       "2026-10-24T14:00",
        0.085
       ],
       [
-       "2026-10-24T17:21",
-       0.095
-      ],
-      [
-       "2026-10-24T19:54",
-       0.095
-      ],
-      [
-       "2026-10-24T22:38",
+       "2026-10-24T19:00",
        0.095
       ],
       [
@@ -4574,7 +4449,7 @@
        0.095
       ],
       [
-       "2026-10-25T03:59",
+       "2026-10-25T03:00",
        0.095
       ],
       [
@@ -4582,23 +4457,11 @@
        0.08
       ],
       [
-       "2026-10-25T09:02",
-       0.085
-      ],
-      [
        "2026-10-25T10:00",
        0.085
       ],
       [
-       "2026-10-25T13:20",
-       0.085
-      ],
-      [
-       "2026-10-25T16:14",
-       0.085
-      ],
-      [
-       "2026-10-25T18:57",
+       "2026-10-25T13:00",
        0.085
       ],
       [
@@ -4606,15 +4469,7 @@
        0.085
       ],
       [
-       "2026-10-25T21:00",
-       0.085
-      ],
-      [
        "2026-10-25T23:00",
-       0.09
-      ],
-      [
-       "2026-10-26T01:54",
        0.09
       ],
       [
@@ -4886,7 +4741,7 @@
        0.115
       ],
       [
-       "2026-11-02T09:00",
+       "2026-11-02T11:00",
        0.115
       ],
       [
@@ -4894,7 +4749,27 @@
        0.075
       ],
       [
+       "2026-11-02T19:00",
+       0.085
+      ],
+      [
+       "2026-11-02T23:00",
+       0.08
+      ],
+      [
        "2026-11-03T02:26",
+       0.045
+      ],
+      [
+       "2026-11-03T03:00",
+       0.08
+      ],
+      [
+       "2026-11-03T05:00",
+       0.045
+      ],
+      [
+       "2026-11-03T11:00",
        0.045
       ],
       [
@@ -4902,7 +4777,15 @@
        0.045
       ],
       [
+       "2026-11-03T15:00",
+       0.045
+      ],
+      [
        "2026-11-03T18:35",
+       0.045
+      ],
+      [
+       "2026-11-03T19:00",
        0.045
       ],
       [
@@ -4910,11 +4793,31 @@
        0.045
       ],
       [
+       "2026-11-03T23:00",
+       0.045
+      ],
+      [
        "2026-11-04T03:24",
        0.055
       ],
       [
+       "2026-11-04T07:00",
+       0.055
+      ],
+      [
+       "2026-11-04T11:00",
+       0.055
+      ],
+      [
        "2026-11-04T13:30",
+       0.045
+      ],
+      [
+       "2026-11-04T15:00",
+       0.045
+      ],
+      [
+       "2026-11-04T17:00",
        0.045
       ],
       [
@@ -4926,7 +4829,19 @@
        0.045
       ],
       [
+       "2026-11-05T03:00",
+       0.045
+      ],
+      [
        "2026-11-05T05:34",
+       0.045
+      ],
+      [
+       "2026-11-05T07:00",
+       0.045
+      ],
+      [
+       "2026-11-05T11:00",
        0.045
       ],
       [
@@ -4934,7 +4849,15 @@
        0.045
       ],
       [
+       "2026-11-05T15:00",
+       0.045
+      ],
+      [
        "2026-11-05T18:51",
+       0.045
+      ],
+      [
+       "2026-11-05T19:00",
        0.045
       ],
       [
@@ -4942,11 +4865,111 @@
        0.045
       ],
       [
+       "2026-11-06T02:00",
+       0.045
+      ],
+      [
+       "2026-11-06T09:00",
+       0.045
+      ],
+      [
        "2026-11-06T12:51",
        0.045
       ],
       [
+       "2026-11-06T14:00",
+       0.045
+      ],
+      [
        "2026-11-06T17:53",
+       0.045
+      ],
+      [
+       "2026-11-06T18:00",
+       0.045
+      ],
+      [
+       "2026-11-06T22:59",
+       0.045
+      ],
+      [
+       "2026-11-07T05:56",
+       0.045
+      ],
+      [
+       "2026-11-07T11:43",
+       0.045
+      ],
+      [
+       "2026-11-07T15:37",
+       0.045
+      ],
+      [
+       "2026-11-07T18:00",
+       0.045
+      ],
+      [
+       "2026-11-07T19:07",
+       0.045
+      ],
+      [
+       "2026-11-07T21:00",
+       0.045
+      ],
+      [
+       "2026-11-08T01:51",
+       0.045
+      ],
+      [
+       "2026-11-08T06:00",
+       0.045
+      ],
+      [
+       "2026-11-08T08:59",
+       0.045
+      ],
+      [
+       "2026-11-08T11:00",
+       0.05
+      ],
+      [
+       "2026-11-08T13:44",
+       0.05
+      ],
+      [
+       "2026-11-08T14:00",
+       0.05
+      ],
+      [
+       "2026-11-08T17:37",
+       0.045
+      ],
+      [
+       "2026-11-08T19:00",
+       0.045
+      ],
+      [
+       "2026-11-08T21:17",
+       0.045
+      ],
+      [
+       "2026-11-08T23:00",
+       0.045
+      ],
+      [
+       "2026-11-09T03:00",
+       0.045
+      ],
+      [
+       "2026-11-09T05:44",
+       0.045
+      ],
+      [
+       "2026-11-09T07:00",
+       0.045
+      ],
+      [
+       "2026-11-09T09:00",
        0.045
       ]
      ]
@@ -6578,15 +6601,7 @@
        0.49
       ],
       [
-       "2026-10-23T18:39",
-       0.48
-      ],
-      [
        "2026-10-23T19:00",
-       0.48
-      ],
-      [
-       "2026-10-23T21:18",
        0.48
       ],
       [
@@ -6594,39 +6609,23 @@
        0.48
       ],
       [
-       "2026-10-24T02:44",
-       0.48
-      ],
-      [
        "2026-10-24T03:00",
        0.48
       ],
       [
-       "2026-10-24T07:46",
+       "2026-10-24T07:00",
        0.47
       ],
       [
-       "2026-10-24T11:10",
+       "2026-10-24T11:00",
        0.47
-      ],
-      [
-       "2026-10-24T14:30",
-       0.475
       ],
       [
        "2026-10-24T15:00",
        0.48
       ],
       [
-       "2026-10-24T17:21",
-       0.48
-      ],
-      [
-       "2026-10-24T19:54",
-       0.475
-      ],
-      [
-       "2026-10-24T22:38",
+       "2026-10-24T19:00",
        0.475
       ],
       [
@@ -6634,7 +6633,7 @@
        0.475
       ],
       [
-       "2026-10-25T03:59",
+       "2026-10-25T03:00",
        0.475
       ],
       [
@@ -6642,15 +6641,7 @@
        0.48
       ],
       [
-       "2026-10-25T09:02",
-       0.48
-      ],
-      [
        "2026-10-25T11:00",
-       0.475
-      ],
-      [
-       "2026-10-25T13:20",
        0.475
       ],
       [
@@ -6658,28 +6649,12 @@
        0.475
       ],
       [
-       "2026-10-25T16:14",
-       0.47
-      ],
-      [
-       "2026-10-25T18:57",
-       0.47
-      ],
-      [
        "2026-10-25T19:00",
        0.47
       ],
       [
-       "2026-10-25T21:00",
-       0.465
-      ],
-      [
        "2026-10-25T23:00",
        0.46
-      ],
-      [
-       "2026-10-26T01:54",
-       0.465
       ],
       [
        "2026-10-26T03:00",
@@ -6938,11 +6913,35 @@
        0.46
       ],
       [
+       "2026-11-02T18:00",
+       0.46
+      ],
+      [
+       "2026-11-02T22:00",
+       0.46
+      ],
+      [
        "2026-11-03T02:26",
        0.465
       ],
       [
+       "2026-11-03T03:00",
+       0.465
+      ],
+      [
+       "2026-11-03T06:00",
+       0.465
+      ],
+      [
+       "2026-11-03T11:00",
+       0.495
+      ],
+      [
        "2026-11-03T13:17",
+       0.49
+      ],
+      [
+       "2026-11-03T15:00",
        0.49
       ],
       [
@@ -6950,15 +6949,35 @@
        0.48
       ],
       [
+       "2026-11-03T19:00",
+       0.48
+      ],
+      [
        "2026-11-03T20:47",
        0.48
+      ],
+      [
+       "2026-11-03T23:00",
+       0.465
       ],
       [
        "2026-11-04T03:24",
        0.48
       ],
       [
+       "2026-11-04T06:00",
+       0.48
+      ],
+      [
+       "2026-11-04T08:00",
+       0.485
+      ],
+      [
        "2026-11-04T13:30",
+       0.51
+      ],
+      [
+       "2026-11-04T14:00",
        0.51
       ],
       [
@@ -6966,7 +6985,15 @@
        0.475
       ],
       [
+       "2026-11-04T19:00",
+       0.475
+      ],
+      [
        "2026-11-04T21:59",
+       0.465
+      ],
+      [
+       "2026-11-04T23:00",
        0.465
       ],
       [
@@ -6974,7 +7001,19 @@
        0.465
       ],
       [
+       "2026-11-05T07:00",
+       0.465
+      ],
+      [
+       "2026-11-05T11:00",
+       0.465
+      ],
+      [
        "2026-11-05T13:35",
+       0.46
+      ],
+      [
+       "2026-11-05T15:00",
        0.46
       ],
       [
@@ -6986,12 +7025,124 @@
        0.465
       ],
       [
+       "2026-11-06T02:00",
+       0.465
+      ],
+      [
+       "2026-11-06T07:00",
+       0.465
+      ],
+      [
+       "2026-11-06T11:00",
+       0.465
+      ],
+      [
        "2026-11-06T12:51",
+       0.465
+      ],
+      [
+       "2026-11-06T15:00",
        0.465
       ],
       [
        "2026-11-06T17:53",
        0.465
+      ],
+      [
+       "2026-11-06T19:00",
+       0.465
+      ],
+      [
+       "2026-11-06T22:59",
+       0.465
+      ],
+      [
+       "2026-11-06T23:00",
+       0.465
+      ],
+      [
+       "2026-11-07T00:00",
+       0.465
+      ],
+      [
+       "2026-11-07T05:56",
+       0.465
+      ],
+      [
+       "2026-11-07T07:00",
+       0.465
+      ],
+      [
+       "2026-11-07T08:00",
+       0.465
+      ],
+      [
+       "2026-11-07T11:43",
+       0.465
+      ],
+      [
+       "2026-11-07T15:37",
+       0.465
+      ],
+      [
+       "2026-11-07T19:07",
+       0.465
+      ],
+      [
+       "2026-11-07T23:00",
+       0.475
+      ],
+      [
+       "2026-11-08T01:51",
+       0.475
+      ],
+      [
+       "2026-11-08T03:00",
+       0.475
+      ],
+      [
+       "2026-11-08T05:00",
+       0.47
+      ],
+      [
+       "2026-11-08T08:59",
+       0.47
+      ],
+      [
+       "2026-11-08T13:44",
+       0.47
+      ],
+      [
+       "2026-11-08T14:00",
+       0.47
+      ],
+      [
+       "2026-11-08T17:37",
+       0.46
+      ],
+      [
+       "2026-11-08T18:00",
+       0.46
+      ],
+      [
+       "2026-11-08T21:17",
+       0.46
+      ],
+      [
+       "2026-11-08T23:00",
+       0.46
+      ],
+      [
+       "2026-11-09T00:00",
+       0.46
+      ],
+      [
+       "2026-11-09T05:44",
+       0.46
+      ],
+      [
+       "2026-11-09T09:00",
+       0.46
       ]
      ]
     },
@@ -8110,24 +8261,12 @@
        0.335
       ],
       [
-       "2026-10-23T18:39",
-       0.335
-      ],
-      [
        "2026-10-23T19:00",
-       0.335
-      ],
-      [
-       "2026-10-23T21:18",
        0.335
       ],
       [
        "2026-10-23T23:00",
        0.335
-      ],
-      [
-       "2026-10-24T02:44",
-       0.325
       ],
       [
        "2026-10-24T03:00",
@@ -8138,19 +8277,7 @@
        0.325
       ],
       [
-       "2026-10-24T07:46",
-       0.315
-      ],
-      [
        "2026-10-24T10:00",
-       0.315
-      ],
-      [
-       "2026-10-24T11:10",
-       0.315
-      ],
-      [
-       "2026-10-24T14:30",
        0.315
       ],
       [
@@ -8158,19 +8285,7 @@
        0.315
       ],
       [
-       "2026-10-24T17:21",
-       0.32
-      ],
-      [
        "2026-10-24T18:00",
-       0.32
-      ],
-      [
-       "2026-10-24T19:54",
-       0.32
-      ],
-      [
-       "2026-10-24T22:38",
        0.32
       ],
       [
@@ -8182,15 +8297,7 @@
        0.32
       ],
       [
-       "2026-10-25T03:59",
-       0.32
-      ],
-      [
        "2026-10-25T07:00",
-       0.32
-      ],
-      [
-       "2026-10-25T09:02",
        0.32
       ],
       [
@@ -8198,32 +8305,16 @@
        0.32
       ],
       [
-       "2026-10-25T13:20",
+       "2026-10-25T13:00",
        0.315
-      ],
-      [
-       "2026-10-25T16:14",
-       0.315
-      ],
-      [
-       "2026-10-25T18:57",
-       0.33
       ],
       [
        "2026-10-25T19:00",
        0.33
       ],
       [
-       "2026-10-25T21:00",
-       0.33
-      ],
-      [
        "2026-10-25T23:00",
        0.32
-      ],
-      [
-       "2026-10-26T01:54",
-       0.325
       ],
       [
        "2026-10-26T03:00",
@@ -8478,11 +8569,35 @@
        0.235
       ],
       [
+       "2026-11-02T19:00",
+       0.215
+      ],
+      [
+       "2026-11-02T23:00",
+       0.23
+      ],
+      [
        "2026-11-03T02:26",
        0.235
       ],
       [
+       "2026-11-03T06:00",
+       0.235
+      ],
+      [
+       "2026-11-03T10:00",
+       0.235
+      ],
+      [
+       "2026-11-03T12:00",
+       0.235
+      ],
+      [
        "2026-11-03T13:17",
+       0.235
+      ],
+      [
+       "2026-11-03T17:00",
        0.235
       ],
       [
@@ -8494,11 +8609,27 @@
        0.25
       ],
       [
+       "2026-11-03T23:00",
+       0.24
+      ],
+      [
        "2026-11-04T03:24",
        0.245
       ],
       [
+       "2026-11-04T06:00",
+       0.24
+      ],
+      [
+       "2026-11-04T11:00",
+       0.235
+      ],
+      [
        "2026-11-04T13:30",
+       0.235
+      ],
+      [
+       "2026-11-04T15:00",
        0.235
       ],
       [
@@ -8510,12 +8641,32 @@
        0.235
       ],
       [
+       "2026-11-04T23:00",
+       0.235
+      ],
+      [
+       "2026-11-05T03:00",
+       0.235
+      ],
+      [
        "2026-11-05T05:34",
        0.225
       ],
       [
+       "2026-11-05T07:00",
+       0.225
+      ],
+      [
+       "2026-11-05T11:00",
+       0.23
+      ],
+      [
        "2026-11-05T13:35",
        0.225
+      ],
+      [
+       "2026-11-05T15:00",
+       0.23
       ],
       [
        "2026-11-05T18:51",
@@ -8526,12 +8677,120 @@
        0.235
       ],
       [
+       "2026-11-06T06:00",
+       0.235
+      ],
+      [
+       "2026-11-06T11:00",
+       0.235
+      ],
+      [
        "2026-11-06T12:51",
+       0.235
+      ],
+      [
+       "2026-11-06T15:00",
        0.235
       ],
       [
        "2026-11-06T17:53",
        0.24
+      ],
+      [
+       "2026-11-06T19:00",
+       0.24
+      ],
+      [
+       "2026-11-06T22:59",
+       0.245
+      ],
+      [
+       "2026-11-07T04:00",
+       0.24
+      ],
+      [
+       "2026-11-07T05:56",
+       0.24
+      ],
+      [
+       "2026-11-07T11:43",
+       0.24
+      ],
+      [
+       "2026-11-07T15:37",
+       0.24
+      ],
+      [
+       "2026-11-07T18:00",
+       0.265
+      ],
+      [
+       "2026-11-07T19:07",
+       0.265
+      ],
+      [
+       "2026-11-07T21:00",
+       0.265
+      ],
+      [
+       "2026-11-08T01:51",
+       0.265
+      ],
+      [
+       "2026-11-08T03:00",
+       0.255
+      ],
+      [
+       "2026-11-08T06:00",
+       0.255
+      ],
+      [
+       "2026-11-08T08:59",
+       0.255
+      ],
+      [
+       "2026-11-08T11:00",
+       0.25
+      ],
+      [
+       "2026-11-08T13:44",
+       0.245
+      ],
+      [
+       "2026-11-08T15:00",
+       0.24
+      ],
+      [
+       "2026-11-08T17:37",
+       0.25
+      ],
+      [
+       "2026-11-08T19:00",
+       0.245
+      ],
+      [
+       "2026-11-08T21:17",
+       0.245
+      ],
+      [
+       "2026-11-08T23:00",
+       0.25
+      ],
+      [
+       "2026-11-09T03:00",
+       0.245
+      ],
+      [
+       "2026-11-09T05:44",
+       0.245
+      ],
+      [
+       "2026-11-09T07:00",
+       0.24
+      ],
+      [
+       "2026-11-09T09:00",
+       0.25
       ]
      ]
     },
@@ -9806,15 +10065,7 @@
        0.215
       ],
       [
-       "2026-10-23T18:39",
-       0.215
-      ],
-      [
        "2026-10-23T19:00",
-       0.215
-      ],
-      [
-       "2026-10-23T21:18",
        0.215
       ],
       [
@@ -9822,47 +10073,31 @@
        0.21
       ],
       [
-       "2026-10-24T02:44",
-       0.21
-      ],
-      [
        "2026-10-24T03:00",
        0.21
       ],
       [
-       "2026-10-24T07:46",
+       "2026-10-24T07:00",
        0.21
       ],
       [
-       "2026-10-24T11:10",
-       0.195
-      ],
-      [
-       "2026-10-24T14:30",
-       0.175
+       "2026-10-24T11:00",
+       0.2
       ],
       [
        "2026-10-24T15:00",
        0.175
       ],
       [
-       "2026-10-24T17:21",
+       "2026-10-24T19:00",
        0.175
-      ],
-      [
-       "2026-10-24T19:54",
-       0.17
-      ],
-      [
-       "2026-10-24T22:38",
-       0.17
       ],
       [
        "2026-10-24T23:00",
        0.17
       ],
       [
-       "2026-10-25T03:59",
+       "2026-10-25T03:00",
        0.21
       ],
       [
@@ -9870,24 +10105,12 @@
        0.195
       ],
       [
-       "2026-10-25T09:02",
-       0.195
-      ],
-      [
        "2026-10-25T10:00",
        0.195
       ],
       [
-       "2026-10-25T13:20",
+       "2026-10-25T13:00",
        0.195
-      ],
-      [
-       "2026-10-25T16:14",
-       0.195
-      ],
-      [
-       "2026-10-25T18:57",
-       0.175
       ],
       [
        "2026-10-25T19:00",
@@ -9895,10 +10118,6 @@
       ],
       [
        "2026-10-25T21:00",
-       0.175
-      ],
-      [
-       "2026-10-26T01:54",
        0.175
       ],
       [
@@ -10174,7 +10393,7 @@
        0.21
       ],
       [
-       "2026-11-02T09:00",
+       "2026-11-02T11:00",
        0.21
       ],
       [
@@ -10182,11 +10401,35 @@
        0.125
       ],
       [
+       "2026-11-02T19:00",
+       0.125
+      ],
+      [
+       "2026-11-02T20:00",
+       0.125
+      ],
+      [
        "2026-11-03T02:26",
        0.13
       ],
       [
+       "2026-11-03T03:00",
+       0.13
+      ],
+      [
+       "2026-11-03T07:00",
+       0.135
+      ],
+      [
+       "2026-11-03T11:00",
+       0.135
+      ],
+      [
        "2026-11-03T13:17",
+       0.135
+      ],
+      [
+       "2026-11-03T15:00",
        0.135
       ],
       [
@@ -10194,11 +10437,27 @@
        0.115
       ],
       [
+       "2026-11-03T19:00",
+       0.13
+      ],
+      [
        "2026-11-03T20:47",
        0.115
       ],
       [
+       "2026-11-03T23:00",
+       0.12
+      ],
+      [
        "2026-11-04T03:24",
+       0.12
+      ],
+      [
+       "2026-11-04T04:00",
+       0.12
+      ],
+      [
+       "2026-11-04T11:00",
        0.12
       ],
       [
@@ -10206,7 +10465,15 @@
        0.11
       ],
       [
+       "2026-11-04T15:00",
+       0.11
+      ],
+      [
        "2026-11-04T18:57",
+       0.11
+      ],
+      [
+       "2026-11-04T19:00",
        0.11
       ],
       [
@@ -10214,7 +10481,23 @@
        0.11
       ],
       [
+       "2026-11-04T23:00",
+       0.11
+      ],
+      [
+       "2026-11-05T03:00",
+       0.11
+      ],
+      [
        "2026-11-05T05:34",
+       0.11
+      ],
+      [
+       "2026-11-05T07:00",
+       0.11
+      ],
+      [
+       "2026-11-05T11:00",
        0.11
       ],
       [
@@ -10222,7 +10505,15 @@
        0.11
       ],
       [
+       "2026-11-05T15:00",
+       0.11
+      ],
+      [
        "2026-11-05T18:51",
+       0.11
+      ],
+      [
+       "2026-11-05T19:00",
        0.11
       ],
       [
@@ -10230,12 +10521,116 @@
        0.11
       ],
       [
+       "2026-11-06T02:00",
+       0.11
+      ],
+      [
+       "2026-11-06T05:00",
+       0.11
+      ],
+      [
+       "2026-11-06T11:00",
+       0.11
+      ],
+      [
        "2026-11-06T12:51",
+       0.11
+      ],
+      [
+       "2026-11-06T15:00",
        0.11
       ],
       [
        "2026-11-06T17:53",
        0.11
+      ],
+      [
+       "2026-11-06T19:00",
+       0.11
+      ],
+      [
+       "2026-11-06T22:59",
+       0.115
+      ],
+      [
+       "2026-11-07T04:00",
+       0.115
+      ],
+      [
+       "2026-11-07T05:56",
+       0.115
+      ],
+      [
+       "2026-11-07T11:43",
+       0.115
+      ],
+      [
+       "2026-11-07T15:37",
+       0.12
+      ],
+      [
+       "2026-11-07T18:00",
+       0.12
+      ],
+      [
+       "2026-11-07T19:07",
+       0.12
+      ],
+      [
+       "2026-11-07T21:00",
+       0.12
+      ],
+      [
+       "2026-11-08T01:51",
+       0.12
+      ],
+      [
+       "2026-11-08T03:00",
+       0.12
+      ],
+      [
+       "2026-11-08T04:00",
+       0.12
+      ],
+      [
+       "2026-11-08T08:59",
+       0.12
+      ],
+      [
+       "2026-11-08T11:00",
+       0.12
+      ],
+      [
+       "2026-11-08T13:44",
+       0.115
+      ],
+      [
+       "2026-11-08T17:37",
+       0.105
+      ],
+      [
+       "2026-11-08T18:00",
+       0.105
+      ],
+      [
+       "2026-11-08T21:17",
+       0.105
+      ],
+      [
+       "2026-11-08T22:00",
+       0.105
+      ],
+      [
+       "2026-11-09T02:00",
+       0.105
+      ],
+      [
+       "2026-11-09T05:44",
+       0.105
+      ],
+      [
+       "2026-11-09T09:00",
+       0.105
       ]
      ]
     },
@@ -11334,55 +11729,31 @@
        0.38
       ],
       [
-       "2026-10-23T18:39",
-       0.38
-      ],
-      [
        "2026-10-23T19:00",
        0.38
-      ],
-      [
-       "2026-10-23T21:18",
-       0.385
       ],
       [
        "2026-10-23T23:00",
        0.385
       ],
       [
-       "2026-10-24T02:44",
-       0.38
-      ],
-      [
        "2026-10-24T03:00",
        0.38
       ],
       [
-       "2026-10-24T07:46",
+       "2026-10-24T07:00",
        0.385
       ],
       [
-       "2026-10-24T11:10",
-       0.38
-      ],
-      [
-       "2026-10-24T14:30",
-       0.395
+       "2026-10-24T11:00",
+       0.375
       ],
       [
        "2026-10-24T15:00",
        0.395
       ],
       [
-       "2026-10-24T17:21",
-       0.39
-      ],
-      [
-       "2026-10-24T19:54",
-       0.4
-      ],
-      [
-       "2026-10-24T22:38",
+       "2026-10-24T19:00",
        0.4
       ],
       [
@@ -11390,23 +11761,15 @@
        0.4
       ],
       [
-       "2026-10-25T03:59",
-       0.385
+       "2026-10-25T03:00",
+       0.395
       ],
       [
        "2026-10-25T07:00",
        0.4
       ],
       [
-       "2026-10-25T09:02",
-       0.38
-      ],
-      [
        "2026-10-25T11:00",
-       0.395
-      ],
-      [
-       "2026-10-25T13:20",
        0.395
       ],
       [
@@ -11414,28 +11777,12 @@
        0.385
       ],
       [
-       "2026-10-25T16:14",
-       0.38
-      ],
-      [
-       "2026-10-25T18:57",
-       0.365
-      ],
-      [
        "2026-10-25T19:00",
-       0.365
-      ],
-      [
-       "2026-10-25T21:00",
        0.365
       ],
       [
        "2026-10-25T23:00",
        0.38
-      ],
-      [
-       "2026-10-26T01:54",
-       0.375
       ],
       [
        "2026-10-26T03:00",
@@ -11698,15 +12045,31 @@
        0.395
       ],
       [
-       "2026-11-02T08:00",
+       "2026-11-02T11:00",
        0.395
+      ],
+      [
+       "2026-11-02T14:00",
+       0.405
       ],
       [
        "2026-11-02T15:39",
        0.405
       ],
       [
+       "2026-11-02T18:00",
+       0.415
+      ],
+      [
+       "2026-11-02T20:00",
+       0.415
+      ],
+      [
        "2026-11-03T02:26",
+       0.42
+      ],
+      [
+       "2026-11-03T11:00",
        0.42
       ],
       [
@@ -11714,7 +12077,15 @@
        0.415
       ],
       [
+       "2026-11-03T15:00",
+       0.415
+      ],
+      [
        "2026-11-03T18:35",
+       0.415
+      ],
+      [
+       "2026-11-03T19:00",
        0.415
       ],
       [
@@ -11722,7 +12093,19 @@
        0.415
       ],
       [
+       "2026-11-03T23:00",
+       0.41
+      ],
+      [
+       "2026-11-04T02:00",
+       0.385
+      ],
+      [
        "2026-11-04T03:24",
+       0.385
+      ],
+      [
+       "2026-11-04T08:00",
        0.385
       ],
       [
@@ -11730,7 +12113,15 @@
        0.4
       ],
       [
+       "2026-11-04T15:00",
+       0.4
+      ],
+      [
        "2026-11-04T18:57",
+       0.365
+      ],
+      [
+       "2026-11-04T19:00",
        0.365
       ],
       [
@@ -11738,11 +12129,31 @@
        0.365
       ],
       [
+       "2026-11-04T23:00",
+       0.365
+      ],
+      [
+       "2026-11-05T03:00",
+       0.37
+      ],
+      [
        "2026-11-05T05:34",
        0.37
       ],
       [
+       "2026-11-05T07:00",
+       0.37
+      ],
+      [
+       "2026-11-05T11:00",
+       0.365
+      ],
+      [
        "2026-11-05T13:35",
+       0.37
+      ],
+      [
+       "2026-11-05T14:00",
        0.37
       ],
       [
@@ -11750,7 +12161,23 @@
        0.37
       ],
       [
+       "2026-11-05T19:00",
+       0.37
+      ],
+      [
        "2026-11-05T23:34",
+       0.37
+      ],
+      [
+       "2026-11-06T02:00",
+       0.37
+      ],
+      [
+       "2026-11-06T07:00",
+       0.37
+      ],
+      [
+       "2026-11-06T11:00",
        0.37
       ],
       [
@@ -11758,7 +12185,79 @@
        0.365
       ],
       [
+       "2026-11-06T15:00",
+       0.37
+      ],
+      [
        "2026-11-06T17:53",
+       0.375
+      ],
+      [
+       "2026-11-06T19:00",
+       0.375
+      ],
+      [
+       "2026-11-06T22:59",
+       0.375
+      ],
+      [
+       "2026-11-07T00:00",
+       0.375
+      ],
+      [
+       "2026-11-07T05:56",
+       0.375
+      ],
+      [
+       "2026-11-07T11:43",
+       0.375
+      ],
+      [
+       "2026-11-07T15:37",
+       0.375
+      ],
+      [
+       "2026-11-07T19:07",
+       0.375
+      ],
+      [
+       "2026-11-08T01:51",
+       0.375
+      ],
+      [
+       "2026-11-08T05:00",
+       0.38
+      ],
+      [
+       "2026-11-08T08:59",
+       0.38
+      ],
+      [
+       "2026-11-08T13:44",
+       0.38
+      ],
+      [
+       "2026-11-08T17:37",
+       0.38
+      ],
+      [
+       "2026-11-08T21:17",
+       0.38
+      ],
+      [
+       "2026-11-08T22:00",
+       0.38
+      ],
+      [
+       "2026-11-09T00:00",
+       0.375
+      ],
+      [
+       "2026-11-09T05:44",
+       0.375
+      ],
+      [
+       "2026-11-09T09:00",
        0.375
       ]
      ]
@@ -13150,23 +13649,11 @@
        0.58
       ],
       [
-       "2026-10-23T18:39",
-       0.58
-      ],
-      [
        "2026-10-23T19:00",
        0.58
       ],
       [
-       "2026-10-23T21:18",
-       0.585
-      ],
-      [
        "2026-10-23T23:00",
-       0.595
-      ],
-      [
-       "2026-10-24T02:44",
        0.595
       ],
       [
@@ -13178,11 +13665,7 @@
        0.595
       ],
       [
-       "2026-10-24T07:46",
-       0.595
-      ],
-      [
-       "2026-10-24T11:10",
+       "2026-10-24T11:00",
        0.595
       ],
       [
@@ -13190,27 +13673,15 @@
        0.595
       ],
       [
-       "2026-10-24T14:30",
-       0.595
-      ],
-      [
-       "2026-10-24T17:21",
-       0.595
-      ],
-      [
-       "2026-10-24T19:54",
-       0.605
+       "2026-10-24T19:00",
+       0.565
       ],
       [
        "2026-10-24T21:00",
        0.61
       ],
       [
-       "2026-10-24T22:38",
-       0.61
-      ],
-      [
-       "2026-10-25T03:59",
+       "2026-10-25T03:00",
        0.6
       ],
       [
@@ -13218,43 +13689,19 @@
        0.585
       ],
       [
-       "2026-10-25T09:02",
-       0.585
-      ],
-      [
        "2026-10-25T10:00",
        0.585
-      ],
-      [
-       "2026-10-25T13:20",
-       0.615
       ],
       [
        "2026-10-25T15:00",
        0.6
       ],
       [
-       "2026-10-25T16:14",
-       0.595
-      ],
-      [
-       "2026-10-25T18:57",
-       0.595
-      ],
-      [
        "2026-10-25T19:00",
        0.595
       ],
       [
-       "2026-10-25T21:00",
-       0.595
-      ],
-      [
        "2026-10-25T23:00",
-       0.595
-      ],
-      [
-       "2026-10-26T01:54",
        0.595
       ],
       [
@@ -13514,7 +13961,7 @@
        0.55
       ],
       [
-       "2026-11-02T09:00",
+       "2026-11-02T11:00",
        0.55
       ],
       [
@@ -13522,11 +13969,35 @@
        0.57
       ],
       [
+       "2026-11-02T19:00",
+       0.57
+      ],
+      [
+       "2026-11-02T22:00",
+       0.57
+      ],
+      [
        "2026-11-03T02:26",
        0.565
       ],
       [
+       "2026-11-03T03:00",
+       0.555
+      ],
+      [
+       "2026-11-03T06:00",
+       0.57
+      ],
+      [
+       "2026-11-03T11:00",
+       0.57
+      ],
+      [
        "2026-11-03T13:17",
+       0.57
+      ],
+      [
+       "2026-11-03T15:00",
        0.57
       ],
       [
@@ -13534,12 +14005,28 @@
        0.55
       ],
       [
+       "2026-11-03T19:00",
+       0.55
+      ],
+      [
        "2026-11-03T20:47",
        0.555
       ],
       [
+       "2026-11-03T23:00",
+       0.575
+      ],
+      [
        "2026-11-04T03:24",
        0.585
+      ],
+      [
+       "2026-11-04T07:00",
+       0.575
+      ],
+      [
+       "2026-11-04T10:00",
+       0.575
       ],
       [
        "2026-11-04T13:30",
@@ -13550,7 +14037,19 @@
        0.575
       ],
       [
+       "2026-11-04T19:00",
+       0.575
+      ],
+      [
        "2026-11-04T21:59",
+       0.575
+      ],
+      [
+       "2026-11-04T22:00",
+       0.575
+      ],
+      [
+       "2026-11-05T03:00",
        0.575
       ],
       [
@@ -13558,7 +14057,19 @@
        0.575
       ],
       [
+       "2026-11-05T07:00",
+       0.575
+      ],
+      [
+       "2026-11-05T11:00",
+       0.575
+      ],
+      [
        "2026-11-05T13:35",
+       0.575
+      ],
+      [
+       "2026-11-05T15:00",
        0.575
       ],
       [
@@ -13566,7 +14077,23 @@
        0.575
       ],
       [
+       "2026-11-05T19:00",
+       0.575
+      ],
+      [
        "2026-11-05T23:34",
+       0.575
+      ],
+      [
+       "2026-11-06T03:00",
+       0.575
+      ],
+      [
+       "2026-11-06T07:00",
+       0.575
+      ],
+      [
+       "2026-11-06T11:00",
        0.575
       ],
       [
@@ -13574,7 +14101,103 @@
        0.575
       ],
       [
+       "2026-11-06T15:00",
+       0.575
+      ],
+      [
        "2026-11-06T17:53",
+       0.575
+      ],
+      [
+       "2026-11-06T19:00",
+       0.575
+      ],
+      [
+       "2026-11-06T22:59",
+       0.575
+      ],
+      [
+       "2026-11-06T23:00",
+       0.575
+      ],
+      [
+       "2026-11-07T05:56",
+       0.575
+      ],
+      [
+       "2026-11-07T11:43",
+       0.575
+      ],
+      [
+       "2026-11-07T15:37",
+       0.575
+      ],
+      [
+       "2026-11-07T18:00",
+       0.575
+      ],
+      [
+       "2026-11-07T19:07",
+       0.575
+      ],
+      [
+       "2026-11-07T22:00",
+       0.575
+      ],
+      [
+       "2026-11-08T01:51",
+       0.575
+      ],
+      [
+       "2026-11-08T02:00",
+       0.575
+      ],
+      [
+       "2026-11-08T05:00",
+       0.575
+      ],
+      [
+       "2026-11-08T08:59",
+       0.575
+      ],
+      [
+       "2026-11-08T11:00",
+       0.575
+      ],
+      [
+       "2026-11-08T13:44",
+       0.575
+      ],
+      [
+       "2026-11-08T14:00",
+       0.575
+      ],
+      [
+       "2026-11-08T17:37",
+       0.57
+      ],
+      [
+       "2026-11-08T21:17",
+       0.57
+      ],
+      [
+       "2026-11-08T23:00",
+       0.57
+      ],
+      [
+       "2026-11-09T02:00",
+       0.575
+      ],
+      [
+       "2026-11-09T05:44",
+       0.575
+      ],
+      [
+       "2026-11-09T07:00",
+       0.575
+      ],
+      [
+       "2026-11-09T09:00",
        0.575
       ]
      ]
@@ -14974,16 +15597,8 @@
        0.725
       ],
       [
-       "2026-10-23T18:39",
-       0.72
-      ],
-      [
        "2026-10-23T19:00",
        0.72
-      ],
-      [
-       "2026-10-23T21:18",
-       0.73
       ],
       [
        "2026-10-23T23:00",
@@ -14994,47 +15609,27 @@
        0.725
       ],
       [
-       "2026-10-24T02:44",
-       0.725
-      ],
-      [
        "2026-10-24T06:00",
        0.725
       ],
       [
-       "2026-10-24T07:46",
-       0.725
-      ],
-      [
-       "2026-10-24T11:10",
+       "2026-10-24T11:00",
        0.715
-      ],
-      [
-       "2026-10-24T14:30",
-       0.71
       ],
       [
        "2026-10-24T15:00",
        0.71
       ],
       [
-       "2026-10-24T17:21",
+       "2026-10-24T19:00",
        0.72
-      ],
-      [
-       "2026-10-24T19:54",
-       0.72
-      ],
-      [
-       "2026-10-24T22:38",
-       0.725
       ],
       [
        "2026-10-24T23:00",
        0.725
       ],
       [
-       "2026-10-25T03:59",
+       "2026-10-25T03:00",
        0.725
       ],
       [
@@ -15042,15 +15637,7 @@
        0.725
       ],
       [
-       "2026-10-25T09:02",
-       0.735
-      ],
-      [
        "2026-10-25T11:00",
-       0.735
-      ],
-      [
-       "2026-10-25T13:20",
        0.735
       ],
       [
@@ -15058,27 +15645,11 @@
        0.735
       ],
       [
-       "2026-10-25T16:14",
-       0.735
-      ],
-      [
-       "2026-10-25T18:57",
-       0.735
-      ],
-      [
        "2026-10-25T19:00",
        0.735
       ],
       [
-       "2026-10-25T21:00",
-       0.74
-      ],
-      [
        "2026-10-25T23:00",
-       0.735
-      ],
-      [
-       "2026-10-26T01:54",
        0.735
       ],
       [
@@ -15342,7 +15913,7 @@
        0.74
       ],
       [
-       "2026-11-02T08:00",
+       "2026-11-02T11:00",
        0.74
       ],
       [
@@ -15350,7 +15921,27 @@
        0.745
       ],
       [
+       "2026-11-02T19:00",
+       0.755
+      ],
+      [
+       "2026-11-02T23:00",
+       0.725
+      ],
+      [
+       "2026-11-03T01:00",
+       0.725
+      ],
+      [
        "2026-11-03T02:26",
+       0.725
+      ],
+      [
+       "2026-11-03T04:00",
+       0.725
+      ],
+      [
+       "2026-11-03T11:00",
        0.725
       ],
       [
@@ -15358,7 +15949,15 @@
        0.72
       ],
       [
+       "2026-11-03T15:00",
+       0.725
+      ],
+      [
        "2026-11-03T18:35",
+       0.73
+      ],
+      [
+       "2026-11-03T19:00",
        0.73
       ],
       [
@@ -15366,7 +15965,19 @@
        0.71
       ],
       [
+       "2026-11-03T23:00",
+       0.705
+      ],
+      [
        "2026-11-04T03:24",
+       0.71
+      ],
+      [
+       "2026-11-04T07:00",
+       0.71
+      ],
+      [
+       "2026-11-04T11:00",
        0.71
       ],
       [
@@ -15374,7 +15985,15 @@
        0.72
       ],
       [
+       "2026-11-04T15:00",
+       0.72
+      ],
+      [
        "2026-11-04T18:57",
+       0.72
+      ],
+      [
+       "2026-11-04T19:00",
        0.72
       ],
       [
@@ -15382,11 +16001,31 @@
        0.72
       ],
       [
+       "2026-11-04T22:00",
+       0.72
+      ],
+      [
+       "2026-11-05T00:00",
+       0.72
+      ],
+      [
        "2026-11-05T05:34",
        0.725
       ],
       [
+       "2026-11-05T07:00",
+       0.725
+      ],
+      [
+       "2026-11-05T11:00",
+       0.735
+      ],
+      [
        "2026-11-05T13:35",
+       0.725
+      ],
+      [
+       "2026-11-05T15:00",
        0.725
       ],
       [
@@ -15394,7 +16033,23 @@
        0.725
       ],
       [
+       "2026-11-05T19:00",
+       0.725
+      ],
+      [
        "2026-11-05T23:34",
+       0.725
+      ],
+      [
+       "2026-11-06T02:00",
+       0.725
+      ],
+      [
+       "2026-11-06T07:00",
+       0.725
+      ],
+      [
+       "2026-11-06T11:00",
        0.725
       ],
       [
@@ -15402,8 +16057,116 @@
        0.725
       ],
       [
+       "2026-11-06T15:00",
+       0.725
+      ],
+      [
        "2026-11-06T17:53",
        0.72
+      ],
+      [
+       "2026-11-06T19:00",
+       0.72
+      ],
+      [
+       "2026-11-06T22:59",
+       0.725
+      ],
+      [
+       "2026-11-06T23:00",
+       0.725
+      ],
+      [
+       "2026-11-07T03:00",
+       0.74
+      ],
+      [
+       "2026-11-07T05:56",
+       0.735
+      ],
+      [
+       "2026-11-07T08:00",
+       0.745
+      ],
+      [
+       "2026-11-07T11:43",
+       0.745
+      ],
+      [
+       "2026-11-07T14:00",
+       0.745
+      ],
+      [
+       "2026-11-07T15:37",
+       0.745
+      ],
+      [
+       "2026-11-07T17:00",
+       0.745
+      ],
+      [
+       "2026-11-07T19:07",
+       0.745
+      ],
+      [
+       "2026-11-08T00:00",
+       0.745
+      ],
+      [
+       "2026-11-08T01:51",
+       0.745
+      ],
+      [
+       "2026-11-08T07:00",
+       0.745
+      ],
+      [
+       "2026-11-08T08:59",
+       0.745
+      ],
+      [
+       "2026-11-08T11:00",
+       0.745
+      ],
+      [
+       "2026-11-08T13:44",
+       0.75
+      ],
+      [
+       "2026-11-08T15:00",
+       0.75
+      ],
+      [
+       "2026-11-08T17:37",
+       0.75
+      ],
+      [
+       "2026-11-08T19:00",
+       0.75
+      ],
+      [
+       "2026-11-08T21:17",
+       0.75
+      ],
+      [
+       "2026-11-08T23:00",
+       0.75
+      ],
+      [
+       "2026-11-09T01:00",
+       0.75
+      ],
+      [
+       "2026-11-09T04:00",
+       0.745
+      ],
+      [
+       "2026-11-09T05:44",
+       0.745
+      ],
+      [
+       "2026-11-09T09:00",
+       0.745
       ]
      ]
     },
@@ -16434,84 +17197,24 @@
        0.185
       ],
       [
-       "2026-10-23T18:39",
-       0.185
-      ],
-      [
        "2026-10-23T20:00",
        0.185
       ],
       [
-       "2026-10-23T21:18",
+       "2026-10-24T02:00",
        0.195
-      ],
-      [
-       "2026-10-24T02:44",
-       0.195
-      ],
-      [
-       "2026-10-24T07:46",
-       0.165
-      ],
-      [
-       "2026-10-24T11:10",
-       0.165
-      ],
-      [
-       "2026-10-24T14:30",
-       0.165
-      ],
-      [
-       "2026-10-24T17:21",
-       0.165
-      ],
-      [
-       "2026-10-24T19:54",
-       0.165
-      ],
-      [
-       "2026-10-24T22:38",
-       0.165
       ],
       [
        "2026-10-25T02:00",
        0.15
       ],
       [
-       "2026-10-25T03:59",
-       0.155
-      ],
-      [
        "2026-10-25T08:00",
        0.155
       ],
       [
-       "2026-10-25T09:02",
-       0.155
-      ],
-      [
-       "2026-10-25T13:20",
-       0.115
-      ],
-      [
        "2026-10-25T14:00",
        0.115
-      ],
-      [
-       "2026-10-25T16:14",
-       0.125
-      ],
-      [
-       "2026-10-25T18:57",
-       0.125
-      ],
-      [
-       "2026-10-25T21:00",
-       0.125
-      ],
-      [
-       "2026-10-26T01:54",
-       0.125
       ],
       [
        "2026-10-26T02:00",
@@ -16722,7 +17425,7 @@
        0.16
       ],
       [
-       "2026-11-02T09:27",
+       "2026-11-02T14:00",
        0.16
       ],
       [
@@ -16730,11 +17433,23 @@
        0.09
       ],
       [
+       "2026-11-02T20:00",
+       0.09
+      ],
+      [
        "2026-11-03T02:26",
        0.09
       ],
       [
+       "2026-11-03T08:00",
+       0.095
+      ],
+      [
        "2026-11-03T13:17",
+       0.09
+      ],
+      [
+       "2026-11-03T14:00",
        0.09
       ],
       [
@@ -16746,11 +17461,23 @@
        0.095
       ],
       [
+       "2026-11-04T02:00",
+       0.085
+      ],
+      [
        "2026-11-04T03:24",
        0.09
       ],
       [
+       "2026-11-04T08:00",
+       0.1
+      ],
+      [
        "2026-11-04T13:30",
+       0.095
+      ],
+      [
+       "2026-11-04T14:00",
        0.095
       ],
       [
@@ -16758,11 +17485,23 @@
        0.095
       ],
       [
+       "2026-11-04T20:00",
+       0.095
+      ],
+      [
        "2026-11-04T21:59",
        0.095
       ],
       [
+       "2026-11-05T02:00",
+       0.095
+      ],
+      [
        "2026-11-05T05:34",
+       0.095
+      ],
+      [
+       "2026-11-05T08:00",
        0.095
       ],
       [
@@ -16774,7 +17513,19 @@
        0.095
       ],
       [
+       "2026-11-05T20:00",
+       0.095
+      ],
+      [
        "2026-11-05T23:34",
+       0.095
+      ],
+      [
+       "2026-11-06T02:00",
+       0.095
+      ],
+      [
+       "2026-11-06T08:00",
        0.095
       ],
       [
@@ -16782,8 +17533,96 @@
        0.095
       ],
       [
+       "2026-11-06T14:00",
+       0.095
+      ],
+      [
        "2026-11-06T17:53",
        0.095
+      ],
+      [
+       "2026-11-06T20:00",
+       0.095
+      ],
+      [
+       "2026-11-06T22:59",
+       0.095
+      ],
+      [
+       "2026-11-07T02:00",
+       0.095
+      ],
+      [
+       "2026-11-07T05:56",
+       0.095
+      ],
+      [
+       "2026-11-07T08:00",
+       0.095
+      ],
+      [
+       "2026-11-07T11:43",
+       0.095
+      ],
+      [
+       "2026-11-07T15:37",
+       0.095
+      ],
+      [
+       "2026-11-07T19:07",
+       0.095
+      ],
+      [
+       "2026-11-07T20:00",
+       0.095
+      ],
+      [
+       "2026-11-08T01:51",
+       0.095
+      ],
+      [
+       "2026-11-08T02:00",
+       0.095
+      ],
+      [
+       "2026-11-08T08:59",
+       0.09
+      ],
+      [
+       "2026-11-08T13:44",
+       0.09
+      ],
+      [
+       "2026-11-08T14:00",
+       0.09
+      ],
+      [
+       "2026-11-08T17:37",
+       0.09
+      ],
+      [
+       "2026-11-08T20:00",
+       0.09
+      ],
+      [
+       "2026-11-08T21:17",
+       0.09
+      ],
+      [
+       "2026-11-09T02:00",
+       0.09
+      ],
+      [
+       "2026-11-09T05:44",
+       0.085
+      ],
+      [
+       "2026-11-09T08:00",
+       0.085
+      ],
+      [
+       "2026-11-09T09:28",
+       0.085
       ]
      ]
     },
@@ -17794,47 +18633,15 @@
        0.295
       ],
       [
-       "2026-10-23T18:39",
-       0.295
-      ],
-      [
        "2026-10-23T20:00",
        0.295
       ],
       [
-       "2026-10-23T21:18",
-       0.295
-      ],
-      [
-       "2026-10-24T02:44",
+       "2026-10-24T02:00",
        0.285
       ],
       [
-       "2026-10-24T07:46",
-       0.205
-      ],
-      [
-       "2026-10-24T11:10",
-       0.225
-      ],
-      [
-       "2026-10-24T14:30",
-       0.23
-      ],
-      [
-       "2026-10-24T17:21",
-       0.23
-      ],
-      [
-       "2026-10-24T19:54",
-       0.23
-      ],
-      [
        "2026-10-24T20:00",
-       0.23
-      ],
-      [
-       "2026-10-24T22:38",
        0.23
       ],
       [
@@ -17842,39 +18649,11 @@
        0.215
       ],
       [
-       "2026-10-25T03:59",
-       0.215
-      ],
-      [
        "2026-10-25T08:00",
        0.215
       ],
       [
-       "2026-10-25T09:02",
-       0.215
-      ],
-      [
-       "2026-10-25T13:20",
-       0.23
-      ],
-      [
        "2026-10-25T14:00",
-       0.235
-      ],
-      [
-       "2026-10-25T16:14",
-       0.235
-      ],
-      [
-       "2026-10-25T18:57",
-       0.235
-      ],
-      [
-       "2026-10-25T21:00",
-       0.225
-      ],
-      [
-       "2026-10-26T01:54",
        0.235
       ],
       [
@@ -18070,19 +18849,31 @@
        0.265
       ],
       [
-       "2026-11-02T09:27",
-       0.265
+       "2026-11-02T14:00",
+       0.21
       ],
       [
        "2026-11-02T15:39",
        0.21
       ],
       [
+       "2026-11-02T20:00",
+       0.185
+      ],
+      [
        "2026-11-03T02:26",
        0.195
       ],
       [
+       "2026-11-03T08:00",
+       0.18
+      ],
+      [
        "2026-11-03T13:17",
+       0.205
+      ],
+      [
+       "2026-11-03T14:00",
        0.205
       ],
       [
@@ -18094,7 +18885,15 @@
        0.205
       ],
       [
+       "2026-11-04T02:00",
+       0.18
+      ],
+      [
        "2026-11-04T03:24",
+       0.18
+      ],
+      [
+       "2026-11-04T08:00",
        0.18
       ],
       [
@@ -18106,11 +18905,23 @@
        0.18
       ],
       [
+       "2026-11-04T20:00",
+       0.18
+      ],
+      [
        "2026-11-04T21:59",
        0.18
       ],
       [
+       "2026-11-05T02:00",
+       0.18
+      ],
+      [
        "2026-11-05T05:34",
+       0.18
+      ],
+      [
+       "2026-11-05T08:00",
        0.18
       ],
       [
@@ -18122,7 +18933,19 @@
        0.18
       ],
       [
+       "2026-11-05T20:00",
+       0.18
+      ],
+      [
        "2026-11-05T23:34",
+       0.18
+      ],
+      [
+       "2026-11-06T02:00",
+       0.18
+      ],
+      [
+       "2026-11-06T08:00",
        0.18
       ],
       [
@@ -18130,7 +18953,95 @@
        0.18
       ],
       [
+       "2026-11-06T14:00",
+       0.18
+      ],
+      [
        "2026-11-06T17:53",
+       0.18
+      ],
+      [
+       "2026-11-06T20:00",
+       0.18
+      ],
+      [
+       "2026-11-06T22:59",
+       0.18
+      ],
+      [
+       "2026-11-07T02:00",
+       0.18
+      ],
+      [
+       "2026-11-07T05:56",
+       0.18
+      ],
+      [
+       "2026-11-07T08:00",
+       0.18
+      ],
+      [
+       "2026-11-07T11:43",
+       0.18
+      ],
+      [
+       "2026-11-07T15:37",
+       0.18
+      ],
+      [
+       "2026-11-07T19:07",
+       0.18
+      ],
+      [
+       "2026-11-07T20:00",
+       0.18
+      ],
+      [
+       "2026-11-08T01:51",
+       0.18
+      ],
+      [
+       "2026-11-08T02:00",
+       0.18
+      ],
+      [
+       "2026-11-08T08:59",
+       0.18
+      ],
+      [
+       "2026-11-08T13:44",
+       0.18
+      ],
+      [
+       "2026-11-08T14:00",
+       0.18
+      ],
+      [
+       "2026-11-08T17:37",
+       0.18
+      ],
+      [
+       "2026-11-08T20:00",
+       0.18
+      ],
+      [
+       "2026-11-08T21:17",
+       0.18
+      ],
+      [
+       "2026-11-09T02:00",
+       0.18
+      ],
+      [
+       "2026-11-09T05:44",
+       0.18
+      ],
+      [
+       "2026-11-09T08:00",
+       0.18
+      ],
+      [
+       "2026-11-09T09:28",
        0.18
       ]
      ]
@@ -19162,43 +20073,11 @@
        0.655
       ],
       [
-       "2026-10-23T18:39",
-       0.655
-      ],
-      [
        "2026-10-23T20:00",
        0.655
       ],
       [
-       "2026-10-23T21:18",
-       0.655
-      ],
-      [
-       "2026-10-24T02:44",
-       0.655
-      ],
-      [
-       "2026-10-24T07:46",
-       0.655
-      ],
-      [
-       "2026-10-24T11:10",
-       0.655
-      ],
-      [
-       "2026-10-24T14:30",
-       0.655
-      ],
-      [
-       "2026-10-24T17:21",
-       0.655
-      ],
-      [
-       "2026-10-24T19:54",
-       0.655
-      ],
-      [
-       "2026-10-24T22:38",
+       "2026-10-24T02:00",
        0.655
       ],
       [
@@ -19206,40 +20085,12 @@
        0.655
       ],
       [
-       "2026-10-25T03:59",
-       0.655
-      ],
-      [
        "2026-10-25T08:00",
        0.64
       ],
       [
-       "2026-10-25T09:02",
-       0.64
-      ],
-      [
-       "2026-10-25T13:20",
-       0.625
-      ],
-      [
        "2026-10-25T14:00",
        0.625
-      ],
-      [
-       "2026-10-25T16:14",
-       0.625
-      ],
-      [
-       "2026-10-25T18:57",
-       0.625
-      ],
-      [
-       "2026-10-25T21:00",
-       0.635
-      ],
-      [
-       "2026-10-26T01:54",
-       0.635
       ],
       [
        "2026-10-26T02:00",
@@ -19450,7 +20301,7 @@
        0.665
       ],
       [
-       "2026-11-02T09:28",
+       "2026-11-02T14:00",
        0.665
       ],
       [
@@ -19458,11 +20309,23 @@
        0.665
       ],
       [
+       "2026-11-02T20:00",
+       0.665
+      ],
+      [
        "2026-11-03T02:26",
        0.665
       ],
       [
+       "2026-11-03T08:00",
+       0.665
+      ],
+      [
        "2026-11-03T13:17",
+       0.665
+      ],
+      [
+       "2026-11-03T14:00",
        0.665
       ],
       [
@@ -19474,7 +20337,15 @@
        0.665
       ],
       [
+       "2026-11-04T02:00",
+       0.665
+      ],
+      [
        "2026-11-04T03:24",
+       0.665
+      ],
+      [
+       "2026-11-04T08:00",
        0.665
       ],
       [
@@ -19482,7 +20353,15 @@
        0.705
       ],
       [
+       "2026-11-04T14:00",
+       0.705
+      ],
+      [
        "2026-11-04T18:57",
+       0.705
+      ],
+      [
+       "2026-11-04T20:00",
        0.705
       ],
       [
@@ -19490,7 +20369,15 @@
        0.705
       ],
       [
+       "2026-11-05T02:00",
+       0.705
+      ],
+      [
        "2026-11-05T05:34",
+       0.705
+      ],
+      [
+       "2026-11-05T08:00",
        0.705
       ],
       [
@@ -19502,7 +20389,19 @@
        0.685
       ],
       [
+       "2026-11-05T20:00",
+       0.685
+      ],
+      [
        "2026-11-05T23:34",
+       0.685
+      ],
+      [
+       "2026-11-06T02:00",
+       0.685
+      ],
+      [
+       "2026-11-06T08:00",
        0.685
       ],
       [
@@ -19510,8 +20409,96 @@
        0.685
       ],
       [
+       "2026-11-06T14:00",
+       0.685
+      ],
+      [
        "2026-11-06T17:53",
        0.685
+      ],
+      [
+       "2026-11-06T20:00",
+       0.685
+      ],
+      [
+       "2026-11-06T22:59",
+       0.685
+      ],
+      [
+       "2026-11-07T02:00",
+       0.685
+      ],
+      [
+       "2026-11-07T05:56",
+       0.685
+      ],
+      [
+       "2026-11-07T08:00",
+       0.685
+      ],
+      [
+       "2026-11-07T11:43",
+       0.685
+      ],
+      [
+       "2026-11-07T15:37",
+       0.685
+      ],
+      [
+       "2026-11-07T19:07",
+       0.685
+      ],
+      [
+       "2026-11-07T20:00",
+       0.685
+      ],
+      [
+       "2026-11-08T01:51",
+       0.685
+      ],
+      [
+       "2026-11-08T02:00",
+       0.685
+      ],
+      [
+       "2026-11-08T08:59",
+       0.665
+      ],
+      [
+       "2026-11-08T13:44",
+       0.665
+      ],
+      [
+       "2026-11-08T14:00",
+       0.665
+      ],
+      [
+       "2026-11-08T17:37",
+       0.665
+      ],
+      [
+       "2026-11-08T20:00",
+       0.665
+      ],
+      [
+       "2026-11-08T21:17",
+       0.665
+      ],
+      [
+       "2026-11-09T02:00",
+       0.675
+      ],
+      [
+       "2026-11-09T05:44",
+       0.675
+      ],
+      [
+       "2026-11-09T08:00",
+       0.675
+      ],
+      [
+       "2026-11-09T09:28",
+       0.675
       ]
      ]
     },
@@ -20530,83 +21517,23 @@
        0.345
       ],
       [
-       "2026-10-23T18:39",
-       0.345
-      ],
-      [
        "2026-10-23T20:00",
        0.345
       ],
       [
-       "2026-10-23T21:18",
+       "2026-10-24T02:00",
        0.345
-      ],
-      [
-       "2026-10-24T02:44",
-       0.345
-      ],
-      [
-       "2026-10-24T07:46",
-       0.335
-      ],
-      [
-       "2026-10-24T11:10",
-       0.3
-      ],
-      [
-       "2026-10-24T14:30",
-       0.3
-      ],
-      [
-       "2026-10-24T17:21",
-       0.3
-      ],
-      [
-       "2026-10-24T19:54",
-       0.3
-      ],
-      [
-       "2026-10-24T22:38",
-       0.295
       ],
       [
        "2026-10-25T02:00",
        0.295
       ],
       [
-       "2026-10-25T03:59",
-       0.255
-      ],
-      [
        "2026-10-25T08:00",
        0.295
       ],
       [
-       "2026-10-25T09:02",
-       0.3
-      ],
-      [
-       "2026-10-25T13:20",
-       0.285
-      ],
-      [
        "2026-10-25T14:00",
-       0.285
-      ],
-      [
-       "2026-10-25T16:14",
-       0.285
-      ],
-      [
-       "2026-10-25T18:57",
-       0.285
-      ],
-      [
-       "2026-10-25T21:00",
-       0.285
-      ],
-      [
-       "2026-10-26T01:54",
        0.285
       ],
       [
@@ -20814,7 +21741,7 @@
        0.355
       ],
       [
-       "2026-11-02T09:28",
+       "2026-11-02T14:00",
        0.355
       ],
       [
@@ -20822,11 +21749,23 @@
        0.355
       ],
       [
+       "2026-11-02T20:00",
+       0.355
+      ],
+      [
        "2026-11-03T02:26",
        0.355
       ],
       [
+       "2026-11-03T08:00",
+       0.355
+      ],
+      [
        "2026-11-03T13:17",
+       0.335
+      ],
+      [
+       "2026-11-03T14:00",
        0.335
       ],
       [
@@ -20838,7 +21777,15 @@
        0.335
       ],
       [
+       "2026-11-04T02:00",
+       0.34
+      ],
+      [
        "2026-11-04T03:24",
+       0.34
+      ],
+      [
+       "2026-11-04T08:00",
        0.34
       ],
       [
@@ -20850,11 +21797,23 @@
        0.335
       ],
       [
+       "2026-11-04T20:00",
+       0.335
+      ],
+      [
        "2026-11-04T21:59",
        0.335
       ],
       [
+       "2026-11-05T02:00",
+       0.335
+      ],
+      [
        "2026-11-05T05:34",
+       0.335
+      ],
+      [
+       "2026-11-05T08:00",
        0.335
       ],
       [
@@ -20866,7 +21825,19 @@
        0.335
       ],
       [
+       "2026-11-05T20:00",
+       0.335
+      ],
+      [
        "2026-11-05T23:34",
+       0.335
+      ],
+      [
+       "2026-11-06T02:00",
+       0.335
+      ],
+      [
+       "2026-11-06T08:00",
        0.335
       ],
       [
@@ -20874,7 +21845,95 @@
        0.335
       ],
       [
+       "2026-11-06T14:00",
+       0.335
+      ],
+      [
        "2026-11-06T17:53",
+       0.335
+      ],
+      [
+       "2026-11-06T20:00",
+       0.335
+      ],
+      [
+       "2026-11-06T22:59",
+       0.335
+      ],
+      [
+       "2026-11-07T02:00",
+       0.335
+      ],
+      [
+       "2026-11-07T05:56",
+       0.335
+      ],
+      [
+       "2026-11-07T08:00",
+       0.335
+      ],
+      [
+       "2026-11-07T11:43",
+       0.335
+      ],
+      [
+       "2026-11-07T15:37",
+       0.335
+      ],
+      [
+       "2026-11-07T19:07",
+       0.335
+      ],
+      [
+       "2026-11-07T20:00",
+       0.335
+      ],
+      [
+       "2026-11-08T01:51",
+       0.335
+      ],
+      [
+       "2026-11-08T02:00",
+       0.335
+      ],
+      [
+       "2026-11-08T08:59",
+       0.335
+      ],
+      [
+       "2026-11-08T13:44",
+       0.335
+      ],
+      [
+       "2026-11-08T14:00",
+       0.335
+      ],
+      [
+       "2026-11-08T17:37",
+       0.335
+      ],
+      [
+       "2026-11-08T20:00",
+       0.335
+      ],
+      [
+       "2026-11-08T21:17",
+       0.335
+      ],
+      [
+       "2026-11-09T02:00",
+       0.335
+      ],
+      [
+       "2026-11-09T05:44",
+       0.335
+      ],
+      [
+       "2026-11-09T08:00",
+       0.335
+      ],
+      [
+       "2026-11-09T09:28",
        0.335
       ]
      ]
@@ -21902,51 +22961,15 @@
        0.59
       ],
       [
-       "2026-10-23T18:39",
-       0.585
-      ],
-      [
        "2026-10-23T20:00",
        0.595
       ],
       [
-       "2026-10-23T21:18",
-       0.595
-      ],
-      [
-       "2026-10-24T02:44",
+       "2026-10-24T02:00",
        0.575
       ],
       [
-       "2026-10-24T07:46",
-       0.59
-      ],
-      [
-       "2026-10-24T11:10",
-       0.59
-      ],
-      [
-       "2026-10-24T14:30",
-       0.58
-      ],
-      [
-       "2026-10-24T17:21",
-       0.585
-      ],
-      [
-       "2026-10-24T19:54",
-       0.585
-      ],
-      [
-       "2026-10-24T22:38",
-       0.585
-      ],
-      [
        "2026-10-25T02:00",
-       0.585
-      ],
-      [
-       "2026-10-25T03:59",
        0.585
       ],
       [
@@ -21954,32 +22977,8 @@
        0.585
       ],
       [
-       "2026-10-25T09:02",
-       0.585
-      ],
-      [
-       "2026-10-25T13:20",
-       0.58
-      ],
-      [
        "2026-10-25T14:00",
        0.58
-      ],
-      [
-       "2026-10-25T16:14",
-       0.575
-      ],
-      [
-       "2026-10-25T18:57",
-       0.575
-      ],
-      [
-       "2026-10-25T21:00",
-       0.575
-      ],
-      [
-       "2026-10-26T01:54",
-       0.565
       ],
       [
        "2026-10-26T02:00",
@@ -22190,7 +23189,7 @@
        0.555
       ],
       [
-       "2026-11-02T09:28",
+       "2026-11-02T14:00",
        0.555
       ],
       [
@@ -22198,11 +23197,23 @@
        0.555
       ],
       [
+       "2026-11-02T20:00",
+       0.555
+      ],
+      [
        "2026-11-03T02:26",
        0.555
       ],
       [
+       "2026-11-03T08:00",
+       0.555
+      ],
+      [
        "2026-11-03T13:17",
+       0.555
+      ],
+      [
+       "2026-11-03T14:00",
        0.555
       ],
       [
@@ -22214,11 +23225,23 @@
        0.65
       ],
       [
+       "2026-11-04T02:00",
+       0.575
+      ],
+      [
        "2026-11-04T03:24",
        0.575
       ],
       [
+       "2026-11-04T08:00",
+       0.57
+      ],
+      [
        "2026-11-04T13:30",
+       0.56
+      ],
+      [
+       "2026-11-04T14:00",
        0.56
       ],
       [
@@ -22226,11 +23249,23 @@
        0.565
       ],
       [
+       "2026-11-04T20:00",
+       0.565
+      ],
+      [
        "2026-11-04T21:59",
        0.565
       ],
       [
+       "2026-11-05T02:00",
+       0.55
+      ],
+      [
        "2026-11-05T05:34",
+       0.525
+      ],
+      [
+       "2026-11-05T08:00",
        0.525
       ],
       [
@@ -22242,7 +23277,19 @@
        0.545
       ],
       [
+       "2026-11-05T20:00",
+       0.545
+      ],
+      [
        "2026-11-05T23:34",
+       0.545
+      ],
+      [
+       "2026-11-06T02:00",
+       0.545
+      ],
+      [
+       "2026-11-06T08:00",
        0.545
       ],
       [
@@ -22250,8 +23297,96 @@
        0.565
       ],
       [
+       "2026-11-06T14:00",
+       0.56
+      ],
+      [
        "2026-11-06T17:53",
        0.55
+      ],
+      [
+       "2026-11-06T20:00",
+       0.555
+      ],
+      [
+       "2026-11-06T22:59",
+       0.55
+      ],
+      [
+       "2026-11-07T02:00",
+       0.545
+      ],
+      [
+       "2026-11-07T05:56",
+       0.54
+      ],
+      [
+       "2026-11-07T08:00",
+       0.54
+      ],
+      [
+       "2026-11-07T11:43",
+       0.54
+      ],
+      [
+       "2026-11-07T15:37",
+       0.54
+      ],
+      [
+       "2026-11-07T19:07",
+       0.54
+      ],
+      [
+       "2026-11-07T20:00",
+       0.54
+      ],
+      [
+       "2026-11-08T01:51",
+       0.54
+      ],
+      [
+       "2026-11-08T02:00",
+       0.54
+      ],
+      [
+       "2026-11-08T08:59",
+       0.54
+      ],
+      [
+       "2026-11-08T13:44",
+       0.54
+      ],
+      [
+       "2026-11-08T14:00",
+       0.54
+      ],
+      [
+       "2026-11-08T17:37",
+       0.535
+      ],
+      [
+       "2026-11-08T20:00",
+       0.535
+      ],
+      [
+       "2026-11-08T21:17",
+       0.535
+      ],
+      [
+       "2026-11-09T02:00",
+       0.535
+      ],
+      [
+       "2026-11-09T05:44",
+       0.535
+      ],
+      [
+       "2026-11-09T08:00",
+       0.535
+      ],
+      [
+       "2026-11-09T09:28",
+       0.535
       ]
      ]
     }
@@ -22274,7 +23409,7 @@
   ],
   "nudge_from": [],
   "rules_total_from_start": 0.5637,
-  "gone": 0.01853178646934461,
+  "gone": 0.021368162790697674,
   "docs": {
    "_doc": "Used once the state is meeting_only (Dec 3 AGM set, routine). Headline = merger letter (or definitive agreement) by `by`, conditional on none so far. Dashboard number = (1 - market_weight) x rules model + market_weight x market composite, plus any smart-money nudge.",
    "_rules_why": "Rules model: 0.6 x the pre-proxy merger share (letter_after_kill). With the committee signal on (Oct 20: both boards formed special committees), that share is 94%, so the rules number is 0.6 x 0.94 = 56%. The 0.6 keeps a haircut because Musk said no terms are agreed, there's no guarantee, and the Tesla vote needs 50% of all shares. Judgment, not data.",
@@ -22285,10 +23420,10 @@
   }
  },
  "pp_split": {
-  "total": 0.32,
-  "time": -0.05,
+  "total": -0.38,
+  "time": -0.08,
   "news": 0.0,
-  "markets": 0.37
+  "markets": -0.3
  },
  "later": {
   "on": false,
@@ -22300,9 +23435,9 @@
  "special_meeting": {
   "on": false,
   "alt_totals": {
-   "A": 0.4920464190497833,
-   "B": 0.37924013263465883,
-   "none": 0.12871344831555787
+   "A": 0.49675272764228157,
+   "B": 0.3663280052118556,
+   "none": 0.13691926714586278
   },
   "alt_later": {
    "on": false,
@@ -22313,116 +23448,58 @@
   },
   "alt_weeks": [
    {
-    "monday": "2026-11-02",
-    "A": 0.025064979053596885,
-    "B": 0.03321977458368881,
-    "either": 0.0582847536372857,
-    "cum": 0.0582847536372857
-   },
-   {
     "monday": "2026-11-09",
-    "A": 0.2598840836379562,
-    "B": 0.34602035805097,
-    "either": 0.6059044416889261,
-    "cum": 0.6641891953262119
+    "A": 0.2764565369029242,
+    "B": 0.3663280052118556,
+    "either": 0.6427845421147798,
+    "cum": 0.6427845421147798
    },
    {
     "monday": "2026-11-16",
-    "A": 0.10506976429928738,
+    "A": 0.11128893566968391,
     "B": 0.0,
-    "either": 0.10506976429928738,
-    "cum": 0.7692589596254993
+    "either": 0.11128893566968391,
+    "cum": 0.7540734777844638
    },
    {
     "monday": "2026-11-23",
-    "A": 0.09004183586981473,
+    "A": 0.09625736926953225,
     "B": 0.0,
-    "either": 0.09004183586981473,
-    "cum": 0.859300795495314
+    "either": 0.09625736926953225,
+    "cum": 0.8503308470539959
    },
    {
     "monday": "2026-11-30",
-    "A": 0.007026427766625168,
+    "A": 0.0074741974466056935,
     "B": 0.0,
-    "either": 0.007026427766625168,
-    "cum": 0.866327223261939
+    "either": 0.0074741974466056935,
+    "cum": 0.8578050445006017
    },
    {
     "monday": "2026-12-07",
-    "A": 0.003085614351403276,
+    "A": 0.0032825690344402293,
     "B": 0.0,
-    "either": 0.003085614351403276,
-    "cum": 0.8694128376133423
+    "either": 0.0032825690344402293,
+    "cum": 0.861087613535042
    },
    {
     "monday": "2026-12-14",
-    "A": 0.001873714071099778,
+    "A": 0.001993119319095176,
     "B": 0.0,
-    "either": 0.001873714071099778,
-    "cum": 0.8712865516844421
+    "either": 0.001993119319095176,
+    "cum": 0.8630807328541372
    }
   ]
  },
  "merger_share_of_announcements": 0.0,
  "daily": [
   {
-   "date": "2026-11-06",
-   "cumA": 0.0,
-   "cumB": 0.04779166545894142,
-   "none": 0.9522083345410586,
-   "pA": 0.0,
-   "pB": 0.04779166545894142,
-   "pL": 0.0,
-   "why": [
-    "Fri x0.7",
-    "urgency x2.0",
-    "merger-only x0.90 (Grain spectrum deal pending FCC)"
-   ],
-   "events": [
-    "Grain spectrum deal pending FCC"
-   ]
-  },
-  {
-   "date": "2026-11-07",
-   "cumA": 0.0,
-   "cumB": 0.051205355848865805,
-   "none": 0.9487946441511342,
-   "pA": 0.0,
-   "pB": 0.003413690389924387,
-   "pL": 0.0,
-   "why": [
-    "Sat x0.05",
-    "urgency x2.0",
-    "merger-only x0.90 (Grain spectrum deal pending FCC)"
-   ],
-   "events": [
-    "Grain spectrum deal pending FCC"
-   ]
-  },
-  {
-   "date": "2026-11-08",
-   "cumA": 0.0,
-   "cumB": 0.05461904623879019,
-   "none": 0.9453809537612098,
-   "pA": 0.0,
-   "pB": 0.003413690389924387,
-   "pL": 0.0,
-   "why": [
-    "Sun x0.05",
-    "urgency x2.0",
-    "merger-only x0.90 (Grain spectrum deal pending FCC)"
-   ],
-   "events": [
-    "Grain spectrum deal pending FCC"
-   ]
-  },
-  {
    "date": "2026-11-09",
    "cumA": 0.0,
-   "cumB": 0.25944046963425343,
-   "none": 0.7405595303657466,
+   "cumB": 0.21665302316151894,
+   "none": 0.7833469768384811,
    "pA": 0.0,
-   "pB": 0.20482142339546325,
+   "pB": 0.21665302316151894,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
@@ -22436,10 +23513,10 @@
   {
    "date": "2026-11-10",
    "cumA": 0.0,
-   "cumB": 0.43695236991032155,
-   "none": 0.5630476300896785,
+   "cumB": 0.4044189765681686,
+   "none": 0.5955810234318314,
    "pA": 0.0,
-   "pB": 0.1775119002760681,
+   "pB": 0.1877659534066497,
    "pL": 0.0,
    "why": [
     "Tue x2.6",
@@ -22453,10 +23530,10 @@
   {
    "date": "2026-11-11",
    "cumA": 0.0,
-   "cumB": 0.5325357008282043,
-   "none": 0.46746429917179566,
+   "cumB": 0.5055237207102108,
+   "none": 0.4944762792897892,
    "pA": 0.0,
-   "pB": 0.09558333091788283,
+   "pB": 0.10110474414204214,
    "pL": 0.0,
    "why": [
     "Wed x1.4",
@@ -22470,10 +23547,10 @@
   {
    "date": "2026-11-12",
    "cumA": 0.0,
-   "cumB": 0.6144642701863896,
-   "none": 0.3855357298136104,
+   "cumB": 0.5921849299748183,
+   "none": 0.4078150700251817,
    "pA": 0.0,
-   "pB": 0.0819285693581853,
+   "pB": 0.08666120926460756,
    "pL": 0.0,
    "why": [
     "Thu x1.2",
@@ -22487,10 +23564,10 @@
   {
    "date": "2026-11-13",
    "cumA": 0.0,
-   "cumB": 0.6618684356551234,
-   "none": 0.33813156434487657,
+   "cumB": 0.6423274179479662,
+   "none": 0.3576725820520338,
    "pA": 0.0,
-   "pB": 0.04740416546873378,
+   "pB": 0.05014248797314793,
    "pL": 0.0,
    "why": [
     "Fri x0.7",
@@ -22505,10 +23582,10 @@
   {
    "date": "2026-11-14",
    "cumA": 0.0,
-   "cumB": 0.662473660518925,
-   "none": 0.337526339481075,
+   "cumB": 0.6429676512389619,
+   "none": 0.35703234876103807,
    "pA": 0.0,
-   "pB": 0.0006052248638015717,
+   "pB": 0.0006402332909957029,
    "pL": 0.0,
    "why": [
     "Sat x0.05",
@@ -22523,10 +23600,10 @@
   {
    "date": "2026-11-15",
    "cumA": 0.0,
-   "cumB": 0.6630827263383445,
-   "none": 0.33691727366165547,
+   "cumB": 0.6436119476605442,
+   "none": 0.3563880523394558,
    "pA": 0.0,
-   "pB": 0.0006090658194195329,
+   "pB": 0.0006442964215822578,
    "pL": 0.0,
    "why": [
     "Sun x0.05",
@@ -22540,10 +23617,10 @@
   {
    "date": "2026-11-16",
    "cumA": 0.0,
-   "cumB": 0.6996266755035165,
-   "none": 0.30037332449648346,
+   "cumB": 0.6822697329554797,
+   "none": 0.31773026704452034,
    "pA": 0.0,
-   "pB": 0.036543949165171966,
+   "pB": 0.03865778529493546,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
@@ -22557,10 +23634,10 @@
   {
    "date": "2026-11-17",
    "cumA": 0.0,
-   "cumB": 0.7312980981133322,
-   "none": 0.26870190188666776,
+   "cumB": 0.7157731468777571,
+   "none": 0.28422685312224294,
    "pA": 0.0,
-   "pB": 0.0316714226098157,
+   "pB": 0.033503413922277396,
    "pL": 0.0,
    "why": [
     "Tue x2.6",
@@ -22574,10 +23651,10 @@
   {
    "date": "2026-11-18",
    "cumA": 0.0,
-   "cumB": 0.7483519410570791,
-   "none": 0.25164805894292086,
+   "cumB": 0.7338134466820603,
+   "none": 0.2661865533179397,
    "pA": 0.0,
-   "pB": 0.017053842943746914,
+   "pB": 0.01804029980430321,
    "pL": 0.0,
    "why": [
     "Wed x1.4",
@@ -22591,10 +23668,10 @@
   {
    "date": "2026-11-19",
    "cumA": 0.0,
-   "cumB": 0.7629695207231479,
-   "none": 0.23703047927685206,
+   "cumB": 0.7492765608000345,
+   "none": 0.25072343919996554,
    "pA": 0.0,
-   "pB": 0.014617579666068787,
+   "pB": 0.015463114117974183,
    "pL": 0.0,
    "why": [
     "Thu x1.2",
@@ -22608,52 +23685,61 @@
   {
    "date": "2026-11-20",
    "cumA": 0.0,
-   "cumB": 0.7715049776519503,
-   "none": 0.22849502234804975,
+   "cumB": 0.7582967107021861,
+   "none": 0.24170328929781393,
    "pA": 0.0,
-   "pB": 0.008535456928802261,
+   "pB": 0.009020149902151605,
    "pL": 0.0,
    "why": [
     "Fri x0.7",
-    "urgency x2.2"
+    "urgency x2.2",
+    "merger-only x0.90 (Grain spectrum deal pending FCC)"
    ],
-   "events": []
+   "events": [
+    "Grain spectrum deal pending FCC"
+   ]
   },
   {
    "date": "2026-11-21",
    "cumA": 0.0,
-   "cumB": 0.7721146531468647,
-   "none": 0.22788534685313533,
+   "cumB": 0.7589410071237683,
+   "none": 0.24105899287623167,
    "pA": 0.0,
-   "pB": 0.0006096754949144473,
+   "pB": 0.0006442964215822578,
    "pL": 0.0,
    "why": [
     "Sat x0.05",
-    "urgency x2.2"
+    "urgency x2.2",
+    "merger-only x0.90 (Grain spectrum deal pending FCC)"
    ],
-   "events": []
+   "events": [
+    "Grain spectrum deal pending FCC"
+   ]
   },
   {
    "date": "2026-11-22",
    "cumA": 0.0,
-   "cumB": 0.7727243286417791,
-   "none": 0.2272756713582209,
+   "cumB": 0.7595853035453506,
+   "none": 0.2404146964546494,
    "pA": 0.0,
-   "pB": 0.0006096754949144473,
+   "pB": 0.0006442964215822578,
    "pL": 0.0,
    "why": [
     "Sun x0.05",
-    "urgency x2.2"
+    "urgency x2.2",
+    "merger-only x0.90 (Grain spectrum deal pending FCC)"
    ],
-   "events": []
+   "events": [
+    "Grain spectrum deal pending FCC"
+   ]
   },
   {
    "date": "2026-11-23",
    "cumA": 0.0,
-   "cumB": 0.8093048583366459,
-   "none": 0.1906951416633541,
+   "cumB": 0.7982817853220627,
+   "none": 0.20171821467793727,
    "pA": 0.0,
-   "pB": 0.03658052969486683,
+   "pB": 0.03869648177671217,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
@@ -22664,10 +23750,10 @@
   {
    "date": "2026-11-24",
    "cumA": 0.0,
-   "cumB": 0.8410079840721971,
-   "none": 0.15899201592780288,
+   "cumB": 0.8318187361952133,
+   "none": 0.1681812638047867,
    "pA": 0.0,
-   "pB": 0.03170312573555125,
+   "pB": 0.03353695087315055,
    "pL": 0.0,
    "why": [
     "Tue x2.6",
@@ -22678,10 +23764,10 @@
   {
    "date": "2026-11-25",
    "cumA": 0.0,
-   "cumB": 0.8580788979298016,
-   "none": 0.14192110207019837,
+   "cumB": 0.849877094357679,
+   "none": 0.150122905642321,
    "pA": 0.0,
-   "pB": 0.017070913857604522,
+   "pB": 0.01805835816246568,
    "pL": 0.0,
    "why": [
     "Wed x1.4",
@@ -22692,10 +23778,10 @@
   {
    "date": "2026-11-26",
    "cumA": 0.0,
-   "cumB": 0.858411448199755,
-   "none": 0.141588551800245,
+   "cumB": 0.8502288805556492,
+   "none": 0.14977111944435084,
    "pA": 0.0,
-   "pB": 0.0003325502699533348,
+   "pB": 0.0003517861979701105,
    "pL": 0.0,
    "why": [
     "Thu x1.2",
@@ -22709,10 +23795,10 @@
   {
    "date": "2026-11-27",
    "cumA": 0.0,
-   "cumB": 0.8585481116792466,
-   "none": 0.1414518883207534,
+   "cumB": 0.8503734419771085,
+   "none": 0.1496265580228915,
    "pA": 0.0,
-   "pB": 0.00013666347949159704,
+   "pB": 0.00014456142145936678,
    "pL": 0.0,
    "why": [
     "Fri x0.7",
@@ -22726,10 +23812,10 @@
   {
    "date": "2026-11-28",
    "cumA": 0.0,
-   "cumB": 0.8585806506029351,
-   "none": 0.1414193493970649,
+   "cumB": 0.8504078613631703,
+   "none": 0.14959213863682974,
    "pA": 0.0,
-   "pB": 3.253892368847549e-05,
+   "pB": 3.4419386061754e-05,
    "pL": 0.0,
    "why": [
     "Sat x0.05",
@@ -22740,10 +23826,10 @@
   {
    "date": "2026-11-29",
    "cumA": 0.0,
-   "cumB": 0.8586131895266236,
-   "none": 0.14138681047337642,
+   "cumB": 0.850442280749232,
+   "none": 0.149557719250768,
    "pA": 0.0,
-   "pB": 3.253892368847549e-05,
+   "pB": 3.4419386061754e-05,
    "pL": 0.0,
    "why": [
     "Sun x0.05",
@@ -22754,10 +23840,10 @@
   {
    "date": "2026-11-30",
    "cumA": 0.0,
-   "cumB": 0.8605655249479321,
-   "none": 0.13943447505206785,
+   "cumB": 0.8525074439129372,
+   "none": 0.1474925560870628,
    "pA": 0.0,
-   "pB": 0.0019523354213085292,
+   "pB": 0.0020651631637052395,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
@@ -22768,10 +23854,10 @@
   {
    "date": "2026-12-01",
    "cumA": 0.0,
-   "cumB": 0.8622575489797328,
-   "none": 0.13774245102026716,
+   "cumB": 0.8542972519881484,
+   "none": 0.14570274801185157,
    "pA": 0.0,
-   "pB": 0.0016920240318007253,
+   "pB": 0.0017898080752112076,
    "pL": 0.0,
    "why": [
     "Tue x2.6",
@@ -22782,10 +23868,10 @@
   {
    "date": "2026-12-02",
    "cumA": 0.0,
-   "cumB": 0.8631686388430101,
-   "none": 0.1368313611569899,
+   "cumB": 0.8552609947978775,
+   "none": 0.14473900520212246,
    "pA": 0.0,
-   "pB": 0.0009110898632773138,
+   "pB": 0.0009637428097291121,
    "pL": 0.0,
    "why": [
     "Wed x1.4",
@@ -22796,10 +23882,10 @@
   {
    "date": "2026-12-03",
    "cumA": 0.0,
-   "cumB": 0.8639495730115335,
-   "none": 0.13605042698846648,
+   "cumB": 0.8560870600633597,
+   "none": 0.14391293993664034,
    "pA": 0.0,
-   "pB": 0.0007809341685234118,
+   "pB": 0.0008260652654820959,
    "pL": 0.0,
    "why": [
     "Thu x1.2",
@@ -22810,10 +23896,10 @@
   {
    "date": "2026-12-04",
    "cumA": 0.0,
-   "cumB": 0.8644051179431722,
-   "none": 0.1355948820568278,
+   "cumB": 0.8565689314682242,
+   "none": 0.14343106853177578,
    "pA": 0.0,
-   "pB": 0.0004555449316386569,
+   "pB": 0.00048187140486455603,
    "pL": 0.0,
    "why": [
     "Fri x0.7",
@@ -22824,10 +23910,10 @@
   {
    "date": "2026-12-05",
    "cumA": 0.0,
-   "cumB": 0.8644376568668607,
-   "none": 0.1355623431331393,
+   "cumB": 0.856603350854286,
+   "none": 0.14339664914571404,
    "pA": 0.0,
-   "pB": 3.253892368847549e-05,
+   "pB": 3.4419386061754e-05,
    "pL": 0.0,
    "why": [
     "Sat x0.05",
@@ -22838,10 +23924,10 @@
   {
    "date": "2026-12-06",
    "cumA": 0.0,
-   "cumB": 0.8644701957905492,
-   "none": 0.13552980420945082,
+   "cumB": 0.8566377702403477,
+   "none": 0.1433622297596523,
    "pA": 0.0,
-   "pB": 3.253892368847549e-05,
+   "pB": 3.4419386061754e-05,
    "pL": 0.0,
    "why": [
     "Sun x0.05",
@@ -22852,10 +23938,10 @@
   {
    "date": "2026-12-07",
    "cumA": 0.0,
-   "cumB": 0.8660242547859107,
-   "none": 0.13397574521408928,
+   "cumB": 0.858281640118657,
+   "none": 0.14171835988134296,
    "pA": 0.0,
-   "pB": 0.0015540589953615897,
+   "pB": 0.0016438698783093713,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
@@ -22869,10 +23955,10 @@
   {
    "date": "2026-12-08",
    "cumA": 0.0,
-   "cumB": 0.8673670450575478,
-   "none": 0.1326329549424522,
+   "cumB": 0.8597020318071447,
+   "none": 0.14029796819285534,
    "pA": 0.0,
-   "pB": 0.0013427902716370557,
+   "pB": 0.0014203916884876146,
    "pL": 0.0,
    "why": [
     "Tue x2.6",
@@ -22886,10 +23972,10 @@
   {
    "date": "2026-12-09",
    "cumA": 0.0,
-   "cumB": 0.8680922725887166,
-   "none": 0.13190772741128343,
+   "cumB": 0.860469171083689,
+   "none": 0.13953082891631097,
    "pA": 0.0,
-   "pB": 0.0007252275311687417,
+   "pB": 0.0007671392765443731,
    "pL": 0.0,
    "why": [
     "Wed x1.4",
@@ -22903,10 +23989,10 @@
   {
    "date": "2026-12-10",
    "cumA": 0.0,
-   "cumB": 0.8687170199235353,
-   "none": 0.13128298007646466,
+   "cumB": 0.8611300232960747,
+   "none": 0.1388699767039253,
    "pA": 0.0,
-   "pB": 0.0006247473348187293,
+   "pB": 0.0006608522123856767,
    "pL": 0.0,
    "why": [
     "Thu x1.2",
@@ -22917,10 +24003,10 @@
   {
    "date": "2026-12-11",
    "cumA": 0.0,
-   "cumB": 0.8690814558688462,
-   "none": 0.13091854413115378,
+   "cumB": 0.8615155204199664,
+   "none": 0.13848447958003363,
    "pA": 0.0,
-   "pB": 0.00036443594531092543,
+   "pB": 0.0003854971238916447,
    "pL": 0.0,
    "why": [
     "Fri x0.7",
@@ -22931,10 +24017,10 @@
   {
    "date": "2026-12-12",
    "cumA": 0.0,
-   "cumB": 0.869107487007797,
-   "none": 0.13089251299220295,
+   "cumB": 0.8615430559288157,
+   "none": 0.13845694407118425,
    "pA": 0.0,
-   "pB": 2.6031138950780398e-05,
+   "pB": 2.7535508849403206e-05,
    "pL": 0.0,
    "why": [
     "Sat x0.05",
@@ -22945,10 +24031,10 @@
   {
    "date": "2026-12-13",
    "cumA": 0.0,
-   "cumB": 0.8691335181467479,
-   "none": 0.13086648185325211,
+   "cumB": 0.8615705914376651,
+   "none": 0.13842940856233488,
    "pA": 0.0,
-   "pB": 2.6031138950780398e-05,
+   "pB": 2.7535508849403206e-05,
    "pL": 0.0,
    "why": [
     "Sun x0.05",
@@ -22959,10 +24045,10 @@
   {
    "date": "2026-12-14",
    "cumA": 0.0,
-   "cumB": 0.8706953864837947,
-   "none": 0.12930461351620526,
+   "cumB": 0.8632227219686294,
+   "none": 0.13677727803137063,
    "pA": 0.0,
-   "pB": 0.0015618683370468237,
+   "pB": 0.0016521305309641922,
    "pL": 0.0,
    "why": [
     "Mon x3.0",
