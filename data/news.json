@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-09",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "04:30",
+     "title": "Tesla\u2013SpaceX Union Would Test Texas Business Code Merger Process",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYzBsSk9WSGpZV3FiQWtZdGNfV2ZZR090S1lkSEhXWVJIWjJHTE01YWtlTGxITm4zcG12OGwwR2lzdXVna05XZjJDallaM09uRUpuRllRY2FQaGFiRVFLaDF3MWZtWjhaZkp4bXJOOUl0VGY4cEhDNEpxNUdrTU1FQVFjN3RzRGFXbzVFS19DUjI5SmdSdFZzYjhuSHlDM2g2VjhLSm1kekZqQmtsNmg3c3FjV19OLU0?oc=5",
+     "source": "Bloomberg Law News",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-08",
    "odds_note": "",
    "items": [
