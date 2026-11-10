@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-10",
-   "odds_note": "Merger letter by Jun 30, 2027: +1.2 pts (filings/news +0.0, prediction markets +1.3, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +1.0 pts (filings/news +0.0, prediction markets +1.0, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "09:27",
@@ -53,14 +53,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "15:50",
+     "title": "SpaceX unveils Starlink Mini 2 satellite broadband terminal with built-in battery and Wi-Fi support - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVEFGMUo2bmFsZlpnUjBTUksyYmpKa1hONzNqYmVsS01iNjZCWmhFSUxuSEFYSU5uOUJ0YjktcWxhY3pNMEc2M1hDUU9NUjRLcFh6azJFM004eHdkOExnLXRlNGw3eXRhNFRnX0ZwQUZYaUdUWVJRMEZGUnMzbUw5aFlIMWxlMDBmdEU0TWJJTHVMNXlRb2UtNVNzaXJaUUQwRmtTd0lXNV85R3JVVE9VU1AtVGxCcjd3d2ZTWFVvdDZFeFVrSGViaWFLOUpDYk5hOFNHbXh3?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 1.24,
+     "total": 0.99,
      "time": -0.05,
      "news": 0.0,
-     "markets": 1.29
+     "markets": 1.03
     }
    }
   },
