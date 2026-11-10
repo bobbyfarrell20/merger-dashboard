@@ -24,14 +24,23 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "03:16",
+     "title": "SPCX Stock Climbs Overnight: Tesla Influencer Presses Texas Governor-Elect \u2014 Analyst Sees 10,000 AI Racks In Space By 2028 - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQY1NzVWJkaGhPWjFsbEVNWUJIaExnaE5uel9YZmVrZWx5bEdIdHA2R0h1NW0zWmtVaU5IeWFnNlZxNFRjS0d2Yjlpc1dWNWJ0YjJMdFpNbWtjMkd4cUNBSF9OdmE2OE9JU3NRS0hBeG5YVU9YMnROenJaWE5ZZ043cW9NdGJXcFJZd3ZLMUs4ZWZrSEhZRjBlbFlyRVdrZEY2elRPVVRqNUMzcGE3SjVFV0t4VzZzZ3ZsVjEtVTNXWUstUlZ6cWRoSEI4YlEwWS1QbFN4dXJNS1hhaU41WWZZ?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 1.23,
+     "total": 1.24,
      "time": -0.05,
      "news": 0.0,
-     "markets": 1.28
+     "markets": 1.29
     }
    }
   },
@@ -98,6 +107,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "08:52",
+     "title": "SpaceX: Buy - The Elon Effect Hasn't Landed Yet (NASDAQ:SPCX) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUHNGeHRKMjN5NUV6VzNwYWFKMkYwcVhRMU1pcFl2WDh0cWRqc0dkMWFDU1F6QlgxcWxEdFA2QXppa1hzSDdvb3o5Ml9DMEY1NnJaWW5Sck44MDc3dGMtRHJIM0EyTWo4SnN5NVRfU2tCeEt4cmJ2LVNRLTV3cS0wMEtTVkZDNE9pRWVhWQ?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
