@@ -33,6 +33,26 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "13:08",
+     "title": "Sargasso Capital Management Announces Project Kepler: The Case for Combining Tesla & SpaceX",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQV9rLTRVWFFtSTZDZWphbUhSeW44UFNBd1RGbW9IOS0zaUVSb21mNFA5SW40MEF1Tkw3M3l0RUpkR1dudDlybTZKMXpBaUhqSmsyZUJ6MzhrUTBCaFRNcXo4Nm40MWU5V0swSWRoQ0hwMVJTc1ZTRFpQZ29qU3lHLW9WU1ZMMlA2NEVIMEJmMTNwbzBJSTNGcWdVUnpRYjBZald4eVQxRHB6cEx6SlpN?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:44",
+     "title": "FCC ECFS new filing 2026-11-10: PUBLIC NOTICE by Wireless Telecommunications Bureau (26-313)",
+     "url": "https://docs.fcc.gov/public/attachments/DA-26-1218A1.pdf",
+     "source": "tracker",
+     "factor": "grain",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
