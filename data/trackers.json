@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-11 02:25 ET",
-  "last_ok": "2026-11-11 02:25 ET",
+  "as_of": "2026-11-11 13:28 ET",
+  "last_ok": "2026-11-11 13:28 ET",
   "error": null
  },
  "starship": {
@@ -27,9 +27,9 @@
      "KeepTrack",
      "MLQ.ai",
      "MarketScale",
+     "Nacionale",
      "Starlust.org",
      "Tesla Accessories",
-     "TeslaNorth.com",
      "The News International",
      "The Sun Malaysia"
     ]
@@ -41,8 +41,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-11 02:25 ET",
-  "last_ok": "2026-11-11 02:25 ET",
+  "as_of": "2026-11-11 13:28 ET",
+  "last_ok": "2026-11-11 13:28 ET",
   "error": null
  },
  "grain": {
@@ -80,31 +80,31 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-11 02:25 ET",
-  "last_ok": "2026-11-11 02:25 ET",
+  "as_of": "2026-11-11 13:29 ET",
+  "last_ok": "2026-11-11 13:29 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 379.78,
-    "prev_close": 378.05,
-    "as_of": "2026-11-10 16:00 ET"
+    "price": 393.45,
+    "prev_close": 379.78,
+    "as_of": "2026-11-11 13:28 ET"
    },
    "SPCX": {
-    "price": 143.09,
-    "prev_close": 142.07,
-    "as_of": "2026-11-10 16:00 ET"
+    "price": 142.535,
+    "prev_close": 143.09,
+    "as_of": "2026-11-11 13:28 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-11-11 02:25 ET",
-  "last_ok": "2026-11-11 02:25 ET",
+  "as_of": "2026-11-11 13:29 ET",
+  "last_ok": "2026-11-11 13:29 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)",
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)"
  ],
- "prices_written": "2026-11-10T18:44-05:00"
+ "prices_written": "2026-11-11T13:29-05:00"
 }
