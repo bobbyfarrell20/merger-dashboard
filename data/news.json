@@ -3,8 +3,16 @@
  "days": [
   {
    "date": "2026-11-11",
-   "odds_note": "",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.0, prediction markets -0.1, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: overnight coverage was commentary/repeats only (Dan Ives on a 20-25% 'political discount' in SpaceX after the midterms while still expecting SpaceX to buy Tesla, Seoul Economic Daily on Korean retail rotating from Tesla into SpaceX, a GMT Eight rehash of the Oct Barclays note); no new Tesla or SpaceX EDGAR filings since Nov 9.",
+     "url": "https://stocktwits.com/news-articles/markets/equity/spacex-stock-political-discount-dan-ives-elon-musk-tesla-merger-play/cNGDhHhR9JU",
+     "source": "Morning review",
+     "factor": "news",
+     "effect": "Morning review: no odds change from news or filings; moves came from prediction markets and time only. Dec 31, 2026 at 9.6% (rules 9.0%, markets 10.4%); Jun 30, 2027 at 56.3%."
+    },
     {
      "time_et": "02:25",
      "title": "Kalshi: definitive agreement Before Mar 1, 2027: 38.0% -> 27.0% (-11.0 pts in 27.5h)",
@@ -15,7 +23,15 @@
      "auto": true,
      "watch": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.1,
+     "time": -0.05,
+     "news": 0.0,
+     "markets": -0.06
+    }
+   }
   },
   {
    "date": "2026-11-10",
