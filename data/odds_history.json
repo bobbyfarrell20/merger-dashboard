@@ -523,16 +523,25 @@
  },
  {
   "date": "2026-11-12",
-  "as_of": "2026-11-12 13:45 ET",
-  "X": 0.5919,
+  "as_of": "2026-11-12 16:09 ET",
+  "X": 0.61384,
   "A": 0.0,
-  "B": 0.5919,
-  "C": 0.4081,
+  "B": 0.61384,
+  "C": 0.38616,
   "D": 0.0,
-  "news": 0.0,
+  "news": 2.19,
   "time": -0.05,
-  "events": [],
-  "rules": 0.55188,
+  "events": [
+   {
+    "callout": true,
+    "label": "Bloomberg: talks progress",
+    "delta": 2.19,
+    "title": "Bloomberg: SpaceX and Tesla talks on record merger are said to progress; advisers discussing terms and governance; a deal could be announced as soon as December but could slip to 2027",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress",
+    "source": "Bloomberg"
+   }
+  ],
+  "rules": 0.58845,
   "market": 0.65194,
   "basis": "letter by Jun 30, 2027 (blend)",
   "markets": 3.01

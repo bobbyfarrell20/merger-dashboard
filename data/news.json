@@ -3,8 +3,20 @@
  "days": [
   {
    "date": "2026-11-12",
-   "odds_note": "Merger letter by Jun 30, 2027: +3.0 pts (filings/news +0.0, prediction markets +3.0, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +5.2 pts (filings/news +2.2, prediction markets +3.0, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
+    {
+     "time_et": "15:09",
+     "title": "Bloomberg: SpaceX and Tesla talks on record merger are said to progress; advisers discussing terms and governance; a deal could be announced as soon as December but could slip to 2027",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress",
+     "source": "Bloomberg",
+     "factor": "news",
+     "effect": "people-familiar report: talks moving faster; rules model shifted weight into Dec 2026 and raised letter odds by Jun 30, 2027 from 56% to 60%",
+     "watch": true,
+     "odds_event": {
+      "label": "Bloomberg: talks progress"
+     }
+    },
     {
      "time_et": null,
      "title": "Morning review: overnight coverage was commentary/repeats only (Barron's on SpaceX stock getting in the way of a merger, TheStreet on post-election SpaceX sentiment, Motley Fool combined-company piece, rehashes of the Oct 20 special committees from Yahoo Finance/FindArticles); no new Tesla or SpaceX EDGAR filings since Nov 9.",
@@ -66,9 +78,9 @@
    ],
    "split": {
     "pp": {
-     "total": 2.96,
+     "total": 5.15,
      "time": -0.05,
-     "news": 0.0,
+     "news": 2.19,
      "markets": 3.01
     }
    }
@@ -121,6 +133,15 @@
      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVFRQa1VyZ29rVVFEeko4Yk9fcnljdTBnTUR3bXBjRUZ6ejRLUVdoOEdnMGRLclBFZEs5RDQyVkZoRFpld21nUUh0aFhMbnlzMXhXZjFnY05EYTlYeVNhVk02aUFlbkRvQ3ZueGVVdzJiSWkxb1FPeXAyeTdQbS1fRldNZHV1ZFprYlgwenlSY2w0UGJnV3ZsQUR4alV5SmZfbVRZUWR5eEN2bmFxSWVYTGVYREFfZHVNdGtESVhpZGY1LURuelBz?oc=5",
      "source": "Tesla Oracle",
      "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "01:45",
+     "title": "SpaceX Stock Carries Up To 25% \u2018Political Discount,\u2019 Dan Ives Says \u2014 Sees Elon Musk\u2019s Tesla Merger Still In Play - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdDEwejQ0bzl4cW81SWR5MlZsT3BoU0ZuSWRNbmdYbzNqelB2ZTFtYVR6dGRjS29wMllxQjl6bHpCbDhDTU9zR2dqNXFyY2Y2NmtraUZyakVqazNlX19qOEdBd2FxZFl6aFBSQTB6MzhySFdHbTNfYmw0T1hMMDRkYzlOVmJNR0p6VUJYOEVXeFkyOTlzRlJLOTFoTU5McVhZVXFMY3czWlFYdFB0YXQxRWsxWEZpSTdWZWppM2dhakd5am9HcGZDUjJETFo?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
     }
