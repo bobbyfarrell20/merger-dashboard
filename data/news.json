@@ -2,6 +2,28 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-12",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.5 pts (filings/news +0.0, prediction markets +0.5, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: overnight coverage was commentary/repeats only (Barron's on SpaceX stock getting in the way of a merger, TheStreet on post-election SpaceX sentiment, Motley Fool combined-company piece, rehashes of the Oct 20 special committees from Yahoo Finance/FindArticles); no new Tesla or SpaceX EDGAR filings since Nov 9.",
+     "url": "https://www.barrons.com/",
+     "source": "Morning review",
+     "factor": "news",
+     "effect": "Morning review: no odds change from news or filings; moves came from prediction markets and time only. Dec 31, 2026 at 9.4% (rules 8.9%, markets 10.1%); Jun 30, 2027 at 56.7%."
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": 0.45,
+     "time": -0.05,
+     "news": 0.0,
+     "markets": 0.5
+    }
+   }
+  },
+  {
    "date": "2026-11-11",
    "odds_note": "Merger letter by Jun 30, 2027: -0.2 pts (filings/news +0.0, prediction markets -0.2, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -29,7 +51,7 @@
      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZDlGWW9RUnphQ19pTy1mU1FrSk1neHd4THppY3AzSEZnNmRDVnl0bE9NcGhSeVdhMTFqNTZyREctdWhYTjQ1OUIzWHFoeDhSTXBkY0daejNBc05odXI3RnNxRURfUjQ0X0x0bElOaUU5VTF2ODR3aG1HLUVyWFY5QjhjYmNHNTBDNEhrNW5MQl9WUVp1RGptQ09XU0t1NDVPNzRkWW53aEwtLUVPQklNbGJEQnllU21lZ3V5TW1GU1h3NGJtUjRnRUFPRThVQjZNbUtCbHRjdGotUGotQmJubzlJS0NXb3I5bUlIcw?oc=5",
      "source": "Benzinga",
      "factor": "news",
-     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "effect": "Re-assessed 1:29 PM ET Nov 11: write-up of the Nov 10 FCC accepted-for-filing notice (WT 26-313), not a grant. Grain stays pending; no odds change.",
      "auto": true,
      "watch": true
     },
@@ -39,7 +61,7 @@
      "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
      "source": "Kalshi",
      "factor": "markets",
-     "effect": "prediction-market move; odds not yet re-assessed",
+     "effect": "Re-assessed 10:31 PM ET Nov 11: no judgment change. No merger news; neighbors and Polymarket barely moved and Apr 1 now sits above May 1, so it looks like thin single-contract buying. Market price flows into the model on the next scheduled rerun.",
      "auto": true,
      "watch": true
     }
