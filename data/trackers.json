@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-11 19:57 ET",
-  "last_ok": "2026-11-11 19:57 ET",
+  "as_of": "2026-11-12 13:45 ET",
+  "last_ok": "2026-11-12 13:45 ET",
   "error": null
  },
  "starship": {
@@ -23,15 +23,11 @@
     "date": "2026-11-13",
     "sources": [
      "Aero-News Network",
-     "Drive Tesla Canada",
-     "KeepTrack",
      "MLQ.ai",
      "MarketScale",
      "Nacionale",
-     "Starlust.org",
      "Tesla Accessories",
-     "The News International",
-     "The Sun Malaysia"
+     "The News International"
     ]
    },
    "outcome_votes": {
@@ -41,14 +37,50 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-11 19:57 ET",
-  "last_ok": "2026-11-11 19:57 ET",
+  "as_of": "2026-11-12 13:45 ET",
+  "last_ok": "2026-11-12 13:45 ET",
   "error": null
  },
  "grain": {
   "value": {
    "status": "pending",
    "filings": [
+    {
+     "id": "26110084422",
+     "date": "2026-11-12",
+     "type": "COMMENT",
+     "filers": [
+      "Steven R Bliven"
+     ],
+     "proceedings": [
+      "26-313"
+     ],
+     "url": null
+    },
+    {
+     "id": "26110084474",
+     "date": "2026-11-12",
+     "type": "COMMENT",
+     "filers": [
+      "Scott Ragsdill"
+     ],
+     "proceedings": [
+      "26-313"
+     ],
+     "url": null
+    },
+    {
+     "id": "26110084395",
+     "date": "2026-11-12",
+     "type": "COMMENT",
+     "filers": [
+      "Barklee Sanders"
+     ],
+     "proceedings": [
+      "26-313"
+     ],
+     "url": "https://www.fcc.gov/ecfs/document/26110084395/1"
+    },
     {
      "id": "111077615292",
      "date": "2026-11-10",
@@ -76,35 +108,38 @@
    ],
    "seen_ids": [
     "111077615292",
-    "26110080153"
+    "26110080153",
+    "26110084395",
+    "26110084422",
+    "26110084474"
    ]
   },
   "ok": true,
-  "as_of": "2026-11-11 19:57 ET",
-  "last_ok": "2026-11-11 19:57 ET",
+  "as_of": "2026-11-12 13:45 ET",
+  "last_ok": "2026-11-12 13:45 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 390.84,
-    "prev_close": 379.78,
-    "as_of": "2026-11-11 16:00 ET"
+    "price": 391.63,
+    "prev_close": 390.8163,
+    "as_of": "2026-11-12 13:44 ET"
    },
    "SPCX": {
-    "price": 139.75,
-    "prev_close": 143.09,
-    "as_of": "2026-11-11 16:00 ET"
+    "price": 142.495,
+    "prev_close": 139.75,
+    "as_of": "2026-11-12 13:45 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-11-11 19:57 ET",
-  "last_ok": "2026-11-11 19:57 ET",
+  "as_of": "2026-11-12 13:45 ET",
+  "last_ok": "2026-11-12 13:45 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)",
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)"
  ],
- "prices_written": "2026-11-11T19:57-05:00"
+ "prices_written": "2026-11-12T13:45-05:00"
 }
