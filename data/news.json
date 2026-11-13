@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-12",
-   "odds_note": "Merger letter by Jun 30, 2027: +7.0 pts (filings/news +2.2, prediction markets +4.9, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +7.4 pts (filings/news +2.2, prediction markets +5.2, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": "15:09",
@@ -304,14 +304,23 @@
      "effect": "prediction-market move; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "19:17",
+     "title": "A 68-Year-Old Retiree Bought 1,000 Tesla Shares at $108 in January 2023. Now Musk Could Merge Tesla Into SpaceX by December, and a 15% Premium Would Turn Her Stake Into About 3,270 SpaceX Shares - AOL.com",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9hZUJVWkIwWDNlRy0wSUVqYUN5TmVYSDVsUnR6RHExZ2NROHNBdXpSY0hCcktHYkdaVi04N0VkelRLRTR3a2tnSi1xdGphcTV3bHNaYk1Rd1ZScXVpdTlkODRzNWNVWHlleGZnS05IdlN6UTM5SWc?oc=5",
+     "source": "AOL.com",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 7.02,
+     "total": 7.38,
      "time": -0.05,
      "news": 2.19,
-     "markets": 4.87
+     "markets": 5.23
     }
    }
   },
