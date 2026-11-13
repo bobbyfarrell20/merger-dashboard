@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-13",
-   "odds_note": "Merger letter by Jun 30, 2027: +1.0 pts (filings/news +0.0, prediction markets +1.0, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +2.1 pts (filings/news +0.0, prediction markets +2.2, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -202,14 +202,50 @@
      "effect": "prediction-market move; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "18:15",
+     "title": "The FAA grants SpaceX license for Starship Flight 15, just hours ahead of launch - Tesla Oracle",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY3lJUFRFY3o4SnBKYkNzRlpYcHlYTENlekMxWmEtSnNFME80TzhyaUwxdF9ZcGNBSFFVX3c4SVc2RnJ3bWtOVm5YQ0xIajBHeXd1b1FZcVdmUTcyNFltZEVDYmVQWl9LUTZtRWpBTDl3UzJiWGE3UnRxMzFUYUphc2hJeG11Wm81SHgyU3lqTlFQUzEySFlsWEJYU2sxb2Vad3R3OFJ6MHJ1TXJxS3lIVWF3bHpnc25fZ0FB?oc=5",
+     "source": "Tesla Oracle",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "16:12",
+     "title": "SpaceX Could Announce a Deal for Tesla as Soon as December. Here's What It Would Do to SpaceX Stock. - The Motley Fool",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOT0EzSF9IUUZiT2RjVWt2cnRDRDVyRVJRVy1HMTVMOTFrZVg4SGRVZ01RU0RneGdHb2lnTE1qSjRNendaNDFPTlpPb09ZcEo1ajhDUU1NVGFfRUNkeDBobGFQYks0T0plWEdIbjlXN2dwaTFWYVJSM1NoTmZYZ3MyUVktR1Qya01DVkdXa3R6enh2azhOUHFjcERCV1Q4SVI2a1NqcHZTLWJQS21hT0Y2ajBERzFsYW9TRUlNU0U5MHRxX0Z3MmpDcWZDRFNHSnBJVUlBWjhEOU0?oc=5",
+     "source": "The Motley Fool",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "16:16",
+     "title": "SpaceX Flight 15: Morgan Stanley Calls Upcoming Starship Test One Of The Most \u2018Significant Catalysts\u2019 In Company\u2019s 25-Year History - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdGlSekdBU3pyenJXaktXaTF1bzFaR3FGX2gwYm11dWZVUGtSOG9xUWFVWkplZFRGSTlBcVVXaEphb09RaGw1YXhOOFlXRER4NlA2YTlBSFhOS1lmTU05Y0w2Qm1QRF9Wc05OcTZJVWtUZU45aU9Ld2JXV3RPZUNPanlUM2RQWDdsd0VMMmM1d1hBNjhWbDl3dFQ3SmhYS1NneDdmSDRyTGFUX1o5OGVha1ZZUDVtZWhyOVMzYW1icVlaTFNWckZDQ1QtWWJ6eXJYWmpUTmhhbDM?oc=5",
+     "source": "Stocktwits",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "12:51",
+     "title": "Tesla Pulls $42K Model Y AWD From US Website Amid Musk\u2019s Pivot Toward Robotaxis - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWUVGYUlFVlZ0WkV5QlE4ei1YT05YMXpWNDc3N1AwMzM3UEE5azJrelFIQW1qbHptcXpuWW5YNTlHSWtiRG12Nzh1cjkyUjR5ZXEzSVJFRFRVRFFBRWhPUUlISWh0eDFJUlhTcHgxd1IxMDhpZU9tNGc1c2pubHdFalU4SGY2aDExS3RfM1k4SFp3azNHN3FOM29XRzJlVTFrS2pmeVBJSW45eEpqaXYzYkgwWEc3cENzTzF3WkZvY2ZYWFdJeWRRN2NLcnl1TmxzR0NVV3BlYUlzcGc?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 1.0,
+     "total": 2.15,
      "time": -0.05,
      "news": 0.0,
-     "markets": 1.04
+     "markets": 2.2
     }
    }
   },
