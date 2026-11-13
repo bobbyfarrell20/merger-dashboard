@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-13",
-   "odds_note": "Merger letter by Jun 30, 2027: +0.6 pts (filings/news +0.0, prediction markets +0.6, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +1.0 pts (filings/news +0.0, prediction markets +1.0, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -136,10 +136,10 @@
    ],
    "split": {
     "pp": {
-     "total": 0.56,
+     "total": 1.0,
      "time": -0.05,
      "news": 0.0,
-     "markets": 0.61
+     "markets": 1.04
     }
    }
   },
@@ -472,6 +472,15 @@
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQl8ycmc0bkFUYVFZT1doczFiU1dEeERPQWRfRXB1bXRuV2xUcGtYMk9HY2d4dC04Q2NxdV80cUd0dExaSko0THRrSm9IRmRlQU02Q29hVW5qS0RZWUNiQUVlWHY5VEZDdDhHWkY4NzJzMEQ4LTdnaUdKMjFySzlmTmkzVS01alNnYnVzeWU2bW40OG1iOVVmWmw4VWFmQVNLdXlHYXlvWWs3a2RDSkZIamVZQi1BT0NabUhvZVFxM0hhZE1B0gHKAUFVX3lxTE5EOElJbldZVmhuTkI1cDZySnppem1aWndDYVpDaFlPWGpnTnRUT3N5ZFI4ck15QmJXUExmR1pCY1NqMmM4czl6bktUYXBqRU1HcDNhTGhST2NKLUdGbkV6RDhibFFwYWhzTC01TEVRYVNudGNEdUswc25yS3JJd2hldmxuVk5oQUhIcmx1S1pNb19MOTU1NkYwX0xWN0N3R2FQeW56X2xjVlYwVXNCTWxMTERQcW1VU1NpM0FXSWV5R2hKY1BNN0lkS1E?oc=5",
      "source": "Clarin.com",
      "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "09:50",
+     "title": "Elon Musk's SpaceX Could Be Making AST SpaceMobile More Valuable, Analysts Say - NewsBreak: Local News & Alerts",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVUFuMFJxOXk2N3QzejNsalhZSnQxdDBJLWFIRVR3X3FXZUNOZ1h3WnluaWJuVDU0blFqa0JNRjRURGprYWZfaXo5NXJnY1FvMGRmRE00eGs1VFpZUUVReDYybWtzamhuVGFpeXdqeUJDa3Q0TEJobXFxelVOb0ZkWVI1RW1vSTEzSHNxR0plRklWdEU4SzZqNUdDaVZJOUtvRkItbktlTmFTSnkzdjRoVXdIRUxsaHN2Q1RvYzR0aUlCRFhILUxuaW5xVW51QQ?oc=5",
+     "source": "NewsBreak: Local News & Alerts",
+     "factor": "news",
      "effect": "auto-tagged; review",
      "auto": true
     }
