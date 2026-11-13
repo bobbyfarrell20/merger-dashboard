@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-13 13:26 ET",
-  "last_ok": "2026-11-13 13:26 ET",
+  "as_of": "2026-11-13 18:48 ET",
+  "last_ok": "2026-11-13 18:48 ET",
   "error": null
  },
  "starship": {
@@ -22,20 +22,24 @@
    "headline_date": {
     "date": "2026-11-13",
     "sources": [
-     "MarketScale",
-     "Nacionale",
-     "Tesla Accessories"
+     "Nacionale"
     ]
    },
    "outcome_votes": {
-    "success": [],
-    "failure": [],
+    "success": [
+     "Seeking Alpha",
+     "Space",
+     "X"
+    ],
+    "failure": [
+     "Gizmodo"
+    ],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-11-13 13:26 ET",
-  "last_ok": "2026-11-13 13:26 ET",
+  "as_of": "2026-11-13 18:48 ET",
+  "last_ok": "2026-11-13 18:48 ET",
   "error": null
  },
  "grain": {
@@ -125,31 +129,31 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-13 13:26 ET",
-  "last_ok": "2026-11-13 13:26 ET",
+  "as_of": "2026-11-13 18:48 ET",
+  "last_ok": "2026-11-13 18:48 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 390.835,
+    "price": 390.22,
     "prev_close": 397.45,
-    "as_of": "2026-11-13 13:26 ET"
+    "as_of": "2026-11-13 16:00 ET"
    },
    "SPCX": {
-    "price": 139.93,
+    "price": 139.11,
     "prev_close": 139.94,
-    "as_of": "2026-11-13 13:26 ET"
+    "as_of": "2026-11-13 16:00 ET"
    }
   },
   "ok": true,
-  "as_of": "2026-11-13 13:26 ET",
-  "last_ok": "2026-11-13 13:26 ET",
+  "as_of": "2026-11-13 18:48 ET",
+  "last_ok": "2026-11-13 18:48 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)",
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)"
  ],
- "prices_written": "2026-11-13T13:26-05:00"
+ "prices_written": "2026-11-13T18:48-05:00"
 }
