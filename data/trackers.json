@@ -11,34 +11,29 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-13 21:50 ET",
-  "last_ok": "2026-11-13 21:50 ET",
+  "as_of": "2026-11-14 04:42 ET",
+  "last_ok": "2026-11-14 04:42 ET",
   "error": null
  },
  "starship": {
   "value": {
    "status": "scheduled",
    "next_net": "2026-11-13",
-   "headline_date": {
-    "date": "2026-11-13",
-    "sources": [
-     "Nacionale"
-    ]
-   },
+   "headline_date": null,
    "outcome_votes": {
     "success": [
-     "Seeking Alpha",
-     "X"
+     "Seeking Alpha"
     ],
     "failure": [
+     "Benzinga",
      "Gizmodo"
     ],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-11-13 21:50 ET",
-  "last_ok": "2026-11-13 21:50 ET",
+  "as_of": "2026-11-14 04:42 ET",
+  "last_ok": "2026-11-14 04:42 ET",
   "error": null
  },
  "grain": {
@@ -128,8 +123,8 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-13 21:50 ET",
-  "last_ok": "2026-11-13 21:50 ET",
+  "as_of": "2026-11-14 04:42 ET",
+  "last_ok": "2026-11-14 04:42 ET",
   "error": null
  },
  "prices": {
@@ -146,8 +141,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-13 21:50 ET",
-  "last_ok": "2026-11-13 21:50 ET",
+  "as_of": "2026-11-14 04:42 ET",
+  "last_ok": "2026-11-14 04:42 ET",
   "error": null
  },
  "log": [

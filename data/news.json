@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-14",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "04:42",
+     "title": "REVIEW NEEDED: Starship Flight 15 outcome unclear (success: Seeking Alpha; failure: Benzinga, Gizmodo); not applied, please classify",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-13",
    "odds_note": "Merger letter by Jun 30, 2027: +2.1 pts (filings/news +0.0, prediction markets +2.2, time -0.1). No new filing or news, so only the markets and time moved it.",
    "items": [
