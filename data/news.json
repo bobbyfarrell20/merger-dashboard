@@ -14,6 +14,26 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:00",
+     "title": "SpaceX\u2019s S&P 500 Bid Gets New Life as Musk Pitches Tesla Merger",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQWxWWXV2SzNsbkhDOUtQWVVfWVp3RjdkRVB0djV0TUpnU0ExUVFnWk1Ba1BiS0F4RkpSVVBibDFhWXowWTVnYklLX1BnMTUzbndYeVJfSU1zNnJtbC1XMnFoYXRQZC01NXViRnRrLWpGUmQycG1MSHktQ1Vublo5QVhUS2ZFZk5MZEpfNXcyc0t1Rk9hakppUExNcEZZMGc3RlpBR2o0RHVQdE9pM3ViaHFLNkg?oc=5",
+     "source": "Bloomberg.com",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:17",
+     "title": "REVIEW NEEDED: Starship Flight 15 outcome unclear (success: Seeking Alpha, Starlust.org; failure: Benzinga, Gizmodo); not applied, please classify",
+     "url": null,
+     "source": "tracker",
+     "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ]
   },
@@ -271,6 +291,36 @@
      "url": null,
      "source": "tracker",
      "factor": "starship",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "15:29",
+     "title": "SpaceX Tesla Merger Talks Advance Toward a $3.5 Trillion Deal",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTmgxeGFmeXNRc0R4S2VYZ0Zfa3VDcHFFRmJ1b19QYmkzVUlKemNpZS1ocmZNYnAzc0oxa1lIY2lnNVpZQ0p6S3NtWlk0SmNpRFRLQjA5X3VWR3BxaFZTMURvbHd6X2JwTjJVQnZIWjZlcjQ2ckUxT29jd2FSZHJGUUpVNXluLTg?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "15:15",
+     "title": "SpaceX-Tesla Merger Talks Advance. Plus Anthropic\u2019s $1.4T IPO and Hyperbolic\u2019s CEO",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSXRDQ0NkQXhTSE00M0w3dWw1OHFIREl4UHVHd2o5aXV0SVhMSXZZcEx4TURkcGwyZ2Q2Q3JZLUcwUmFNcjBsd1E1WWVCb1pIWUY5b29GcWJqTVE0LU9uY2cxSGdxdmZkT0x4Nkt6clpDTnJiWGRma3VocXNRTDBWR0NJemhldlk?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "11:59",
+     "title": "SpaceX and Tesla Could Announce Blockbuster Merger as Soon as December",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYjNJcEYwWjNBSzZOcnRtNWtBaG9FVkFoTmpLU1ptblJFZE9GVkdCNnNNdGdnTmxCMzJIQXc3YkdrdDJQYnQxc3dqVmtPMDAzdEhVSHB6eERfTnRzcmZhLVFMazlHckJ5bTdVTWo1bVVoaXJpUDRPblozT2xWUDdtanBodFBDV2JGTE1mN2NnX09UT2NMNXhkbHpkOUFQN09JX1dMWWxSbw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
