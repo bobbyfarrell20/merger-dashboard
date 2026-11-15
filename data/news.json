@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-14",
-   "odds_note": "",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.2 pts (filings/news +0.0, prediction markets +0.2, time -0.0). Why: calendar/config changed: starship.",
    "items": [
     {
      "time_et": "04:42",
@@ -74,8 +74,34 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "11:44",
+     "title": "Texas\u2019 Next Attorney General Vows \u201cTremendous Scrutiny\u201d of a Tesla\u2013SpaceX Merger - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOHBOT01nZ09MRWEzemdsOURrU2JFNExSck13X0h6eXg0eHVYeFFramZEYTVXMDlCSko0cEJpV3plWkJYRUppa0tVWndzYTVHb1BwZFB4Rk9tc0VzcEpSS0lqdExRS3lsb3hjbkd2aExOeG9jR0FJVDg4dUhERWxqeklNbmQzUnBLZktGTmpQZTRsZHZ0QnduWVZCR21aYW1aS3lYR2pGZ3A2LXF2VXFDSE5tSWhkQXFmYjFmWGtB?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "08:04",
+     "title": "SpaceX Just Lost a Starship Booster. Is Rocket Lab Stock the Better Bet? - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbUQ0OExZbmhFRGx6OFZHblRvVDJ2cGduWV9BdXl0ZFNpZHNmb0E0UGhJMnpMWVh1TUM0UHo2R3pWZ25lQmpFQ2p1YWhJQnJZVWdTSkVYMkdmdmt6eTZESTRfSE5vZm0wQWV1RFlMSzItXzhfQmtLQ2N3RXBfWXp3Z3V5a2drTEg0bzdtMFBsOVZYRVVIVEpmNlB0SkYzdWkzbGJHN1Uwd2dLVWxmaXFoWS1HVDU?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": 0.17,
+     "time": -0.03,
+     "news": 0.0,
+     "markets": 0.21
+    }
+   }
   },
   {
    "date": "2026-11-13",
@@ -364,6 +390,42 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "21:19",
+     "title": "Elon Musk | SpaceX, Tesla, xAI, X, & PayPal - Britannica",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5xeFllLWI4enZVQmExeDZsV2Ewa19ESXc4XzVlUmc3N29kQmhyRnZOa2dWUlV1SFd2bHBkS3FrX0ZTTW5PekRWaFUweEFOMkgwRDNnRQ?oc=5",
+     "source": "Britannica",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "17:27",
+     "title": "SpaceX Starship\u2019s First Double Catch Is \u2018Massive\u2019 For Orbital AI Data Centers, Says Market Strategist - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWWV2RFZoWGs2SWxydi05MVZRTmhpQnh3NEUzMHR5TmRGc0NObEU1eHppRzBya1pSb244OTh0OHN2cThqT3ZKakkxek1tTUt5clNFeHpmX3o2aUoxNlJoR0RUN0pnMkRoa3FUOXdTSllia0c1Tkt4ZlE3WFJval82X0xnZFA2alh4bmVIZTBtSFJ6cFU0NUNVQ1BsMUlXVUIweEZsWjdMbmJLendZd0REYmVKN3d6S1N5a2N2X0txSkNBcDQ5TWFvVF9pN1ZTTlh4R29Bd2JNM3g0al90U3JHWndsUHY2akV2LU1sWFR5Y3JsMkRyTWc?oc=5",
+     "source": "Stocktwits",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "19:11",
+     "title": "SPCX Stock Jumps Overnight: Analyst Says Musk Needs 50x Revenue Surge To Justify Its $2.5 Trillion Valuation - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSFRlM3BPeFRIVWJCdmJTUmFqNGNmOGJycEV0YUdRekFQRHV3RVdYcHk1aUpOZzlkeVp0cjVFOG9lTk10Y3FlMDQ5OV93UXo3QTdrcUEzWVFocEZkamRQLWphWjViMEQ4alEtY0hTd1ZreEpMN3ZKT295SEJIZmVJQjRpU1hsYlg0NS1rYnZLWUVMMmQ2QnNfT2VmbnBDWU90VDRGaGpqSFVsYXE5UmYyVTBB?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "12:57",
+     "title": "Nvidia Board Reportedly Approached Arm CEO Rene Haas To Succeed Jensen Huang As Top Execs Threaten To Quit, Join SpaceX Terafab - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNNUlncDl5bEhRWEFxeHdIVkw3QlhfdXFuOEFFbzBaaWVHbGtOc09RUkpaakk0ZWYzZDZRRjRUZ2dCYnF5ckF0ekhiSWNxVXliS3B3Ukt6bUVSTmlJMjRiQTdMLU9vNVBmRG90WXJiLURmMWJJX0NEdVU0X3A5OWE1VGt6amFhTnMzbkxQMVQxMWxSVG1oUE13d0JqNmwwdDJQelpxX2RBTjM3cHR1SnM5dkcyNU50MURjY1VkbUF3Q21jcklnQXpyNnpkRm1tZm4wckFrbnJUb3JESWhkOHI3MVFDYVJVVEd0TlpENXZFNWU1ZzF0bWc4OGRwNXF0cXJEaUxSeklXd2dWdm1LSGdPMnFzckZOOURVZllz?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {

@@ -7,10 +7,10 @@
   "confirmed": true
  },
  "starship": {
-  "status": "scheduled",
+  "status": "success",
   "next_net": "2026-11-13",
-  "evidence": "Oct 26 23:11 ET tracker 'success' was a false positive: headlines were about Booster 22's Oct 25 static fire (Space.com, Aviation Week). Flight 15 still NET Nov 8, unflown.",
-  "locked_until_launch": true,
+  "evidence": "Classified by hand Nov 14 20:3x ET: launched Fri Nov 13 5:47 PM ET, Ship reached orbit and deployed Starlinks, then was caught by the tower arms at Starbase Sat Nov 14 (~4:17 PM ET), the first-ever orbital Ship catch (SpaceX flight page, Space.com, CNBC, The Verge, Engadget). Booster catch was aborted and it was lost in the Gulf. Treated as success; Benzinga/Gizmodo 'failure' headlines refer to the booster.",
+  "locked_until_launch": false,
   "date_src": "Drive Tesla Canada, KeepTrack, Starlust.org, Tesla Accessories, TeslaNorth.com"
  }
 }
