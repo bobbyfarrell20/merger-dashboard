@@ -10,9 +10,7 @@ from zoneinfo import ZoneInfo
 D = Path(__file__).parent / "data"; ET = ZoneInfo("America/New_York")
 UA_SEC = "merger-dashboard tracker (contact: bfarrell20@gmail.com)"
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec"
-# Nasdaq full closures and early-close (not "full") days, 2026-2027
-HOLIDAYS = {"2026-11-26", "2026-12-25", "2027-01-01", "2027-01-18", "2027-02-15", "2027-03-26", "2027-05-31", "2027-06-18", "2027-07-05", "2027-09-06", "2027-11-25", "2027-12-24"}
-HALF_DAYS = {"2026-11-27", "2026-12-24", "2027-07-02", "2027-11-26"}
+from dataguard import HOLIDAYS, HALF_DAYS   # Nasdaq full closures and early-close days (one list for the whole repo)
 
 def now(): return dt.datetime.now(ET)
 def stamp(): return now().strftime("%Y-%m-%d %H:%M ET")
@@ -171,13 +169,30 @@ def grain(prev, ev):
     return {"status": g.get("status", "pending"), "filings": sorted(rows.values(), key=lambda r: r["date"], reverse=True)[:8], "seen_ids": sorted(set(rows) | seen)}, hits
 
 # ---------- 4. Prices ----------
+def guarded_prices(raw, prev, n=None, cfg=None):
+    """Run raw quotes {sym: {'price','prev','time'}} through dataguard. prev = last stored value (= last good)."""
+    import dataguard
+    n = n or now(); st = dict(prev.get("_guard") or {}); out = {}; W = []
+    for t, v in prev.items():   # seed last-good from the stored values the first time
+        if isinstance(v, dict) and v.get("price") and v.get("as_of") and t not in st.get("last_good", {}):
+            st.setdefault("last_good", {})[t] = {"price": v["price"], "time": v["as_of"]}
+    for t, cand in raw.items():
+        acc, w = dataguard.check_price(t, cand, st, n, cfg); W += w
+        if acc["price"] is None: out[t] = prev.get(t) or {}; continue
+        out[t] = {"price": acc["price"], "prev_close": acc["prev"], "as_of": acc["time"].strftime("%Y-%m-%d %H:%M ET"),
+                  **({"held": acc["held"]} if acc["held"] else {}), **({"stale": True} if acc["stale"] else {})}
+    out["guard_warnings"] = [w["msg"] for w in W if w["level"] == "warn"]
+    st.pop("log", None)    # keep trackers.json small and byte-stable; warnings are in guard_warnings
+    out["_guard"] = st
+    return out, dataguard.review_hits(W, n, "price tracker")
+
 def prices(prev, ev):
-    out = {}
+    raw = {}
     for t in ("TSLA", "SPCX"):
         m = json.loads(get(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?interval=1m&range=1d"))["chart"]["result"][0]["meta"]
-        out[t] = {"price": m["regularMarketPrice"], "prev_close": m.get("chartPreviousClose") or m.get("previousClose"),
-                  "as_of": dt.datetime.fromtimestamp(m["regularMarketTime"], ET).strftime("%Y-%m-%d %H:%M ET")}
-    return out, []
+        raw[t] = {"price": m.get("regularMarketPrice"), "prev": m.get("chartPreviousClose") or m.get("previousClose"),
+                  "time": dt.datetime.fromtimestamp(m["regularMarketTime"], ET)}
+    return guarded_prices(raw, prev, cfg=load("config.json", {}))
 
 TRACKERS = {"spcx_q3": spcx_q3, "starship": starship, "grain": grain, "prices": prices}
 

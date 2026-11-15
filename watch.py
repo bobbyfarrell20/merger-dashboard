@@ -92,12 +92,14 @@ MH = D / "markets_history.json"
 PM_URL = "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
 KS_URL = "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27"
 
-def usable(bid, ask, last, vol, mw):
-    if bid is not None and ask is not None and 0 < ask - bid <= mw["max_spread"]:
-        return round((bid + ask) / 2, 4), "mid"
-    if last is not None and (vol or 0) >= mw["min_volume_24h"]:
-        return round(last, 4), "last"
-    return None, "thin"
+QUOTE_ISSUES = []
+def usable(bid, ask, last, vol, mw, name=None):
+    """Validated usable price (dataguard.clean_quote): bid/ask mid if the book is sane and tight, else last trade
+    on enough volume and inside the book; crossed/empty books and out-of-range prices never produce a price."""
+    import dataguard
+    p, how, issue = dataguard.clean_quote(bid, ask, last, vol, mw)
+    if issue and name: QUOTE_ISSUES.append(f"{name}: {issue}")
+    return p, how
 
 def fetch_contracts(mw):
     f = lambda x: float(x) if x not in (None, "") else None
@@ -105,12 +107,12 @@ def fetch_contracts(mw):
     ev = json.loads(get("https://gamma-api.polymarket.com/events?slug=tesla-and-spacex-merger-officially-announced-by-june-30"))[0]
     for m in ev["markets"]:
         if m.get("closed"): continue
-        p, how = usable(f(m.get("bestBid")), f(m.get("bestAsk")), f(m.get("lastTradePrice")), f(m.get("volume24hr")), mw)
+        p, how = usable(f(m.get("bestBid")), f(m.get("bestAsk")), f(m.get("lastTradePrice")), f(m.get("volume24hr")), mw, "Polymarket " + m["groupItemTitle"])
         out.append({"id": "polymarket:" + str(m["id"]), "name": "Polymarket: announced by " + m["groupItemTitle"], "p": p, "how": how,
                     "vol24": f(m.get("volume24hr")), "url": PM_URL, "bid": f(m.get("bestBid")), "ask": f(m.get("bestAsk")), "last": f(m.get("lastTradePrice"))})
     for m in json.loads(get("https://api.elections.kalshi.com/trade-api/v2/markets?event_ticker=KXCOMPANYACTIONMERGER-27&limit=50"))["markets"]:
         if m.get("status") not in ("active", "open"): continue
-        p, how = usable(f(m.get("yes_bid_dollars")), f(m.get("yes_ask_dollars")), f(m.get("last_price_dollars")), f(m.get("volume_24h_fp")), mw)
+        p, how = usable(f(m.get("yes_bid_dollars")), f(m.get("yes_ask_dollars")), f(m.get("last_price_dollars")), f(m.get("volume_24h_fp")), mw, "Kalshi " + (m.get("yes_sub_title") or m["ticker"]))
         out.append({"id": "kalshi:" + m["ticker"], "name": "Kalshi: definitive agreement " + (m.get("yes_sub_title") or m["ticker"]),
                     "p": p, "how": how, "vol24": f(m.get("volume_24h_fp")), "url": KS_URL,
                     "bid": f(m.get("yes_bid_dollars")), "ask": f(m.get("yes_ask_dollars")), "last": f(m.get("last_price_dollars"))})
@@ -205,6 +207,7 @@ def main():
     uniq = {}
     for h in hits: uniq.setdefault(h["id"], h)
     new = [h for h in uniq.values() if h["id"] not in seen]
+    if QUOTE_ISSUES: print("quote issues (not used as prices):", "; ".join(QUOTE_ISSUES), file=sys.stderr)
     print(json.dumps({"checked": len(uniq), "new": len(new), "market_moves": len(mitems), "bootstrap": first, "errors": errors}))
     MKEYS = ("title", "url", "source", "time_et", "type", "contract", "from", "to", "window_hours")
     payload = {"items": [{k: h[k] for k in ("title", "url", "source", "time_et", "type")} for h in new]

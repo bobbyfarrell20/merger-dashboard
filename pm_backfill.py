@@ -5,7 +5,8 @@ import json, time, urllib.request, datetime as dt
 from pathlib import Path
 D = Path(__file__).parent / "data"; START = int(dt.datetime(2026, 8, 20, tzinfo=dt.timezone.utc).timestamp())
 def get(u): return json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "merger-dashboard"}), timeout=25).read())
-def iso(ts): return dt.datetime.fromtimestamp(ts, dt.timezone.utc).astimezone(dt.timezone(dt.timedelta(hours=-4))).isoformat(timespec="minutes")
+from zoneinfo import ZoneInfo
+def iso(ts): return dt.datetime.fromtimestamp(ts, ZoneInfo("America/New_York")).isoformat(timespec="minutes")   # ET with the right EDT/EST offset
 def run():
     out, now = {}, int(time.time())
     ev = get("https://gamma-api.polymarket.com/events?slug=tesla-and-spacex-merger-officially-announced-by-june-30")[0]
