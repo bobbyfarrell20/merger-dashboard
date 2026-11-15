@@ -3,16 +3,16 @@
  "days": [
   {
    "date": "2026-11-15",
-   "odds_note": "Merger letter by Jun 30, 2027: +4.6 pts (filings/news +0.0, prediction markets +0.0, time -0.0, model recalibration +4.6). Model recalibrated (2026-11-15 calibration v2): not news; see Details for what changed. ",
+   "odds_note": "Merger letter by Jun 30, 2027: +4.6 pts (filings/news +0.0, prediction markets -0.1, time -0.0, model recalibration +4.8). Model recalibrated (2026-11-15 calibration v2): not news; see Details for what changed. ",
    "items": [],
    "split": {
     "pp": {
-     "total": 4.56,
+     "total": 4.64,
      "time": -0.02,
      "news": 0.0,
-     "model": 4.58,
-     "markets": 0.0,
-     "model_near": 2.45,
+     "model": 4.8,
+     "markets": -0.14,
+     "model_near": 2.2,
      "model_version": "2026-11-15 calibration v2"
     }
    }
@@ -127,6 +127,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "07:00",
+     "title": "TSLA Stock Sinks Toward Worst Week This Year After Weak Q2 \u2014 But CEO Elon Musk Is A 'Big Fan' Of His Insightful Retail Investor Army - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVV9KRmdKX0xCWE81Vk03OC1sZnJoaFE3dW1yNW56T3NvU1BKTi1yQ1h1b0NTZWgzazV4Q3ZNTHJCZGlfRnBDZ1FnYXRHaXFtOUxNd1RQVDIxSlJlSmhNMGlTM21Wc0pvWWd5d0R5ZlptbUw3OWVjOGwxR01JZExNRkhOY21SdXFPbmpDeUZHLTVLdThDX0VxQlRrVFhBb2pXc1N2Wll3aFJVblFMNE5WX0txekgyUXZLeXc?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {

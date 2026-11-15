@@ -13,7 +13,7 @@
    "market_time": "2026-11-13 16:00 ET"
   }
  },
- "prices_as_of": "2026-11-15 02:55 ET",
+ "prices_as_of": "2026-11-15 02:57 ET",
  "options": [
   {
    "expiry": "2026-11-16",
@@ -33,8 +33,8 @@
    "expiry": "2026-11-20",
    "atm_iv": 50.9,
    "call_vol": 127492,
-   "put_vol": 205333,
-   "call_oi": 297751
+   "put_vol": 205334,
+   "call_oi": 297754
   },
   {
    "expiry": "2026-11-23",
@@ -96,8 +96,8 @@
    "expiry": "2027-01-15",
    "atm_iv": 47.0,
    "call_vol": 20013,
-   "put_vol": 14584,
-   "call_oi": 735301
+   "put_vol": 14583,
+   "call_oi": 735476
   },
   {
    "expiry": "2027-02-19",
@@ -125,7 +125,7 @@
    "atm_iv": 50.9,
    "call_vol": 8477,
    "put_vol": 6665,
-   "call_oi": 346604
+   "call_oi": 346609
   },
   {
    "expiry": "2027-09-17",
@@ -170,7 +170,7 @@
    "call_oi": 21402
   }
  ],
- "options_as_of": "2026-11-15 02:55 ET",
+ "options_as_of": "2026-11-15 02:57 ET",
  "edgar": {
   "TSLA": [
    {
@@ -527,7 +527,7 @@
    }
   ]
  },
- "edgar_as_of": "2026-11-15 02:55 ET",
+ "edgar_as_of": "2026-11-15 02:57 ET",
  "errors": [
   "2026-10-14 22:37 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:45 ET fetch_options: No module named 'yfinance'",
@@ -550,7 +550,7 @@
   }
  },
  "fcc": {
-  "as_of": "2026-11-15 02:55 ET",
+  "as_of": "2026-11-15 02:57 ET",
   "filings": [
    {
     "date": "2026-10-09",
@@ -567,7 +567,7 @@
   "note": "The SpaceX-Grain transfer applications were filed Oct 9 (ULS 0012212612 lead) and ask for expedited consent. On Nov 10, 2026 the FCC Wireless Bureau accepted them for filing in WT Docket 26-313 (Public Notice DA 26-1218): petitions/comments due Dec 1, oppositions Dec 8, so a grant is unlikely before mid-December. The earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-11-15 02:55 ET",
+  "as_of": "2026-11-15 02:57 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -582,7 +582,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-11-15 02:55 ET",
+  "as_of": "2026-11-15 02:57 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -689,91 +689,91 @@
   "iv": {
    "2026-11-18": {
     "iv": 50.4,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-11-20": {
     "iv": 50.9,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-11-23": {
     "iv": 47.8,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-11-25": {
     "iv": 49.3,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-11-27": {
     "iv": 46.8,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-12-04": {
     "iv": 48.3,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-12-11": {
     "iv": 48.8,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-12-18": {
     "iv": 47.7,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-12-24": {
     "iv": 48.4,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-12-31": {
     "iv": 49.2,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-01-15": {
     "iv": 47.0,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-02-19": {
     "iv": 49.4,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-03-19": {
     "iv": 49.5,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-04-16": {
     "iv": 50.3,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-06-17": {
     "iv": 50.9,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-09-17": {
     "iv": 51.5,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2027-12-17": {
     "iv": 52.2,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2028-01-21": {
     "iv": 52.4,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2028-06-16": {
     "iv": 53.7,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2028-12-15": {
     "iv": 54.5,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2029-01-19": {
     "iv": 54.9,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    },
    "2026-11-16": {
     "iv": 43.8,
-    "as_of": "2026-11-15 02:55 ET"
+    "as_of": "2026-11-15 02:57 ET"
    }
   }
  }
