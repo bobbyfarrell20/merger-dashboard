@@ -99,3 +99,12 @@ All weights live in `data/config.json`, each with a `_why` field and a source.
 - **Deal math** adds pass/fail against the floor, a control test, the reverse case, and parity and collar notes.
 
 Built by [@bobbyfarrell](https://x.com/bobbyfarrell)
+
+## Calibration review and data guard (Nov 15, 2026)
+- **Market composite (`postproxy.py`, `post_proxy.market`)**: contracts are weighted by liquidity quality (24h volume, half at $500, x spread tightness, full at 2c). A move one contract makes on its own is damped rather than excluded: it keeps the share of the move that other contracts confirm plus up to half of the rest (less on thin books), measured against the median of its own quotes over the past 24h. Expired contracts and stale quotes (over 12h old, or 3h behind the other contracts) are left out. Then a weighted monotone fit, as before.
+- **Market weight (`post_proxy.market_weight_rule`)**: 30% + 30% x L / (L + $10K), L = median over 3 days of total 24h volume. About 40% in thin weeks, 50% in busy ones, never above 60%.
+- **Rules model**: total 0.60 -> 0.64; Jan 2027 weight 14% -> 17% (from Feb/Mar/Apr); AGM day 4x -> 2x; Dec 24 - Jan 1 holiday lull 0.5x. Reasons in `_rules_why` and `_month_why`.
+- **Backtest**: `python backtest.py [--out data/calibration.json]` replays every watcher snapshot in git history through the old and new composite.
+- **Data guard (`dataguard.py`, settings in `data_guard`)**: prices, previous closes, implied vol and market quotes are checked (bounds, max move vs last good, previous close vs the recorded close, staleness, crossed/empty books). Bad values are replaced by the last good value, logged, shown as a "Data check" line in Live trackers, and raised once per field per day as `REVIEW NEEDED: data guard ...`. A rejected value that repeats on 3 runs in a row is accepted as a real move.
+- **Self-check**: `python selfcheck.py` (or `--quick` in CI) replays the Nov 13, 2026 bad pull ($358.22 previous close, IV 13.1) and checks the model's consistency. Both workflows run it before committing a model rerun.
+- A methodology change bumps `post_proxy.model_version`; that day's change shows as "model recalibration", never as news, so it doesn't trigger news alerts.

@@ -41,6 +41,11 @@ jobs:
         env:
           TZ: America/New_York
         run: python update.py --morning
+      - name: Self-check (data guard replays + model consistency); blocks the commit on failure
+        if: steps.gate.outputs.go == 'true'
+        env:
+          TZ: America/New_York
+        run: python selfcheck.py --quick
       - name: Commit data changes
         if: steps.gate.outputs.go == 'true'
         run: |

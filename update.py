@@ -24,23 +24,48 @@ def now_et():
     return dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M ET")
 
 # ---------------- live fetchers ----------------
-def fetch_prices(live):
-    """Yahoo chart meta: regularMarketPrice + regularMarketTime (intraday during market hours), previous close."""
-    import requests
-    out = {}
-    for t in ["TSLA", "SPCX"]:
-        r = requests.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?interval=1d&range=5d", headers={"User-Agent": "Mozilla/5.0"}, timeout=15).json()
-        mt = r["chart"]["result"][0]["meta"]
-        ts = dt.datetime.fromtimestamp(mt["regularMarketTime"], ET)
-        prev = mt.get("previousClose") or mt.get("chartPreviousClose")
-        if ts.date() < dt.datetime.now(ET).date() or not (ts.hour < 16):
-            closes = [c for c in r["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
-            prev = closes[-2] if len(closes) > 1 else prev
-        out[t] = {"close": round(float(mt["regularMarketPrice"]), 2), "prev": round(float(prev), 2),
-                  "date": ts.strftime("%Y-%m-%d %H:%M ET"), "market_time": ts.strftime("%Y-%m-%d %H:%M ET")}
-    live["prices"] = out; live["prices_as_of"] = now_et()
+def prev_close_from_bars(res, ts):
+    """Previous session close = last daily bar dated before the quote's session.
+    (chartPreviousClose is the close before the whole 5-day range, which produced the bad
+    $358.22 'previous close' on Nov 13, 2026; previousClose is often missing.)"""
+    stamps = res.get("timestamp") or []; closes = ((res.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
+    prior = [c for s_, c in zip(stamps, closes) if c and dt.datetime.fromtimestamp(s_, ET).date() < ts.date()]
+    return prior[-1] if prior else None
 
-def fetch_options(live):
+def apply_prices(live, raw, cfg, now=None):
+    """Validate raw quotes {sym: {'price','prev','time'}} through dataguard and store accepted values in live['prices']."""
+    import dataguard
+    now = now or dt.datetime.now(ET); st = live.setdefault("guard", {}); out = {}; W = []
+    for t, cand in raw.items():
+        acc, w = dataguard.check_price(t, cand, st, now, cfg); W += w
+        old = (live.get("prices") or {}).get(t) or {}
+        if acc["price"] is None: out[t] = old; continue
+        tm = acc["time"].strftime("%Y-%m-%d %H:%M ET")
+        out[t] = {"close": round(float(acc["price"]), 2), "prev": round(float(acc["prev"]), 2) if acc["prev"] is not None else old.get("prev"),
+                  "date": tm, "market_time": tm, **({"held": acc["held"]} if acc["held"] else {}), **({"stale": True} if acc["stale"] else {})}
+    live["prices"] = out; live["prices_as_of"] = now.strftime("%Y-%m-%d %H:%M ET")
+    live.setdefault("guard_run", []).extend(W)
+    return W
+
+def fetch_prices(live, cfg=None):
+    """Yahoo chart: regularMarketPrice + regularMarketTime (intraday during market hours), previous close from daily bars."""
+    import requests
+    raw = {}
+    for t in ["TSLA", "SPCX"]:
+        res = requests.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?interval=1d&range=5d", headers={"User-Agent": "Mozilla/5.0"}, timeout=15).json()["chart"]["result"][0]
+        mt = res["meta"]; ts = dt.datetime.fromtimestamp(mt["regularMarketTime"], ET)
+        raw[t] = {"price": mt.get("regularMarketPrice"), "prev": prev_close_from_bars(res, ts) or mt.get("previousClose"), "time": ts}
+    apply_prices(live, raw, cfg)
+
+def apply_iv(live, rows, cfg, now=None):
+    import dataguard
+    now = now or dt.datetime.now(ET)
+    rows, W = dataguard.check_iv(rows, live.setdefault("guard", {}), now, cfg)
+    live["options"] = rows; live["options_as_of"] = now.strftime("%Y-%m-%d %H:%M ET")
+    live.setdefault("guard_run", []).extend(W)
+    return W
+
+def fetch_options(live, cfg=None):
     import yfinance as yf
     t = yf.Ticker("TSLA"); spot = live["prices"]["TSLA"]["close"]
     rows = []
@@ -57,7 +82,7 @@ def fetch_options(live):
                          "call_oi": int(ch.calls.openInterest.fillna(0).sum())})
         except Exception as ex:
             rows.append({"expiry": e, "error": str(ex)[:80]})
-    live["options"] = rows; live["options_as_of"] = now_et()
+    apply_iv(live, rows, cfg)
 
 def fetch_edgar(live, watch):
     import requests
@@ -165,6 +190,9 @@ def odds_history(cfg, today, inp, prev, news_day, kill=None, ppm=None, pps=None)
         hh = ppm["headline"]; pt.update({"X": round(hh["blend"], 5), "B": round(hh["blend"], 5), "C": round(1 - hh["blend"], 5), "rules": round(hh["rules"], 5),
                                         "market": round(hh["market"], 5), "basis": "letter by Jun 30, 2027 (blend)"})
         if pps: pt.update({"news": pps["news"], "time": pps["time"], "markets": pps["markets"]})
+        if pps and pps.get("model") is not None:
+            pt["model"] = pps["model"]
+            pt["events"] = [e for e in pt["events"] if e.get("label") != "Model recalibrated"] + [{"callout": True, "label": "Model recalibrated", "delta": pps["model"], "title": f"Calibration review ({pps.get('model_version')}): liquidity-weighted market composite, market weight scales with market depth, rules timing/total reassessed. Not news.", "source": "model change"}]
         if pps and pps.get("first"):
             pt["events"].append({"callout": True, "label": "Market blend added", "delta": pps["markets"], "title": f"Dashboard now blends in the prediction-market composite ({hh['market_weight']:.0%} weight)", "source": "model change"})
     if abs(pt["news"]) >= 0.05:
@@ -465,13 +493,13 @@ def make_why_pp(cfg, pp, state):
     if committee:
         out = ["On SpaceX's Oct 20 earnings call, Musk said the Tesla and SpaceX boards have each formed a special committee of independent directors to look at a merger. He called it a good idea but said no terms are agreed and there's no guarantee.",
                f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) still set a routine Dec 3 meeting with no merger item, so any deal goes the normal route: committee talks, fairness opinions, an S-4, then a separate announcement and a special meeting, most likely in 2027. Tesla needs 50% of all outstanding shares to approve.",
-               f"With committees confirmed, the rules model rises to {H['rules']:.0%} for a merger letter or agreement by {fmt(pp['by'])}, 2027 (60% of the committee-adjusted merger odds). That is a judgment call, not data."]
+               f"With committees confirmed and Bloomberg reporting (Nov 12) that talks are progressing, the rules model puts a merger letter or agreement by {fmt(pp['by'])}, 2027 at {H['rules']:.0%}. That is a judgment call, not data."]
     else:
         out = [f"Tesla's {ev.get('form', 'proxy')} ({fmt(ev.get('date', '2026-10-19'))}) set a routine Dec 3 annual meeting with three items and no merger. If a deal were close, Tesla could have waited a few weeks and put it on that ballot, so a deal in the next month or so is unlikely.",
            "A merger is still possible through the normal route for a deal this size: a special committee, fairness opinions and an S-4, then a separate announcement and a special meeting, most likely in 2027.",
            f"The rules model keeps 60% of the pre-proxy merger odds: {H['rules']:.0%} by {fmt(pp['by'])}, 2027. That is a judgment call, not data."]
     out += [
-           f"Prediction markets price it at {H['market']:.0%} on the volume-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
+           f"Prediction markets price it at {H['market']:.0%} on the liquidity-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get {w:.0%} of the weight, more when trading is heavy and less when it is thin. Dashboard number: {1-w:.0%} x {H['rules']:.1%} + {w:.0%} x {H['market']:.1%}" + (f" + smart-money nudge {H['nudge']*100:+.1f} pts" if H['nudge'] else "") + f" = {H['blend']:.1%}.",
            ("Catalysts to watch: Starship Flight 15 (NET Nov 20), the Nov 20 and Dec 18 monthly options expirations, the Dec 3 annual meeting Q&A, the Dec 8 SpaceX unlock, and any banker or law-firm hire by the committees. Unlock days and Starship launch days are less likely days for a deal letter." if committee else "Catalysts to watch: SpaceX's Q3 call, Tesla's Q3 earnings, the Dec 3 meeting Q&A, and any committee, banker or law-firm leak. Unlock days and Starship launch days are less likely days for a deal letter.")]
     return out
 
@@ -488,7 +516,8 @@ def main():
     live = load("live.json", {})
     news = load("news.json", {"days": []})
     if not OFFLINE:
-        for f in (fetch_prices, fetch_options, lambda l: fetch_edgar(l, cfg["alerts"]["watch_forms"])):
+        live["guard_run"] = []
+        for f in (lambda l: fetch_prices(l, cfg), lambda l: fetch_options(l, cfg), lambda l: fetch_edgar(l, cfg["alerts"]["watch_forms"])):
             try: f(live)
             except Exception as ex: live.setdefault("errors", []).append(f"{now_et()} {getattr(f, '__name__', 'edgar')}: {ex}")
         try: fetch_news(news)
@@ -557,10 +586,17 @@ def main():
         H = pp["headline"]; o = (prev or {}).get("pp")
         if o:
             import postproxy
-            cfr = postproxy.run({**cfg, "post_proxy": o["inputs"]}, today, live)["headline"]["rules"]
+            old_run = postproxy.run({**cfg, "post_proxy": o["inputs"]}, today, live)
+            cfr = old_run["headline"]["rules"]
             tot = (H["blend"] - o["blend"]) * 100; tm = (cfr - o["rules"]) * (1 - o["w"]) * 100
-            nw = (H["rules"] * (1 - H["market_weight"]) - cfr * (1 - o["w"])) * 100
-            pps = {"total": round(tot, 2), "time": round(tm, 2), "news": round(nw, 2), "markets": round(tot - tm - nw, 2)}
+            if o["inputs"].get("model_version") != cfg["post_proxy"].get("model_version"):
+                # methodology recalibration: same data, new settings. Not news, so it never triggers a news alert.
+                md = (H["blend"] - old_run["headline"]["blend"]) * 100
+                pps = {"total": round(tot, 2), "time": round(tm, 2), "news": 0.0, "model": round(md, 2), "markets": round(tot - tm - md, 2),
+                       "model_near": round((H["near"]["blend"] - old_run["headline"]["near"]["blend"]) * 100, 2), "model_version": cfg["post_proxy"].get("model_version")}
+            else:
+                nw = (H["rules"] * (1 - H["market_weight"]) - cfr * (1 - o["w"])) * 100
+                pps = {"total": round(tot, 2), "time": round(tm, 2), "news": round(nw, 2), "markets": round(tot - tm - nw, 2)}
         else:   # first post-proxy run: filing effect on the rules model, then the market blend added on top
             ohp = next((p for p in reversed(load("odds_history.json", [])) if p["date"] < str(today) and not p.get("backfill")), None)
             if ohp:
@@ -579,8 +615,10 @@ def main():
         ev = state.get("evidence") or {}
         drivers = drivers + [f"Tesla filed a routine meeting proxy ({ev.get('form', 'filing')} {ev.get('date', '')}) with no merger item, closing the 2026 regular-card merger path"]
     if pps:
-        day["odds_note"] = (f"Merger letter by Jun 30, 2027: {pps['total']:+.1f} pts (filings/news {pps['news']:+.1f}, prediction markets {pps['markets']:+.1f}, time {pps['time']:+.1f}). "
-                            + ("Why: " + "; ".join(drivers) + "." if drivers else "No new filing or news, so only the markets and time moved it."))
+        day["odds_note"] = (f"Merger letter by Jun 30, 2027: {pps['total']:+.1f} pts (filings/news {pps['news']:+.1f}, prediction markets {pps['markets']:+.1f}, time {pps['time']:+.1f}"
+                            + (f", model recalibration {pps['model']:+.1f}" if pps.get("model") is not None else "") + "). "
+                            + (f"Model recalibrated ({pps['model_version']}): not news; see Details for what changed. " if pps.get("model") is not None else "")
+                            + ("Why: " + "; ".join(drivers) + "." if drivers else ("" if pps.get("model") is not None else "No new filing or news, so only the markets and time moved it.")))
         day["split"] = {"pp": pps}
     elif prev and not pp:
         e = lambda k: split.get(k, {"total": 0, "time": 0, "news": 0})
@@ -599,6 +637,12 @@ def main():
         for f in fl:
             if f["watch"] and f["date"] >= str(today - dt.timedelta(days=1)):
                 alerts.append({"type": "filing", "text": f"{co} filed {f['form']} on {f['date']}", "url": f["url"]})
+    gw = live.pop("guard_run", []) if not OFFLINE else []
+    save("live.json", live)
+    if pp and pp.get("data_issues"):
+        gw += [{"at": now_et(), "key": "markets:stale", "level": "warn", "review": False, "msg": m} for m in pp["data_issues"]]
+    for w in gw:
+        if w.get("review"): alerts.append({"type": "data_guard", "text": "REVIEW NEEDED: data guard: " + w["msg"]})
     model = {"morning_run": (str(today) if "--morning" in sys.argv else load("model.json", {}).get("morning_run")), "generated": now_et(), "today": str(today), "window": cfg["window"], "weeks": m["weeks"], "best_week": m["best_week"],
              "totals": m["totals"], "p_end": m["p_end"], "a_share": m["a_share"], "split": split, "drivers": drivers, "alerts": alerts,
              "prev_as_of": prev["as_of"] if prev else None,
@@ -606,7 +650,7 @@ def main():
              "fcc": live.get("fcc"), "shares": live.get("shares"), "why": why, "kill": kill, "leak": m["leak"],
              "starship": m["starship"], "grain": m["grain"], "grain_check": live.get("grain_check"), "polymarket": live.get("polymarket"),
              "lockups_eff": cfg["lockups"], "trackers": {k: (v if k == "log" or not isinstance(v, dict) else {**v, "value": {kk: vv for kk, vv in (v.get("value") or {}).items() if kk != "seen_ids"}}) for k, v in load("trackers.json", {}).items()},
-             "pp": pp, "pp_split": pps,
+             "pp": pp, "pp_split": pps, "data_guard": {"warnings": gw, "recent": (live.get("guard") or {}).get("log", [])[-8:]},
              "later": m["later"], "special_meeting": {"on": cfg["special_meeting_planned"]["on"], "alt_totals": alt["totals"], "alt_later": alt["later"],
                                  "alt_weeks": [{"monday": w["monday"], "A": w["A"], "B": w["B"], "either": w["either"], "cum": w["cum"]} for w in alt["weeks"]]},
              "merger_share_of_announcements": (m["totals"]["A"] / max(m["totals"]["A"] + m["totals"]["B"], 1e-9)) if m["totals"] else None,

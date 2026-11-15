@@ -1,6 +1,6 @@
 """Post-proxy model (state meeting_only): merger letter by Jun 30, 2027 via a separate announcement + special meeting.
 Dashboard number = (1-w) * rules model + w * prediction-market composite (+ smart-money nudge). Pure functions; update.py saves."""
-import json, math, datetime as dt
+import json, math, statistics, datetime as dt
 from zoneinfo import ZoneInfo
 from pathlib import Path
 ET = ZoneInfo("America/New_York"); D = Path(__file__).parent / "data"
@@ -57,8 +57,46 @@ def contract_date(name):
     except ValueError: d = dt.datetime.strptime(t, "%b %d, %Y").date()
     return str(d - dt.timedelta(days=1)) if "Before" in name else str(d)
 
-def table(mh, news, sm, now):
-    """Per-contract stats from the watcher's history + smart-money flags."""
+def quality(r, mk):
+    """Liquidity quality 0..1 of one contract quote: 24h volume (saturating) x spread tightness.
+    A last-trade quote (book too wide) counts at last_factor of a tight book; a thin quote counts 0."""
+    v = r.get("vol24") or 0; s_vol = v / (v + mk["vol_half"])
+    if r.get("how") == "mid" and r.get("bid") is not None and r.get("ask") is not None:
+        s_sp = min(1.0, mk["spread_full"] / max(r["ask"] - r["bid"], 0.005))
+    elif r.get("how") == "last": s_sp = mk["last_factor"]
+    else: s_sp = 0.0
+    return s_vol * s_sp
+
+def _lg(p): p = min(max(p, 0.005), 0.995); return math.log(p / (1 - p))
+def _sg(x): return 1 / (1 + math.exp(-x))
+
+def damp(rows, mk):
+    """Dampen unconfirmed single-contract moves instead of excluding them.
+    Move m = logit(price) - logit(ref), ref = median of the contract's own quotes over the past damp_hours.
+    Confirmation c = liquidity-weighted share of that move the other live contracts made too (0..1).
+    Kept share k = c + (1 - c) x solo, solo = solo_max x clamp(q / damp_full_q, damp_min, 1).
+    Moves under damp_ignore (logit) pass untouched, so ordinary drift never lags."""
+    live = [r for r in rows if r.get("ref") is not None and r["p"] is not None and not r.get("expired")]
+    for r in live: r["_m"] = _lg(r["p"]) - _lg(r["ref"])
+    for r in live:
+        m = r["_m"]
+        if abs(m) < mk["damp_ignore"]:
+            r["k"], r["conf"] = 1.0, None; r["p_used"] = r["p"]; continue
+        peers = [x for x in live if x is not r and not x.get("stale")]
+        wsum = sum(x["q"] for x in peers)
+        c = sum(x["q"] * min(1.0, max(0.0, x["_m"] / m)) for x in peers) / wsum if wsum else 0.0
+        solo = mk["solo_max"] * min(1.0, max(mk["damp_min"], r["q"] / mk["damp_full_q"]))
+        k = c + (1 - c) * solo
+        r["k"], r["conf"] = round(k, 3), round(c, 3); r["p_used"] = round(_sg(_lg(r["ref"]) + k * m), 4)
+    for r in rows:
+        r.pop("_m", None)
+        if "p_used" not in r and r.get("p") is not None: r["p_used"] = r["p"]
+
+def table(mh, news, sm, now, pp=None):
+    """Per-contract stats from the watcher's history + smart-money flags (+ liquidity quality, damping, staleness)."""
+    import dataguard
+    mk = (pp or {}).get("market", {}); v2 = mk.get("method") == "liquidity_v2"; gcfg = {"data_guard": (pp or {}).get("data_guard")}
+    newest = max((h["points"][-1]["t"] for h in mh.values() if h.get("points")), default=None, key=lambda t: dt.datetime.fromisoformat(t))
     rows = []
     def at(pts, hours):
         tgt = now - dt.timedelta(hours=hours); older = [x for x in pts if dt.datetime.fromisoformat(x["t"]) <= tgt]
@@ -82,6 +120,15 @@ def table(mh, news, sm, now):
                      "last": last.get("last"), "vol24": vol, "ch24": ch24, "ch7": ch7, "ch72": ch72, "as_of": last["t"],
                      "spark": [round(x["p"], 4) for x in since][-60:], "flag": flag, "nudge_ok": nud,
                      "explained_by": news24[:1] if news24 else [], "url": h.get("url")})
+        r = rows[-1]; d = r["date"]
+        r["expired"] = bool(d and d < str(now.date()))
+        r["stale"] = "contract expired" if r["expired"] else dataguard.quote_staleness(last["t"], newest, now, gcfg)
+        if v2:
+            q = quality(r, mk); r["q"] = round(q, 3)
+            win = [x["p"] for x in pts[:-1] if t_last - dt.timedelta(hours=mk["damp_hours"]) <= dt.datetime.fromisoformat(x["t"]) < t_last]
+            ref = statistics.median(win) if win else last["p"]
+            r["ref"] = round(ref, 4)
+    if v2: damp(rows, mk)
     rows.sort(key=lambda r: (r["date"] or "9999", r["venue"]))
     return rows
 
@@ -97,19 +144,51 @@ def explained_windows(news):
             items.append((t, i["title"]))
     return lambda a, b: [ti for t, ti in items if a <= t <= b]
 
-def composite(rows, pp):
+def composite(rows, pp, today=None):
     mk = pp["market"]
-    pts = [{"date": r["date"], "p": r["p"], "w": max(r["vol24"] or 0, mk["min_vol_weight"]), "id": r["id"]} for r in rows if r["date"] and r["p"] is not None]
+    if mk.get("method") == "liquidity_v2":
+        live = [r for r in rows if r["date"] and r["p"] is not None and not r.get("expired") and (today is None or r["date"] > str(today))]
+        use = [r for r in live if not r.get("stale")] or live      # all stale: fall back to the last good quotes (flagged)
+        pts = [{"date": r["date"], "p": r["p_used"], "w": max(r["q"], mk["min_q"]), "id": r["id"]} for r in use]
+        for r in rows: r["in_fit"] = r in use; r["w_fit"] = round(max(r.get("q", 0), mk["min_q"]), 3) if r in use else 0.0
+        tw = sum(p["w"] for p in pts) or 1
+        for r in use: r["w_share"] = round(max(r["q"], mk["min_q"]) / tw, 3)
+    else:
+        pts = None
+    if pts is None:
+        pts = [{"date": r["date"], "p": r["p"], "w": max(r["vol24"] or 0, mk["min_vol_weight"]), "id": r["id"]} for r in rows if r["date"] and r["p"] is not None]
+    if not pts: return []
     fit = iso_fit(pts)
     agg = {}
     for f, p in zip(fit, sorted(pts, key=lambda x: x["date"])):
         a = agg.setdefault(f["date"], [0, 0]); a[0] += f["fit"] * p["w"]; a[1] += p["w"]
     return sorted((d, s / w) for d, (s, w) in agg.items())
 
+def market_depth(mh, now, today, days=3):
+    """Median over the last `days` days of the total 24h volume across live contracts (USD)."""
+    tots = []
+    for k in range(days):
+        tk = now - dt.timedelta(hours=24 * k); s = n = 0
+        for h in mh.values():
+            d = contract_date(h["name"])
+            if not d or d <= str(today): continue
+            pts = [p for p in h["points"] if tk - dt.timedelta(hours=12) <= dt.datetime.fromisoformat(p["t"]) <= tk]
+            if pts: s += pts[-1].get("vol24") or 0; n += 1
+        if n: tots.append(s)
+    return statistics.median(tots) if tots else 0.0
+
+def market_weight(pp, mh, now, today):
+    """Fixed weight (legacy) or depth-scaled: w = min + (max - min) x L / (L + half), L = market_depth."""
+    rule = pp.get("market_weight_rule")
+    if not rule: return pp["market_weight"], None
+    L = market_depth(mh, now, today, rule.get("days", 3))
+    w = rule["min"] + (rule["max"] - rule["min"]) * L / (L + rule["vol_half"])
+    return round(w, 2), L
+
 def interp(curve, d, today):
     """Cumulative from today: 0 at today, linear between contract dates."""
     xs = [(str(today), 0.0)] + [c for c in curve if c[0] > str(today)]
-    if d <= xs[0][0]: return 0.0
+    if d <= xs[0][0] or len(xs) == 1: return 0.0
     for (d0, p0), (d1, p1) in zip(xs, xs[1:]):
         if d <= d1:
             f = (P(d) - P(d0)).days / max(1, (P(d1) - P(d0)).days); return p0 + f * (p1 - p0)
@@ -148,8 +227,9 @@ def chart_series(mh):
     bf = load("markets_backfill.json", {}).get("series", {}); out = {}
     for cid in sorted(set(bf) | set(mh)):
         name = (mh.get(cid) or bf.get(cid))["name"]; d = contract_date(name)
-        pts = {p["t"][:13]: [p["t"][:16], round(p["p"], 4)] for p in bf.get(cid, {}).get("points", [])}
-        for p in (mh.get(cid) or {}).get("points", []): pts[p["t"][:13]] = [p["t"][:16], round(p["p"], 4)]
+        et = lambda t: dt.datetime.fromisoformat(t).astimezone(ET).strftime("%Y-%m-%dT%H:%M")   # one clock (ET) for both sources
+        pts = {et(p["t"])[:13]: [et(p["t"]), round(p["p"], 4)] for p in bf.get(cid, {}).get("points", [])}
+        for p in (mh.get(cid) or {}).get("points", []): pts[et(p["t"])[:13]] = [et(p["t"]), round(p["p"], 4)]
         g = next(k for k, lim, _ in GROUPS if (d or "9999") <= lim)
         out[cid] = {"name": name, "venue": cid.split(":")[0].capitalize(), "date": d, "group": g, "points": sorted(pts.values())}
     return {"groups": [{"id": k, "label": l} for k, _, l in GROUPS], "series": out,
@@ -165,9 +245,12 @@ def run(cfg, today, live, prev_hist=None):
     rules_cum = []; c = 0
     for d, v in rem: c += v; rules_cum.append((d, c))
     R = dict(rules_cum)
-    rows = table(mh, news, sm, now)
-    curve = composite(rows, pp)
-    w = pp["market_weight"]
+    rows = table(mh, news, sm, now, {**pp, "data_guard": cfg.get("data_guard")})
+    curve = composite(rows, pp, today)
+    w, depth = market_weight(pp, mh, now, today)
+    issues = [f"{r['name']}: {r['stale']}" for r in rows if r.get("stale") and not r.get("expired")]
+    if pp["market"].get("method") == "liquidity_v2" and rows and not any(r.get("in_fit") and not r.get("stale") for r in rows):
+        issues.insert(0, "All prediction-market quotes are stale; composite uses the last good quotes")
     nudge_rows = [r for r in rows if r["nudge_ok"]]
     nudge = 0.0
     if nudge_rows:
@@ -196,8 +279,10 @@ def run(cfg, today, live, prev_hist=None):
         cx["p"] = tot * bl_scale
     cats.sort(key=lambda c: c["date"] or "9999")
     H = series[-1]; D = at(pp.get("near_by", "2026-12-31"))
-    return {"by": pp["by"], "headline": {"blend": H["blend"], "rules": H["rules"], "market": H["market"], "nudge": nudge, "market_weight": w,
+    return {"by": pp["by"], "market_depth": depth, "data_issues": issues, "model_version": pp.get("model_version"),
+            "headline": {"blend": H["blend"], "rules": H["rules"], "market": H["market"], "nudge": nudge, "market_weight": w,
                          "near": {"by": pp.get("near_by", "2026-12-31"), "blend": D["blend"], "rules": D["rules"], "market": D["market"]}},
             "series": series, "months": months, "opex": opex, "catalysts": cats, "markets": rows, "composite": curve,
             "flags": [r for r in rows if r["flag"]], "chart": chart_series(mh), "chart_events": pp.get("chart_events", []), "nudge_from": [r["name"] for r in nudge_rows],
-            "rules_total_from_start": pp["rules_total_from_start"], "gone": gone, "docs": {k: pp[k] for k in pp if k.startswith("_")} | {"market": pp["market"]["_why"], "smart_money": sm["_why"]}}
+            "rules_total_from_start": pp["rules_total_from_start"], "gone": gone, "docs": {k: pp[k] for k in pp if k.startswith("_")} | {"market": pp["market"]["_why"], "smart_money": sm["_why"]},
+            "market_method": pp["market"].get("method", "volume_v1"), "market_weight_rule": pp.get("market_weight_rule")}
