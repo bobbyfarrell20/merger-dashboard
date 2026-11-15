@@ -11,19 +11,20 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-14 20:27 ET",
-  "last_ok": "2026-11-14 20:27 ET",
+  "as_of": "2026-11-15 02:56 ET",
+  "last_ok": "2026-11-15 02:56 ET",
   "error": null
  },
  "starship": {
   "value": {
-   "status": "scheduled",
+   "status": "success",
    "next_net": "2026-11-13",
    "headline_date": null,
    "outcome_votes": {
     "success": [
      "Drive Tesla Canada",
      "NBC News",
+     "NDTV",
      "Seeking Alpha",
      "Starlust.org"
     ],
@@ -35,8 +36,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-14 20:27 ET",
-  "last_ok": "2026-11-14 20:27 ET",
+  "as_of": "2026-11-15 02:56 ET",
+  "last_ok": "2026-11-15 02:56 ET",
   "error": null
  },
  "grain": {
@@ -126,8 +127,8 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-14 20:27 ET",
-  "last_ok": "2026-11-14 20:27 ET",
+  "as_of": "2026-11-15 02:56 ET",
+  "last_ok": "2026-11-15 02:56 ET",
   "error": null
  },
  "prices": {
@@ -141,16 +142,40 @@
     "price": 139.11,
     "prev_close": 139.94,
     "as_of": "2026-11-13 16:00 ET"
+   },
+   "guard_warnings": [],
+   "_guard": {
+    "last_good": {
+     "TSLA": {
+      "price": 390.22,
+      "time": "2026-11-13 16:00 ET"
+     },
+     "SPCX": {
+      "price": 139.11,
+      "time": "2026-11-13 16:00 ET"
+     }
+    },
+    "closes": {
+     "TSLA": {
+      "2026-11-12": 397.45,
+      "2026-11-13": 390.22
+     },
+     "SPCX": {
+      "2026-11-12": 139.94,
+      "2026-11-13": 139.11
+     }
+    },
+    "pending": {}
    }
   },
   "ok": true,
-  "as_of": "2026-11-14 20:28 ET",
-  "last_ok": "2026-11-14 20:28 ET",
+  "as_of": "2026-11-15 02:56 ET",
+  "last_ok": "2026-11-15 02:56 ET",
   "error": null
  },
  "log": [
   "2026-10-22 02:57 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)",
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)"
  ],
- "prices_written": "2026-11-13T18:48-05:00"
+ "prices_written": "2026-11-15T02:56-05:00"
 }
