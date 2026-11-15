@@ -577,5 +577,30 @@
   "market": 0.76757,
   "basis": "letter by Jun 30, 2027 (blend)",
   "markets": 0.21
+ },
+ {
+  "date": "2026-11-15",
+  "as_of": "2026-11-15 02:56 ET",
+  "X": 0.70491,
+  "A": 0.0,
+  "B": 0.70491,
+  "C": 0.29509,
+  "D": 0.0,
+  "news": 0.0,
+  "time": -0.02,
+  "events": [
+   {
+    "callout": true,
+    "label": "Model recalibrated",
+    "delta": 4.58,
+    "title": "Calibration review (2026-11-15 calibration v2): liquidity-weighted market composite, market weight scales with market depth, rules timing/total reassessed. Not news.",
+    "source": "model change"
+   }
+  ],
+  "rules": 0.62735,
+  "market": 0.7737,
+  "basis": "letter by Jun 30, 2027 (blend)",
+  "markets": 0.0,
+  "model": 4.58
  }
 ]
