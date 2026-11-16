@@ -1,6 +1,21 @@
 {
  "posts": [
   {
+   "id": "2122362390054396026",
+   "handle": "CNBC",
+   "name": "CNBC",
+   "created_at": "2026-11-16T16:13:20Z",
+   "kind": "report",
+   "metrics": {
+    "likes": 17
+   },
+   "text": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60% https://t.co/ftkgdZa3eB",
+   "why": "CNBC flags prediction-market odds of a deal by April 2027 above 60%, mainstream coverage of the market signal after Bloomberg's talks report (no new deal facts).",
+   "factor": "Market sentiment",
+   "url": "https://x.com/CNBC/status/2122362390054396026",
+   "time_et": "Nov 16, 2026 11:13 AM ET"
+  },
+  {
    "id": "2121622953007702443",
    "handle": "business",
    "name": "Bloomberg",
@@ -1077,6 +1092,6 @@
    "time_et": "Jun 3, 2026 7:38 AM ET"
   }
  ],
- "updated_at": "2026-11-16T13:14:32+00:00",
- "updated_et": "Nov 16, 2026 8:14 AM ET"
+ "updated_at": "2026-11-16T17:10:54+00:00",
+ "updated_et": "Nov 16, 2026 12:10 PM ET"
 }
