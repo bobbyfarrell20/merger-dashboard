@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-16 02:31 ET",
-  "last_ok": "2026-11-16 02:31 ET",
+  "as_of": "2026-11-16 15:51 ET",
+  "last_ok": "2026-11-16 15:51 ET",
   "error": null
  },
  "starship": {
@@ -26,19 +26,34 @@
      "NBC News",
      "Starlust.org"
     ],
-    "failure": [],
+    "failure": [
+     "KeepTrack",
+     "shattered.io"
+    ],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-11-16 02:31 ET",
-  "last_ok": "2026-11-16 02:31 ET",
+  "as_of": "2026-11-16 15:51 ET",
+  "last_ok": "2026-11-16 15:51 ET",
   "error": null
  },
  "grain": {
   "value": {
    "status": "pending",
    "filings": [
+    {
+     "id": "26110084650",
+     "date": "2026-11-16",
+     "type": "COMMENT",
+     "filers": [
+      "Yesenia Garrity"
+     ],
+     "proceedings": [
+      "26-313"
+     ],
+     "url": null
+    },
     {
      "id": "26110084596",
      "date": "2026-11-13",
@@ -118,36 +133,37 @@
     "26110084395",
     "26110084422",
     "26110084474",
-    "26110084596"
+    "26110084596",
+    "26110084650"
    ]
   },
   "ok": true,
-  "as_of": "2026-11-16 02:31 ET",
-  "last_ok": "2026-11-16 02:31 ET",
+  "as_of": "2026-11-16 15:51 ET",
+  "last_ok": "2026-11-16 15:51 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 390.22,
-    "prev_close": 397.45,
-    "as_of": "2026-11-13 16:00 ET"
+    "price": 379.04,
+    "prev_close": 390.22,
+    "as_of": "2026-11-16 15:51 ET"
    },
    "SPCX": {
-    "price": 139.11,
-    "prev_close": 139.94,
-    "as_of": "2026-11-13 16:00 ET"
+    "price": 139.815,
+    "prev_close": 139.11,
+    "as_of": "2026-11-16 15:51 ET"
    },
    "guard_warnings": [],
    "_guard": {
     "last_good": {
      "TSLA": {
-      "price": 390.22,
-      "time": "2026-11-13 16:00 ET"
+      "price": 379.04,
+      "time": "2026-11-16 15:51 ET"
      },
      "SPCX": {
-      "price": 139.11,
-      "time": "2026-11-13 16:00 ET"
+      "price": 139.815,
+      "time": "2026-11-16 15:51 ET"
      }
     },
     "closes": {
@@ -164,8 +180,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-16 02:31 ET",
-  "last_ok": "2026-11-16 02:31 ET",
+  "as_of": "2026-11-16 15:51 ET",
+  "last_ok": "2026-11-16 15:51 ET",
   "error": null
  },
  "log": [
@@ -173,5 +189,5 @@
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)",
   "2026-11-15 03:43 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-11-15T02:56-05:00"
+ "prices_written": "2026-11-16T15:51-05:00"
 }
