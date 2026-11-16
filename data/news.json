@@ -2,6 +2,26 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-16",
+   "odds_note": "Merger letter by Jun 30, 2027: -1.3 pts (filings/news +0.0, prediction markets -1.3, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "source": "Morning review",
+     "title": "Morning review: no news or filing moved the odds over the weekend (only echoes of Bloomberg's Nov 12 talks report; passive SpaceX 13G/A). Since Friday, only markets and the Nov 15 recalibration moved the numbers.",
+     "factor": "news",
+     "url": null
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": -1.34,
+     "time": -0.01,
+     "news": 0.0,
+     "markets": -1.33
+    }
+   }
+  },
+  {
    "date": "2026-11-15",
    "odds_note": "Merger letter by Jun 30, 2027: +4.6 pts (filings/news +0.0, prediction markets -0.1, time -0.0, model recalibration +4.8). Model recalibrated (2026-11-15 calibration v2): not news; see Details for what changed. ",
    "items": [
@@ -24,6 +44,33 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "12:59",
+     "title": "SpaceX caught Starship from orbit with \u2018robot chopsticks\u2019 - MoneyWise.com",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbWoyWExzcGwyUklBbjBPWE1Pc1RDQ3Z3SF9yZlFkSVBRVjcwSGczLXVXczhzVGg2ZFF6aFhEbnJQSEtJYTNCcVB3VGMwazQtbkFfUFFrUW83NTMzc0xBSHRyNE1OSUZqbzl5N3p4RlkzNkZQMnJmeVAtMXc2Tm1SUkVYby1rSG9XT1lxbTMyUkNaNjNi?oc=5",
+     "source": "MoneyWise.com",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "12:24",
+     "title": "SpaceX Just Did Something It's Never Done Before. Here's the Bull Case for SPCX Stock in 2027 - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQb2ctOWtoMUo1Vm13LXN1RDhMZ2x5aFZVT01OaHIybk01d0ZkU0ZMWl8yZWt0SGdvOUZCa1VUem52UHFLcXEtYkplT3hhS1FnUkxRSHM5OEpBbXVreWpDbnlJVWtMU0hSeXUyUjdzLU00b2l3SzhYQlBPS2FrbHFJanowQ3JNQmNPbVY3Q1VfSGxyODRNRmFfOEZ1WGpGYXY2OTZUbmhtblZyVGpqb0FyUlhHLXRTREpPRUlxbkctdDh3S1hoa1dtYmd2VmV0R2s?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "09:00",
+     "title": "SPCX Stock Climbs Overnight: Analysts Tout SpaceX-Tesla \u2018Physical AI\u2019 Flywheel, Musk \u2018Effectively\u2019 Ships Grok 4.7 On Time - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTG5STVBTeXhJT0VWR1BXLWtrZ3pCWkloSDZZRkhCdWdZbVNaTkdRX19pZloycGpzS3BOcDZQeDVnaEhPZHVuMWluNFNJYXVIZkpGdm9pS21aU2M0cWdYT0l1bmxwbHA0WTlrcDJZQW9RWjVaVUZJYVk5aXZrdkYtRTk3ZjNVTi13V3FpRGVtXzBmS3doc3RScEF0NnFYWUdyTmVRVFlWRW1raGVEamIybEF4SW5TNFYzN2lWc3ByOGhKQm9p?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {

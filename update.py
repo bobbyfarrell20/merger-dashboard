@@ -595,7 +595,7 @@ def main():
                 pps = {"total": round(tot, 2), "time": round(tm, 2), "news": 0.0, "model": round(md, 2), "markets": round(tot - tm - md, 2),
                        "model_near": round((H["near"]["blend"] - old_run["headline"]["near"]["blend"]) * 100, 2), "model_version": cfg["post_proxy"].get("model_version")}
             else:
-                nw = (H["rules"] * (1 - H["market_weight"]) - cfr * (1 - o["w"])) * 100
+                nw = (H["rules"] - cfr) * (1 - H["market_weight"]) * 100   # rules-input change only; a market-weight shift from market depth counts as markets, not news
                 pps = {"total": round(tot, 2), "time": round(tm, 2), "news": round(nw, 2), "markets": round(tot - tm - nw, 2)}
         else:   # first post-proxy run: filing effect on the rules model, then the market blend added on top
             ohp = next((p for p in reversed(load("odds_history.json", [])) if p["date"] < str(today) and not p.get("backfill")), None)
