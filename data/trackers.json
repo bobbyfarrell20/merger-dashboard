@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-17 04:58 ET",
-  "last_ok": "2026-11-17 04:58 ET",
+  "as_of": "2026-11-17 14:40 ET",
+  "last_ok": "2026-11-17 14:40 ET",
   "error": null
  },
  "starship": {
@@ -21,9 +21,7 @@
    "next_net": "2026-11-13",
    "headline_date": null,
    "outcome_votes": {
-    "success": [
-     "Starlust.org"
-    ],
+    "success": [],
     "failure": [
      "KeepTrack",
      "NeoTeo",
@@ -33,8 +31,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-17 04:58 ET",
-  "last_ok": "2026-11-17 04:58 ET",
+  "as_of": "2026-11-17 14:40 ET",
+  "last_ok": "2026-11-17 14:40 ET",
   "error": null
  },
  "grain": {
@@ -114,6 +112,24 @@
      "url": "https://docs.fcc.gov/public/attachments/DA-26-1218A1.pdf"
     },
     {
+     "id": "26110083691",
+     "date": "2026-10-26",
+     "type": "NOTICE OF EXPARTE",
+     "filers": [
+      "Space Exploration Technologies Corp."
+     ],
+     "proceedings": [
+      "19-116",
+      "23-65",
+      "26-281",
+      "26-284",
+      "26-74",
+      "22-323",
+      "24-629"
+     ],
+     "url": "https://www.fcc.gov/ecfs/document/26110083691/1"
+    },
+    {
      "id": "26110080153",
      "date": "2026-10-09",
      "type": "OTHER",
@@ -129,6 +145,7 @@
    "seen_ids": [
     "111077615292",
     "26110080153",
+    "26110083691",
     "26110084395",
     "26110084422",
     "26110084474",
@@ -137,32 +154,32 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-17 04:58 ET",
-  "last_ok": "2026-11-17 04:58 ET",
+  "as_of": "2026-11-17 14:41 ET",
+  "last_ok": "2026-11-17 14:41 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 379.74,
-    "prev_close": 390.22,
-    "as_of": "2026-11-16 16:00 ET"
+    "price": 379.835,
+    "prev_close": 379.74,
+    "as_of": "2026-11-17 14:40 ET"
    },
    "SPCX": {
-    "price": 137.36,
-    "prev_close": 139.11,
-    "as_of": "2026-11-16 16:00 ET"
+    "price": 141.208,
+    "prev_close": 137.36,
+    "as_of": "2026-11-17 14:40 ET"
    },
    "guard_warnings": [],
    "_guard": {
     "last_good": {
      "TSLA": {
-      "price": 379.74,
-      "time": "2026-11-16 16:00 ET"
+      "price": 379.835,
+      "time": "2026-11-17 14:40 ET"
      },
      "SPCX": {
-      "price": 137.36,
-      "time": "2026-11-16 16:00 ET"
+      "price": 141.208,
+      "time": "2026-11-17 14:40 ET"
      }
     },
     "closes": {
@@ -181,8 +198,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-17 04:58 ET",
-  "last_ok": "2026-11-17 04:58 ET",
+  "as_of": "2026-11-17 14:41 ET",
+  "last_ok": "2026-11-17 14:41 ET",
   "error": null
  },
  "log": [
@@ -190,5 +207,5 @@
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)",
   "2026-11-15 03:43 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-11-17T04:58-05:00"
+ "prices_written": "2026-11-17T14:41-05:00"
 }
