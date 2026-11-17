@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-17",
-   "odds_note": "Merger letter by Jun 30, 2027: -1.4 pts (filings/news +0.0, prediction markets -1.4, time -0.0). No new filing or news moved it, so only markets and time did.",
+   "odds_note": "Merger letter by Jun 30, 2027: -1.3 pts (filings/news +0.0, prediction markets -1.2, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "source": "Morning review",
@@ -24,10 +24,10 @@
    ],
    "split": {
     "pp": {
-     "total": -1.4,
+     "total": -1.28,
      "time": -0.04,
      "news": 0.0,
-     "markets": -1.37
+     "markets": -1.25
     }
    }
   },
