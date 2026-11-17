@@ -59,6 +59,36 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "17:15",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926128559/tm267596d12_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "12:53",
+     "title": "Tesla Stocks Fall 2.8% as SpaceX Merger Talk Turns to Who Buys Whom",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYmFYREZneWpCSnZ5RGx6aHZZaHdwQkVrdnZfdy1ab1pucGswZ05uWUx0ODJYM25YeFRMWGo4TU9ZNWd0MzMtT2N0emg0M21BSmFCWXJHbWR6XzRPVHZHeWc1ai0wYmxYdHd0ZnRzNkpCWkVicTFsNk01RDdpaFlZLURtWlpZSDVxT0VobHdiYw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "08:03",
+     "title": "Tesla-SpaceX Merger Is 'Almost Inconceivable' to Avoid, Says Elon Musk Biographer \u2014 'You'll Know More' on Dec. 3",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPU1hCMUd3ZHpJNGV1MGxFSEhfMUJ1eGpleFM1TkQzYmRxbFN5Qnh4QUkzS3VQUVIwbW53NWlnZGpyOGJjbUJGTWlCN1FhV0FzSzNfQWk3akgxMElqR1lEX09TWGhud2xNbldUOTB4c3FuYWJfMkk1SVBZaVpXSl9FTUxTdFdLclY5OXdNQzhfUUJWWHUyLWdkM3ZzN3JQbkpBa2w1ZlRWeWlNTVJNMWlaZUthUElYUHBUNktQSXduR0NFb1RhNE1ia3ZOTEd0SC1Uem5nNS1fUjVzSmkzMlhEWWhrQVN4d3A0d1h0b254SlE1UQ?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
