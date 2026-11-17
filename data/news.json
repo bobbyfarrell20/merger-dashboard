@@ -2,6 +2,19 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-17",
+   "odds_note": "Merger letter by Jun 30, 2027: -1.4 pts (filings/news +0.0, prediction markets -1.4, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [],
+   "split": {
+    "pp": {
+     "total": -1.4,
+     "time": -0.04,
+     "news": 0.0,
+     "markets": -1.37
+    }
+   }
+  },
+  {
    "date": "2026-11-16",
    "odds_note": "Merger letter by Jun 30, 2027: -0.7 pts (filings/news +0.0, prediction markets -0.7, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
