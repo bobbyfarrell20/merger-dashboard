@@ -20,6 +20,36 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "17:15",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "15:46",
+     "title": "SpaceX-Tesla Merger: A $3.4 Trillion Bet On Breakthroughs That Haven\u2019t Happened (SPCX)",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeU42bEJsdVpmMHhsUUQtX2pWNUQ0S252N25XT1dCbW1wUlU1U0N0Z3p6VGNYbUVfd2cwZTIzcnJJaVRQb2x2OURZTlViT1lHbmd4d2g5dW4yY3pKZ0JLTkpJWkYtczdHbV9xbmJCTk1Vd3psVExRX0xraTJvRTIyYmY3Z05aX3FWUnFkWjNkNGo5cWhPZ25ZUDFoYS10bGlNdmFJUg?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "20:11",
+     "title": "SpaceX (SPCX) Merger Talks Advance As $74 Billion AI Campus Plan Takes Shape",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX2hLMlJ0aXlsSTBoMUpZRFc0Z2h1b1FFUjB1NDQ1Tlp0Um0tX1FaR0pMaElpT3c3cTdlY3p2SG9PX0lyODdtTkREXzJuNEFMVHU3NEQybGMxM2VELW5KcGUtUUpGdHdiTmw1WDlwQ0J2eVJRYU51MXNZdkxJZDhCd0dYTXdhc05H?oc=5",
+     "source": "Yahoo Finance Singapore",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {

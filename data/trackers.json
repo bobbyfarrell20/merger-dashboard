@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-17 14:40 ET",
-  "last_ok": "2026-11-17 14:40 ET",
+  "as_of": "2026-11-18 04:34 ET",
+  "last_ok": "2026-11-18 04:34 ET",
   "error": null
  },
  "starship": {
@@ -23,16 +23,14 @@
    "outcome_votes": {
     "success": [],
     "failure": [
-     "KeepTrack",
-     "NeoTeo",
      "shattered.io"
     ],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-11-17 14:40 ET",
-  "last_ok": "2026-11-17 14:40 ET",
+  "as_of": "2026-11-18 04:34 ET",
+  "last_ok": "2026-11-18 04:34 ET",
   "error": null
  },
  "grain": {
@@ -154,52 +152,54 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-17 14:41 ET",
-  "last_ok": "2026-11-17 14:41 ET",
+  "as_of": "2026-11-18 04:34 ET",
+  "last_ok": "2026-11-18 04:34 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 379.835,
+    "price": 380.11,
     "prev_close": 379.74,
-    "as_of": "2026-11-17 14:40 ET"
+    "as_of": "2026-11-17 16:00 ET"
    },
    "SPCX": {
-    "price": 141.208,
+    "price": 141.7,
     "prev_close": 137.36,
-    "as_of": "2026-11-17 14:40 ET"
+    "as_of": "2026-11-17 16:00 ET"
    },
    "guard_warnings": [],
    "_guard": {
     "last_good": {
      "TSLA": {
-      "price": 379.835,
-      "time": "2026-11-17 14:40 ET"
+      "price": 380.11,
+      "time": "2026-11-17 16:00 ET"
      },
      "SPCX": {
-      "price": 141.208,
-      "time": "2026-11-17 14:40 ET"
+      "price": 141.7,
+      "time": "2026-11-17 16:00 ET"
      }
     },
     "closes": {
      "TSLA": {
       "2026-11-12": 397.45,
       "2026-11-13": 390.22,
-      "2026-11-16": 379.74
+      "2026-11-16": 379.74,
+      "2026-11-17": 380.11
      },
      "SPCX": {
       "2026-11-12": 139.94,
       "2026-11-13": 139.11,
-      "2026-11-16": 137.36
+      "2026-11-16": 137.36,
+      "2026-11-17": 141.7
      }
     },
     "pending": {}
    }
   },
   "ok": true,
-  "as_of": "2026-11-17 14:41 ET",
-  "last_ok": "2026-11-17 14:41 ET",
+  "as_of": "2026-11-18 04:34 ET",
+  "last_ok": "2026-11-18 04:34 ET",
   "error": null
  },
  "log": [
@@ -207,5 +207,5 @@
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)",
   "2026-11-15 03:43 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-11-17T14:41-05:00"
+ "prices_written": "2026-11-18T04:34-05:00"
 }
