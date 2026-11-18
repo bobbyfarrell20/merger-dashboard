@@ -1,170 +1,170 @@
 {
  "prices": {
   "TSLA": {
-   "close": 380.11,
-   "prev": 379.74,
-   "date": "2026-11-17 16:00 ET",
-   "market_time": "2026-11-17 16:00 ET"
+   "close": 383.9,
+   "prev": 380.11,
+   "date": "2026-11-18 14:13 ET",
+   "market_time": "2026-11-18 14:13 ET"
   },
   "SPCX": {
-   "close": 141.7,
-   "prev": 137.36,
-   "date": "2026-11-17 16:00 ET",
-   "market_time": "2026-11-17 16:00 ET"
+   "close": 144.4,
+   "prev": 141.7,
+   "date": "2026-11-18 14:13 ET",
+   "market_time": "2026-11-18 14:13 ET"
   }
  },
- "prices_as_of": "2026-11-18 08:27 ET",
+ "prices_as_of": "2026-11-18 14:17 ET",
  "options": [
   {
    "expiry": "2026-11-18",
    "atm_iv": null,
-   "call_vol": 21691,
-   "put_vol": 34135,
+   "call_vol": 486833,
+   "put_vol": 299953,
    "call_oi": 62843,
    "iv_note": "0 DTE: not shown"
   },
   {
    "expiry": "2026-11-20",
-   "atm_iv": 70.5,
-   "call_vol": 13754,
-   "put_vol": 57458,
+   "atm_iv": 61.6,
+   "call_vol": 117837,
+   "put_vol": 87993,
    "call_oi": 363202
   },
   {
    "expiry": "2026-11-23",
-   "atm_iv": 56.8,
-   "call_vol": 8633,
-   "put_vol": 8112,
+   "atm_iv": 53.3,
+   "call_vol": 15629,
+   "put_vol": 6204,
    "call_oi": 23861
   },
   {
    "expiry": "2026-11-25",
-   "atm_iv": 58.7,
-   "call_vol": 3191,
-   "put_vol": 2816,
+   "atm_iv": 55.3,
+   "call_vol": 3433,
+   "put_vol": 4557,
    "call_oi": 3723
   },
   {
    "expiry": "2026-11-27",
-   "atm_iv": 56.2,
-   "call_vol": 9298,
-   "put_vol": 10128,
+   "atm_iv": 52.2,
+   "call_vol": 20248,
+   "put_vol": 13488,
    "call_oi": 62056
   },
   {
    "expiry": "2026-12-04",
-   "atm_iv": 56.0,
-   "call_vol": 6548,
-   "put_vol": 4504,
+   "atm_iv": 55.0,
+   "call_vol": 5740,
+   "put_vol": 4696,
    "call_oi": 40073
   },
   {
    "expiry": "2026-12-11",
-   "atm_iv": 54.9,
-   "call_vol": 2808,
-   "put_vol": 2503,
+   "atm_iv": 54.7,
+   "call_vol": 3768,
+   "put_vol": 2284,
    "call_oi": 21995
   },
   {
    "expiry": "2026-12-18",
-   "atm_iv": 53.8,
-   "call_vol": 13267,
-   "put_vol": 17473,
+   "atm_iv": 53.5,
+   "call_vol": 18171,
+   "put_vol": 15064,
    "call_oi": 444074
   },
   {
    "expiry": "2026-12-24",
-   "atm_iv": 53.3,
-   "call_vol": 1756,
-   "put_vol": 1326,
+   "atm_iv": 52.6,
+   "call_vol": 2561,
+   "put_vol": 1290,
    "call_oi": 10723
   },
   {
    "expiry": "2026-12-31",
-   "atm_iv": 53.7,
-   "call_vol": 682,
-   "put_vol": 790,
+   "atm_iv": 51.4,
+   "call_vol": 1357,
+   "put_vol": 249,
    "call_oi": 1724
   },
   {
    "expiry": "2027-01-15",
-   "atm_iv": 51.1,
-   "call_vol": 8415,
-   "put_vol": 15958,
+   "atm_iv": 50.7,
+   "call_vol": 12266,
+   "put_vol": 10332,
    "call_oi": 748594
   },
   {
    "expiry": "2027-02-19",
-   "atm_iv": 52.7,
-   "call_vol": 2327,
-   "put_vol": 4311,
+   "atm_iv": 52.2,
+   "call_vol": 1677,
+   "put_vol": 2089,
    "call_oi": 90981
   },
   {
    "expiry": "2027-03-19",
    "atm_iv": 52.1,
-   "call_vol": 2861,
-   "put_vol": 6283,
+   "call_vol": 2978,
+   "put_vol": 4725,
    "call_oi": 134780
   },
   {
    "expiry": "2027-04-16",
-   "atm_iv": 52.2,
-   "call_vol": 2595,
-   "put_vol": 3444,
+   "atm_iv": 52.0,
+   "call_vol": 1598,
+   "put_vol": 1678,
    "call_oi": 41672
   },
   {
    "expiry": "2027-06-17",
-   "atm_iv": 53.0,
-   "call_vol": 5017,
-   "put_vol": 4269,
+   "atm_iv": 52.9,
+   "call_vol": 3350,
+   "put_vol": 1995,
    "call_oi": 349611
   },
   {
    "expiry": "2027-09-17",
-   "atm_iv": 53.1,
-   "call_vol": 2378,
-   "put_vol": 3015,
+   "atm_iv": 53.2,
+   "call_vol": 1610,
+   "put_vol": 1396,
    "call_oi": 56426
   },
   {
    "expiry": "2027-12-17",
-   "atm_iv": 53.8,
-   "call_vol": 3305,
-   "put_vol": 3398,
+   "atm_iv": 54.0,
+   "call_vol": 2500,
+   "put_vol": 2286,
    "call_oi": 231573
   },
   {
    "expiry": "2028-01-21",
-   "atm_iv": 53.8,
-   "call_vol": 3334,
-   "put_vol": 4730,
+   "atm_iv": 54.1,
+   "call_vol": 1786,
+   "put_vol": 4288,
    "call_oi": 169072
   },
   {
    "expiry": "2028-06-16",
-   "atm_iv": 54.5,
-   "call_vol": 2104,
-   "put_vol": 2036,
+   "atm_iv": 54.9,
+   "call_vol": 1516,
+   "put_vol": 1540,
    "call_oi": 91471
   },
   {
    "expiry": "2028-12-15",
-   "atm_iv": 55.5,
-   "call_vol": 3655,
-   "put_vol": 3311,
+   "atm_iv": 56.0,
+   "call_vol": 1707,
+   "put_vol": 1961,
    "call_oi": 214879
   },
   {
    "expiry": "2029-01-19",
-   "atm_iv": 55.7,
-   "call_vol": 1152,
-   "put_vol": 4249,
+   "atm_iv": 56.2,
+   "call_vol": 1354,
+   "put_vol": 4625,
    "call_oi": 21723
   }
  ],
- "options_as_of": "2026-11-18 08:27 ET",
+ "options_as_of": "2026-11-18 14:17 ET",
  "edgar": {
   "TSLA": [
    {
@@ -521,7 +521,7 @@
    }
   ]
  },
- "edgar_as_of": "2026-11-18 08:27 ET",
+ "edgar_as_of": "2026-11-18 14:17 ET",
  "errors": [
   "2026-10-14 22:45 ET fetch_options: No module named 'yfinance'",
   "2026-10-14 22:51 ET fetch_options: No module named 'yfinance'",
@@ -544,12 +544,12 @@
   }
  },
  "fcc": {
-  "as_of": "2026-11-18 08:27 ET",
+  "as_of": "2026-11-18 14:17 ET",
   "filings": [],
   "note": "The SpaceX-Grain transfer applications were filed Oct 9 (ULS 0012212612 lead) and ask for expedited consent. On Nov 10, 2026 the FCC Wireless Bureau accepted them for filing in WT Docket 26-313 (Public Notice DA 26-1218): petitions/comments due Dec 1, oppositions Dec 8, so a grant is unlikely before mid-December. The earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
  "grain_check": {
-  "as_of": "2026-11-18 08:27 ET",
+  "as_of": "2026-11-18 14:17 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -569,7 +569,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-11-18 08:27 ET",
+  "as_of": "2026-11-18 14:17 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -593,17 +593,17 @@
     "question": "Tesla and SpaceX merger officially announced by December 31?",
     "yes": 0.235,
     "closed": false,
-    "volume": 412626.13841200003,
-    "volume_24h": 2298.0130389999995,
+    "volume": 413618.62841199996,
+    "volume_24h": 1848.064045,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
-    "yes": 0.44,
+    "yes": 0.435,
     "closed": false,
-    "volume": 86412.325127,
-    "volume_24h": 967.452014,
+    "volume": 86602.405127,
+    "volume_24h": 929.022754,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -611,8 +611,8 @@
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
     "yes": 0.615,
     "closed": false,
-    "volume": 66517.77122800001,
-    "volume_24h": 134.873729,
+    "volume": 66537.771228,
+    "volume_24h": 83.88,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -620,8 +620,8 @@
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
     "yes": 0.73,
     "closed": false,
-    "volume": 101281.222189,
-    "volume_24h": 3.571429,
+    "volume": 101281.22218900002,
+    "volume_24h": 0.0,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -629,8 +629,8 @@
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
     "yes": 0.825,
     "closed": false,
-    "volume": 127100.05951900003,
-    "volume_24h": 73.742692,
+    "volume": 127100.059519,
+    "volume_24h": 62.63158,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -654,12 +654,12 @@
  "guard": {
   "last_good": {
    "TSLA": {
-    "price": 380.11,
-    "time": "2026-11-17 16:00 ET"
+    "price": 383.9,
+    "time": "2026-11-18 14:13 ET"
    },
    "SPCX": {
-    "price": 141.7,
-    "time": "2026-11-17 16:00 ET"
+    "price": 144.4,
+    "time": "2026-11-18 14:13 ET"
    }
   },
   "closes": {
@@ -683,84 +683,84 @@
     "as_of": "2026-11-17 14:41 ET"
    },
    "2026-11-20": {
-    "iv": 70.5,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 61.6,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-11-23": {
-    "iv": 56.8,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 53.3,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-11-25": {
-    "iv": 58.7,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 55.3,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-11-27": {
-    "iv": 56.2,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 52.2,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-12-04": {
-    "iv": 56.0,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 55.0,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-12-11": {
-    "iv": 54.9,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 54.7,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-12-18": {
-    "iv": 53.8,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 53.5,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-12-24": {
-    "iv": 53.3,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 52.6,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2026-12-31": {
-    "iv": 53.7,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 51.4,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-01-15": {
-    "iv": 51.1,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 50.7,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-02-19": {
-    "iv": 52.7,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 52.2,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-03-19": {
     "iv": 52.1,
-    "as_of": "2026-11-18 08:27 ET"
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-04-16": {
-    "iv": 52.2,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 52.0,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-06-17": {
-    "iv": 53.0,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 52.9,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-09-17": {
-    "iv": 53.1,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 53.2,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2027-12-17": {
-    "iv": 53.8,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 54.0,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2028-01-21": {
-    "iv": 53.8,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 54.1,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2028-06-16": {
-    "iv": 54.5,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 54.9,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2028-12-15": {
-    "iv": 55.5,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 56.0,
+    "as_of": "2026-11-18 14:17 ET"
    },
    "2029-01-19": {
-    "iv": 55.7,
-    "as_of": "2026-11-18 08:27 ET"
+    "iv": 56.2,
+    "as_of": "2026-11-18 14:17 ET"
    }
   },
   "log": [
