@@ -11,8 +11,8 @@
    "unlock_date": "2026-10-22"
   },
   "ok": true,
-  "as_of": "2026-11-18 04:34 ET",
-  "last_ok": "2026-11-18 04:34 ET",
+  "as_of": "2026-11-18 14:16 ET",
+  "last_ok": "2026-11-18 14:16 ET",
   "error": null
  },
  "starship": {
@@ -22,15 +22,13 @@
    "headline_date": null,
    "outcome_votes": {
     "success": [],
-    "failure": [
-     "shattered.io"
-    ],
+    "failure": [],
     "partial": []
    }
   },
   "ok": true,
-  "as_of": "2026-11-18 04:34 ET",
-  "last_ok": "2026-11-18 04:34 ET",
+  "as_of": "2026-11-18 14:16 ET",
+  "last_ok": "2026-11-18 14:16 ET",
   "error": null
  },
  "grain": {
@@ -152,32 +150,32 @@
    ]
   },
   "ok": true,
-  "as_of": "2026-11-18 04:34 ET",
-  "last_ok": "2026-11-18 04:34 ET",
+  "as_of": "2026-11-18 14:16 ET",
+  "last_ok": "2026-11-18 14:16 ET",
   "error": null
  },
  "prices": {
   "value": {
    "TSLA": {
-    "price": 380.11,
-    "prev_close": 379.74,
-    "as_of": "2026-11-17 16:00 ET"
+    "price": 383.875,
+    "prev_close": 380.11,
+    "as_of": "2026-11-18 14:13 ET"
    },
    "SPCX": {
-    "price": 141.7,
-    "prev_close": 137.36,
-    "as_of": "2026-11-17 16:00 ET"
+    "price": 144.37,
+    "prev_close": 141.7,
+    "as_of": "2026-11-18 14:13 ET"
    },
    "guard_warnings": [],
    "_guard": {
     "last_good": {
      "TSLA": {
-      "price": 380.11,
-      "time": "2026-11-17 16:00 ET"
+      "price": 383.875,
+      "time": "2026-11-18 14:13 ET"
      },
      "SPCX": {
-      "price": 141.7,
-      "time": "2026-11-17 16:00 ET"
+      "price": 144.37,
+      "time": "2026-11-18 14:13 ET"
      }
     },
     "closes": {
@@ -198,8 +196,8 @@
    }
   },
   "ok": true,
-  "as_of": "2026-11-18 04:34 ET",
-  "last_ok": "2026-11-18 04:34 ET",
+  "as_of": "2026-11-18 14:16 ET",
+  "last_ok": "2026-11-18 14:16 ET",
   "error": null
  },
  "log": [
@@ -207,5 +205,5 @@
   "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)",
   "2026-11-15 03:43 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
  ],
- "prices_written": "2026-11-18T04:34-05:00"
+ "prices_written": "2026-11-18T14:16-05:00"
 }
