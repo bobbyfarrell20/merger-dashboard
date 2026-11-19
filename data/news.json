@@ -10,6 +10,26 @@
      "title": "Morning review: no news or filing moved the odds overnight. Tesla's Nov 17 DEFA14A is a routine Optimus vote video for the Dec 3 meeting; coverage (Seeking Alpha opinion, Yahoo recap) rehashed Bloomberg's Nov 12 talks report.",
      "factor": "news",
      "url": null
+    },
+    {
+     "time_et": "17:15",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129807/tm267596d14_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "18:35",
+     "title": "Elon Musk on his compensation if Tesla were to merge with SpaceX",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZHZaV0R0aU94YVhoZUl6dVZsQXI1NnEyQm43MEJtcE1ISnozZ3hUUTNtTjRjY2JyUlJvaWN4V2N2QndpSmpReWZPaFN2X2tCTkVNYmU2dVhrcmY1bFE5SW9vQUFKRzVJd3E2aXQxTXJSbHdIb1BLVE5ab0Q5aEhET1dZV3p0RUJqa0dMbElRSzd1OS1tM2xSci1IUUFKdmdtMGVjRGM4Rk5mOUU?oc=5",
+     "source": "CNBC",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
