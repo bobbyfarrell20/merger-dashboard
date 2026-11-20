@@ -50,6 +50,26 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "17:15",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926130227/tm267596d15_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "13:35",
+     "title": "Elon Musk\u2019s SpaceX Is The \u2018Ultimate Off-The-Grid\u2019 Stock Amid Rising Tech Outages, Morgan Stanley Says",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNY1BydlNHUEtiVFhZTWlxMk01NzM4WUlJNDlaM1g2M0drd0J5OF9nMXJsYU1INHg2N0dwdFVXaW51QzNKQ0dRQnRHbzVEOVhFMmpudUZxUmpvRHdtaURfT004SzZHX3c5ZzNJTTdRbzZJWFB5a1lSdl9Xa1hDYWpIZHhaNWhwRDVpeVVOd3BXVGd0X0g1UEtBQTF3?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
