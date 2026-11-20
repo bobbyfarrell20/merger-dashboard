@@ -2,6 +2,26 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-20",
+   "odds_note": "Merger letter by Jun 30, 2027: +0.7 pts (filings/news +0.0, prediction markets +0.8, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "source": "Morning review",
+     "title": "Morning review: no news or filing moved the odds overnight. Coverage recapped Musk's Nov 18 DealBook remarks; the proxy-adviser vote-against-Denholm story concerns the routine Dec 3 board vote; Tesla's Nov 19 DEFA14A is a routine VoteTesla update; HSBC's upgrade is an analyst view. Dec 31 odds eased on prediction markets only.",
+     "factor": "news",
+     "url": null
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": 0.71,
+     "time": -0.04,
+     "news": 0.0,
+     "markets": 0.75
+    }
+   }
+  },
+  {
    "date": "2026-11-19",
    "odds_note": "Merger letter by Jun 30, 2027: -0.5 pts (filings/news +0.0, prediction markets -0.5, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -90,6 +110,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "09:24",
+     "title": "Tesla: Nowhere Near As Expensive As It Seems (NASDAQ:TSLA) - Seeking Alpha",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPd29KOFlycFMwdlpHNnlCcHdRSUxMOEpES1JUU2pGWlRxLTBDZkt0QjRqaThlYUlka05uVThBMGZsQk9RSzZtM0xDZGJ5c3ZzOTJDMjEtbmpfTERvYWM4SlBMWjh0Nm94d3FESHludHFTVWVDWTlPMEZ2cmRuakVjTFdhZllqaXFqS0VuOA?oc=5",
+     "source": "Seeking Alpha",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
@@ -136,6 +165,15 @@
      "title": "Tesla Energy's New Product A 'Meaningful Positive' For The Company, But Not The Stock - Investor's Business Daily",
      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkRkU2U0SzlESk9QMnBhbzBkQzlRZjhrYnhGUWw0YWp6U283d3NEeV8yTm9odkozTmJxdzdyU3RyUm9semhiSzNSRzlJVWFWR0tLNG1OSUZuYXY1MmxYSHRNWlk2S1d0SDN3ejdtN1BSaXdSS29Cb2tTWHhHYUFON0pMR1BXNUw5dktwWVV0UDAwQVE4ZnBXZ1hfd0c?oc=5",
      "source": "Investor's Business Daily",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "10:09",
+     "title": "SpaceX Holds Its Orbit As Space Stocks Fall Back To Earth \u2014 Inside A Rough Week For FLY, ASTS, RKLB And RDW - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWWhBd3IxRG16czNvbzJQV3IwMDBCZUNaUkMyU195SWNWVFBkSEZoM3c1VFIxZndiZEU1R3ZnUThNLWpJX1hVZ0NVOTE0WG44d2xPZjhfVjZQalFGZE5udlFSbkd1RS0tUzFVVVJPNGxGWm5Jc3JwWVpyRTI5Mi1OYnVDQ1NCLUNBM1F4ME0zUUcxTmVTeUZ4cG5QNERqUWl2aVpxNFNMSU54T2dfMEh4ckEtV1h0YkdTbFJlTTR2TGJudEhUM2hZQ1g2TVRieXVDUWJoSG13Yw?oc=5",
+     "source": "Stocktwits",
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
