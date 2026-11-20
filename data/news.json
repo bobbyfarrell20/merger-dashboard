@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-19",
-   "odds_note": "Merger letter by Jun 30, 2027: -0.7 pts (filings/news +0.0, prediction markets -0.7, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.5 pts (filings/news +0.0, prediction markets -0.5, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "source": "Morning review",
@@ -74,10 +74,10 @@
    ],
    "split": {
     "pp": {
-     "total": -0.7,
+     "total": -0.49,
      "time": -0.04,
      "news": 0.0,
-     "markets": -0.66
+     "markets": -0.45
     }
    }
   },
@@ -110,6 +110,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "11:21",
+     "title": "Tesla Energy's New Product A 'Meaningful Positive' For The Company, But Not The Stock - Investor's Business Daily",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkRkU2U0SzlESk9QMnBhbzBkQzlRZjhrYnhGUWw0YWp6U283d3NEeV8yTm9odkozTmJxdzdyU3RyUm9semhiSzNSRzlJVWFWR0tLNG1OSUZuYXY1MmxYSHRNWlk2S1d0SDN3ejdtN1BSaXdSS29Cb2tTWHhHYUFON0pMR1BXNUw5dktwWVV0UDAwQVE4ZnBXZ1hfd0c?oc=5",
+     "source": "Investor's Business Daily",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
