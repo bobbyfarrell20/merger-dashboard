@@ -1,6 +1,6 @@
 {
  "morning_run": "2026-11-19",
- "generated": "2026-11-20 08:32 ET",
+ "generated": "2026-11-20 14:00 ET",
  "today": "2026-11-20",
  "window": {
   "start": "2026-10-14",
@@ -173,7 +173,7 @@
    "L": 0.0,
    "expiry": "2026-12-04",
    "expiry_listed": true,
-   "expiry_iv": 45.3
+   "expiry_iv": 59.8
   },
   {
    "monday": "2026-12-07",
@@ -229,7 +229,7 @@
    "L": 0.0,
    "expiry": "2026-12-11",
    "expiry_listed": true,
-   "expiry_iv": 47.1
+   "expiry_iv": 59.0
   },
   {
    "monday": "2026-12-14",
@@ -285,7 +285,7 @@
    "L": 0.0,
    "expiry": "2026-12-18",
    "expiry_listed": true,
-   "expiry_iv": 46.1
+   "expiry_iv": 57.8
   }
  ],
  "best_week": "2026-11-23",
@@ -394,6 +394,14 @@
    "type": "filing",
    "text": "TSLA filed DEFA14A on 2026-11-19",
    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926130227/tm267596d15_defa14a.htm"
+  },
+  {
+   "type": "data_guard",
+   "text": "REVIEW NEEDED: data guard: ATM IV for 2026-11-23 = 49.1 (+41% vs last good 34.8); kept last good 34.8"
+  },
+  {
+   "type": "data_guard",
+   "text": "REVIEW NEEDED: data guard: ATM IV for 2026-11-27 = 54.4 (+46% vs last good 37.2); kept last good 37.2"
   }
  ],
  "prev_as_of": "2026-11-19 20:25 ET",
@@ -413,82 +421,82 @@
  },
  "deal_math": {
   "gap": {
-   "implied_ratio": 2.7046882901105254,
+   "implied_ratio": 2.7028360049321827,
    "parity_ratio": 3.4337598735928263,
-   "parity_price": 475.33537930145496,
-   "parity_premium": 0.26955845009870183,
-   "cap_gap": 398933594986.8899,
-   "ratio_gap": 0.7290715834823009
+   "parity_price": 445.5646811974051,
+   "parity_premium": 0.2704284933776375,
+   "cap_gap": 374898067238.87964,
+   "ratio_gap": 0.7309238686606436
   },
-  "tsla_price": 374.41,
-  "spcx_price": 138.43,
+  "tsla_price": 350.72,
+  "spcx_price": 129.76,
   "tsla_shares": 3952757946,
   "spcx_shares": 13572821625,
-  "tsla_cap": 1479952102561.86,
-  "spcx_cap": 1878885697548.75,
+  "tsla_cap": 1386311266821.12,
+  "spcx_cap": 1761209334059.9998,
   "musk_votes_now": 0.8426779107419812,
   "cases": [
    {
     "label": "At market (0%)",
-    "ratio": 2.7046882901105254,
-    "tsla_price": 374.41,
+    "ratio": 2.7028360049321827,
+    "tsla_price": 350.72,
     "premium": 0.0,
-    "new_spcx_shares": 10690978130.187532,
-    "tesla_holders_pct": 0.4406143406249399,
-    "musk_votes_spacex_survives": 0.7460244284599493,
-    "musk_votes_tesla_survives": 0.32808940952575316,
+    "new_spcx_shares": 10683656495.23058,
+    "tesla_holders_pct": 0.4404454942830349,
+    "musk_votes_spacex_survives": 0.7460810158538447,
+    "musk_votes_tesla_survives": 0.328135019097989,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "20% premium",
-    "ratio": 3.24562594813263,
-    "tsla_price": 449.29200000000003,
+    "ratio": 3.2434032059186193,
+    "tsla_price": 420.86400000000003,
     "premium": 0.19999999999999996,
-    "new_spcx_shares": 12829173756.225039,
-    "tesla_holders_pct": 0.4859168245044126,
-    "musk_votes_spacex_survives": 0.7299666945692622,
-    "musk_votes_tesla_survives": 0.3158520883753666,
+    "new_spcx_shares": 12820387794.276697,
+    "tesla_holders_pct": 0.4857456927884309,
+    "musk_votes_spacex_survives": 0.7300308221539477,
+    "musk_votes_tesla_survives": 0.315898315283654,
     "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "30% premium",
-    "ratio": 3.516094777143683,
-    "tsla_price": 486.73300000000006,
+    "ratio": 3.5136868064118376,
+    "tsla_price": 455.93600000000004,
     "premium": 0.30000000000000004,
-    "new_spcx_shares": 13898271569.243792,
-    "tesla_holders_pct": 0.5059234982376308,
-    "musk_votes_spacex_survives": 0.7222729496290897,
-    "musk_votes_tesla_survives": 0.31044779106849574,
+    "new_spcx_shares": 13888753443.799755,
+    "tesla_holders_pct": 0.5057522523381898,
+    "musk_votes_spacex_survives": 0.7223405020171064,
+    "musk_votes_tesla_survives": 0.310494048820559,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$450/TSLA",
-    "ratio": 3.2507404464350214,
-    "tsla_price": 450.00000000000006,
-    "premium": 0.20189097513421128,
-    "new_spcx_shares": 12849390130.029617,
-    "tesla_holders_pct": 0.4863101639318163,
-    "musk_votes_spacex_survives": 0.729819194370511,
-    "musk_votes_tesla_survives": 0.3157458376693997,
+    "ratio": 3.4679408138101113,
+    "tsla_price": 450.0,
+    "premium": 0.28307481751824803,
+    "new_spcx_shares": 13707930608.045624,
+    "tesla_holders_pct": 0.5024762693838398,
+    "musk_votes_spacex_survives": 0.723627031312661,
+    "musk_votes_tesla_survives": 0.31137897282609983,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "$500/TSLA",
-    "ratio": 3.6119338293722456,
+    "ratio": 3.8532675709001234,
     "tsla_price": 500.0,
-    "premium": 0.3354344168157901,
-    "new_spcx_shares": 14277100144.477352,
-    "tesla_holders_pct": 0.5126441741076849,
-    "musk_votes_spacex_survives": 0.7195978351380004,
-    "musk_votes_tesla_survives": 0.3086323703249375,
+    "premium": 0.4256386861313868,
+    "new_spcx_shares": 15231034008.93958,
+    "tesla_holders_pct": 0.5287845558770561,
+    "musk_votes_spacex_survives": 0.7129764347180141,
+    "musk_votes_tesla_survives": 0.30427245408442566,
     "passes_floor": true,
     "control_ok": true,
     "survivor": "SpaceX"
@@ -496,25 +504,25 @@
    {
     "label": "1:1 market-cap parity (50/50)",
     "ratio": 3.4337598735928263,
-    "tsla_price": 475.33537930145496,
-    "premium": 0.26955845009870183,
+    "tsla_price": 445.5646811974051,
+    "premium": 0.2704284933776375,
     "new_spcx_shares": 13572821625.0,
     "tesla_holders_pct": 0.5,
     "musk_votes_spacex_survives": 0.724592282060252,
     "musk_votes_tesla_survives": 0.3120478744206689,
-    "passes_floor": true,
+    "passes_floor": false,
     "control_ok": true,
     "survivor": "SpaceX"
    },
    {
     "label": "Reverse: Tesla acquires SpaceX (at market)",
-    "ratio": 2.7046882901105254,
-    "tsla_price": 374.41,
+    "ratio": 2.7028360049321827,
+    "tsla_price": 350.72,
     "premium": 0.0,
-    "new_spcx_shares": 10690978130.187532,
-    "tesla_holders_pct": 0.4406143406249399,
-    "musk_votes_spacex_survives": 0.7460244284599493,
-    "musk_votes_tesla_survives": 0.32808940952575316,
+    "new_spcx_shares": 10683656495.23058,
+    "tesla_holders_pct": 0.4404454942830349,
+    "musk_votes_spacex_survives": 0.7460810158538447,
+    "musk_votes_tesla_survives": 0.328135019097989,
     "passes_floor": false,
     "control_ok": false,
     "survivor": "Tesla",
@@ -527,11 +535,11 @@
    "Derived. 424B4 beneficial ownership: Musk holds 849,494,440 A + 5,569,053,075 B (84.4% of votes, counting about 350M option shares). Outstanding-basis votes are about 10 x 5.219B B + 0.849B A \u2248 53.04B of about 62.94B total, which is ~84.3% and matches the 424B4 figure.",
    "Schedule 13G/A filed Jun 16, 2026: 699,580,882 shares with voting rights. Excludes 423.7M award shares voted proportionally by proxy."
   ],
-  "parity_note": "1:1 market-cap parity works out to about $475 per TSLA at current prices (+27%), which clears the $450 floor.",
+  "parity_note": "1:1 market-cap parity works out to about $446 per TSLA at current prices (+27%), which clears the $450 floor.",
   "collar_note": "An all-stock deal at a fixed ratio leaves Tesla holders exposed if SPCX falls before the vote. To win an independent Tesla vote it likely needs downside protection (a collar or price floor). SpaceX holders would resist, because it shifts value to Tesla holders if SPCX drops. This is general M&A practice, not deal-specific.",
   "reverse_note": "Reverse case: Tesla acquires SpaceX. Tesla has one class of stock, so Musk's dual-class control would end. Shown for completeness; low probability.",
   "spcx_shares_src": "config (10-Q cover + Cursor shares)",
-  "prices_as_of": "last trade 2026-11-19 16:00 ET, fetched 2026-11-20 08:32 ET"
+  "prices_as_of": "last trade 2026-11-20 14:00 ET, fetched 2026-11-20 14:00 ET"
  },
  "blank_reasons": [
   {
@@ -555,7 +563,7 @@
    "label": "Merger process under way (committee or advisers working quietly)",
    "p": 0.12942558072182836,
    "src": null,
-   "note": "No committee, bank or law firm disclosed as of 2026-11-20 08:32 ET (EDGAR and news watcher).",
+   "note": "No committee, bank or law firm disclosed as of 2026-11-20 14:00 ET (EDGAR and news watcher).",
    "merger": true
   },
   {
@@ -563,7 +571,7 @@
    "label": "Pairing with a product date (Roadster Oct 15, Optimus Gen 3)",
    "p": 0.07671769415939475,
    "src": null,
-   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-20 08:32 ET (news watcher).",
+   "note": "Roadster demo Oct 15 (Tesla). No Optimus Gen 3 date announced as of 2026-11-20 14:00 ET (news watcher).",
    "merger": false
   },
   {
@@ -571,7 +579,7 @@
    "label": "New comp/governance item being prepared",
    "p": 0.06938377885980515,
    "src": null,
-   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-20 08:32 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
+   "note": "Cut from 20%. Searches turned up no 2026 pay item, board fight or governance proposal as of 2026-11-20 14:00 ET. The only nearby fact is the forfeited 2025 interim award (13G/A, Apr 2026), which is a past event.",
    "merger": false
   },
   {
@@ -594,7 +602,7 @@
  "leak_logodds": 0.0,
  "weeks_blank": 8,
  "fcc": {
-  "as_of": "2026-11-20 08:32 ET",
+  "as_of": "2026-11-20 14:00 ET",
   "filings": [],
   "note": "The SpaceX-Grain transfer applications were filed Oct 9 (ULS 0012212612 lead) and ask for expedited consent. On Nov 10, 2026 the FCC Wireless Bureau accepted them for filing in WT Docket 26-313 (Public Notice DA 26-1218): petitions/comments due Dec 1, oppositions Dec 8, so a grant is unlikely before mid-December. The earlier T-Mobile to Grain proceeding was WT 25-178. The FCC's informal goal is 180 days for transaction review (general practice)."
  },
@@ -611,12 +619,12 @@
   "On SpaceX's Oct 20 earnings call, Musk said the Tesla and SpaceX boards have each formed a special committee of independent directors to look at a merger. He called it a good idea but said no terms are agreed and there's no guarantee.",
   "Tesla's DEF 14A (Oct 19) still set a routine Dec 3 meeting with no merger item, so any deal goes the normal route: committee talks, fairness opinions, an S-4, then a separate announcement and a special meeting, most likely in 2027. Tesla needs 50% of all outstanding shares to approve.",
   "With committees confirmed and Bloomberg reporting (Nov 12) that talks are progressing, the rules model puts a merger letter or agreement by Jun 30, 2027 at 62%. That is a judgment call, not data.",
-  "Prediction markets price it at 72% on the liquidity-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get 48% of the weight, more when trading is heavy and less when it is thin. Dashboard number: 52% x 62.4% + 48% x 72.5% = 67.3%.",
+  "Prediction markets price it at 70% on the liquidity-weighted Kalshi and Polymarket composite. Markets often move before the news hits the wire, so they get 45% of the weight, more when trading is heavy and less when it is thin. Dashboard number: 55% x 62.4% + 45% x 70.5% = 66.1%.",
   "Catalysts to watch: Starship Flight 15 (NET Nov 20), the Nov 20 and Dec 18 monthly options expirations, the Dec 3 annual meeting Q&A, the Dec 8 SpaceX unlock, and any banker or law-firm hire by the committees. Unlock days and Starship launch days are less likely days for a deal letter."
  ],
  "kill": {
   "letter_by": "2027-06-30",
-  "p_letter": 0.6725893544404902,
+  "p_letter": 0.6605656633505185,
   "why": "If a routine meeting is set with no SpaceX language, the 2026-meeting merger path is closed. Letter odds by mid-2027 are modeled as 0.6 x the pre-kill merger share: a clean routine proxy is evidence against a live deal, but a 2027 special meeting is still possible. This is judgment, not data. For comparison, Polymarket's Jun 30, 2027 contract is shown in details.",
   "p_rules": 0.5637100779535781
  },
@@ -662,7 +670,7 @@
   "_why": "SpaceX agreed on Oct 8, 2026 to buy Grain's 800 MHz licenses, pending FCC consent. While it's pending, merger odds in the next 14 days get x0.9 (a soft reason to sequence the deal after approval). On approval, the following 5 days get x1.2. Each run checks ECFS (Grain/SpaceX filers, proceeding 25-178) and Google News for approval wording. Detection is heuristic, so confirm by hand."
  },
  "grain_check": {
-  "as_of": "2026-11-20 08:32 ET",
+  "as_of": "2026-11-20 14:00 ET",
   "approval_hits": [
    {
     "type": "news",
@@ -682,7 +690,7 @@
   ]
  },
  "polymarket": {
-  "as_of": "2026-11-20 08:32 ET",
+  "as_of": "2026-11-20 14:00 ET",
   "markets": [
    {
     "question": "Tesla and SpaceX merger officially announced by June 30?",
@@ -704,10 +712,10 @@
    },
    {
     "question": "Tesla and SpaceX merger officially announced by December 31?",
-    "yes": 0.155,
+    "yes": 0.165,
     "closed": false,
-    "volume": 428183.92530999996,
-    "volume_24h": 1114.565572,
+    "volume": 429347.55530999997,
+    "volume_24h": 1898.9070590000001,
     "end": "2027-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -715,8 +723,8 @@
     "question": "Tesla and SpaceX merger officially announced by January 31, 2027?",
     "yes": 0.445,
     "closed": false,
-    "volume": 87047.031588,
-    "volume_24h": 312.363902,
+    "volume": 87229.25158800001,
+    "volume_24h": 268.818447,
     "end": "2027-02-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
@@ -724,16 +732,16 @@
     "question": "Tesla and SpaceX merger officially announced by February 28, 2027?",
     "yes": 0.575,
     "closed": false,
-    "volume": 67559.69409700001,
+    "volume": 67559.694097,
     "volume_24h": 236.629535,
     "end": "2027-03-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    },
    {
     "question": "Tesla and SpaceX merger officially announced by June 30, 2027?",
-    "yes": 0.72,
+    "yes": 0.705,
     "closed": false,
-    "volume": 101594.56056499999,
+    "volume": 101594.56056500002,
     "volume_24h": 152.98000000000002,
     "end": "2027-07-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
@@ -742,8 +750,8 @@
     "question": "Tesla and SpaceX merger officially announced by December 31, 2027?",
     "yes": 0.865,
     "closed": false,
-    "volume": 130204.54511300004,
-    "volume_24h": 2853.665594,
+    "volume": 130242.89511299999,
+    "volume_24h": 2886.752436,
     "end": "2028-01-01",
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
    }
@@ -829,8 +837,8 @@
     "unlock_date": "2026-10-22"
    },
    "ok": true,
-   "as_of": "2026-11-20 02:57 ET",
-   "last_ok": "2026-11-20 02:57 ET",
+   "as_of": "2026-11-20 14:00 ET",
+   "last_ok": "2026-11-20 14:00 ET",
    "error": null
   },
   "starship": {
@@ -847,8 +855,8 @@
     }
    },
    "ok": true,
-   "as_of": "2026-11-20 02:57 ET",
-   "last_ok": "2026-11-20 02:57 ET",
+   "as_of": "2026-11-20 14:00 ET",
+   "last_ok": "2026-11-20 14:00 ET",
    "error": null
   },
   "grain": {
@@ -960,32 +968,32 @@
     ]
    },
    "ok": true,
-   "as_of": "2026-11-20 02:57 ET",
-   "last_ok": "2026-11-20 02:57 ET",
+   "as_of": "2026-11-20 14:00 ET",
+   "last_ok": "2026-11-20 14:00 ET",
    "error": null
   },
   "prices": {
    "value": {
     "TSLA": {
-     "price": 374.41,
-     "prev_close": 383.72,
-     "as_of": "2026-11-19 16:00 ET"
+     "price": 350.82,
+     "prev_close": 374.41,
+     "as_of": "2026-11-20 14:00 ET"
     },
     "SPCX": {
-     "price": 138.43,
-     "prev_close": 143.5,
-     "as_of": "2026-11-19 16:00 ET"
+     "price": 129.84,
+     "prev_close": 138.43,
+     "as_of": "2026-11-20 14:00 ET"
     },
     "guard_warnings": [],
     "_guard": {
      "last_good": {
       "TSLA": {
-       "price": 374.41,
-       "time": "2026-11-19 16:00 ET"
+       "price": 350.82,
+       "time": "2026-11-20 14:00 ET"
       },
       "SPCX": {
-       "price": 138.43,
-       "time": "2026-11-19 16:00 ET"
+       "price": 129.84,
+       "time": "2026-11-20 14:00 ET"
       }
      },
      "closes": {
@@ -1010,8 +1018,8 @@
     }
    },
    "ok": true,
-   "as_of": "2026-11-20 02:57 ET",
-   "last_ok": "2026-11-20 02:57 ET",
+   "as_of": "2026-11-20 14:00 ET",
+   "last_ok": "2026-11-20 14:00 ET",
    "error": null
   },
   "log": [
@@ -1019,24 +1027,24 @@
    "2026-11-09 16:21 ET grain: FAILED, kept last value (The read operation timed out)",
    "2026-11-15 03:43 ET starship: FAILED, kept last value (HTTP Error 503: Service Unavailable)"
   ],
-  "prices_written": "2026-11-19T20:24-05:00"
+  "prices_written": "2026-11-20T14:00-05:00"
  },
  "pp": {
   "by": "2027-06-30",
-  "market_depth": 15579.367885,
+  "market_depth": 9643.607477000001,
   "data_issues": [],
   "model_version": "2026-11-15 calibration v2",
   "headline": {
-   "blend": 0.6725893544404902,
+   "blend": 0.6605656633505185,
    "rules": 0.6242102970009427,
-   "market": 0.725,
+   "market": 0.705,
    "nudge": 0.0,
-   "market_weight": 0.48,
+   "market_weight": 0.45,
    "near": {
     "by": "2026-12-31",
-    "blend": 0.14884118142589292,
+    "blend": 0.14378731774937206,
     "rules": 0.12983806549996366,
-    "market": 0.1694278903456496
+    "market": 0.16083640383198233
    }
   },
   "series": [
@@ -1044,1339 +1052,1339 @@
     "date": "2026-11-20",
     "rules": 0.001936436472780965,
     "market": 0.0,
-    "blend": 0.0010069469658461018
+    "blend": 0.0010650400600295308
    },
    {
     "date": "2026-11-21",
     "rules": 0.002614189238254303,
-    "market": 0.0025,
-    "blend": 0.0025593784038922375
+    "market": 0.0026,
+    "blend": 0.0026078040810398667
    },
    {
     "date": "2026-11-22",
     "rules": 0.0032919420037276406,
-    "market": 0.005,
-    "blend": 0.0041118098419383724
+    "market": 0.0052,
+    "blend": 0.004150568102050203
    },
    {
     "date": "2026-11-23",
     "rules": 0.005228378476508606,
-    "market": 0.007499999999999999,
-    "blend": 0.006318756807784475
+    "market": 0.0078,
+    "blend": 0.006385608162079733
    },
    {
     "date": "2026-11-24",
     "rules": 0.007164814949289571,
-    "market": 0.01,
-    "blend": 0.008525703773630577
+    "market": 0.0104,
+    "blend": 0.008620648222109263
    },
    {
     "date": "2026-11-25",
     "rules": 0.009101251422070536,
-    "market": 0.012499999999999999,
-    "blend": 0.010732650739476678
+    "market": 0.013,
+    "blend": 0.010855688282138795
    },
    {
     "date": "2026-11-26",
     "rules": 0.011037687894851501,
-    "market": 0.014999999999999998,
-    "blend": 0.01293959770532278
+    "market": 0.0156,
+    "blend": 0.013090728342168326
    },
    {
     "date": "2026-11-27",
     "rules": 0.012974124367632466,
-    "market": 0.017499999999999998,
-    "blend": 0.015146544671168882
+    "market": 0.018199999999999997,
+    "blend": 0.015325768402197857
    },
    {
     "date": "2026-11-28",
     "rules": 0.013651877133105804,
-    "market": 0.02,
-    "blend": 0.016698976109215016
+    "market": 0.0208,
+    "blend": 0.016868532423208193
    },
    {
     "date": "2026-11-29",
     "rules": 0.014329629898579142,
-    "market": 0.0225,
-    "blend": 0.018251407547261154
+    "market": 0.0234,
+    "blend": 0.01841129644421853
    },
    {
     "date": "2026-11-30",
     "rules": 0.016266066371360105,
-    "market": 0.024999999999999998,
-    "blend": 0.020458354513107253
+    "market": 0.026,
+    "blend": 0.02064633650424806
    },
    {
     "date": "2026-12-01",
     "rules": 0.02123639456079571,
-    "market": 0.029658964204698372,
-    "blend": 0.025279227989868987
+    "market": 0.03034956141393491,
+    "blend": 0.025337319644708353
    },
    {
     "date": "2026-12-02",
     "rules": 0.026206722750231316,
-    "market": 0.03431792840939674,
-    "blend": 0.03010010146663072
+    "market": 0.03469912282786983,
+    "blend": 0.030028302785168645
    },
    {
     "date": "2026-12-03",
     "rules": 0.03614737912910253,
-    "market": 0.03897689261409512,
-    "blend": 0.037505545601898976
+    "market": 0.03904868424180474,
+    "blend": 0.037452966429818525
    },
    {
     "date": "2026-12-04",
     "rules": 0.04111770731853813,
-    "market": 0.04363585681879349,
-    "blend": 0.04232641907866071
+    "market": 0.04339824565573966,
+    "blend": 0.042143949570278824
    },
    {
     "date": "2026-12-05",
     "rules": 0.04285732218484059,
-    "market": 0.04829482102349186,
-    "blend": 0.0454673216273932
+    "market": 0.04774780706967457,
+    "blend": 0.045058040383015883
    },
    {
     "date": "2026-12-06",
     "rules": 0.04459693705114305,
-    "market": 0.05295378522819024,
-    "blend": 0.0486082241761257
+    "market": 0.052097368483609484,
+    "blend": 0.04797213119575294
    },
    {
     "date": "2026-12-07",
     "rules": 0.04956726524057865,
-    "market": 0.05761274943288862,
-    "blend": 0.05342909765288743
+    "market": 0.05644692989754439,
+    "blend": 0.052663114336213235
    },
    {
     "date": "2026-12-08",
     "rules": 0.051555396516352894,
-    "market": 0.06227171363758699,
-    "blend": 0.05669922873454526
+    "market": 0.06079649131147931,
+    "blend": 0.055713889174159786
    },
    {
     "date": "2026-12-09",
     "rules": 0.056525724705788497,
-    "market": 0.06693067784228536,
-    "blend": 0.06152010221130699
+    "market": 0.06514605272541422,
+    "blend": 0.06040487231462008
    },
    {
     "date": "2026-12-10",
     "rules": 0.0614960528952241,
-    "market": 0.07158964204698373,
-    "blend": 0.06634097568806872
+    "market": 0.06949561413934914,
+    "blend": 0.06509585545508037
    },
    {
     "date": "2026-12-11",
     "rules": 0.0664663810846597,
-    "market": 0.07624860625168212,
-    "blend": 0.07116184916483045
+    "market": 0.07384517555328406,
+    "blend": 0.06978683859554066
    },
    {
     "date": "2026-12-12",
     "rules": 0.06820599595096216,
-    "market": 0.08090757045638049,
-    "blend": 0.07430275171356296
+    "market": 0.07819473696721897,
+    "blend": 0.07270092940827773
    },
    {
     "date": "2026-12-13",
     "rules": 0.06994561081726462,
-    "market": 0.08556653466107886,
-    "blend": 0.07744365426229545
+    "market": 0.08254429838115389,
+    "blend": 0.0756150202210148
    },
    {
     "date": "2026-12-14",
     "rules": 0.07491593900670022,
-    "market": 0.09022549886577723,
-    "blend": 0.08226452773905718
+    "market": 0.08689385979508879,
+    "blend": 0.08030600336147509
    },
    {
     "date": "2026-12-15",
     "rules": 0.07988626719613583,
-    "market": 0.09488446307047561,
-    "blend": 0.08708540121581893
+    "market": 0.0912434212090237,
+    "blend": 0.08499698650193538
    },
    {
     "date": "2026-12-16",
     "rules": 0.08485659538557143,
-    "market": 0.09954342727517397,
-    "blend": 0.09190627469258064
+    "market": 0.09559298262295862,
+    "blend": 0.08968796964239567
    },
    {
     "date": "2026-12-17",
     "rules": 0.08982692357500703,
-    "market": 0.10420239147987234,
-    "blend": 0.09672714816934239
+    "market": 0.09994254403689352,
+    "blend": 0.09437895278285596
    },
    {
     "date": "2026-12-18",
     "rules": 0.09479725176444263,
-    "market": 0.10886135568457073,
-    "blend": 0.10154802164610412
+    "market": 0.10429210545082845,
+    "blend": 0.09906993592331625
    },
    {
     "date": "2026-12-19",
     "rules": 0.0965368666307451,
-    "market": 0.1135203198892691,
-    "blend": 0.10468892419483661
+    "market": 0.10864166686476337,
+    "blend": 0.10198402673605333
    },
    {
     "date": "2026-12-20",
     "rules": 0.09827648149704755,
-    "market": 0.11817928409396747,
-    "blend": 0.10782982674356911
+    "market": 0.11299122827869827,
+    "blend": 0.10489811754879039
    },
    {
     "date": "2026-12-21",
     "rules": 0.10324680968648316,
-    "market": 0.12283824829866584,
-    "blend": 0.11265070022033084
+    "market": 0.11734078969263319,
+    "blend": 0.10958910068925068
    },
    {
     "date": "2026-12-22",
     "rules": 0.10821713787591876,
-    "market": 0.12749721250336424,
-    "blend": 0.11747157369709259
+    "market": 0.12169035110656812,
+    "blend": 0.11428008382971097
    },
    {
     "date": "2026-12-23",
     "rules": 0.11318746606535436,
-    "market": 0.1321561767080626,
-    "blend": 0.12229244717385432
+    "market": 0.12603991252050303,
+    "blend": 0.11897106697017126
    },
    {
     "date": "2026-12-24",
     "rules": 0.11567263016007216,
-    "market": 0.13681514091276098,
-    "blend": 0.1258210353213628
+    "market": 0.13038947393443795,
+    "blend": 0.12229520985853679
    },
    {
     "date": "2026-12-25",
     "rules": 0.11815779425478996,
-    "market": 0.14147410511745934,
-    "blend": 0.12934962346887124
+    "market": 0.13473903534837284,
+    "blend": 0.12561935274690225
    },
    {
     "date": "2026-12-26",
     "rules": 0.1190276016879412,
-    "market": 0.14613306932215772,
-    "blend": 0.13203822615236513
+    "market": 0.13908859676230778,
+    "blend": 0.12805504947140617
    },
    {
     "date": "2026-12-27",
     "rules": 0.11989740912109244,
-    "market": 0.1507920335268561,
-    "blend": 0.13472682883585899
+    "market": 0.1434381581762427,
+    "blend": 0.13049074619591006
    },
    {
     "date": "2026-12-28",
     "rules": 0.12238257321581024,
-    "market": 0.15545099773155446,
-    "blend": 0.13825541698336746
+    "market": 0.14778771959017759,
+    "blend": 0.13381488908427555
    },
    {
     "date": "2026-12-29",
     "rules": 0.12486773731052804,
-    "market": 0.16010996193625282,
-    "blend": 0.14178400513087594
+    "market": 0.1521372810041125,
+    "blend": 0.13713903197264105
    },
    {
     "date": "2026-12-30",
     "rules": 0.12735290140524586,
-    "market": 0.16476892614095123,
-    "blend": 0.14531259327838444
+    "market": 0.15648684241804742,
+    "blend": 0.14046317486100657
    },
    {
     "date": "2026-12-31",
     "rules": 0.12983806549996366,
-    "market": 0.1694278903456496,
-    "blend": 0.14884118142589292
+    "market": 0.16083640383198233,
+    "blend": 0.14378731774937206
    },
    {
     "date": "2027-01-01",
     "rules": 0.1322041488151429,
-    "market": 0.17855025740858801,
-    "blend": 0.15445028093999655
+    "market": 0.17043647099238343,
+    "blend": 0.14940869379490113
    },
    {
     "date": "2027-01-02",
     "rules": 0.13386040713576836,
-    "market": 0.18767262447152647,
-    "blend": 0.15969027145693226
+    "market": 0.18003653815278453,
+    "blend": 0.15463966609342567
    },
    {
     "date": "2027-01-03",
     "rules": 0.13551666545639382,
-    "market": 0.1967949915344649,
-    "blend": 0.16493026197386795
+    "market": 0.18963660531318563,
+    "blend": 0.15987063839195015
    },
    {
     "date": "2027-01-04",
     "rules": 0.14024883208675232,
-    "market": 0.20591735859740334,
-    "blend": 0.1717697248118648
+    "market": 0.19923667247358673,
+    "blend": 0.1667933602608278
    },
    {
     "date": "2027-01-05",
     "rules": 0.1449809987171108,
-    "market": 0.21503972566034177,
-    "blend": 0.17860918764986167
+    "market": 0.20883673963398786,
+    "blend": 0.17371608212970546
    },
    {
     "date": "2027-01-06",
     "rules": 0.14971316534746926,
-    "market": 0.2241620927232802,
-    "blend": 0.18544865048785852
+    "market": 0.21843680679438893,
+    "blend": 0.18063880399858312
    },
    {
     "date": "2027-01-07",
     "rules": 0.15444533197782773,
-    "market": 0.23328445978621865,
-    "blend": 0.19228811332585538
+    "market": 0.22803687395479005,
+    "blend": 0.18756152586746078
    },
    {
     "date": "2027-01-08",
     "rules": 0.1591774986081862,
-    "market": 0.24240682684915707,
-    "blend": 0.19912757616385224
+    "market": 0.23763694111519112,
+    "blend": 0.19448424773633843
    },
    {
     "date": "2027-01-09",
     "rules": 0.16083375692881166,
-    "market": 0.2515291939120955,
-    "blend": 0.2043675666807879
+    "market": 0.24723700827559225,
+    "blend": 0.19971522003486292
    },
    {
     "date": "2027-01-10",
     "rules": 0.16249001524943713,
-    "market": 0.26065156097503395,
-    "blend": 0.20960755719772362
+    "market": 0.2568370754359933,
+    "blend": 0.20494619233338743
    },
    {
     "date": "2027-01-11",
     "rules": 0.1672221818797956,
-    "market": 0.2697739280379724,
-    "blend": 0.21644702003572047
+    "market": 0.26643714259639445,
+    "blend": 0.2118689142022651
    },
    {
     "date": "2027-01-12",
     "rules": 0.17195434851015406,
-    "market": 0.2788962951009108,
-    "blend": 0.22328648287371727
+    "market": 0.2760372097567956,
+    "blend": 0.21879163607114277
    },
    {
     "date": "2027-01-13",
     "rules": 0.17668651514051253,
-    "market": 0.28801866216384925,
-    "blend": 0.23012594571171413
+    "market": 0.28563727691719665,
+    "blend": 0.2257143579400204
    },
    {
     "date": "2027-01-14",
     "rules": 0.181418681770871,
-    "market": 0.29714102922678765,
-    "blend": 0.236965408549711
+    "market": 0.2952373440775977,
+    "blend": 0.23263707980889806
    },
    {
     "date": "2027-01-15",
     "rules": 0.18615084840122947,
-    "market": 0.3062633962897261,
-    "blend": 0.24380487138770784
+    "market": 0.3048374112379989,
+    "blend": 0.23955980167777574
    },
    {
     "date": "2027-01-16",
     "rules": 0.18780710672185494,
-    "market": 0.31538576335266455,
-    "blend": 0.24904486190464356
+    "market": 0.31443747839839997,
+    "blend": 0.24479077397630022
    },
    {
     "date": "2027-01-17",
     "rules": 0.1894633650424804,
-    "market": 0.324508130415603,
-    "blend": 0.2542848524215793
+    "market": 0.32403754555880104,
+    "blend": 0.2500217462748247
    },
    {
     "date": "2027-01-18",
     "rules": 0.19419553167283887,
-    "market": 0.33363049747854145,
-    "blend": 0.26112431525957613
+    "market": 0.33363761271920217,
+    "blend": 0.25694446814370236
    },
    {
     "date": "2027-01-19",
     "rules": 0.19892769830319734,
-    "market": 0.34275286454147985,
-    "blend": 0.26796377809757294
+    "market": 0.3432376798796033,
+    "blend": 0.26386719001258
    },
    {
     "date": "2027-01-20",
     "rules": 0.2036598649335558,
-    "market": 0.35187523160441825,
-    "blend": 0.27480324093556974
+    "market": 0.35283774704000437,
+    "blend": 0.2707899118814577
    },
    {
     "date": "2027-01-21",
     "rules": 0.20839203156391428,
-    "market": 0.3609975986673567,
-    "blend": 0.28164270377356665
+    "market": 0.36243781420040544,
+    "blend": 0.27771263375033534
    },
    {
     "date": "2027-01-22",
     "rules": 0.21312419819427275,
-    "market": 0.37011996573029515,
-    "blend": 0.2884821666115635
+    "market": 0.3720378813608066,
+    "blend": 0.284635355619213
    },
    {
     "date": "2027-01-23",
     "rules": 0.21478045651489822,
-    "market": 0.3792423327932336,
-    "blend": 0.2937221571284992
+    "market": 0.3816379485212077,
+    "blend": 0.2898663279177375
    },
    {
     "date": "2027-01-24",
     "rules": 0.21643671483552368,
-    "market": 0.388364699856172,
-    "blend": 0.2989621476454349
+    "market": 0.39123801568160876,
+    "blend": 0.295097300216262
    },
    {
     "date": "2027-01-25",
     "rules": 0.22116888146588215,
-    "market": 0.3974870669191104,
-    "blend": 0.3058016104834317
+    "market": 0.40083808284200984,
+    "blend": 0.3020200220851396
    },
    {
     "date": "2027-01-26",
     "rules": 0.22590104809624062,
-    "market": 0.4066094339820489,
-    "blend": 0.3126410733214286
+    "market": 0.410438150002411,
+    "blend": 0.30894274395401733
    },
    {
     "date": "2027-01-27",
     "rules": 0.2306332147265991,
-    "market": 0.4157318010449873,
-    "blend": 0.31948053615942545
+    "market": 0.4200382171628121,
+    "blend": 0.315865465822895
    },
    {
     "date": "2027-01-28",
     "rules": 0.23536538135695756,
-    "market": 0.42485416810792576,
-    "blend": 0.3263199989974223
+    "market": 0.42963828432321316,
+    "blend": 0.3227881876917726
    },
    {
     "date": "2027-01-29",
     "rules": 0.24009754798731603,
-    "market": 0.43397653517086415,
-    "blend": 0.3331594618354191
+    "market": 0.4392383514836143,
+    "blend": 0.3297109095606503
    },
    {
     "date": "2027-01-30",
     "rules": 0.2417538063079415,
-    "market": 0.4430989022338026,
-    "blend": 0.3383994523523548
+    "market": 0.4488384186440154,
+    "blend": 0.3349418818591748
    },
    {
     "date": "2027-01-31",
     "rules": 0.24341006462856696,
-    "market": 0.45222126929674106,
-    "blend": 0.3436394428692905
+    "market": 0.4584384858044165,
+    "blend": 0.34017285415769927
    },
    {
     "date": "2027-02-01",
     "rules": 0.24809827924687877,
-    "market": 0.45643534381490186,
-    "blend": 0.3481000702395298
+    "market": 0.4624254406598774,
+    "blend": 0.34454550188272814
    },
    {
     "date": "2027-02-02",
     "rules": 0.2527864938651906,
-    "market": 0.46064941833306267,
-    "blend": 0.35256069760976916
+    "market": 0.4664123955153383,
+    "blend": 0.3489181496077571
    },
    {
     "date": "2027-02-03",
     "rules": 0.2574747084835024,
-    "market": 0.46486349285122347,
-    "blend": 0.3570213249800085
+    "market": 0.4703993503707992,
+    "blend": 0.353290797332786
    },
    {
     "date": "2027-02-04",
     "rules": 0.2621629231018142,
-    "market": 0.4690775673693843,
-    "blend": 0.3614819523502478
+    "market": 0.4743863052262602,
+    "blend": 0.3576634450578149
    },
    {
     "date": "2027-02-05",
     "rules": 0.26685113772012603,
-    "market": 0.473291641887545,
-    "blend": 0.36594257972048716
+    "market": 0.4783732600817211,
+    "blend": 0.3620360927828438
    },
    {
     "date": "2027-02-06",
     "rules": 0.2684920128365352,
-    "market": 0.4775057164057058,
-    "blend": 0.3688185905497371
+    "market": 0.482360214937182,
+    "blend": 0.36473270378182626
    },
    {
     "date": "2027-02-07",
     "rules": 0.2701328879529443,
-    "market": 0.48171979092386663,
-    "blend": 0.371694601378987
+    "market": 0.4863471697926429,
+    "blend": 0.3674293147808087
    },
    {
     "date": "2027-02-08",
     "rules": 0.27482110257125614,
-    "market": 0.48593386544202744,
-    "blend": 0.37615522874922636
+    "market": 0.49033412464810383,
+    "blend": 0.37180196250583764
    },
    {
     "date": "2027-02-09",
     "rules": 0.27950931718956795,
-    "market": 0.49014793996018824,
-    "blend": 0.3806158561194657
+    "market": 0.49432107950356474,
+    "blend": 0.3761746102308665
    },
    {
     "date": "2027-02-10",
     "rules": 0.28419753180787977,
-    "market": 0.49436201447834904,
-    "blend": 0.385076483489705
+    "market": 0.4983080343590257,
+    "blend": 0.38054725795589545
    },
    {
     "date": "2027-02-11",
     "rules": 0.2888857464261916,
-    "market": 0.49857608899650985,
-    "blend": 0.38953711085994436
+    "market": 0.5022949892144866,
+    "blend": 0.3849199056809244
    },
    {
     "date": "2027-02-12",
     "rules": 0.2935739610445034,
-    "market": 0.5027901635146707,
-    "blend": 0.3939977382301837
+    "market": 0.5062819440699475,
+    "blend": 0.38929255340595326
    },
    {
     "date": "2027-02-13",
     "rules": 0.29521483616091254,
-    "market": 0.5070042380328315,
-    "blend": 0.3968737490594336
+    "market": 0.5102688989254084,
+    "blend": 0.3919891644049357
    },
    {
     "date": "2027-02-14",
     "rules": 0.2968557112773217,
-    "market": 0.5112183125509923,
-    "blend": 0.39974975988868355
+    "market": 0.5142558537808694,
+    "blend": 0.39468577540391814
    },
    {
     "date": "2027-02-15",
     "rules": 0.3015439258956335,
-    "market": 0.5154323870691531,
-    "blend": 0.4042103872589229
+    "market": 0.5182428086363303,
+    "blend": 0.3990584231289471
    },
    {
     "date": "2027-02-16",
     "rules": 0.3062321405139453,
-    "market": 0.5196464615873139,
-    "blend": 0.4086710146291622
+    "market": 0.5222297634917912,
+    "blend": 0.403431070853976
    },
    {
     "date": "2027-02-17",
     "rules": 0.31092035513225713,
-    "market": 0.5238605361054747,
-    "blend": 0.41313164199940156
+    "market": 0.5262167183472521,
+    "blend": 0.4078037185790049
    },
    {
     "date": "2027-02-18",
     "rules": 0.31560856975056895,
-    "market": 0.5280746106236355,
-    "blend": 0.4175922693696409
+    "market": 0.530203673202713,
+    "blend": 0.4121763663040338
    },
    {
     "date": "2027-02-19",
     "rules": 0.32029678436888076,
-    "market": 0.5322886851417963,
-    "blend": 0.4220528967398802
+    "market": 0.534190628058174,
+    "blend": 0.41654901402906275
    },
    {
     "date": "2027-02-20",
     "rules": 0.3219376594852899,
-    "market": 0.536502759659957,
-    "blend": 0.4249289075691301
+    "market": 0.5381775829136348,
+    "blend": 0.41924562502804513
    },
    {
     "date": "2027-02-21",
     "rules": 0.32357853460169905,
-    "market": 0.5407168341781178,
-    "blend": 0.4278049183983801
+    "market": 0.5421645377690958,
+    "blend": 0.42194223602702763
    },
    {
     "date": "2027-02-22",
     "rules": 0.32826674922001087,
-    "market": 0.5449309086962786,
-    "blend": 0.4322655457686194
+    "market": 0.5461514926245568,
+    "blend": 0.42631488375205656
    },
    {
     "date": "2027-02-23",
     "rules": 0.3329549638383227,
-    "market": 0.5491449832144394,
-    "blend": 0.43672617313885875
+    "market": 0.5501384474800176,
+    "blend": 0.4306875314770854
    },
    {
     "date": "2027-02-24",
     "rules": 0.3376431784566345,
-    "market": 0.5533590577326002,
-    "blend": 0.44118680050909803
+    "market": 0.5541254023354786,
+    "blend": 0.43506017920211437
    },
    {
     "date": "2027-02-25",
     "rules": 0.3423313930749463,
-    "market": 0.557573132250761,
-    "blend": 0.44564742787933737
+    "market": 0.5581123571909394,
+    "blend": 0.43943282692714325
    },
    {
     "date": "2027-02-26",
     "rules": 0.3470196076932581,
-    "market": 0.5617872067689218,
-    "blend": 0.4501080552495767
+    "market": 0.5620993120464004,
+    "blend": 0.4438054746521722
    },
    {
     "date": "2027-02-27",
     "rules": 0.34866048280966727,
-    "market": 0.5660012812870826,
-    "blend": 0.4529840660788267
+    "market": 0.5660862669018614,
+    "blend": 0.4465020856511547
    },
    {
     "date": "2027-02-28",
     "rules": 0.3503013579260764,
-    "market": 0.5702153558052434,
-    "blend": 0.4558600769080765
+    "market": 0.5700732217573222,
+    "blend": 0.449198696650137
    },
    {
     "date": "2027-03-01",
     "rules": 0.3536676050502712,
-    "market": 0.5734342152953968,
-    "blend": 0.4591555779679315
+    "market": 0.5730549658499808,
+    "blend": 0.45239191741014056
    },
    {
     "date": "2027-03-02",
     "rules": 0.35703385217446604,
-    "market": 0.5766530747855503,
-    "blend": 0.4624510790277865
+    "market": 0.5760367099426393,
+    "blend": 0.45558513817014407
    },
    {
     "date": "2027-03-03",
     "rules": 0.36040009929866085,
-    "market": 0.5798719342757037,
-    "blend": 0.46574658008764136
+    "market": 0.579018454035298,
+    "blend": 0.4587783589301475
    },
    {
     "date": "2027-03-04",
     "rules": 0.36376634642285566,
-    "market": 0.5830907937658572,
-    "blend": 0.46904208114749635
+    "market": 0.5820001981279564,
+    "blend": 0.461971579690151
    },
    {
     "date": "2027-03-05",
     "rules": 0.36713259354705047,
-    "market": 0.5863096532560106,
-    "blend": 0.47233758220735134
+    "market": 0.5849819422206151,
+    "blend": 0.46516480045015457
    },
    {
     "date": "2027-03-06",
     "rules": 0.36831078004051865,
-    "market": 0.589528512746164,
-    "blend": 0.47449529173922844
+    "market": 0.5879636863132736,
+    "blend": 0.46715458786325836
    },
    {
     "date": "2027-03-07",
     "rules": 0.36948896653398683,
-    "market": 0.5927473722363175,
-    "blend": 0.47665300127110555
+    "market": 0.5909454304059322,
+    "blend": 0.4691443752763622
    },
    {
     "date": "2027-03-08",
     "rules": 0.37285521365818164,
-    "market": 0.5959662317264709,
-    "blend": 0.4799485023309605
+    "market": 0.5939271744985907,
+    "blend": 0.4723375960363657
    },
    {
     "date": "2027-03-09",
     "rules": 0.37622146078237645,
-    "market": 0.5991850912166243,
-    "blend": 0.4832440033908154
+    "market": 0.5969089185912493,
+    "blend": 0.4755308167963692
    },
    {
     "date": "2027-03-10",
     "rules": 0.37958770790657126,
-    "market": 0.6024039507067778,
-    "blend": 0.4865395044506704
+    "market": 0.5998906626839078,
+    "blend": 0.4787240375563727
    },
    {
     "date": "2027-03-11",
     "rules": 0.38295395503076607,
-    "market": 0.6056228101969312,
-    "blend": 0.48983500551052533
+    "market": 0.6028724067765664,
+    "blend": 0.4819172583163762
    },
    {
     "date": "2027-03-12",
     "rules": 0.3863202021549609,
-    "market": 0.6088416696870846,
-    "blend": 0.49313050657038027
+    "market": 0.605854150869225,
+    "blend": 0.4851104790763797
    },
    {
     "date": "2027-03-13",
     "rules": 0.38749838864842906,
-    "market": 0.6120605291772381,
-    "blend": 0.4952882161022574
+    "market": 0.6088358949618835,
+    "blend": 0.48710026648948357
    },
    {
     "date": "2027-03-14",
     "rules": 0.38867657514189724,
-    "market": 0.6152793886673915,
-    "blend": 0.4974459256341345
+    "market": 0.6118176390545421,
+    "blend": 0.4890900539025875
    },
    {
     "date": "2027-03-15",
     "rules": 0.39204282226609205,
-    "market": 0.618498248157545,
-    "blend": 0.5007414266939895
+    "market": 0.6147993831472006,
+    "blend": 0.4922832746625909
    },
    {
     "date": "2027-03-16",
     "rules": 0.39540906939028686,
-    "market": 0.6217171076476984,
-    "blend": 0.5040369277538443
+    "market": 0.6177811272398592,
+    "blend": 0.4954764954225944
    },
    {
     "date": "2027-03-17",
     "rules": 0.39877531651448167,
-    "market": 0.6249359671378518,
-    "blend": 0.5073324288136993
+    "market": 0.6207628713325177,
+    "blend": 0.4986697161825979
    },
    {
     "date": "2027-03-18",
     "rules": 0.4021415636386765,
-    "market": 0.6281548266280054,
-    "blend": 0.5106279298735543
+    "market": 0.6237446154251763,
+    "blend": 0.5018629369426014
    },
    {
     "date": "2027-03-19",
     "rules": 0.4055078107628713,
-    "market": 0.6313736861181588,
-    "blend": 0.5139234309334093
+    "market": 0.6267263595178348,
+    "blend": 0.5050561577026049
    },
    {
     "date": "2027-03-20",
     "rules": 0.40668599725633947,
-    "market": 0.6345925456083122,
-    "blend": 0.5160811404652864
+    "market": 0.6297081036104935,
+    "blend": 0.5070459451157088
    },
    {
     "date": "2027-03-21",
     "rules": 0.40786418374980765,
-    "market": 0.6378114050984657,
-    "blend": 0.5182388499971635
+    "market": 0.632689847703152,
+    "blend": 0.5090357325288126
    },
    {
     "date": "2027-03-22",
     "rules": 0.41123043087400246,
-    "market": 0.6410302645886191,
-    "blend": 0.5215343510570185
+    "market": 0.6356715917958106,
+    "blend": 0.5122289532888161
    },
    {
     "date": "2027-03-23",
     "rules": 0.41459667799819727,
-    "market": 0.6442491240787726,
-    "blend": 0.5248298521168735
+    "market": 0.6386533358884692,
+    "blend": 0.5154221740488196
    },
    {
     "date": "2027-03-24",
     "rules": 0.4179629251223921,
-    "market": 0.647467983568926,
-    "blend": 0.5281253531767283
+    "market": 0.6416350799811277,
+    "blend": 0.5186153948088231
    },
    {
     "date": "2027-03-25",
     "rules": 0.4213291722465869,
-    "market": 0.6506868430590794,
-    "blend": 0.5314208542365833
+    "market": 0.6446168240737863,
+    "blend": 0.5218086155688266
    },
    {
     "date": "2027-03-26",
     "rules": 0.4246954193707817,
-    "market": 0.6539057025492329,
-    "blend": 0.5347163552964382
+    "market": 0.6475985681664448,
+    "blend": 0.5250018363288301
    },
    {
     "date": "2027-03-27",
     "rules": 0.4258736058642499,
-    "market": 0.6571245620393863,
-    "blend": 0.5368740648283153
+    "market": 0.6505803122591034,
+    "blend": 0.526991623741934
    },
    {
     "date": "2027-03-28",
     "rules": 0.42705179235771806,
-    "market": 0.6603434215295397,
-    "blend": 0.5390317743601925
+    "market": 0.6535620563517619,
+    "blend": 0.5289814111550378
    },
    {
     "date": "2027-03-29",
     "rules": 0.4304180394819129,
-    "market": 0.6635622810196932,
-    "blend": 0.5423272754200474
+    "market": 0.6565438004444205,
+    "blend": 0.5321746319150413
    },
    {
     "date": "2027-03-30",
     "rules": 0.4337842866061077,
-    "market": 0.6667811405098466,
-    "blend": 0.5456227764799023
+    "market": 0.6595255445370791,
+    "blend": 0.5353678526750449
    },
    {
     "date": "2027-03-31",
     "rules": 0.4371505337303025,
-    "market": 0.67,
-    "blend": 0.5489182775397573
+    "market": 0.6625072886297376,
+    "blend": 0.5385610734350483
    },
    {
     "date": "2027-04-01",
     "rules": 0.4398443667267115,
-    "market": 0.6702033333333334,
-    "blend": 0.55041667069789
+    "market": 0.6625072886297376,
+    "blend": 0.5400426815830732
    },
    {
     "date": "2027-04-02",
     "rules": 0.44253819972312053,
-    "market": 0.6704066666666667,
-    "blend": 0.5519150638560226
+    "market": 0.6625072886297376,
+    "blend": 0.5415242897310982
    },
    {
     "date": "2027-04-03",
     "rules": 0.44348104127186366,
-    "market": 0.67061,
-    "blend": 0.5525029414613691
+    "market": 0.6625072886297376,
+    "blend": 0.542042852582907
    },
    {
     "date": "2027-04-04",
     "rules": 0.4444238828206068,
-    "market": 0.6708133333333334,
-    "blend": 0.5530908190667155
+    "market": 0.6625072886297376,
+    "blend": 0.5425614154347157
    },
    {
     "date": "2027-04-05",
     "rules": 0.4471177158170158,
-    "market": 0.6710166666666667,
-    "blend": 0.5545892122248482
+    "market": 0.6625072886297376,
+    "blend": 0.5440430235827407
    },
    {
     "date": "2027-04-06",
     "rules": 0.44981154881342483,
-    "market": 0.67122,
-    "blend": 0.556087605382981
+    "market": 0.6625072886297376,
+    "blend": 0.5455246317307656
    },
    {
     "date": "2027-04-07",
     "rules": 0.45250538180983385,
-    "market": 0.6714233333333334,
-    "blend": 0.5575859985411136
+    "market": 0.6625072886297376,
+    "blend": 0.5470062398787905
    },
    {
     "date": "2027-04-08",
     "rules": 0.45519921480624287,
-    "market": 0.6716266666666667,
-    "blend": 0.5590843916992463
+    "market": 0.6625072886297376,
+    "blend": 0.5484878480268155
    },
    {
     "date": "2027-04-09",
     "rules": 0.4578930478026519,
-    "market": 0.67183,
-    "blend": 0.560582784857379
+    "market": 0.6625072886297376,
+    "blend": 0.5499694561748405
    },
    {
     "date": "2027-04-10",
     "rules": 0.458835889351395,
-    "market": 0.6720333333333334,
-    "blend": 0.5611706624627255
+    "market": 0.6625072886297376,
+    "blend": 0.5504880190266492
    },
    {
     "date": "2027-04-11",
     "rules": 0.45977873090013816,
-    "market": 0.6722366666666667,
-    "blend": 0.5617585400680718
+    "market": 0.6625072886297376,
+    "blend": 0.551006581878458
    },
    {
     "date": "2027-04-12",
     "rules": 0.4624725638965472,
-    "market": 0.67244,
-    "blend": 0.5632569332262045
+    "market": 0.6625072886297376,
+    "blend": 0.5524881900264829
    },
    {
     "date": "2027-04-13",
     "rules": 0.4651663968929562,
-    "market": 0.6726433333333334,
-    "blend": 0.5647553263843372
+    "market": 0.6625072886297376,
+    "blend": 0.5539697981745079
    },
    {
     "date": "2027-04-14",
     "rules": 0.4678602298893652,
-    "market": 0.6728466666666667,
-    "blend": 0.56625371954247
+    "market": 0.6625072886297376,
+    "blend": 0.5554514063225329
    },
    {
     "date": "2027-04-15",
     "rules": 0.4705540628857742,
-    "market": 0.67305,
-    "blend": 0.5677521127006027
+    "market": 0.6625072886297376,
+    "blend": 0.5569330144705578
    },
    {
     "date": "2027-04-16",
     "rules": 0.47324789588218324,
-    "market": 0.6732533333333334,
-    "blend": 0.5692505058587353
+    "market": 0.6625072886297376,
+    "blend": 0.5584146226185827
    },
    {
     "date": "2027-04-17",
     "rules": 0.4741907374309264,
-    "market": 0.6734566666666667,
-    "blend": 0.5698383834640818
+    "market": 0.6625072886297376,
+    "blend": 0.5589331854703914
    },
    {
     "date": "2027-04-18",
     "rules": 0.4751335789796695,
-    "market": 0.67366,
-    "blend": 0.5704262610694282
+    "market": 0.6625072886297376,
+    "blend": 0.5594517483222001
    },
    {
     "date": "2027-04-19",
     "rules": 0.47782741197607853,
-    "market": 0.6738633333333334,
-    "blend": 0.5719246542275609
+    "market": 0.6625072886297376,
+    "blend": 0.5609333564702251
    },
    {
     "date": "2027-04-20",
     "rules": 0.48052124497248755,
-    "market": 0.6740666666666667,
-    "blend": 0.5734230473856936
+    "market": 0.6625072886297376,
+    "blend": 0.5624149646182501
    },
    {
     "date": "2027-04-21",
     "rules": 0.48321507796889657,
-    "market": 0.67427,
-    "blend": 0.5749214405438262
+    "market": 0.6625072886297376,
+    "blend": 0.563896572766275
    },
    {
     "date": "2027-04-22",
     "rules": 0.4859089109653056,
-    "market": 0.6744733333333334,
-    "blend": 0.5764198337019589
+    "market": 0.6625072886297376,
+    "blend": 0.5653781809143
    },
    {
     "date": "2027-04-23",
     "rules": 0.4886027439617146,
-    "market": 0.6746766666666667,
-    "blend": 0.5779182268600915
+    "market": 0.6625072886297376,
+    "blend": 0.566859789062325
    },
    {
     "date": "2027-04-24",
     "rules": 0.48954558551045774,
-    "market": 0.67488,
-    "blend": 0.578506104465438
+    "market": 0.6625072886297376,
+    "blend": 0.5673783519141338
    },
    {
     "date": "2027-04-25",
     "rules": 0.49048842705920087,
-    "market": 0.6750833333333334,
-    "blend": 0.5790939820707844
+    "market": 0.6625072886297376,
+    "blend": 0.5678969147659424
    },
    {
     "date": "2027-04-26",
     "rules": 0.4931822600556099,
-    "market": 0.6752866666666667,
-    "blend": 0.5805923752289172
+    "market": 0.6625072886297376,
+    "blend": 0.5693785229139674
    },
    {
     "date": "2027-04-27",
     "rules": 0.4958760930520189,
-    "market": 0.67549,
-    "blend": 0.5820907683870498
+    "market": 0.6625072886297376,
+    "blend": 0.5708601310619923
    },
    {
     "date": "2027-04-28",
     "rules": 0.4985699260484279,
-    "market": 0.6756933333333334,
-    "blend": 0.5835891615451826
+    "market": 0.6625072886297376,
+    "blend": 0.5723417392100173
    },
    {
     "date": "2027-04-29",
     "rules": 0.5012637590448369,
-    "market": 0.6758966666666667,
-    "blend": 0.5850875547033152
+    "market": 0.6625072886297376,
+    "blend": 0.5738233473580423
    },
    {
     "date": "2027-04-30",
     "rules": 0.5039575920412459,
-    "market": 0.6761,
-    "blend": 0.5865859478614479
+    "market": 0.6625072886297376,
+    "blend": 0.5753049555060672
    },
    {
     "date": "2027-05-01",
     "rules": 0.5049119785885451,
-    "market": 0.6769016393442623,
-    "blend": 0.5874670157512893
+    "market": 0.6632038904554797,
+    "blend": 0.5761433389286656
    },
    {
     "date": "2027-05-02",
     "rules": 0.5058663651358443,
-    "market": 0.6777032786885246,
-    "blend": 0.5883480836411309
+    "market": 0.6639004922812216,
+    "blend": 0.5769817223512641
    },
    {
     "date": "2027-05-03",
     "rules": 0.5085931838424134,
-    "market": 0.6785049180327869,
-    "blend": 0.5901508162537927
+    "market": 0.6645970941069637,
+    "blend": 0.578794943461461
    },
    {
     "date": "2027-05-04",
     "rules": 0.5113200025489825,
-    "market": 0.6793065573770493,
-    "blend": 0.5919535488664545
+    "market": 0.6652936959327056,
+    "blend": 0.5806081645716579
    },
    {
     "date": "2027-05-05",
     "rules": 0.5140468212555516,
-    "market": 0.6801081967213115,
-    "blend": 0.5937562814791163
+    "market": 0.6659902977584476,
+    "blend": 0.5824213856818548
    },
    {
     "date": "2027-05-06",
     "rules": 0.5167736399621207,
-    "market": 0.6809098360655738,
-    "blend": 0.5955590140917781
+    "market": 0.6666868995841897,
+    "blend": 0.5842346067920519
    },
    {
     "date": "2027-05-07",
     "rules": 0.5195004586686898,
-    "market": 0.6817114754098361,
-    "blend": 0.59736174670444
+    "market": 0.6673835014099316,
+    "blend": 0.5860478279022486
    },
    {
     "date": "2027-05-08",
     "rules": 0.520454845215989,
-    "market": 0.6825131147540984,
-    "blend": 0.5982428145942815
+    "market": 0.6680801032356737,
+    "blend": 0.5868862113248472
    },
    {
     "date": "2027-05-09",
     "rules": 0.5214092317632881,
-    "market": 0.6833147540983607,
-    "blend": 0.599123882484123
+    "market": 0.6687767050614156,
+    "blend": 0.5877245947474455
    },
    {
     "date": "2027-05-10",
     "rules": 0.5241360504698572,
-    "market": 0.684116393442623,
-    "blend": 0.6009266150967848
+    "market": 0.6694733068871577,
+    "blend": 0.5895378158576425
    },
    {
     "date": "2027-05-11",
     "rules": 0.5268628691764263,
-    "market": 0.6849180327868852,
-    "blend": 0.6027293477094466
+    "market": 0.6701699087128997,
+    "blend": 0.5913510369678394
    },
    {
     "date": "2027-05-12",
     "rules": 0.5295896878829954,
-    "market": 0.6857196721311476,
-    "blend": 0.6045320803221084
+    "market": 0.6708665105386417,
+    "blend": 0.5931642580780363
    },
    {
     "date": "2027-05-13",
     "rules": 0.5323165065895645,
-    "market": 0.6865213114754098,
-    "blend": 0.6063348129347703
+    "market": 0.6715631123643837,
+    "blend": 0.5949774791882332
    },
    {
     "date": "2027-05-14",
     "rules": 0.5350433252961336,
-    "market": 0.6873229508196722,
-    "blend": 0.6081375455474322
+    "market": 0.6722597141901256,
+    "blend": 0.5967907002984301
    },
    {
     "date": "2027-05-15",
     "rules": 0.5359977118434328,
-    "market": 0.6881245901639345,
-    "blend": 0.6090186134372736
+    "market": 0.6729563160158677,
+    "blend": 0.5976290837210285
    },
    {
     "date": "2027-05-16",
     "rules": 0.536952098390732,
-    "market": 0.6889262295081967,
-    "blend": 0.6098996813271151
+    "market": 0.6736529178416097,
+    "blend": 0.598467467143627
    },
    {
     "date": "2027-05-17",
     "rules": 0.5396789170973011,
-    "market": 0.6897278688524591,
-    "blend": 0.6117024139397769
+    "market": 0.6743495196673517,
+    "blend": 0.6002806882538239
    },
    {
     "date": "2027-05-18",
     "rules": 0.5424057358038702,
-    "market": 0.6905295081967213,
-    "blend": 0.6135051465524388
+    "market": 0.6750461214930937,
+    "blend": 0.6020939093640207
    },
    {
     "date": "2027-05-19",
     "rules": 0.5451325545104393,
-    "market": 0.6913311475409836,
-    "blend": 0.6153078791651005
+    "market": 0.6757427233188358,
+    "blend": 0.6039071304742178
    },
    {
     "date": "2027-05-20",
     "rules": 0.5478593732170084,
-    "market": 0.6921327868852459,
-    "blend": 0.6171106117777624
+    "market": 0.6764393251445777,
+    "blend": 0.6057203515844146
    },
    {
     "date": "2027-05-21",
     "rules": 0.5505861919235775,
-    "market": 0.6929344262295082,
-    "blend": 0.6189133443904242
+    "market": 0.6771359269703198,
+    "blend": 0.6075335726946116
    },
    {
     "date": "2027-05-22",
     "rules": 0.5515405784708767,
-    "market": 0.6937360655737705,
-    "blend": 0.6197944122802657
+    "market": 0.6778325287960617,
+    "blend": 0.60837195611721
    },
    {
     "date": "2027-05-23",
     "rules": 0.5524949650181759,
-    "market": 0.6945377049180328,
-    "blend": 0.6206754801701072
+    "market": 0.6785291306218038,
+    "blend": 0.6092103395398085
    },
    {
     "date": "2027-05-24",
     "rules": 0.555221783724745,
-    "market": 0.695339344262295,
-    "blend": 0.622478212782769
+    "market": 0.6792257324475458,
+    "blend": 0.6110235606500054
    },
    {
     "date": "2027-05-25",
     "rules": 0.5579486024313141,
-    "market": 0.6961409836065574,
-    "blend": 0.6242809453954309
+    "market": 0.6799223342732877,
+    "blend": 0.6128367817602023
    },
    {
     "date": "2027-05-26",
     "rules": 0.5606754211378832,
-    "market": 0.6969426229508197,
-    "blend": 0.6260836780080927
+    "market": 0.6806189360990298,
+    "blend": 0.6146500028703992
    },
    {
     "date": "2027-05-27",
     "rules": 0.5634022398444523,
-    "market": 0.697744262295082,
-    "blend": 0.6278864106207545
+    "market": 0.6813155379247717,
+    "blend": 0.616463223980596
    },
    {
     "date": "2027-05-28",
     "rules": 0.5661290585510214,
-    "market": 0.6985459016393443,
-    "blend": 0.6296891432334164
+    "market": 0.6820121397505138,
+    "blend": 0.6182764450907929
    },
    {
     "date": "2027-05-29",
     "rules": 0.5670834450983205,
-    "market": 0.6993475409836065,
-    "blend": 0.6305702111232578
+    "market": 0.6827087415762558,
+    "blend": 0.6191148285133914
    },
    {
     "date": "2027-05-30",
     "rules": 0.5680378316456197,
-    "market": 0.7001491803278689,
-    "blend": 0.6314512790130993
+    "market": 0.6834053434019978,
+    "blend": 0.6199532119359898
    },
    {
     "date": "2027-05-31",
     "rules": 0.5707646503521888,
-    "market": 0.7009508196721311,
-    "blend": 0.6332540116257611
+    "market": 0.6841019452277398,
+    "blend": 0.6217664330461867
    },
    {
     "date": "2027-06-01",
     "rules": 0.572919716749316,
-    "market": 0.7017524590163935,
-    "blend": 0.6347594330375133
+    "market": 0.6847985470534818,
+    "blend": 0.6232651903861905
    },
    {
     "date": "2027-06-02",
     "rules": 0.5750747831464431,
-    "market": 0.7025540983606557,
-    "blend": 0.6362648544492652
+    "market": 0.6854951488792238,
+    "blend": 0.6247639477261944
    },
    {
     "date": "2027-06-03",
     "rules": 0.5772298495435703,
-    "market": 0.703355737704918,
-    "blend": 0.6377702758610171
+    "market": 0.6861917507049659,
+    "blend": 0.6262627050661984
    },
    {
     "date": "2027-06-04",
     "rules": 0.5793849159406974,
-    "market": 0.7041573770491804,
-    "blend": 0.6392756972727692
+    "market": 0.6868883525307078,
+    "blend": 0.6277614624062021
    },
    {
     "date": "2027-06-05",
     "rules": 0.580139189179692,
-    "market": 0.7049590163934426,
-    "blend": 0.6400527062422923
+    "market": 0.6875849543564498,
+    "blend": 0.6284897835092331
    },
    {
     "date": "2027-06-06",
     "rules": 0.5808934624186866,
-    "market": 0.705760655737705,
-    "blend": 0.6408297152118154
+    "market": 0.6882815561821918,
+    "blend": 0.6292181046122639
    },
    {
     "date": "2027-06-07",
     "rules": 0.5830485288158137,
-    "market": 0.7065622950819672,
-    "blend": 0.6423351366235674
+    "market": 0.6889781580079338,
+    "blend": 0.6307168619522678
    },
    {
     "date": "2027-06-08",
     "rules": 0.5852035952129409,
-    "market": 0.7073639344262295,
-    "blend": 0.6438405580353194
+    "market": 0.6896747598336759,
+    "blend": 0.6322156192922717
    },
    {
     "date": "2027-06-09",
     "rules": 0.587358661610068,
-    "market": 0.7081655737704918,
-    "blend": 0.6453459794470715
+    "market": 0.6903713616594178,
+    "blend": 0.6337143766322755
    },
    {
     "date": "2027-06-10",
     "rules": 0.5895137280071951,
-    "market": 0.7089672131147541,
-    "blend": 0.6468514008588234
+    "market": 0.6910679634851599,
+    "blend": 0.6352131339722793
    },
    {
     "date": "2027-06-11",
     "rules": 0.5916687944043223,
-    "market": 0.7097688524590164,
-    "blend": 0.6483568222705756
+    "market": 0.6917645653109018,
+    "blend": 0.6367118913122831
    },
    {
     "date": "2027-06-12",
     "rules": 0.5924230676433169,
-    "market": 0.7105704918032787,
-    "blend": 0.6491338312400985
+    "market": 0.6924611671366439,
+    "blend": 0.637440212415314
    },
    {
     "date": "2027-06-13",
     "rules": 0.5931773408823114,
-    "market": 0.7113721311475409,
-    "blend": 0.6499108402096216
+    "market": 0.6931577689623859,
+    "blend": 0.6381685335183449
    },
    {
     "date": "2027-06-14",
     "rules": 0.5953324072794386,
-    "market": 0.7121737704918033,
-    "blend": 0.6514162616213737
+    "market": 0.6938543707881278,
+    "blend": 0.6396672908583487
    },
    {
     "date": "2027-06-15",
     "rules": 0.5974874736765657,
-    "market": 0.7129754098360656,
-    "blend": 0.6529216830331257
+    "market": 0.6945509726138699,
+    "blend": 0.6411660481983527
    },
    {
     "date": "2027-06-16",
     "rules": 0.5996425400736929,
-    "market": 0.7137770491803279,
-    "blend": 0.6544271044448777
+    "market": 0.6952475744396118,
+    "blend": 0.6426648055383565
    },
    {
     "date": "2027-06-17",
     "rules": 0.60179760647082,
-    "market": 0.7145786885245902,
-    "blend": 0.6559325258566298
+    "market": 0.6959441762653539,
+    "blend": 0.6441635628783603
    },
    {
     "date": "2027-06-18",
     "rules": 0.6039526728679472,
-    "market": 0.7153803278688524,
-    "blend": 0.6574379472683817
+    "market": 0.6966407780910959,
+    "blend": 0.6456623202183642
    },
    {
     "date": "2027-06-19",
     "rules": 0.6047069461069418,
-    "market": 0.7161819672131148,
-    "blend": 0.6582149562379048
+    "market": 0.6973373799168379,
+    "blend": 0.646390641321395
    },
    {
     "date": "2027-06-20",
     "rules": 0.6054612193459363,
-    "market": 0.716983606557377,
-    "blend": 0.6589919652074279
+    "market": 0.6980339817425799,
+    "blend": 0.647118962424426
    },
    {
     "date": "2027-06-21",
     "rules": 0.6076162857430635,
-    "market": 0.7177852459016393,
-    "blend": 0.6604973866191799
+    "market": 0.698730583568322,
+    "blend": 0.6486177197644298
    },
    {
     "date": "2027-06-22",
     "rules": 0.6097713521401906,
-    "market": 0.7185868852459016,
-    "blend": 0.6620028080309319
+    "market": 0.6994271853940639,
+    "blend": 0.6501164771044337
    },
    {
     "date": "2027-06-23",
     "rules": 0.6119264185373178,
-    "market": 0.7193885245901639,
-    "blend": 0.663508229442684
+    "market": 0.700123787219806,
+    "blend": 0.6516152344444375
    },
    {
     "date": "2027-06-24",
     "rules": 0.6140814849344449,
-    "market": 0.7201901639344263,
-    "blend": 0.665013650854436
+    "market": 0.7008203890455479,
+    "blend": 0.6531139917844413
    },
    {
     "date": "2027-06-25",
     "rules": 0.6162365513315721,
-    "market": 0.7209918032786885,
-    "blend": 0.666519072266188
+    "market": 0.7015169908712899,
+    "blend": 0.6546127491244451
    },
    {
     "date": "2027-06-26",
     "rules": 0.6169908245705666,
-    "market": 0.7217934426229508,
-    "blend": 0.667296081235711
+    "market": 0.702213592697032,
+    "blend": 0.655341070227476
    },
    {
     "date": "2027-06-27",
     "rules": 0.6177450978095612,
-    "market": 0.7225950819672131,
-    "blend": 0.6680730902052341
+    "market": 0.7029101945227739,
+    "blend": 0.656069391330507
    },
    {
     "date": "2027-06-28",
     "rules": 0.6199001642066884,
-    "market": 0.7233967213114754,
-    "blend": 0.6695785116169861
+    "market": 0.703606796348516,
+    "blend": 0.6575681486705108
    },
    {
     "date": "2027-06-29",
     "rules": 0.6220552306038155,
-    "market": 0.7241983606557377,
-    "blend": 0.6710839330287381
+    "market": 0.7043033981742579,
+    "blend": 0.6590669060105147
    },
    {
     "date": "2027-06-30",
     "rules": 0.6242102970009427,
-    "market": 0.725,
-    "blend": 0.6725893544404902
+    "market": 0.705,
+    "blend": 0.6605656633505185
    }
   ],
   "months": [
@@ -2384,57 +2392,57 @@
     "date": "2026-11-30",
     "label": "Nov 2026",
     "rules": 0.016266066371360105,
-    "market": 0.024999999999999998,
-    "blend": 0.020458354513107253
+    "market": 0.026,
+    "blend": 0.02064633650424806
    },
    {
     "date": "2026-12-31",
     "label": "Dec 2026",
     "rules": 0.12983806549996366,
-    "market": 0.1694278903456496,
-    "blend": 0.14884118142589292
+    "market": 0.16083640383198233,
+    "blend": 0.14378731774937206
    },
    {
     "date": "2027-01-31",
     "label": "Jan 2027",
     "rules": 0.24341006462856696,
-    "market": 0.45222126929674106,
-    "blend": 0.3436394428692905
+    "market": 0.4584384858044165,
+    "blend": 0.34017285415769927
    },
    {
     "date": "2027-02-28",
     "label": "Feb 2027",
     "rules": 0.3503013579260764,
-    "market": 0.5702153558052434,
-    "blend": 0.4558600769080765
+    "market": 0.5700732217573222,
+    "blend": 0.449198696650137
    },
    {
     "date": "2027-03-31",
     "label": "Mar 2027",
     "rules": 0.4371505337303025,
-    "market": 0.67,
-    "blend": 0.5489182775397573
+    "market": 0.6625072886297376,
+    "blend": 0.5385610734350483
    },
    {
     "date": "2027-04-30",
     "label": "Apr 2027",
     "rules": 0.5039575920412459,
-    "market": 0.6761,
-    "blend": 0.5865859478614479
+    "market": 0.6625072886297376,
+    "blend": 0.5753049555060672
    },
    {
     "date": "2027-05-31",
     "label": "May 2027",
     "rules": 0.5707646503521888,
-    "market": 0.7009508196721311,
-    "blend": 0.6332540116257611
+    "market": 0.6841019452277398,
+    "blend": 0.6217664330461867
    },
    {
     "date": "2027-06-30",
     "label": "Jun 2027",
     "rules": 0.6242102970009427,
-    "market": 0.725,
-    "blend": 0.6725893544404902
+    "market": 0.705,
+    "blend": 0.6605656633505185
    }
   ],
   "opex": [
@@ -2444,63 +2452,63 @@
     "iv": null,
     "rules": 0.001936436472780965,
     "market": 0.0,
-    "blend": 0.0010069469658461018
+    "blend": 0.0010650400600295308
    },
    {
     "date": "2026-12-18",
     "listed": true,
-    "iv": 46.1,
+    "iv": 57.8,
     "rules": 0.09479725176444263,
-    "market": 0.10886135568457073,
-    "blend": 0.10154802164610412
+    "market": 0.10429210545082845,
+    "blend": 0.09906993592331625
    },
    {
     "date": "2027-01-15",
     "listed": true,
-    "iv": 46.2,
+    "iv": 54.3,
     "rules": 0.18615084840122947,
-    "market": 0.3062633962897261,
-    "blend": 0.24380487138770784
+    "market": 0.3048374112379989,
+    "blend": 0.23955980167777574
    },
    {
     "date": "2027-02-19",
     "listed": true,
-    "iv": 48.7,
+    "iv": 55.6,
     "rules": 0.32029678436888076,
-    "market": 0.5322886851417963,
-    "blend": 0.4220528967398802
+    "market": 0.534190628058174,
+    "blend": 0.41654901402906275
    },
    {
     "date": "2027-03-19",
     "listed": true,
-    "iv": 49.1,
+    "iv": 54.8,
     "rules": 0.4055078107628713,
-    "market": 0.6313736861181588,
-    "blend": 0.5139234309334093
+    "market": 0.6267263595178348,
+    "blend": 0.5050561577026049
    },
    {
     "date": "2027-04-16",
     "listed": true,
-    "iv": 49.9,
+    "iv": 54.3,
     "rules": 0.47324789588218324,
-    "market": 0.6732533333333334,
-    "blend": 0.5692505058587353
+    "market": 0.6625072886297376,
+    "blend": 0.5584146226185827
    },
    {
     "date": "2027-05-21",
     "listed": false,
     "iv": null,
     "rules": 0.5505861919235775,
-    "market": 0.6929344262295082,
-    "blend": 0.6189133443904242
+    "market": 0.6771359269703198,
+    "blend": 0.6075335726946116
    },
    {
     "date": "2027-06-17",
     "listed": true,
-    "iv": 50.2,
+    "iv": 55.1,
     "rules": 0.60179760647082,
-    "market": 0.7145786885245902,
-    "blend": 0.6559325258566298
+    "market": 0.6959441762653539,
+    "blend": 0.6441635628783603
    }
   ],
   "catalysts": [
@@ -2545,7 +2553,7 @@
     "confirmed": true,
     "mult": 2.0,
     "mult_before_nov15": 4.0,
-    "p": 0.010711101192503448
+    "p": 0.010519621843147373
    },
    {
     "date": "2026-12-08",
@@ -2553,7 +2561,7 @@
     "label": "SpaceX Day-180 unlock (remainder)",
     "confirmed": true,
     "mult": 0.4,
-    "p": 0.0021422202385006895
+    "p": 0.0021039243686294742
    },
    {
     "date": "2026-12-24",
@@ -2562,7 +2570,7 @@
     "confirmed": true,
     "mult": 0.5,
     "note": "Deal announcements are rare over the holidays; this shifts December odds toward Dec 7\u201323 and January odds past New Year's Day. Monthly totals are unchanged.",
-    "p": 0.020490559729200608
+    "p": 0.020124255744729324
    },
    {
     "date": null,
@@ -2612,18 +2620,17 @@
     "name": "Kalshi: definitive agreement Before Dec 1, 2026",
     "short": "definitive agreement Before Dec 1, 2026",
     "date": "2026-11-30",
-    "p": 0.025,
+    "p": 0.03,
     "how": "mid",
     "bid": 0.02,
-    "ask": 0.03,
+    "ask": 0.04,
     "last": 0.03,
-    "vol24": 1352.7,
-    "ch24": -1.5,
-    "ch7": -6.000000000000001,
-    "ch72": -1.9999999999999998,
-    "as_of": "2026-11-20T02:57-05:00",
+    "vol24": 0,
+    "ch24": -1.0000000000000002,
+    "ch7": -4.5,
+    "ch72": -1.5,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.075,
      0.085,
      0.085,
      0.085,
@@ -2645,24 +2652,25 @@
      0.04,
      0.025,
      0.025,
-     0.025
+     0.025,
+     0.03
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.73,
+    "q": 0.0,
     "ref": 0.025,
-    "k": 1.0,
-    "conf": null,
-    "p_used": 0.025,
+    "k": 0.22,
+    "conf": 0.082,
+    "p_used": 0.026,
     "in_fit": true,
-    "w_fit": 0.73,
-    "w_share": 0.133
+    "w_fit": 0.02,
+    "w_share": 0.005
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-27JAN01",
@@ -2670,18 +2678,17 @@
     "name": "Kalshi: definitive agreement Before Jan 1, 2027",
     "short": "definitive agreement Before Jan 1, 2027",
     "date": "2026-12-31",
-    "p": 0.175,
+    "p": 0.155,
     "how": "mid",
-    "bid": 0.17,
-    "ask": 0.18,
-    "last": 0.18,
-    "vol24": 1441.91,
-    "ch24": -8.500000000000002,
-    "ch7": -19.0,
-    "ch72": -9.500000000000004,
-    "as_of": "2026-11-20T02:57-05:00",
+    "bid": 0.14,
+    "ask": 0.17,
+    "last": 0.14,
+    "vol24": 2790.78,
+    "ch24": -10.500000000000002,
+    "ch7": -13.999999999999998,
+    "ch72": -11.500000000000002,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.295,
      0.295,
      0.295,
      0.295,
@@ -2703,24 +2710,25 @@
      0.26,
      0.175,
      0.175,
-     0.175
+     0.175,
+     0.155
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.743,
+    "q": 0.565,
     "ref": 0.175,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.175,
+    "p_used": 0.155,
     "in_fit": true,
-    "w_fit": 0.743,
-    "w_share": 0.135
+    "w_fit": 0.565,
+    "w_share": 0.128
    },
    {
     "id": "polymarket:2252540",
@@ -2733,13 +2741,12 @@
     "bid": 0.16,
     "ask": 0.17,
     "last": 0.16,
-    "vol24": 7149.528512999999,
+    "vol24": 1898.9070590000001,
     "ch24": -3.9999999999999982,
     "ch7": -13.999999999999998,
     "ch72": -11.000000000000002,
-    "as_of": "2026-11-20T02:57-05:00",
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.305,
      0.28,
      0.305,
      0.28,
@@ -2761,24 +2768,25 @@
      0.205,
      0.17,
      0.165,
+     0.165,
      0.165
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
     "expired": false,
     "stale": null,
-    "q": 0.935,
-    "ref": 0.17,
+    "q": 0.792,
+    "ref": 0.165,
     "k": 1.0,
     "conf": null,
     "p_used": 0.165,
     "in_fit": true,
-    "w_fit": 0.935,
-    "w_share": 0.17
+    "w_fit": 0.792,
+    "w_share": 0.18
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-27FEB01",
@@ -2788,16 +2796,15 @@
     "date": "2027-01-31",
     "p": 0.475,
     "how": "mid",
-    "bid": 0.46,
-    "ask": 0.49,
-    "last": 0.47,
-    "vol24": 301.86,
+    "bid": 0.47,
+    "ask": 0.48,
+    "last": 0.48,
+    "vol24": 198.41,
     "ch24": -3.0000000000000027,
-    "ch7": -5.500000000000005,
+    "ch7": -4.5000000000000036,
     "ch72": -3.0000000000000027,
-    "as_of": "2026-11-20T02:57-05:00",
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.52,
      0.52,
      0.51,
      0.485,
@@ -2819,24 +2826,25 @@
      0.505,
      0.505,
      0.505,
+     0.475,
      0.475
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.251,
+    "q": 0.284,
     "ref": 0.505,
     "k": 1.0,
     "conf": null,
     "p_used": 0.475,
     "in_fit": true,
-    "w_fit": 0.251,
-    "w_share": 0.046
+    "w_fit": 0.284,
+    "w_share": 0.065
    },
    {
     "id": "polymarket:3585429",
@@ -2844,18 +2852,17 @@
     "name": "Polymarket: announced by January 31, 2027",
     "short": "announced by January 31, 2027",
     "date": "2027-01-31",
-    "p": 0.435,
+    "p": 0.445,
     "how": "mid",
-    "bid": 0.43,
-    "ask": 0.44,
+    "bid": 0.44,
+    "ask": 0.45,
     "last": 0.44,
-    "vol24": 248.02801399999998,
-    "ch24": -1.0000000000000009,
-    "ch7": -1.0000000000000009,
-    "ch72": -5.499999999999999,
-    "as_of": "2026-11-20T02:57-05:00",
+    "vol24": 268.818447,
+    "ch24": 0.0,
+    "ch7": -3.4999999999999973,
+    "ch72": -4.499999999999998,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.48,
      0.455,
      0.455,
      0.45,
@@ -2877,24 +2884,25 @@
      0.445,
      0.425,
      0.435,
-     0.435
+     0.435,
+     0.445
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
     "expired": false,
     "stale": null,
-    "q": 0.332,
+    "q": 0.35,
     "ref": 0.435,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.435,
+    "p_used": 0.445,
     "in_fit": true,
-    "w_fit": 0.332,
-    "w_share": 0.06
+    "w_fit": 0.35,
+    "w_share": 0.08
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-27MAR01",
@@ -2902,18 +2910,17 @@
     "name": "Kalshi: definitive agreement Before Mar 1, 2027",
     "short": "definitive agreement Before Mar 1, 2027",
     "date": "2027-02-28",
-    "p": 0.555,
+    "p": 0.56,
     "how": "mid",
     "bid": 0.54,
-    "ask": 0.57,
+    "ask": 0.58,
     "last": 0.58,
     "vol24": 227.99,
-    "ch24": -5.499999999999994,
-    "ch7": -2.499999999999991,
-    "ch72": -6.499999999999995,
-    "as_of": "2026-11-20T02:57-05:00",
+    "ch24": -4.999999999999993,
+    "ch7": -6.999999999999995,
+    "ch72": -5.999999999999995,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.63,
      0.645,
      0.65,
      0.65,
@@ -2935,24 +2942,25 @@
      0.61,
      0.58,
      0.575,
-     0.555
+     0.555,
+     0.56
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.209,
-    "ref": 0.58,
+    "q": 0.157,
+    "ref": 0.575,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.555,
+    "p_used": 0.56,
     "in_fit": true,
-    "w_fit": 0.209,
-    "w_share": 0.038
+    "w_fit": 0.157,
+    "w_share": 0.036
    },
    {
     "id": "polymarket:3585431",
@@ -2960,18 +2968,17 @@
     "name": "Polymarket: announced by February 28, 2027",
     "short": "announced by February 28, 2027",
     "date": "2027-02-28",
-    "p": 0.58,
+    "p": 0.575,
     "how": "mid",
     "bid": 0.57,
-    "ask": 0.59,
+    "ask": 0.58,
     "last": 0.57,
-    "vol24": 240.953334,
-    "ch24": -2.500000000000002,
-    "ch7": 3.9999999999999925,
-    "ch72": -0.5000000000000004,
-    "as_of": "2026-11-20T02:57-05:00",
+    "vol24": 236.629535,
+    "ch24": -3.0000000000000027,
+    "ch7": -1.0000000000000009,
+    "ch72": -1.0000000000000009,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.585,
      0.585,
      0.605,
      0.605,
@@ -2993,24 +3000,25 @@
      0.605,
      0.57,
      0.58,
-     0.58
+     0.58,
+     0.575
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
     "expired": false,
     "stale": null,
-    "q": 0.325,
+    "q": 0.321,
     "ref": 0.58,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.58,
+    "p_used": 0.575,
     "in_fit": true,
-    "w_fit": 0.325,
-    "w_share": 0.059
+    "w_fit": 0.321,
+    "w_share": 0.073
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-27APR01",
@@ -3023,13 +3031,12 @@
     "bid": 0.66,
     "ask": 0.68,
     "last": 0.66,
-    "vol24": 404.73,
+    "vol24": 374.99,
     "ch24": -4.499999999999993,
-    "ch7": -5.499999999999994,
+    "ch7": -4.999999999999993,
     "ch72": -2.9999999999999916,
-    "as_of": "2026-11-20T02:57-05:00",
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.72,
      0.72,
      0.72,
      0.72,
@@ -3051,24 +3058,25 @@
      0.715,
      0.69,
      0.67,
+     0.67,
      0.67
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.447,
-    "ref": 0.69,
+    "q": 0.429,
+    "ref": 0.67,
     "k": 1.0,
     "conf": null,
     "p_used": 0.67,
     "in_fit": true,
-    "w_fit": 0.447,
-    "w_share": 0.081
+    "w_fit": 0.429,
+    "w_share": 0.097
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-27MAY01",
@@ -3076,18 +3084,17 @@
     "name": "Kalshi: definitive agreement Before May 1, 2027",
     "short": "definitive agreement Before May 1, 2027",
     "date": "2027-04-30",
-    "p": 0.655,
+    "p": 0.65,
     "how": "mid",
-    "bid": 0.64,
+    "bid": 0.63,
     "ask": 0.67,
     "last": 0.64,
-    "vol24": 1268.35,
-    "ch24": -5.999999999999995,
-    "ch7": -10.499999999999998,
-    "ch72": -4.499999999999993,
-    "as_of": "2026-11-20T02:57-05:00",
+    "vol24": 526.76,
+    "ch24": -6.499999999999995,
+    "ch7": -10.999999999999998,
+    "ch72": -4.999999999999993,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.76,
      0.765,
      0.765,
      0.765,
@@ -3109,24 +3116,25 @@
      0.715,
      0.695,
      0.66,
-     0.655
+     0.655,
+     0.65
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.478,
-    "ref": 0.695,
-    "k": 0.481,
-    "conf": 0.137,
-    "p_used": 0.6761,
+    "q": 0.257,
+    "ref": 0.66,
+    "k": 1.0,
+    "conf": null,
+    "p_used": 0.65,
     "in_fit": true,
-    "w_fit": 0.478,
-    "w_share": 0.087
+    "w_fit": 0.257,
+    "w_share": 0.058
    },
    {
     "id": "polymarket:3585432",
@@ -3134,18 +3142,17 @@
     "name": "Polymarket: announced by June 30, 2027",
     "short": "announced by June 30, 2027",
     "date": "2027-06-30",
-    "p": 0.725,
+    "p": 0.705,
     "how": "mid",
-    "bid": 0.71,
-    "ask": 0.74,
+    "bid": 0.7,
+    "ask": 0.71,
     "last": 0.71,
-    "vol24": 182.525518,
-    "ch24": 1.0000000000000009,
-    "ch7": 2.500000000000002,
-    "ch72": -2.0000000000000018,
-    "as_of": "2026-11-20T02:57-05:00",
+    "vol24": 152.98000000000002,
+    "ch24": -1.0000000000000009,
+    "ch7": -2.0000000000000018,
+    "ch72": -4.0000000000000036,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.725,
      0.76,
      0.76,
      0.765,
@@ -3167,24 +3174,25 @@
      0.715,
      0.705,
      0.715,
-     0.725
+     0.725,
+     0.705
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
     "expired": false,
     "stale": null,
-    "q": 0.178,
+    "q": 0.234,
     "ref": 0.715,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.725,
+    "p_used": 0.705,
     "in_fit": true,
-    "w_fit": 0.178,
-    "w_share": 0.032
+    "w_fit": 0.234,
+    "w_share": 0.053
    },
    {
     "id": "kalshi:KXCOMPANYACTIONMERGER-27-28JAN01",
@@ -3192,18 +3200,17 @@
     "name": "Kalshi: definitive agreement Before 2028",
     "short": "definitive agreement Before 2028",
     "date": "2027-12-31",
-    "p": 0.855,
+    "p": 0.87,
     "how": "mid",
-    "bid": 0.84,
-    "ask": 0.87,
-    "last": 0.87,
-    "vol24": 22.3,
-    "ch24": 1.5000000000000013,
-    "ch7": 0.0,
-    "ch72": -2.0000000000000018,
-    "as_of": "2026-11-20T02:57-05:00",
+    "bid": 0.86,
+    "ask": 0.88,
+    "last": 0.88,
+    "vol24": 80.59,
+    "ch24": 3.0000000000000027,
+    "ch7": 0.5000000000000004,
+    "ch72": -0.5000000000000004,
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.865,
      0.86,
      0.87,
      0.865,
@@ -3225,24 +3232,25 @@
      0.84,
      0.845,
      0.855,
-     0.855
+     0.855,
+     0.87
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://kalshi.com/markets/kxcompanyactionmerger/company-merger/kxcompanyactionmerger-27",
     "expired": false,
     "stale": null,
-    "q": 0.028,
-    "ref": 0.845,
+    "q": 0.139,
+    "ref": 0.855,
     "k": 1.0,
     "conf": null,
-    "p_used": 0.855,
+    "p_used": 0.87,
     "in_fit": true,
-    "w_fit": 0.028,
-    "w_share": 0.005
+    "w_fit": 0.139,
+    "w_share": 0.032
    },
    {
     "id": "polymarket:3585430",
@@ -3255,13 +3263,12 @@
     "bid": 0.86,
     "ask": 0.87,
     "last": 0.86,
-    "vol24": 2853.665594,
+    "vol24": 2886.752436,
     "ch24": 4.0000000000000036,
-    "ch7": 3.0000000000000027,
+    "ch7": 5.999999999999995,
     "ch72": 2.500000000000002,
-    "as_of": "2026-11-20T02:57-05:00",
+    "as_of": "2026-11-20T14:00-05:00",
     "spark": [
-     0.805,
      0.815,
      0.815,
      0.84,
@@ -3283,58 +3290,59 @@
      0.825,
      0.82,
      0.86,
+     0.865,
      0.865
     ],
     "flag": false,
     "nudge_ok": false,
     "explained_by": [
-     "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package"
+     "Tesla-SpaceX Merger Could Hand Elon Musk a 60% Stake \u2014 and TSLA Holders a 33% Premium, Analyst Says"
     ],
     "url": "https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30",
     "expired": false,
     "stale": null,
-    "q": 0.851,
-    "ref": 0.825,
-    "k": 0.504,
-    "conf": 0.008,
-    "p_used": 0.8462,
+    "q": 0.852,
+    "ref": 0.86,
+    "k": 1.0,
+    "conf": null,
+    "p_used": 0.865,
     "in_fit": true,
-    "w_fit": 0.851,
-    "w_share": 0.155
+    "w_fit": 0.852,
+    "w_share": 0.194
    }
   ],
   "composite": [
    [
     "2026-11-30",
-    0.024999999999999998
+    0.026
    ],
    [
     "2026-12-31",
-    0.1694278903456496
+    0.16083640383198233
    ],
    [
     "2027-01-31",
-    0.45222126929674106
+    0.4584384858044165
    ],
    [
     "2027-02-28",
-    0.5702153558052434
+    0.5700732217573222
    ],
    [
     "2027-03-31",
-    0.67
+    0.6625072886297376
    ],
    [
     "2027-04-30",
-    0.6761
+    0.6625072886297376
    ],
    [
     "2027-06-30",
-    0.725
+    0.705
    ],
    [
     "2027-12-31",
-    0.8464803185437997
+    0.8657013118062563
    ]
   ],
   "flags": [],
@@ -4817,10 +4825,6 @@
        0.045
       ],
       [
-       "2026-11-06T12:51",
-       0.045
-      ],
-      [
        "2026-11-06T13:00",
        0.045
       ],
@@ -5171,6 +5175,10 @@
       [
        "2026-11-20T02:57",
        0.025
+      ],
+      [
+       "2026-11-20T14:00",
+       0.03
       ]
      ]
     },
@@ -7109,10 +7117,6 @@
        0.465
       ],
       [
-       "2026-11-06T12:51",
-       0.465
-      ],
-      [
        "2026-11-06T14:00",
        0.465
       ],
@@ -7482,6 +7486,10 @@
       ],
       [
        "2026-11-20T02:57",
+       0.67
+      ],
+      [
+       "2026-11-20T14:00",
        0.67
       ]
      ]
@@ -8889,10 +8897,6 @@
        0.235
       ],
       [
-       "2026-11-06T12:51",
-       0.235
-      ],
-      [
        "2026-11-06T14:00",
        0.235
       ],
@@ -9270,6 +9274,10 @@
       ],
       [
        "2026-11-20T02:57",
+       0.475
+      ],
+      [
+       "2026-11-20T14:00",
        0.475
       ]
      ]
@@ -10877,10 +10885,6 @@
        0.11
       ],
       [
-       "2026-11-06T12:51",
-       0.11
-      ],
-      [
        "2026-11-06T14:00",
        0.11
       ],
@@ -11251,6 +11255,10 @@
       [
        "2026-11-20T02:57",
        0.175
+      ],
+      [
+       "2026-11-20T14:00",
+       0.155
       ]
      ]
     },
@@ -12669,10 +12677,6 @@
        0.37
       ],
       [
-       "2026-11-06T12:51",
-       0.365
-      ],
-      [
        "2026-11-06T14:00",
        0.37
       ],
@@ -13027,6 +13031,10 @@
       [
        "2026-11-20T02:57",
        0.555
+      ],
+      [
+       "2026-11-20T14:00",
+       0.56
       ]
      ]
     },
@@ -14745,10 +14753,6 @@
        0.575
       ],
       [
-       "2026-11-06T12:51",
-       0.575
-      ],
-      [
        "2026-11-06T14:00",
        0.575
       ],
@@ -15103,6 +15107,10 @@
       [
        "2026-11-20T02:57",
        0.655
+      ],
+      [
+       "2026-11-20T14:00",
+       0.65
       ]
      ]
     },
@@ -16829,10 +16837,6 @@
        0.725
       ],
       [
-       "2026-11-06T12:51",
-       0.725
-      ],
-      [
        "2026-11-06T14:00",
        0.725
       ],
@@ -17195,6 +17199,10 @@
       [
        "2026-11-20T02:57",
        0.855
+      ],
+      [
+       "2026-11-20T14:00",
+       0.87
       ]
      ]
     },
@@ -18409,10 +18417,6 @@
        0.095
       ],
       [
-       "2026-11-06T12:51",
-       0.095
-      ],
-      [
        "2026-11-06T13:00",
        0.095
       ],
@@ -18722,6 +18726,10 @@
       ],
       [
        "2026-11-20T02:57",
+       0.165
+      ],
+      [
+       "2026-11-20T14:00",
        0.165
       ]
      ]
@@ -19901,10 +19909,6 @@
        0.18
       ],
       [
-       "2026-11-06T12:51",
-       0.18
-      ],
-      [
        "2026-11-06T13:00",
        0.18
       ],
@@ -20215,6 +20219,10 @@
       [
        "2026-11-20T02:57",
        0.435
+      ],
+      [
+       "2026-11-20T14:00",
+       0.445
       ]
      ]
     },
@@ -21429,10 +21437,6 @@
        0.685
       ],
       [
-       "2026-11-06T12:51",
-       0.685
-      ],
-      [
        "2026-11-06T13:00",
        0.685
       ],
@@ -21742,6 +21746,10 @@
       ],
       [
        "2026-11-20T02:57",
+       0.865
+      ],
+      [
+       "2026-11-20T14:00",
        0.865
       ]
      ]
@@ -22937,10 +22945,6 @@
        0.335
       ],
       [
-       "2026-11-06T12:51",
-       0.335
-      ],
-      [
        "2026-11-06T13:00",
        0.335
       ],
@@ -23251,6 +23255,10 @@
       [
        "2026-11-20T02:57",
        0.58
+      ],
+      [
+       "2026-11-20T14:00",
+       0.575
       ]
      ]
     },
@@ -24461,10 +24469,6 @@
        0.545
       ],
       [
-       "2026-11-06T12:51",
-       0.565
-      ],
-      [
        "2026-11-06T13:00",
        0.56
       ],
@@ -24775,6 +24779,10 @@
       [
        "2026-11-20T02:57",
        0.725
+      ],
+      [
+       "2026-11-20T14:00",
+       0.705
       ]
      ]
     }
@@ -24819,13 +24827,28 @@
   }
  },
  "pp_split": {
-  "total": 0.71,
+  "total": -0.49,
   "time": -0.04,
   "news": 0.0,
-  "markets": 0.75
+  "markets": -0.45
  },
  "data_guard": {
-  "warnings": [],
+  "warnings": [
+   {
+    "at": "2026-11-20 14:00 ET",
+    "key": "iv:2026-11-23",
+    "level": "warn",
+    "review": true,
+    "msg": "ATM IV for 2026-11-23 = 49.1 (+41% vs last good 34.8); kept last good 34.8"
+   },
+   {
+    "at": "2026-11-20 14:00 ET",
+    "key": "iv:2026-11-27",
+    "level": "warn",
+    "review": true,
+    "msg": "ATM IV for 2026-11-27 = 54.4 (+46% vs last good 37.2); kept last good 37.2"
+   }
+  ],
   "recent": [
    {
     "at": "2026-11-17 08:23 ET",
@@ -24854,6 +24877,20 @@
     "level": "warn",
     "review": true,
     "msg": "ATM IV for 2026-11-20 = 72.7 (+52% vs last good 47.9); kept last good 47.9"
+   },
+   {
+    "at": "2026-11-20 14:00 ET",
+    "key": "iv:2026-11-23",
+    "level": "warn",
+    "review": true,
+    "msg": "ATM IV for 2026-11-23 = 49.1 (+41% vs last good 34.8); kept last good 34.8"
+   },
+   {
+    "at": "2026-11-20 14:00 ET",
+    "key": "iv:2026-11-27",
+    "level": "warn",
+    "review": true,
+    "msg": "ATM IV for 2026-11-27 = 54.4 (+46% vs last good 37.2); kept last good 37.2"
    }
   ]
  },
