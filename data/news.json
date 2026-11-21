@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-21",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "10:06",
+     "title": "Musk Won\u2019t Take Stock Awards \u201cSimply for Merging With SpaceX.\u201d Tesla Shareholders Still Have to Vote",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMndlaTZmVnlYRDFEWFBZNVNWZVFGLTFYX3ljX3VkZHIzbE1kV08wWmRiQXphSzN0cjhBOWQ2aHEybXlWRVVsRnpmY0F4M2EzLVhJLU5XQWpMQlRrVmtpUFhiZzhEeDZKc2tINkpjNkdabDBvVkRyQ2FaZW8wZFMyTjJNZ3NVRmM2b2o3WkNxWDFpUQ?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-20",
    "odds_note": "Merger letter by Jun 30, 2027: -0.7 pts (filings/news +0.0, prediction markets -0.7, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
