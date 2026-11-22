@@ -2,6 +2,32 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-22",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "05:20",
+     "title": "Elon Musk's Tesla and SpaceX Each Formed a Special Committee to Explore a Merger as His AI Spending Accelerates. Here's Why Combining Them Could Reshape How Investors Value Tesla's Robotaxi Business.",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZmViX2JQR2MySDdXWG50cUpiaEpXamltbmh0VUJwR2lnekxNczVFR0VLZWppTFBkRXdPUks0dzVtU2NINmw5SG1pZkJsa05fb0xFTHhOdmpHU1lRTGhwVm1jc015a21sSk01RGhodWVSeENWWlE1VFJiTUR2WHNtUnYxQ2dTVmlKMjA3djJiUzRUbmpwZFFncEVR?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "02:25",
+     "title": "Tesla Just Started Selling Cybercabs, Here's What It Means for a SpaceX and Tesla Merger .",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUzZTZTZ3N1VzNkQ1cWozOUZrWm1ETGgyWURwcHNDMjlsNnZ4a1U1Vi1hQ3VMVEZ2SURkS1V1SldhdWJCZkZ3YnVXSm5pWnBmTEp0MFZiNVFZQXVZc3Uzcy1oaGVBajZ6endHdlM0b1g1U1VVR09GemxFOHprQktPaHRwRjUtQTBWcVBzdjVxemgxbm5BLWJvZFZ4UUZkQjlKYV9V?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-21",
    "odds_note": "",
    "items": [
