@@ -19,6 +19,36 @@
      "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
+    },
+    {
+     "time_et": "17:15",
+     "title": "TSLA filed DEFA14A",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926131169/tm267596d17_defa14a.htm",
+     "source": "SEC EDGAR",
+     "factor": "sec",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "15:23",
+     "title": "\u201cNo Synergies\u201d in a SpaceX-Tesla Merger? Really? Starlink Just Showed Up in a Cybercab Roof",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeTBkN3JhOXVGUUJQYXo4c0xZRTRIdHRfdUp4bW9JQXB3TVROamxadVRIbHJwVjRZeEROSDFyOEEtRXpiSWNodXRsTGFUYlJfVEdhMHAyWVpCYlloSkFFanRwMlZtcDlEdzhMd2R2anBvcHBrYkN4UjJvQk5vSzlKRTFMVS1SdmVIR3R2TUEzNnNsRzZtaTlFNi1iTFh0dw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "10:06",
+     "title": "SpaceX Stock Rebounds as Musk Starlink Talk Fuels Hopes of Tesla Merger",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOUxsUlFqNGZUWlRrN0FIX2tPcXRkWWNDckFUcEpWTFg0TjFLZmNCbXR3dktoU0wxTFNONWxoRG4tUi1EYlk5Tnk0aDRSTlJveTEyU0dBamVtX0lfNWlfZzdMV0tWMl90NldKUGlZMGtKU1NqZi1nekVkOVNuNVJxcXFqMFBack5r?oc=5",
+     "source": "Barron's",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
     }
    ],
    "split": {
