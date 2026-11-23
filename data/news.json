@@ -2,6 +2,35 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-23",
+   "odds_note": "Merger letter by Jun 30, 2027: +1.1 pts (filings/news +0.0, prediction markets +1.1, time -0.1). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "source": "Morning review",
+     "title": "Morning review: no news or filing moved the odds since Friday. Tesla's Nov 20 DEFA14A is a routine employee vote note for the Dec 3 meeting; weekend coverage (Yahoo, Benzinga, Puck, Stocktwits) rehashed the special committees, the Nov 12 talks report and Musk's DealBook remarks. Dec 31 odds rose on prediction markets only.",
+     "factor": "news",
+     "url": null
+    },
+    {
+     "time_et": "02:16",
+     "title": "Cathie Wood Says TSLA Holders \u2018Will Get\u2019 A Premium If SpaceX Buys Tesla \u2014 HSBC Puts It At Over 30% - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMWhGTTdUQmxpU3VybzlGNXJEeFdWcl90NS01cnVjeUIzRGRoLUtETHNVazdYMDdadUc0Y2NjZkNTbFFLaXFtdi1YMVJFMFJ4c3p6LTZOaGR0WnhwRkttRnNRNGo0TS1oOVVFNEEwZGwzUk1lYTJseFNMWWcyR3g3LUNFYTFQUGM1VzR0QzkzM1plR0VPQWN2NUJTeTNUc0lTZk1MMEpzUmRpbEtQQ1RHaDBmY2N6eFFrQi1NWFhvZw?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": 1.07,
+     "time": -0.07,
+     "news": 0.0,
+     "markets": 1.14
+    }
+   }
+  },
+  {
    "date": "2026-11-22",
    "odds_note": "",
    "items": [
@@ -60,6 +89,15 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "23:17",
+     "title": "Dragon clocks out: SpaceX confirms CRS-35 splashdown - Digg",
+     "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9OTFlJcXRsQnd1dW9mRTdEQk1sUjhmYktQaC1RVVZqVUtma2JlbkR2Ui1yYjNCOS03TUFySkZqMDlzakxJakNMNg?oc=5",
+     "source": "Digg",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ]
   },
