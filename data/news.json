@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-24",
-   "odds_note": "Merger letter by Jun 30, 2027: -0.4 pts (filings/news +0.0, prediction markets -0.3, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: +2.7 pts (filings/news +0.0, prediction markets +2.8, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -102,14 +102,23 @@
      "effect": "prediction-market move; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "10:56",
+     "title": "Lucid Rises 4% as Driverless Robotaxi Testing With Nuro and Uber Begins; Tesla Falls 2% Amid SpaceX Merger Talks, Rivian Edges Higher - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQUnhVU1Z2SW13QTMweWJ3eFZ2SE9IN1FlSXpQb3NGZEtndHdKaXFNVDhodzV0YUVjcEJIcnY1QndQc09XeU1PekU2ZXRJZjZWajNzYlp3MVBsTXo1TmhpaFFQRE96Qmh2eDRuMUYyUjNueTJIa1BnYjdna2hicktIVEJIeHptQk9mTDRJbEVfUndaNmF0YzV4THlfa2k2QWhUR0ZkajVFMWZBUm1JWHQyUEV3QjhnVWNHcVpfa2Y4cFl5bjRiNXRUYnY5Yng2VEJRQ2FmanNYekh1Vmx0LXR1NGdtMTdNQWZWb0lIbEtkUVVDMTdZekMxNjg5VzY1M2REcDBv?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -0.36,
+     "total": 2.71,
      "time": -0.04,
      "news": 0.0,
-     "markets": -0.32
+     "markets": 2.75
     }
    }
   },
