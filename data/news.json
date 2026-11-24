@@ -3,8 +3,16 @@
  "days": [
   {
    "date": "2026-11-24",
-   "odds_note": "",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.4 pts (filings/news +0.0, prediction markets -0.3, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: no news or filing moved the odds overnight. The FT/Reuters report naming the five committee directors and advisers (year-end target, 'not yet close') confirms signals already counted; Tesla's Nov 23 DEFA14A is a routine Thanksgiving letter for the Dec 3 meeting. Prediction markets and time moved the odds.",
+     "url": null,
+     "source": "Morning review",
+     "factor": "review",
+     "effect": null
+    },
     {
      "time_et": "00:20",
      "title": "SpaceX, Tesla appoint five directors to guide merger talks, FT reports",
@@ -25,7 +33,15 @@
      "auto": true,
      "watch": true
     }
-   ]
+   ],
+   "split": {
+    "pp": {
+     "total": -0.36,
+     "time": -0.04,
+     "news": 0.0,
+     "markets": -0.32
+    }
+   }
   },
   {
    "date": "2026-11-23",
@@ -82,6 +98,15 @@
      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FMURTQkxuM3E3MjBCZ2hjbUROSFZIZlh3RGRROUowMHZlQWFVRVJRUm94ZnphNUVFOFEzOUpEcTE0U09heHdhVkJqTng?oc=5",
      "source": "Britannica",
      "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "03:00",
+     "title": "Rocket Lab Could Cash In On SpaceX\u2019s Rideshare Crunch \u2013 CFO Sees \u2018Very Strong Uplift\u2019 In Electron Prices Within 9 Months - Stocktwits",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVTRoZEhCNjdTNWc5NFhweWJscFFycktMaHJkZTZaUWJMQ3p1OTRxZ2N1Z001cmd6MVJqeTMzdG1KRlpUMXB0VEhqdkRheGxDQXhxUTM2X0dEYzhRLTd1LWo5VVZkNWhXRG5LQXRRb250RXlLblM5a1Y2alBTMGVlc1ZvOV9uZHhrVGplUVZkQmMzaFA5bjRMR3dXeTNCeURWMlZzRU45WFNDZmVfNi1mQlR4UnFrOEE4d04yaGJ0ZFFtdEF4MzRHRkNTN2k?oc=5",
+     "source": "Stocktwits",
+     "factor": "prices",
      "effect": "auto-tagged; review",
      "auto": true
     }
