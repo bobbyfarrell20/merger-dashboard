@@ -2,6 +2,32 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-25",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "03:46",
+     "title": "Ross Gerber Warns SpaceX Could \u2018Dilute\u2019 Shareholders With TSLA Stock Amid Merger Talks, Explains Why He A",
+     "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQLTFrLUdOc21UNGlKUFlOTHktUUZhZUVVeDlSR1NEOW9FYnNuWldvc3pJcUJET0dWVnpUWFZxekFEbTV0UnhZbmxzYVVFTm9LZVpkWHlFSDI4UEFnS3ZXcnIyOU5EeHJ1czZVR2ZXUmkwM1BSMkhzVmZQcG0xQ0FseHhuQTR5TjBYQXFUQXAzQ1AtVUl2MnhKX1lOLUNBdDdtYkJydEpCWDVHRV9ybnNZeUcwVG0xeURZa05MNTZKZEFPYXN6ZHA0S1BHcWo1Qi15NTZYN2U1b1lQaVhBbHhwcFpKVlY1eElFWklLY0wyT3M0T1FncnBnVU0tMGVkWDZsa2p5TVNUUThQSnM?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "00:06",
+     "title": "Tesla, SpaceX appoint five directors to negotiate proposed $3.5 trillion merger: Report",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSXhCZzdYenJxUTRsRUtnYmM0OWp0ZmJkcjk2ZVJ6NXFSM09iclFOWDRGR05XMHJoOW1YZ1JrbFl5QTdMY1lEOEZoS3RfZnRTaVFOYURJbXl0NUcwTldXSm1XSXNWRzlQUUlQUEZLcUg5OHpPOXlfUm16OXZ3eFJVWHhkbkxSTGdzaEZ2dmxfZ2V4a3hQeXhRTGNyS29uLWNiQ1RseHdOUF9SbHBVWm13azdUMVd1d2c3ZDVoYW93U1d0ZTdmcThOZm5B0gHXAUFVX3lxTE82QUdGQXZydmxnZ1phUjFoMUM5ZjJvb2VVTzQ2em43MERDOWhqeHJpMk94TmpRdWU5UXJmczhXS1JESUd2dUJOdU5IT0h2VjRLMEpsVVFvN2JWZ2R4ck9SWjY3Z1U5bU50THpzbjU1cTJBazRjSVBieTctQ3JqSUtfZHNsWWRlSk1KLXBPNWROMHlhWVRVUnBMZElPOXE4bGhWNVpiLWdNX2VNdW5ocDVCSW9ENDMtcF9PckliYktCLWZ6ZkNXRmEtYUl1aU4wZEdXa0dSTXRV?oc=5",
+     "source": "Fortune India",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-24",
    "odds_note": "Merger letter by Jun 30, 2027: +2.7 pts (filings/news +0.0, prediction markets +2.8, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -189,6 +215,16 @@
      "source": "Polymarket",
      "factor": "markets",
      "effect": "prediction-market move; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    },
+    {
+     "time_et": "21:50",
+     "title": "Jensen Huang's Return Could Make a Tesla/SpaceX Merger More Likely",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZUFBWVFPRnRuWUlCMHFCUFlVY2I3WnZHUHB5MVdQXzNPdEFHeG1rQ2lMY050NFViWW9mcGFxeTJraGJLckpQVWJnQW51dU9ody1vaVROMy1KQ3NLcXJ2cC1vTUwtZnhTVTFBUHRJVllzRHo4dWxsTzdicWkybHY3ekpnemZuSmJXaC12TnZmekJyMUhWWEhXZmRmSk5wZw?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
     }
