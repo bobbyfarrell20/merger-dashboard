@@ -82,14 +82,32 @@
      "effect": "intraday watcher hit; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "14:02",
+     "title": "AST SpaceMobile Surges 9%, Erasing Early Losses as Space Stocks Diverge; SpaceX Eases, Rocket Lab Holds Steady - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNN3lYM1dkYWRZZXp3RnlyZkdaZ0dYdVRJQ2hJaG1pT0xfY1NWY3VDdnN5My1tcjZ2eEdPVE1IRVlBb2JWNDFSZ0s2ak5CSDV5N2dxb1BqdnlfQUNoZHM0b1BFcUlXNW1jTWhIMWt2WXpUdERZVFVUcFJWN0dzd2JvTERNWG5XQTU3OUwzMF9GWjJpWng5ZFJOR01teG1OVk84VF91WWFwN2pna1dxWDNBVlp3SDVyRFhoMzVmZF9pREhkdGlkWHJ1VEZWa28yR1F5azA0MWRJV2ZoZzRkbExJZ1FQX3Q?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
+    },
+    {
+     "time_et": "19:44",
+     "title": "SpaceX Stock Falls 5% to $119.66 as Black Eyes $100 - shattered.io",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaC10V2VsdnV4bmJ2VkpQSG5OdTRoWEhCT2tNajVsM2lhVE9KQjJsSldLUkRqZURUbS13THgwdS1BMDh6d2RyQk9IejFKUXdYd3BVWmNCcEpPbThyVVYyR2JiUjFOT3pGOUhuemVFeEFkdkNwb0h1TGRkRGh6dUc0dmhSR2FyZFhSdmxRQk41d0Fwd0FZVWt3RGROTQ?oc=5",
+     "source": "shattered.io",
+     "factor": "prices",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": 3.14,
+     "total": 3.13,
      "time": -0.04,
      "news": 0.0,
-     "markets": 3.18
+     "markets": 3.17
     }
    }
   },
