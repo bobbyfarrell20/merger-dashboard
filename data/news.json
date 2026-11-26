@@ -2,6 +2,37 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-26",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.0 pts (filings/news +0.0, prediction markets -0.0, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: no news or filing moved the odds overnight. Coverage was commentary only (Yahoo valuation pieces, Ron Baron data-center view, Cathie Wood buying SpaceX); no new Tesla or SpaceX filing. Prediction markets and time moved the odds.",
+     "url": null,
+     "source": "Morning review",
+     "factor": "review",
+     "effect": null
+    },
+    {
+     "time_et": "02:07",
+     "title": "\u2018Exceptionally Well-Prepared\u2019: Ron Baron Says Elon Musk Could Turn SpaceX AI Data Centers Into a $50 Bill - Benzinga",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcDgwTklMOHljODlod1JwSm1QeDJtaklzTGlZMGlzS2FlUWRObFJ2SFBvMWRnRkRuUlZTNjNqSmJWTWhrd1ViQUtZcUpMRDl2bmRRbkZCdHBYTGNKbUJGWXdjZExzdjFpQW1YLXJTbWlQOGJadzVSZXZ6a0E4X3hkSFV0M1B6azI5a1l0eS13QkowLThLbXJCcTNnMjVtbVNjUDY5dEJLQk5OUXNmZzlDRkFZb2VJZDBkS3l5VXF3MlFPM3RoNjNxbEhRclVPZw?oc=5",
+     "source": "Benzinga",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": -0.03,
+     "time": -0.03,
+     "news": 0.0,
+     "markets": -0.0
+    }
+   }
+  },
+  {
    "date": "2026-11-25",
    "odds_note": "Merger letter by Jun 30, 2027: +3.1 pts (filings/news +0.0, prediction markets +3.2, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
