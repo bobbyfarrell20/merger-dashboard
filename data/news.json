@@ -2,6 +2,28 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-27",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.0, prediction markets -0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "items": [
+    {
+     "time_et": null,
+     "title": "Morning review: no news or filing moved the odds overnight. Coverage was not merger news (SpaceX/Musk Trump Accounts share pledge, SpaceX Arizona and Starbase data-center plans, Tesla EMAG asset purchase for Optimus); no new Tesla or SpaceX filing since Nov 23. Prediction markets and time moved the odds.",
+     "url": null,
+     "source": "Morning review",
+     "factor": "review",
+     "effect": null
+    }
+   ],
+   "split": {
+    "pp": {
+     "total": -0.1,
+     "time": -0.03,
+     "news": 0.0,
+     "markets": -0.07
+    }
+   }
+  },
+  {
    "date": "2026-11-26",
    "odds_note": "Merger letter by Jun 30, 2027: -0.0 pts (filings/news +0.0, prediction markets -0.0, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
@@ -31,6 +53,15 @@
      "effect": "prediction-market move; odds not yet re-assessed",
      "auto": true,
      "watch": true
+    },
+    {
+     "time_et": "19:30",
+     "title": "Mexico wants a say in where SpaceX flies \u2014 says harmful rocket debris keeps washing up on its shores - Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONk9qOXJ2T0swc18zQll1UFVzcmJybnZPaURETFBxazJMbWlMczk4a29jTWd1UGtRbVFRcUJyZHhZdFpxX3FCTEJ4M0lHYW5CbTNRQ283S0pGcEtxVVlnQ19WQXlPUm1YY3lZUW5mTjFmN1h5VWhRMjNsYnp0Yk0zSF9NNDZtT2p1MmRkY1QzX0J4Wi1yMXZqdTByalo?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
