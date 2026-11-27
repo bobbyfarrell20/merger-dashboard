@@ -3,7 +3,7 @@
  "days": [
   {
    "date": "2026-11-27",
-   "odds_note": "Merger letter by Jun 30, 2027: -0.1 pts (filings/news +0.0, prediction markets -0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
+   "odds_note": "Merger letter by Jun 30, 2027: -0.2 pts (filings/news +0.0, prediction markets -0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
     {
      "time_et": null,
@@ -12,14 +12,23 @@
      "source": "Morning review",
      "factor": "review",
      "effect": null
+    },
+    {
+     "time_et": "09:04",
+     "title": "AST SpaceMobile Gains 2% Despite Berenberg's Price Target Cut to $30, Rocket Lab Climbs 5% After Electron Launch; Cathie Wood-Backed SpaceX Rises 3% - 24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOOC1zNmVRWElMYnhnWEJXVHF6a0ppZkdmTkNsWVg1aktnUmc0UkV3bWxaY1NDUEJnNkdpdHczS3R0UGZ4bWVUOHpPcndCcTdkZTRRU0hEQTB1UHpMQXQyYlZ2NGFqLVNiWTJkejNwQzBza0o3cFZlSVlJVzBxa1FXeVlTQXRsV01FbGxfb1pFeWpPLXM5clBaYlAtbWoxTkJGRW5tdEhHWi1YNm8zcWZIZVdZWlhNdnRhR1p2bjZEeXlpRWxhRGRsOXNKMEMwMWRydW9UdlhsazNLSHVRX2lsUGNyai1HamhwcXp0OVpyVlRSRG9LZGY0bTBQQmFKTlB4Qy1yVUEyTXFCdkM0RHlsaVhCaw?oc=5",
+     "source": "24/7 Wall St.",
+     "factor": "calendar",
+     "effect": "auto-tagged; review",
+     "auto": true
     }
    ],
    "split": {
     "pp": {
-     "total": -0.1,
+     "total": -0.16,
      "time": -0.03,
      "news": 0.0,
-     "markets": -0.07
+     "markets": -0.12
     }
    }
   },
