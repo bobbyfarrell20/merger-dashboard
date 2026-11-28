@@ -2,6 +2,22 @@
  "_doc": "Headlines grouped by day (ET). time_et null = publication time not verified. factor ids: sec, calendar, news, prices, options, markets.",
  "days": [
   {
+   "date": "2026-11-28",
+   "odds_note": "",
+   "items": [
+    {
+     "time_et": "09:13",
+     "title": "Anterix and NextNav Stocks Soar as SpaceX Goes Spectrum Shopping",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVEhTUzRyOXkwbWVpdHBNTGxzNWJ2bXJOcjFvd2c5aTZmX1JWVXRlZk1KdHZzTkVLX3ktMlBfUEI0UEtUOTRsT21RMFA0OC0zdW12WEZkazRwOEh3ek5qdVMxM2xwSjJRcVdpVnRac2E4OUs2ZlRBdUpiTkhaNi1Wc3ZVU190T3hiUGxpWmRYM2N5U1RSczZkX3EycllfN1E5?oc=5",
+     "source": "Yahoo Finance",
+     "factor": "news",
+     "effect": "intraday watcher hit; odds not yet re-assessed",
+     "auto": true,
+     "watch": true
+    }
+   ]
+  },
+  {
    "date": "2026-11-27",
    "odds_note": "Merger letter by Jun 30, 2027: -0.2 pts (filings/news +0.0, prediction markets -0.1, time -0.0). No new filing or news, so only the markets and time moved it.",
    "items": [
